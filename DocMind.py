@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'bcbfc762ddf195324143fb1aa66f93beae6334586e145ca5906b363c3ba95e33'
-_DM_SIGNATURE = '18460a56f66f64658b8c00b4b507b20da57b180312916b64f3a9e2835aaa9ed23e9b7c2a93426b7d4455c36d12ca42482641602492ba19c111504158a569506eb1a9edb7293340f4af505f3c669534eca8a2ee9bfb673ff296dfd3ba3385f7b090a19adfe4d8f21b9e923e82ddba24be2f6109ab3d2e59ae82fa278576f5722f938a97cfa6517e17f0360bd7e97886080f4ecaae26d6628ade7fb267727aae943893aa5ab38a16a47bf5e856af9e005d6c5f4d2d32309a3c94ebf2991fe58ff2bff950a55e91eddba7733971faf811fb27ec7e5c0367e8753d4b2e3e147156cd4b5d932bfe221e7733d8ed128e4467f6955ab8442ad7233b38ad4b52ab47569dff81bd92c3df245a895851b06765a4d149467e2e276afc587e07e7d5abd9ad9f20feab28f1fce447d9ca6340d713d493d0c7f8e934bc139460d1cb6692ec6bb79416e5e68e1973cc040737a9311548e4cd68ba735f7bd494e96ee9d1d3d079ceb1d780201b355d02c8e2fd9b3087e085faef2a896311c0c684f2e52635b1365c'
-_DM_PUBLIC_N = int('d74101779df580215c069cb8de5be8e6c076ff21846b463da6bbfcfb0428964094825d4c5ed862d615f1764e1d1cee2d78bc9a425d9d9c1bfb4b288135667cc4a282e1bbfcf4909eff8b5e5964613a9469e4a64c64409f7140aa4faabe20e57294cb821e1e49f4b0c66f4583649d02d55d84dda95afeac7d33dbfccde2ccae4c16a141139719f06b4aa06ebf4a3a04f992e21cb952a9c5ce0c6b3b7ae7c5d21e980b1b562d97d5363eb0f8ada97a2b54a5607f91b92a702086f70fba96d34f94d4feb82a8abfe97d2f0ba991b8202a0e3ced9c3e717befc9f5b347ea2e48388027a88f1cff41216f5028fd33072beee1e3ccdee937e5ce278c1a5a320a8d3d20705018d31e621930d62d7dd22b0b84ad25ec4c70d79e2bed27320fa070d3c040873ea8154d5c2519191a22078dd8d529c033eb5c5a7d03a6994da54a41ea043b6546985dda89b9f717ff9f79afe049a519dc516f78eb3bcf8832b2d99ad4854d98fe5531d7472a0bddb1ec564048881bca54225cb283ebe0cfae0c9685afdd11', 16)
+_DM_SOURCE_HASH = 'b3ba327378eae295566e794764cae758e062c41bb627ac5e10f642f52249e491'
+_DM_SIGNATURE = 'cf1e3388d11b28f81cc1752d5ee0fc90d5392032d231d8e446725ae55b2b0ce61f0a3db2c8f282c6274b5b0595a28a2e638f2091ae62dc8aa8bfa7015579278e4943fa4553adc2aacda2fad5085722ed53b577e9f052ee929197381e63c1277b620528cd93def0e36eb8c408a24176dc6c0dfeed959021ef43f91d05cac6b9eeff536b05a4340d03bdaa2c110d6583faf94fde01f3eacde90815e53b1847b1f5a045731e32af2413b0e6ac59fdcda335e36dcbb27c1defde0ca16fe57726373c87efaebccaf5f7ebf3b9d003d421268cd7170fd0a79431b27bbd9950b06516986c1bd360430697291033e52f3581dcde13b2476404a5232381502a7a826c1b8c824147b84cca253e5c65a29eb8792606ad3a7105584696d6243b357cb93d6a83933a3f88e019c2f97cc64272ccc61f53e865edddfe312e1f9b6d187021d57e9646e417401e930c43732ef48ad14a55912c7fde575aff5dbdf8020e40075baefdde8c243d0d926e640e222a29bcc5019561d13992fbc2d0c3c4e77d0a2b6b0e46'
+_DM_PUBLIC_N = int('e498d0ff035c7f6e78efa783484d26bdac253ce93724bba897c1f907c05f1c3db4c1cf9ecc26a41bcadd0c25b50e405682c57e8bd6788b2187d650d834eb2e65c298260508540a8040a44f8579be2f4b48e540d68d7af7eb8ca28e4a0d27aa31ce54c333f235738e830984eeb688e0862819bc44255c450cdd2c1ddf232ba832fae0a776b3632662c681e1e517fbb86c0e042170bf348628b78acf7ca96b7d9a53f20442fa298c9ebf6dd396952b7bcec096086e1b87b126de0ef40a5e1ae64d770fc5b379147078ec543da93f15bc34d291abbc017eca3ec6df5e6a94966868da2f804e6b24b11318406184529e1be24c7a2e6fa36cb312d0826398c5ab06d3f60ab58e587a49113a5034cc1a914d16559541d939322119f610337510d4161451a58859038e143c3661b4af40560193b2e7368f2d147643979882f632fb56e579867134a9e0db2f2907d3a1bd6e93a1767cf13227021111f7cb359ee290e5916c37c042840d027eedc732bdd1a58c4b35f730c04cb8825f0762a0ca68e25aa5', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -181,7 +181,7 @@ def _dm_module_01():
  """
  from typing import Dict, List, Tuple
  LANGUAGE_CHOICES: List[Tuple[str, str, str]] = [
-   ("tr", "Türkçe", "TR - Türkçe (Varsayılan)"),
+   ("tr", "Türkçe", "TR - Türkçe"),
    ("en", "English", "EN - English"),
    ("de", "Deutsch", "DE - Deutsch"),
    ("es", "Español", "ES - Español"),
@@ -1584,8 +1584,8 @@ def _dm_module_01():
      "term_perm_code": "CODE TO EXECUTE",
      "term_perm_prompt": "Allow this terminal/system command to execute on your computer? [Y]es / [N]o: ",
      "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
-     "term_used_header": "TERMINAL USED (TERMİNAL KULLANILDI)",
-     "term_used_code": "CODE USED (KULLANILAN KOD)",
+     "term_used_header": "TERMINAL USED",
+     "term_used_code": "CODE USED",
      "term_used_shell": "Shell / Runtime",
      "term_perm_cwd_lbl": "Working Directory",
      "term_used_cwd": "Working Directory",
@@ -4367,6 +4367,7 @@ def _dm_module_10():
      pass
    return "unknown"
  def tool_system_info(cwd: Path) -> Tuple[bool, str]:
+   os_prof = detect_os_profile()
    shells = detect_available_shells()
    roots = list_mounted_roots()
    folders = get_special_folders()
@@ -5969,8 +5970,17 @@ def _dm_module_16():
          return
      raise ValueError("HTTPS is required except for localhost / loopback")
    except (TypeError, ValueError) as exc:
+     from docmind.i18n import i18n as _i18n
+     _u_msgs = {
+       "tr": "Güvensiz veya geçersiz API adresi: HTTPS kullanın; HTTP sadece localhost için kullanılabilir.",
+       "en": "Insecure or invalid API URL: use HTTPS (HTTP is allowed only for localhost / loopback).",
+       "de": "Unsichere oder ungültige API-URL: HTTPS verwenden (HTTP nur für localhost erlaubt).",
+       "es": "URL de API insegura o no válida: use HTTPS (HTTP solo se permite para localhost).",
+       "fr": "URL API non sécurisée ou invalide : utilisez HTTPS (HTTP autorisé uniquement pour localhost).",
+       "ru": "Небезопасный или неверный URL API: используйте HTTPS (HTTP разрешён только для localhost).",
+     }
      raise DocMindAPIException(
-       "Güvensiz veya geçersiz API adresi: HTTPS kullanın; HTTP sadece localhost için kullanılabilir.",
+       _u_msgs.get(_i18n.lang, _u_msgs["en"]),
        status_code=400,
      ) from exc
  def _redact_known_keys(text: str, headers: Dict[str, str]) -> str:
@@ -7556,7 +7566,7 @@ def _dm_module_20():
    "/tokens",
    "/history",
    "/delete",
-   "/fiyat",
+   "/price",
    "/context",
    "/undo",
    "/tree",
@@ -7736,7 +7746,9 @@ def _dm_module_20():
        for pl in prev_lines[:10]:
          print(self._paint("┃   ", line_col) + pl[:160])
        if len(prev_lines) > 10:
-         print(self._paint("┃   ", line_col) + self._paint(f"... (+{len(prev_lines) - 10} satır / lines)", "2"))
+         from docmind.i18n import i18n as _ui_i18n
+         _ln_w = {"tr": "satır", "en": "lines", "de": "Zeilen", "es": "líneas", "fr": "lignes", "ru": "строк"}.get(_ui_i18n.lang, "lines")
+         print(self._paint("┃   ", line_col) + self._paint(f"... (+{len(prev_lines) - 10} {_ln_w})", "2"))
      if triage_note:
        note_col = "1;33" if "↻" in triage_note else "1;31"
        print(self._paint("┃ ", line_col) + self._paint(_visible_controls(triage_note), note_col))
@@ -8220,8 +8232,8 @@ def _dm_module_22():
    {
      "name": "read_file",
      "description": (
-       "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop/Masaüstü, "
-       "Downloads/İndirilenler, Documents/Belgeler, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
+       "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop, "
+       "Downloads, Documents, localized OS folder names, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
        "text & code, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), OpenDocument (.odt/.ods/.odp), PDF (.pdf), "
        "SQLite (.sqlite/.db), archives (.zip/.tar.gz), and binary/image metadata."
      ),
@@ -8368,7 +8380,7 @@ def _dm_module_22():
      "parameters": {
        "type": "object",
        "properties": {
-         "pattern": {"type": "string", "description": "Filename glob pattern, e.g. '*.py' or '*fatura*'."},
+         "pattern": {"type": "string", "description": "Filename glob pattern, e.g. '*.py' or '*report*'."},
          "path": {"type": "string", "description": "Root directory to search from (default '.')."},
          "include_hidden": {"type": "boolean", "description": "Include hidden files/folders if true."},
          "max_results": {"type": "integer", "description": "Maximum results (default 100)."},
@@ -8495,8 +8507,9 @@ def _dm_module_22():
      "name": "ask_user",
      "description": (
        "Ask the user an interactive question with numbered choices directly in the terminal and receive their immediate answer. "
-       "ALWAYS use this BEFORE writing platform-specific scripts/code/commands when the target OS was not explicitly specified "
-       "(e.g. 'İşletim sisteminiz Arch Linux (Linux) olarak algılandı; buna uyumlu yapacağım. Başka bir sistem ister misiniz yoksa evrensel mi olsun?')."
+       "ALWAYS use this BEFORE writing platform-specific scripts/code when the target OS was not explicitly specified "
+       "(stating their detected OS and offering choices such as targeting their detected OS, universal cross-platform Windows+Linux, or another OS). "
+       "CRITICAL LANGUAGE RULE: Write `question` and every item in `options` 100% in the user's active selected language (NEVER write Turkish if the active language is English, German, Spanish, French, or Russian!)."
      ),
      "parameters": {
        "type": "object",
@@ -8853,7 +8866,8 @@ def _dm_module_23():
      for idx, (code, native_name, label) in enumerate(LANGUAGE_CHOICES, start=1):
        marker = " *" if code == self.config_mgr.config.language else ""
        lines.append(f"  [{idx}] {label}{marker}")
-     self.ui.print_panel("🌐 Language / Dil Seçimi", "\n".join(lines), style="bright_cyan")
+     _lt = {"tr": "🌐 Dil Seçimi", "en": "🌐 Select Language", "de": "🌐 Sprachauswahl", "es": "🌐 Selección de idioma", "fr": "🌐 Choix de la langue", "ru": "🌐 Выбор языка"}.get(i18n.lang, "🌐 Select Language")
+     self.ui.print_panel(_lt, "\n".join(lines), style="bright_cyan")
      raw = self.ui.ask(t("wiz_select_lang")).strip()
      choice_idx = 0
      if raw.isdigit():
@@ -9310,6 +9324,7 @@ def _dm_module_24():
      self.client.on_probe_interrupted = self.usage.mark_interrupted
      self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
    def build_system_prompt(self) -> str:
+     from docmind.i18n import i18n as _ag_i18n
      cwd = self.tools.cwd
      try:
        os_prof = detect_os_profile()
@@ -9342,6 +9357,8 @@ def _dm_module_24():
      except Exception:
        shells_str = "default"
      now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+     lang_code = _ag_i18n.lang
+     lang_name = t("lang_name")
      lang_rule = t("ai_lang_instruction")
      pretty_os = os_prof.get("pretty_name", platform.system())
      os_family = os_prof.get("os_family", platform.system())
@@ -9352,19 +9369,51 @@ def _dm_module_24():
        if self.config_mgr.config.permission_mode == "auto"
        else "Smart Confirm (read/search/navigation tools are automatic; file-write and terminal tools ask user approval)"
      )
+     os_q_examples = {
+       "tr": (
+         f'Örnek: "İşletim sisteminiz {pretty_os} ({os_family}) olarak algılandı; buna uyumlu yapacağım. Başka bir sistem ister misiniz yoksa evrensel (Windows + Linux) mi olsun?" '
+         f'Seçenekler: ["{pretty_os} uyumlu yap", "Çapraz platform / Evrensel (Windows + Linux)", "Windows uyumlu yap", "Farklı sistem"]'
+       ),
+       "en": (
+         f'Example: "Detected operating system: {pretty_os} ({os_family}). Would you like me to build this specifically for {pretty_os}, make it cross-platform (Windows + Linux), or target another OS?" '
+         f'Options: ["Target {pretty_os} ({os_family})", "Cross-platform (Windows + Linux)", "Target Windows", "Other OS"]'
+       ),
+       "de": (
+         f'Beispiel: "Erkanntes Betriebssystem: {pretty_os} ({os_family}). Soll der Code für {pretty_os}, plattformübergreifend (Windows + Linux) oder für ein anderes System erstellt werden?" '
+         f'Optionen: ["Für {pretty_os} ({os_family})", "Plattformübergreifend (Windows + Linux)", "Für Windows", "Anderes System"]'
+       ),
+       "es": (
+         f'Ejemplo: "Sistema operativo detectado: {pretty_os} ({os_family}). ¿Desea que sea compatible con {pretty_os}, multiplataforma (Windows + Linux) u otro sistema?" '
+         f'Opciones: ["Para {pretty_os} ({os_family})", "Multiplataforma (Windows + Linux)", "Para Windows", "Otro sistema"]'
+       ),
+       "fr": (
+         f'Exemple : "Système détecté : {pretty_os} ({os_family}). Voulez-vous cibler {pretty_os}, le rendre multiplateforme (Windows + Linux) ou cibler un autre OS ?" '
+         f'Options : ["Cibler {pretty_os} ({os_family})", "Multiplateforme (Windows + Linux)", "Cibler Windows", "Autre système"]'
+       ),
+       "ru": (
+         f'Пример: "Обнаружена ОС: {pretty_os} ({os_family}). Сделать совместимо с {pretty_os}, кроссплатформенно (Windows + Linux) или для другой ОС?" '
+         f'Варианты: ["Для {pretty_os} ({os_family})", "Кроссплатформенно (Windows + Linux)", "Для Windows", "Другая ОС"]'
+       ),
+     }
+     os_q_guide = os_q_examples.get(lang_code, os_q_examples["en"])
+     non_tr_ban = (
+       f"CRITICAL: Active interface language is **{lang_name} ({lang_code.upper()})**. Do NOT output any Turkish words, headers, or option labels! Every assistant message and every `ask_user` question/option MUST be 100% in **{lang_name}**."
+       if lang_code != "tr"
+       else "KRİTİK: Aktif arayüz dili **Türkçe (TR)**. Tüm mesajlarını ve `ask_user` soru/seçeneklerini doğal ve akıcı **Türkçe** olarak yaz."
+     )
      return (
-       "You are DocMind (created by DEVRAN E. / BEYİP_), an intelligent, self-correcting, OS-aware AI assistant "
-       "and software engineering agent.\n\n"
-       f"## LANGUAGE RULE\n{lang_rule}\n\n"
+       "You are DocMind, an intelligent, self-correcting, OS-aware AI assistant and software engineering agent.\n\n"
+       f"## STRICT LANGUAGE LOCK ({lang_code.upper()} — {lang_name})\n"
+       f"{lang_rule}\n{non_tr_ban}\n\n"
        "## RULE #0 — SMART TOOL & TERMINAL DECISION RULES (CRITICAL!)\n"
-       "- **GREETINGS & PURE GENERAL KNOWLEDGE -> ZERO TOOLS**: For greetings ('merhaba', 'nasılsın'), casual chat, conceptual definitions "
-       "('OOP nedir?'), translations, or general questions unrelated to the computer, call **ZERO TOOLS** and answer directly.\n"
+       "- **GREETINGS & PURE GENERAL KNOWLEDGE -> ZERO TOOLS**: For greetings, casual chat, conceptual definitions, "
+       "translations, or general questions unrelated to the computer, call **ZERO TOOLS** and answer directly.\n"
        "- **NEVER BROWSE CWD FILES UNPROMPTED**: Do NOT open or list random files (`read_file`, `list_directory`, `project_overview`) unless the "
        "user actually asks about files, folders, documents, or a project. Prefer native file tools over terminal commands for reading/searching files.\n"
        "- **TERMINAL / CODE REQUESTS -> 2-OPTION CHOICE (EXPLAIN vs. EXECUTE)**:\n"
-       "  • When `CURRENT_USER_CHOICE` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
-       "  • If `CURRENT_USER_CHOICE` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
-       "FIRST call `ask_user` with 2 choices (in the user's language): `[1] Nasıl yapılacağını anlatayım` vs `[2] Ben terminal kullanarak çalıştırayım`, then strictly follow their choice!\n\n"
+       "  • When `ACTIVE USER SELECTION` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
+       "  • If `ACTIVE USER SELECTION` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
+       f"FIRST call `ask_user` in **{lang_name}** with 2 choices: [1] Explain how to do it vs [2] Run it directly in the terminal, then strictly follow their choice!\n\n"
        "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
        f"- Date/Time: {now_str}\n"
        f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
@@ -9379,18 +9428,17 @@ def _dm_module_24():
        f"- Permission Mode: {mode_desc}\n\n"
        "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
        "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
-       f"   - You know the user's exact system is **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
-       "Always tailor system commands to this exact OS/distro (e.g., `pacman` on Arch Linux, `apt` on Debian/Ubuntu, `dnf` on Fedora, PowerShell/`winget` on Windows).\n"
-       "   - When the user asks you to build/save a platform-dependent script, program, or tool — unless they already specified the target OS — "
-       f"FIRST call `ask_user` to confirm whether they want it tailored to **{pretty_os} ({os_family})**, **cross-platform (Windows + Linux)**, or another OS.\n\n"
+       f"   - Detected system: **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
+       "Always tailor system commands to this exact OS/distro (`pacman` on Arch Linux, `apt` on Debian/Ubuntu, `dnf` on Fedora, PowerShell/`winget` on Windows).\n"
+       f"   - When the user asks you to build/save a platform-dependent script, program, or tool — unless they already specified the target OS — FIRST call `ask_user` in **{lang_name}** to confirm target platform! ({os_q_guide})\n\n"
        "2. **Self-Reflection, Error Triage & Rollback Loop**:\n"
        "   - **When `run_command` or `python_eval` FAILS**:\n"
        "     • **Case A — Requires User Password / `sudo` / `root` / Administrator (`USER_MUST_RUN_MANUALLY`)**: "
-       "DO NOT retry privileged/password commands! Explain clearly why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
+       f"DO NOT retry privileged/password commands! Explain clearly in **{lang_name}** why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
        "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
        "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
        "3. **Full Computer Access When Requested & Security**:\n"
-       "   - When the user DOES ask about files/drives/documents ('masaüstündeki pdfi özetle', 'indirilenlerdeki zipi çıkar', 'D diskine bak'), use native tools directly across any path or drive (`read_file` supports text/code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`).\n"
+       "   - When the user asks about files, drives, or documents anywhere on their computer (Desktop, Downloads, Documents, other drives), use native tools directly (`read_file` supports text/code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`).\n"
        "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
      )
    def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
@@ -9594,6 +9642,8 @@ def _dm_module_24():
      Returns 'explain', 'execute', or 'cancel'.
      """
      from docmind.i18n import i18n
+     if self.config_mgr.config.language and i18n.lang != self.config_mgr.config.language:
+       i18n.set_lang(self.config_mgr.config.language)
      lang = i18n.lang
      table = {
        "tr": (
@@ -9955,7 +10005,8 @@ def _dm_module_25():
          return "continue"
        if cmd in ("/os", "/sys", "/sistem"):
          _, sys_txt = tool_system_info(self.agent.tools.cwd)
-         self.ui.print_panel("💻 Sistem & Dağıtım Profili", sys_txt, style="bright_cyan")
+         _os_t = {"tr": "💻 Sistem & Dağıtım Profili", "en": "💻 System & OS Profile", "de": "💻 System- & OS-Profil", "es": "💻 Perfil del Sistema", "fr": "💻 Profil Système", "ru": "💻 Профиль системы"}.get(i18n.lang, "💻 System & OS Profile")
+         self.ui.print_panel(_os_t, sys_txt, style="bright_cyan")
          return "continue"
        if cmd == "/undo":
          restored = self.agent.undo_mgr.undo_last()
@@ -10504,7 +10555,7 @@ def _dm_module_26():
        break
    bar = "─" * 34
    print()
-   print(ui._paint("╭─── 🌐 Language / Dil " + bar[:13] + "╮", "1;36"))
+   print(ui._paint("╭─── 🌐 Select Language " + bar[:11] + "╮", "1;36"))
    for idx, (code, native_name, _) in enumerate(LANGUAGE_CHOICES, 1):
      mark = " *" if idx == default_num else ""
      print(ui._paint("│  ", "36") + ui._paint(f"[{idx}] ", "1;33") + f"{native_name} ({code.upper()}){mark}")
