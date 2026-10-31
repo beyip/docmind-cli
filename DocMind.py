@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '157b265867234ab5fe83f88fc4e68f23d99e214cb187acf401b6f0f7aeacba4f'
-_DM_SIGNATURE = '4020765c1fdb4a540bc3e688f9120504445cf4130d00aff7406e4adebd6f5ae9c9602c96991231b341634ffc236efbb2541f06e801c961cf4b3638028946aea35c3390bbe03df5d73c97977a3bb5685aaae9b301a0bb3cc1ea8a473cfe07ff1d08745611c46706f352e6b26b08804c6c8e33b838949bc0c5a6be4457b749801901d993fc1b126367423531bb0b5a8c1d27a6fb2f27f0c48e5ef5e53981a2961dabf97055dc65761b9624636dcc12f169018e9618d5856c70ae1904c141b18d984230ed6cc14b6270dbfe17c9e71df6ef552ecb2800c965a01936987597d565cfddfae9c421bf84f25dadb701d33e8ca8ee443c7af8c975fcc8c2dd8d61dfb1ddfb23264c254c1c93f330d73af51823878dc480108fc9c8922241382d231c6b639c7d77673a577cefda8df8a697eddf16d397e1f729af56d47437e3d8e381c26d712bf0297291605668657dda76433687415d36e0f01c7eef63f19d6302df364e7da5b18aa71593f41cab012e59eddf208b815cae6102a09eb886282d76aeeacf'
-_DM_PUBLIC_N = int('b868e59a84d177cc22acfea5932d1e63ab49acbe81da74fae156a40975db3cda0993950e016aae7e39dc0194c9a10e2926976150f8f5ab63baa7759b4f0c8f67d70cbf4c6f95c9cf4b979902ebd573daaab81030b496ab537cf047cac334497f1464453df1ce78dfe9f724b468ac72c4dce26d1a63f0a4393e8236d05bd37ae67b60bf161c73a00fb577605f8ef060250177b3a6deefc22f03671a210aec7329f1a04f681e0b4b5a3d296a1b6d1cacd8926a0eb25a338a8ca30ce497cc0fc9bec2c6e1726a54028fc3d94b4bf139077e3706642032b4ab8335fed05491cbec9abd8684486c7b911e72c73ff0064fdce74dd1eb0e26d21a8b7f2a6e5fa7cab4cb8315e85f96808c41fcf6b2e2afa3c724e0d3d40160cf518603682beb4edc806c311c6808170d960ad3c6a959927f71d82a609a7c2537028017ed5f1884cfa02e926ccebcf2c497aa30072647e88d4b1ce4f9c292f94a56ac338e2d7de8deb52618a942692c34d94b119c21b3b44d5387981e5bc40349947a6768e49f894f6dc3', 16)
+_DM_SOURCE_HASH = '9dc49b0eb8b265dcbe3d52ae52504f814e349181448f2581ecce975f38b005ed'
+_DM_SIGNATURE = '384c6cd900967f5dabc2a637494c8602f66a066ed60556d00e15842c3c9d0a5e8046c221938e43696ce2b95d89398823eda35a6e05331ad1c4a232cc410017d57a1e6f10a4fb41948e289b06095a6306aee47af472e53d169886abd0aa9199c29639b6d0801f6960b5686d8f7298db87bc87385dd0c56b7ed21caad99fc9ec6f1bb0886b53b343d2fce1f095cfe806007ded057bd15efc88d6c9e54072630fad2149a33cd47759f374151953d8c583c3e3d54981f3223b2787bd34259735fd3bb43ca37a6118c1e67b6456ed322734d1e9d7f23b1e4395104b41dd0ce43a969c418f040522435ee83e3a0b5d7edf739b3a8ce80ce1694c1eac0b53a0aef5f2858d38afcabf58fbe55ee206c53db3044c8d381d8db8cc8a508597b38d240e67f15189d5c910af297e4f681acfbd84893d522d310e54ddb427864b5401672f4e484cb1395f025cf0ca769494e55c0ac36048cb54a057e472544443f793270f5f5fb7ede523e5f95e729a1c6545ef0f2b7ffeefd1effca533c0f30e00853e11cefd'
+_DM_PUBLIC_N = int('bfde939b897c00c891b48884d14940e93707128e221ccd546722f5d38801a4b0a6f77b6c40f2e0de11dd183efd960b290e44eb32971e4936154d8ff02918a806fc3c8b1fc2ac2b469f68b609ea2c7b7564846f8799b51f0c857d83d926b4708d9db834b6e65bda752e96f6d258c32d7fdc3b015441732feb5e0556cfdce8cd53922c7c7432fb5bce90b8a35cd964bccf579677ed10c47ff4659f32543f6014aba766488fffed8d05588434f7fd01d57bb898f14b7cd55ddf2170a2e1a6f3acf70733dcd1d948177f984fb2f32cc0023934f8626430aea4f589aefc3a8bebae4f0314d47f01ee42aa74cc57c36b2f08fc1f96b996ee71f291bd225c43f32ae0ee7a75bc3ac8f2b0eeaf73651e52279124031c65c6afba786ed0340274d02dc00609dbc92d2e167e0179b0b0af00465a2a92f18e39daa6991290ab5f53f1ff18a30c06625a13f6d53bcea321b14c8ef92f4a1940ca106fbf2c6d6ada9573e328953a708a954c458e14cf4d64b65f6e2fa347c79055c98d44f093f3b1d55e2e39cd', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -10153,15 +10153,18 @@ def _dm_module_26():
    ui = ConsoleUI(history_file=history_path)
    one_shot_prompt = " ".join(args.prompt).strip() if args.prompt else ""
    startup_lang_asked = False
+   needs_setup_flow = bool(args.setup or (not cfg.setup_completed and not args.api_key and not args.doctor))
    if args.lang:
      cfg.language = args.lang
      i18n.set_lang(args.lang)
      cfg_mgr.save()
      startup_lang_asked = True
-   elif not (one_shot_prompt and not ui.is_tty):
+   elif needs_setup_flow and ui.is_tty:
      _prompt_startup_language(ui, cfg_mgr)
      cfg = cfg_mgr.config
      startup_lang_asked = True
+   else:
+     i18n.set_lang(cfg.language)
    dirty = False
    if args.provider:
      if cfg.provider != args.provider and not args.model:
@@ -10232,7 +10235,7 @@ def _dm_module_26():
      ui.warn(auto_warn.get(i18n.lang, auto_warn["en"]))
    needs_first_setup = not cfg.setup_completed
    if args.setup or (needs_first_setup and ui.is_tty):
-     agent.wizard.run_full_setup(skip_language=startup_lang_asked and not args.setup)
+     agent.wizard.run_full_setup(skip_language=startup_lang_asked)
      agent.refresh_client()
    cfg = cfg_mgr.config
    ui.info(t("effort_active", level=cfg.reasoning_effort))

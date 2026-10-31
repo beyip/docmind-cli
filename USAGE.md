@@ -56,8 +56,8 @@ python DocMind.py
 
 ### Step-by-Step Onboarding Flow
 
-1. **Language Selection (`[1-6]`):**  
-   Immediately upon startup, select your preferred interface and assistant language:
+1. **Language Selection (`[1-6]` — First-Time Setup Only):**  
+   On your very first run (or when running `--setup`), DocMind asks for your preferred language before anything else—and remembers it automatically on all future launches (use `/lang` anytime to switch later):
    - `[1]` Türkçe (`TR`)
    - `[2]` English (`EN`)
    - `[3]` Deutsch (`DE`)
