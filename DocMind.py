@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '9c3c245b7ee9f2c2f92be7ba0d2bdbfb16fb4386b2e151c9b1412cbed8e8fc7f'
-_DM_SIGNATURE = 'e630034ef06a23133741e3ae16d2604bb9783f386563d47205ba309f4d06a7f77a3e9a803b1871af89d4e2c0f79ced8def391ab6469321ea112e04e984fbe99bd6090d538d08360e2b55aaa71190bf76eedac50689545716e59b5f696bed01c03e72bb4f84396ba7a4f1c7f4229f33d9946145dffafc45b9a56a2a7dc5e0ec8826f40875160bcb2b1207eea20496d8fc167af0ea0744a70f4199dca6bfac1c7256f2ddfcb73da281ee4d7912a70446b510dd30fdb75a4f41e9c9b34f9c12c81356aad83234fc1c74fbdb25ca0f8849a052a87a5fb8e7bc512919aedcf44e4a5f0c564efa2eaf141824323189ca756e5771b9dec38e04fbcd9720421d43a34b3aab21d5c2328a7824765bf41eff72efbd7111598d3628fe623990ef5b82215c0bda803dce2ac32726d45c15c6205f85986be2fd864feea43a0a984a90e613d144e5338ed72ad1070f279f4044d4a3684afac9f405199064208adf5bc5ced0ede1fc16397a071b2d3ee596fae09cb5d6ae896b976de243343f67884d4f47b01ff0'
-_DM_PUBLIC_N = int('ec07a4ff83445d91f860f86ce7165015c41dff6247104aaec10f3ca0e941bf04367fe764766b59c8dde027a1fbf546c1c6712b8b3e66c403a7302c39e0744f046a79972121e2fa49ed0b39a336eb317295e0bda5c26bb9e7ffac1c7858c612dc4f88b0b0ea7b17731137dd78b90cdbdcb49e6b933a04f31255e55c96ae81382e5cc1b9c4335de1b97f75048ce0e512634c2818aca14c5040caec7d9696922ca2c9642ec32b2b08f91f48acf2b77739502e30985c83333c07bf56e35ecfa63c64e38b4597b8b1ae246c1aac2e186e27ef1995e88e326ba81f388393782c00d6b7273eb4c8050555ce2274a12e724d0b952c2c7ddf885fa381be3b582286f34ccb4b8cf6a62a90135ccef58e55ef955bd11b270c9806cf143d670057aa15c5b72446913ac6b0717689cbae17927ad5795731b22a8c0bf707aae66cf0072ba012b7210b78f7ceb83d8fa688469c04b396b5fc5be3cf364ffa24e29195dc7d2acee2451e5a73af7e9513ef8e2912e89f3b207a62de678194c1468df16ed09a57ed11', 16)
+_DM_SOURCE_HASH = 'bcbfc762ddf195324143fb1aa66f93beae6334586e145ca5906b363c3ba95e33'
+_DM_SIGNATURE = '18460a56f66f64658b8c00b4b507b20da57b180312916b64f3a9e2835aaa9ed23e9b7c2a93426b7d4455c36d12ca42482641602492ba19c111504158a569506eb1a9edb7293340f4af505f3c669534eca8a2ee9bfb673ff296dfd3ba3385f7b090a19adfe4d8f21b9e923e82ddba24be2f6109ab3d2e59ae82fa278576f5722f938a97cfa6517e17f0360bd7e97886080f4ecaae26d6628ade7fb267727aae943893aa5ab38a16a47bf5e856af9e005d6c5f4d2d32309a3c94ebf2991fe58ff2bff950a55e91eddba7733971faf811fb27ec7e5c0367e8753d4b2e3e147156cd4b5d932bfe221e7733d8ed128e4467f6955ab8442ad7233b38ad4b52ab47569dff81bd92c3df245a895851b06765a4d149467e2e276afc587e07e7d5abd9ad9f20feab28f1fce447d9ca6340d713d493d0c7f8e934bc139460d1cb6692ec6bb79416e5e68e1973cc040737a9311548e4cd68ba735f7bd494e96ee9d1d3d079ceb1d780201b355d02c8e2fd9b3087e085faef2a896311c0c684f2e52635b1365c'
+_DM_PUBLIC_N = int('d74101779df580215c069cb8de5be8e6c076ff21846b463da6bbfcfb0428964094825d4c5ed862d615f1764e1d1cee2d78bc9a425d9d9c1bfb4b288135667cc4a282e1bbfcf4909eff8b5e5964613a9469e4a64c64409f7140aa4faabe20e57294cb821e1e49f4b0c66f4583649d02d55d84dda95afeac7d33dbfccde2ccae4c16a141139719f06b4aa06ebf4a3a04f992e21cb952a9c5ce0c6b3b7ae7c5d21e980b1b562d97d5363eb0f8ada97a2b54a5607f91b92a702086f70fba96d34f94d4feb82a8abfe97d2f0ba991b8202a0e3ced9c3e717befc9f5b347ea2e48388027a88f1cff41216f5028fd33072beee1e3ccdee937e5ce278c1a5a320a8d3d20705018d31e621930d62d7dd22b0b84ad25ec4c70d79e2bed27320fa070d3c040873ea8154d5c2519191a22078dd8d529c033eb5c5a7d03a6994da54a41ea043b6546985dda89b9f717ff9f79afe049a519dc516f78eb3bcf8832b2d99ad4854d98fe5531d7472a0bddb1ec564048881bca54225cb283ebe0cfae0c9685afdd11', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -6530,7 +6530,7 @@ def _dm_module_16():
      if api_key:
        headers["Authorization"] = f"Bearer {api_key}"
      if self.cfg.provider == "openrouter":
-       headers["HTTP-Referer"] = "https://github.com/docmind-agent"
+       headers["HTTP-Referer"] = "https://github.com/beyip/docmind-cli"
        headers["X-Title"] = "DocMind Terminal AI Agent"
      use_prompt_tools = self._prompt_tool_fallback and bool(tools)
      effective_system = (
@@ -8077,7 +8077,7 @@ def _dm_module_21():
      for attempt in range(max_tries):
        try:
          prompt_lbl = t("perm_dangerous_prompt") if dangerous else t("term_perm_prompt")
-         raw = self.ui.ask(prompt_lbl).strip().lower()
+         raw = self.ui.ask(prompt_lbl).replace("İ", "i").replace("I", "ı").strip().lower().replace("\u0307", "")
        except (KeyboardInterrupt, EOFError):
          print()
          self.ui.warn(t("term_perm_denied"))
@@ -8124,7 +8124,7 @@ def _dm_module_21():
          return False
        self.ui.print_panel(t("perm_title"), f"{t('perm_sensitive_warning')}\n\n{action_summary}", style="bright_red")
        try:
-         raw = self.ui.ask(t("perm_sensitive_prompt")).strip().lower()
+         raw = self.ui.ask(t("perm_sensitive_prompt")).replace("İ", "i").replace("I", "ı").strip().lower().replace("\u0307", "")
        except (KeyboardInterrupt, EOFError):
          return False
        return raw in _FULL_YES_WORDS
@@ -8142,7 +8142,7 @@ def _dm_module_21():
      detail = (action_summary + "\n\n" + t("perm_command_warn", cmd=command_text)) if command_text else action_summary
      self.ui.print_panel(t("perm_title"), detail, style="yellow")
      try:
-       raw = self.ui.ask(t("perm_prompt")).strip().lower()
+       raw = self.ui.ask(t("perm_prompt")).replace("İ", "i").replace("I", "ı").strip().lower().replace("\u0307", "")
      except (KeyboardInterrupt, EOFError):
        print()
        return False
@@ -8417,7 +8417,7 @@ def _dm_module_22():
    {
      "name": "run_command",
      "description": (
-       "Run a real OS terminal command ONLY when strictly required (e.g. running builds/tests/compilers, package managers, or live system commands requested by the user). NEVER use for greetings, math, general Q&A, code explanations, or file tasks already handled by native tools (read_file/list_directory/search_files). Always asks explicit user approval first."
+       "Execute a terminal command on the user's OS (Bash/sh on Linux/macOS, PowerShell/CMD on Windows). Use whenever the user chooses/asks to run a command, print output in terminal, run Python/shell snippets, test/build code, or inspect live system state. Do NOT use for casual greetings or pure file reads already handled by read_file. Always asks user approval before executing."
      ),
      "parameters": {
        "type": "object",
@@ -8437,7 +8437,7 @@ def _dm_module_22():
    {
      "name": "python_eval",
      "description": (
-       "Execute Python 3 on the user's machine ONLY when live computation/verification on local data is genuinely required or explicitly requested. NEVER call for simple math, date/time, conceptual questions, or showing example code. Always asks explicit user approval first."
+       "Execute a Python 3 snippet/code on the user's computer and return real stdout/stderr. Use whenever the user asks/chooses to run Python code (including printing Hello World, calculations, scripts, or verifications). Do NOT call during casual greetings or when the user chose explanation-only mode. Always asks user approval before executing."
      ),
      "parameters": {
        "type": "object",
@@ -9087,71 +9087,100 @@ def _dm_module_24():
  import re
  from docmind.core.providers import ModelResponse, ProviderClient
  from docmind.core.streaming import KEEPALIVE_POOL
+ _TR_ASCII_MAP = str.maketrans("çğıöşü", "cgiosu")
+ def _tr_fold(text: str) -> str:
+   return (text or "").replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
+ def _ascii_fold(text: str) -> str:
+   return _tr_fold(text).translate(_TR_ASCII_MAP)
  _PURE_CHAT_EXACT = {
-   "merhaba", "selam", "selamlar", "slm", "sa", "as", "selamun aleykum", "selamün aleyküm",
-   "günaydın", "gunaydin", "iyi günler", "iyi akşamlar", "iyi geceler", "merhabalar",
-   "nasılsın", "nasilsin", "naber", "ne haber", "iyi misin", "keyifler nasıl",
-   "teşekkürler", "tesekkurler", "teşekkür ederim", "sağ ol", "sagol", "sağol", "eyvallah",
-   "tamam", "tamamdır", "ok", "okay", "peki", "anladım", "harika", "süper", "güzel",
-   "kimsin", "sen kimsin", "adın ne", "nesin sen", "ne yapabilirsin", "neler yapabilirsin",
+   "merhaba", "selam", "selamlar", "slm", "sa", "as", "selamun aleykum",
+   "gunaydin", "iyi gunler", "iyi aksamlar", "iyi geceler", "merhabalar",
+   "nasilsin", "naber", "ne haber", "iyi misin", "keyifler nasil",
+   "tesekkurler", "tesekkur ederim", "sag ol", "sagol", "eyvallah",
+   "tamam", "tamamdir", "ok", "okay", "peki", "anladim", "harika", "super", "guzel",
+   "kimsin", "sen kimsin", "adin ne", "nesin sen", "ne yapabilirsin", "neler yapabilirsin",
    "hi", "hello", "hey", "yo", "good morning", "good evening", "how are you", "whats up",
    "thanks", "thank you", "thx", "who are you", "what is your name", "what can you do",
    "hallo", "hola", "bonjour", "salut", "привет", "здравствуйте", "спасибо",
  }
- _ACTION_CUES_RE = re.compile(
-   r"(?i)(?:"
+ _ACTION_CUES_ASCII_RE = re.compile(
+   r"(?:"
    r"[/\\~]|\b[a-z]:|"
    r"\.(?:py|js|ts|tsx|jsx|json|md|txt|pdf|docx?|xlsx?|pptx?|odt|ods|odp|zip|tar|gz|sh|bat|ps1|cmd|html?|css|sql|db|sqlite|ya?ml|toml|ini|cfg|conf|log|csv|xml|c|cpp|h|rs|go|java|kt|cs|php|rb)\b|"
-   r"\b(?:dosya|klasör|klasor|dizin|masaüst|masaust|indirilen|belge|disk|sürücü|surucu|"
-   r"oluştur|olustur|düzenle|duzenle|değiştir|degistir|güncelle|guncelle|"
-   r"kaldır|kaldir|kopyala|adlandır|adlandir|arşiv|arsiv|çıkar|cikar|"
-   r"listele|incele|analiz|özetle|ozetle|kontrol|düzelt|duzelt|onar|"
-   r"çalıştır|calistir|koştur|kostur|başlat|baslat|durdur|yükle|yukle|indir|derle|test|"
-   r"terminal|komut|kabuk|shell|bash|powershell|cmd|script|betik|proje|repo|git|uygulama|program|bot|oyun|"
-   r"sistem|işlem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pip\b|npm\b|pacman|apt\b|dnf\b|winget|brew\b|"
-   r"kodla|hazırla|hazirla|tasarla)"
-   r"|\b(?:oku(?:\b|mak|y|r|sana)|aç(?:\b|mak|ıp|arak|sana|abilir)|ac(?:\b|mak|ip|sana)|"
-   r"yaz(?:\b|mak|ıp|dır|sana|abilir)|ekle(?:\b|mek|yip|sana)|sil(?:\b|mek|ip|sene|ebilir)|"
-   r"taşı(?:\b|mak|yıp)|tasi(?:\b|mak)|ara(?:\b|mak|ma|t|yıp)|bul(?:\b|mak|up|sana)|tara(?:\b|mak|ma)|"
-   r"kur(?:\b|ulum|mak|up|sana)|geri al|araç|arac)"
-   r"|\b(?:file|files|folder|folders|directory|directories|path|paths|desktop|downloads?|documents?|drives?|"
+   r"\b(?:dosya|klasor|dizin|masaust|indirilen|belge|disk|surucu|"
+   r"olustur|duzenle|degistir|guncelle|kaldir|kopyala|adlandir|arsiv|cikar|"
+   r"listele|incele|analiz|ozetle|kontrol|duzelt|onar|"
+   r"calistir|kostur|baslat|durdur|yukle|indir|derle|test|yazdir|"
+   r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|script|betik|"
+   r"pyt?hon|pyrthon|pyhton|phyton|piton|node|npm|pip|git|java|gcc|cargo|go\b|"
+   r"print|echo|hello world|merhaba dunya|ekrana|"
+   r"proje|repo|uygulama|program|bot|oyun|kod|"
+   r"sistem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pacman|apt\b|dnf\b|winget|brew\b|"
+   r"hazirla|tasarla|oku|ac\b|yaz|ekle|sil|tasi|ara|bul|tara|kur|geri al|arac|"
+   r"file|folder|directory|path|desktop|download|document|drive|"
    r"read|open|write|create|save|edit|modify|update|delete|remove|move|copy|rename|extract|"
    r"search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
-   r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)\b"
+   r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)"
    r")"
  )
+ _TERMINAL_CANDIDATE_RE = re.compile(
+   r"\b(?:"
+   r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|"
+   r"calistir|kostur|yazdir|print|echo|hello\s+world|merhaba\s+dunya|ekrana\s+yaz|"
+   r"pyt?hon|pyrthon|pyhton|phyton|piton|"
+   r"run\b|execute\b|compile|derle|test\s+et|testleri|paket\s+kur|pip\s+install|npm\s+run|git\s+"
+   r")"
+ )
+ _PURE_CONCEPT_QUESTION_RE = re.compile(
+   r"^(?:nedir|ne\s+demek|farki\s+ne|nasil\s+calisir|what\s+is|what\s+are|why\s+is|explain\s+what)\b|"
+   r"\b(?:nedir|ne\s+demek|ne\s+ise\s+yarar)\s*\??$"
+ )
  def _should_expose_tools(user_input: str, messages: List[Dict[str, Any]]) -> bool:
-   """
-   Prevent unnecessary file reads and shell commands on greetings, small talk,
-   simple math, and pure conceptual Q&A when no active file/tool task is in progress.
-   """
+   """Only suppress tools on unmistakable greetings / small talk; keep tools available for all real tasks!"""
    raw = (user_input or "").strip()
    if not raw:
      return False
-   norm = re.sub(r"[^\w\s]+", " ", raw.lower(), flags=re.UNICODE)
+   folded = _ascii_fold(raw)
+   norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
    norm = re.sub(r"\s+", " ", norm).strip()
    if norm in _PURE_CHAT_EXACT:
      return False
-   if len(raw) > 220 or "\n" in raw or "```" in raw:
+   if _ACTION_CUES_ASCII_RE.search(folded):
      return True
-   if _ACTION_CUES_RE.search(raw):
-     return True
-   # Check if recent conversation turn was actively using tools or asking a follow-up
    recent_msgs = messages[-4:] if len(messages) >= 4 else messages
    for m in recent_msgs:
      if m.get("role") == "tool" or m.get("tool_calls"):
        return True
      if m.get("role") == "assistant" and "?" in str(m.get("content") or ""):
        return True
-   # Pure arithmetic / short conversational / "what is X" conceptual questions without local cues -> no tools needed!
-   if re.fullmatch(r"[0-9\s+\-*/()%.,=^?]+(?:kaç|kac|eder|yapıyor|yapar|equals|what is)?[0-9\s?]*", raw.lower()):
+   if re.fullmatch(r"[0-9\s+\-*/()%.,=^?]+(?:kac|eder|yapiyor|yapar|equals|what is)?[0-9\s?]*", folded):
      return False
-   words = norm.split()
-   if len(words) <= 6 and not _ACTION_CUES_RE.search(raw):
+   if len(norm.split()) <= 4 and _PURE_CONCEPT_QUESTION_RE.search(norm):
+     return False
+   if len(norm.split()) <= 3:
      return False
    return True
+ def _is_explain_or_execute_candidate(user_input: str) -> bool:
+   """
+   Detect requests involving terminal/command/code execution or printing in terminal
+   where the agent should ask the user: [1] Explain how to do it vs [2] Run it myself!
+   """
+   raw = (user_input or "").strip()
+   if not raw or raw.startswith("/"):
+     return False
+   folded = _ascii_fold(raw)
+   norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
+   norm = re.sub(r"\s+", " ", norm).strip()
+   if norm in _PURE_CHAT_EXACT or _PURE_CONCEPT_QUESTION_RE.search(norm):
+     return False
+   # Pure file read/summarize without terminal/execution cues should directly read the file
+   file_read_only = bool(re.search(r"\b(?:ozetle|oku\b|icerigini|read\b|summarize)\b", folded)) and not bool(
+     re.search(r"\b(?:terminal|calistir|kostur|yazdir|print|echo|bash|powershell|cmd)\b", folded)
+   )
+   if file_read_only:
+     return False
+   return bool(_TERMINAL_CANDIDATE_RE.search(folded))
  def _tool_fingerprint(name: str, arguments: Any) -> str:
-   """Stable, non-logged identity for exact repeated requests in this turn."""
    try:
      encoded = json.dumps([name, arguments], ensure_ascii=False, sort_keys=True, separators=(',', ':'), default=str)
    except (TypeError, ValueError):
@@ -9179,6 +9208,7 @@ def _dm_module_24():
      self._streamed_text = False
      self._streamed_chunks: List[str] = []
      self._turn_system_prompt: Optional[str] = None
+     self._turn_exec_mode: str = "auto"
      self.refresh_client()
    def _history_error(self, exc: Exception) -> None:
      self.config_mgr.log_error("history.write", repr(exc))
@@ -9326,18 +9356,15 @@ def _dm_module_24():
        "You are DocMind (created by DEVRAN E. / BEYİP_), an intelligent, self-correcting, OS-aware AI assistant "
        "and software engineering agent.\n\n"
        f"## LANGUAGE RULE\n{lang_rule}\n\n"
-       "## RULE #0 — STRICT TOOL DISCIPLINE (WHEN TO USE vs. WHEN NOT TO USE TOOLS — CRITICAL!)\n"
-       "- **DO NOT CALL ANY TOOLS FOR CONVERSATION OR GENERAL QUESTIONS**: For greetings, casual chat, general knowledge, "
-       "concept explanations, programming/algorithm explanations, math, translations, text writing, or showing short code examples "
-       "in chat (when the user did NOT ask to create/edit a file or inspect their machine), **CALL ZERO TOOLS** and reply directly, "
-       "concisely, and naturally.\n"
-       "- **NEVER OPEN OR READ FILES UNPROMPTED**: Do NOT call `read_file`, `list_directory`, `project_overview`, `search_files`, "
-       "or `grep_search` unless the user's request genuinely requires inspecting, finding, summarizing, or editing files/folders on their computer. "
-       "Never browse the current working directory out of curiosity! When inspecting files, open ONLY the specific files relevant to the task.\n"
-       "- **NEVER RUN TERMINAL / PYTHON COMMANDS UNNECESSARILY**: Do NOT call `run_command` or `python_eval` for simple calculations, "
-       "date/time/OS info (already provided below!), general Q&A, or file reading/searching/listing that native tools (`read_file`, "
-       "`list_directory`, `search_files`, `grep_search`, `check_syntax`) handle directly without bothering the user with a terminal approval prompt! "
-       "Use `run_command` / `python_eval` ONLY when executing real builds, tests, compilers, scripts, package managers, or live system commands is truly necessary.\n\n"
+       "## RULE #0 — SMART TOOL & TERMINAL DECISION RULES (CRITICAL!)\n"
+       "- **GREETINGS & PURE GENERAL KNOWLEDGE -> ZERO TOOLS**: For greetings ('merhaba', 'nasılsın'), casual chat, conceptual definitions "
+       "('OOP nedir?'), translations, or general questions unrelated to the computer, call **ZERO TOOLS** and answer directly.\n"
+       "- **NEVER BROWSE CWD FILES UNPROMPTED**: Do NOT open or list random files (`read_file`, `list_directory`, `project_overview`) unless the "
+       "user actually asks about files, folders, documents, or a project. Prefer native file tools over terminal commands for reading/searching files.\n"
+       "- **TERMINAL / CODE REQUESTS -> 2-OPTION CHOICE (EXPLAIN vs. EXECUTE)**:\n"
+       "  • When `CURRENT_USER_CHOICE` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
+       "  • If `CURRENT_USER_CHOICE` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
+       "FIRST call `ask_user` with 2 choices (in the user's language): `[1] Nasıl yapılacağını anlatayım` vs `[2] Ben terminal kullanarak çalıştırayım`, then strictly follow their choice!\n\n"
        "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
        f"- Date/Time: {now_str}\n"
        f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
@@ -9450,9 +9477,14 @@ def _dm_module_24():
          if _m.get("role") == "user":
            last_user_msg = str(_m.get("content") or "")
            break
-       has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
-       expose_tools = has_tool_turn_already or _should_expose_tools(last_user_msg, self.context.messages[:-1])
-       tool_schemas = self.tools.get_schemas() if expose_tools else []
+       if self._turn_exec_mode == "explain":
+         tool_schemas = []
+       elif self._turn_exec_mode == "execute":
+         tool_schemas = self.tools.get_schemas()
+       else:
+         has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
+         expose_tools = has_tool_turn_already or _should_expose_tools(last_user_msg, self.context.messages[:-1])
+         tool_schemas = self.tools.get_schemas() if expose_tools else []
        try:
          self._streamed_text = False
          self._streamed_chunks = []
@@ -9554,6 +9586,74 @@ def _dm_module_24():
          raw_detail="User token threshold reached",
        )
        self.ui.print_alert(warn_alert)
+   def _prompt_explain_or_execute(self) -> str:
+     """
+     Ask the user with 2 clear options:
+       [1] Explain how to do it
+       [2] Execute it directly using the terminal
+     Returns 'explain', 'execute', or 'cancel'.
+     """
+     from docmind.i18n import i18n
+     lang = i18n.lang
+     table = {
+       "tr": (
+         "⚡ Nasıl Yapalım?",
+         "Anlatayım mı? (Nasıl yapılacağını adım adım açıkla)",
+         "Ben mi çalıştırayım? (Terminal kullanarak kendim çalıştırayım)",
+         "Seçiminiz [1=Anlat / 2=Ben Çalıştırayım]: ",
+       ),
+       "en": (
+         "⚡ How Would You Like to Proceed?",
+         "Explain it? (Show step-by-step how to do it)",
+         "Run it myself? (Execute directly using the terminal)",
+         "Your choice [1=Explain / 2=Run in Terminal]: ",
+       ),
+       "de": (
+         "⚡ Wie möchten Sie fortfahren?",
+         "Erklären? (Schritt für Schritt zeigen)",
+         "Selbst ausführen? (Direkt im Terminal ausführen)",
+         "Ihre Wahl [1=Erklären / 2=Ausführen]: ",
+       ),
+       "es": (
+         "⚡ ¿Cómo desea continuar?",
+         "¿Explicarlo? (Mostrar paso a paso cómo hacerlo)",
+         "¿Ejecutarlo yo mismo? (Ejecutar usando la terminal)",
+         "Su elección [1=Explicar / 2=Ejecutar]: ",
+       ),
+       "fr": (
+         "⚡ Comment souhaitez-vous procéder ?",
+         "Expliquer ? (Montrer étape par étape)",
+         "Exécuter moi-même ? (Lancer dans le terminal)",
+         "Votre choix [1=Expliquer / 2=Exécuter] : ",
+       ),
+       "ru": (
+         "⚡ Как поступим?",
+         "Объяснить? (Показать пошагово, как сделать)",
+         "Выполнить самому? (Запустить через терминал)",
+         "Ваш выбор [1=Объяснить / 2=Запустить]: ",
+       ),
+     }
+     hdr, opt1, opt2, ask_lbl = table.get(lang, table["en"])
+     bar = "─" * 62
+     print()
+     print(self.ui._paint(f"╭─── {hdr} " + bar[: max(4, 56 - len(hdr))] + "╮", "1;36"))
+     print(self.ui._paint("│  ", "36") + self.ui._paint("[1] ", "1;33") + opt1)
+     print(self.ui._paint("│  ", "36") + self.ui._paint("[2] ", "1;32") + opt2)
+     print(self.ui._paint("╰" + bar + "╯", "36"), flush=True)
+     explain_words = {"1", "anlat", "anlatayim", "acikla", "explain", "erklaren", "explicar", "expliquer", "объяснить"}
+     exec_words = {"2", "calistir", "ben", "sen", "sen calistir", "ben calistirayim", "terminal", "uygula", "run", "execute", "ausfuhren", "ejecutar", "executer", "запустить"}
+     while True:
+       try:
+         ans = _ascii_fold(self.ui.ask(ask_lbl)).strip().rstrip(".")
+       except (KeyboardInterrupt, EOFError):
+         print()
+         return "cancel"
+       if ans in explain_words:
+         return "explain"
+       if ans in exec_words:
+         return "execute"
+       if not self.ui.is_tty:
+         return "execute"
    def run_turn(self, user_input: str) -> bool:
      """
          Process a user prompt through multi-step autonomous tool execution until completion.
@@ -9562,12 +9662,34 @@ def _dm_module_24():
      _dm_owner_gate()
      _dm_signature_gate()
      checkpoint_len = len(self.context.messages)
-     self._turn_system_prompt = self.build_system_prompt()
+     self._turn_exec_mode = "auto"
+     mode_directive = ""
+     if not self.non_interactive and _is_explain_or_execute_candidate(user_input):
+       picked = self._prompt_explain_or_execute()
+       if picked == "cancel":
+         self.ui.warn(t("ctrl_c_cancelled"))
+         return False
+       self._turn_exec_mode = picked
+       if picked == "explain":
+         mode_directive = (
+           "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXPLAIN_ONLY]\n"
+           "The user explicitly chose option [1] ('Explain how to do it'). "
+           "DO NOT call `run_command` or `python_eval` or any tool. Explain clearly and concisely how to perform their request with ready-to-copy command/code examples."
+         )
+       elif picked == "execute":
+         mode_directive = (
+           "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXECUTE_IN_TERMINAL]\n"
+           "The user explicitly chose option [2] ('Run it yourself using the terminal')! "
+           "DO NOT merely explain how to do it in text! You MUST immediately call `run_command` (for terminal/shell/python CLI commands, e.g. `python3 -c \"print('Hello, World!')\"` on Linux/macOS or `python -c \"print('Hello, World!')\"` on Windows) "
+           "or `python_eval` to execute the task right now, then briefly present the output!"
+         )
+     self._turn_system_prompt = self.build_system_prompt() + mode_directive
      begin_turn = getattr(self.ui, "begin_turn", None)
      if begin_turn:
        begin_turn()
      max_steps = max(5, self.config_mgr.config.max_steps_per_turn)
      step = 0
+     execute_nudged = False
      denied_calls = set()
      manual_auth_calls = set()
      last_failed_key = None
@@ -9620,6 +9742,13 @@ def _dm_module_24():
          if resp.stop_reason == "max_tokens":
            self.ui.warn(t("output_truncated_warn"))
          if not resp.tool_calls:
+           if self._turn_exec_mode == "execute" and step == 1 and not execute_nudged and resp.stop_reason != "max_tokens":
+             execute_nudged = True
+             self.context.add_user(
+               "[SYSTEM REMINDER]: The user selected option [2] ('Run it yourself in the terminal'). "
+               "Do not stop at text explanation — call `run_command` or `python_eval` right now to execute it!"
+             )
+             continue
            return resp.stop_reason != "max_tokens"
          halt_remaining = False
          batch_failed = False
@@ -9691,6 +9820,7 @@ def _dm_module_24():
        return False
      finally:
        self._turn_system_prompt = None
+       self._turn_exec_mode = "auto"
      return True
    def _heal_dangling_tool_calls(self) -> None:
      """
@@ -9757,7 +9887,7 @@ def _dm_module_25():
      _dm_owner_gate()
      _dm_digest_gate()
      parts = raw_line.strip().split(maxsplit=1)
-     cmd = parts[0].lower()
+     cmd = parts[0].replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
      arg = parts[1].strip() if len(parts) > 1 else ""
      try:
        if cmd in ("/exit", "/quit", "/q", "/cikis", "/çıkış"):
@@ -9878,7 +10008,7 @@ def _dm_module_25():
          else:
            self._run_doctor(test_tools=bool(arg))
          return "continue"
-       if cmd == "/clear":
+       if cmd in ("/clear", "/temizle"):
          self.agent.context.clear()
          self.agent.history.new_session()
          self.ui.clear()

@@ -90,8 +90,12 @@ Once at the `DocMind ❯` prompt, type natural-language requests:
   - *"Check which process is using the most memory."*
   - *"Run my test suite and fix any failing tests."*
 
-### How Terminal Permission & Error Triage Work
+### How Explain-vs-Execute & Terminal Permission Work
 
+0. **2-Option Mode Selection (`[1] Explain` vs. `[2] Run in Terminal`):**  
+   When you ask for a command, terminal output, or runnable snippet (for example, *"Print Hello World in the terminal using Python"*), DocMind asks:
+   - `[1]` **Explain it** — DocMind explains step-by-step how to run it without executing anything.
+   - `[2]` **Run it myself** — DocMind invokes the terminal (`run_command` / `python_eval`) to perform the action live on your machine.
 1. **Pre-Execution Approval:**  
    Before executing any shell command (`run_command`) or Python snippet (`python_eval`) — even in `/auto` mode — DocMind shows a permission box containing:
    - Shell / Runtime (`bash`, `powershell`, `cmd`, or `python`)
