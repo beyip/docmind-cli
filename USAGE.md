@@ -131,6 +131,7 @@ Type any of these commands at the `DocMind ❯` prompt:
 | `/save [name]` | Export current conversation to `~/.docmind-single/sessions/` |
 | `/load <name>` | Load a saved session |
 | `/clear` | Clear terminal screen and start a fresh conversation |
+| `/reset` | Delete saved `.json` configuration after confirmation and close the terminal |
 | `/exit` | Exit DocMind CLI cleanly |
 
 > **Multiline Input Tip:** End a line with `\` to continue writing on the next line, or type `"""` to enter a multi-line block and finish with `"""`.
@@ -163,7 +164,9 @@ python3 DocMind.py --lang en "Summarize README.md in 5 bullet points"
 
 ## 7. Resetting Configuration
 
-To reset saved settings and trigger first-time onboarding again, delete `config.json`:
+Inside DocMind CLI, simply run `/reset` and confirm (`ok` / `yes`) to automatically delete your saved `.json` configuration file and close the terminal.
+
+Alternatively, you can delete `config.json` manually from your shell:
 
 - **Linux / macOS:**
   ```bash

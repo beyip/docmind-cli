@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '9dc49b0eb8b265dcbe3d52ae52504f814e349181448f2581ecce975f38b005ed'
-_DM_SIGNATURE = '384c6cd900967f5dabc2a637494c8602f66a066ed60556d00e15842c3c9d0a5e8046c221938e43696ce2b95d89398823eda35a6e05331ad1c4a232cc410017d57a1e6f10a4fb41948e289b06095a6306aee47af472e53d169886abd0aa9199c29639b6d0801f6960b5686d8f7298db87bc87385dd0c56b7ed21caad99fc9ec6f1bb0886b53b343d2fce1f095cfe806007ded057bd15efc88d6c9e54072630fad2149a33cd47759f374151953d8c583c3e3d54981f3223b2787bd34259735fd3bb43ca37a6118c1e67b6456ed322734d1e9d7f23b1e4395104b41dd0ce43a969c418f040522435ee83e3a0b5d7edf739b3a8ce80ce1694c1eac0b53a0aef5f2858d38afcabf58fbe55ee206c53db3044c8d381d8db8cc8a508597b38d240e67f15189d5c910af297e4f681acfbd84893d522d310e54ddb427864b5401672f4e484cb1395f025cf0ca769494e55c0ac36048cb54a057e472544443f793270f5f5fb7ede523e5f95e729a1c6545ef0f2b7ffeefd1effca533c0f30e00853e11cefd'
-_DM_PUBLIC_N = int('bfde939b897c00c891b48884d14940e93707128e221ccd546722f5d38801a4b0a6f77b6c40f2e0de11dd183efd960b290e44eb32971e4936154d8ff02918a806fc3c8b1fc2ac2b469f68b609ea2c7b7564846f8799b51f0c857d83d926b4708d9db834b6e65bda752e96f6d258c32d7fdc3b015441732feb5e0556cfdce8cd53922c7c7432fb5bce90b8a35cd964bccf579677ed10c47ff4659f32543f6014aba766488fffed8d05588434f7fd01d57bb898f14b7cd55ddf2170a2e1a6f3acf70733dcd1d948177f984fb2f32cc0023934f8626430aea4f589aefc3a8bebae4f0314d47f01ee42aa74cc57c36b2f08fc1f96b996ee71f291bd225c43f32ae0ee7a75bc3ac8f2b0eeaf73651e52279124031c65c6afba786ed0340274d02dc00609dbc92d2e167e0179b0b0af00465a2a92f18e39daa6991290ab5f53f1ff18a30c06625a13f6d53bcea321b14c8ef92f4a1940ca106fbf2c6d6ada9573e328953a708a954c458e14cf4d64b65f6e2fa347c79055c98d44f093f3b1d55e2e39cd', 16)
+_DM_SOURCE_HASH = '43cb1da2f56fcba67f3e7e9075c405c9909e4b8e8bae9669aebbe847cd5f0677'
+_DM_SIGNATURE = '7b71c219d44da22c4fb8c984d83fe9f01c043cb721d820bdd951d6c13e4709a64055ce56c9514749628eeed3ab83f2dd2bcf71a7939116e48ca8bd76e0654c59d97b673d6d469b1df2bd22f29aa1df66f188c6f3a2a9198cf86a680897276a2191501dabd72dcfd8f1f17ce9e31b46e68261b091c189436b20dee8284542472819369d604d4a21de3b8e6eda17f5b858d0a8b23c09764bad6d8d6812f0a8bae8990f58b1da970f3ec67a8e049ba231de465408fa8851e8027cdbb1f61d77eb2f71c9a3e361c6c5a88cda357510fd25badb88dec4f5ccc81a63992afca20f78b16ac678041d12c6f3b80acd0c015a602f18fc1c0bb38cb1c14648d2e8aee61e9ca87ca9c0f4d18c8db87eb8f6940a5bb7546cb9ea67a023d44a980637840da811d2d51eac081302666c976943c7f27b9c4d4caa0a02f4be227d77f1c65dee66e26e54d4fbfd778b457fafa3a0486c65ea028fdd2e15b82465f5c5e1306f26cde581c097a7436702a2735ef1d834c7345c240402f9ffb7332ad46af6d3b0f40a3a'
+_DM_PUBLIC_N = int('f0f5de2a3f61d4e9a8203197e8cc2ea8ec5faa30b94a690d4374d3b813d8db3b0c1405b879b52632bc1f9dd5c027937a5c8ac14212ea10661541fc2ca08bd409cf43e2921e9e6cd0142143dbc7cea65ab08622a8a9a135e7b0d9306e6565ba9e32b0e960bce7eeca3e11fb586bc03b35a54dcb6a36511f535144b450aff7158450c4572b93abc8063b9cae0712b1c34a74eefd370bb33991c247bfd40d2d367240398c33fc2b18ebf5b8db02036445ef1fe1371ebc8a6637b333be592d83ed3f35e4b9bc761dd06f23ff6729becf7d68f269d0f503381c23c74ad585a271d09dc7ea9cf559f5861619ed5d8601b7c1844014b79dd37468f6b27793d3a015f45c3fbd4cbf901dece7334f1a140dc271e3aa75cd8635447c6216b30de636fc36c44df152350c79cf47724e1f34f0f2dab45666b700295bfdb25fc958885032dd7eebb538bcd5bc3ba246f955b3f0e4bfc26d7ce322747296bc7b03e26ca11121c04242765ec698de828ede0d83c22605d69268e2a2d2b8b9c9210569daf7647991', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -919,12 +919,12 @@ def _dm_module_01():
  for _language, _wording in _SAFETY_WORDING.items():
    TRANSLATIONS[_language].update(_wording)
  _SIMPLE_HELP = {
-   "tr": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /exit      Çıkış",
-   "en": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /exit      Exit",
-   "de": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /exit      Beenden",
-   "es": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /exit      Salir",
-   "fr": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /exit      Quitter",
-   "ru": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /exit      Выход",
+   "tr": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış",
+   "en": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit",
+   "de": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden",
+   "es": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir",
+   "fr": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter",
+   "ru": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход",
  }
  for _language, _help in _SIMPLE_HELP.items():
    TRANSLATIONS[_language]["help_body"] = _help
@@ -7436,6 +7436,7 @@ def _dm_module_20():
    "/load",
    "/doctor",
    "/clear",
+   "/reset",
    "/exit",
    "/quit",
  ]
@@ -9696,6 +9697,8 @@ def _dm_module_25():
          self.ui.print_startup_authority_warning()
          self.ui.success(t("cmd_cleared"))
          return "continue"
+       if cmd in ("/reset", "/sifirla", "/sıfırla"):
+         return self._handle_reset()
        self.ui.warn(t("cmd_unknown", cmd=cmd))
        return "continue"
      except Exception as exc:
@@ -9704,6 +9707,74 @@ def _dm_module_25():
        self.ui.print_alert(alert)
        self.ui.info(t("err_skipped_notice"))
        return "continue"
+   def _handle_reset(self) -> str:
+     cfg_path = self.cfg_mgr.config_path
+     lang = i18n.lang
+     msgs = {
+       "tr": (
+         "⚠ FABRİKA AYARLARINA SIFIRLAMA (/reset)",
+         f"DİKKAT: Kayıtlı yapılandırma dosyanız ({cfg_path}) — API anahtarları, dil ve model ayarları dahil — kalıcı olarak silinecek ve ardından terminal kapatılacaktır.",
+         "Sıfırlamayı onaylıyor musunuz? [tamam / evet / iptal=Enter]: ",
+         "Sıfırlama iptal edildi; ayarlarınıza dokunulmadı.",
+         "Ayar dosyası (.json) silindi ve DocMind sıfırlandı. Terminal kapatılıyor...",
+       ),
+       "en": (
+         "⚠ FACTORY RESET (/reset)",
+         f"WARNING: Your saved configuration file ({cfg_path}) — including API keys, language, and model preferences — will be permanently deleted, and the terminal will close.",
+         "Confirm reset? [ok / yes / Enter=cancel]: ",
+         "Reset cancelled; your configuration was kept.",
+         "Configuration (.json) deleted and DocMind has been reset. Closing terminal...",
+       ),
+       "de": (
+         "⚠ ZURÜCKSETZEN (/reset)",
+         f"WARNUNG: Ihre Konfigurationsdatei ({cfg_path}) — inkl. API-Schlüssel, Sprache und Modell — wird dauerhaft gelöscht und das Terminal geschlossen.",
+         "Zurücksetzen bestätigen? [ok / ja / Enter=Abbruch]: ",
+         "Zurücksetzen abgebrochen.",
+         "Konfiguration (.json) gelöscht. Terminal wird geschlossen...",
+       ),
+       "es": (
+         "⚠ RESTABLECER AJUSTES (/reset)",
+         f"ADVERTENCIA: Su archivo de configuración ({cfg_path}) — incluidas claves API, idioma y modelo — se eliminará permanentemente y la terminal se cerrará.",
+         "¿Confirmar restablecimiento? [ok / si / Enter=cancelar]: ",
+         "Restablecimiento cancelado.",
+         "Configuración (.json) eliminada. Cerrando terminal...",
+       ),
+       "fr": (
+         "⚠ RÉINITIALISATION (/reset)",
+         f"ATTENTION : Votre fichier de configuration ({cfg_path}) — clés API, langue et modèle inclus — sera définitivement supprimé et le terminal se fermera.",
+         "Confirmer la réinitialisation ? [ok / oui / Entrée=annuler] : ",
+         "Réinitialisation annulée.",
+         "Configuration (.json) supprimée. Fermeture du terminal...",
+       ),
+       "ru": (
+         "⚠ СБРОС НАСТРОЕК (/reset)",
+         f"ВНИМАНИЕ: Файл конфигурации ({cfg_path}) — включая API-ключи, язык и модель — будет удалён, а терминал закроется.",
+         "Подтвердить сброс? [ok / да / Enter=отмена]: ",
+         "Сброс отменён.",
+         "Файл настроек (.json) удалён. Закрытие терминала...",
+       ),
+     }
+     title, body, prompt_txt, cancel_txt, done_txt = msgs.get(lang, msgs["en"])
+     self.ui.print_panel(title, body, style="bright_red")
+     try:
+       ans = self.ui.ask(prompt_txt).strip().strip("'\"").lower()
+     except (KeyboardInterrupt, EOFError):
+       print()
+       self.ui.info(cancel_txt)
+       return "continue"
+     accepted = {"tamam", "ok", "okay", "onayla", "sil", "evet", "e", "yes", "y", "ja", "j", "si", "sí", "s", "oui", "o", "да", "д"}
+     if ans not in accepted:
+       self.ui.info(cancel_txt)
+       return "continue"
+     for target in (cfg_path, cfg_path.with_suffix(".json.tmp")):
+       try:
+         if target.exists():
+           target.unlink()
+       except OSError:
+         pass
+     self.ui.success(done_txt)
+     sys.stdout.flush()
+     return "reset_exit"
    def _handle_history(self, arg: str = "") -> None:
      try:
        sessions = self.agent.history.list_sessions()
@@ -10249,6 +10320,7 @@ def _dm_module_26():
    ui.info(t("type_help_hint"))
    ui.info(t("history_privacy"))
    print()
+   _should_close_terminal = [False]
    with ui.live_footer(agent.status_text, agent.status_text):
      ui.show_inline_status(agent.status_text())
      consecutive_ctrl_c = 0
@@ -10276,6 +10348,9 @@ def _dm_module_26():
          except KeyboardInterrupt:
            print(); ui.warn(t("ctrl_c_cancelled"))
            outcome = "continue"
+         if outcome == "reset_exit":
+           _should_close_terminal[0] = True
+           break
          ui.refresh_footer()
          if not ui.view.footer_active:
            ui.show_inline_status(agent.status_text())
@@ -10287,6 +10362,38 @@ def _dm_module_26():
        agent.run_turn(stripped)
        ui.refresh_footer()
        ui.show_inline_status(agent.status_text())
+   if _should_close_terminal[0]:
+     _close_terminal_window()
+     return 0
+ def _close_terminal_window() -> None:
+   import os as _os
+   if _os.environ.get("DOCMIND_NO_CLOSE_TERMINAL") == "1":
+     return
+   if _os.name == "nt":
+     try:
+       import ctypes as _ct
+       hwnd = _ct.windll.kernel32.GetConsoleWindow()
+       if hwnd:
+         _ct.windll.user32.PostMessageW(hwnd, 0x0010, 0, 0)
+     except Exception:
+       pass
+   else:
+     try:
+       import signal as _sig
+       ppid = _os.getppid()
+       if ppid > 1:
+         comm = ""
+         proc_comm = Path(f"/proc/{ppid}/comm")
+         if proc_comm.exists():
+           comm = proc_comm.read_text(encoding="utf-8", errors="ignore").strip().lower()
+         else:
+           import subprocess as _sp
+           comm = _sp.run(["ps", "-p", str(ppid), "-o", "comm="], capture_output=True, text=True, timeout=2).stdout.strip().lower()
+         base = Path(comm).name.lstrip("-")
+         if base in {"bash", "zsh", "fish", "sh", "dash", "ksh", "tcsh", "csh"}:
+           _os.kill(ppid, _sig.SIGHUP)
+     except Exception:
+       pass
  def main() -> None:
    try:
      code = run_cli()
