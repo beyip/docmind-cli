@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.docmind/
+.docmind-single/
+.env
+.DS_Store
