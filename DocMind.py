@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '43cb1da2f56fcba67f3e7e9075c405c9909e4b8e8bae9669aebbe847cd5f0677'
-_DM_SIGNATURE = '7b71c219d44da22c4fb8c984d83fe9f01c043cb721d820bdd951d6c13e4709a64055ce56c9514749628eeed3ab83f2dd2bcf71a7939116e48ca8bd76e0654c59d97b673d6d469b1df2bd22f29aa1df66f188c6f3a2a9198cf86a680897276a2191501dabd72dcfd8f1f17ce9e31b46e68261b091c189436b20dee8284542472819369d604d4a21de3b8e6eda17f5b858d0a8b23c09764bad6d8d6812f0a8bae8990f58b1da970f3ec67a8e049ba231de465408fa8851e8027cdbb1f61d77eb2f71c9a3e361c6c5a88cda357510fd25badb88dec4f5ccc81a63992afca20f78b16ac678041d12c6f3b80acd0c015a602f18fc1c0bb38cb1c14648d2e8aee61e9ca87ca9c0f4d18c8db87eb8f6940a5bb7546cb9ea67a023d44a980637840da811d2d51eac081302666c976943c7f27b9c4d4caa0a02f4be227d77f1c65dee66e26e54d4fbfd778b457fafa3a0486c65ea028fdd2e15b82465f5c5e1306f26cde581c097a7436702a2735ef1d834c7345c240402f9ffb7332ad46af6d3b0f40a3a'
-_DM_PUBLIC_N = int('f0f5de2a3f61d4e9a8203197e8cc2ea8ec5faa30b94a690d4374d3b813d8db3b0c1405b879b52632bc1f9dd5c027937a5c8ac14212ea10661541fc2ca08bd409cf43e2921e9e6cd0142143dbc7cea65ab08622a8a9a135e7b0d9306e6565ba9e32b0e960bce7eeca3e11fb586bc03b35a54dcb6a36511f535144b450aff7158450c4572b93abc8063b9cae0712b1c34a74eefd370bb33991c247bfd40d2d367240398c33fc2b18ebf5b8db02036445ef1fe1371ebc8a6637b333be592d83ed3f35e4b9bc761dd06f23ff6729becf7d68f269d0f503381c23c74ad585a271d09dc7ea9cf559f5861619ed5d8601b7c1844014b79dd37468f6b27793d3a015f45c3fbd4cbf901dece7334f1a140dc271e3aa75cd8635447c6216b30de636fc36c44df152350c79cf47724e1f34f0f2dab45666b700295bfdb25fc958885032dd7eebb538bcd5bc3ba246f955b3f0e4bfc26d7ce322747296bc7b03e26ca11121c04242765ec698de828ede0d83c22605d69268e2a2d2b8b9c9210569daf7647991', 16)
+_DM_SOURCE_HASH = '9c3c245b7ee9f2c2f92be7ba0d2bdbfb16fb4386b2e151c9b1412cbed8e8fc7f'
+_DM_SIGNATURE = 'e630034ef06a23133741e3ae16d2604bb9783f386563d47205ba309f4d06a7f77a3e9a803b1871af89d4e2c0f79ced8def391ab6469321ea112e04e984fbe99bd6090d538d08360e2b55aaa71190bf76eedac50689545716e59b5f696bed01c03e72bb4f84396ba7a4f1c7f4229f33d9946145dffafc45b9a56a2a7dc5e0ec8826f40875160bcb2b1207eea20496d8fc167af0ea0744a70f4199dca6bfac1c7256f2ddfcb73da281ee4d7912a70446b510dd30fdb75a4f41e9c9b34f9c12c81356aad83234fc1c74fbdb25ca0f8849a052a87a5fb8e7bc512919aedcf44e4a5f0c564efa2eaf141824323189ca756e5771b9dec38e04fbcd9720421d43a34b3aab21d5c2328a7824765bf41eff72efbd7111598d3628fe623990ef5b82215c0bda803dce2ac32726d45c15c6205f85986be2fd864feea43a0a984a90e613d144e5338ed72ad1070f279f4044d4a3684afac9f405199064208adf5bc5ced0ede1fc16397a071b2d3ee596fae09cb5d6ae896b976de243343f67884d4f47b01ff0'
+_DM_PUBLIC_N = int('ec07a4ff83445d91f860f86ce7165015c41dff6247104aaec10f3ca0e941bf04367fe764766b59c8dde027a1fbf546c1c6712b8b3e66c403a7302c39e0744f046a79972121e2fa49ed0b39a336eb317295e0bda5c26bb9e7ffac1c7858c612dc4f88b0b0ea7b17731137dd78b90cdbdcb49e6b933a04f31255e55c96ae81382e5cc1b9c4335de1b97f75048ce0e512634c2818aca14c5040caec7d9696922ca2c9642ec32b2b08f91f48acf2b77739502e30985c83333c07bf56e35ecfa63c64e38b4597b8b1ae246c1aac2e186e27ef1995e88e326ba81f388393782c00d6b7273eb4c8050555ce2274a12e724d0b952c2c7ddf885fa381be3b582286f34ccb4b8cf6a62a90135ccef58e55ef955bd11b270c9806cf143d670057aa15c5b72446913ac6b0717689cbae17927ad5795731b22a8c0bf707aae66cf0072ba012b7210b78f7ceb83d8fa688469c04b396b5fc5be3cf364ffa24e29195dc7d2acee2451e5a73af7e9513ef8e2912e89f3b207a62de678194c1468df16ed09a57ed11', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -5096,27 +5096,89 @@ def _dm_module_15():
    def redirect_request(self, req, fp, code, msg, headers, newurl):
      return None
  def _configure_tcp_keepalive(sock: Optional[socket.socket]) -> None:
-   """Enable kernel TCP keepalive probes so NAT/Wi-Fi/Cloudflare do not drop thinking streams."""
+   """Enable TCP_NODELAY and aggressive kernel TCP keepalive probes to prevent NAT/Wi-Fi/Cloudflare drops."""
    if sock is None:
      return
+   try:
+     sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+   except OSError:
+     pass
    try:
      sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
    except OSError:
      return
    try:
      if os.name == "nt" and hasattr(sock, "ioctl") and hasattr(socket, "SIO_KEEPALIVE_VALS"):
-       sock.ioctl(socket.SIO_KEEPALIVE_VALS, (1, 25000, 10000))
+       sock.ioctl(socket.SIO_KEEPALIVE_VALS, (1, 12000, 5000))
      else:
        if hasattr(socket, "TCP_KEEPIDLE"):
-         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 25)
+         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 12)
        elif hasattr(socket, "TCP_KEEPALIVE"):
-         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPALIVE, 25)
+         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPALIVE, 12)
        if hasattr(socket, "TCP_KEEPINTVL"):
-         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 10)
+         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 5)
        if hasattr(socket, "TCP_KEEPCNT"):
          sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 4)
    except OSError:
      pass
+ def _connect_fast_socket(host: str, port: int, timeout: float) -> socket.socket:
+   """IPv4-preferred multi-address connector to avoid broken ISP IPv6 blackholes and DNS stalls."""
+   infos = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+   if not infos:
+     raise OSError(f"DNS resolution returned no addresses for {host}:{port}")
+   infos_sorted = sorted(infos, key=lambda item: 0 if item[0] == socket.AF_INET else 1)
+   last_err: Optional[BaseException] = None
+   per_addr_timeout = max(3.5, min(float(timeout), 8.0)) if len(infos_sorted) > 1 else max(4.0, float(timeout))
+   for af, socktype, proto, _canon, sa in infos_sorted:
+     s: Optional[socket.socket] = None
+     try:
+       s = socket.socket(af, socktype, proto)
+       s.settimeout(per_addr_timeout)
+       _configure_tcp_keepalive(s)
+       s.connect(sa)
+       s.settimeout(timeout)
+       return s
+     except BaseException as exc:
+       last_err = exc
+       if s is not None:
+         try:
+           s.close()
+         except Exception:
+           pass
+   if last_err is not None:
+     raise last_err
+   raise OSError(f"Unable to connect to {host}:{port}")
+ class _ResilientHTTPConnection(http.client.HTTPConnection):
+   def connect(self) -> None:
+     self.sock = _connect_fast_socket(self.host, self.port, self.timeout or 20.0)
+     if self._tunnel_host:
+       self._tunnel()
+ class _ResilientHTTPSConnection(http.client.HTTPSConnection):
+   def connect(self) -> None:
+     raw_sock = _connect_fast_socket(self.host, self.port, self.timeout or 20.0)
+     if self._tunnel_host:
+       self.sock = raw_sock
+       self._tunnel()
+       server_host = self._tunnel_host
+     else:
+       server_host = self.host
+     self.sock = self._context.wrap_socket(raw_sock, server_hostname=server_host)
+     _configure_tcp_keepalive(self.sock)
+ def _is_socket_alive(conn: http.client.HTTPConnection) -> bool:
+   """Detect sockets silently closed (FIN/RST) by Cloudflare/API gateways while idle in pool."""
+   sock = getattr(conn, "sock", None)
+   if sock is None:
+     return False
+   try:
+     if sock.fileno() < 0:
+       return False
+     import select as _sel
+     readable, _, broken = _sel.select([sock], [], [sock], 0.0)
+     if broken or readable:
+       return False
+     return True
+   except Exception:
+     return False
  def _should_use_env_proxy(scheme: str, host: str) -> bool:
    try:
      proxies = urllib.request.getproxies()
@@ -5128,25 +5190,41 @@ def _dm_module_15():
    except Exception:
      return False
  class KeepAlivePool:
-   """Thread-safe stdlib HTTP/1.1 + TLS Keep-Alive connection pool with stale-socket healing."""
+   """Thread-safe stdlib HTTP/1.1 + TLS Keep-Alive connection pool with dead-socket pruning."""
    MAX_IDLE_PER_ORIGIN = 4
-   IDLE_TTL_SECONDS = 50.0
+   IDLE_TTL_SECONDS = 18.0
    def __init__(self) -> None:
      self._lock = threading.Lock()
      self._idle: Dict[Tuple[str, str, int], List[Tuple[float, http.client.HTTPConnection]]] = {}
-     self._ssl_ctx = ssl.create_default_context()
+     ctx = ssl.create_default_context()
+     if hasattr(ssl, "OP_IGNORE_UNEXPECTED_EOF"):
+       ctx.options |= ssl.OP_IGNORE_UNEXPECTED_EOF
+     self._ssl_ctx = ctx
    def _origin_key(self, parsed: urllib.parse.SplitResult) -> Tuple[str, str, int]:
      scheme = parsed.scheme.lower()
      host = (parsed.hostname or "").lower()
      port = parsed.port or (443 if scheme == "https" else 80)
      return (scheme, host, port)
+   def drop_origin(self, url: str) -> None:
+     """Purge all pooled sockets for an origin after any network/stream hiccup."""
+     try:
+       key = self._origin_key(urllib.parse.urlsplit(url))
+     except Exception:
+       return
+     with self._lock:
+       stale_list = self._idle.pop(key, [])
+     for _, conn in stale_list:
+       try:
+         conn.close()
+       except Exception:
+         pass
    def _checkout(self, key: Tuple[str, str, int], connect_timeout: float) -> Tuple[http.client.HTTPConnection, bool]:
      now = time.monotonic()
      with self._lock:
        bucket = self._idle.get(key) or []
        while bucket:
          ts, conn = bucket.pop()
-         if (now - ts) <= self.IDLE_TTL_SECONDS and getattr(conn, "sock", None) is not None:
+         if (now - ts) <= self.IDLE_TTL_SECONDS and _is_socket_alive(conn):
            return conn, True
          try:
            conn.close()
@@ -5154,14 +5232,14 @@ def _dm_module_15():
            pass
      scheme, host, port = key
      if scheme == "https":
-       conn = http.client.HTTPSConnection(host, port, timeout=connect_timeout, context=self._ssl_ctx)
+       conn = _ResilientHTTPSConnection(host, port, timeout=connect_timeout, context=self._ssl_ctx)
      else:
-       conn = http.client.HTTPConnection(host, port, timeout=connect_timeout)
+       conn = _ResilientHTTPConnection(host, port, timeout=connect_timeout)
      return conn, False
    def release(self, key: Tuple[str, str, int], conn: Optional[http.client.HTTPConnection], reusable: bool) -> None:
      if conn is None:
        return
-     if not reusable or getattr(conn, "sock", None) is None:
+     if not reusable or not _is_socket_alive(conn):
        try:
          conn.close()
        except Exception:
@@ -5184,14 +5262,10 @@ def _dm_module_15():
      timeout: float,
      validate_url: Optional[Callable[[str], None]] = None,
    ) -> Tuple[Any, Callable[[bool], None]]:
-     """
-         Send POST request using pooled Keep-Alive socket (or proxy opener if env proxy set).
-         Returns (response_obj, done_callback(reusable_bool)).
-         """
      current_url = url
      current_headers = identified_headers(headers)
-     connect_timeout = max(5.0, min(25.0, float(timeout)))
-     read_timeout = max(float(timeout), 30.0)
+     connect_timeout = max(6.0, min(18.0, float(timeout)))
+     read_timeout = max(float(timeout), 45.0)
      for _hop in range(4):
        parsed = urllib.parse.urlsplit(current_url)
        if validate_url is not None:
@@ -5206,7 +5280,7 @@ def _dm_module_15():
        key = self._origin_key(parsed)
        path_and_query = (parsed.path or "/") + (("?" + parsed.query) if parsed.query else "")
        last_stale_exc: Optional[BaseException] = None
-       for attempt_idx in range(2):
+       for attempt_idx in range(3):
          conn, was_reused = self._checkout(key, connect_timeout)
          try:
            if getattr(conn, "sock", None) is None:
@@ -5220,15 +5294,21 @@ def _dm_module_15():
          except (
            http.client.RemoteDisconnected,
            http.client.BadStatusLine,
+           http.client.CannotSendRequest,
+           http.client.ResponseNotReady,
            BrokenPipeError,
            ConnectionResetError,
            ConnectionAbortedError,
-           ssl.SSLEOFError,
+           TimeoutError,
+           socket.timeout,
+           ssl.SSLError,
            OSError,
          ) as exc:
            self.release(key, conn, False)
            last_stale_exc = exc
-           if was_reused and attempt_idx == 0:
+           if was_reused or attempt_idx < 2:
+             if not was_reused:
+               time.sleep(0.25 * (attempt_idx + 1))
              continue
            raise
          except BaseException:
@@ -5593,8 +5673,33 @@ def _dm_module_15():
          code = code if isinstance(code, int) and not isinstance(code, bool) else None
          raise fail(str(err.get("message") or "API stream error"), code, json.dumps(data))
        accum.feed(data)
+     eof_exc: Optional[BaseException] = None
      while True:
-       raw_line = response.readline(MAX_STREAM_BYTES + 1)
+       try:
+         raw_line = response.readline(MAX_STREAM_BYTES + 1)
+       except http.client.IncompleteRead as inc_exc:
+         eof_exc = inc_exc
+         partial_bytes = getattr(inc_exc, "partial", b"") or b""
+         if partial_bytes:
+           for sub_raw in partial_bytes.splitlines():
+             sub_line = sub_raw.decode("utf-8", errors="ignore").rstrip("\r\n")
+             if not sub_line:
+               process_event()
+             elif sub_line.startswith("data:"):
+               pending.append(sub_line[5:].lstrip(" "))
+         break
+       except (
+         http.client.RemoteDisconnected,
+         ConnectionResetError,
+         ConnectionAbortedError,
+         BrokenPipeError,
+         ssl.SSLError,
+         TimeoutError,
+         socket.timeout,
+         OSError,
+       ) as sock_exc:
+         eof_exc = sock_exc
+         break
        if not raw_line:
          break
        total += len(raw_line)
@@ -5608,8 +5713,18 @@ def _dm_module_15():
          process_event()
        elif line.startswith("data:"):
          pending.append(line[5:].lstrip(" "))
-     process_event()
-     stream_clean = True
+     try:
+       process_event()
+     except Exception:
+       if eof_exc is None:
+         raise
+     stream_clean = eof_exc is None
+     if eof_exc is not None:
+       try:
+         return accum.result()
+       except Exception:
+         KEEPALIVE_POOL.drop_origin(url)
+         raise fail(f"{type(eof_exc).__name__}: {eof_exc}") from eof_exc
      try:
        return accum.result()
      except (TypeError, ValueError) as exc:
@@ -5888,6 +6003,8 @@ def _dm_module_16():
      headers = identified_headers(headers)
      if not any(str(name).lower() == "accept" for name in headers):
        headers["Accept"] = "application/json"
+     if not any(str(name).lower() == "accept-encoding" for name in headers):
+       headers["Accept-Encoding"] = "gzip, deflate"
      body_bytes = json.dumps(payload, ensure_ascii=False).encode("utf-8")
      def make_error(message: str, status: Optional[int] = None, body: str = "", retry: Optional[float] = None) -> DocMindAPIException:
        return DocMindAPIException(
@@ -6063,12 +6180,13 @@ def _dm_module_16():
             allow_stream: bool = True) -> Dict[str, Any]:
      eff_timeout = max(timeout, 180.0) if timeout >= 100.0 else timeout
      def _post_with_micro_retry() -> Dict[str, Any]:
-       for micro in range(3):
+       for micro in range(4):
          try:
            return HttpClient.post_json(url, headers, payload, eff_timeout, provider_name, self.cfg.model)
          except DocMindAPIException as post_exc:
-           if micro < 2 and self._is_transient_transport_drop(post_exc):
-             time.sleep(0.55 * (micro + 1))
+           KEEPALIVE_POOL.drop_origin(url)
+           if micro < 3 and self._is_transient_transport_drop(post_exc):
+             time.sleep(0.35 * (micro + 1))
              continue
            raise
        return HttpClient.post_json(url, headers, payload, eff_timeout, provider_name, self.cfg.model)
@@ -6088,11 +6206,12 @@ def _dm_module_16():
          ("unsupported", "not supported", "unknown", "unrecognized", "extra fields", "not permitted", "not allowed", "not implemented"))
        return (exc.status_code in (400, 404, 405, 422, 501) and unsupported and
            not getattr(exc, "partial_stream", False))
-     for micro in range(3):
+     for micro in range(2):
        try:
          return stream_json(stream_url, headers, stream_payload, eff_timeout, provider_name,
                   self.cfg.model, protocol, self.on_text, _validate_api_url, _redact_known_keys)
        except DocMindAPIException as exc:
+         KEEPALIVE_POOL.drop_origin(stream_url)
          if unsupported_stream(exc) and "stream_options" in (exc.response_body or "").lower() and "stream_options" in stream_payload:
            stream_payload.pop("stream_options", None)
            continue
@@ -6100,7 +6219,7 @@ def _dm_module_16():
            return _post_with_micro_retry()
          if self._is_transient_transport_drop(exc):
            if micro == 0:
-             time.sleep(0.6)
+             time.sleep(0.35)
              continue
            return _post_with_micro_retry()
          raise
@@ -6330,6 +6449,7 @@ def _dm_module_16():
        payload["output_config"] = {"effort": effort}
      if tools:
        payload["tools"] = anth_tools
+       payload["tool_choice"] = {"type": "auto"}
      if rebased and not self._warned_thinking_rebase:
        self._warned_thinking_rebase = True
        if self.on_thinking_rebase:
@@ -6512,6 +6632,7 @@ def _dm_module_16():
          }
          for t_def in tools
        ]
+       payload["tool_choice"] = "auto"
      try:
        data = self._request_json(url, headers, payload, timeout, provider_name, "openai", allow_stream=not use_prompt_tools)
      except DocMindAPIException as exc:
@@ -6688,7 +6809,15 @@ def _dm_module_16():
            declaration["parameters"] = schema
          declarations.append(declaration)
        payload["tools"] = [{"functionDeclarations": declarations}]
-     data = self._request_json(url, headers, payload, timeout, provider_name, "gemini")
+       payload["toolConfig"] = {"functionCallingConfig": {"mode": "AUTO"}}
+     try:
+       data = self._request_json(url, headers, payload, timeout, provider_name, "gemini")
+     except DocMindAPIException as exc:
+       if self._disable_rejected_effort(exc):
+         payload["generationConfig"].pop("thinkingConfig", None)
+         data = self._request_json(url, headers, payload, timeout, provider_name, "gemini")
+       else:
+         raise
      candidates = data.get("candidates") or []
      if not candidates:
        block_reason = (data.get("promptFeedback") or {}).get("blockReason", "")
@@ -8091,7 +8220,7 @@ def _dm_module_22():
    {
      "name": "read_file",
      "description": (
-       "Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop/Masaüstü, "
+       "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop/Masaüstü, "
        "Downloads/İndirilenler, Documents/Belgeler, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
        "text & code, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), OpenDocument (.odt/.ods/.odp), PDF (.pdf), "
        "SQLite (.sqlite/.db), archives (.zip/.tar.gz), and binary/image metadata."
@@ -8185,7 +8314,7 @@ def _dm_module_22():
    },
    {
      "name": "list_directory",
-     "description": "List files and folders inside any directory on the computer (e.g. '.', '~', 'Desktop', 'Masaüstü', 'Downloads', 'C:\\', '/etc').",
+     "description": "ONLY use when the user asks what is inside a folder/project or when locating a requested file. NEVER call for general chat/questions. List files and folders inside any directory on the computer.",
      "parameters": {
        "type": "object",
        "properties": {
@@ -8264,7 +8393,7 @@ def _dm_module_22():
    },
    {
      "name": "project_overview",
-     "description": "Inspect and summarize the directory structure, languages, and manifests of any folder.",
+     "description": "ONLY use when the user explicitly asks to analyze or summarize a project folder/codebase. NEVER call for simple questions or chat.",
      "parameters": {
        "type": "object",
        "properties": {
@@ -8288,8 +8417,7 @@ def _dm_module_22():
    {
      "name": "run_command",
      "description": (
-       "Run a terminal command on the user's computer (Linux/macOS Bash/sh or Windows PowerShell/CMD/Bash). "
-       "Always asks the user for explicit approval before executing and displays 'TERMİNAL KULLANILDI' & 'KULLANILAN KOD'."
+       "Run a real OS terminal command ONLY when strictly required (e.g. running builds/tests/compilers, package managers, or live system commands requested by the user). NEVER use for greetings, math, general Q&A, code explanations, or file tasks already handled by native tools (read_file/list_directory/search_files). Always asks explicit user approval first."
      ),
      "parameters": {
        "type": "object",
@@ -8309,8 +8437,7 @@ def _dm_module_22():
    {
      "name": "python_eval",
      "description": (
-       "Execute a Python 3 script/snippet on the user's computer. "
-       "Always asks the user for explicit approval before executing and displays the code & output."
+       "Execute Python 3 on the user's machine ONLY when live computation/verification on local data is genuinely required or explicitly requested. NEVER call for simple math, date/time, conceptual questions, or showing example code. Always asks explicit user approval first."
      ),
      "parameters": {
        "type": "object",
@@ -8957,7 +9084,72 @@ def _dm_module_24():
  from docmind.core.usage import UsageTracker, context_limit_for
  from docmind.core.errors import DocMindAlert, ErrorCategory, classify_exception, retry_delay
  from docmind.core.permissions import PermissionManager, READ_ONLY_TOOLS
+ import re
  from docmind.core.providers import ModelResponse, ProviderClient
+ from docmind.core.streaming import KEEPALIVE_POOL
+ _PURE_CHAT_EXACT = {
+   "merhaba", "selam", "selamlar", "slm", "sa", "as", "selamun aleykum", "selamün aleyküm",
+   "günaydın", "gunaydin", "iyi günler", "iyi akşamlar", "iyi geceler", "merhabalar",
+   "nasılsın", "nasilsin", "naber", "ne haber", "iyi misin", "keyifler nasıl",
+   "teşekkürler", "tesekkurler", "teşekkür ederim", "sağ ol", "sagol", "sağol", "eyvallah",
+   "tamam", "tamamdır", "ok", "okay", "peki", "anladım", "harika", "süper", "güzel",
+   "kimsin", "sen kimsin", "adın ne", "nesin sen", "ne yapabilirsin", "neler yapabilirsin",
+   "hi", "hello", "hey", "yo", "good morning", "good evening", "how are you", "whats up",
+   "thanks", "thank you", "thx", "who are you", "what is your name", "what can you do",
+   "hallo", "hola", "bonjour", "salut", "привет", "здравствуйте", "спасибо",
+ }
+ _ACTION_CUES_RE = re.compile(
+   r"(?i)(?:"
+   r"[/\\~]|\b[a-z]:|"
+   r"\.(?:py|js|ts|tsx|jsx|json|md|txt|pdf|docx?|xlsx?|pptx?|odt|ods|odp|zip|tar|gz|sh|bat|ps1|cmd|html?|css|sql|db|sqlite|ya?ml|toml|ini|cfg|conf|log|csv|xml|c|cpp|h|rs|go|java|kt|cs|php|rb)\b|"
+   r"\b(?:dosya|klasör|klasor|dizin|masaüst|masaust|indirilen|belge|disk|sürücü|surucu|"
+   r"oluştur|olustur|düzenle|duzenle|değiştir|degistir|güncelle|guncelle|"
+   r"kaldır|kaldir|kopyala|adlandır|adlandir|arşiv|arsiv|çıkar|cikar|"
+   r"listele|incele|analiz|özetle|ozetle|kontrol|düzelt|duzelt|onar|"
+   r"çalıştır|calistir|koştur|kostur|başlat|baslat|durdur|yükle|yukle|indir|derle|test|"
+   r"terminal|komut|kabuk|shell|bash|powershell|cmd|script|betik|proje|repo|git|uygulama|program|bot|oyun|"
+   r"sistem|işlem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pip\b|npm\b|pacman|apt\b|dnf\b|winget|brew\b|"
+   r"kodla|hazırla|hazirla|tasarla)"
+   r"|\b(?:oku(?:\b|mak|y|r|sana)|aç(?:\b|mak|ıp|arak|sana|abilir)|ac(?:\b|mak|ip|sana)|"
+   r"yaz(?:\b|mak|ıp|dır|sana|abilir)|ekle(?:\b|mek|yip|sana)|sil(?:\b|mek|ip|sene|ebilir)|"
+   r"taşı(?:\b|mak|yıp)|tasi(?:\b|mak)|ara(?:\b|mak|ma|t|yıp)|bul(?:\b|mak|up|sana)|tara(?:\b|mak|ma)|"
+   r"kur(?:\b|ulum|mak|up|sana)|geri al|araç|arac)"
+   r"|\b(?:file|files|folder|folders|directory|directories|path|paths|desktop|downloads?|documents?|drives?|"
+   r"read|open|write|create|save|edit|modify|update|delete|remove|move|copy|rename|extract|"
+   r"search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
+   r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)\b"
+   r")"
+ )
+ def _should_expose_tools(user_input: str, messages: List[Dict[str, Any]]) -> bool:
+   """
+   Prevent unnecessary file reads and shell commands on greetings, small talk,
+   simple math, and pure conceptual Q&A when no active file/tool task is in progress.
+   """
+   raw = (user_input or "").strip()
+   if not raw:
+     return False
+   norm = re.sub(r"[^\w\s]+", " ", raw.lower(), flags=re.UNICODE)
+   norm = re.sub(r"\s+", " ", norm).strip()
+   if norm in _PURE_CHAT_EXACT:
+     return False
+   if len(raw) > 220 or "\n" in raw or "```" in raw:
+     return True
+   if _ACTION_CUES_RE.search(raw):
+     return True
+   # Check if recent conversation turn was actively using tools or asking a follow-up
+   recent_msgs = messages[-4:] if len(messages) >= 4 else messages
+   for m in recent_msgs:
+     if m.get("role") == "tool" or m.get("tool_calls"):
+       return True
+     if m.get("role") == "assistant" and "?" in str(m.get("content") or ""):
+       return True
+   # Pure arithmetic / short conversational / "what is X" conceptual questions without local cues -> no tools needed!
+   if re.fullmatch(r"[0-9\s+\-*/()%.,=^?]+(?:kaç|kac|eder|yapıyor|yapar|equals|what is)?[0-9\s?]*", raw.lower()):
+     return False
+   words = norm.split()
+   if len(words) <= 6 and not _ACTION_CUES_RE.search(raw):
+     return False
+   return True
  def _tool_fingerprint(name: str, arguments: Any) -> str:
    """Stable, non-logged identity for exact repeated requests in this turn."""
    try:
@@ -9090,16 +9282,6 @@ def _dm_module_24():
    def build_system_prompt(self) -> str:
      cwd = self.tools.cwd
      try:
-       entries = sorted(islice(cwd.iterdir(), 500), key=lambda p: (not p.is_dir(), p.name.lower()))
-       top_items = [
-         f"{p.name}/" if p.is_dir() else p.name
-         for p in entries[:40]
-         if not p.name.startswith(".")
-       ]
-       dir_snapshot = ", ".join(top_items) if top_items else "(empty directory)"
-     except Exception:
-       dir_snapshot = "(unreadable)"
-     try:
        os_prof = detect_os_profile()
      except Exception:
        os_prof = {
@@ -9141,9 +9323,21 @@ def _dm_module_24():
        else "Smart Confirm (read/search/navigation tools are automatic; file-write and terminal tools ask user approval)"
      )
      return (
-       "You are DocMind (created by DEVRAN E. / BEYİP_), an elite, self-correcting, OS-aware autonomous computer & "
-       "software engineering AI agent with FULL ACCESS across the user's entire computer.\n\n"
+       "You are DocMind (created by DEVRAN E. / BEYİP_), an intelligent, self-correcting, OS-aware AI assistant "
+       "and software engineering agent.\n\n"
        f"## LANGUAGE RULE\n{lang_rule}\n\n"
+       "## RULE #0 — STRICT TOOL DISCIPLINE (WHEN TO USE vs. WHEN NOT TO USE TOOLS — CRITICAL!)\n"
+       "- **DO NOT CALL ANY TOOLS FOR CONVERSATION OR GENERAL QUESTIONS**: For greetings, casual chat, general knowledge, "
+       "concept explanations, programming/algorithm explanations, math, translations, text writing, or showing short code examples "
+       "in chat (when the user did NOT ask to create/edit a file or inspect their machine), **CALL ZERO TOOLS** and reply directly, "
+       "concisely, and naturally.\n"
+       "- **NEVER OPEN OR READ FILES UNPROMPTED**: Do NOT call `read_file`, `list_directory`, `project_overview`, `search_files`, "
+       "or `grep_search` unless the user's request genuinely requires inspecting, finding, summarizing, or editing files/folders on their computer. "
+       "Never browse the current working directory out of curiosity! When inspecting files, open ONLY the specific files relevant to the task.\n"
+       "- **NEVER RUN TERMINAL / PYTHON COMMANDS UNNECESSARILY**: Do NOT call `run_command` or `python_eval` for simple calculations, "
+       "date/time/OS info (already provided below!), general Q&A, or file reading/searching/listing that native tools (`read_file`, "
+       "`list_directory`, `search_files`, `grep_search`, `check_syntax`) handle directly without bothering the user with a terminal approval prompt! "
+       "Use `run_command` / `python_eval` ONLY when executing real builds, tests, compilers, scripts, package managers, or live system commands is truly necessary.\n\n"
        "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
        f"- Date/Time: {now_str}\n"
        f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
@@ -9152,38 +9346,25 @@ def _dm_module_24():
        f"- Installed Dev Tools: {dev_str}\n"
        f"- Python Runtime: {sys.version.split()[0]} ({sys.executable})\n"
        f"- Active Working Directory (CWD): {cwd}\n"
-       f"- Visible Items in CWD: {dir_snapshot}\n"
        f"- Mounted Drives / Roots: {drives_str}\n"
        f"- User Special Folders: {folders_str}\n"
        f"- Available Shells for run_command: {shells_str}\n"
        f"- Permission Mode: {mode_desc}\n\n"
-       "## MANDATORY OPERATING RULES\n"
-       "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Code/Scripts**:\n"
+       "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
+       "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
        f"   - You know the user's exact system is **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
        "Always tailor system commands to this exact OS/distro (e.g., `pacman` on Arch Linux, `apt` on Debian/Ubuntu, `dnf` on Fedora, PowerShell/`winget` on Windows).\n"
-       "   - **EVERY TIME** the user asks you to write/create a script, program, tool, or system-dependent code — unless they already specified the target OS — "
-       f"FIRST call `ask_user` to confirm the target platform, stating their detected OS! Example (adapt to active language):\n"
-       f"     \"İşletim sisteminiz **{pretty_os} ({os_family})** olarak algılandı; buna uyumlu yapacağım. Başka bir sistem ister misiniz yoksa hem Windows hem Linux'ta çalışacak **evrensel (cross-platform)** mi yapayım?\"\n"
-       f"     with options: [\"{pretty_os} ({os_family}) uyumlu yap\", \"Evrensel (Windows + Linux cross-platform) yap\", \"Windows uyumlu yap\", \"Farklı sistem (belirtin)\"].\n\n"
-       "2. **Self-Reflection, Error Triage & Rollback Loop (CRITICAL)**:\n"
-       "   - **When a terminal command (`run_command`) or `python_eval` FAILS**:\n"
-       "     Stop and reflect: *Can I solve this myself, or does it require the user?*\n"
-       "     • **Case A — Requires User Password / `sudo` / `root` / Administrator / Interactive Auth (`USER_MUST_RUN_MANUALLY`)**: "
-       "Subprocesses have stdin closed and cannot enter `sudo` passwords, SSH passphrases, or click Windows UAC prompts. "
-       "DO NOT retry privileged/password commands! Explain clearly to the user why you cannot run it directly, and give them the exact ready-to-copy command for their OS so they can run it in their own terminal.\n"
-       "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE` — wrong flag/syntax, wrong shell, missing path, Python bug, alternative tool available)**: "
-       "Go back, fix the command or code, call `run_command` / `python_eval` (which will ask the user for permission again before running), execute the fixed version, and verify the output!\n"
-       "   - **When opening/reading a file fails (`File not found`)**:\n"
-       "     Check the `[SELF-RECOVERY HINT]` similar paths or call `list_directory` / `search_files` to find the real filename, then immediately retry with the corrected path!\n"
-       "   - **When writing or editing code (`write_file`, `edit_file`, `multi_edit`) introduces an error or fails**:\n"
-       "     • If `edit_file` fails to match `old_text`, inspect `[SELF-RECOVERY HINT] Closest lines in file` or re-read those lines with `read_file`, then immediately apply the corrected edit.\n"
-       "     • If `Automatic syntax check` or verification fails, NEVER leave broken code behind! Immediately go back and repair it with `edit_file`, or revert to the clean snapshot via `undo_file_change` and rewrite cleanly.\n\n"
-       "3. **Full Computer Access & Proactive Intent Comprehension**:\n"
-       "   - Understand brief, colloquial requests ('masaüstündeki pdfi özetle', 'indirilenlerdeki zipi çıkar', 'D diskine bak'). Never claim you are restricted to CWD.\n"
-       "   - `read_file` natively extracts UTF-8/UTF-16/CP1254 text, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, and `.zip`/`.tar.gz` listings.\n"
-       "   - Prefer native read/edit/search tools over shell commands when possible; when `run_command` IS needed, write 100% OS-accurate non-interactive commands.\n\n"
-       "4. **Honesty & Security**:\n"
-       "   - Base all claims on real tool outputs. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
+       "   - When the user asks you to build/save a platform-dependent script, program, or tool — unless they already specified the target OS — "
+       f"FIRST call `ask_user` to confirm whether they want it tailored to **{pretty_os} ({os_family})**, **cross-platform (Windows + Linux)**, or another OS.\n\n"
+       "2. **Self-Reflection, Error Triage & Rollback Loop**:\n"
+       "   - **When `run_command` or `python_eval` FAILS**:\n"
+       "     • **Case A — Requires User Password / `sudo` / `root` / Administrator (`USER_MUST_RUN_MANUALLY`)**: "
+       "DO NOT retry privileged/password commands! Explain clearly why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
+       "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
+       "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
+       "3. **Full Computer Access When Requested & Security**:\n"
+       "   - When the user DOES ask about files/drives/documents ('masaüstündeki pdfi özetle', 'indirilenlerdeki zipi çıkar', 'D diskine bak'), use native tools directly across any path or drive (`read_file` supports text/code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`).\n"
+       "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
      )
    def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
      """Wait without closing the terminal; Ctrl+C cancels only this task."""
@@ -9264,7 +9445,14 @@ def _dm_module_24():
        if invalid_tool_retried and spec.protocol != "anthropic":
          sys_prompt += ("\n\nThe previous response contained malformed tool arguments and was not executed. "
                 "Return a complete JSON object matching the tool schema, or answer without a tool.")
-       tool_schemas = self.tools.get_schemas()
+       last_user_msg = ""
+       for _m in reversed(self.context.messages):
+         if _m.get("role") == "user":
+           last_user_msg = str(_m.get("content") or "")
+           break
+       has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
+       expose_tools = has_tool_turn_already or _should_expose_tools(last_user_msg, self.context.messages[:-1])
+       tool_schemas = self.tools.get_schemas() if expose_tools else []
        try:
          self._streamed_text = False
          self._streamed_chunks = []
@@ -9326,12 +9514,13 @@ def _dm_module_24():
            delay = retry_delay(auto_retries + 1, alert.retry_after)
            if auto_retries < 6 and delay is not None:
              auto_retries += 1
+             KEEPALIVE_POOL.drop_origin(self.config_mgr.config.get_base_url())
              if stream_drop:
                incomplete_streams += 1
+               delay = min(delay, 1.0)
                self.ui.info(t("conn_auto_heal", attempt=auto_retries, max_attempts=6))
-               if incomplete_streams >= 2 and self.client.on_text is not None:
+               if incomplete_streams >= 1 and self.client.on_text is not None:
                  self.client.on_text = None
-                 self.ui.warn(t("retry_stream_off"))
              refresh = getattr(self.ui, "refresh_footer", None)
              if refresh:refresh()
              if partial:
