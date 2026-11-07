@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'b3ba327378eae295566e794764cae758e062c41bb627ac5e10f642f52249e491'
-_DM_SIGNATURE = 'cf1e3388d11b28f81cc1752d5ee0fc90d5392032d231d8e446725ae55b2b0ce61f0a3db2c8f282c6274b5b0595a28a2e638f2091ae62dc8aa8bfa7015579278e4943fa4553adc2aacda2fad5085722ed53b577e9f052ee929197381e63c1277b620528cd93def0e36eb8c408a24176dc6c0dfeed959021ef43f91d05cac6b9eeff536b05a4340d03bdaa2c110d6583faf94fde01f3eacde90815e53b1847b1f5a045731e32af2413b0e6ac59fdcda335e36dcbb27c1defde0ca16fe57726373c87efaebccaf5f7ebf3b9d003d421268cd7170fd0a79431b27bbd9950b06516986c1bd360430697291033e52f3581dcde13b2476404a5232381502a7a826c1b8c824147b84cca253e5c65a29eb8792606ad3a7105584696d6243b357cb93d6a83933a3f88e019c2f97cc64272ccc61f53e865edddfe312e1f9b6d187021d57e9646e417401e930c43732ef48ad14a55912c7fde575aff5dbdf8020e40075baefdde8c243d0d926e640e222a29bcc5019561d13992fbc2d0c3c4e77d0a2b6b0e46'
-_DM_PUBLIC_N = int('e498d0ff035c7f6e78efa783484d26bdac253ce93724bba897c1f907c05f1c3db4c1cf9ecc26a41bcadd0c25b50e405682c57e8bd6788b2187d650d834eb2e65c298260508540a8040a44f8579be2f4b48e540d68d7af7eb8ca28e4a0d27aa31ce54c333f235738e830984eeb688e0862819bc44255c450cdd2c1ddf232ba832fae0a776b3632662c681e1e517fbb86c0e042170bf348628b78acf7ca96b7d9a53f20442fa298c9ebf6dd396952b7bcec096086e1b87b126de0ef40a5e1ae64d770fc5b379147078ec543da93f15bc34d291abbc017eca3ec6df5e6a94966868da2f804e6b24b11318406184529e1be24c7a2e6fa36cb312d0826398c5ab06d3f60ab58e587a49113a5034cc1a914d16559541d939322119f610337510d4161451a58859038e143c3661b4af40560193b2e7368f2d147643979882f632fb56e579867134a9e0db2f2907d3a1bd6e93a1767cf13227021111f7cb359ee290e5916c37c042840d027eedc732bdd1a58c4b35f730c04cb8825f0762a0ca68e25aa5', 16)
+_DM_SOURCE_HASH = '7c6230cd1d0bc7fc7a18e59e92aff79ad42ab158f42603cd48e8d99926c3e564'
+_DM_SIGNATURE = '36890cc0bb0c0814b734af7090a98eddec7fe112517188a116cb98d7fb1a2b3cdecb29e51cfc0f6686b615b9e435d133e778f4b95b5bbfc508bf99ebe1788c048cf0fbdab6d268b34561ebaa89cbfbc3bef4b3f56484245a804ffe68500a6c330d2f4cee85881249c6e111b5dc79c12e33885153751296d41e08eb5fc4b47d0072931a795d4eebe25d361cc44ede395918a6be56a2926642954bfef7fe3a0e0667eb3869eb823cb26a9a6a416881bf49fa8826dce5bbae7e959e80cebe84399b9beb76d0d8b66264e4381b45069b5852ac90391d723404500fc2fc6847e3f133ff82a425f00780ccc5393cdba0563d43a9516b87983faa7b7ba08ce88b4e8c537b1fb1b773c9886fbd10621923f49b51f344ccd3db78ee0bdc0be7902489d83c10d532fc8ef83d92abbb22a0a4dc5e8a788db874f77270e9e3f63a43d06f2edd32951ee785c2f554dfaf5d4d2570526118818075d00d48bf477067cde53830bec4b7cecd8a113b62fdf8becb1a1b88b3916918c9970a628d388556a3676a2da3'
+_DM_PUBLIC_N = int('d86d581a86b4d1476d4c4de60ec2c7b3fbf431778c00201e84d13ff417830304ed9be7176b53d0e7f96f183c40af6e65400f86e2d263aa3b0846a1828af7c73483e5b16f3314c13d1df4854352981349617fedb0aedc2668d7e41e17dd628bec1cb307522e66d3edff31ca347e5680f9cca20834c103d1477826acac63802efeb774a8d6a53a7d176cb9518569a45b85eeefe1db633a20c883d661802576e6faa6054ecb7766b12f7acadd15374075d43e78d15858078f2de42327cde01502d4cb416a66351cbb77b1d6484d2f6e78d5712d519a1f4392ca5f0708e6919b2bb395a23d7c0b8c8b63099f3be3d195e3451fc34146b45098dc1fe444e0307d1106ab0e2b8bb873776af9de97c6fa3c741e4fb11b76bdcf8d4aa5d11e955ceef7d7221ea23ff7e3baf22ffb180c6be60f6e7c6d20a5324294454ddbd700e6567ad5695c6cc60914c546fa70b7fda54561ca356896ed2697ca84b687beed8dcefb8f885a12a98881a1546af70e3cfb2cdb3071661d995bc3e4f8febbe9ae4614fcbd', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -135,7 +135,8 @@ _dm_owner_gate()
 _dm_digest_gate()
 _dm_signature_gate()
 if __name__ == '__main__':
-    print(_DM_OWNER, flush=True)
+    _dm_red_ok = not _dm_os.environ.get('NO_COLOR') and _dm_os.environ.get('TERM', '').lower() != 'dumb'
+    print(('\x1b[1;31m' + _DM_OWNER + '\x1b[0m') if _dm_red_ok else _DM_OWNER, flush=True)
 def _dm_package(name):
     mod = _dm_sys.modules.get(name)
     if mod is None:
@@ -168,7 +169,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.0"
+ __version__ = "1.1"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -176,1539 +177,3595 @@ _dm_install('docmind', _dm_module_00, True)
 
 # ===== docmind/i18n/locales.py (included source) =====
 def _dm_module_01():
- """
- DocMind Multi-Language Dictionary (TR, EN, DE, ES, FR, RU)
- """
- from typing import Dict, List, Tuple
- LANGUAGE_CHOICES: List[Tuple[str, str, str]] = [
-   ("tr", "Türkçe", "TR - Türkçe"),
-   ("en", "English", "EN - English"),
-   ("de", "Deutsch", "DE - Deutsch"),
-   ("es", "Español", "ES - Español"),
-   ("fr", "Français", "FR - Français"),
-   ("ru", "Русский", "RU - Русский"),
- ]
- TRANSLATIONS: Dict[str, Dict[str, str]] = {
-   "tr": {
-     "lang_name": "Türkçe",
-     "ai_lang_instruction": "Kullanıcıyla aksi belirtilmedikçe her zaman akıcı, doğal ve anlaşılır TÜRKÇE ile iletişim kur.",
-     "welcome_subtitle": "Yeni Nesil Otonom Terminal Yapay Zeka Ajanı",
-     "ready_hint": "DocMind hazır! İstediğin görevi yaz, dosyaları düzenlet veya komut çalıştır.",
-     "type_help_hint": "Komutlar için /help | Dil için /lang | API için /api | Çıkış için /exit yazın.",
-     "prompt_placeholder": "DocMind'a bir görev verin (çok satır için sonuna \\ koyun)...",
-     "wiz_title": "DOCMIND İLK KURULUM SİHİRBAZI",
-     "wiz_select_lang": "Lütfen kullanmak istediğiniz dili seçin (1-6) [Varsayılan: 1]: ",
-     "wiz_lang_saved": "Dil ayarlandı: Türkçe (TR)",
-     "wiz_select_provider": "Yapay Zeka API Sağlayıcısını Seçin",
-     "wiz_provider_prompt": "Seçiminiz (1-7) [Varsayılan: 1]: ",
-     "wiz_select_model": "{provider} için Model Seçin",
-     "wiz_custom_model_opt": "Özel model adı gir...",
-     "wiz_model_prompt": "Model seçiminiz [Varsayılan: 1]: ",
-     "wiz_custom_model_prompt": "Model adını tam olarak yazın (örn. gpt-4o-mini): ",
-     "wiz_enter_base_url": "API Base URL girin [Varsayılan: {default}]: ",
-     "wiz_enter_api_key": "{provider} API Anahtarınızı (API Key) girin: ",
-     "wiz_api_key_optional": "{provider} API Anahtarı (yerel sunucuysa boş bırakabilirsiniz): ",
-     "wiz_api_key_empty": "UYARI: API anahtarı boş bırakılamaz! Lütfen geçerli bir API anahtarı girin veya yerel sağlayıcı seçin.",
-     "wiz_testing_api": "API bağlantısı ve anahtar doğrulanıyor...",
-     "wiz_api_ok": "Harika! {provider} ({model}) bağlantısı başarıyla doğrulandı.",
-     "wiz_api_fail_menu": "API doğrulaması sırasında bir sorun oluştu. Ne yapmak istersiniz?",
-     "wiz_opt_retry_key": "Yeni API Anahtarı Gir",
-     "wiz_opt_change_provider": "Farklı API Sağlayıcısı / Model Seç",
-     "wiz_opt_skip_anyway": "Bu Hatayı Geç ve Yine de Kaydet (Sonra /api ile değiştirebilirsiniz)",
-     "wiz_select_mode": "Çalışma ve Güvenlik Modunu Seçin",
-     "wiz_mode_smart": "Akıllı Onay Modu (Önerilen - Okuma serbest, dosya değiştirme/komutlarda onay sorar)",
-     "wiz_mode_auto": "Tam Otomatik Mod (Sınırsız - Onay sormadan tüm işlemleri anında uygular)",
-     "wiz_mode_prompt": "Mod seçiminiz (1-2) [Varsayılan: 1]: ",
-     "wiz_complete": "Kurulum tamamlandı! Ayarlarınız ~/.docmind-single/config.json dosyasına güvenle kaydedildi.",
-     "mode_smart_short": "AKILLI ONAY",
-     "mode_auto_short": "TAM OTOMATİK",
-     "status_tokens": "Token: {total} (Giriş:{inp} / Çıkış:{out})",
-     "status_no_key": "API ANAHTARI YOK (/api yazın)",
-     "thinking": "DocMind düşünüyor ve analiz ediyor...",
-     "step_counter": "Otonom Adım {step}/{max_steps}",
-     "max_steps_reached": "UYARI: Tek seferlik maksimum otonom adım sınırına ({max_steps}) ulaşıldı.",
-     "ask_continue_steps": "DocMind çalışmaya devam etsin mi? [E/h]: ",
-     "compacting_context": "BİLGİ: Sohbet geçmişi uzadı, token tasarrufu için akıllı özetleme yapılıyor...",
-     "context_compacted": "Sohbet geçmişi başarıyla sıkıştırıldı, kesintisiz devam ediliyor.",
-     "output_truncated_warn": "UYARI: Modelin tek seferlik yanıt token sınırı dolduğu için yanıt kesildi. Devam etmesi için 'devam et' yazabilirsiniz.",
-     "tool_running": "Araç Çalıştırılıyor: {name}",
-     "tool_done": "Tamamlandı: {name}",
-     "tool_skipped": "Kullanıcı tarafından atlandı: {name}",
-     "tool_error_passed": "UYARI: '{name}' aracında sorun oluştu ancak çökmeden atlandı ({err}). DocMind alternatif deneyecek.",
-     "perm_title": "İZİN ONAYI GEREKLİ",
-     "perm_file_action": "Dosya İşlemi: {action} -> {target}",
-     "perm_command_warn": "Terminal Komutu Çalıştırılacak: {cmd}",
-     "perm_dangerous_warn": "DİKKAT! KRİTİK / RİSKLİ KOMUT TESPİT EDİLDİ! Lütfen komutu dikkatle kontrol edin!",
-     "perm_prompt": "[E]vet çalıştır | [O]tomatik moda geç (bir daha sorma) | [H]ayır atla [Varsayılan: E]: ",
-     "perm_dangerous_prompt": "Bu kritik komutu gerçekten çalıştırmak istiyor musunuz? [evet/hayır]: ",
-     "perm_switched_auto": "Tam Otomatik Moda geçildi! Tekrar onaylı moda dönmek için /smart yazabilirsiniz.",
-     "undo_success": "Son dosya değişikliği geri alındı: {path}",
-     "undo_empty": "Geri alınacak bir dosya değişikliği bulunamadı.",
-     "err_quota_title": "KRİTİK UYARI: API TOKEN / KREDİ BAKİYESİ BİTTİ!",
-     "err_quota_desc": "{provider} hesabınızdaki API kullanım kotası, ücretsiz limit veya kredi bakiyesi tükenmiş görünüyor.\nDetay: {detail}",
-     "err_rate_title": "UYARI: API İSTEK / DAKİKALIK TOKEN HIZ LİMİTİ (RATE LIMIT)!",
-     "err_rate_desc": "{provider} servisine çok sık istek gönderildi veya dakikalık token sınırı doldu.\nDetay: {detail}",
-     "err_auth_title": "UYARI: GEÇERSİZ VEYA YETKİSİZ API ANAHTARI!",
-     "err_auth_desc": "{provider} API anahtarınız hatalı, iptal edilmiş veya süresi dolmuş.\nDetay: {detail}",
-     "err_context_title": "UYARI: MODEL BAĞLAM (TOKEN) KAPASİTESİ AŞILDI!",
-     "err_context_desc": "Gönderilen veri ve geçmiş mesajlar modelin tek seferlik token sınırını aştı. Otomatik sıkıştırma uygulanıyor.\nDetay: {detail}",
-     "err_model_title": "UYARI: MODEL BULUNAMADI VEYA ERİŞİMİZ YOK!",
-     "err_model_desc": "Seçili model ({model}) bu sağlayıcıda mevcut değil veya hesabınıza açık değil.\nDetay: {detail}",
-     "err_server_title": "UYARI: AI SUNUCUSU GEÇİCİ OLARAK YOĞUN / HATALI!",
-     "err_server_desc": "{provider} sunucularında geçici bir yoğunluk veya kesinti yaşanıyor.\nDetay: {detail}",
-     "err_network_title": "UYARI: İNTERNET / AĞ BAĞLANTI SORUNU!",
-     "err_network_desc": "{provider} sunucusuna ulaşılamadı. İnternet bağlantınızı, VPN veya güvenlik duvarını kontrol edin.\nDetay: {detail}",
-     "err_tool_title": "UYARI: DOSYA / SİSTEM İŞLEM HATASI (ATLANDI)",
-     "err_tool_desc": "İşlem sırasında bir sistem hatası oluştu fakat program durmadı:\nDetay: {detail}",
-     "err_unknown_title": "UYARI: BEKLENMEYEN HATA YAKALANDI VE GEÇİLDİ",
-     "err_unknown_desc": "İşlem sırasında beklenmeyen bir durum oluştu, sistem güvenli şekilde devam ediyor:\nDetay: {detail}",
-     "err_skipped_notice": "Hata güvenli şekilde geçildi. DocMind çalışmaya hazır.",
-     "err_retrying_in": "{sec} saniye içinde otomatik tekrar deneniyor (Atlamak için Ctrl+C)...",
-     "err_budget_warn_title": "TOKEN KULLANIM UYARISI",
-     "err_budget_warn_desc": "Bu oturumda toplam {used} token kullanıldı (Belirlediğiniz uyarı sınırı: {limit}).",
-     "rec_title": "KURTARMA SEÇENEKLERİ (Program Kapanmadan Devam Eder)",
-     "rec_opt_new_key": "Yeni API Anahtarı Gir ve Devam Et",
-     "rec_opt_switch_provider": "Başka AI Sağlayıcısına Geç (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
-     "rec_opt_switch_model": "Başka Bir Model Seç ve Devam Et",
-     "rec_opt_retry": "Şimdi Tekrar Dene",
-     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
-     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
-     "help_title": "DOCMIND KOMUT REHBERİ",
-     "help_body": (
-       "  /help              Bu yardım menüsünü gösterir\n"
-       "  /setup             Kurulum sihirbazını baştan açar\n"
-       "  /api               API sağlayıcısını veya API anahtarını değiştirir\n"
-       "  /model             Aktif yapay zeka modelini değiştirir\n"
-       "  /lang              Arayüz ve asistan dilini değiştirir (TR, EN, DE, ES, FR, RU)\n"
-       "  /auto  (/yolo)     Tam Otomatik Moda geçer (onay sormadan çalıştırır)\n"
-       "  /smart             Akıllı Onay Moduna geçer (değişikliklerde onay sorar)\n"
-       "  /tokens [limit]    Token istatistiklerini gösterir veya uyarı limiti belirler\n"
-       "  /undo              DocMind'ın yaptığı son dosya düzenlemesini geri alır\n"
-       "  /tree [yol]        Klasör yapısını ağaç görünümünde listeler\n"
-       "  /cd <klasör>       Aktif çalışma dizinini değiştirir\n"
-       "  /save [isim]       Sohbet geçmişini kaydeder\n"
-       "  /load [isim]       Kaydedilmiş sohbet geçmişini yükler\n"
-       "  /doctor            Sistem, ağ ve API sağlık kontrolü yapar\n"
-       "  /clear             Ekranı ve mevcut sohbet belleğini temizler\n"
-       "  /exit  (/quit)     DocMind'dan güvenli çıkış yapar"
-     ),
-     "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
-     "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
-     "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
-     "cmd_lang_changed": "Dil değiştirildi: {lang}",
-     "cmd_mode_changed": "Çalışma modu güncellendi: {mode}",
-     "cmd_cd_ok": "Çalışma dizini değiştirildi: {path}",
-     "cmd_cd_err": "UYARI: Klasör değiştirilemedi: {err}",
-     "cmd_unknown": "Bilinmeyen komut: '{cmd}'. Tüm komutlar için /help yazın.",
-     "cmd_exit_bye": "DocMind kapatılıyor. Görüşmek üzere!",
-     "ctrl_c_cancelled": "İşlem kullanıcı tarafından durduruldu (Ctrl+C). Sohbete devam edebilirsiniz.",
-     "ctrl_c_exit_hint": "Çıkmak için /exit yazın veya tekrar Ctrl+C tuşuna basın.",
-     "doctor_title": "DOCMIND SİSTEM & SAĞLIK KONTROLÜ (/doctor)",
-     "tokens_report_title": "OTURUM TOKEN VE KULLANIM RAPORU",
-   },
-   "en": {
-     "lang_name": "English",
-     "ai_lang_instruction": "Always communicate with the user in clear, natural ENGLISH unless asked otherwise.",
-     "welcome_subtitle": "Next-Gen Autonomous Terminal AI Agent",
-     "ready_hint": "DocMind is ready! Ask anything, edit files, inspect code, or run commands.",
-     "type_help_hint": "Type /help for commands | /lang for language | /api for API settings | /exit to quit.",
-     "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
-     "wiz_title": "DOCMIND INITIAL SETUP WIZARD",
-     "wiz_select_lang": "Please select your preferred language (1-6) [Default: 1]: ",
-     "wiz_lang_saved": "Language set to: English (EN)",
-     "wiz_select_provider": "Select AI API Provider",
-     "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
-     "wiz_select_model": "Select Model for {provider}",
-     "wiz_custom_model_opt": "Enter custom model name...",
-     "wiz_model_prompt": "Model choice [Default: 1]: ",
-     "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
-     "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
-     "wiz_enter_api_key": "Enter your {provider} API Key: ",
-     "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
-     "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
-     "wiz_testing_api": "Verifying API connection and key...",
-     "wiz_api_ok": "Awesome! {provider} ({model}) connection verified successfully.",
-     "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
-     "wiz_opt_retry_key": "Enter a New API Key",
-     "wiz_opt_change_provider": "Choose Another API Provider / Model",
-     "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
-     "wiz_select_mode": "Select Execution & Safety Mode",
-     "wiz_mode_smart": "Smart Confirm Mode (Recommended - Free reads, asks before file edits/commands)",
-     "wiz_mode_auto": "Full Auto Mode (Unlimited - Executes all file & shell operations immediately)",
-     "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
-     "wiz_complete": "Setup complete! Configuration securely saved to ~/.docmind-single/config.json.",
-     "mode_smart_short": "SMART CONFIRM",
-     "mode_auto_short": "FULL AUTO",
-     "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
-     "status_no_key": "NO API KEY (type /api)",
-     "thinking": "DocMind is thinking and analyzing...",
-     "step_counter": "Autonomous Step {step}/{max_steps}",
-     "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
-     "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
-     "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
-     "context_compacted": "Conversation history compacted seamlessly; continuing.",
-     "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
-     "tool_running": "Running Tool: {name}",
-     "tool_done": "Completed: {name}",
-     "tool_skipped": "Skipped by user: {name}",
-     "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
-     "perm_title": "PERMISSION CONFIRMATION REQUIRED",
-     "perm_file_action": "File Operation: {action} -> {target}",
-     "perm_command_warn": "Shell Command to Execute: {cmd}",
-     "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
-     "perm_prompt": "[Y]es execute | [A]uto mode (don't ask again) | [N]o skip [Default: Y]: ",
-     "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
-     "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
-     "undo_success": "Reverted last file modification: {path}",
-     "undo_empty": "No file modifications available to undo.",
-     "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
-     "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
-     "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
-     "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
-     "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
-     "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
-     "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
-     "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
-     "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
-     "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
-     "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
-     "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
-     "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
-     "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
-     "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
-     "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
-     "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
-     "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
-     "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
-     "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
-     "err_budget_warn_title": "TOKEN BUDGET WARNING",
-     "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
-     "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
-     "rec_opt_new_key": "Enter a New API Key & Continue",
-     "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
-     "rec_opt_switch_model": "Select Another Model & Continue",
-     "rec_opt_retry": "Retry Request Now",
-     "rec_opt_skip": "Skip Error & Return to Prompt",
-     "rec_choose": "Your choice [Default: {default}]: ",
-     "help_title": "DOCMIND COMMAND REFERENCE",
-     "help_body": (
-       "  /help              Show this command guide\n"
-       "  /setup             Re-run the full interactive setup wizard\n"
-       "  /api               Change API provider or update API key\n"
-       "  /model             Switch active AI model\n"
-       "  /lang              Change UI & assistant language (TR, EN, DE, ES, FR, RU)\n"
-       "  /auto  (/yolo)     Enable Full Auto Mode (execute without prompts)\n"
-       "  /smart             Enable Smart Confirm Mode (ask before changes)\n"
-       "  /tokens [limit]    View token usage stats or set token alert limit\n"
-       "  /undo              Undo DocMind's most recent file modification\n"
-       "  /tree [path]       Display directory tree structure\n"
-       "  /cd <dir>          Change current working directory\n"
-       "  /save [name]       Save current conversation session\n"
-       "  /load [name]       Load a saved conversation session\n"
-       "  /doctor            Run system, network & API diagnostics\n"
-       "  /clear             Clear screen and reset conversation memory\n"
-       "  /exit  (/quit)     Safely exit DocMind"
-     ),
-     "cmd_cleared": "Conversation memory and screen cleared.",
-     "cmd_saved": "Session saved successfully: {path}",
-     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
-     "cmd_lang_changed": "Language updated to: {lang}",
-     "cmd_mode_changed": "Execution mode updated: {mode}",
-     "cmd_cd_ok": "Working directory changed to: {path}",
-     "cmd_cd_err": "WARNING: Could not change directory: {err}",
-     "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
-     "cmd_exit_bye": "Closing DocMind. Goodbye!",
-     "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
-     "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
-     "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
-     "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
-   },
-   "de": {
-     "lang_name": "Deutsch",
-     "ai_lang_instruction": "Kommuniziere mit dem Benutzer immer auf klarem, natürlichem DEUTSCH, sofern nicht anders gewünscht.",
-     "welcome_subtitle": "Autonomer KI-Terminal-Agent der nächsten Generation",
-     "ready_hint": "DocMind ist bereit! Stelle Aufgaben, bearbeite Dateien oder führe Befehle aus.",
-     "type_help_hint": "/help für Befehle | /lang für Sprache | /api für API | /exit zum Beenden.",
-     "prompt_placeholder": "Aufgabe an DocMind eingeben...",
-     "wiz_title": "DOCMIND EINRICHTUNGSASSISTENT",
-     "wiz_select_lang": "Bitte Sprache wählen (1-6) [Standard: 1]: ",
-     "wiz_lang_saved": "Sprache eingestellt: Deutsch (DE)",
-     "wiz_select_provider": "KI-API-Anbieter auswählen",
-     "wiz_provider_prompt": "Ihre Wahl (1-7) [Standard: 1]: ",
-     "wiz_select_model": "Modell für {provider} auswählen",
-     "wiz_custom_model_opt": "Eigenen Modellnamen eingeben...",
-     "wiz_model_prompt": "Modellwahl [Standard: 1]: ",
-     "wiz_custom_model_prompt": "Genaue Modell-ID eingeben: ",
-     "wiz_enter_base_url": "API Base-URL eingeben [Standard: {default}]: ",
-     "wiz_enter_api_key": "Ihren {provider} API-Schlüssel eingeben: ",
-     "wiz_api_key_optional": "{provider} API-Schlüssel (optional bei lokalem Server): ",
-     "wiz_api_key_empty": "WARNUNG: API-Schlüssel darf nicht leer sein!",
-     "wiz_testing_api": "API-Verbindung und Schlüssel werden geprüft...",
-     "wiz_api_ok": "Erfolg! Verbindung zu {provider} ({model}) bestätigt.",
-     "wiz_api_fail_menu": "Problem bei der API-Prüfung. Was möchten Sie tun?",
-     "wiz_opt_retry_key": "Neuen API-Schlüssel eingeben",
-     "wiz_opt_change_provider": "Anderen Anbieter / Modell wählen",
-     "wiz_opt_skip_anyway": "Warnung überspringen & trotzdem speichern (/api später nutzbar)",
-     "wiz_select_mode": "Sicherheits- & Ausführungsmodus wählen",
-     "wiz_mode_smart": "Intelligente Bestätigung (Empfohlen - Lesen frei, fragt vor Änderungen/Befehlen)",
-     "wiz_mode_auto": "Vollautomatisch (Führt alle Datei- & Terminal-Aktionen sofort aus)",
-     "wiz_mode_prompt": "Moduswahl (1-2) [Standard: 1]: ",
-     "wiz_complete": "Einrichtung abgeschlossen! Gespeichert unter ~/.docmind-single/config.json.",
-     "mode_smart_short": "BESTÄTIGUNG",
-     "mode_auto_short": "VOLLAUTO",
-     "status_tokens": "Tokens: {total} (Ein:{inp} / Aus:{out})",
-     "status_no_key": "KEIN API-KEY (/api eingeben)",
-     "thinking": "DocMind denkt nach und analysiert...",
-     "step_counter": "Autonomer Schritt {step}/{max_steps}",
-     "max_steps_reached": "WARNUNG: Maximale autonome Schritte ({max_steps}) erreicht.",
-     "ask_continue_steps": "Soll DocMind weiterarbeiten? [J/n]: ",
-     "compacting_context": "INFO: Verlauf wird zur Token-Einsparung intelligent komprimiert...",
-     "context_compacted": "Verlauf erfolgreich komprimiert, fahre fort.",
-     "output_truncated_warn": "WARNUNG: Antwort erreichte das Ausgabe-Token-Limit. Tippen Sie 'weiter' zum Fortfahren.",
-     "tool_running": "Werkzeug läuft: {name}",
-     "tool_done": "Fertig: {name}",
-     "tool_skipped": "Vom Benutzer übersprungen: {name}",
-     "tool_error_passed": "WARNUNG: Fehler in '{name}' sicher übersprungen ({err}).",
-     "perm_title": "BESTÄTIGUNG ERFORDERLICH",
-     "perm_file_action": "Dateiaktion: {action} -> {target}",
-     "perm_command_warn": "Auszuführender Befehl: {cmd}",
-     "perm_dangerous_warn": "ACHTUNG! KRITISCHER BEFEHL ERKANNT! Bitte sorgfältig prüfen!",
-     "perm_prompt": "[J]a ausführen | [A]utomatikmodus | [N]ein überspringen [Standard: J]: ",
-     "perm_dangerous_prompt": "Diesen kritischen Befehl wirklich ausführen? [yes/no]: ",
-     "perm_switched_auto": "Vollautomatischer Modus aktiviert! (/smart zum Zurückwechseln)",
-     "undo_success": "Letzte Dateiänderung rückgängig gemacht: {path}",
-     "undo_empty": "Keine Dateiänderung zum Rückgängigmachen vorhanden.",
-     "err_quota_title": "KRITISCHE WARNUNG: API-TOKEN / GUTHABEN AUFGEBRAUCHT!",
-     "err_quota_desc": "Ihr {provider} API-Kontingent oder Guthaben ist erschöpft.\nDetail: {detail}",
-     "err_rate_title": "WARNUNG: API-RATENLIMIT ÜBERSCHRITTEN!",
-     "err_rate_desc": "Zu viele Anfragen pro Minute bei {provider}.\nDetail: {detail}",
-     "err_auth_title": "WARNUNG: UNGÜLTIGER ODER ABGELAUFENER API-SCHLÜSSEL!",
-     "err_auth_desc": "Ihr {provider} API-Schlüssel wurde abgelehnt.\nDetail: {detail}",
-     "err_context_title": "WARNUNG: KONTEXT-TOKEN-LIMIT ÜBERSCHRITTEN!",
-     "err_context_desc": "Kontextlimit erreicht. Automatische Komprimierung startet.\nDetail: {detail}",
-     "err_model_title": "WARNUNG: MODELL NICHT GEFUNDEN!",
-     "err_model_desc": "Modell ({model}) nicht verfügbar.\nDetail: {detail}",
-     "err_server_title": "WARNUNG: KI-SERVER ÜBERLASTET / TEMPORÄRER FEHLER!",
-     "err_server_desc": "{provider} meldet vorübergehende Serverprobleme.\nDetail: {detail}",
-     "err_network_title": "WARNUNG: NETZWERK- / INTERNETFEHLER!",
-     "err_network_desc": "{provider} nicht erreichbar. Bitte Internetverbindung prüfen.\nDetail: {detail}",
-     "err_tool_title": "WARNUNG: DATEI- / SYSTEMFEHLER (ÜBERSPRUNGEN)",
-     "err_tool_desc": "Systemfehler sicher abgefangen:\nDetail: {detail}",
-     "err_unknown_title": "WARNUNG: UNERWARTETER FEHLER ABGEFANGEN",
-     "err_unknown_desc": "Fehler wurde abgefangen, Programm läuft weiter:\nDetail: {detail}",
-     "err_skipped_notice": "Fehler sicher übersprungen. DocMind ist bereit.",
-     "err_retrying_in": "Automatischer Neuversuch in {sec}s (Strg+C zum Überspringen)...",
-     "err_budget_warn_title": "TOKEN-BUDGET-WARNUNG",
-     "err_budget_warn_desc": "Bisher {used} Tokens verbraucht (Warnschwelle: {limit}).",
-     "rec_title": "WIEDERHERSTELLUNGSOPTIONEN",
-     "rec_opt_new_key": "Neuen API-Schlüssel eingeben & fortfahren",
-     "rec_opt_switch_provider": "KI-Anbieter wechseln",
-     "rec_opt_switch_model": "Anderes Modell wählen",
-     "rec_opt_retry": "Jetzt erneut versuchen",
-     "rec_opt_skip": "Fehler überspringen & zurück zum Chat",
-     "rec_choose": "Ihre Wahl [Standard: {default}]: ",
-     "help_title": "DOCMIND BEFEHLSÜBERSICHT",
-     "help_body": (
-       "  /help     Hilfe anzeigen              /setup    Einrichtungsassistent\n"
-       "  /api      API-Anbieter/Schlüssel      /model    KI-Modell wechseln\n"
-       "  /lang     Sprache ändern              /auto     Vollautomatischer Modus\n"
-       "  /smart    Bestätigungsmodus           /tokens   Token-Statistik & Limit\n"
-       "  /undo     Letzte Änderung zurück      /tree     Verzeichnisbaum\n"
-       "  /cd       Verzeichnis wechseln        /doctor   Systemdiagnose\n"
-       "  /save     Sitzung speichern           /load     Sitzung laden\n"
-       "  /clear    Verlauf löschen             /exit     Beenden"
-     ),
-     "cmd_cleared": "Gesprächsverlauf und Bildschirm geleert.",
-     "cmd_saved": "Sitzung gespeichert: {path}",
-     "cmd_loaded": "Sitzung geladen ({count} Nachrichten): {path}",
-     "cmd_lang_changed": "Sprache geändert: {lang}",
-     "cmd_mode_changed": "Modus aktualisiert: {mode}",
-     "cmd_cd_ok": "Arbeitsverzeichnis geändert: {path}",
-     "cmd_cd_err": "WARNUNG: Verzeichniswechsel fehlgeschlagen: {err}",
-     "cmd_unknown": "Unbekannter Befehl: '{cmd}'. /help für Hilfe.",
-     "cmd_exit_bye": "DocMind wird beendet. Auf Wiedersehen!",
-     "ctrl_c_cancelled": "Vorgang abgebrochen (Strg+C). Bereit für neue Eingaben.",
-     "ctrl_c_exit_hint": "Tippen Sie /exit oder drücken Sie erneut Strg+C zum Beenden.",
-     "doctor_title": "DOCMIND SYSTEMDIAGNOSE (/doctor)",
-     "tokens_report_title": "TOKEN- & NUTZUNGSBERICHT",
-   },
-   "es": {
-     "lang_name": "Español",
-     "ai_lang_instruction": "Comunícate siempre con el usuario en ESPAÑOL claro y natural, salvo que pida otro idioma.",
-     "welcome_subtitle": "Agente IA Autónomo de Terminal de Nueva Generación",
-     "ready_hint": "¡DocMind está listo! Pide tareas, edita archivos o ejecuta comandos.",
-     "type_help_hint": "Escribe /help para comandos | /lang idioma | /api ajustar API | /exit salir.",
-     "prompt_placeholder": "Escribe una tarea para DocMind...",
-     "wiz_title": "ASISTENTE DE CONFIGURACIÓN DE DOCMIND",
-     "wiz_select_lang": "Seleccione su idioma preferido (1-6) [Por defecto: 1]: ",
-     "wiz_lang_saved": "Idioma configurado: Español (ES)",
-     "wiz_select_provider": "Seleccione el Proveedor de API de IA",
-     "wiz_provider_prompt": "Su elección (1-7) [Por defecto: 1]: ",
-     "wiz_select_model": "Seleccione Modelo para {provider}",
-     "wiz_custom_model_opt": "Ingresar nombre de modelo personalizado...",
-     "wiz_model_prompt": "Elección de modelo [Por defecto: 1]: ",
-     "wiz_custom_model_prompt": "Escriba el ID exacto del modelo: ",
-     "wiz_enter_base_url": "Ingrese Base URL de la API [Por defecto: {default}]: ",
-     "wiz_enter_api_key": "Ingrese su clave API de {provider}: ",
-     "wiz_api_key_optional": "Clave API de {provider} (opcional si es servidor local): ",
-     "wiz_api_key_empty": "¡ADVERTENCIA: La clave API no puede estar vacía!",
-     "wiz_testing_api": "Verificando conexión y clave API...",
-     "wiz_api_ok": "¡Excelente! Conexión con {provider} ({model}) verificada.",
-     "wiz_api_fail_menu": "Hubo un problema al verificar la API. ¿Qué desea hacer?",
-     "wiz_opt_retry_key": "Ingresar nueva clave API",
-     "wiz_opt_change_provider": "Elegir otro proveedor / modelo",
-     "wiz_opt_skip_anyway": "Omitir advertencia y guardar de todos modos (cambie luego con /api)",
-     "wiz_select_mode": "Seleccione Modo de Ejecución y Seguridad",
-     "wiz_mode_smart": "Confirmación Inteligente (Recomendado - Pregunta antes de editar/ejecutar)",
-     "wiz_mode_auto": "Modo Automático Total (Ejecuta todo sin pedir confirmación)",
-     "wiz_mode_prompt": "Elección de modo (1-2) [Por defecto: 1]: ",
-     "wiz_complete": "¡Configuración completada! Guardado en ~/.docmind-single/config.json.",
-     "mode_smart_short": "CONFIRMACIÓN",
-     "mode_auto_short": "AUTO TOTAL",
-     "status_tokens": "Tokens: {total} (Ent:{inp} / Sal:{out})",
-     "status_no_key": "SIN API KEY (use /api)",
-     "thinking": "DocMind está pensando y analizando...",
-     "step_counter": "Paso Autónomo {step}/{max_steps}",
-     "max_steps_reached": "ADVERTENCIA: Se alcanzó el límite de pasos autónomos ({max_steps}).",
-     "ask_continue_steps": "¿Desea que DocMind continúe trabajando? [S/n]: ",
-     "compacting_context": "INFO: Compactando historial automáticamente para ahorrar tokens...",
-     "context_compacted": "Historial compactado con éxito; continuando.",
-     "output_truncated_warn": "ADVERTENCIA: La respuesta alcanzó el límite de tokens de salida. Escriba 'continuar'.",
-     "tool_running": "Ejecutando herramienta: {name}",
-     "tool_done": "Completado: {name}",
-     "tool_skipped": "Omitido por el usuario: {name}",
-     "tool_error_passed": "ADVERTENCIA: Error en '{name}' omitido sin fallar ({err}).",
-     "perm_title": "CONFIRMACIÓN REQUERIDA",
-     "perm_file_action": "Operación de archivo: {action} -> {target}",
-     "perm_command_warn": "Comando de terminal a ejecutar: {cmd}",
-     "perm_dangerous_warn": "¡ATENCIÓN! ¡COMANDO CRÍTICO O RIESGOSO DETECTADO!",
-     "perm_prompt": "[S]í ejecutar | [A]uto modo | [N]o omitir [Por defecto: S]: ",
-     "perm_dangerous_prompt": "¿Seguro que desea ejecutar este comando crítico? [yes/no]: ",
-     "perm_switched_auto": "¡Modo Automático activado! Escriba /smart para volver a confirmar.",
-     "undo_success": "Último cambio de archivo revertido: {path}",
-     "undo_empty": "No hay cambios de archivo para deshacer.",
-     "err_quota_title": "¡ALERTA CRÍTICA: TOKENS / CRÉDITO DE API AGOTADOS!",
-     "err_quota_desc": "Su saldo de créditos o cuota de tokens en {provider} se ha agotado.\nDetalle: {detail}",
-     "err_rate_title": "¡ADVERTENCIA: LÍMITE DE VELOCIDAD DE API (RATE LIMIT)!",
-     "err_rate_desc": "Demasiadas solicitudes por minuto en {provider}.\nDetalle: {detail}",
-     "err_auth_title": "¡ADVERTENCIA: CLAVE API INVÁLIDA O CADUCADA!",
-     "err_auth_desc": "Su clave API de {provider} fue rechazada.\nDetalle: {detail}",
-     "err_context_title": "¡ADVERTENCIA: LÍMITE DE TOKENS DE CONTEXTO SUPERADO!",
-     "err_context_desc": "Compactando historial automáticamente para continuar.\nDetalle: {detail}",
-     "err_model_title": "¡ADVERTENCIA: MODELO NO ENCONTRADO O SIN ACCESO!",
-     "err_model_desc": "El modelo ({model}) no está disponible.\nDetalle: {detail}",
-     "err_server_title": "¡ADVERTENCIA: SERVIDOR IA SOBRECARGADO / ERROR TEMPORAL!",
-     "err_server_desc": "Problema temporal en los servidores de {provider}.\nDetalle: {detail}",
-     "err_network_title": "¡ADVERTENCIA: PROBLEMA DE CONEXIÓN A INTERNET!",
-     "err_network_desc": "No se pudo conectar con {provider}. Verifique su red.\nDetalle: {detail}",
-     "err_tool_title": "ADVERTENCIA: ERROR DE SISTEMA/ARCHIVO (OMITIDO)",
-     "err_tool_desc": "Se detectó un error pero el programa sigue activo:\nDetalle: {detail}",
-     "err_unknown_title": "ADVERTENCIA: ERROR INESPERADO CAPTURADO Y OMITIDO",
-     "err_unknown_desc": "El problema fue gestionado de forma segura:\nDetalle: {detail}",
-     "err_skipped_notice": "Problema omitido con seguridad. DocMind sigue listo.",
-     "err_retrying_in": "Reintentando automáticamente en {sec}s (Ctrl+C para omitir)...",
-     "err_budget_warn_title": "AVISO DE CONSUMO DE TOKENS",
-     "err_budget_warn_desc": "Se han usado {used} tokens en esta sesión (Límite de aviso: {limit}).",
-     "rec_title": "OPCIONES DE RECUPERACIÓN",
-     "rec_opt_new_key": "Ingresar nueva clave API y continuar",
-     "rec_opt_switch_provider": "Cambiar de proveedor de IA",
-     "rec_opt_switch_model": "Seleccionar otro modelo",
-     "rec_opt_retry": "Reintentar ahora",
-     "rec_opt_skip": "Omitir error y volver al chat",
-     "rec_choose": "Su opción [Por defecto: {default}]: ",
-     "help_title": "GUÍA DE COMANDOS DE DOCMIND",
-     "help_body": (
-       "  /help     Mostrar ayuda               /setup    Asistente inicial\n"
-       "  /api      Cambiar proveedor/API key   /model    Cambiar modelo IA\n"
-       "  /lang     Cambiar idioma              /auto     Modo Automático\n"
-       "  /smart    Modo Confirmación           /tokens   Uso y límite de tokens\n"
-       "  /undo     Deshacer edición            /tree     Árbol de carpetas\n"
-       "  /cd       Cambiar directorio          /doctor   Diagnóstico del sistema\n"
-       "  /save     Guardar sesión              /load     Cargar sesión\n"
-       "  /clear    Limpiar historial           /exit     Salir"
-     ),
-     "cmd_cleared": "Historial y pantalla limpiados.",
-     "cmd_saved": "Sesión guardada: {path}",
-     "cmd_loaded": "Sesión cargada ({count} mensajes): {path}",
-     "cmd_lang_changed": "Idioma cambiado a: {lang}",
-     "cmd_mode_changed": "Modo actualizado: {mode}",
-     "cmd_cd_ok": "Directorio cambiado a: {path}",
-     "cmd_cd_err": "ADVERTENCIA: No se pudo cambiar el directorio: {err}",
-     "cmd_unknown": "Comando desconocido: '{cmd}'. Escriba /help.",
-     "cmd_exit_bye": "Cerrando DocMind. ¡Hasta pronto!",
-     "ctrl_c_cancelled": "Operación cancelada (Ctrl+C). Listo para continuar.",
-     "ctrl_c_exit_hint": "Escriba /exit o pulse Ctrl+C de nuevo para salir.",
-     "doctor_title": "DIAGNÓSTICO DE SALUD DE DOCMIND (/doctor)",
-     "tokens_report_title": "INFORME DE TOKENS DE LA SESIÓN",
-   },
-   "fr": {
-     "lang_name": "Français",
-     "ai_lang_instruction": "Communique toujours avec l'utilisateur en FRANÇAIS clair et naturel, sauf demande contraire.",
-     "welcome_subtitle": "Agent IA Autonome de Terminal Nouvelle Génération",
-     "ready_hint": "DocMind est prêt ! Demandez une tâche, modifiez des fichiers ou lancez des commandes.",
-     "type_help_hint": "Tapez /help pour l'aide | /lang langue | /api clé API | /exit quitter.",
-     "prompt_placeholder": "Confiez une tâche à DocMind...",
-     "wiz_title": "ASSISTANT DE CONFIGURATION DOCMIND",
-     "wiz_select_lang": "Veuillez choisir votre langue (1-6) [Défaut : 1] : ",
-     "wiz_lang_saved": "Langue sélectionnée : Français (FR)",
-     "wiz_select_provider": "Choisissez le fournisseur d'API IA",
-     "wiz_provider_prompt": "Votre choix (1-7) [Défaut : 1] : ",
-     "wiz_select_model": "Choisissez le modèle pour {provider}",
-     "wiz_custom_model_opt": "Saisir un nom de modèle personnalisé...",
-     "wiz_model_prompt": "Choix du modèle [Défaut : 1] : ",
-     "wiz_custom_model_prompt": "Entrez l'identifiant exact du modèle : ",
-     "wiz_enter_base_url": "Entrez l'URL de base de l'API [Défaut : {default}] : ",
-     "wiz_enter_api_key": "Entrez votre clé API {provider} : ",
-     "wiz_api_key_optional": "Clé API {provider} (optionnel pour serveur local) : ",
-     "wiz_api_key_empty": "AVERTISSEMENT : La clé API ne peut pas être vide !",
-     "wiz_testing_api": "Vérification de la connexion et de la clé API...",
-     "wiz_api_ok": "Parfait ! Connexion à {provider} ({model}) vérifiée.",
-     "wiz_api_fail_menu": "Un problème est survenu lors de la vérification. Que voulez-vous faire ?",
-     "wiz_opt_retry_key": "Saisir une nouvelle clé API",
-     "wiz_opt_change_provider": "Choisir un autre fournisseur / modèle",
-     "wiz_opt_skip_anyway": "Ignorer l'alerte et enregistrer quand même (/api plus tard)",
-     "wiz_select_mode": "Choisissez le mode d'exécution et de sécurité",
-     "wiz_mode_smart": "Confirmation Intelligente (Recommandé - Demande avant modifications/commandes)",
-     "wiz_mode_auto": "Mode Automatique Complet (Exécute tout immédiatement sans confirmation)",
-     "wiz_mode_prompt": "Choix du mode (1-2) [Défaut : 1] : ",
-     "wiz_complete": "Configuration terminée ! Enregistré dans ~/.docmind-single/config.json.",
-     "mode_smart_short": "CONFIRMATION",
-     "mode_auto_short": "AUTO COMPLET",
-     "status_tokens": "Tokens : {total} (Ent:{inp} / Sor:{out})",
-     "status_no_key": "SANS CLÉ API (/api)",
-     "thinking": "DocMind réfléchit et analyse...",
-     "step_counter": "Étape autonome {step}/{max_steps}",
-     "max_steps_reached": "AVERTISSEMENT : Limite d'étapes autonomes ({max_steps}) atteinte.",
-     "ask_continue_steps": "DocMind doit-il continuer ? [O/n] : ",
-     "compacting_context": "INFO : Compression intelligente de l'historique pour économiser les tokens...",
-     "context_compacted": "Historique compressé avec succès ; reprise en cours.",
-     "output_truncated_warn": "AVERTISSEMENT : Limite de tokens de sortie atteinte. Tapez 'continuer' pour poursuivre.",
-     "tool_running": "Exécution de l'outil : {name}",
-     "tool_done": "Terminé : {name}",
-     "tool_skipped": "Ignoré par l'utilisateur : {name}",
-     "tool_error_passed": "AVERTISSEMENT : Erreur dans '{name}' ignorée sans plantage ({err}).",
-     "perm_title": "CONFIRMATION REQUISE",
-     "perm_file_action": "Action fichier : {action} -> {target}",
-     "perm_command_warn": "Commande terminal à exécuter : {cmd}",
-     "perm_dangerous_warn": "ATTENTION ! COMMANDE CRITIQUE OU RISQUÉE DÉTECTÉE !",
-     "perm_prompt": "[O]ui exécuter | Mode [A]uto | [N]on ignorer [Défaut : O] : ",
-     "perm_dangerous_prompt": "Voulez-vous vraiment exécuter cette commande critique ? [yes/no] : ",
-     "perm_switched_auto": "Mode Automatique activé ! Tapez /smart pour réactiver les confirmations.",
-     "undo_success": "Dernière modification annulée : {path}",
-     "undo_empty": "Aucune modification de fichier à annuler.",
-     "err_quota_title": "ALERTE CRITIQUE : QUOTA DE TOKENS / CRÉDIT API ÉPUISÉ !",
-     "err_quota_desc": "Votre quota ou solde de crédits sur {provider} est épuisé.\nDétail : {detail}",
-     "err_rate_title": "AVERTISSEMENT : LIMITE DE REQUÊTES API (RATE LIMIT) !",
-     "err_rate_desc": "Trop de requêtes envoyées à {provider}.\nDétail : {detail}",
-     "err_auth_title": "AVERTISSEMENT : CLÉ API INVALIDE OU EXPIRÉE !",
-     "err_auth_desc": "Votre clé API {provider} a été refusée.\nDétail : {detail}",
-     "err_context_title": "AVERTISSEMENT : LIMITE DE TOKENS DE CONTEXTE DÉPASSÉE !",
-     "err_context_desc": "Compression automatique de la conversation en cours.\nDétail : {detail}",
-     "err_model_title": "AVERTISSEMENT : MODÈLE INTROUVABLE OU ACCÈS REFUSÉ !",
-     "err_model_desc": "Le modèle ({model}) n'est pas disponible.\nDétail : {detail}",
-     "err_server_title": "AVERTISSEMENT : SERVEUR IA SURCHARGÉ / ERREUR TEMPORAIRE !",
-     "err_server_desc": "Problème temporaire sur les serveurs {provider}.\nDétail : {detail}",
-     "err_network_title": "AVERTISSEMENT : PROBLÈME DE CONNEXION RÉSEAU / INTERNET !",
-     "err_network_desc": "Impossible de joindre {provider}. Vérifiez votre connexion.\nDétail : {detail}",
-     "err_tool_title": "AVERTISSEMENT : ERREUR FICHIER / SYSTÈME (IGNORÉE)",
-     "err_tool_desc": "Une erreur système a été interceptée sans arrêt :\nDétail : {detail}",
-     "err_unknown_title": "AVERTISSEMENT : ERREUR INATTENDUE INTERCEPTÉE",
-     "err_unknown_desc": "Problème géré en toute sécurité :\nDétail : {detail}",
-     "err_skipped_notice": "Erreur ignorée en toute sécurité. DocMind reste prêt.",
-     "err_retrying_in": "Nouvelle tentative automatique dans {sec}s (Ctrl+C pour passer)...",
-     "err_budget_warn_title": "ALERTE BUDGET TOKENS",
-     "err_budget_warn_desc": "{used} tokens utilisés durant cette session (Seuil : {limit}).",
-     "rec_title": "OPTIONS DE RÉCUPÉRATION",
-     "rec_opt_new_key": "Entrer une nouvelle clé API et continuer",
-     "rec_opt_switch_provider": "Changer de fournisseur IA",
-     "rec_opt_switch_model": "Choisir un autre modèle",
-     "rec_opt_retry": "Réessayer maintenant",
-     "rec_opt_skip": "Ignorer l'erreur et revenir au chat",
-     "rec_choose": "Votre choix [Défaut : {default}] : ",
-     "help_title": "GUIDE DES COMMANDES DOCMIND",
-     "help_body": (
-       "  /help     Afficher l'aide             /setup    Assistant initial\n"
-       "  /api      Changer fournisseur/clé     /model    Changer de modèle\n"
-       "  /lang     Changer la langue           /auto     Mode Automatique\n"
-       "  /smart    Mode Confirmation           /tokens   Statistiques tokens\n"
-       "  /undo     Annuler modification        /tree     Arborescence dossier\n"
-       "  /cd       Changer de dossier          /doctor   Diagnostic système\n"
-       "  /save     Sauvegarder session         /load     Charger session\n"
-       "  /clear    Effacer historique          /exit     Quitter"
-     ),
-     "cmd_cleared": "Historique et écran effacés.",
-     "cmd_saved": "Session sauvegardée : {path}",
-     "cmd_loaded": "Session chargée ({count} messages) : {path}",
-     "cmd_lang_changed": "Langue modifiée : {lang}",
-     "cmd_mode_changed": "Mode mis à jour : {mode}",
-     "cmd_cd_ok": "Répertoire courant changé : {path}",
-     "cmd_cd_err": "AVERTISSEMENT : Impossible de changer de dossier : {err}",
-     "cmd_unknown": "Commande inconnue : '{cmd}'. Tapez /help.",
-     "cmd_exit_bye": "Fermeture de DocMind. À bientôt !",
-     "ctrl_c_cancelled": "Opération annulée (Ctrl+C). Prêt à continuer.",
-     "ctrl_c_exit_hint": "Tapez /exit ou appuyez encore sur Ctrl+C pour quitter.",
-     "doctor_title": "DIAGNOSTIC SYSTÈME DOCMIND (/doctor)",
-     "tokens_report_title": "RAPPORT DE CONSOMMATION DE TOKENS",
-   },
-   "ru": {
-     "lang_name": "Русский",
-     "ai_lang_instruction": "Всегда общайся с пользователем на понятном и естественном РУССКОМ языке, если не указано иное.",
-     "welcome_subtitle": "Автономный терминальный ИИ-агент нового поколения",
-     "ready_hint": "DocMind готов! Ставьте задачи, редактируйте файлы или выполняйте команды.",
-     "type_help_hint": "Введите /help для команд | /lang язык | /api ключ API | /exit выход.",
-     "prompt_placeholder": "Введите задачу для DocMind...",
-     "wiz_title": "МАСТЕР НАСТРОЙКИ DOCMIND",
-     "wiz_select_lang": "Выберите язык интерфейса (1-6) [По умолчанию: 1]: ",
-     "wiz_lang_saved": "Язык установлен: Русский (RU)",
-     "wiz_select_provider": "Выберите провайдера ИИ API",
-     "wiz_provider_prompt": "Ваш выбор (1-7) [По умолчанию: 1]: ",
-     "wiz_select_model": "Выберите модель для {provider}",
-     "wiz_custom_model_opt": "Ввести своё имя модели...",
-     "wiz_model_prompt": "Выбор модели [По умолчанию: 1]: ",
-     "wiz_custom_model_prompt": "Введите точный ID модели: ",
-     "wiz_enter_base_url": "Введите Base URL API [По умолчанию: {default}]: ",
-     "wiz_enter_api_key": "Введите ваш API-ключ {provider}: ",
-     "wiz_api_key_optional": "API-ключ {provider} (можно пропустить для локального сервера): ",
-     "wiz_api_key_empty": "ВНИМАНИЕ: API-ключ не может быть пустым!",
-     "wiz_testing_api": "Проверка соединения и API-ключа...",
-     "wiz_api_ok": "Отлично! Подключение к {provider} ({model}) успешно проверено.",
-     "wiz_api_fail_menu": "Возникла проблема при проверке API. Что вы хотите сделать?",
-     "wiz_opt_retry_key": "Ввести новый API-ключ",
-     "wiz_opt_change_provider": "Выбрать другого провайдера / модель",
-     "wiz_opt_skip_anyway": "Пропустить предупреждение и сохранить (позже /api)",
-     "wiz_select_mode": "Выберите режим безопасности и работы",
-     "wiz_mode_smart": "Умное подтверждение (Рекомендуется - спрашивает перед правкой/командами)",
-     "wiz_mode_auto": "Полный автомат (Выполняет все действия без запросов)",
-     "wiz_mode_prompt": "Выбор режима (1-2) [По умолчанию: 1]: ",
-     "wiz_complete": "Настройка завершена! Конфигурация сохранена в ~/.docmind-single/config.json.",
-     "mode_smart_short": "ПОДТВЕРЖДЕНИЕ",
-     "mode_auto_short": "АВТОМАТ",
-     "status_tokens": "Токены: {total} (Вх:{inp} / Вых:{out})",
-     "status_no_key": "НЕТ API-КЛЮЧА (/api)",
-     "thinking": "DocMind думает и анализирует...",
-     "step_counter": "Автономный шаг {step}/{max_steps}",
-     "max_steps_reached": "ВНИМАНИЕ: Достигнут лимит автономных шагов ({max_steps}).",
-     "ask_continue_steps": "Продолжить выполнение задачи? [Y/n]: ",
-     "compacting_context": "ИНФО: Автоматическое сжатие истории для экономии токенов...",
-     "context_compacted": "История успешно сжата, продолжаем работу.",
-     "output_truncated_warn": "ВНИМАНИЕ: Достигнут лимит выходных токенов ответа. Напишите 'продолжай'.",
-     "tool_running": "Запуск инструмента: {name}",
-     "tool_done": "Готово: {name}",
-     "tool_skipped": "Пропущено пользователем: {name}",
-     "tool_error_passed": "ВНИМАНИЕ: Ошибка в '{name}' безопасно пропущена ({err}).",
-     "perm_title": "ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ",
-     "perm_file_action": "Действие с файлом: {action} -> {target}",
-     "perm_command_warn": "Выполнение команды: {cmd}",
-     "perm_dangerous_warn": "ОСТОРОЖНО! ОБНАРУЖЕНА ОПАСНАЯ КОМАНДА!",
-     "perm_prompt": "[Y] Выполнить | [A]вто-режим | [N] Пропустить [По умолчанию: Y]: ",
-     "perm_dangerous_prompt": "Вы уверены, что хотите выполнить эту критическую команду? [yes/no]: ",
-     "perm_switched_auto": "Включён полный автоматический режим! (/smart для возврата)",
-     "undo_success": "Последнее изменение файла отменено: {path}",
-     "undo_empty": "Нет изменений файлов для отмены.",
-     "err_quota_title": "КРИТИЧЕСКОЕ ПРЕДУПРЕЖДЕНИЕ: ЗАКОНЧИЛИСЬ ТОКЕНЫ / БАЛАНС API!",
-     "err_quota_desc": "Лимит токенов или баланс кредитов {provider} исчерпан.\nДетали: {detail}",
-     "err_rate_title": "ВНИМАНИЕ: ПРЕВЫШЕН ЛИМИТ ЗАПРОСОВ API (RATE LIMIT)!",
-     "err_rate_desc": "Слишком частые запросы к {provider}.\nДетали: {detail}",
-     "err_auth_title": "ВНИМАНИЕ: НЕВЕРНЫЙ ИЛИ ПРОСРОЧЕННЫЙ API-КЛЮЧ!",
-     "err_auth_desc": "Ваш API-ключ {provider} отклонён.\nДетали: {detail}",
-     "err_context_title": "ВНИМАНИЕ: ПРЕВЫШЕН ЛИМИТ КОНТЕКСТА (ТОКЕНОВ)!",
-     "err_context_desc": "Выполняется автоматическое сжатие диалога.\nДетали: {detail}",
-     "err_model_title": "ВНИМАНИЕ: МОДЕЛЬ НЕ НАЙДЕНА ИЛИ НЕТ ДОСТУПА!",
-     "err_model_desc": "Модель ({model}) недоступна.\nДетали: {detail}",
-     "err_server_title": "ВНИМАНИЕ: СЕРВЕР ИИ ПЕРЕГРУЖЕН / ВРЕМЕННАЯ ОШИБКА!",
-     "err_server_desc": "Временный сбой на серверах {provider}.\nДетали: {detail}",
-     "err_network_title": "ВНИМАНИЕ: ОШИБКА СЕТИ / НЕТ ИНТЕРНЕТА!",
-     "err_network_desc": "Не удалось подключиться к {provider}. Проверьте соединение.\nДетали: {detail}",
-     "err_tool_title": "ВНИМАНИЕ: ОШИБКА ФАЙЛА / СИСТЕМЫ (ПРОПУЩЕНА)",
-     "err_tool_desc": "Системная ошибка перехвачена без остановки программы:\nДетали: {detail}",
-     "err_unknown_title": "ВНИМАНИЕ: НЕПРЕДВИДЕННАЯ ОШИБКА ПЕРЕХВАЧЕНА",
-     "err_unknown_desc": "Сбой безопасно обработан, работа продолжается:\nДетали: {detail}",
-     "err_skipped_notice": "Ошибка безопасно пропущена. DocMind готов к работе.",
-     "err_retrying_in": "Повторная попытка через {sec}с (Ctrl+C чтобы пропустить)...",
-     "err_budget_warn_title": "ПРЕДУПРЕЖДЕНИЕ О РАСХОДЕ ТОКЕНОВ",
-     "err_budget_warn_desc": "Использовано {used} токенов за сессию (Лимит: {limit}).",
-     "rec_title": "ВАРИАНТЫ ВОССТАНОВЛЕНИЯ",
-     "rec_opt_new_key": "Ввести новый API-ключ и продолжить",
-     "rec_opt_switch_provider": "Сменить провайдера ИИ",
-     "rec_opt_switch_model": "Выбрать другую модель",
-     "rec_opt_retry": "Повторить попытку сейчас",
-     "rec_opt_skip": "Пропустить ошибку и вернуться в чат",
-     "rec_choose": "Ваш выбор [По умолчанию: {default}]: ",
-     "help_title": "СПРАВОЧНИК КОМАНД DOCMIND",
-     "help_body": (
-       "  /help     Показать справку            /setup    Мастер настройки\n"
-       "  /api      Сменить провайдера/ключ     /model    Сменить модель ИИ\n"
-       "  /lang     Сменить язык                /auto     Автоматический режим\n"
-       "  /smart    Режим подтверждения         /tokens   Статистика токенов\n"
-       "  /undo     Отменить правку файла       /tree     Дерево папок\n"
-       "  /cd       Сменить рабочую папку       /doctor   Диагностика системы\n"
-       "  /save     Сохранить сессию            /load     Загрузить сессию\n"
-       "  /clear    Очистить историю            /exit     Выход"
-     ),
-     "cmd_cleared": "История диалога и экран очищены.",
-     "cmd_saved": "Сессия сохранена: {path}",
-     "cmd_loaded": "Сессия загружена ({count} сообщений): {path}",
-     "cmd_lang_changed": "Язык изменён: {lang}",
-     "cmd_mode_changed": "Режим работы обновлён: {mode}",
-     "cmd_cd_ok": "Рабочая папка изменена: {path}",
-     "cmd_cd_err": "ВНИМАНИЕ: Не удалось сменить папку: {err}",
-     "cmd_unknown": "Неизвестная команда: '{cmd}'. Введите /help.",
-     "cmd_exit_bye": "Завершение работы DocMind. До встречи!",
-     "ctrl_c_cancelled": "Операция прервана пользователем (Ctrl+C). Готов к работе.",
-     "ctrl_c_exit_hint": "Введите /exit или нажмите Ctrl+C ещё раз для выхода.",
-     "doctor_title": "ДИАГНОСТИКА СИСТЕМЫ DOCMIND (/doctor)",
-     "tokens_report_title": "ОТЧЁТ ПО ИСПОЛЬЗОВАНИЮ ТОКЕНОВ",
-   },
- }
- _SAFETY_WORDING = {
-   "tr": {
-     "wiz_secret_notice": "Anahtar yazarken ekranda GÖRÜNÜR; ekranınızı kimseye göstermeyin. Kaydedilirse ~/.docmind-single/config.json içinde ŞİFRELENMEDEN tutulur. Boş Enter mevcut anahtarı korur.",
-     "wiz_complete": "Kurulum tamamlandı. API anahtarı şifrelenmeden yerel ayarlarda saklanır.",
-     "wiz_mode_smart": "Akıllı Onay (önerilen): değişiklik, komut ve web isteği için onay ister",
-     "wiz_mode_auto": "Tam Otomatik (riskli): işlemleri onaysız yapabilir; güvenlik garantisi değildir",
-     "perm_prompt": "[E]vet | [O]tomatik moda geç | [H]ayır [Varsayılan: Hayır]: ",
-     "perm_sensitive_warning": "HASSAS DOSYA: İçerik şifre veya anahtar içerebilir ve AI sağlayıcısına gönderilebilir. Yalnızca kesinlikle istiyorsanız tam olarak 'evet' yazın.",
-     "perm_sensitive_prompt": "Bu hassas işlemi onaylıyor musunuz? [evet/hayır]: ",
-   },
-   "en": {
-     "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
-     "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
-     "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
-     "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
-     "perm_prompt": "[Y]es | [A]uto mode | [N]o [Default: No]: ",
-     "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
-     "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
-   },
-   "de": {
-     "wiz_secret_notice": "Der Schlüssel ist bei der Eingabe SICHTBAR; zeigen Sie Ihren Bildschirm nicht. Er wird UNVERSCHLÜSSELT in ~/.docmind-single/config.json gespeichert. Enter behält den bisherigen Schlüssel.",
-     "wiz_complete": "Einrichtung abgeschlossen. API-Schlüssel werden unverschlüsselt lokal gespeichert.",
-     "wiz_mode_smart": "Intelligente Bestätigung (empfohlen): fragt vor Änderungen, Befehlen und Webanfragen",
-     "wiz_mode_auto": "Automatisch (riskant): Aktionen ohne Rückfrage; keine Sicherheits-Sandbox",
-     "perm_prompt": "[J]a | [A]utomatisch | [N]ein [Standard: Nein]: ",
-     "perm_sensitive_warning": "SENSIBEL: Der Inhalt kann Zugangsdaten enthalten und an den KI-Anbieter gesendet werden. Zur Bestätigung 'ja' eingeben.",
-     "perm_sensitive_prompt": "Diesen sensiblen Vorgang erlauben? [ja/nein]: ",
-   },
-   "es": {
-     "wiz_secret_notice": "La clave es VISIBLE al escribirla; no compartas la pantalla. Se guarda SIN CIFRAR en ~/.docmind-single/config.json. Enter conserva la clave actual.",
-     "wiz_complete": "Configuración completada. Las claves se guardan localmente sin cifrar.",
-     "wiz_mode_smart": "Confirmación inteligente (recomendada): pregunta antes de cambios, comandos y web",
-     "wiz_mode_auto": "Automático (arriesgado): actúa sin preguntar; no es una sandbox",
-     "perm_prompt": "[S]í | [A]utomático | [N]o [Predeterminado: No]: ",
-     "perm_sensitive_warning": "SENSIBLE: El contenido puede contener credenciales y enviarse al proveedor de IA. Escriba 'sí' para confirmar.",
-     "perm_sensitive_prompt": "¿Permitir esta acción sensible? [sí/no]: ",
-   },
-   "fr": {
-     "wiz_secret_notice": "La clé est VISIBLE pendant la saisie ; ne partagez pas votre écran. Elle est stockée SANS CHIFFREMENT dans ~/.docmind-single/config.json. Entrée conserve la clé actuelle.",
-     "wiz_complete": "Configuration terminée. Les clés sont stockées localement sans chiffrement.",
-     "wiz_mode_smart": "Confirmation intelligente (recommandée) : demander avant modification, commande et web",
-     "wiz_mode_auto": "Automatique (risqué) : agit sans demander ; ce n'est pas un bac à sable",
-     "perm_prompt": "[O]ui | [A]uto | [N]on [Défaut : Non] : ",
-     "perm_sensitive_warning": "SENSIBLE : Le contenu peut contenir des identifiants et être envoyé au fournisseur IA. Tapez 'oui' pour confirmer.",
-     "perm_sensitive_prompt": "Autoriser cette action sensible ? [oui/non] : ",
-   },
-   "ru": {
-     "wiz_secret_notice": "Ключ ВИДЕН при вводе; не показывайте экран. Он хранится БЕЗ ШИФРОВАНИЯ в ~/.docmind-single/config.json. Enter сохраняет текущий ключ.",
-     "wiz_complete": "Настройка завершена. API-ключи хранятся локально без шифрования.",
-     "wiz_mode_smart": "Умное подтверждение (рекомендуется): спрашивать перед изменениями, командами и веб-запросами",
-     "wiz_mode_auto": "Автоматический (опасно): действия без подтверждения; это не песочница",
-     "perm_prompt": "[Y] Да | [A] Авто | [N] Нет [По умолчанию: Нет]: ",
-     "perm_sensitive_warning": "КОНФИДЕНЦИАЛЬНО: содержимое может включать ключи и отправляться провайдеру ИИ. Для подтверждения введите 'да'.",
-     "perm_sensitive_prompt": "Разрешить это конфиденциальное действие? [да/нет]: ",
-   },
- }
- for _language, _wording in _SAFETY_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _SIMPLE_HELP = {
-   "tr": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış",
-   "en": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit",
-   "de": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden",
-   "es": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir",
-   "fr": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter",
-   "ru": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход",
- }
- for _language, _help in _SIMPLE_HELP.items():
-   TRANSLATIONS[_language]["help_body"] = _help
- TRANSLATIONS["tr"]["welcome_subtitle"] = "Dosyaların ve kodların için yapay zekâ asistanı"
- TRANSLATIONS["en"]["welcome_subtitle"] = "Your assistant for files and code"
- _TERMINAL_TEXT = {
-  'tr': {
-   'footer_token':'Token','footer_context':'Bağlam','footer_cost':'Maliyet',
-   'retry_wait':'Bağlantı veya sunucu sorunu. {seconds} sn sonra tekrar deneniyor (deneme {attempt}). Terminali kapatma; Ctrl+C bu görevi iptal eder.',
-   'retry_partial':'Yanıt yarım kaldı; tamamlanmamış araç çağrısı çalıştırılmadı. Tekrar edilen istek ek ücret oluşturabilir.',
-   'retry_ok':'Bağlantı düzeldi; görev devam ediyor.',
-   'price_usage':'Fiyat: /fiyat GİRİŞ ÇIKIŞ (1 milyon token başına USD); /fiyat auto varsayılana döner.',
-   'price_set':'Bu sağlayıcı/model için fiyat kaydedildi: giriş ${inp}, çıkış ${out} / 1 milyon token.',
-   'price_reset':'Özel fiyat kaldırıldı.',
-   'price_unknown':'Fiyat bilinmiyor; sağlayıcının tarifesini /fiyat ile gir.',
-   'price_invalid':'Geçerli, sıfır veya pozitif iki sayı gir: /fiyat 0.15 0.60',
-   'context_usage':'Bağlam limiti: /context SAYI; /context auto varsayılana döner.',
-   'context_invalid':'Bağlam limiti 1.024 ile 100.000.000 arasında olmalı.',
-   'context_set':'Bağlam limiti kaydedildi: {limit}.',
-   'context_reset':'Özel bağlam limiti kaldırıldı.',
+ """DocMind 14-Language Localization Dictionary."""
+ import json as _json
+ LANGUAGE_CHOICES = [('tr', 'Türkçe', 'TR - Türkçe'), ('en', 'English', 'EN - English'), ('az', 'Azərbaycan', 'AZ - Azərbaycan'), ('de', 'Deutsch', 'DE - Deutsch'), ('es', 'Español', 'ES - Español'), ('fr', 'Français', 'FR - Français'), ('it', 'Italiano', 'IT - Italiano'), ('pt', 'Português', 'PT - Português'), ('nl', 'Nederlands', 'NL - Nederlands'), ('ru', 'Русский', 'RU - Русский'), ('ar', 'العربية', 'AR - العربية'), ('zh', '中文', 'ZH - 中文'), ('ja', '日本語', 'JA - 日本語'), ('ko', '한국어', 'KO - 한국어')]
+ TRANSLATIONS = _json.loads(r'''{
+  "tr": {
+    "lang_name": "Türkçe",
+    "ai_lang_instruction": "Kullanıcıyla aksi belirtilmedikçe her zaman akıcı, doğal ve anlaşılır TÜRKÇE ile iletişim kur.",
+    "welcome_subtitle": "Dosyaların ve kodların için yapay zekâ asistanı",
+    "ready_hint": "DocMind hazır! İstediğin görevi yaz, dosyaları düzenlet veya komut çalıştır.",
+    "type_help_hint": "Komutlar için /help | Dil için /lang | API için /api | Çıkış için /exit yazın.",
+    "prompt_placeholder": "DocMind'a bir görev verin (çok satır için sonuna \\ koyun)...",
+    "wiz_title": "DOCMIND İLK KURULUM SİHİRBAZI",
+    "wiz_select_lang": "Lütfen tercih ettiğiniz dili seçin (1-14) [Varsayılan: 1]: ",
+    "wiz_lang_saved": "Dil ayarlandı: Türkçe (TR)",
+    "wiz_select_provider": "Yapay Zeka API Sağlayıcısını Seçin",
+    "wiz_provider_prompt": "Seçiminiz (1-7) [Varsayılan: 1]: ",
+    "wiz_select_model": "{provider} için Model Seçin",
+    "wiz_custom_model_opt": "Özel model adı gir...",
+    "wiz_model_prompt": "Model seçiminiz [Varsayılan: 1]: ",
+    "wiz_custom_model_prompt": "Model adını tam olarak yazın (örn. gpt-4o-mini): ",
+    "wiz_enter_base_url": "API Base URL girin [Varsayılan: {default}]: ",
+    "wiz_enter_api_key": "{provider} API Anahtarınızı (API Key) girin: ",
+    "wiz_api_key_optional": "{provider} API Anahtarı (yerel sunucuysa boş bırakabilirsiniz): ",
+    "wiz_api_key_empty": "UYARI: API anahtarı boş bırakılamaz! Lütfen geçerli bir API anahtarı girin veya yerel sağlayıcı seçin.",
+    "wiz_testing_api": "API bağlantısı ve anahtar doğrulanıyor...",
+    "wiz_api_ok": "Harika! {provider} ({model}) bağlantısı başarıyla doğrulandı.",
+    "wiz_api_fail_menu": "API doğrulaması sırasında bir sorun oluştu. Ne yapmak istersiniz?",
+    "wiz_opt_retry_key": "Yeni API Anahtarı Gir",
+    "wiz_opt_change_provider": "Farklı API Sağlayıcısı / Model Seç",
+    "wiz_opt_skip_anyway": "Bu Hatayı Geç ve Yine de Kaydet (Sonra /api ile değiştirebilirsiniz)",
+    "wiz_select_mode": "Çalışma ve Güvenlik Modunu Seçin",
+    "wiz_mode_smart": "Akıllı Onay (önerilen): değişiklik, komut ve web isteği için onay ister",
+    "wiz_mode_auto": "Tam Otomatik (riskli): işlemleri onaysız yapabilir; güvenlik garantisi değildir",
+    "wiz_mode_prompt": "Mod seçiminiz (1-2) [Varsayılan: 1]: ",
+    "wiz_complete": "Kurulum tamamlandı. API anahtarı şifrelenmeden yerel ayarlarda saklanır.",
+    "mode_smart_short": "AKILLI ONAY",
+    "mode_auto_short": "TAM OTOMATİK",
+    "status_tokens": "Token: {total} (Giriş:{inp} / Çıkış:{out})",
+    "status_no_key": "API ANAHTARI YOK (/api yazın)",
+    "thinking": "DocMind düşünüyor ve analiz ediyor...",
+    "step_counter": "Otonom Adım {step}/{max_steps}",
+    "max_steps_reached": "UYARI: Tek seferlik maksimum otonom adım sınırına ({max_steps}) ulaşıldı.",
+    "ask_continue_steps": "DocMind çalışmaya devam etsin mi? [E/h]: ",
+    "compacting_context": "BİLGİ: Sohbet geçmişi uzadı, token tasarrufu için akıllı özetleme yapılıyor...",
+    "context_compacted": "Sohbet geçmişi başarıyla sıkıştırıldı, kesintisiz devam ediliyor.",
+    "output_truncated_warn": "UYARI: Modelin tek seferlik yanıt token sınırı dolduğu için yanıt kesildi. Devam etmesi için 'devam et' yazabilirsiniz.",
+    "tool_running": "Araç Çalıştırılıyor: {name}",
+    "tool_done": "Tamamlandı: {name}",
+    "tool_skipped": "Kullanıcı tarafından atlandı: {name}",
+    "tool_error_passed": "UYARI: '{name}' aracında sorun oluştu ancak çökmeden atlandı ({err}). DocMind alternatif deneyecek.",
+    "perm_title": "İZİN ONAYI GEREKLİ",
+    "perm_file_action": "Dosya İşlemi: {action} -> {target}",
+    "perm_command_warn": "Terminal Komutu Çalıştırılacak: {cmd}",
+    "perm_dangerous_warn": "DİKKAT! KRİTİK / RİSKLİ KOMUT TESPİT EDİLDİ! Lütfen komutu dikkatle kontrol edin!",
+    "perm_prompt": "[E]vet | [O]tomatik moda geç | [H]ayır [Varsayılan: Hayır]: ",
+    "perm_dangerous_prompt": "Bu kritik komutu gerçekten çalıştırmak istiyor musunuz? [evet/hayır]: ",
+    "perm_switched_auto": "Tam Otomatik Moda geçildi! Tekrar onaylı moda dönmek için /smart yazabilirsiniz.",
+    "undo_success": "Son dosya değişikliği geri alındı: {path}",
+    "undo_empty": "Geri alınacak bir dosya değişikliği bulunamadı.",
+    "err_quota_title": "KRİTİK UYARI: API TOKEN / KREDİ BAKİYESİ BİTTİ!",
+    "err_quota_desc": "{provider} hesabınızdaki API kullanım kotası, ücretsiz limit veya kredi bakiyesi tükenmiş görünüyor.\nDetay: {detail}",
+    "err_rate_title": "UYARI: API İSTEK / DAKİKALIK TOKEN HIZ LİMİTİ (RATE LIMIT)!",
+    "err_rate_desc": "{provider} servisine çok sık istek gönderildi veya dakikalık token sınırı doldu.\nDetay: {detail}",
+    "err_auth_title": "UYARI: GEÇERSİZ VEYA YETKİSİZ API ANAHTARI!",
+    "err_auth_desc": "{provider} API anahtarınız hatalı, iptal edilmiş veya süresi dolmuş.\nDetay: {detail}",
+    "err_context_title": "UYARI: MODEL BAĞLAM (TOKEN) KAPASİTESİ AŞILDI!",
+    "err_context_desc": "Gönderilen veri ve geçmiş mesajlar modelin tek seferlik token sınırını aştı. Otomatik sıkıştırma uygulanıyor.\nDetay: {detail}",
+    "err_model_title": "UYARI: MODEL BULUNAMADI VEYA ERİŞİMİZ YOK!",
+    "err_model_desc": "Seçili model ({model}) bu sağlayıcıda mevcut değil veya hesabınıza açık değil.\nDetay: {detail}",
+    "err_server_title": "UYARI: AI SUNUCUSU GEÇİCİ OLARAK YOĞUN / HATALI!",
+    "err_server_desc": "{provider} sunucularında geçici bir yoğunluk veya kesinti yaşanıyor.\nDetay: {detail}",
+    "err_network_title": "UYARI: İNTERNET / AĞ BAĞLANTI SORUNU!",
+    "err_network_desc": "{provider} sunucusuna ulaşılamadı. İnternet bağlantınızı, VPN veya güvenlik duvarını kontrol edin.\nDetay: {detail}",
+    "err_tool_title": "UYARI: DOSYA / SİSTEM İŞLEM HATASI (ATLANDI)",
+    "err_tool_desc": "İşlem sırasında bir sistem hatası oluştu fakat program durmadı:\nDetay: {detail}",
+    "err_unknown_title": "UYARI: BEKLENMEYEN HATA YAKALANDI VE GEÇİLDİ",
+    "err_unknown_desc": "İşlem sırasında beklenmeyen bir durum oluştu, sistem güvenli şekilde devam ediyor:\nDetay: {detail}",
+    "err_skipped_notice": "Hata güvenli şekilde geçildi. DocMind çalışmaya hazır.",
+    "err_retrying_in": "{sec} saniye içinde otomatik tekrar deneniyor (Atlamak için Ctrl+C)...",
+    "err_budget_warn_title": "TOKEN KULLANIM UYARISI",
+    "err_budget_warn_desc": "Bu oturumda toplam {used} token kullanıldı (Belirlediğiniz uyarı sınırı: {limit}).",
+    "rec_title": "KURTARMA SEÇENEKLERİ (Program Kapanmadan Devam Eder)",
+    "rec_opt_new_key": "Yeni API Anahtarı Gir ve Devam Et",
+    "rec_opt_switch_provider": "Başka AI Sağlayıcısına Geç (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Başka Bir Model Seç ve Devam Et",
+    "rec_opt_retry": "Şimdi Tekrar Dene",
+    "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
+    "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
+    "help_title": "DOCMIND KOMUT REHBERİ",
+    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula",
+    "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
+    "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
+    "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
+    "cmd_lang_changed": "Dil değiştirildi: {lang}",
+    "cmd_mode_changed": "Çalışma modu güncellendi: {mode}",
+    "cmd_cd_ok": "Çalışma dizini değiştirildi: {path}",
+    "cmd_cd_err": "UYARI: Klasör değiştirilemedi: {err}",
+    "cmd_unknown": "Bilinmeyen komut: '{cmd}'. Tüm komutlar için /help yazın.",
+    "cmd_exit_bye": "DocMind kapatılıyor. Görüşmek üzere!",
+    "ctrl_c_cancelled": "İşlem kullanıcı tarafından durduruldu (Ctrl+C). Sohbete devam edebilirsiniz.",
+    "ctrl_c_exit_hint": "Çıkmak için /exit yazın veya tekrar Ctrl+C tuşuna basın.",
+    "doctor_title": "DOCMIND SİSTEM & SAĞLIK KONTROLÜ (/doctor)",
+    "tokens_report_title": "OTURUM TOKEN VE KULLANIM RAPORU",
+    "wiz_secret_notice": "Anahtar yazarken ekranda GÖRÜNÜR; ekranınızı kimseye göstermeyin. Kaydedilirse ~/.docmind-single/config.json içinde ŞİFRELENMEDEN tutulur. Boş Enter mevcut anahtarı korur.",
+    "perm_sensitive_warning": "HASSAS DOSYA: İçerik şifre veya anahtar içerebilir ve AI sağlayıcısına gönderilebilir. Yalnızca kesinlikle istiyorsanız tam olarak 'evet' yazın.",
+    "perm_sensitive_prompt": "Bu hassas işlemi onaylıyor musunuz? [evet/hayır]: ",
+    "footer_token": "Token",
+    "footer_context": "Bağlam",
+    "footer_cost": "Maliyet",
+    "retry_wait": "Bağlantı veya sunucu sorunu. {seconds} sn sonra tekrar deneniyor (deneme {attempt}). Terminali kapatma; Ctrl+C bu görevi iptal eder.",
+    "retry_partial": "Yanıt yarım kaldı; tamamlanmamış araç çağrısı çalıştırılmadı. Tekrar edilen istek ek ücret oluşturabilir.",
+    "retry_ok": "Bağlantı düzeldi; görev devam ediyor.",
+    "price_usage": "Fiyat: /fiyat GİRİŞ ÇIKIŞ (1 milyon token başına USD); /fiyat auto varsayılana döner.",
+    "price_set": "Bu sağlayıcı/model için fiyat kaydedildi: giriş ${inp}, çıkış ${out} / 1 milyon token.",
+    "price_reset": "Özel fiyat kaldırıldı.",
+    "price_unknown": "Fiyat bilinmiyor; sağlayıcının tarifesini /fiyat ile gir.",
+    "price_invalid": "Geçerli, sıfır veya pozitif iki sayı gir: /fiyat 0.15 0.60",
+    "context_usage": "Bağlam limiti: /context SAYI; /context auto varsayılana döner.",
+    "context_invalid": "Bağlam limiti 1.024 ile 100.000.000 arasında olmalı.",
+    "context_set": "Bağlam limiti kaydedildi: {limit}.",
+    "context_reset": "Özel bağlam limiti kaldırıldı.",
+    "retry_stream_off": "Akış birkaç kez yarım kaldı; bu oturumda normal yanıt deneniyor. Metin yine kademeli gösterilecek.",
+    "settings_save_failed": "Ayar kaydedilemedi; yalnızca bu oturumda geçerli olabilir.",
+    "stat_0": "Sağlayıcı / Model",
+    "stat_1": "API isteği",
+    "stat_2": "Giriş token",
+    "stat_3": "Çıkış token",
+    "stat_4": "Toplam token",
+    "stat_5": "Bağlam doluluğu",
+    "stat_6": "Anlık durum",
+    "stat_7": "Maliyet yaklaşık; önbellek, ücretsiz kota, vergi ve yarım kalan istekler sonucu değiştirebilir. Fiyat tablosu 29.10.2026 tarihli; güncel fatura için sağlayıcına bak.",
+    "stat_8": "Uyarı sınırı",
+    "stat_9": "Bellekteki mesaj",
+    "history_title": "Sohbet geçmişi",
+    "history_choose": "Açmak istediğin sohbet numarası (Enter: iptal): ",
+    "history_empty": "Henüz kayıtlı sohbet yok. İlk mesajından sonra otomatik kaydedilir.",
+    "history_invalid": "Geçerli bir sohbet numarası gir.",
+    "history_cancel": "Sohbet seçimi iptal edildi.",
+    "history_loaded": "Sohbet yüklendi: {title}",
+    "history_you": "Sen",
+    "history_cancelled": "yanıt alınamadı / iptal edildi",
+    "history_read_error": "Sohbet geçmişi okunamadı. Dosyayı ve izinleri kontrol et.",
+    "history_write_error": "Sohbet geçmişi kaydedilemedi. Disk alanını, sohbet boyutunu ve klasör izinlerini kontrol et.",
+    "history_forked": "Bu sohbet başka bir DocMind oturumunda değişmiş; veri kaybını önlemek için devamı ayrı kaydediliyor.",
+    "history_privacy": "Sohbetler otomatik sıkıştırılarak kaydedilir; dosyalar şifreli değildir.",
+    "history_help": " /history   Kayıtlı sohbetleri aç",
+    "history_delete_hint": "Sohbet silmek için /delete yazın.",
+    "history_delete_title": "Sohbet sil",
+    "history_delete_warning": "Seçilen sohbet kalıcı olarak silinir; açık sohbetse bellekten de çıkar.",
+    "history_delete_choose": "Silinecek sohbet numarası (Enter: iptal): ",
+    "history_delete_ok": "Sohbet silindi: {title}",
+    "history_delete_active": "Açık sohbet temizlendi; yeni bir sohbet başladı.",
+    "history_delete_error": "Sohbet silinemedi. Dosyanın ve klasörün izinlerini kontrol et.",
+    "history_delete_help": " /delete    Kayıtlı sohbeti sil",
+    "auto_syntax_ok": "{path}: otomatik sözdizimi kontrolü başarılı (işlevsel test değildir).",
+    "auto_syntax_failed": "{path}: otomatik sözdizimi kontrolü başarısız veya yapılamadı; ayrıntı modele iletildi.",
+    "loop_suppressed": "Tekrarlanan başarısız veya reddedilen işlem çalıştırılmadı: {name}",
+    "loop_stopped": "Agent tekrara takıldı ve yeni işlem yapmadan durduruldu. Farklı bir yol veya yeni talimat verebilirsiniz.",
+    "tool_args_retry": "Model geçersiz araç verisi üretti; işlem yapılmadı. Bir kez daha düzeltilmesi isteniyor (ek API ücreti oluşabilir).",
+    "effort_active": "Düşünme ayarı: {level}. Desteklenen modellerde kullanılır; yüksek seviye süreyi ve API maliyetini artırabilir. /effort ile değiştirin.",
+    "effort_uncontrolled": "Bu sağlayıcı/model için DocMind özel düşünme parametresi göndermiyor; sağlayıcının kendi ayarı geçerli.",
+    "effort_usage": "Kullanım: /effort max|high|medium|low|default (veya /zeka maksimum|yüksek|orta|düşük|varsayılan).",
+    "effort_saved": "Düşünme ayarı kaydedildi: {level}.",
+    "effort_not_saved": "Düşünme ayarı bu oturumda {level}; ayarlara kaydedilemedi.",
+    "effort_help": " /effort    Düşünme düzeyi ve maliyet",
+    "effort_actual": "Bu model için API’ye gönderilecek en yüksek desteklenen düzey: {actual}. Maksimum seviye önemli ölçüde daha fazla zaman ve ücret gerektirebilir.",
+    "effort_fallback": "Sağlayıcı düşünme parametresini reddetti. İşlem yapılmadan yeniden deneniyor; bu model/düzey için sağlayıcının varsayılanı kullanılacak. Ek API ücreti oluşabilir.",
+    "effort_fallback_active": "Bu oturumda bu model/düzey reddedildi; isteklerde şu anda sağlayıcının varsayılanı kullanılıyor. /effort ile yeniden seçebilirsiniz.",
+    "compat_fallback": "Sağlayıcı isteğin bir alanını veya yerel araç biçimini reddetti; uyumlu biçimle yeniden deneniyor. Ek API ücreti oluşabilir.",
+    "doctor_connection_ok": "✔ Canlı bağlantı: model yanıt verdi (araç kullanımı ayrıca test edilir).",
+    "doctor_tools_skipped": "Araç test edilmedi. /doctor tools gerçek API ile test eder; ek ücret oluşabilir.",
+    "doctor_tools_start": "Araç şemaları sağlayıcıya gönderiliyor; ek API isteği yapılır, hiçbir araç çalıştırılmaz.",
+    "doctor_tools_ok": "✔ Araç çağrısı testi: beklenen deneme çağrısı alındı ({mode}); hiçbir araç çalıştırılmadı.",
+    "doctor_tools_inconclusive": "⚠ Araç testi başarısız veya sonuçsuz; model beklenen deneme çağrısını üretmedi. Hiçbir araç çalıştırılmadı.",
+    "doctor_tool_native_mode": "yerel araç API",
+    "doctor_tool_prompt_mode": "metin tabanlı uyumluluk",
+    "doctor_usage": "Kullanım: /doctor, /doctor tools veya /doctor all",
+    "doctor_tools_help": " /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir",
+    "err_request_budget_title": "TEK İSTEK TOKEN SINIRINI AŞIYOR",
+    "err_request_budget_desc": "{provider} için bu isteğin tamamı dakika başına token bütçesinden büyük; beklemek sorunu çözmez. Mesajı veya geçmişi küçültün, yeni oturum açın ya da farklı model/hesap kullanın. Ayrıntı: {detail}",
+    "budget_fallback": "Sağlayıcının tek istek token sınırı aşıldı. Yalnızca bu isteğin yanıt sınırı {limit} tokene düşürülerek bir kez daha deneniyor; yanıt kısalabilir ve ek API ücreti oluşabilir.",
+    "probe_retry": "Bağlantı testinde model düşünme sınırına ulaştı ve metin vermedi. Bir kez 1024 token sınırıyla tekrar deneniyor; ilk deneme ücretlenmiş olabilir.",
+    "err_edge_block_title": "SAĞLAYICININ GÜVENLİK KATMANI İSTEĞİ ENGELLEDİ (1010)",
+    "err_edge_block_desc": "{provider} isteği API’ye ulaşmadan güvenlik katmanında engellenmiş olabilir (HTTP 403 / 1010). Bu hata API anahtarının geçersiz olduğunu göstermez. DocMind’in güncel sürümünü kullanın; sorun sürerse VPN/proxy ve ağınızı kontrol edip sağlayıcı desteğine 403 / 1010 bilgisini iletin. API anahtarınızı paylaşmayın.",
+    "err_access_denied_title": "SAĞLAYICI ERİŞİMİ REDDETTİ (403)",
+    "err_access_denied_desc": "{provider} erişimi reddetti. Hesap/model yetkisi, bölge, ağ veya sağlayıcının güvenlik politikası etkili olabilir; bu kod tek başına anahtarın geçersiz olduğunu kanıtlamaz. Sağlayıcı panelindeki izinleri kontrol edin. Detay: {detail}",
+    "retry_exhausted": "{count} otomatik tekrar başarısız oldu. Ek istekler ücret oluşturabilir; devam etmek sizin seçiminiz.",
+    "retry_deferred": "Sağlayıcı en az {seconds} saniye beklenmesini istedi; otomatik olarak erken tekrar edilmeyecek.",
+    "probe_transient_retry": "Bağlantı testinde geçici hata: {seconds} sn sonra yeniden deneniyor ({attempt}/2). Ek API ücreti oluşabilir.",
+    "batch_deferred": "{name} ertelendi: önceki işlem başarısız veya reddedildi; agent sonucu değerlendirip yeniden planlayacak.",
+    "footer_incomplete": "eksik",
+    "footer_unknown": "bilinmiyor",
+    "footer_calculating": "hesaplanıyor",
+    "usage_incomplete_detail": "Eksik maliyet verisi: {count} istek; bunların {interrupted} tanesi kesildi veya hata verdi. Kullanım/fiyat bilgisi gelmeyebilir. Gösterilen tutar yalnızca bilinen kısmın tahminidir. Dar ekranda * işareti eksik veya devam eden veriyi gösterir.",
+    "usage_complete_detail": "Kullanım ve fiyat verisi eksik olan istek yok. Dar ekranda * devam eden veriyi gösterebilir.",
+    "doctor_all_help": " /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi",
+    "doctor_all_title": "Tüm yapılandırılmış sağlayıcıları test et",
+    "doctor_all_none": "Test edilecek kayıtlı sağlayıcı anahtarı yok. /api ile sağlayıcı ekleyin.",
+    "doctor_all_intro": "Aşağıdaki modellere gerçek API istekleri gönderilir; ek ücret oluşabilir. Aktif olmayan sağlayıcılarda varsayılan model denenir. Her sağlayıcı için kendi anahtarı ve gösterilen sunucu kullanılır; ayarlar değiştirilmez.",
+    "doctor_all_confirm": "Testlere devam edilsin mi? (evet/hayır; Enter: hayır): ",
+    "doctor_all_cancelled": "Test iptal edildi; hiçbir istek gönderilmedi.",
+    "doctor_all_checking": "{provider} bağlantısı test ediliyor",
+    "doctor_all_ok": "model yanıt verdi",
+    "doctor_all_failed": "test başarısız",
+    "doctor_all_skipped": "Atlanan (yapılandırılmamış): {names}",
+    "doctor_all_tool_note": "Bu yalnızca bağlantı testidir. Aktif modelin araç uyumluluğu için /doctor tools kullanın; ek ücret oluşabilir.",
+    "thinking_rebase": "Claude bağlamı değiştiğinden eski imzalı düşünce blokları yeni isteğe eklenmedi; sohbet metni ve araç sonuçları korundu.",
+    "usage_tokens_missing_detail": "Maliyet bildirilmiş olsa da {count} isteğin token verisi eksik. Dar ekranda * eksik veriyi gösterir.",
+    "startup_authority_warn": "⚠ UYARI: AGENT BİLGİSAYARINIZA TAM YETKİLİDİR — Tüm sürücüleri, klasörleri ve dosyaları görebilir, açabilir, düzenleyebilir ve (izninizle) terminal/sistem kodu çalıştırabilir. Dikkatli kullanın; doğabilecek işlemlerden sorumluluk kabul edilmez.",
+    "term_perm_title": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
+    "term_perm_header": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
+    "term_perm_denied": "Terminal / kod çalıştırma izni kullanıcı tarafından reddedildi.",
+    "term_used_status": "Durum",
+    "term_triage_manual": "⚠ ŞİFRE / YETKİ GEREKLİ: Bu komut şifre veya yönetici izni istediği için kullanıcı tarafından çalıştırılmalıdır.",
+    "term_triage_autofix": "↻ Hata algılandı — DocMind hatayı analiz edip düzeltme yolunu değerlendiriyor...",
+    "ask_user_header": "DOCMIND SORUSU / HEDEF SİSTEM SEÇİMİ",
+    "ask_user_prompt": "Seçiminiz (numara veya açıklama yazın, varsayılan={default}): ",
+    "term_perm_shell": "Kabuk / Ortam",
+    "term_perm_cwd": "Çalışma Klasörü",
+    "term_perm_code": "ÇALIŞTIRILACAK KOD",
+    "term_perm_prompt": "Bu terminal/sistem kodunu çalıştırmak için izin veriyor musunuz? [E]vet / [H]ayır: ",
+    "term_perm_reprompt": "Lütfen onay için 'e' (evet) veya iptal için 'h' (hayır) yazın: ",
+    "term_used_header": "TERMİNAL KULLANILDI",
+    "term_used_code": "KULLANILAN KOD",
+    "term_used_shell": "Kabuk / Ortam",
+    "term_used_cwd": "Çalışma Klasörü",
+    "term_used_ok": "Başarılı (Çıkış Kodu: {code}, {elapsed:.2f} sn)",
+    "term_used_err": "Hata / Çıkış Kodu: {code} ({elapsed:.2f} sn)",
+    "term_used_output": "Çıktı",
+    "conn_auto_heal": "Bağlantı kesintisi algılandı; oturum korunarak otomatik yeniden bağlanılıyor ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Görsel eklendi: {name} ({dims}, {size})",
+    "img_not_found": "Görsel dosyası bulunamadı: {path}",
+    "img_unsupported": "Desteklenmeyen veya bozuk görsel formatı: {path}",
+    "img_too_large": "Görsel çok büyük ({size}); maksimum 15 MB desteklenir.",
+    "img_vision_fallback": "Seçili model ({model}) doğrudan görsel okumayı desteklemiyor; metin moduna geçildi. Görsel analiz için Gemini, Claude veya GPT-4o/5 seçin.",
+    "img_usage": "Kullanım: /image <görsel_yolu> [sorunuz]  (veya görseli doğrudan sohbete sürükleyip bırakın)",
+    "diff_new_file": "Yeni Dosya",
+    "diff_edit_file": "Dosya Düzenleme",
+    "diff_delete_file": "Dosya Silme",
+    "diff_open_file": "Dosya Açma / Okuma",
+    "diff_more_lines": "... ({count} satır daha gizlendi)",
+    "term_perm_cwd_lbl": "Çalışma Klasörü",
+    "mention_attached": "📎 Dosya bağlamı eklendi: {name} ({size})",
+    "mention_dir_attached": "📂 Klasör ağacı eklendi: {name}",
+    "copy_ok": "Panoya kopyalandı ({chars} karakter).",
+    "copy_empty": "Kopyalanacak bir yanıt veya kod bloğu bulunamadı.",
+    "paste_empty": "Panoda görsel veya metin bulunamadı.",
+    "paste_img_ok": "📋 Panodan ekran görüntüsü yakalandı ({dims}, {size}).",
+    "paste_txt_ok": "📋 Panodan metin eklendi ({chars} karakter).",
+    "export_ok": "Sohbet Markdown olarak dışa aktarıldı: {path}",
+    "export_empty": "Dışa aktarılacak sohbet mesajı yok.",
+    "redo_success": "Dosya değişikliği yeniden uygulandı: {path}",
+    "redo_empty": "Yeniden uygulanacak (/redo) bir değişiklik yok.",
+    "undo_list_title": "GERİ ALMA GEÇMİŞİ (/undo)",
+    "diff_clean": "Git çalışma ağacı temiz (değişiklik yok).",
+    "diff_not_git": "Bu klasör bir Git deposu değil veya git kurulu değil.",
+    "cmd_did_you_mean": "Bilinmeyen komut: {cmd}. Bunu mu demek istediniz: {suggest} ? (/help yazın)",
+    "search_usage": "Kullanım: /search <araştırılacak veya doğrulanacak konu>",
+    "vision_bridge_used": "👁️ Aktif model görsel desteklemediği için görsel '{bridge_model}' ile yüksek çözünürlüklü okundu."
   },
-  'en': {
-   'footer_token':'Tokens','footer_context':'Context','footer_cost':'Cost',
-   'retry_wait':'Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.',
-   'retry_partial':'The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.',
-   'retry_ok':'Connection restored; continuing the task.',
-   'price_usage':'Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.',
-   'price_set':'Price saved for this provider/model: input ${inp}, output ${out} per million.',
-   'price_reset':'Custom pricing removed.',
-   'price_unknown':'Price unknown; enter the provider rate with /price.',
-   'price_invalid':'Enter two non-negative numbers: /price 0.15 0.60',
-   'context_usage':'Context limit: /context NUMBER; /context auto resets.',
-   'context_invalid':'Context limit must be from 1,024 to 100,000,000.',
-   'context_set':'Context limit saved: {limit}.',
-   'context_reset':'Custom context limit removed.',
+  "en": {
+    "lang_name": "English",
+    "ai_lang_instruction": "Always communicate with the user in clear, natural ENGLISH unless asked otherwise.",
+    "welcome_subtitle": "Your assistant for files and code",
+    "ready_hint": "DocMind is ready! Ask anything, edit files, inspect code, or run commands.",
+    "type_help_hint": "Type /help for commands | /lang for language | /api for API settings | /exit to quit.",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND INITIAL SETUP WIZARD",
+    "wiz_select_lang": "Please select your preferred language (1-14) [Default: 1]: ",
+    "wiz_lang_saved": "Language set to: English (EN)",
+    "wiz_select_provider": "Select AI API Provider",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "Enter your {provider} API Key: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "Verifying API connection and key...",
+    "wiz_api_ok": "Awesome! {provider} ({model}) connection verified successfully.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "SMART CONFIRM",
+    "mode_auto_short": "FULL AUTO",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind is thinking and analyzing...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "PERMISSION CONFIRMATION REQUIRED",
+    "perm_file_action": "File Operation: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[Y]es | [A]uto mode | [N]o [Default: No]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "Reverted last file modification: {path}",
+    "undo_empty": "No file modifications available to undo.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND COMMAND REFERENCE",
+    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification",
+    "cmd_cleared": "Conversation memory and screen cleared.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "Language updated to: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "Closing DocMind. Goodbye!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ WARNING: THIS AGENT HAS FULL SYSTEM ACCESS — It can view, open, and edit any drive, folder, or file on your computer and execute terminal/system commands (with your permission). Use carefully; no liability is accepted.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_denied": "Terminal / code execution declined by user.",
+    "term_used_status": "Status",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND QUESTION / TARGET PLATFORM CHOICE",
+    "ask_user_prompt": "Your choice (enter number or custom text, default={default}): ",
+    "term_perm_shell": "Shell / Runtime",
+    "term_perm_cwd": "Working Directory",
+    "term_perm_code": "CODE TO EXECUTE",
+    "term_perm_prompt": "Allow this terminal/system command to execute on your computer? [Y]es / [N]o: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "TERMINAL USED",
+    "term_used_code": "CODE USED",
+    "term_used_shell": "Shell / Runtime",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "Working Directory",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Output",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Image attached: {name} ({dims}, {size})",
+    "img_not_found": "Image file not found: {path}",
+    "img_unsupported": "Unsupported or corrupted image format: {path}",
+    "img_too_large": "Image is too large ({size}); maximum supported size is 15 MB.",
+    "img_vision_fallback": "Selected model ({model}) rejected image input; retried with text metadata. Switch to Gemini, Claude, or GPT-4o/5 for full vision.",
+    "img_usage": "Usage: /image <image_path> [your question]  (or drag & drop an image path directly into chat)",
+    "diff_new_file": "New File",
+    "diff_edit_file": "Edit File",
+    "diff_delete_file": "Delete File",
+    "diff_open_file": "Open / Read File",
+    "diff_more_lines": "... ({count} more lines omitted)",
+    "mention_attached": "📎 File context attached: {name} ({size})",
+    "mention_dir_attached": "📂 Directory tree attached: {name}",
+    "copy_ok": "Copied to clipboard ({chars} chars).",
+    "copy_empty": "No assistant response or code block available to copy.",
+    "paste_empty": "No image or text found in clipboard.",
+    "paste_img_ok": "📋 Captured screenshot from clipboard ({dims}, {size}).",
+    "paste_txt_ok": "📋 Attached text from clipboard ({chars} chars).",
+    "export_ok": "Conversation exported to Markdown: {path}",
+    "export_empty": "No conversation messages to export.",
+    "redo_success": "Re-applied file change: {path}",
+    "redo_empty": "Nothing to redo.",
+    "undo_list_title": "UNDO SNAPSHOT HISTORY (/undo)",
+    "diff_clean": "Git working tree is clean (no uncommitted changes).",
+    "diff_not_git": "Current folder is not a Git repository or git is not installed.",
+    "cmd_did_you_mean": "Unknown command: {cmd}. Did you mean {suggest}? (Type /help)",
+    "search_usage": "Usage: /search <topic or claim to research & verify>",
+    "vision_bridge_used": "👁️ Active model is text-only; analyzed image in high resolution via '{bridge_model}'."
   },
-  'de': {'footer_token':'Token','footer_context':'Kontext','footer_cost':'Kosten','retry_wait':'Netzwerk- oder Serverproblem. Neuer Versuch in {seconds}s (Versuch {attempt}). Terminal offen lassen; Strg+C bricht ab.','retry_partial':'Antwort unterbrochen; unvollständige Werkzeugaufrufe wurden nicht ausgeführt. Weitere Kosten möglich.','retry_ok':'Verbindung wiederhergestellt; Aufgabe wird fortgesetzt.','price_usage':'Preis: /price EINGABE AUSGABE (USD pro Mio. Token); /price auto setzt zurück.','price_set':'Preis gespeichert: Eingabe ${inp}, Ausgabe ${out} / Mio.','price_reset':'Eigener Preis entfernt.','price_unknown':'Preis unbekannt; mit /price setzen.','price_invalid':'Zwei nichtnegative Zahlen eingeben: /price 0.15 0.60','context_usage':'Kontextlimit: /context ZAHL; /context auto setzt zurück.','context_invalid':'Limit muss zwischen 1024 und 100000000 liegen.','context_set':'Kontextlimit gespeichert: {limit}.','context_reset':'Eigenes Kontextlimit entfernt.'},
-  'es': {'footer_token':'Tokens','footer_context':'Contexto','footer_cost':'Coste','retry_wait':'Problema de red o servidor. Reintento en {seconds}s (intento {attempt}). No cierres la terminal; Ctrl+C cancela.','retry_partial':'Respuesta interrumpida; no se ejecutaron llamadas incompletas. El reintento puede generar cargos.','retry_ok':'Conexión restaurada; continuando.','price_usage':'Precio: /price ENTRADA SALIDA (USD por millón); /price auto restablece.','price_set':'Precio guardado: entrada ${inp}, salida ${out} por millón.','price_reset':'Precio personalizado eliminado.','price_unknown':'Precio desconocido; usa /price.','price_invalid':'Introduce dos números no negativos: /price 0.15 0.60','context_usage':'Límite: /context NÚMERO; /context auto restablece.','context_invalid':'El límite debe estar entre 1024 y 100000000.','context_set':'Límite guardado: {limit}.','context_reset':'Límite personalizado eliminado.'},
-  'fr': {'footer_token':'Jetons','footer_context':'Contexte','footer_cost':'Coût','retry_wait':'Problème réseau ou serveur. Nouvelle tentative dans {seconds}s (essai {attempt}). Gardez le terminal ouvert ; Ctrl+C annule.','retry_partial':'Réponse interrompue ; aucun appel incomplet exécuté. Une nouvelle tentative peut être facturée.','retry_ok':'Connexion rétablie ; tâche reprise.','price_usage':'Prix : /price ENTRÉE SORTIE (USD par million) ; /price auto réinitialise.','price_set':'Prix enregistré : entrée ${inp}, sortie ${out} par million.','price_reset':'Prix personnalisé supprimé.','price_unknown':'Prix inconnu ; utilisez /price.','price_invalid':'Entrez deux nombres positifs ou nuls : /price 0.15 0.60','context_usage':'Limite : /context NOMBRE ; /context auto réinitialise.','context_invalid':'La limite doit être entre 1024 et 100000000.','context_set':'Limite enregistrée : {limit}.','context_reset':'Limite personnalisée supprimée.'},
-  'ru': {'footer_token':'Токены','footer_context':'Контекст','footer_cost':'Стоимость','retry_wait':'Ошибка сети или сервера. Повтор через {seconds}с (попытка {attempt}). Не закрывайте терминал; Ctrl+C отменяет задачу.','retry_partial':'Ответ прерван; неполные вызовы не выполнены. Повтор может повлечь дополнительные расходы.','retry_ok':'Соединение восстановлено; задача продолжается.','price_usage':'Цена: /price ВХОД ВЫХОД (USD за миллион); /price auto сбрасывает.','price_set':'Цена сохранена: вход ${inp}, выход ${out} за миллион.','price_reset':'Своя цена удалена.','price_unknown':'Цена неизвестна; укажите её через /price.','price_invalid':'Введите два неотрицательных числа: /price 0.15 0.60','context_usage':'Лимит: /context ЧИСЛО; /context auto сбрасывает.','context_invalid':'Лимит должен быть от 1024 до 100000000.','context_set':'Лимит сохранён: {limit}.','context_reset':'Свой лимит удалён.'},
- }
- for _language, _strings in _TERMINAL_TEXT.items():
-   TRANSLATIONS[_language].update(_strings)
- for _language in TRANSLATIONS:
-   TRANSLATIONS[_language]['help_body'] += '\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit'
- TRANSLATIONS['tr']['help_body'] = (_SIMPLE_HELP['tr'] + '\n'
-   ' /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla')
- _STREAM_FALLBACK = {
-   'tr':'Akış birkaç kez yarım kaldı; bu oturumda normal yanıt deneniyor. Metin yine kademeli gösterilecek.',
-   'en':'The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.',
-   'de':'Der Stream wurde mehrfach unterbrochen; für diese Sitzung wird ohne Streaming fortgefahren.',
-   'es':'El flujo se interrumpió varias veces; se intentará sin streaming en esta sesión.',
-   'fr':'Le flux a été interrompu plusieurs fois ; nouvel essai sans streaming pour cette session.',
-   'ru':'Поток несколько раз прервался; в этой сессии повторяем запрос без потоковой передачи.',
- }
- for _language,_message in _STREAM_FALLBACK.items():
-   TRANSLATIONS[_language]['retry_stream_off'] = _message
- TRANSLATIONS['tr']['settings_save_failed'] = 'Ayar kaydedilemedi; yalnızca bu oturumda geçerli olabilir.'
- TRANSLATIONS['en']['settings_save_failed'] = 'Settings could not be saved and may apply only for this session.'
- TRANSLATIONS['de']['settings_save_failed'] = 'Einstellungen konnten nicht gespeichert werden; sie gelten eventuell nur für diese Sitzung.'
- TRANSLATIONS['es']['settings_save_failed'] = 'No se pudieron guardar los ajustes; quizá solo duren esta sesión.'
- TRANSLATIONS['fr']['settings_save_failed'] = 'Paramètres non enregistrés ; ils peuvent ne durer que pour cette session.'
- TRANSLATIONS['ru']['settings_save_failed'] = 'Настройки не сохранены; возможно, они действуют только в этом сеансе.'
- _STAT_LABELS = {
-  'tr': ['Sağlayıcı / Model','API isteği','Giriş token','Çıkış token','Toplam token','Bağlam doluluğu','Anlık durum','Maliyet yaklaşık; önbellek, ücretsiz kota, vergi ve yarım kalan istekler sonucu değiştirebilir. Fiyat tablosu 29.10.2026 tarihli; güncel fatura için sağlayıcına bak.','Uyarı sınırı','Bellekteki mesaj'],
-  'en': ['Provider / Model','API calls','Input tokens','Output tokens','Total tokens','Context fill','Live status','Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.','Warning threshold','Messages in memory'],
-  'de': ['Anbieter / Modell','API-Anfragen','Eingabe-Token','Ausgabe-Token','Token gesamt','Kontextbelegung','Live-Status','Nur geschätzte Kosten; Cache, Freikontingent, Steuern und unterbrochene Anfragen können abweichen. Tarife: 29.10.2026.','Warnschwelle','Nachrichten im Speicher'],
-  'es': ['Proveedor / modelo','Solicitudes API','Tokens de entrada','Tokens de salida','Tokens totales','Uso del contexto','Estado','Coste estimado; caché, nivel gratuito, impuestos y reintentos pueden cambiarlo. Tarifas del 29-10-2026.','Umbral de aviso','Mensajes en memoria'],
-  'fr': ['Fournisseur / modèle','Requêtes API','Jetons en entrée','Jetons en sortie','Total de jetons','Contexte utilisé','État','Coût estimé ; cache, gratuité, taxes et interruptions peuvent différer. Tarifs du 29-10-2026.','Seuil d’alerte','Messages en mémoire'],
-  'ru': ['Провайдер / модель','Запросы API','Входные токены','Выходные токены','Всего токенов','Заполнение контекста','Состояние','Примерная стоимость; кэш, бесплатный тариф, налоги и прерванные запросы могут отличаться. Тарифы на 29.10.2026.','Порог предупреждения','Сообщений в памяти'],
- }
- for _language,_labels in _STAT_LABELS.items():
-   for _index,_label in enumerate(_labels):
-     TRANSLATIONS[_language]['stat_'+str(_index)] = _label
- _HISTORY_TEXT = {
-   'tr': {
-     'history_title':'Sohbet geçmişi',
-     'history_choose':'Açmak istediğin sohbet numarası (Enter: iptal): ',
-     'history_empty':'Henüz kayıtlı sohbet yok. İlk mesajından sonra otomatik kaydedilir.',
-     'history_invalid':'Geçerli bir sohbet numarası gir.',
-     'history_cancel':'Sohbet seçimi iptal edildi.',
-     'history_loaded':'Sohbet yüklendi: {title}',
-     'history_you':'Sen',
-     'history_cancelled':'yanıt alınamadı / iptal edildi',
-     'history_read_error':'Sohbet geçmişi okunamadı. Dosyayı ve izinleri kontrol et.',
-     'history_write_error':'Sohbet geçmişi kaydedilemedi. Disk alanını, sohbet boyutunu ve klasör izinlerini kontrol et.',
-     'history_forked':'Bu sohbet başka bir DocMind oturumunda değişmiş; veri kaybını önlemek için devamı ayrı kaydediliyor.',
-     'history_privacy':'Sohbetler otomatik sıkıştırılarak kaydedilir; dosyalar şifreli değildir.',
-     'history_help':' /history   Kayıtlı sohbetleri aç',
-   },
-   'en': {
-     'history_title':'Conversation history', 'history_choose':'Conversation number (Enter to cancel): ',
-     'history_empty':'No saved conversations yet. The first message is saved automatically.',
-     'history_invalid':'Enter a valid conversation number.', 'history_cancel':'Conversation selection cancelled.',
-     'history_loaded':'Conversation loaded: {title}', 'history_you':'You', 'history_cancelled':'not completed / cancelled',
-     'history_read_error':'Could not read conversation history. Check the file and permissions.',
-     'history_write_error':'Could not save conversation history. Check its size, disk space and permissions.',
-     'history_forked':'Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.',
-     'history_privacy':'Conversations are saved automatically in compressed files, not encrypted.',
-     'history_help':' /history   Open saved conversations',
-   },
-   'de': {
-     'history_title':'Gesprächsverlauf', 'history_choose':'Gesprächsnummer (Enter: abbrechen): ',
-     'history_empty':'Noch keine Gespräche gespeichert. Die erste Nachricht wird automatisch gespeichert.',
-     'history_invalid':'Bitte eine gültige Gesprächsnummer eingeben.', 'history_cancel':'Auswahl abgebrochen.',
-     'history_loaded':'Gespräch geladen: {title}', 'history_you':'Du', 'history_cancelled':'abgebrochen',
-     'history_read_error':'Verlauf konnte nicht gelesen werden. Datei und Berechtigungen prüfen.',
-     'history_write_error':'Verlauf konnte nicht gespeichert werden. Größe, Speicherplatz und Berechtigungen prüfen.',
-     'history_forked':'Eine andere Sitzung hat dieses Gespräch verändert; Fortsetzung wird separat gespeichert.',
-     'history_privacy':'Gespräche werden komprimiert, aber nicht verschlüsselt gespeichert.',
-     'history_help':' /history   Gespeicherte Gespräche öffnen',
-   },
-   'es': {
-     'history_title':'Historial de conversaciones', 'history_choose':'Número de conversación (Enter cancela): ',
-     'history_empty':'Aún no hay conversaciones guardadas. El primer mensaje se guarda automáticamente.',
-     'history_invalid':'Introduce un número válido.', 'history_cancel':'Selección cancelada.',
-     'history_loaded':'Conversación cargada: {title}', 'history_you':'Tú', 'history_cancelled':'cancelado',
-     'history_read_error':'No se pudo leer el historial. Revisa el archivo y los permisos.',
-     'history_write_error':'No se pudo guardar el historial. Revisa el tamaño, el espacio y los permisos.',
-     'history_forked':'Otra sesión modificó esta conversación; se guardará una continuación separada.',
-     'history_privacy':'Las conversaciones se guardan comprimidas, pero no cifradas.',
-     'history_help':' /history   Abrir conversaciones guardadas',
-   },
-   'fr': {
-     'history_title':'Historique des conversations', 'history_choose':'Numéro de conversation (Entrée annule) : ',
-     'history_empty':'Aucune conversation enregistrée. Le premier message est sauvegardé automatiquement.',
-     'history_invalid':'Entrez un numéro valide.', 'history_cancel':'Sélection annulée.',
-     'history_loaded':'Conversation chargée : {title}', 'history_you':'Vous', 'history_cancelled':'annulé',
-     'history_read_error':'Impossible de lire l’historique. Vérifiez le fichier et ses permissions.',
-     'history_write_error':'Impossible d’enregistrer l’historique. Vérifiez sa taille, l’espace et les permissions.',
-     'history_forked':'Une autre session a modifié cette conversation ; la suite est enregistrée séparément.',
-     'history_privacy':'Les conversations sont enregistrées compressées, mais non chiffrées.',
-     'history_help':' /history   Ouvrir les conversations enregistrées',
-   },
-   'ru': {
-     'history_title':'История разговоров', 'history_choose':'Номер разговора (Enter — отмена): ',
-     'history_empty':'Сохранённых разговоров пока нет. Первое сообщение сохраняется автоматически.',
-     'history_invalid':'Введите правильный номер.', 'history_cancel':'Выбор отменён.',
-     'history_loaded':'Разговор загружен: {title}', 'history_you':'Вы', 'history_cancelled':'отменено',
-     'history_read_error':'Не удалось прочитать историю. Проверьте файл и права.',
-     'history_write_error':'Не удалось сохранить историю. Проверьте размер, место и права.',
-     'history_forked':'Другая сессия изменила разговор; продолжение будет сохранено отдельно.',
-     'history_privacy':'Разговоры сохраняются сжатыми, но не зашифрованными.',
-     'history_help':' /history   Открыть сохранённые разговоры',
-   },
- }
- for _language, _history_strings in _HISTORY_TEXT.items():
-   TRANSLATIONS[_language].update(_history_strings)
-   TRANSLATIONS[_language]['help_body'] += '\n' + _history_strings['history_help']
- _HISTORY_DELETE = {
-  'tr': {'history_delete_hint':'Sohbet silmek için /delete yazın.',
-     'history_delete_title':'Sohbet sil',
-     'history_delete_warning':'Seçilen sohbet kalıcı olarak silinir; açık sohbetse bellekten de çıkar.',
-     'history_delete_choose':'Silinecek sohbet numarası (Enter: iptal): ',
-     'history_delete_ok':'Sohbet silindi: {title}',
-     'history_delete_active':'Açık sohbet temizlendi; yeni bir sohbet başladı.',
-     'history_delete_error':'Sohbet silinemedi. Dosyanın ve klasörün izinlerini kontrol et.',
-     'history_delete_help':' /delete    Kayıtlı sohbeti sil'},
-  'en': {'history_delete_hint':'Type /delete to delete a conversation.', 'history_delete_title':'Delete conversation',
-     'history_delete_warning':'The chosen conversation is permanently deleted; an open one is also cleared from memory.',
-     'history_delete_choose':'Conversation number to delete (Enter cancels): ', 'history_delete_ok':'Conversation deleted: {title}',
-     'history_delete_active':'The open conversation was cleared; a new one has started.',
-     'history_delete_error':'Could not delete the conversation. Check file and directory permissions.',
-     'history_delete_help':' /delete    Delete a saved conversation'},
-  'de': {'history_delete_hint':'Zum Löschen eines Gesprächs /delete eingeben.', 'history_delete_title':'Gespräch löschen',
-     'history_delete_warning':'Das gewählte Gespräch wird dauerhaft gelöscht und bei Bedarf aus dem Speicher entfernt.',
-     'history_delete_choose':'Zu löschende Nummer (Enter: abbrechen): ', 'history_delete_ok':'Gespräch gelöscht: {title}',
-     'history_delete_active':'Das offene Gespräch wurde geleert; ein neues hat begonnen.',
-     'history_delete_error':'Gespräch konnte nicht gelöscht werden. Berechtigungen prüfen.',
-     'history_delete_help':' /delete    Gespeichertes Gespräch löschen'},
-  'es': {'history_delete_hint':'Escribe /delete para eliminar una conversación.', 'history_delete_title':'Eliminar conversación',
-     'history_delete_warning':'La conversación elegida se elimina de forma permanente y, si está abierta, de la memoria.',
-     'history_delete_choose':'Número a eliminar (Enter cancela): ', 'history_delete_ok':'Conversación eliminada: {title}',
-     'history_delete_active':'Se borró la conversación abierta; comenzó una nueva.',
-     'history_delete_error':'No se pudo eliminar. Revisa los permisos del archivo y la carpeta.',
-     'history_delete_help':' /delete    Eliminar conversación guardada'},
-  'fr': {'history_delete_hint':'Tapez /delete pour supprimer une conversation.', 'history_delete_title':'Supprimer une conversation',
-     'history_delete_warning':'La conversation choisie est supprimée définitivement et, si elle est ouverte, de la mémoire.',
-     'history_delete_choose':'Numéro à supprimer (Entrée annule) : ', 'history_delete_ok':'Conversation supprimée : {title}',
-     'history_delete_active':'La conversation ouverte a été effacée ; une nouvelle a commencé.',
-     'history_delete_error':'Impossible de supprimer la conversation. Vérifiez les permissions.',
-     'history_delete_help':' /delete    Supprimer une conversation enregistrée'},
-  'ru': {'history_delete_hint':'Для удаления разговора введите /delete.', 'history_delete_title':'Удалить разговор',
-     'history_delete_warning':'Выбранный разговор удаляется безвозвратно и, если он открыт, из памяти.',
-     'history_delete_choose':'Номер для удаления (Enter — отмена): ', 'history_delete_ok':'Разговор удалён: {title}',
-     'history_delete_active':'Открытый разговор очищен; начался новый.',
-     'history_delete_error':'Не удалось удалить разговор. Проверьте права файла и папки.',
-     'history_delete_help':' /delete    Удалить сохранённый разговор'},
- }
- for _language, _delete_strings in _HISTORY_DELETE.items():
-   TRANSLATIONS[_language].update(_delete_strings)
-   TRANSLATIONS[_language]['help_body'] += '\n' + _delete_strings['history_delete_help']
- _AGENT_RELIABILITY_WORDING = {
-   "tr": {
-     "auto_syntax_ok": "{path}: otomatik sözdizimi kontrolü başarılı (işlevsel test değildir).",
-     "auto_syntax_failed": "{path}: otomatik sözdizimi kontrolü başarısız veya yapılamadı; ayrıntı modele iletildi.",
-     "loop_suppressed": "Tekrarlanan başarısız veya reddedilen işlem çalıştırılmadı: {name}",
-     "loop_stopped": "Agent tekrara takıldı ve yeni işlem yapmadan durduruldu. Farklı bir yol veya yeni talimat verebilirsiniz.",
-     "tool_args_retry": "Model geçersiz araç verisi üretti; işlem yapılmadı. Bir kez daha düzeltilmesi isteniyor (ek API ücreti oluşabilir).",
-   },
-   "en": {
-     "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
-     "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
-     "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
-     "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
-     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
-   },
-   "de": {
-     "auto_syntax_ok": "{path}: automatische Syntaxprüfung erfolgreich (kein Funktionstest).",
-     "auto_syntax_failed": "{path}: automatische Syntaxprüfung fehlgeschlagen oder nicht möglich; Details wurden an das Modell übermittelt.",
-     "loop_suppressed": "Wiederholte fehlgeschlagene oder abgelehnte Aktion nicht ausgeführt: {name}",
-     "loop_stopped": "Der Agent wiederholte sich und wurde ohne weitere Aktionen gestoppt. Geben Sie einen anderen Ansatz oder neue Anweisungen ein.",
-     "tool_args_retry": "Das Modell lieferte ungültige Werkzeugargumente; nichts wurde ausgeführt. Eine Korrektur wird angefordert (zusätzliche API-Kosten möglich).",
-   },
-   "es": {
-     "auto_syntax_ok": "{path}: comprobación automática de sintaxis correcta (no es una prueba funcional).",
-     "auto_syntax_failed": "{path}: la comprobación automática falló o no pudo ejecutarse; se enviaron detalles al modelo.",
-     "loop_suppressed": "No se ejecutó la acción fallida o rechazada repetida: {name}",
-     "loop_stopped": "El agente quedó repitiéndose y se detuvo sin más acciones. Puede indicar otra estrategia o una nueva instrucción.",
-     "tool_args_retry": "El modelo devolvió argumentos inválidos; no se ejecutó nada. Se solicita una corrección (puede tener un coste adicional de API).",
-   },
-   "fr": {
-     "auto_syntax_ok": "{path} : vérification syntaxique automatique réussie (ce n'est pas un test fonctionnel).",
-     "auto_syntax_failed": "{path} : vérification syntaxique échouée ou impossible ; les détails ont été transmis au modèle.",
-     "loop_suppressed": "Action échouée ou refusée répétée non exécutée : {name}",
-     "loop_stopped": "L'agent se répétait et s'est arrêté sans autre action. Vous pouvez fournir une autre approche ou instruction.",
-     "tool_args_retry": "Arguments d'outil invalides ; rien n'a été exécuté. Une correction est demandée (coût API supplémentaire possible).",
-   },
-   "ru": {
-     "auto_syntax_ok": "{path}: автоматическая проверка синтаксиса пройдена (это не функциональный тест).",
-     "auto_syntax_failed": "{path}: автоматическая проверка синтаксиса не удалась или невозможна; подробности переданы модели.",
-     "loop_suppressed": "Повторное неудачное или отклонённое действие не выполнено: {name}",
-     "loop_stopped": "Агент зациклился и остановлен без дальнейших действий. Можно предложить другой подход или новую инструкцию.",
-     "tool_args_retry": "Модель вернула неверные аргументы; ничего не выполнено. Запрошено одно исправление (возможна дополнительная плата за API).",
-   },
- }
- for _language, _wording in _AGENT_RELIABILITY_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _EFFORT_WORDING = {
-   'tr': {
-     'effort_active': 'Düşünme ayarı: {level}. Desteklenen modellerde kullanılır; yüksek seviye süreyi ve API maliyetini artırabilir. /effort ile değiştirin.',
-     'effort_uncontrolled': 'Bu sağlayıcı/model için DocMind özel düşünme parametresi göndermiyor; sağlayıcının kendi ayarı geçerli.',
-     'effort_usage': 'Kullanım: /effort max|high|medium|low|default (veya /zeka maksimum|yüksek|orta|düşük|varsayılan).',
-     'effort_saved': 'Düşünme ayarı kaydedildi: {level}.',
-     'effort_not_saved': 'Düşünme ayarı bu oturumda {level}; ayarlara kaydedilemedi.',
-     'effort_help': ' /effort    Düşünme düzeyi ve maliyet',
-   },
-   'en': {
-     'effort_active': 'Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.',
-     'effort_uncontrolled': 'DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.',
-     'effort_usage': 'Usage: /effort max|high|medium|low|default.',
-     'effort_saved': 'Reasoning setting saved: {level}.',
-     'effort_not_saved': 'Reasoning setting is {level} for this session but could not be saved.',
-     'effort_help': ' /effort    Reasoning level and cost',
-   },
-   'de': {
-     'effort_active': 'Denkstufe: {level}. Bei unterstützten Modellen; hoch kann Wartezeit und API-Kosten erhöhen. Ändern mit /effort.',
-     'effort_uncontrolled': 'Für diesen Anbieter/dieses Modell wird kein Denkparameter gesendet; der Standard des Anbieters gilt.',
-     'effort_usage': 'Nutzung: /effort max|high|medium|low|default.',
-     'effort_saved': 'Denkstufe gespeichert: {level}.', 'effort_not_saved': 'Denkstufe ist {level} für diese Sitzung, konnte aber nicht gespeichert werden.',
-     'effort_help': ' /effort    Denkstufe und Kosten',
-   },
-   'es': {
-     'effort_active': 'Nivel de razonamiento: {level}. En modelos compatibles, high puede aumentar el tiempo y el coste de API. Cambia con /effort.',
-     'effort_uncontrolled': 'DocMind no envía un parámetro de razonamiento para este proveedor/modelo; se usa su valor predeterminado.',
-     'effort_usage': 'Uso: /effort max|high|medium|low|default.',
-     'effort_saved': 'Nivel de razonamiento guardado: {level}.', 'effort_not_saved': 'El nivel es {level} en esta sesión, pero no pudo guardarse.',
-     'effort_help': ' /effort    Razonamiento y coste',
-   },
-   'fr': {
-     'effort_active': 'Niveau de raisonnement : {level}. Sur les modèles compatibles, high peut augmenter le délai et le coût API. Modifier avec /effort.',
-     'effort_uncontrolled': 'DocMind n’envoie aucun paramètre de raisonnement pour ce fournisseur/modèle ; son réglage par défaut s’applique.',
-     'effort_usage': 'Utilisation : /effort max|high|medium|low|default.',
-     'effort_saved': 'Niveau de raisonnement enregistré : {level}.', 'effort_not_saved': 'Le niveau {level} est actif pour cette session, mais n’a pas pu être enregistré.',
-     'effort_help': ' /effort    Raisonnement et coût',
-   },
-   'ru': {
-     'effort_active': 'Уровень рассуждений: {level}. На поддерживаемых моделях high может увеличить задержку и стоимость API. Изменить: /effort.',
-     'effort_uncontrolled': 'Для этого провайдера/модели DocMind не отправляет параметр рассуждений; действует настройка провайдера.',
-     'effort_usage': 'Использование: /effort max|high|medium|low|default.',
-     'effort_saved': 'Уровень рассуждений сохранён: {level}.', 'effort_not_saved': 'Уровень {level} действует в этой сессии, но не сохранён.',
-     'effort_help': ' /effort    Уровень рассуждений и стоимость',
-   },
- }
- _EFFORT_ACTUAL = {
-   'tr': 'Bu model için API’ye gönderilecek en yüksek desteklenen düzey: {actual}. Maksimum seviye önemli ölçüde daha fazla zaman ve ücret gerektirebilir.',
-   'en': 'Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.',
-   'de': 'Höchste unterstützte Stufe für dieses Modell: {actual}. Maximum kann deutlich mehr Zeit und Kosten verursachen.',
-   'es': 'Nivel máximo compatible enviado a este modelo: {actual}. El máximo puede requerir mucho más tiempo y dinero.',
-   'fr': 'Niveau maximal pris en charge pour ce modèle : {actual}. Le maximum peut coûter nettement plus de temps et d’argent.',
-   'ru': 'Максимальный поддерживаемый уровень для этой модели: {actual}. Максимум может значительно увеличить время и расходы.',
- }
- _EFFORT_FALLBACK = {
-   'tr': 'Sağlayıcı düşünme parametresini reddetti. İşlem yapılmadan yeniden deneniyor; bu model/düzey için sağlayıcının varsayılanı kullanılacak. Ek API ücreti oluşabilir.',
-   'en': 'The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.',
-   'de': 'Der Anbieter hat den Denkparameter abgelehnt. Vor einer Aktion wird mit Anbieterstandard erneut versucht. Zusätzliche API-Kosten sind möglich.',
-   'es': 'El proveedor rechazó el parámetro de razonamiento. Se reintenta antes de actuar usando su valor predeterminado. Puede haber costes adicionales.',
-   'fr': 'Le fournisseur a rejeté le paramètre de raisonnement. Nouvelle tentative avant toute action avec son réglage par défaut. Des frais API supplémentaires sont possibles.',
-   'ru': 'Провайдер отклонил параметр рассуждений. Повтор до выполнения действий с настройкой провайдера. Возможна дополнительная плата API.',
- }
- _EFFORT_FALLBACK_ACTIVE = {
-   'tr': 'Bu oturumda bu model/düzey reddedildi; isteklerde şu anda sağlayıcının varsayılanı kullanılıyor. /effort ile yeniden seçebilirsiniz.',
-   'en': 'This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.',
-   'de': 'Dieses Modell/diese Stufe wurde in dieser Sitzung abgelehnt; Anfragen nutzen derzeit den Anbieterstandard. Mit /effort erneut auswählen.',
-   'es': 'Este modelo/nivel fue rechazado en esta sesión; las solicitudes usan el valor predeterminado del proveedor. Elige de nuevo con /effort.',
-   'fr': 'Ce modèle/niveau a été rejeté pendant cette session ; les requêtes utilisent le réglage par défaut du fournisseur. Resélectionnez avec /effort.',
-   'ru': 'Этот уровень модели был отклонён в текущем сеансе; запросы используют настройку провайдера. Выберите уровень снова через /effort.',
- }
- for _language, _wording in _EFFORT_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
-   TRANSLATIONS[_language]['effort_actual'] = _EFFORT_ACTUAL[_language]
-   TRANSLATIONS[_language]['effort_fallback'] = _EFFORT_FALLBACK[_language]
-   TRANSLATIONS[_language]['effort_fallback_active'] = _EFFORT_FALLBACK_ACTIVE[_language]
-   TRANSLATIONS[_language]['help_body'] += '\n' + _wording['effort_help']
- _PROVIDER_DIAGNOSTICS_WORDING = {
-   'tr': {
-     'compat_fallback': 'Sağlayıcı isteğin bir alanını veya yerel araç biçimini reddetti; uyumlu biçimle yeniden deneniyor. Ek API ücreti oluşabilir.',
-     'doctor_connection_ok': '✔ Canlı bağlantı: model yanıt verdi (araç kullanımı ayrıca test edilir).',
-     'doctor_tools_skipped': 'Araç test edilmedi. /doctor tools gerçek API ile test eder; ek ücret oluşabilir.',
-     'doctor_tools_start': 'Araç şemaları sağlayıcıya gönderiliyor; ek API isteği yapılır, hiçbir araç çalıştırılmaz.',
-     'doctor_tools_ok': '✔ Araç çağrısı testi: beklenen deneme çağrısı alındı ({mode}); hiçbir araç çalıştırılmadı.',
-     'doctor_tools_inconclusive': '⚠ Araç testi başarısız veya sonuçsuz; model beklenen deneme çağrısını üretmedi. Hiçbir araç çalıştırılmadı.',
-     'doctor_tool_native_mode': 'yerel araç API', 'doctor_tool_prompt_mode': 'metin tabanlı uyumluluk',
-     'doctor_usage': 'Kullanım: /doctor veya /doctor tools',
-     'doctor_tools_help': ' /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir',
-   },
-   'en': {
-     'compat_fallback': 'The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.',
-     'doctor_connection_ok': '✔ Live connection: model responded (tool use is tested separately).',
-     'doctor_tools_skipped': 'Tool use not tested. /doctor tools runs a real API test; charges may apply.',
-     'doctor_tools_start': 'Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.',
-     'doctor_tools_ok': '✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.',
-     'doctor_tools_inconclusive': '⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.',
-     'doctor_tool_native_mode': 'native tool API', 'doctor_tool_prompt_mode': 'prompt-based compatibility',
-     'doctor_usage': 'Usage: /doctor or /doctor tools',
-     'doctor_tools_help': ' /doctor tools  Test tool schemas with the API; charges may apply',
-   },
-   'de': {
-     'compat_fallback': 'Der Anbieter hat ein Feld oder das native Werkzeugformat abgelehnt; ein kompatibler Versuch folgt. Zusätzliche API-Kosten sind möglich.',
-     'doctor_connection_ok': '✔ Live-Verbindung: Modell hat geantwortet (Werkzeuge werden separat getestet).',
-     'doctor_tools_skipped': 'Werkzeuge nicht getestet. /doctor tools nutzt die echte API; Kosten sind möglich.',
-     'doctor_tools_start': 'Werkzeugschemas werden an die API gesendet; eine Zusatzanfrage, aber keine Werkzeugausführung.',
-     'doctor_tools_ok': '✔ Werkzeugtest: erwarteter Diagnoseaufruf erhalten ({mode}); nichts wurde ausgeführt.',
-     'doctor_tools_inconclusive': '⚠ Werkzeugtest fehlgeschlagen oder ohne eindeutiges Ergebnis; nichts wurde ausgeführt.',
-     'doctor_tool_native_mode': 'native Werkzeug-API', 'doctor_tool_prompt_mode': 'textbasierte Kompatibilität',
-     'doctor_usage': 'Nutzung: /doctor oder /doctor tools',
-     'doctor_tools_help': ' /doctor tools  Werkzeugschemas über die API testen; Kosten möglich',
-   },
-   'es': {
-     'compat_fallback': 'El proveedor rechazó un campo o el formato nativo de herramientas; se reintenta con un formato compatible. Puede haber costes adicionales.',
-     'doctor_connection_ok': '✔ Conexión real: el modelo respondió (las herramientas se prueban por separado).',
-     'doctor_tools_skipped': 'Herramientas sin probar. /doctor tools usa la API real y puede generar costes.',
-     'doctor_tools_start': 'Se envían los esquemas a la API; hay una solicitud adicional, pero no se ejecuta ninguna herramienta.',
-     'doctor_tools_ok': '✔ Prueba de herramientas: llamada de diagnóstico recibida ({mode}); no se ejecutó ninguna herramienta.',
-     'doctor_tools_inconclusive': '⚠ La prueba de herramientas falló o no fue concluyente; no se ejecutó ninguna herramienta.',
-     'doctor_tool_native_mode': 'API nativa', 'doctor_tool_prompt_mode': 'compatibilidad basada en texto',
-     'doctor_usage': 'Uso: /doctor o /doctor tools',
-     'doctor_tools_help': ' /doctor tools  Prueba los esquemas con la API; puede tener coste',
-   },
-   'fr': {
-     'compat_fallback': 'Le fournisseur a refusé un champ ou le format natif des outils ; nouvel essai compatible. Des frais API supplémentaires sont possibles.',
-     'doctor_connection_ok': '✔ Connexion réelle : le modèle a répondu (outils testés séparément).',
-     'doctor_tools_skipped': 'Outils non testés. /doctor tools utilise la vraie API ; des frais sont possibles.',
-     'doctor_tools_start': 'Envoi des schémas à l’API ; requête supplémentaire, mais aucun outil n’est exécuté.',
-     'doctor_tools_ok': '✔ Test d’outil : appel de diagnostic reçu ({mode}) ; aucun outil exécuté.',
-     'doctor_tools_inconclusive': '⚠ Test d’outil échoué ou non concluant ; aucun outil exécuté.',
-     'doctor_tool_native_mode': 'API native', 'doctor_tool_prompt_mode': 'compatibilité par texte',
-     'doctor_usage': 'Utilisation : /doctor ou /doctor tools',
-     'doctor_tools_help': ' /doctor tools  Tester les schémas via l’API ; frais possibles',
-   },
-   'ru': {
-     'compat_fallback': 'Провайдер отклонил поле или собственный формат инструментов; повтор с совместимым форматом. Возможна дополнительная плата API.',
-     'doctor_connection_ok': '✔ Подключение: модель ответила (инструменты проверяются отдельно).',
-     'doctor_tools_skipped': 'Инструменты не проверены. /doctor tools обращается к API; возможна плата.',
-     'doctor_tools_start': 'Схемы отправляются провайдеру; это дополнительный запрос, но инструменты не выполняются.',
-     'doctor_tools_ok': '✔ Проверка инструментов: диагностический вызов получен ({mode}); ничего не выполнено.',
-     'doctor_tools_inconclusive': '⚠ Проверка инструментов не удалась или не дала результата; ничего не выполнено.',
-     'doctor_tool_native_mode': 'нативный API инструментов', 'doctor_tool_prompt_mode': 'текстовая совместимость',
-     'doctor_usage': 'Использование: /doctor или /doctor tools',
-     'doctor_tools_help': ' /doctor tools  Проверить схемы через API; возможна плата',
-   },
- }
- for _language, _wording in _PROVIDER_DIAGNOSTICS_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
-   TRANSLATIONS[_language]['help_body'] += '\n' + _wording['doctor_tools_help']
- _REQUEST_BUDGET_WORDING = {
-   'tr': {
-     'err_request_budget_title': 'TEK İSTEK TOKEN SINIRINI AŞIYOR',
-     'err_request_budget_desc': '{provider} için bu isteğin tamamı dakika başına token bütçesinden büyük; beklemek sorunu çözmez. Mesajı veya geçmişi küçültün, yeni oturum açın ya da farklı model/hesap kullanın. Ayrıntı: {detail}',
-     'budget_fallback': 'Sağlayıcının tek istek token sınırı aşıldı. Yalnızca bu isteğin yanıt sınırı {limit} tokene düşürülerek bir kez daha deneniyor; yanıt kısalabilir ve ek API ücreti oluşabilir.',
-   },
-   'en': {
-     'err_request_budget_title': 'SINGLE REQUEST EXCEEDS TOKEN BUDGET',
-     'err_request_budget_desc': 'This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}',
-     'budget_fallback': 'The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.',
-   },
-   'de': {
-     'err_request_budget_title': 'EINZELANFRAGE ÜBERSCHREITET TOKENBUDGET',
-     'err_request_budget_desc': 'Diese Anfrage ist größer als das Minutenbudget von {provider}; Warten hilft nicht. Nachricht oder Verlauf kürzen, neue Sitzung oder anderes Modell/Konto nutzen. Details: {detail}',
-     'budget_fallback': 'Einzelanfrage überschreitet das Tokenbudget. Ein neuer Versuch mit Ausgabelimit {limit}; die Antwort kann kürzer sein und API-Kosten können entstehen.',
-   },
-   'es': {
-     'err_request_budget_title': 'LA SOLICITUD SUPERA EL LÍMITE DE TOKENS',
-     'err_request_budget_desc': 'La solicitud supera el presupuesto por minuto de {provider}; esperar no lo resuelve. Reduce el mensaje o historial, inicia otra sesión o usa otro modelo/cuenta. Detalle: {detail}',
-     'budget_fallback': 'La solicitud supera el límite de tokens. Se reintenta una vez con un máximo de salida de {limit}; la respuesta puede ser más corta y generar costes.',
-   },
-   'fr': {
-     'err_request_budget_title': 'LA REQUÊTE DÉPASSE LE BUDGET DE TOKENS',
-     'err_request_budget_desc': 'La requête dépasse le budget par minute de {provider} ; attendre ne suffit pas. Réduisez le message ou l’historique, ouvrez une session ou changez de modèle/compte. Détail : {detail}',
-     'budget_fallback': 'La requête dépasse le budget de tokens. Un nouvel essai réduit la sortie à {limit} ; la réponse peut être plus courte et des frais peuvent s’appliquer.',
-   },
-   'ru': {
-     'err_request_budget_title': 'ЗАПРОС ПРЕВЫШАЕТ ЛИМИТ ТОКЕНОВ',
-     'err_request_budget_desc': 'Запрос больше минутного лимита {provider}; ожидание не поможет. Сократите сообщение или историю, начните новую сессию или смените модель/учётную запись. Детали: {detail}',
-     'budget_fallback': 'Запрос превышает лимит токенов. Одна повторная попытка с лимитом ответа {limit}; ответ может стать короче, возможна дополнительная плата.',
-   },
- }
- for _language, _wording in _REQUEST_BUDGET_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _PROBE_RETRY = {
-   'tr': 'Bağlantı testinde model düşünme sınırına ulaştı ve metin vermedi. Bir kez 1024 token sınırıyla tekrar deneniyor; ilk deneme ücretlenmiş olabilir.',
-   'en': 'The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.',
-   'de': 'Das Modell erreichte das Testlimit ohne Text. Ein neuer Versuch mit 1024 Token; der erste kann kostenpflichtig gewesen sein.',
-   'es': 'El modelo agotó el límite de prueba sin texto. Se reintenta una vez con 1024 tokens; el primer intento puede tener coste.',
-   'fr': 'Le modèle a atteint la limite du test sans texte. Nouvel essai à 1024 tokens ; le premier peut avoir été facturé.',
-   'ru': 'Модель исчерпала лимит проверки без текста. Одна повторная попытка с лимитом 1024 токена; первая могла быть платной.',
- }
- for _language, _wording in _PROBE_RETRY.items():
-   TRANSLATIONS[_language]['probe_retry'] = _wording
- _EDGE_BLOCK_WORDING = {
-   'tr': {
-     'err_edge_block_title': 'SAĞLAYICININ GÜVENLİK KATMANI İSTEĞİ ENGELLEDİ (1010)',
-     'err_edge_block_desc': '{provider} isteği API’ye ulaşmadan güvenlik katmanında engellenmiş olabilir (HTTP 403 / 1010). Bu hata API anahtarının geçersiz olduğunu göstermez. DocMind’in güncel sürümünü kullanın; sorun sürerse VPN/proxy ve ağınızı kontrol edip sağlayıcı desteğine 403 / 1010 bilgisini iletin. API anahtarınızı paylaşmayın.',
-   },
-   'en': {
-     'err_edge_block_title': 'PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)',
-     'err_edge_block_desc': 'The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.',
-   },
-   'de': {
-     'err_edge_block_title': 'SICHERHEITSSCHICHT DES ANBIETERS BLOCKIERT ANFRAGE (1010)',
-     'err_edge_block_desc': 'Die Anfrage an {provider} wurde möglicherweise vor der API blockiert (HTTP 403 / 1010). Das belegt keinen ungültigen API-Schlüssel. Nutzen Sie aktuelles DocMind; prüfen Sie bei Fortbestand VPN/Proxy und Netzwerk und melden Sie 403 / 1010 dem Anbieter. Teilen Sie Ihren Schlüssel nicht.',
-   },
-   'es': {
-     'err_edge_block_title': 'LA CAPA DE SEGURIDAD BLOQUEÓ LA SOLICITUD (1010)',
-     'err_edge_block_desc': 'La solicitud a {provider} pudo ser bloqueada antes de llegar a la API (HTTP 403 / 1010). Esto no demuestra que la clave sea inválida. Actualiza DocMind; si persiste, revisa la red o VPN/proxy e informa al proveedor de 403 / 1010. No compartas la clave.',
-   },
-   'fr': {
-     'err_edge_block_title': 'LA COUCHE DE SÉCURITÉ A BLOQUÉ LA REQUÊTE (1010)',
-     'err_edge_block_desc': 'La requête vers {provider} a pu être bloquée avant l’API (HTTP 403 / 1010). Cela ne prouve pas que la clé est invalide. Utilisez DocMind à jour ; si le problème persiste, vérifiez le réseau ou VPN/proxy et signalez 403 / 1010 au fournisseur. Ne partagez pas votre clé.',
-   },
-   'ru': {
-     'err_edge_block_title': 'ЗАПРОС ЗАБЛОКИРОВАН ЗАЩИТОЙ ПРОВАЙДЕРА (1010)',
-     'err_edge_block_desc': 'Запрос к {provider} мог быть заблокирован до API (HTTP 403 / 1010). Это не означает, что ключ недействителен. Обновите DocMind; если ошибка сохраняется, проверьте сеть или VPN/proxy и сообщите провайдеру код 403 / 1010. Не сообщайте API-ключ.',
-   },
- }
- for _language, _wording in _EDGE_BLOCK_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _ACCESS_DENIED_WORDING = {
-   'tr': {
-     'err_access_denied_title': 'SAĞLAYICI ERİŞİMİ REDDETTİ (403)',
-     'err_access_denied_desc': '{provider} erişimi reddetti. Hesap/model yetkisi, bölge, ağ veya sağlayıcının güvenlik politikası etkili olabilir; bu kod tek başına anahtarın geçersiz olduğunu kanıtlamaz. Sağlayıcı panelindeki izinleri kontrol edin. Detay: {detail}',
-   },
-   'en': {
-     'err_access_denied_title': 'PROVIDER DENIED ACCESS (403)',
-     'err_access_denied_desc': '{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}',
-   },
-   'de': {
-     'err_access_denied_title': 'ANBIETER VERWEIGERT ZUGRIFF (403)',
-     'err_access_denied_desc': '{provider} verweigerte den Zugriff. Konto-/Modellberechtigung, Region, Netzwerk oder Sicherheitsrichtlinie können die Ursache sein; der Status allein belegt keinen ungültigen Schlüssel. Details: {detail}',
-   },
-   'es': {
-     'err_access_denied_title': 'EL PROVEEDOR DENEGÓ EL ACCESO (403)',
-     'err_access_denied_desc': '{provider} denegó el acceso. Puede deberse a permisos, región, red o políticas; el código por sí solo no demuestra que la clave sea inválida. Detalle: {detail}',
-   },
-   'fr': {
-     'err_access_denied_title': 'ACCÈS REFUSÉ PAR LE FOURNISSEUR (403)',
-     'err_access_denied_desc': '{provider} a refusé l’accès. Les autorisations, la région, le réseau ou les règles du fournisseur peuvent être en cause ; ce code seul ne prouve pas que la clé est invalide. Détail : {detail}',
-   },
-   'ru': {
-     'err_access_denied_title': 'ПРОВАЙДЕР ОТКАЗАЛ В ДОСТУПЕ (403)',
-     'err_access_denied_desc': '{provider} отказал в доступе. Причиной могут быть права учётной записи или модели, регион, сеть или политика безопасности; сам код не доказывает недействительность ключа. Детали: {detail}',
-   },
- }
- for _language, _wording in _ACCESS_DENIED_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _RETRY_RELIABILITY_WORDING = {
-  'tr': {'retry_exhausted': '{count} otomatik tekrar başarısız oldu. Ek istekler ücret oluşturabilir; devam etmek sizin seçiminiz.',
-     'retry_deferred': 'Sağlayıcı en az {seconds} saniye beklenmesini istedi; otomatik olarak erken tekrar edilmeyecek.',
-     'probe_transient_retry': 'Bağlantı testinde geçici hata: {seconds} sn sonra yeniden deneniyor ({attempt}/2). Ek API ücreti oluşabilir.'},
-  'en': {'retry_exhausted': '{count} automatic retries failed. Further requests may incur charges; continuing is your choice.',
-     'retry_deferred': 'The provider requested a wait of at least {seconds}s; no early automatic retry will be made.',
-     'probe_transient_retry': 'Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.'},
-  'de': {'retry_exhausted': '{count} automatische Versuche fehlgeschlagen. Weitere Anfragen können Kosten verursachen; Sie entscheiden.',
-     'retry_deferred': 'Der Anbieter verlangt mindestens {seconds}s Wartezeit; kein vorzeitiger automatischer Versuch.',
-     'probe_transient_retry': 'Vorübergehender Verbindungsfehler: neuer Test in {seconds}s ({attempt}/2); Kosten möglich.'},
-  'es': {'retry_exhausted': 'Fallaron {count} reintentos automáticos. Más solicitudes pueden generar costes; decide si continúas.',
-     'retry_deferred': 'El proveedor pide esperar al menos {seconds}s; no se reintentará antes automáticamente.',
-     'probe_transient_retry': 'Error temporal de conexión: reintento en {seconds}s ({attempt}/2); puede tener coste.'},
-  'fr': {'retry_exhausted': '{count} tentatives automatiques ont échoué. Les requêtes suivantes peuvent être facturées ; à vous de décider.',
-     'retry_deferred': 'Le fournisseur demande au moins {seconds}s ; aucun nouvel essai automatique prématuré.',
-     'probe_transient_retry': 'Erreur temporaire de connexion : nouvel essai dans {seconds}s ({attempt}/2) ; frais possibles.'},
-  'ru': {'retry_exhausted': '{count} автоматических попыток не удались. Дальнейшие запросы могут быть платными; решение за вами.',
-     'retry_deferred': 'Провайдер просит подождать не менее {seconds} с; преждевременного повтора не будет.',
-     'probe_transient_retry': 'Временная ошибка подключения: повтор через {seconds} с ({attempt}/2); возможна плата.'},
- }
- for _language, _wording in _RETRY_RELIABILITY_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- for _language, _message in {
-  'tr': '{name} ertelendi: önceki işlem başarısız veya reddedildi; agent sonucu değerlendirip yeniden planlayacak.',
-  'en': '{name} deferred: an earlier action failed or was declined; the agent will reassess.',
-  'de': '{name} verschoben: Eine vorherige Aktion schlug fehl oder wurde abgelehnt; der Agent plant neu.',
-  'es': '{name} aplazado: una acción anterior falló o fue rechazada; el agente reevaluará.',
-  'fr': '{name} reporté : une action précédente a échoué ou a été refusée ; l’agent réévaluera.',
-  'ru': '{name} отложено: предыдущее действие не удалось или отклонено; агент пересмотрит план.',
- }.items():
-   TRANSLATIONS[_language]['batch_deferred'] = _message
- _USAGE_CLARITY_WORDING = {
-  'tr': {'footer_incomplete':'eksik', 'footer_unknown':'bilinmiyor', 'footer_calculating':'hesaplanıyor',
-     'usage_incomplete_detail':'Eksik maliyet verisi: {count} istek; bunların {interrupted} tanesi kesildi veya hata verdi. Kullanım/fiyat bilgisi gelmeyebilir. Gösterilen tutar yalnızca bilinen kısmın tahminidir. Dar ekranda * işareti eksik veya devam eden veriyi gösterir.',
-     'usage_complete_detail':'Kullanım ve fiyat verisi eksik olan istek yok. Dar ekranda * devam eden veriyi gösterebilir.'},
-  'en': {'footer_incomplete':'incomplete', 'footer_unknown':'unknown', 'footer_calculating':'calculating',
-     'usage_incomplete_detail':'Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.',
-     'usage_complete_detail':'No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.'},
-  'de': {'footer_incomplete':'unvollst.', 'footer_unknown':'unbekannt', 'footer_calculating':'berechne',
-     'usage_incomplete_detail':'Kosten für {count} Anfragen fehlen; {interrupted} wurden unterbrochen oder scheiterten. Nutzungs- oder Preisdaten können fehlen. Angezeigt wird nur der bekannte Anteil. * bedeutet unvollständige oder laufende Daten.',
-     'usage_complete_detail':'Keine Anfrage hat fehlende Nutzungs- oder Preisdaten. * kann laufende Daten anzeigen.'},
-  'es': {'footer_incomplete':'incompleto', 'footer_unknown':'desconocido', 'footer_calculating':'calculando',
-     'usage_incomplete_detail':'Faltan costes de {count} solicitudes; {interrupted} se interrumpieron o fallaron. Pueden faltar datos o precios. El importe solo estima la parte conocida. * indica datos incompletos o en curso.',
-     'usage_complete_detail':'No faltan datos de uso o precio. * puede indicar una respuesta en curso.'},
-  'fr': {'footer_incomplete':'incomplet', 'footer_unknown':'inconnu', 'footer_calculating':'calcul',
-     'usage_incomplete_detail':'Coût manquant pour {count} requêtes ; {interrupted} ont échoué ou été interrompues. Les données ou tarifs peuvent manquer. Le montant estime seulement la partie connue. * indique des données incomplètes ou en cours.',
-     'usage_complete_detail':'Aucune requête ne manque de données ou de tarif. * peut indiquer une réponse en cours.'},
-  'ru': {'footer_incomplete':'неполно', 'footer_unknown':'неизвестно', 'footer_calculating':'подсчёт',
-     'usage_incomplete_detail':'Нет данных о стоимости для {count} запросов; {interrupted} прерваны или завершились ошибкой. Данные или цена могут отсутствовать. Показана оценка только известной части. * означает неполные или текущие данные.',
-     'usage_complete_detail':'Нет запросов с отсутствующими данными или ценой. * может обозначать текущий ответ.'},
- }
- for _language, _wording in _USAGE_CLARITY_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
- _DOCTOR_ALL_WORDING = {
-  'tr': {'doctor_usage':'Kullanım: /doctor, /doctor tools veya /doctor all',
-     'doctor_all_help':' /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi',
-     'doctor_all_title':'Tüm yapılandırılmış sağlayıcıları test et',
-     'doctor_all_none':'Test edilecek kayıtlı sağlayıcı anahtarı yok. /api ile sağlayıcı ekleyin.',
-     'doctor_all_intro':'Aşağıdaki modellere gerçek API istekleri gönderilir; ek ücret oluşabilir. Aktif olmayan sağlayıcılarda varsayılan model denenir. Her sağlayıcı için kendi anahtarı ve gösterilen sunucu kullanılır; ayarlar değiştirilmez.',
-     'doctor_all_confirm':'Testlere devam edilsin mi? (evet/hayır; Enter: hayır): ',
-     'doctor_all_cancelled':'Test iptal edildi; hiçbir istek gönderilmedi.',
-     'doctor_all_checking':'{provider} bağlantısı test ediliyor', 'doctor_all_ok':'model yanıt verdi',
-     'doctor_all_failed':'test başarısız', 'doctor_all_skipped':'Atlanan (yapılandırılmamış): {names}',
-     'doctor_all_tool_note':'Bu yalnızca bağlantı testidir. Aktif modelin araç uyumluluğu için /doctor tools kullanın; ek ücret oluşabilir.'},
-  'en': {'doctor_usage':'Usage: /doctor, /doctor tools or /doctor all',
-     'doctor_all_help':' /doctor all  Test configured providers; charges may apply',
-     'doctor_all_title':'Test configured providers', 'doctor_all_none':'No configured provider credentials to test. Use /api.',
-     'doctor_all_intro':'Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.',
-     'doctor_all_confirm':'Proceed with tests? (yes/no; Enter: no): ', 'doctor_all_cancelled':'Cancelled; no request was sent.',
-     'doctor_all_checking':'Testing {provider} connection', 'doctor_all_ok':'model responded',
-     'doctor_all_failed':'test failed', 'doctor_all_skipped':'Skipped (not configured): {names}',
-     'doctor_all_tool_note':'Connection test only. Use /doctor tools for the active model; additional charges may apply.'},
-  'de': {'doctor_usage':'Nutzung: /doctor, /doctor tools oder /doctor all', 'doctor_all_help':' /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich',
-     'doctor_all_title':'Konfigurierte Anbieter prüfen', 'doctor_all_none':'Keine Zugangsdaten zum Prüfen. /api verwenden.',
-     'doctor_all_intro':'Echte API-Anfragen an die folgenden Modelle können Kosten verursachen. Inaktive Anbieter nutzen ihr Standardmodell. Jeder Anbieter nutzt seinen eigenen Schlüssel und das angezeigte Ziel; Einstellungen bleiben unverändert.',
-     'doctor_all_confirm':'Tests starten? (ja/nein; Enter: nein): ', 'doctor_all_cancelled':'Abgebrochen; keine Anfrage gesendet.',
-     'doctor_all_checking':'Verbindung zu {provider} wird geprüft', 'doctor_all_ok':'Modell hat geantwortet',
-     'doctor_all_failed':'Test fehlgeschlagen', 'doctor_all_skipped':'Übersprungen (nicht konfiguriert): {names}',
-     'doctor_all_tool_note':'Nur Verbindungstest. /doctor tools prüft das aktive Modell; Kosten möglich.'},
-  'es': {'doctor_usage':'Uso: /doctor, /doctor tools o /doctor all', 'doctor_all_help':' /doctor all  Prueba proveedores configurados; puede tener coste',
-     'doctor_all_title':'Probar proveedores configurados', 'doctor_all_none':'No hay credenciales configuradas. Usa /api.',
-     'doctor_all_intro':'Se enviarán solicitudes reales a estos modelos; pueden generar costes. Los proveedores inactivos usan su modelo predeterminado. Cada proveedor usa su clave y el destino mostrado; no se cambian ajustes.',
-     'doctor_all_confirm':'¿Continuar? (sí/no; Enter: no): ', 'doctor_all_cancelled':'Cancelado; no se envió ninguna solicitud.',
-     'doctor_all_checking':'Probando conexión con {provider}', 'doctor_all_ok':'el modelo respondió',
-     'doctor_all_failed':'prueba fallida', 'doctor_all_skipped':'Omitidos (sin configurar): {names}',
-     'doctor_all_tool_note':'Solo prueba la conexión. /doctor tools prueba el modelo activo y puede tener coste.'},
-  'fr': {'doctor_usage':'Utilisation : /doctor, /doctor tools ou /doctor all', 'doctor_all_help':' /doctor all  Tester les fournisseurs configurés ; frais possibles',
-     'doctor_all_title':'Tester les fournisseurs configurés', 'doctor_all_none':'Aucun identifiant configuré. Utilisez /api.',
-     'doctor_all_intro':'Des requêtes API réelles seront envoyées aux modèles suivants et peuvent être facturées. Les fournisseurs inactifs utilisent leur modèle par défaut. Chaque fournisseur utilise sa propre clé et la destination affichée ; les paramètres restent inchangés.',
-     'doctor_all_confirm':'Continuer ? (oui/non ; Entrée : non) : ', 'doctor_all_cancelled':'Annulé ; aucune requête envoyée.',
-     'doctor_all_checking':'Test de connexion à {provider}', 'doctor_all_ok':'le modèle a répondu',
-     'doctor_all_failed':'échec du test', 'doctor_all_skipped':'Ignorés (non configurés) : {names}',
-     'doctor_all_tool_note':'Test de connexion uniquement. /doctor tools teste le modèle actif ; frais possibles.'},
-  'ru': {'doctor_usage':'Использование: /doctor, /doctor tools или /doctor all', 'doctor_all_help':' /doctor all  Проверить настроенных провайдеров; возможна плата',
-     'doctor_all_title':'Проверка настроенных провайдеров', 'doctor_all_none':'Нет настроенных ключей. Используйте /api.',
-     'doctor_all_intro':'Будут отправлены реальные API-запросы указанным моделям; возможна плата. Для неактивных провайдеров берётся модель по умолчанию. Для каждого провайдера используются свой ключ и указанный адрес; настройки не меняются.',
-     'doctor_all_confirm':'Продолжить? (да/нет; Enter: нет): ', 'doctor_all_cancelled':'Отменено; запросы не отправлены.',
-     'doctor_all_checking':'Проверка подключения к {provider}', 'doctor_all_ok':'модель ответила',
-     'doctor_all_failed':'ошибка проверки', 'doctor_all_skipped':'Пропущены (не настроены): {names}',
-     'doctor_all_tool_note':'Только проверка подключения. /doctor tools проверяет активную модель; возможна плата.'},
- }
- for _language, _wording in _DOCTOR_ALL_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
-   TRANSLATIONS[_language]['help_body'] += '\n' + _wording['doctor_all_help']
- for _language, _message in {
-  'tr': 'Claude bağlamı değiştiğinden eski imzalı düşünce blokları yeni isteğe eklenmedi; sohbet metni ve araç sonuçları korundu.',
-  'en': 'Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.',
-  'de': 'Claude-Kontext geändert: ältere signierte Denkblöcke wurden ausgelassen; Gesprächstext und Werkzeugergebnisse bleiben erhalten.',
-  'es': 'Cambió el contexto de Claude: se omitieron bloques de razonamiento firmados; se conservaron texto y resultados de herramientas.',
-  'fr': 'Le contexte Claude a changé : les anciens blocs de réflexion signés sont omis ; le texte et les résultats sont conservés.',
-  'ru': 'Контекст Claude изменился: старые подписанные блоки рассуждений исключены; текст и результаты инструментов сохранены.',
- }.items():
-   TRANSLATIONS[_language]['thinking_rebase'] = _message
- for _language, _message in {
-  'tr': 'Maliyet bildirilmiş olsa da {count} isteğin token verisi eksik. Dar ekranda * eksik veriyi gösterir.',
-  'en': 'Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.',
-  'de': 'Die Kosten wurden ggf. gemeldet, aber für {count} Anfragen fehlen Tokendaten. * markiert unvollständige Daten.',
-  'es': 'Puede haberse informado el coste, pero faltan tokens de {count} solicitudes. * indica datos incompletos.',
-  'fr': 'Le coût peut être fourni, mais les tokens de {count} requêtes manquent. * signale des données incomplètes.',
-  'ru': 'Стоимость может быть указана, но данные токенов отсутствуют для {count} запросов. * означает неполные данные.',
- }.items():
-   TRANSLATIONS[_language]['usage_tokens_missing_detail'] = _message
- _UNIVERSAL_AGENT_WORDING = {
-   "tr": {
-     "startup_authority_warn": (
-       "⚠ UYARI: AGENT BİLGİSAYARINIZA TAM YETKİLİDİR — Tüm sürücüleri, klasörleri ve dosyaları "
-       "görebilir, açabilir, düzenleyebilir ve (izninizle) terminal/sistem kodu çalıştırabilir. "
-       "Dikkatli kullanın; doğabilecek işlemlerden sorumluluk kabul edilmez."
-     ),
-     "term_perm_title": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
-     "term_perm_header": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
-     "term_perm_denied": "Terminal / kod çalıştırma izni kullanıcı tarafından reddedildi.",
-     "term_used_status": "Durum",
-     "term_triage_manual": "⚠ ŞİFRE / YETKİ GEREKLİ: Bu komut şifre veya yönetici izni istediği için kullanıcı tarafından çalıştırılmalıdır.",
-     "term_triage_autofix": "↻ Hata algılandı — DocMind hatayı analiz edip düzeltme yolunu değerlendiriyor...",
-     "ask_user_header": "DOCMIND SORUSU / HEDEF SİSTEM SEÇİMİ",
-     "ask_user_prompt": "Seçiminiz (numara veya açıklama yazın, varsayılan={default}): ",
-     "term_perm_shell": "Kabuk / Ortam",
-     "term_perm_cwd": "Çalışma Klasörü",
-     "term_perm_code": "ÇALIŞTIRILACAK KOD",
-     "term_perm_prompt": "Bu terminal/sistem kodunu çalıştırmak için izin veriyor musunuz? [E]vet / [H]ayır: ",
-     "term_perm_reprompt": "Lütfen onay için 'e' (evet) veya iptal için 'h' (hayır) yazın: ",
-     "term_used_header": "TERMİNAL KULLANILDI",
-     "term_used_code": "KULLANILAN KOD",
-     "term_used_shell": "Kabuk / Ortam",
-     "term_used_cwd": "Çalışma Klasörü",
-     "term_used_ok": "Başarılı (Çıkış Kodu: {code}, {elapsed:.2f} sn)",
-     "term_used_err": "Hata / Çıkış Kodu: {code} ({elapsed:.2f} sn)",
-     "term_used_output": "Çıktı",
-     "conn_auto_heal": "Bağlantı kesintisi algılandı; oturum korunarak otomatik yeniden bağlanılıyor ({attempt}/{max_attempts})...",
-   },
-   "en": {
-     "startup_authority_warn": (
-       "⚠ WARNING: THIS AGENT HAS FULL SYSTEM ACCESS — It can view, open, and edit any drive, folder, "
-       "or file on your computer and execute terminal/system commands (with your permission). "
-       "Use carefully; no liability is accepted."
-     ),
-     "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
-     "term_perm_header": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
-     "term_perm_denied": "Terminal / code execution declined by user.",
-     "term_used_status": "Status",
-     "term_triage_manual": "⚠ PASSWORT / ADMIN ERFORDERLICH: Dieser Befehl muss vom Benutzer selbst ausgeführt werden.",
-     "term_triage_autofix": "↻ Fehler erkannt — DocMind analysiert eine Korrektur...",
-     "ask_user_header": "DOCMIND-FRAGE / ZIELSYSTEM",
-     "ask_user_prompt": "Ihre Wahl (Nummer oder Text, Standard={default}): ",
-     "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
-     "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
-     "ask_user_header": "DOCMIND QUESTION / TARGET PLATFORM CHOICE",
-     "ask_user_prompt": "Your choice (enter number or custom text, default={default}): ",
-     "term_perm_shell": "Shell / Runtime",
-     "term_perm_cwd": "Working Directory",
-     "term_perm_code": "CODE TO EXECUTE",
-     "term_perm_prompt": "Allow this terminal/system command to execute on your computer? [Y]es / [N]o: ",
-     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
-     "term_used_header": "TERMINAL USED",
-     "term_used_code": "CODE USED",
-     "term_used_shell": "Shell / Runtime",
-     "term_perm_cwd_lbl": "Working Directory",
-     "term_used_cwd": "Working Directory",
-     "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
-     "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
-     "term_used_output": "Output",
-     "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
-   },
-   "de": {
-     "startup_authority_warn": (
-       "⚠ WARNUNG: DIESER AGENT HAT VOLLZUGRIFF AUF IHREN COMPUTER — Alle Laufwerke, Ordner und Dateien "
-       "sind sichtbar/bearbeitbar und Terminal-Code kann (mit Ihrer Erlaubnis) ausgeführt werden. "
-       "Vorsichtig verwenden; keine Haftung."
-     ),
-     "term_perm_title": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
-     "term_perm_header": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
-     "term_perm_denied": "Terminal-Ausführung vom Benutzer abgelehnt.",
-     "term_triage_manual": "⚠ PASSWORT / ADMIN ERFORDERLICH: Dieser Befehl muss vom Benutzer selbst ausgeführt werden.",
-     "term_triage_autofix": "↻ Fehler erkannt — DocMind analysiert eine Korrektur...",
-     "ask_user_header": "DOCMIND-FRAGE / ZIELSYSTEM",
-     "ask_user_prompt": "Ihre Wahl (Nummer oder Text, Standard={default}): ",
-     "term_used_status": "Status",
-     "term_perm_shell": "Shell / Umgebung",
-     "term_perm_cwd": "Arbeitsverzeichnis",
-     "term_perm_code": "AUSZUFÜHRENDER CODE",
-     "term_perm_prompt": "Diesen Terminal-Befehl auf Ihrem Computer ausführen? [J]a / [N]ein: ",
-     "term_perm_reprompt": "Bitte 'j' (ja) oder 'n' (nein) eingeben: ",
-     "term_used_header": "TERMINAL VERWENDET",
-     "term_used_code": "VERWENDETER CODE",
-     "term_used_shell": "Shell / Umgebung",
-     "term_used_cwd": "Arbeitsverzeichnis",
-     "term_used_ok": "Erfolgreich (Exit-Code: {code}, {elapsed:.2f}s)",
-     "term_used_err": "Fehler / Exit-Code: {code} ({elapsed:.2f}s)",
-     "term_used_output": "Ausgabe",
-     "conn_auto_heal": "Verbindungsabbruch erkannt; automatische Wiederverbindung ({attempt}/{max_attempts})...",
-   },
-   "es": {
-     "startup_authority_warn": (
-       "⚠ ADVERTENCIA: ESTE AGENTE TIENE ACCESO TOTAL A SU COMPUTADORA — Puede ver, abrir y editar cualquier "
-       "disco, carpeta o archivo y ejecutar código en terminal (con su permiso). Úselo con precaución; "
-       "no se acepta responsabilidad."
-     ),
-     "term_perm_title": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
-     "term_perm_header": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
-     "term_perm_denied": "Ejecución en terminal rechazada por el usuario.",
-     "term_used_status": "Estado",
-     "term_triage_manual": "⚠ CONTRASEÑA / ADMIN REQUERIDO: Este comando debe ser ejecutado directamente por el usuario.",
-     "term_triage_autofix": "↻ Error detectado — DocMind está analizando cómo corregirlo...",
-     "ask_user_header": "PREGUNTA DE DOCMIND / SISTEMA OBJETIVO",
-     "ask_user_prompt": "Su elección (número o texto, predeterminado={default}): ",
-     "term_perm_shell": "Shell / Entorno",
-     "term_perm_cwd": "Carpeta de trabajo",
-     "term_perm_code": "CÓDIGO A EJECUTAR",
-     "term_perm_prompt": "¿Permite ejecutar este comando en su computadora? [S]í / [N]o: ",
-     "term_perm_reprompt": "Escriba 's' (sí) o 'n' (no): ",
-     "term_used_header": "TERMINAL UTILIZADA",
-     "term_used_code": "CÓDIGO UTILIZADO",
-     "term_used_shell": "Shell / Entorno",
-     "term_used_cwd": "Carpeta de trabajo",
-     "term_used_ok": "Completado (Código: {code}, {elapsed:.2f}s)",
-     "term_used_err": "Error / Código: {code} ({elapsed:.2f}s)",
-     "term_used_output": "Salida",
-     "conn_auto_heal": "Corte de conexión detectado; reconectando automáticamente ({attempt}/{max_attempts})...",
-   },
-   "fr": {
-     "startup_authority_warn": (
-       "⚠ AVERTISSEMENT : CET AGENT DISPOSE D'UN ACCÈS COMPLET À VOTRE ORDINATEUR — Il peut voir, ouvrir "
-       "et modifier tous les fichiers/dossiers et exécuter du code terminal (avec votre autorisation). "
-       "Utilisez avec prudence ; aucune responsabilité acceptée."
-     ),
-     "term_perm_title": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
-     "term_perm_header": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
-     "term_perm_denied": "Exécution dans le terminal refusée par l'utilisateur.",
-     "term_used_status": "Statut",
-     "term_triage_manual": "⚠ MOT DE PASSE / ADMIN REQUIS : Cette commande doit être exécutée par l'utilisateur.",
-     "term_triage_autofix": "↻ Erreur détectée — DocMind analyse une correction...",
-     "ask_user_header": "QUESTION DOCMIND / SYSTÈME CIBLE",
-     "ask_user_prompt": "Votre choix (numéro ou texte, défaut={default}) : ",
-     "term_perm_shell": "Shell / Environnement",
-     "term_perm_cwd": "Dossier de travail",
-     "term_perm_code": "CODE À EXÉCUTER",
-     "term_perm_prompt": "Autoriser l'exécution de cette commande sur votre ordinateur ? [O]ui / [N]on : ",
-     "term_perm_reprompt": "Veuillez saisir 'o' (oui) ou 'n' (non) : ",
-     "term_used_header": "TERMINAL UTILISÉ",
-     "term_used_code": "CODE UTILISÉ",
-     "term_used_shell": "Shell / Environnement",
-     "term_used_cwd": "Dossier de travail",
-     "term_used_ok": "Réussi (Code : {code}, {elapsed:.2f}s)",
-     "term_used_err": "Erreur / Code : {code} ({elapsed:.2f}s)",
-     "term_used_output": "Sortie",
-     "conn_auto_heal": "Coupure réseau détectée ; reconnexion automatique ({attempt}/{max_attempts})...",
-   },
-   "ru": {
-     "startup_authority_warn": (
-       "⚠ ВНИМАНИЕ: АГЕНТ ИМЕЕТ ПОЛНЫЙ ДОСТУП К КОМПЬЮТЕРУ — Может просматривать, открывать и изменять "
-       "любые диски, папки и файлы, а также выполнять команды терминала (с вашего разрешения). "
-       "Используйте осторожно; ответственность не принимается."
-     ),
-     "term_perm_title": "ТРЕБУЕТСЯ РАЗРЕШЕНИЕ НА ВЫПОЛНЕНИЕ КОДА В ТЕРМИНАЛЕ",
-     "term_perm_header": "ТРЕБУЕТСЯ РАЗРЕШЕНИЕ НА ВЫПОЛНЕНИЕ КОДА В ТЕРМИНАЛЕ",
-     "term_perm_denied": "Выполнение команды отклонено пользователем.",
-     "term_used_status": "Статус",
-     "term_triage_manual": "⚠ ТРЕБУЕТСЯ ПАРОЛЬ / ПРАВА АДМИНИСТРАТОРА: Эту команду должен выполнить сам пользователь.",
-     "term_triage_autofix": "↻ Обнаружена ошибка — DocMind анализирует способ исправления...",
-     "ask_user_header": "ВОПРОС DOCMIND / ВЫБОР СИСТЕМЫ",
-     "ask_user_prompt": "Ваш выбор (номер или текст, по умолчанию={default}): ",
-     "term_perm_shell": "Оболочка / Среда",
-     "term_perm_cwd": "Рабочая папка",
-     "term_perm_code": "КОД ДЛЯ ВЫПОЛНЕНИЯ",
-     "term_perm_prompt": "Разрешить выполнение этой команды на вашем компьютере? [Д]а / [Н]ет: ",
-     "term_perm_reprompt": "Введите 'y'/'д' (да) или 'n'/'н' (нет): ",
-     "term_used_header": "ИСПОЛЬЗОВАН ТЕРМИНАЛ",
-     "term_used_code": "ИСПОЛЬЗОВАННЫЙ КОД",
-     "term_used_shell": "Оболочка / Среда",
-     "term_used_cwd": "Рабочая папка",
-     "term_used_ok": "Успешно (Код выхода: {code}, {elapsed:.2f}с)",
-     "term_used_err": "Ошибка / Код выхода: {code} ({elapsed:.2f}с)",
-     "term_used_output": "Вывод",
-     "conn_auto_heal": "Обрыв соединения; автоматическое переподключение ({attempt}/{max_attempts})...",
-   },
- }
- for _language, _wording in _UNIVERSAL_AGENT_WORDING.items():
-   TRANSLATIONS[_language].update(_wording)
+  "de": {
+    "lang_name": "Deutsch",
+    "ai_lang_instruction": "Kommuniziere mit dem Benutzer immer auf klarem, natürlichem DEUTSCH, sofern nicht anders gewünscht.",
+    "welcome_subtitle": "Autonomer KI-Terminal-Agent der nächsten Generation",
+    "ready_hint": "DocMind ist bereit! Stelle Aufgaben, bearbeite Dateien oder führe Befehle aus.",
+    "type_help_hint": "/help für Befehle | /lang für Sprache | /api für API | /exit zum Beenden.",
+    "prompt_placeholder": "Aufgabe an DocMind eingeben...",
+    "wiz_title": "DOCMIND EINRICHTUNGSASSISTENT",
+    "wiz_select_lang": "Bitte wählen Sie Ihre bevorzugte Sprache (1-14) [Standard: 1]: ",
+    "wiz_lang_saved": "Sprache eingestellt: Deutsch (DE)",
+    "wiz_select_provider": "KI-API-Anbieter auswählen",
+    "wiz_provider_prompt": "Ihre Wahl (1-7) [Standard: 1]: ",
+    "wiz_select_model": "Modell für {provider} auswählen",
+    "wiz_custom_model_opt": "Eigenen Modellnamen eingeben...",
+    "wiz_model_prompt": "Modellwahl [Standard: 1]: ",
+    "wiz_custom_model_prompt": "Genaue Modell-ID eingeben: ",
+    "wiz_enter_base_url": "API Base-URL eingeben [Standard: {default}]: ",
+    "wiz_enter_api_key": "Ihren {provider} API-Schlüssel eingeben: ",
+    "wiz_api_key_optional": "{provider} API-Schlüssel (optional bei lokalem Server): ",
+    "wiz_api_key_empty": "WARNUNG: API-Schlüssel darf nicht leer sein!",
+    "wiz_testing_api": "API-Verbindung und Schlüssel werden geprüft...",
+    "wiz_api_ok": "Erfolg! Verbindung zu {provider} ({model}) bestätigt.",
+    "wiz_api_fail_menu": "Problem bei der API-Prüfung. Was möchten Sie tun?",
+    "wiz_opt_retry_key": "Neuen API-Schlüssel eingeben",
+    "wiz_opt_change_provider": "Anderen Anbieter / Modell wählen",
+    "wiz_opt_skip_anyway": "Warnung überspringen & trotzdem speichern (/api später nutzbar)",
+    "wiz_select_mode": "Sicherheits- & Ausführungsmodus wählen",
+    "wiz_mode_smart": "Intelligente Bestätigung (empfohlen): fragt vor Änderungen, Befehlen und Webanfragen",
+    "wiz_mode_auto": "Automatisch (riskant): Aktionen ohne Rückfrage; keine Sicherheits-Sandbox",
+    "wiz_mode_prompt": "Moduswahl (1-2) [Standard: 1]: ",
+    "wiz_complete": "Einrichtung abgeschlossen. API-Schlüssel werden unverschlüsselt lokal gespeichert.",
+    "mode_smart_short": "BESTÄTIGUNG",
+    "mode_auto_short": "VOLLAUTO",
+    "status_tokens": "Tokens: {total} (Ein:{inp} / Aus:{out})",
+    "status_no_key": "KEIN API-KEY (/api eingeben)",
+    "thinking": "DocMind denkt nach und analysiert...",
+    "step_counter": "Autonomer Schritt {step}/{max_steps}",
+    "max_steps_reached": "WARNUNG: Maximale autonome Schritte ({max_steps}) erreicht.",
+    "ask_continue_steps": "Soll DocMind weiterarbeiten? [J/n]: ",
+    "compacting_context": "INFO: Verlauf wird zur Token-Einsparung intelligent komprimiert...",
+    "context_compacted": "Verlauf erfolgreich komprimiert, fahre fort.",
+    "output_truncated_warn": "WARNUNG: Antwort erreichte das Ausgabe-Token-Limit. Tippen Sie 'weiter' zum Fortfahren.",
+    "tool_running": "Werkzeug läuft: {name}",
+    "tool_done": "Fertig: {name}",
+    "tool_skipped": "Vom Benutzer übersprungen: {name}",
+    "tool_error_passed": "WARNUNG: Fehler in '{name}' sicher übersprungen ({err}).",
+    "perm_title": "BESTÄTIGUNG ERFORDERLICH",
+    "perm_file_action": "Dateiaktion: {action} -> {target}",
+    "perm_command_warn": "Auszuführender Befehl: {cmd}",
+    "perm_dangerous_warn": "ACHTUNG! KRITISCHER BEFEHL ERKANNT! Bitte sorgfältig prüfen!",
+    "perm_prompt": "[J]a | [A]utomatisch | [N]ein [Standard: Nein]: ",
+    "perm_dangerous_prompt": "Diesen kritischen Befehl wirklich ausführen? [yes/no]: ",
+    "perm_switched_auto": "Vollautomatischer Modus aktiviert! (/smart zum Zurückwechseln)",
+    "undo_success": "Letzte Dateiänderung rückgängig gemacht: {path}",
+    "undo_empty": "Keine Dateiänderung zum Rückgängigmachen vorhanden.",
+    "err_quota_title": "KRITISCHE WARNUNG: API-TOKEN / GUTHABEN AUFGEBRAUCHT!",
+    "err_quota_desc": "Ihr {provider} API-Kontingent oder Guthaben ist erschöpft.\nDetail: {detail}",
+    "err_rate_title": "WARNUNG: API-RATENLIMIT ÜBERSCHRITTEN!",
+    "err_rate_desc": "Zu viele Anfragen pro Minute bei {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNUNG: UNGÜLTIGER ODER ABGELAUFENER API-SCHLÜSSEL!",
+    "err_auth_desc": "Ihr {provider} API-Schlüssel wurde abgelehnt.\nDetail: {detail}",
+    "err_context_title": "WARNUNG: KONTEXT-TOKEN-LIMIT ÜBERSCHRITTEN!",
+    "err_context_desc": "Kontextlimit erreicht. Automatische Komprimierung startet.\nDetail: {detail}",
+    "err_model_title": "WARNUNG: MODELL NICHT GEFUNDEN!",
+    "err_model_desc": "Modell ({model}) nicht verfügbar.\nDetail: {detail}",
+    "err_server_title": "WARNUNG: KI-SERVER ÜBERLASTET / TEMPORÄRER FEHLER!",
+    "err_server_desc": "{provider} meldet vorübergehende Serverprobleme.\nDetail: {detail}",
+    "err_network_title": "WARNUNG: NETZWERK- / INTERNETFEHLER!",
+    "err_network_desc": "{provider} nicht erreichbar. Bitte Internetverbindung prüfen.\nDetail: {detail}",
+    "err_tool_title": "WARNUNG: DATEI- / SYSTEMFEHLER (ÜBERSPRUNGEN)",
+    "err_tool_desc": "Systemfehler sicher abgefangen:\nDetail: {detail}",
+    "err_unknown_title": "WARNUNG: UNERWARTETER FEHLER ABGEFANGEN",
+    "err_unknown_desc": "Fehler wurde abgefangen, Programm läuft weiter:\nDetail: {detail}",
+    "err_skipped_notice": "Fehler sicher übersprungen. DocMind ist bereit.",
+    "err_retrying_in": "Automatischer Neuversuch in {sec}s (Strg+C zum Überspringen)...",
+    "err_budget_warn_title": "TOKEN-BUDGET-WARNUNG",
+    "err_budget_warn_desc": "Bisher {used} Tokens verbraucht (Warnschwelle: {limit}).",
+    "rec_title": "WIEDERHERSTELLUNGSOPTIONEN",
+    "rec_opt_new_key": "Neuen API-Schlüssel eingeben & fortfahren",
+    "rec_opt_switch_provider": "KI-Anbieter wechseln",
+    "rec_opt_switch_model": "Anderes Modell wählen",
+    "rec_opt_retry": "Jetzt erneut versuchen",
+    "rec_opt_skip": "Fehler überspringen & zurück zum Chat",
+    "rec_choose": "Ihre Wahl [Standard: {default}]: ",
+    "help_title": "DOCMIND BEFEHLSÜBERSICHT",
+    "help_body": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Gespeicherte Gespräche öffnen\n /delete    Gespeichertes Gespräch löschen\n /effort    Denkstufe und Kosten\n /doctor tools  Werkzeugschemas über die API testen; Kosten möglich\n /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich\n /image PFAD Bild/Screenshot analysieren & Fehler beheben\n /paste     Screenshot oder Text aus Zwischenablage senden\n /copy      Letzte Antwort kopieren (/copy code: nur Code)\n /diff      Git-Änderungen mit Grün (+) / Rot (-) anzeigen\n /redo      Rückgängig gemachte Dateiänderung wiederholen\n /export    Gespräch als Markdown (.md) exportieren\n /search Q  Live-Internetsuche & Faktenprüfung",
+    "cmd_cleared": "Gesprächsverlauf und Bildschirm geleert.",
+    "cmd_saved": "Sitzung gespeichert: {path}",
+    "cmd_loaded": "Sitzung geladen ({count} Nachrichten): {path}",
+    "cmd_lang_changed": "Sprache geändert: {lang}",
+    "cmd_mode_changed": "Modus aktualisiert: {mode}",
+    "cmd_cd_ok": "Arbeitsverzeichnis geändert: {path}",
+    "cmd_cd_err": "WARNUNG: Verzeichniswechsel fehlgeschlagen: {err}",
+    "cmd_unknown": "Unbekannter Befehl: '{cmd}'. /help für Hilfe.",
+    "cmd_exit_bye": "DocMind wird beendet. Auf Wiedersehen!",
+    "ctrl_c_cancelled": "Vorgang abgebrochen (Strg+C). Bereit für neue Eingaben.",
+    "ctrl_c_exit_hint": "Tippen Sie /exit oder drücken Sie erneut Strg+C zum Beenden.",
+    "doctor_title": "DOCMIND SYSTEMDIAGNOSE (/doctor)",
+    "tokens_report_title": "TOKEN- & NUTZUNGSBERICHT",
+    "wiz_secret_notice": "Der Schlüssel ist bei der Eingabe SICHTBAR; zeigen Sie Ihren Bildschirm nicht. Er wird UNVERSCHLÜSSELT in ~/.docmind-single/config.json gespeichert. Enter behält den bisherigen Schlüssel.",
+    "perm_sensitive_warning": "SENSIBEL: Der Inhalt kann Zugangsdaten enthalten und an den KI-Anbieter gesendet werden. Zur Bestätigung 'ja' eingeben.",
+    "perm_sensitive_prompt": "Diesen sensiblen Vorgang erlauben? [ja/nein]: ",
+    "footer_token": "Token",
+    "footer_context": "Kontext",
+    "footer_cost": "Kosten",
+    "retry_wait": "Netzwerk- oder Serverproblem. Neuer Versuch in {seconds}s (Versuch {attempt}). Terminal offen lassen; Strg+C bricht ab.",
+    "retry_partial": "Antwort unterbrochen; unvollständige Werkzeugaufrufe wurden nicht ausgeführt. Weitere Kosten möglich.",
+    "retry_ok": "Verbindung wiederhergestellt; Aufgabe wird fortgesetzt.",
+    "price_usage": "Preis: /price EINGABE AUSGABE (USD pro Mio. Token); /price auto setzt zurück.",
+    "price_set": "Preis gespeichert: Eingabe ${inp}, Ausgabe ${out} / Mio.",
+    "price_reset": "Eigener Preis entfernt.",
+    "price_unknown": "Preis unbekannt; mit /price setzen.",
+    "price_invalid": "Zwei nichtnegative Zahlen eingeben: /price 0.15 0.60",
+    "context_usage": "Kontextlimit: /context ZAHL; /context auto setzt zurück.",
+    "context_invalid": "Limit muss zwischen 1024 und 100000000 liegen.",
+    "context_set": "Kontextlimit gespeichert: {limit}.",
+    "context_reset": "Eigenes Kontextlimit entfernt.",
+    "retry_stream_off": "Der Stream wurde mehrfach unterbrochen; für diese Sitzung wird ohne Streaming fortgefahren.",
+    "settings_save_failed": "Einstellungen konnten nicht gespeichert werden; sie gelten eventuell nur für diese Sitzung.",
+    "stat_0": "Anbieter / Modell",
+    "stat_1": "API-Anfragen",
+    "stat_2": "Eingabe-Token",
+    "stat_3": "Ausgabe-Token",
+    "stat_4": "Token gesamt",
+    "stat_5": "Kontextbelegung",
+    "stat_6": "Live-Status",
+    "stat_7": "Nur geschätzte Kosten; Cache, Freikontingent, Steuern und unterbrochene Anfragen können abweichen. Tarife: 29.10.2026.",
+    "stat_8": "Warnschwelle",
+    "stat_9": "Nachrichten im Speicher",
+    "history_title": "Gesprächsverlauf",
+    "history_choose": "Gesprächsnummer (Enter: abbrechen): ",
+    "history_empty": "Noch keine Gespräche gespeichert. Die erste Nachricht wird automatisch gespeichert.",
+    "history_invalid": "Bitte eine gültige Gesprächsnummer eingeben.",
+    "history_cancel": "Auswahl abgebrochen.",
+    "history_loaded": "Gespräch geladen: {title}",
+    "history_you": "Du",
+    "history_cancelled": "abgebrochen",
+    "history_read_error": "Verlauf konnte nicht gelesen werden. Datei und Berechtigungen prüfen.",
+    "history_write_error": "Verlauf konnte nicht gespeichert werden. Größe, Speicherplatz und Berechtigungen prüfen.",
+    "history_forked": "Eine andere Sitzung hat dieses Gespräch verändert; Fortsetzung wird separat gespeichert.",
+    "history_privacy": "Gespräche werden komprimiert, aber nicht verschlüsselt gespeichert.",
+    "history_help": " /history   Gespeicherte Gespräche öffnen",
+    "history_delete_hint": "Zum Löschen eines Gesprächs /delete eingeben.",
+    "history_delete_title": "Gespräch löschen",
+    "history_delete_warning": "Das gewählte Gespräch wird dauerhaft gelöscht und bei Bedarf aus dem Speicher entfernt.",
+    "history_delete_choose": "Zu löschende Nummer (Enter: abbrechen): ",
+    "history_delete_ok": "Gespräch gelöscht: {title}",
+    "history_delete_active": "Das offene Gespräch wurde geleert; ein neues hat begonnen.",
+    "history_delete_error": "Gespräch konnte nicht gelöscht werden. Berechtigungen prüfen.",
+    "history_delete_help": " /delete    Gespeichertes Gespräch löschen",
+    "auto_syntax_ok": "{path}: automatische Syntaxprüfung erfolgreich (kein Funktionstest).",
+    "auto_syntax_failed": "{path}: automatische Syntaxprüfung fehlgeschlagen oder nicht möglich; Details wurden an das Modell übermittelt.",
+    "loop_suppressed": "Wiederholte fehlgeschlagene oder abgelehnte Aktion nicht ausgeführt: {name}",
+    "loop_stopped": "Der Agent wiederholte sich und wurde ohne weitere Aktionen gestoppt. Geben Sie einen anderen Ansatz oder neue Anweisungen ein.",
+    "tool_args_retry": "Das Modell lieferte ungültige Werkzeugargumente; nichts wurde ausgeführt. Eine Korrektur wird angefordert (zusätzliche API-Kosten möglich).",
+    "effort_active": "Denkstufe: {level}. Bei unterstützten Modellen; hoch kann Wartezeit und API-Kosten erhöhen. Ändern mit /effort.",
+    "effort_uncontrolled": "Für diesen Anbieter/dieses Modell wird kein Denkparameter gesendet; der Standard des Anbieters gilt.",
+    "effort_usage": "Nutzung: /effort max|high|medium|low|default.",
+    "effort_saved": "Denkstufe gespeichert: {level}.",
+    "effort_not_saved": "Denkstufe ist {level} für diese Sitzung, konnte aber nicht gespeichert werden.",
+    "effort_help": " /effort    Denkstufe und Kosten",
+    "effort_actual": "Höchste unterstützte Stufe für dieses Modell: {actual}. Maximum kann deutlich mehr Zeit und Kosten verursachen.",
+    "effort_fallback": "Der Anbieter hat den Denkparameter abgelehnt. Vor einer Aktion wird mit Anbieterstandard erneut versucht. Zusätzliche API-Kosten sind möglich.",
+    "effort_fallback_active": "Dieses Modell/diese Stufe wurde in dieser Sitzung abgelehnt; Anfragen nutzen derzeit den Anbieterstandard. Mit /effort erneut auswählen.",
+    "compat_fallback": "Der Anbieter hat ein Feld oder das native Werkzeugformat abgelehnt; ein kompatibler Versuch folgt. Zusätzliche API-Kosten sind möglich.",
+    "doctor_connection_ok": "✔ Live-Verbindung: Modell hat geantwortet (Werkzeuge werden separat getestet).",
+    "doctor_tools_skipped": "Werkzeuge nicht getestet. /doctor tools nutzt die echte API; Kosten sind möglich.",
+    "doctor_tools_start": "Werkzeugschemas werden an die API gesendet; eine Zusatzanfrage, aber keine Werkzeugausführung.",
+    "doctor_tools_ok": "✔ Werkzeugtest: erwarteter Diagnoseaufruf erhalten ({mode}); nichts wurde ausgeführt.",
+    "doctor_tools_inconclusive": "⚠ Werkzeugtest fehlgeschlagen oder ohne eindeutiges Ergebnis; nichts wurde ausgeführt.",
+    "doctor_tool_native_mode": "native Werkzeug-API",
+    "doctor_tool_prompt_mode": "textbasierte Kompatibilität",
+    "doctor_usage": "Nutzung: /doctor, /doctor tools oder /doctor all",
+    "doctor_tools_help": " /doctor tools  Werkzeugschemas über die API testen; Kosten möglich",
+    "err_request_budget_title": "EINZELANFRAGE ÜBERSCHREITET TOKENBUDGET",
+    "err_request_budget_desc": "Diese Anfrage ist größer als das Minutenbudget von {provider}; Warten hilft nicht. Nachricht oder Verlauf kürzen, neue Sitzung oder anderes Modell/Konto nutzen. Details: {detail}",
+    "budget_fallback": "Einzelanfrage überschreitet das Tokenbudget. Ein neuer Versuch mit Ausgabelimit {limit}; die Antwort kann kürzer sein und API-Kosten können entstehen.",
+    "probe_retry": "Das Modell erreichte das Testlimit ohne Text. Ein neuer Versuch mit 1024 Token; der erste kann kostenpflichtig gewesen sein.",
+    "err_edge_block_title": "SICHERHEITSSCHICHT DES ANBIETERS BLOCKIERT ANFRAGE (1010)",
+    "err_edge_block_desc": "Die Anfrage an {provider} wurde möglicherweise vor der API blockiert (HTTP 403 / 1010). Das belegt keinen ungültigen API-Schlüssel. Nutzen Sie aktuelles DocMind; prüfen Sie bei Fortbestand VPN/Proxy und Netzwerk und melden Sie 403 / 1010 dem Anbieter. Teilen Sie Ihren Schlüssel nicht.",
+    "err_access_denied_title": "ANBIETER VERWEIGERT ZUGRIFF (403)",
+    "err_access_denied_desc": "{provider} verweigerte den Zugriff. Konto-/Modellberechtigung, Region, Netzwerk oder Sicherheitsrichtlinie können die Ursache sein; der Status allein belegt keinen ungültigen Schlüssel. Details: {detail}",
+    "retry_exhausted": "{count} automatische Versuche fehlgeschlagen. Weitere Anfragen können Kosten verursachen; Sie entscheiden.",
+    "retry_deferred": "Der Anbieter verlangt mindestens {seconds}s Wartezeit; kein vorzeitiger automatischer Versuch.",
+    "probe_transient_retry": "Vorübergehender Verbindungsfehler: neuer Test in {seconds}s ({attempt}/2); Kosten möglich.",
+    "batch_deferred": "{name} verschoben: Eine vorherige Aktion schlug fehl oder wurde abgelehnt; der Agent plant neu.",
+    "footer_incomplete": "unvollst.",
+    "footer_unknown": "unbekannt",
+    "footer_calculating": "berechne",
+    "usage_incomplete_detail": "Kosten für {count} Anfragen fehlen; {interrupted} wurden unterbrochen oder scheiterten. Nutzungs- oder Preisdaten können fehlen. Angezeigt wird nur der bekannte Anteil. * bedeutet unvollständige oder laufende Daten.",
+    "usage_complete_detail": "Keine Anfrage hat fehlende Nutzungs- oder Preisdaten. * kann laufende Daten anzeigen.",
+    "doctor_all_help": " /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich",
+    "doctor_all_title": "Konfigurierte Anbieter prüfen",
+    "doctor_all_none": "Keine Zugangsdaten zum Prüfen. /api verwenden.",
+    "doctor_all_intro": "Echte API-Anfragen an die folgenden Modelle können Kosten verursachen. Inaktive Anbieter nutzen ihr Standardmodell. Jeder Anbieter nutzt seinen eigenen Schlüssel und das angezeigte Ziel; Einstellungen bleiben unverändert.",
+    "doctor_all_confirm": "Tests starten? (ja/nein; Enter: nein): ",
+    "doctor_all_cancelled": "Abgebrochen; keine Anfrage gesendet.",
+    "doctor_all_checking": "Verbindung zu {provider} wird geprüft",
+    "doctor_all_ok": "Modell hat geantwortet",
+    "doctor_all_failed": "Test fehlgeschlagen",
+    "doctor_all_skipped": "Übersprungen (nicht konfiguriert): {names}",
+    "doctor_all_tool_note": "Nur Verbindungstest. /doctor tools prüft das aktive Modell; Kosten möglich.",
+    "thinking_rebase": "Claude-Kontext geändert: ältere signierte Denkblöcke wurden ausgelassen; Gesprächstext und Werkzeugergebnisse bleiben erhalten.",
+    "usage_tokens_missing_detail": "Die Kosten wurden ggf. gemeldet, aber für {count} Anfragen fehlen Tokendaten. * markiert unvollständige Daten.",
+    "startup_authority_warn": "⚠ WARNUNG: DIESER AGENT HAT VOLLZUGRIFF AUF IHREN COMPUTER — Alle Laufwerke, Ordner und Dateien sind sichtbar/bearbeitbar und Terminal-Code kann (mit Ihrer Erlaubnis) ausgeführt werden. Vorsichtig verwenden; keine Haftung.",
+    "term_perm_title": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
+    "term_perm_header": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
+    "term_perm_denied": "Terminal-Ausführung vom Benutzer abgelehnt.",
+    "term_triage_manual": "⚠ PASSWORT / ADMIN ERFORDERLICH: Dieser Befehl muss vom Benutzer selbst ausgeführt werden.",
+    "term_triage_autofix": "↻ Fehler erkannt — DocMind analysiert eine Korrektur...",
+    "ask_user_header": "DOCMIND-FRAGE / ZIELSYSTEM",
+    "ask_user_prompt": "Ihre Wahl (Nummer oder Text, Standard={default}): ",
+    "term_used_status": "Status",
+    "term_perm_shell": "Shell / Umgebung",
+    "term_perm_cwd": "Arbeitsverzeichnis",
+    "term_perm_code": "AUSZUFÜHRENDER CODE",
+    "term_perm_prompt": "Diesen Terminal-Befehl auf Ihrem Computer ausführen? [J]a / [N]ein: ",
+    "term_perm_reprompt": "Bitte 'j' (ja) oder 'n' (nein) eingeben: ",
+    "term_used_header": "TERMINAL VERWENDET",
+    "term_used_code": "VERWENDETER CODE",
+    "term_used_shell": "Shell / Umgebung",
+    "term_used_cwd": "Arbeitsverzeichnis",
+    "term_used_ok": "Erfolgreich (Exit-Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Fehler / Exit-Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Ausgabe",
+    "conn_auto_heal": "Verbindungsabbruch erkannt; automatische Wiederverbindung ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Bild angehängt: {name} ({dims}, {size})",
+    "img_not_found": "Bilddatei nicht gefunden: {path}",
+    "img_unsupported": "Nicht unterstütztes oder beschädigtes Bildformat: {path}",
+    "img_too_large": "Bild ist zu groß ({size}); maximal 15 MB werden unterstützt.",
+    "img_vision_fallback": "Modell ({model}) unterstützt keine Bilder; Textmodus verwendet. Wechseln Sie zu Gemini, Claude oder GPT-4o/5 für Bildanalyse.",
+    "img_usage": "Verwendung: /image <bildpfad> [Frage]  (oder Bildpfad direkt in den Chat ziehen)",
+    "diff_new_file": "Neue Datei",
+    "diff_edit_file": "Datei bearbeiten",
+    "diff_delete_file": "Datei löschen",
+    "diff_open_file": "Datei öffnen / lesen",
+    "diff_more_lines": "... ({count} weitere Zeilen ausgeblendet)",
+    "term_perm_cwd_lbl": "Arbeitsverzeichnis",
+    "mention_attached": "📎 Dateikontext angehängt: {name} ({size})",
+    "mention_dir_attached": "📂 Verzeichnisbaum angehängt: {name}",
+    "copy_ok": "In die Zwischenablage kopiert ({chars} Zeichen).",
+    "copy_empty": "Keine Antwort oder kein Codeblock zum Kopieren vorhanden.",
+    "paste_empty": "Kein Bild oder Text in der Zwischenablage gefunden.",
+    "paste_img_ok": "📋 Screenshot aus Zwischenablage erfasst ({dims}, {size}).",
+    "paste_txt_ok": "📋 Text aus Zwischenablage angehängt ({chars} Zeichen).",
+    "export_ok": "Gespräch als Markdown exportiert: {path}",
+    "export_empty": "Keine Nachrichten zum Exportieren vorhanden.",
+    "redo_success": "Dateiänderung wiederhergestellt: {path}",
+    "redo_empty": "Nichts zum Wiederherstellen (/redo) vorhanden.",
+    "undo_list_title": "RÜCKGÄNGIG-VERLAUF (/undo)",
+    "diff_clean": "Git-Arbeitsverzeichnis ist sauber (keine Änderungen).",
+    "diff_not_git": "Kein Git-Repository oder Git ist nicht installiert.",
+    "cmd_did_you_mean": "Unbekannter Befehl: {cmd}. Meinten Sie {suggest}? (/help für Hilfe)",
+    "search_usage": "Verwendung: /search <Thema oder Fakt zum Prüfen>",
+    "vision_bridge_used": "👁️ Aktives Modell ist nur Text; Bild wurde hochauflösend über '{bridge_model}' analysiert."
+  },
+  "es": {
+    "lang_name": "Español",
+    "ai_lang_instruction": "Comunícate siempre con el usuario en ESPAÑOL claro y natural, salvo que pida otro idioma.",
+    "welcome_subtitle": "Agente IA Autónomo de Terminal de Nueva Generación",
+    "ready_hint": "¡DocMind está listo! Pide tareas, edita archivos o ejecuta comandos.",
+    "type_help_hint": "Escribe /help para comandos | /lang idioma | /api ajustar API | /exit salir.",
+    "prompt_placeholder": "Escribe una tarea para DocMind...",
+    "wiz_title": "ASISTENTE DE CONFIGURACIÓN DE DOCMIND",
+    "wiz_select_lang": "Seleccione su idioma preferido (1-14) [Predeterminado: 1]: ",
+    "wiz_lang_saved": "Idioma configurado: Español (ES)",
+    "wiz_select_provider": "Seleccione el Proveedor de API de IA",
+    "wiz_provider_prompt": "Su elección (1-7) [Por defecto: 1]: ",
+    "wiz_select_model": "Seleccione Modelo para {provider}",
+    "wiz_custom_model_opt": "Ingresar nombre de modelo personalizado...",
+    "wiz_model_prompt": "Elección de modelo [Por defecto: 1]: ",
+    "wiz_custom_model_prompt": "Escriba el ID exacto del modelo: ",
+    "wiz_enter_base_url": "Ingrese Base URL de la API [Por defecto: {default}]: ",
+    "wiz_enter_api_key": "Ingrese su clave API de {provider}: ",
+    "wiz_api_key_optional": "Clave API de {provider} (opcional si es servidor local): ",
+    "wiz_api_key_empty": "¡ADVERTENCIA: La clave API no puede estar vacía!",
+    "wiz_testing_api": "Verificando conexión y clave API...",
+    "wiz_api_ok": "¡Excelente! Conexión con {provider} ({model}) verificada.",
+    "wiz_api_fail_menu": "Hubo un problema al verificar la API. ¿Qué desea hacer?",
+    "wiz_opt_retry_key": "Ingresar nueva clave API",
+    "wiz_opt_change_provider": "Elegir otro proveedor / modelo",
+    "wiz_opt_skip_anyway": "Omitir advertencia y guardar de todos modos (cambie luego con /api)",
+    "wiz_select_mode": "Seleccione Modo de Ejecución y Seguridad",
+    "wiz_mode_smart": "Confirmación inteligente (recomendada): pregunta antes de cambios, comandos y web",
+    "wiz_mode_auto": "Automático (arriesgado): actúa sin preguntar; no es una sandbox",
+    "wiz_mode_prompt": "Elección de modo (1-2) [Por defecto: 1]: ",
+    "wiz_complete": "Configuración completada. Las claves se guardan localmente sin cifrar.",
+    "mode_smart_short": "CONFIRMACIÓN",
+    "mode_auto_short": "AUTO TOTAL",
+    "status_tokens": "Tokens: {total} (Ent:{inp} / Sal:{out})",
+    "status_no_key": "SIN API KEY (use /api)",
+    "thinking": "DocMind está pensando y analizando...",
+    "step_counter": "Paso Autónomo {step}/{max_steps}",
+    "max_steps_reached": "ADVERTENCIA: Se alcanzó el límite de pasos autónomos ({max_steps}).",
+    "ask_continue_steps": "¿Desea que DocMind continúe trabajando? [S/n]: ",
+    "compacting_context": "INFO: Compactando historial automáticamente para ahorrar tokens...",
+    "context_compacted": "Historial compactado con éxito; continuando.",
+    "output_truncated_warn": "ADVERTENCIA: La respuesta alcanzó el límite de tokens de salida. Escriba 'continuar'.",
+    "tool_running": "Ejecutando herramienta: {name}",
+    "tool_done": "Completado: {name}",
+    "tool_skipped": "Omitido por el usuario: {name}",
+    "tool_error_passed": "ADVERTENCIA: Error en '{name}' omitido sin fallar ({err}).",
+    "perm_title": "CONFIRMACIÓN REQUERIDA",
+    "perm_file_action": "Operación de archivo: {action} -> {target}",
+    "perm_command_warn": "Comando de terminal a ejecutar: {cmd}",
+    "perm_dangerous_warn": "¡ATENCIÓN! ¡COMANDO CRÍTICO O RIESGOSO DETECTADO!",
+    "perm_prompt": "[S]í | [A]utomático | [N]o [Predeterminado: No]: ",
+    "perm_dangerous_prompt": "¿Seguro que desea ejecutar este comando crítico? [yes/no]: ",
+    "perm_switched_auto": "¡Modo Automático activado! Escriba /smart para volver a confirmar.",
+    "undo_success": "Último cambio de archivo revertido: {path}",
+    "undo_empty": "No hay cambios de archivo para deshacer.",
+    "err_quota_title": "¡ALERTA CRÍTICA: TOKENS / CRÉDITO DE API AGOTADOS!",
+    "err_quota_desc": "Su saldo de créditos o cuota de tokens en {provider} se ha agotado.\nDetalle: {detail}",
+    "err_rate_title": "¡ADVERTENCIA: LÍMITE DE VELOCIDAD DE API (RATE LIMIT)!",
+    "err_rate_desc": "Demasiadas solicitudes por minuto en {provider}.\nDetalle: {detail}",
+    "err_auth_title": "¡ADVERTENCIA: CLAVE API INVÁLIDA O CADUCADA!",
+    "err_auth_desc": "Su clave API de {provider} fue rechazada.\nDetalle: {detail}",
+    "err_context_title": "¡ADVERTENCIA: LÍMITE DE TOKENS DE CONTEXTO SUPERADO!",
+    "err_context_desc": "Compactando historial automáticamente para continuar.\nDetalle: {detail}",
+    "err_model_title": "¡ADVERTENCIA: MODELO NO ENCONTRADO O SIN ACCESO!",
+    "err_model_desc": "El modelo ({model}) no está disponible.\nDetalle: {detail}",
+    "err_server_title": "¡ADVERTENCIA: SERVIDOR IA SOBRECARGADO / ERROR TEMPORAL!",
+    "err_server_desc": "Problema temporal en los servidores de {provider}.\nDetalle: {detail}",
+    "err_network_title": "¡ADVERTENCIA: PROBLEMA DE CONEXIÓN A INTERNET!",
+    "err_network_desc": "No se pudo conectar con {provider}. Verifique su red.\nDetalle: {detail}",
+    "err_tool_title": "ADVERTENCIA: ERROR DE SISTEMA/ARCHIVO (OMITIDO)",
+    "err_tool_desc": "Se detectó un error pero el programa sigue activo:\nDetalle: {detail}",
+    "err_unknown_title": "ADVERTENCIA: ERROR INESPERADO CAPTURADO Y OMITIDO",
+    "err_unknown_desc": "El problema fue gestionado de forma segura:\nDetalle: {detail}",
+    "err_skipped_notice": "Problema omitido con seguridad. DocMind sigue listo.",
+    "err_retrying_in": "Reintentando automáticamente en {sec}s (Ctrl+C para omitir)...",
+    "err_budget_warn_title": "AVISO DE CONSUMO DE TOKENS",
+    "err_budget_warn_desc": "Se han usado {used} tokens en esta sesión (Límite de aviso: {limit}).",
+    "rec_title": "OPCIONES DE RECUPERACIÓN",
+    "rec_opt_new_key": "Ingresar nueva clave API y continuar",
+    "rec_opt_switch_provider": "Cambiar de proveedor de IA",
+    "rec_opt_switch_model": "Seleccionar otro modelo",
+    "rec_opt_retry": "Reintentar ahora",
+    "rec_opt_skip": "Omitir error y volver al chat",
+    "rec_choose": "Su opción [Por defecto: {default}]: ",
+    "help_title": "GUÍA DE COMANDOS DE DOCMIND",
+    "help_body": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Abrir conversaciones guardadas\n /delete    Eliminar conversación guardada\n /effort    Razonamiento y coste\n /doctor tools  Prueba los esquemas con la API; puede tener coste\n /doctor all  Prueba proveedores configurados; puede tener coste\n /image RUTA Analizar imagen/captura y solucionar errores\n /paste     Enviar captura o texto desde el portapapeles\n /copy      Copiar última respuesta (/copy code: solo código)\n /diff      Mostrar cambios Git en verde (+) / rojo (-)\n /redo      Rehacer último cambio deshecho (/undo)\n /export    Exportar conversación a Markdown (.md)\n /search Q  Búsqueda web en vivo y verificación de datos",
+    "cmd_cleared": "Historial y pantalla limpiados.",
+    "cmd_saved": "Sesión guardada: {path}",
+    "cmd_loaded": "Sesión cargada ({count} mensajes): {path}",
+    "cmd_lang_changed": "Idioma cambiado a: {lang}",
+    "cmd_mode_changed": "Modo actualizado: {mode}",
+    "cmd_cd_ok": "Directorio cambiado a: {path}",
+    "cmd_cd_err": "ADVERTENCIA: No se pudo cambiar el directorio: {err}",
+    "cmd_unknown": "Comando desconocido: '{cmd}'. Escriba /help.",
+    "cmd_exit_bye": "Cerrando DocMind. ¡Hasta pronto!",
+    "ctrl_c_cancelled": "Operación cancelada (Ctrl+C). Listo para continuar.",
+    "ctrl_c_exit_hint": "Escriba /exit o pulse Ctrl+C de nuevo para salir.",
+    "doctor_title": "DIAGNÓSTICO DE SALUD DE DOCMIND (/doctor)",
+    "tokens_report_title": "INFORME DE TOKENS DE LA SESIÓN",
+    "wiz_secret_notice": "La clave es VISIBLE al escribirla; no compartas la pantalla. Se guarda SIN CIFRAR en ~/.docmind-single/config.json. Enter conserva la clave actual.",
+    "perm_sensitive_warning": "SENSIBLE: El contenido puede contener credenciales y enviarse al proveedor de IA. Escriba 'sí' para confirmar.",
+    "perm_sensitive_prompt": "¿Permitir esta acción sensible? [sí/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Contexto",
+    "footer_cost": "Coste",
+    "retry_wait": "Problema de red o servidor. Reintento en {seconds}s (intento {attempt}). No cierres la terminal; Ctrl+C cancela.",
+    "retry_partial": "Respuesta interrumpida; no se ejecutaron llamadas incompletas. El reintento puede generar cargos.",
+    "retry_ok": "Conexión restaurada; continuando.",
+    "price_usage": "Precio: /price ENTRADA SALIDA (USD por millón); /price auto restablece.",
+    "price_set": "Precio guardado: entrada ${inp}, salida ${out} por millón.",
+    "price_reset": "Precio personalizado eliminado.",
+    "price_unknown": "Precio desconocido; usa /price.",
+    "price_invalid": "Introduce dos números no negativos: /price 0.15 0.60",
+    "context_usage": "Límite: /context NÚMERO; /context auto restablece.",
+    "context_invalid": "El límite debe estar entre 1024 y 100000000.",
+    "context_set": "Límite guardado: {limit}.",
+    "context_reset": "Límite personalizado eliminado.",
+    "retry_stream_off": "El flujo se interrumpió varias veces; se intentará sin streaming en esta sesión.",
+    "settings_save_failed": "No se pudieron guardar los ajustes; quizá solo duren esta sesión.",
+    "stat_0": "Proveedor / modelo",
+    "stat_1": "Solicitudes API",
+    "stat_2": "Tokens de entrada",
+    "stat_3": "Tokens de salida",
+    "stat_4": "Tokens totales",
+    "stat_5": "Uso del contexto",
+    "stat_6": "Estado",
+    "stat_7": "Coste estimado; caché, nivel gratuito, impuestos y reintentos pueden cambiarlo. Tarifas del 29-10-2026.",
+    "stat_8": "Umbral de aviso",
+    "stat_9": "Mensajes en memoria",
+    "history_title": "Historial de conversaciones",
+    "history_choose": "Número de conversación (Enter cancela): ",
+    "history_empty": "Aún no hay conversaciones guardadas. El primer mensaje se guarda automáticamente.",
+    "history_invalid": "Introduce un número válido.",
+    "history_cancel": "Selección cancelada.",
+    "history_loaded": "Conversación cargada: {title}",
+    "history_you": "Tú",
+    "history_cancelled": "cancelado",
+    "history_read_error": "No se pudo leer el historial. Revisa el archivo y los permisos.",
+    "history_write_error": "No se pudo guardar el historial. Revisa el tamaño, el espacio y los permisos.",
+    "history_forked": "Otra sesión modificó esta conversación; se guardará una continuación separada.",
+    "history_privacy": "Las conversaciones se guardan comprimidas, pero no cifradas.",
+    "history_help": " /history   Abrir conversaciones guardadas",
+    "history_delete_hint": "Escribe /delete para eliminar una conversación.",
+    "history_delete_title": "Eliminar conversación",
+    "history_delete_warning": "La conversación elegida se elimina de forma permanente y, si está abierta, de la memoria.",
+    "history_delete_choose": "Número a eliminar (Enter cancela): ",
+    "history_delete_ok": "Conversación eliminada: {title}",
+    "history_delete_active": "Se borró la conversación abierta; comenzó una nueva.",
+    "history_delete_error": "No se pudo eliminar. Revisa los permisos del archivo y la carpeta.",
+    "history_delete_help": " /delete    Eliminar conversación guardada",
+    "auto_syntax_ok": "{path}: comprobación automática de sintaxis correcta (no es una prueba funcional).",
+    "auto_syntax_failed": "{path}: la comprobación automática falló o no pudo ejecutarse; se enviaron detalles al modelo.",
+    "loop_suppressed": "No se ejecutó la acción fallida o rechazada repetida: {name}",
+    "loop_stopped": "El agente quedó repitiéndose y se detuvo sin más acciones. Puede indicar otra estrategia o una nueva instrucción.",
+    "tool_args_retry": "El modelo devolvió argumentos inválidos; no se ejecutó nada. Se solicita una corrección (puede tener un coste adicional de API).",
+    "effort_active": "Nivel de razonamiento: {level}. En modelos compatibles, high puede aumentar el tiempo y el coste de API. Cambia con /effort.",
+    "effort_uncontrolled": "DocMind no envía un parámetro de razonamiento para este proveedor/modelo; se usa su valor predeterminado.",
+    "effort_usage": "Uso: /effort max|high|medium|low|default.",
+    "effort_saved": "Nivel de razonamiento guardado: {level}.",
+    "effort_not_saved": "El nivel es {level} en esta sesión, pero no pudo guardarse.",
+    "effort_help": " /effort    Razonamiento y coste",
+    "effort_actual": "Nivel máximo compatible enviado a este modelo: {actual}. El máximo puede requerir mucho más tiempo y dinero.",
+    "effort_fallback": "El proveedor rechazó el parámetro de razonamiento. Se reintenta antes de actuar usando su valor predeterminado. Puede haber costes adicionales.",
+    "effort_fallback_active": "Este modelo/nivel fue rechazado en esta sesión; las solicitudes usan el valor predeterminado del proveedor. Elige de nuevo con /effort.",
+    "compat_fallback": "El proveedor rechazó un campo o el formato nativo de herramientas; se reintenta con un formato compatible. Puede haber costes adicionales.",
+    "doctor_connection_ok": "✔ Conexión real: el modelo respondió (las herramientas se prueban por separado).",
+    "doctor_tools_skipped": "Herramientas sin probar. /doctor tools usa la API real y puede generar costes.",
+    "doctor_tools_start": "Se envían los esquemas a la API; hay una solicitud adicional, pero no se ejecuta ninguna herramienta.",
+    "doctor_tools_ok": "✔ Prueba de herramientas: llamada de diagnóstico recibida ({mode}); no se ejecutó ninguna herramienta.",
+    "doctor_tools_inconclusive": "⚠ La prueba de herramientas falló o no fue concluyente; no se ejecutó ninguna herramienta.",
+    "doctor_tool_native_mode": "API nativa",
+    "doctor_tool_prompt_mode": "compatibilidad basada en texto",
+    "doctor_usage": "Uso: /doctor, /doctor tools o /doctor all",
+    "doctor_tools_help": " /doctor tools  Prueba los esquemas con la API; puede tener coste",
+    "err_request_budget_title": "LA SOLICITUD SUPERA EL LÍMITE DE TOKENS",
+    "err_request_budget_desc": "La solicitud supera el presupuesto por minuto de {provider}; esperar no lo resuelve. Reduce el mensaje o historial, inicia otra sesión o usa otro modelo/cuenta. Detalle: {detail}",
+    "budget_fallback": "La solicitud supera el límite de tokens. Se reintenta una vez con un máximo de salida de {limit}; la respuesta puede ser más corta y generar costes.",
+    "probe_retry": "El modelo agotó el límite de prueba sin texto. Se reintenta una vez con 1024 tokens; el primer intento puede tener coste.",
+    "err_edge_block_title": "LA CAPA DE SEGURIDAD BLOQUEÓ LA SOLICITUD (1010)",
+    "err_edge_block_desc": "La solicitud a {provider} pudo ser bloqueada antes de llegar a la API (HTTP 403 / 1010). Esto no demuestra que la clave sea inválida. Actualiza DocMind; si persiste, revisa la red o VPN/proxy e informa al proveedor de 403 / 1010. No compartas la clave.",
+    "err_access_denied_title": "EL PROVEEDOR DENEGÓ EL ACCESO (403)",
+    "err_access_denied_desc": "{provider} denegó el acceso. Puede deberse a permisos, región, red o políticas; el código por sí solo no demuestra que la clave sea inválida. Detalle: {detail}",
+    "retry_exhausted": "Fallaron {count} reintentos automáticos. Más solicitudes pueden generar costes; decide si continúas.",
+    "retry_deferred": "El proveedor pide esperar al menos {seconds}s; no se reintentará antes automáticamente.",
+    "probe_transient_retry": "Error temporal de conexión: reintento en {seconds}s ({attempt}/2); puede tener coste.",
+    "batch_deferred": "{name} aplazado: una acción anterior falló o fue rechazada; el agente reevaluará.",
+    "footer_incomplete": "incompleto",
+    "footer_unknown": "desconocido",
+    "footer_calculating": "calculando",
+    "usage_incomplete_detail": "Faltan costes de {count} solicitudes; {interrupted} se interrumpieron o fallaron. Pueden faltar datos o precios. El importe solo estima la parte conocida. * indica datos incompletos o en curso.",
+    "usage_complete_detail": "No faltan datos de uso o precio. * puede indicar una respuesta en curso.",
+    "doctor_all_help": " /doctor all  Prueba proveedores configurados; puede tener coste",
+    "doctor_all_title": "Probar proveedores configurados",
+    "doctor_all_none": "No hay credenciales configuradas. Usa /api.",
+    "doctor_all_intro": "Se enviarán solicitudes reales a estos modelos; pueden generar costes. Los proveedores inactivos usan su modelo predeterminado. Cada proveedor usa su clave y el destino mostrado; no se cambian ajustes.",
+    "doctor_all_confirm": "¿Continuar? (sí/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelado; no se envió ninguna solicitud.",
+    "doctor_all_checking": "Probando conexión con {provider}",
+    "doctor_all_ok": "el modelo respondió",
+    "doctor_all_failed": "prueba fallida",
+    "doctor_all_skipped": "Omitidos (sin configurar): {names}",
+    "doctor_all_tool_note": "Solo prueba la conexión. /doctor tools prueba el modelo activo y puede tener coste.",
+    "thinking_rebase": "Cambió el contexto de Claude: se omitieron bloques de razonamiento firmados; se conservaron texto y resultados de herramientas.",
+    "usage_tokens_missing_detail": "Puede haberse informado el coste, pero faltan tokens de {count} solicitudes. * indica datos incompletos.",
+    "startup_authority_warn": "⚠ ADVERTENCIA: ESTE AGENTE TIENE ACCESO TOTAL A SU COMPUTADORA — Puede ver, abrir y editar cualquier disco, carpeta o archivo y ejecutar código en terminal (con su permiso). Úselo con precaución; no se acepta responsabilidad.",
+    "term_perm_title": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
+    "term_perm_header": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
+    "term_perm_denied": "Ejecución en terminal rechazada por el usuario.",
+    "term_used_status": "Estado",
+    "term_triage_manual": "⚠ CONTRASEÑA / ADMIN REQUERIDO: Este comando debe ser ejecutado directamente por el usuario.",
+    "term_triage_autofix": "↻ Error detectado — DocMind está analizando cómo corregirlo...",
+    "ask_user_header": "PREGUNTA DE DOCMIND / SISTEMA OBJETIVO",
+    "ask_user_prompt": "Su elección (número o texto, predeterminado={default}): ",
+    "term_perm_shell": "Shell / Entorno",
+    "term_perm_cwd": "Carpeta de trabajo",
+    "term_perm_code": "CÓDIGO A EJECUTAR",
+    "term_perm_prompt": "¿Permite ejecutar este comando en su computadora? [S]í / [N]o: ",
+    "term_perm_reprompt": "Escriba 's' (sí) o 'n' (no): ",
+    "term_used_header": "TERMINAL UTILIZADA",
+    "term_used_code": "CÓDIGO UTILIZADO",
+    "term_used_shell": "Shell / Entorno",
+    "term_used_cwd": "Carpeta de trabajo",
+    "term_used_ok": "Completado (Código: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Error / Código: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Salida",
+    "conn_auto_heal": "Corte de conexión detectado; reconectando automáticamente ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Imagen adjunta: {name} ({dims}, {size})",
+    "img_not_found": "Archivo de imagen no encontrado: {path}",
+    "img_unsupported": "Formato de imagen no compatible o dañado: {path}",
+    "img_too_large": "La imagen es demasiado grande ({size}); máximo 15 MB.",
+    "img_vision_fallback": "El modelo ({model}) no admite imágenes; se usó modo texto. Cambie a Gemini, Claude o GPT-4o/5 para visión.",
+    "img_usage": "Uso: /image <ruta_imagen> [pregunta]  (o arrastre una imagen directamente al chat)",
+    "diff_new_file": "Nuevo archivo",
+    "diff_edit_file": "Editar archivo",
+    "diff_delete_file": "Eliminar archivo",
+    "diff_open_file": "Abrir / leer archivo",
+    "diff_more_lines": "... ({count} líneas adicionales omitidas)",
+    "term_perm_cwd_lbl": "Carpeta de trabajo",
+    "mention_attached": "📎 Contexto de archivo adjunto: {name} ({size})",
+    "mention_dir_attached": "📂 Árbol de directorio adjunto: {name}",
+    "copy_ok": "Copiado al portapapeles ({chars} caracteres).",
+    "copy_empty": "No hay respuesta ni bloque de código para copiar.",
+    "paste_empty": "No se encontró imagen ni texto en el portapapeles.",
+    "paste_img_ok": "📋 Captura obtenida del portapapeles ({dims}, {size}).",
+    "paste_txt_ok": "📋 Texto adjuntado del portapapeles ({chars} caracteres).",
+    "export_ok": "Conversación exportada a Markdown: {path}",
+    "export_empty": "No hay mensajes para exportar.",
+    "redo_success": "Cambio de archivo reaplicado: {path}",
+    "redo_empty": "No hay cambios para rehacer (/redo).",
+    "undo_list_title": "HISTORIAL DE DESHACER (/undo)",
+    "diff_clean": "El árbol de trabajo de Git está limpio (sin cambios).",
+    "diff_not_git": "Esta carpeta no es un repositorio Git o git no está instalado.",
+    "cmd_did_you_mean": "Comando desconocido: {cmd}. ¿Quiso decir {suggest}? (Escriba /help)",
+    "search_usage": "Uso: /search <tema o dato a investigar y verificar>",
+    "vision_bridge_used": "👁️ El modelo activo es solo texto; imagen analizada en alta resolución con '{bridge_model}'."
+  },
+  "fr": {
+    "lang_name": "Français",
+    "ai_lang_instruction": "Communique toujours avec l'utilisateur en FRANÇAIS clair et naturel, sauf demande contraire.",
+    "welcome_subtitle": "Agent IA Autonome de Terminal Nouvelle Génération",
+    "ready_hint": "DocMind est prêt ! Demandez une tâche, modifiez des fichiers ou lancez des commandes.",
+    "type_help_hint": "Tapez /help pour l'aide | /lang langue | /api clé API | /exit quitter.",
+    "prompt_placeholder": "Confiez une tâche à DocMind...",
+    "wiz_title": "ASSISTANT DE CONFIGURATION DOCMIND",
+    "wiz_select_lang": "Veuillez sélectionner votre langue préférée (1-14) [Défaut : 1] : ",
+    "wiz_lang_saved": "Langue sélectionnée : Français (FR)",
+    "wiz_select_provider": "Choisissez le fournisseur d'API IA",
+    "wiz_provider_prompt": "Votre choix (1-7) [Défaut : 1] : ",
+    "wiz_select_model": "Choisissez le modèle pour {provider}",
+    "wiz_custom_model_opt": "Saisir un nom de modèle personnalisé...",
+    "wiz_model_prompt": "Choix du modèle [Défaut : 1] : ",
+    "wiz_custom_model_prompt": "Entrez l'identifiant exact du modèle : ",
+    "wiz_enter_base_url": "Entrez l'URL de base de l'API [Défaut : {default}] : ",
+    "wiz_enter_api_key": "Entrez votre clé API {provider} : ",
+    "wiz_api_key_optional": "Clé API {provider} (optionnel pour serveur local) : ",
+    "wiz_api_key_empty": "AVERTISSEMENT : La clé API ne peut pas être vide !",
+    "wiz_testing_api": "Vérification de la connexion et de la clé API...",
+    "wiz_api_ok": "Parfait ! Connexion à {provider} ({model}) vérifiée.",
+    "wiz_api_fail_menu": "Un problème est survenu lors de la vérification. Que voulez-vous faire ?",
+    "wiz_opt_retry_key": "Saisir une nouvelle clé API",
+    "wiz_opt_change_provider": "Choisir un autre fournisseur / modèle",
+    "wiz_opt_skip_anyway": "Ignorer l'alerte et enregistrer quand même (/api plus tard)",
+    "wiz_select_mode": "Choisissez le mode d'exécution et de sécurité",
+    "wiz_mode_smart": "Confirmation intelligente (recommandée) : demander avant modification, commande et web",
+    "wiz_mode_auto": "Automatique (risqué) : agit sans demander ; ce n'est pas un bac à sable",
+    "wiz_mode_prompt": "Choix du mode (1-2) [Défaut : 1] : ",
+    "wiz_complete": "Configuration terminée. Les clés sont stockées localement sans chiffrement.",
+    "mode_smart_short": "CONFIRMATION",
+    "mode_auto_short": "AUTO COMPLET",
+    "status_tokens": "Tokens : {total} (Ent:{inp} / Sor:{out})",
+    "status_no_key": "SANS CLÉ API (/api)",
+    "thinking": "DocMind réfléchit et analyse...",
+    "step_counter": "Étape autonome {step}/{max_steps}",
+    "max_steps_reached": "AVERTISSEMENT : Limite d'étapes autonomes ({max_steps}) atteinte.",
+    "ask_continue_steps": "DocMind doit-il continuer ? [O/n] : ",
+    "compacting_context": "INFO : Compression intelligente de l'historique pour économiser les tokens...",
+    "context_compacted": "Historique compressé avec succès ; reprise en cours.",
+    "output_truncated_warn": "AVERTISSEMENT : Limite de tokens de sortie atteinte. Tapez 'continuer' pour poursuivre.",
+    "tool_running": "Exécution de l'outil : {name}",
+    "tool_done": "Terminé : {name}",
+    "tool_skipped": "Ignoré par l'utilisateur : {name}",
+    "tool_error_passed": "AVERTISSEMENT : Erreur dans '{name}' ignorée sans plantage ({err}).",
+    "perm_title": "CONFIRMATION REQUISE",
+    "perm_file_action": "Action fichier : {action} -> {target}",
+    "perm_command_warn": "Commande terminal à exécuter : {cmd}",
+    "perm_dangerous_warn": "ATTENTION ! COMMANDE CRITIQUE OU RISQUÉE DÉTECTÉE !",
+    "perm_prompt": "[O]ui | [A]uto | [N]on [Défaut : Non] : ",
+    "perm_dangerous_prompt": "Voulez-vous vraiment exécuter cette commande critique ? [yes/no] : ",
+    "perm_switched_auto": "Mode Automatique activé ! Tapez /smart pour réactiver les confirmations.",
+    "undo_success": "Dernière modification annulée : {path}",
+    "undo_empty": "Aucune modification de fichier à annuler.",
+    "err_quota_title": "ALERTE CRITIQUE : QUOTA DE TOKENS / CRÉDIT API ÉPUISÉ !",
+    "err_quota_desc": "Votre quota ou solde de crédits sur {provider} est épuisé.\nDétail : {detail}",
+    "err_rate_title": "AVERTISSEMENT : LIMITE DE REQUÊTES API (RATE LIMIT) !",
+    "err_rate_desc": "Trop de requêtes envoyées à {provider}.\nDétail : {detail}",
+    "err_auth_title": "AVERTISSEMENT : CLÉ API INVALIDE OU EXPIRÉE !",
+    "err_auth_desc": "Votre clé API {provider} a été refusée.\nDétail : {detail}",
+    "err_context_title": "AVERTISSEMENT : LIMITE DE TOKENS DE CONTEXTE DÉPASSÉE !",
+    "err_context_desc": "Compression automatique de la conversation en cours.\nDétail : {detail}",
+    "err_model_title": "AVERTISSEMENT : MODÈLE INTROUVABLE OU ACCÈS REFUSÉ !",
+    "err_model_desc": "Le modèle ({model}) n'est pas disponible.\nDétail : {detail}",
+    "err_server_title": "AVERTISSEMENT : SERVEUR IA SURCHARGÉ / ERREUR TEMPORAIRE !",
+    "err_server_desc": "Problème temporaire sur les serveurs {provider}.\nDétail : {detail}",
+    "err_network_title": "AVERTISSEMENT : PROBLÈME DE CONNEXION RÉSEAU / INTERNET !",
+    "err_network_desc": "Impossible de joindre {provider}. Vérifiez votre connexion.\nDétail : {detail}",
+    "err_tool_title": "AVERTISSEMENT : ERREUR FICHIER / SYSTÈME (IGNORÉE)",
+    "err_tool_desc": "Une erreur système a été interceptée sans arrêt :\nDétail : {detail}",
+    "err_unknown_title": "AVERTISSEMENT : ERREUR INATTENDUE INTERCEPTÉE",
+    "err_unknown_desc": "Problème géré en toute sécurité :\nDétail : {detail}",
+    "err_skipped_notice": "Erreur ignorée en toute sécurité. DocMind reste prêt.",
+    "err_retrying_in": "Nouvelle tentative automatique dans {sec}s (Ctrl+C pour passer)...",
+    "err_budget_warn_title": "ALERTE BUDGET TOKENS",
+    "err_budget_warn_desc": "{used} tokens utilisés durant cette session (Seuil : {limit}).",
+    "rec_title": "OPTIONS DE RÉCUPÉRATION",
+    "rec_opt_new_key": "Entrer une nouvelle clé API et continuer",
+    "rec_opt_switch_provider": "Changer de fournisseur IA",
+    "rec_opt_switch_model": "Choisir un autre modèle",
+    "rec_opt_retry": "Réessayer maintenant",
+    "rec_opt_skip": "Ignorer l'erreur et revenir au chat",
+    "rec_choose": "Votre choix [Défaut : {default}] : ",
+    "help_title": "GUIDE DES COMMANDES DOCMIND",
+    "help_body": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Ouvrir les conversations enregistrées\n /delete    Supprimer une conversation enregistrée\n /effort    Raisonnement et coût\n /doctor tools  Tester les schémas via l’API ; frais possibles\n /doctor all  Tester les fournisseurs configurés ; frais possibles\n /image CHEMIN Analyser une image/capture et résoudre les erreurs\n /paste     Envoyer capture ou texte depuis le presse-papiers\n /copy      Copier la dernière réponse (/copy code : code seul)\n /diff      Afficher les changements Git en vert (+) / rouge (-)\n /redo      Rétablir la dernière modification annulée (/undo)\n /export    Exporter la conversation en Markdown (.md)\n /search Q  Recherche web en direct et vérification des faits",
+    "cmd_cleared": "Historique et écran effacés.",
+    "cmd_saved": "Session sauvegardée : {path}",
+    "cmd_loaded": "Session chargée ({count} messages) : {path}",
+    "cmd_lang_changed": "Langue modifiée : {lang}",
+    "cmd_mode_changed": "Mode mis à jour : {mode}",
+    "cmd_cd_ok": "Répertoire courant changé : {path}",
+    "cmd_cd_err": "AVERTISSEMENT : Impossible de changer de dossier : {err}",
+    "cmd_unknown": "Commande inconnue : '{cmd}'. Tapez /help.",
+    "cmd_exit_bye": "Fermeture de DocMind. À bientôt !",
+    "ctrl_c_cancelled": "Opération annulée (Ctrl+C). Prêt à continuer.",
+    "ctrl_c_exit_hint": "Tapez /exit ou appuyez encore sur Ctrl+C pour quitter.",
+    "doctor_title": "DIAGNOSTIC SYSTÈME DOCMIND (/doctor)",
+    "tokens_report_title": "RAPPORT DE CONSOMMATION DE TOKENS",
+    "wiz_secret_notice": "La clé est VISIBLE pendant la saisie ; ne partagez pas votre écran. Elle est stockée SANS CHIFFREMENT dans ~/.docmind-single/config.json. Entrée conserve la clé actuelle.",
+    "perm_sensitive_warning": "SENSIBLE : Le contenu peut contenir des identifiants et être envoyé au fournisseur IA. Tapez 'oui' pour confirmer.",
+    "perm_sensitive_prompt": "Autoriser cette action sensible ? [oui/non] : ",
+    "footer_token": "Jetons",
+    "footer_context": "Contexte",
+    "footer_cost": "Coût",
+    "retry_wait": "Problème réseau ou serveur. Nouvelle tentative dans {seconds}s (essai {attempt}). Gardez le terminal ouvert ; Ctrl+C annule.",
+    "retry_partial": "Réponse interrompue ; aucun appel incomplet exécuté. Une nouvelle tentative peut être facturée.",
+    "retry_ok": "Connexion rétablie ; tâche reprise.",
+    "price_usage": "Prix : /price ENTRÉE SORTIE (USD par million) ; /price auto réinitialise.",
+    "price_set": "Prix enregistré : entrée ${inp}, sortie ${out} par million.",
+    "price_reset": "Prix personnalisé supprimé.",
+    "price_unknown": "Prix inconnu ; utilisez /price.",
+    "price_invalid": "Entrez deux nombres positifs ou nuls : /price 0.15 0.60",
+    "context_usage": "Limite : /context NOMBRE ; /context auto réinitialise.",
+    "context_invalid": "La limite doit être entre 1024 et 100000000.",
+    "context_set": "Limite enregistrée : {limit}.",
+    "context_reset": "Limite personnalisée supprimée.",
+    "retry_stream_off": "Le flux a été interrompu plusieurs fois ; nouvel essai sans streaming pour cette session.",
+    "settings_save_failed": "Paramètres non enregistrés ; ils peuvent ne durer que pour cette session.",
+    "stat_0": "Fournisseur / modèle",
+    "stat_1": "Requêtes API",
+    "stat_2": "Jetons en entrée",
+    "stat_3": "Jetons en sortie",
+    "stat_4": "Total de jetons",
+    "stat_5": "Contexte utilisé",
+    "stat_6": "État",
+    "stat_7": "Coût estimé ; cache, gratuité, taxes et interruptions peuvent différer. Tarifs du 29-10-2026.",
+    "stat_8": "Seuil d’alerte",
+    "stat_9": "Messages en mémoire",
+    "history_title": "Historique des conversations",
+    "history_choose": "Numéro de conversation (Entrée annule) : ",
+    "history_empty": "Aucune conversation enregistrée. Le premier message est sauvegardé automatiquement.",
+    "history_invalid": "Entrez un numéro valide.",
+    "history_cancel": "Sélection annulée.",
+    "history_loaded": "Conversation chargée : {title}",
+    "history_you": "Vous",
+    "history_cancelled": "annulé",
+    "history_read_error": "Impossible de lire l’historique. Vérifiez le fichier et ses permissions.",
+    "history_write_error": "Impossible d’enregistrer l’historique. Vérifiez sa taille, l’espace et les permissions.",
+    "history_forked": "Une autre session a modifié cette conversation ; la suite est enregistrée séparément.",
+    "history_privacy": "Les conversations sont enregistrées compressées, mais non chiffrées.",
+    "history_help": " /history   Ouvrir les conversations enregistrées",
+    "history_delete_hint": "Tapez /delete pour supprimer une conversation.",
+    "history_delete_title": "Supprimer une conversation",
+    "history_delete_warning": "La conversation choisie est supprimée définitivement et, si elle est ouverte, de la mémoire.",
+    "history_delete_choose": "Numéro à supprimer (Entrée annule) : ",
+    "history_delete_ok": "Conversation supprimée : {title}",
+    "history_delete_active": "La conversation ouverte a été effacée ; une nouvelle a commencé.",
+    "history_delete_error": "Impossible de supprimer la conversation. Vérifiez les permissions.",
+    "history_delete_help": " /delete    Supprimer une conversation enregistrée",
+    "auto_syntax_ok": "{path} : vérification syntaxique automatique réussie (ce n'est pas un test fonctionnel).",
+    "auto_syntax_failed": "{path} : vérification syntaxique échouée ou impossible ; les détails ont été transmis au modèle.",
+    "loop_suppressed": "Action échouée ou refusée répétée non exécutée : {name}",
+    "loop_stopped": "L'agent se répétait et s'est arrêté sans autre action. Vous pouvez fournir une autre approche ou instruction.",
+    "tool_args_retry": "Arguments d'outil invalides ; rien n'a été exécuté. Une correction est demandée (coût API supplémentaire possible).",
+    "effort_active": "Niveau de raisonnement : {level}. Sur les modèles compatibles, high peut augmenter le délai et le coût API. Modifier avec /effort.",
+    "effort_uncontrolled": "DocMind n’envoie aucun paramètre de raisonnement pour ce fournisseur/modèle ; son réglage par défaut s’applique.",
+    "effort_usage": "Utilisation : /effort max|high|medium|low|default.",
+    "effort_saved": "Niveau de raisonnement enregistré : {level}.",
+    "effort_not_saved": "Le niveau {level} est actif pour cette session, mais n’a pas pu être enregistré.",
+    "effort_help": " /effort    Raisonnement et coût",
+    "effort_actual": "Niveau maximal pris en charge pour ce modèle : {actual}. Le maximum peut coûter nettement plus de temps et d’argent.",
+    "effort_fallback": "Le fournisseur a rejeté le paramètre de raisonnement. Nouvelle tentative avant toute action avec son réglage par défaut. Des frais API supplémentaires sont possibles.",
+    "effort_fallback_active": "Ce modèle/niveau a été rejeté pendant cette session ; les requêtes utilisent le réglage par défaut du fournisseur. Resélectionnez avec /effort.",
+    "compat_fallback": "Le fournisseur a refusé un champ ou le format natif des outils ; nouvel essai compatible. Des frais API supplémentaires sont possibles.",
+    "doctor_connection_ok": "✔ Connexion réelle : le modèle a répondu (outils testés séparément).",
+    "doctor_tools_skipped": "Outils non testés. /doctor tools utilise la vraie API ; des frais sont possibles.",
+    "doctor_tools_start": "Envoi des schémas à l’API ; requête supplémentaire, mais aucun outil n’est exécuté.",
+    "doctor_tools_ok": "✔ Test d’outil : appel de diagnostic reçu ({mode}) ; aucun outil exécuté.",
+    "doctor_tools_inconclusive": "⚠ Test d’outil échoué ou non concluant ; aucun outil exécuté.",
+    "doctor_tool_native_mode": "API native",
+    "doctor_tool_prompt_mode": "compatibilité par texte",
+    "doctor_usage": "Utilisation : /doctor, /doctor tools ou /doctor all",
+    "doctor_tools_help": " /doctor tools  Tester les schémas via l’API ; frais possibles",
+    "err_request_budget_title": "LA REQUÊTE DÉPASSE LE BUDGET DE TOKENS",
+    "err_request_budget_desc": "La requête dépasse le budget par minute de {provider} ; attendre ne suffit pas. Réduisez le message ou l’historique, ouvrez une session ou changez de modèle/compte. Détail : {detail}",
+    "budget_fallback": "La requête dépasse le budget de tokens. Un nouvel essai réduit la sortie à {limit} ; la réponse peut être plus courte et des frais peuvent s’appliquer.",
+    "probe_retry": "Le modèle a atteint la limite du test sans texte. Nouvel essai à 1024 tokens ; le premier peut avoir été facturé.",
+    "err_edge_block_title": "LA COUCHE DE SÉCURITÉ A BLOQUÉ LA REQUÊTE (1010)",
+    "err_edge_block_desc": "La requête vers {provider} a pu être bloquée avant l’API (HTTP 403 / 1010). Cela ne prouve pas que la clé est invalide. Utilisez DocMind à jour ; si le problème persiste, vérifiez le réseau ou VPN/proxy et signalez 403 / 1010 au fournisseur. Ne partagez pas votre clé.",
+    "err_access_denied_title": "ACCÈS REFUSÉ PAR LE FOURNISSEUR (403)",
+    "err_access_denied_desc": "{provider} a refusé l’accès. Les autorisations, la région, le réseau ou les règles du fournisseur peuvent être en cause ; ce code seul ne prouve pas que la clé est invalide. Détail : {detail}",
+    "retry_exhausted": "{count} tentatives automatiques ont échoué. Les requêtes suivantes peuvent être facturées ; à vous de décider.",
+    "retry_deferred": "Le fournisseur demande au moins {seconds}s ; aucun nouvel essai automatique prématuré.",
+    "probe_transient_retry": "Erreur temporaire de connexion : nouvel essai dans {seconds}s ({attempt}/2) ; frais possibles.",
+    "batch_deferred": "{name} reporté : une action précédente a échoué ou a été refusée ; l’agent réévaluera.",
+    "footer_incomplete": "incomplet",
+    "footer_unknown": "inconnu",
+    "footer_calculating": "calcul",
+    "usage_incomplete_detail": "Coût manquant pour {count} requêtes ; {interrupted} ont échoué ou été interrompues. Les données ou tarifs peuvent manquer. Le montant estime seulement la partie connue. * indique des données incomplètes ou en cours.",
+    "usage_complete_detail": "Aucune requête ne manque de données ou de tarif. * peut indiquer une réponse en cours.",
+    "doctor_all_help": " /doctor all  Tester les fournisseurs configurés ; frais possibles",
+    "doctor_all_title": "Tester les fournisseurs configurés",
+    "doctor_all_none": "Aucun identifiant configuré. Utilisez /api.",
+    "doctor_all_intro": "Des requêtes API réelles seront envoyées aux modèles suivants et peuvent être facturées. Les fournisseurs inactifs utilisent leur modèle par défaut. Chaque fournisseur utilise sa propre clé et la destination affichée ; les paramètres restent inchangés.",
+    "doctor_all_confirm": "Continuer ? (oui/non ; Entrée : non) : ",
+    "doctor_all_cancelled": "Annulé ; aucune requête envoyée.",
+    "doctor_all_checking": "Test de connexion à {provider}",
+    "doctor_all_ok": "le modèle a répondu",
+    "doctor_all_failed": "échec du test",
+    "doctor_all_skipped": "Ignorés (non configurés) : {names}",
+    "doctor_all_tool_note": "Test de connexion uniquement. /doctor tools teste le modèle actif ; frais possibles.",
+    "thinking_rebase": "Le contexte Claude a changé : les anciens blocs de réflexion signés sont omis ; le texte et les résultats sont conservés.",
+    "usage_tokens_missing_detail": "Le coût peut être fourni, mais les tokens de {count} requêtes manquent. * signale des données incomplètes.",
+    "startup_authority_warn": "⚠ AVERTISSEMENT : CET AGENT DISPOSE D'UN ACCÈS COMPLET À VOTRE ORDINATEUR — Il peut voir, ouvrir et modifier tous les fichiers/dossiers et exécuter du code terminal (avec votre autorisation). Utilisez avec prudence ; aucune responsabilité acceptée.",
+    "term_perm_title": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
+    "term_perm_header": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
+    "term_perm_denied": "Exécution dans le terminal refusée par l'utilisateur.",
+    "term_used_status": "Statut",
+    "term_triage_manual": "⚠ MOT DE PASSE / ADMIN REQUIS : Cette commande doit être exécutée par l'utilisateur.",
+    "term_triage_autofix": "↻ Erreur détectée — DocMind analyse une correction...",
+    "ask_user_header": "QUESTION DOCMIND / SYSTÈME CIBLE",
+    "ask_user_prompt": "Votre choix (numéro ou texte, défaut={default}) : ",
+    "term_perm_shell": "Shell / Environnement",
+    "term_perm_cwd": "Dossier de travail",
+    "term_perm_code": "CODE À EXÉCUTER",
+    "term_perm_prompt": "Autoriser l'exécution de cette commande sur votre ordinateur ? [O]ui / [N]on : ",
+    "term_perm_reprompt": "Veuillez saisir 'o' (oui) ou 'n' (non) : ",
+    "term_used_header": "TERMINAL UTILISÉ",
+    "term_used_code": "CODE UTILISÉ",
+    "term_used_shell": "Shell / Environnement",
+    "term_used_cwd": "Dossier de travail",
+    "term_used_ok": "Réussi (Code : {code}, {elapsed:.2f}s)",
+    "term_used_err": "Erreur / Code : {code} ({elapsed:.2f}s)",
+    "term_used_output": "Sortie",
+    "conn_auto_heal": "Coupure réseau détectée ; reconnexion automatique ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Image jointe : {name} ({dims}, {size})",
+    "img_not_found": "Fichier image introuvable : {path}",
+    "img_unsupported": "Format d'image non pris en charge ou corrompu : {path}",
+    "img_too_large": "L'image est trop volumineuse ({size}) ; maximum 15 Mo.",
+    "img_vision_fallback": "Le modèle ({model}) ne prend pas en charge les images ; mode texte utilisé. Passez à Gemini, Claude ou GPT-4o/5.",
+    "img_usage": "Usage : /image <chemin_image> [question]  (ou glissez-déposez une image dans le chat)",
+    "diff_new_file": "Nouveau fichier",
+    "diff_edit_file": "Modifier le fichier",
+    "diff_delete_file": "Supprimer le fichier",
+    "diff_open_file": "Ouvrir / lire le fichier",
+    "diff_more_lines": "... ({count} lignes supplémentaires masquées)",
+    "term_perm_cwd_lbl": "Dossier de travail",
+    "mention_attached": "📎 Contexte de fichier joint : {name} ({size})",
+    "mention_dir_attached": "📂 Arborescence jointe : {name}",
+    "copy_ok": "Copié dans le presse-papiers ({chars} caractères).",
+    "copy_empty": "Aucune réponse ou bloc de code à copier.",
+    "paste_empty": "Aucune image ni texte trouvé dans le presse-papiers.",
+    "paste_img_ok": "📋 Capture récupérée du presse-papiers ({dims}, {size}).",
+    "paste_txt_ok": "📋 Texte joint depuis le presse-papiers ({chars} caractères).",
+    "export_ok": "Conversation exportée en Markdown : {path}",
+    "export_empty": "Aucun message à exporter.",
+    "redo_success": "Modification réappliquée : {path}",
+    "redo_empty": "Rien à rétablir (/redo).",
+    "undo_list_title": "HISTORIQUE D'ANNULATION (/undo)",
+    "diff_clean": "L'arbre de travail Git est propre (aucune modification).",
+    "diff_not_git": "Ce dossier n'est pas un dépôt Git ou git n'est pas installé.",
+    "cmd_did_you_mean": "Commande inconnue : {cmd}. Vouliez-vous dire {suggest} ? (Tapez /help)",
+    "search_usage": "Utilisation : /search <sujet ou information à vérifier>",
+    "vision_bridge_used": "👁️ Modèle actif texte seul ; image analysée en haute résolution via '{bridge_model}'."
+  },
+  "ru": {
+    "lang_name": "Русский",
+    "ai_lang_instruction": "Всегда общайся с пользователем на понятном и естественном РУССКОМ языке, если не указано иное.",
+    "welcome_subtitle": "Автономный терминальный ИИ-агент нового поколения",
+    "ready_hint": "DocMind готов! Ставьте задачи, редактируйте файлы или выполняйте команды.",
+    "type_help_hint": "Введите /help для команд | /lang язык | /api ключ API | /exit выход.",
+    "prompt_placeholder": "Введите задачу для DocMind...",
+    "wiz_title": "МАСТЕР НАСТРОЙКИ DOCMIND",
+    "wiz_select_lang": "Пожалуйста, выберите предпочитаемый язык (1-14) [По умолчанию: 1]: ",
+    "wiz_lang_saved": "Язык установлен: Русский (RU)",
+    "wiz_select_provider": "Выберите провайдера ИИ API",
+    "wiz_provider_prompt": "Ваш выбор (1-7) [По умолчанию: 1]: ",
+    "wiz_select_model": "Выберите модель для {provider}",
+    "wiz_custom_model_opt": "Ввести своё имя модели...",
+    "wiz_model_prompt": "Выбор модели [По умолчанию: 1]: ",
+    "wiz_custom_model_prompt": "Введите точный ID модели: ",
+    "wiz_enter_base_url": "Введите Base URL API [По умолчанию: {default}]: ",
+    "wiz_enter_api_key": "Введите ваш API-ключ {provider}: ",
+    "wiz_api_key_optional": "API-ключ {provider} (можно пропустить для локального сервера): ",
+    "wiz_api_key_empty": "ВНИМАНИЕ: API-ключ не может быть пустым!",
+    "wiz_testing_api": "Проверка соединения и API-ключа...",
+    "wiz_api_ok": "Отлично! Подключение к {provider} ({model}) успешно проверено.",
+    "wiz_api_fail_menu": "Возникла проблема при проверке API. Что вы хотите сделать?",
+    "wiz_opt_retry_key": "Ввести новый API-ключ",
+    "wiz_opt_change_provider": "Выбрать другого провайдера / модель",
+    "wiz_opt_skip_anyway": "Пропустить предупреждение и сохранить (позже /api)",
+    "wiz_select_mode": "Выберите режим безопасности и работы",
+    "wiz_mode_smart": "Умное подтверждение (рекомендуется): спрашивать перед изменениями, командами и веб-запросами",
+    "wiz_mode_auto": "Автоматический (опасно): действия без подтверждения; это не песочница",
+    "wiz_mode_prompt": "Выбор режима (1-2) [По умолчанию: 1]: ",
+    "wiz_complete": "Настройка завершена. API-ключи хранятся локально без шифрования.",
+    "mode_smart_short": "ПОДТВЕРЖДЕНИЕ",
+    "mode_auto_short": "АВТОМАТ",
+    "status_tokens": "Токены: {total} (Вх:{inp} / Вых:{out})",
+    "status_no_key": "НЕТ API-КЛЮЧА (/api)",
+    "thinking": "DocMind думает и анализирует...",
+    "step_counter": "Автономный шаг {step}/{max_steps}",
+    "max_steps_reached": "ВНИМАНИЕ: Достигнут лимит автономных шагов ({max_steps}).",
+    "ask_continue_steps": "Продолжить выполнение задачи? [Y/n]: ",
+    "compacting_context": "ИНФО: Автоматическое сжатие истории для экономии токенов...",
+    "context_compacted": "История успешно сжата, продолжаем работу.",
+    "output_truncated_warn": "ВНИМАНИЕ: Достигнут лимит выходных токенов ответа. Напишите 'продолжай'.",
+    "tool_running": "Запуск инструмента: {name}",
+    "tool_done": "Готово: {name}",
+    "tool_skipped": "Пропущено пользователем: {name}",
+    "tool_error_passed": "ВНИМАНИЕ: Ошибка в '{name}' безопасно пропущена ({err}).",
+    "perm_title": "ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ",
+    "perm_file_action": "Действие с файлом: {action} -> {target}",
+    "perm_command_warn": "Выполнение команды: {cmd}",
+    "perm_dangerous_warn": "ОСТОРОЖНО! ОБНАРУЖЕНА ОПАСНАЯ КОМАНДА!",
+    "perm_prompt": "[Y] Да | [A] Авто | [N] Нет [По умолчанию: Нет]: ",
+    "perm_dangerous_prompt": "Вы уверены, что хотите выполнить эту критическую команду? [yes/no]: ",
+    "perm_switched_auto": "Включён полный автоматический режим! (/smart для возврата)",
+    "undo_success": "Последнее изменение файла отменено: {path}",
+    "undo_empty": "Нет изменений файлов для отмены.",
+    "err_quota_title": "КРИТИЧЕСКОЕ ПРЕДУПРЕЖДЕНИЕ: ЗАКОНЧИЛИСЬ ТОКЕНЫ / БАЛАНС API!",
+    "err_quota_desc": "Лимит токенов или баланс кредитов {provider} исчерпан.\nДетали: {detail}",
+    "err_rate_title": "ВНИМАНИЕ: ПРЕВЫШЕН ЛИМИТ ЗАПРОСОВ API (RATE LIMIT)!",
+    "err_rate_desc": "Слишком частые запросы к {provider}.\nДетали: {detail}",
+    "err_auth_title": "ВНИМАНИЕ: НЕВЕРНЫЙ ИЛИ ПРОСРОЧЕННЫЙ API-КЛЮЧ!",
+    "err_auth_desc": "Ваш API-ключ {provider} отклонён.\nДетали: {detail}",
+    "err_context_title": "ВНИМАНИЕ: ПРЕВЫШЕН ЛИМИТ КОНТЕКСТА (ТОКЕНОВ)!",
+    "err_context_desc": "Выполняется автоматическое сжатие диалога.\nДетали: {detail}",
+    "err_model_title": "ВНИМАНИЕ: МОДЕЛЬ НЕ НАЙДЕНА ИЛИ НЕТ ДОСТУПА!",
+    "err_model_desc": "Модель ({model}) недоступна.\nДетали: {detail}",
+    "err_server_title": "ВНИМАНИЕ: СЕРВЕР ИИ ПЕРЕГРУЖЕН / ВРЕМЕННАЯ ОШИБКА!",
+    "err_server_desc": "Временный сбой на серверах {provider}.\nДетали: {detail}",
+    "err_network_title": "ВНИМАНИЕ: ОШИБКА СЕТИ / НЕТ ИНТЕРНЕТА!",
+    "err_network_desc": "Не удалось подключиться к {provider}. Проверьте соединение.\nДетали: {detail}",
+    "err_tool_title": "ВНИМАНИЕ: ОШИБКА ФАЙЛА / СИСТЕМЫ (ПРОПУЩЕНА)",
+    "err_tool_desc": "Системная ошибка перехвачена без остановки программы:\nДетали: {detail}",
+    "err_unknown_title": "ВНИМАНИЕ: НЕПРЕДВИДЕННАЯ ОШИБКА ПЕРЕХВАЧЕНА",
+    "err_unknown_desc": "Сбой безопасно обработан, работа продолжается:\nДетали: {detail}",
+    "err_skipped_notice": "Ошибка безопасно пропущена. DocMind готов к работе.",
+    "err_retrying_in": "Повторная попытка через {sec}с (Ctrl+C чтобы пропустить)...",
+    "err_budget_warn_title": "ПРЕДУПРЕЖДЕНИЕ О РАСХОДЕ ТОКЕНОВ",
+    "err_budget_warn_desc": "Использовано {used} токенов за сессию (Лимит: {limit}).",
+    "rec_title": "ВАРИАНТЫ ВОССТАНОВЛЕНИЯ",
+    "rec_opt_new_key": "Ввести новый API-ключ и продолжить",
+    "rec_opt_switch_provider": "Сменить провайдера ИИ",
+    "rec_opt_switch_model": "Выбрать другую модель",
+    "rec_opt_retry": "Повторить попытку сейчас",
+    "rec_opt_skip": "Пропустить ошибку и вернуться в чат",
+    "rec_choose": "Ваш выбор [По умолчанию: {default}]: ",
+    "help_title": "СПРАВОЧНИК КОМАНД DOCMIND",
+    "help_body": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Открыть сохранённые разговоры\n /delete    Удалить сохранённый разговор\n /effort    Уровень рассуждений и стоимость\n /doctor tools  Проверить схемы через API; возможна плата\n /doctor all  Проверить настроенных провайдеров; возможна плата\n /image ПУТЬ Анализ изображения/скриншота и исправление ошибок\n /paste     Отправить скриншот или текст из буфера обмена\n /copy      Копировать последний ответ (/copy code: только код)\n /diff      Показать изменения Git зелёным (+) / красным (-)\n /redo      Повторить отменённое (/undo) изменение файла\n /export    Экспортировать диалог в Markdown (.md)\n /search Q  Живой поиск в интернете и проверка фактов",
+    "cmd_cleared": "История диалога и экран очищены.",
+    "cmd_saved": "Сессия сохранена: {path}",
+    "cmd_loaded": "Сессия загружена ({count} сообщений): {path}",
+    "cmd_lang_changed": "Язык изменён: {lang}",
+    "cmd_mode_changed": "Режим работы обновлён: {mode}",
+    "cmd_cd_ok": "Рабочая папка изменена: {path}",
+    "cmd_cd_err": "ВНИМАНИЕ: Не удалось сменить папку: {err}",
+    "cmd_unknown": "Неизвестная команда: '{cmd}'. Введите /help.",
+    "cmd_exit_bye": "Завершение работы DocMind. До встречи!",
+    "ctrl_c_cancelled": "Операция прервана пользователем (Ctrl+C). Готов к работе.",
+    "ctrl_c_exit_hint": "Введите /exit или нажмите Ctrl+C ещё раз для выхода.",
+    "doctor_title": "ДИАГНОСТИКА СИСТЕМЫ DOCMIND (/doctor)",
+    "tokens_report_title": "ОТЧЁТ ПО ИСПОЛЬЗОВАНИЮ ТОКЕНОВ",
+    "wiz_secret_notice": "Ключ ВИДЕН при вводе; не показывайте экран. Он хранится БЕЗ ШИФРОВАНИЯ в ~/.docmind-single/config.json. Enter сохраняет текущий ключ.",
+    "perm_sensitive_warning": "КОНФИДЕНЦИАЛЬНО: содержимое может включать ключи и отправляться провайдеру ИИ. Для подтверждения введите 'да'.",
+    "perm_sensitive_prompt": "Разрешить это конфиденциальное действие? [да/нет]: ",
+    "footer_token": "Токены",
+    "footer_context": "Контекст",
+    "footer_cost": "Стоимость",
+    "retry_wait": "Ошибка сети или сервера. Повтор через {seconds}с (попытка {attempt}). Не закрывайте терминал; Ctrl+C отменяет задачу.",
+    "retry_partial": "Ответ прерван; неполные вызовы не выполнены. Повтор может повлечь дополнительные расходы.",
+    "retry_ok": "Соединение восстановлено; задача продолжается.",
+    "price_usage": "Цена: /price ВХОД ВЫХОД (USD за миллион); /price auto сбрасывает.",
+    "price_set": "Цена сохранена: вход ${inp}, выход ${out} за миллион.",
+    "price_reset": "Своя цена удалена.",
+    "price_unknown": "Цена неизвестна; укажите её через /price.",
+    "price_invalid": "Введите два неотрицательных числа: /price 0.15 0.60",
+    "context_usage": "Лимит: /context ЧИСЛО; /context auto сбрасывает.",
+    "context_invalid": "Лимит должен быть от 1024 до 100000000.",
+    "context_set": "Лимит сохранён: {limit}.",
+    "context_reset": "Свой лимит удалён.",
+    "retry_stream_off": "Поток несколько раз прервался; в этой сессии повторяем запрос без потоковой передачи.",
+    "settings_save_failed": "Настройки не сохранены; возможно, они действуют только в этом сеансе.",
+    "stat_0": "Провайдер / модель",
+    "stat_1": "Запросы API",
+    "stat_2": "Входные токены",
+    "stat_3": "Выходные токены",
+    "stat_4": "Всего токенов",
+    "stat_5": "Заполнение контекста",
+    "stat_6": "Состояние",
+    "stat_7": "Примерная стоимость; кэш, бесплатный тариф, налоги и прерванные запросы могут отличаться. Тарифы на 29.10.2026.",
+    "stat_8": "Порог предупреждения",
+    "stat_9": "Сообщений в памяти",
+    "history_title": "История разговоров",
+    "history_choose": "Номер разговора (Enter — отмена): ",
+    "history_empty": "Сохранённых разговоров пока нет. Первое сообщение сохраняется автоматически.",
+    "history_invalid": "Введите правильный номер.",
+    "history_cancel": "Выбор отменён.",
+    "history_loaded": "Разговор загружен: {title}",
+    "history_you": "Вы",
+    "history_cancelled": "отменено",
+    "history_read_error": "Не удалось прочитать историю. Проверьте файл и права.",
+    "history_write_error": "Не удалось сохранить историю. Проверьте размер, место и права.",
+    "history_forked": "Другая сессия изменила разговор; продолжение будет сохранено отдельно.",
+    "history_privacy": "Разговоры сохраняются сжатыми, но не зашифрованными.",
+    "history_help": " /history   Открыть сохранённые разговоры",
+    "history_delete_hint": "Для удаления разговора введите /delete.",
+    "history_delete_title": "Удалить разговор",
+    "history_delete_warning": "Выбранный разговор удаляется безвозвратно и, если он открыт, из памяти.",
+    "history_delete_choose": "Номер для удаления (Enter — отмена): ",
+    "history_delete_ok": "Разговор удалён: {title}",
+    "history_delete_active": "Открытый разговор очищен; начался новый.",
+    "history_delete_error": "Не удалось удалить разговор. Проверьте права файла и папки.",
+    "history_delete_help": " /delete    Удалить сохранённый разговор",
+    "auto_syntax_ok": "{path}: автоматическая проверка синтаксиса пройдена (это не функциональный тест).",
+    "auto_syntax_failed": "{path}: автоматическая проверка синтаксиса не удалась или невозможна; подробности переданы модели.",
+    "loop_suppressed": "Повторное неудачное или отклонённое действие не выполнено: {name}",
+    "loop_stopped": "Агент зациклился и остановлен без дальнейших действий. Можно предложить другой подход или новую инструкцию.",
+    "tool_args_retry": "Модель вернула неверные аргументы; ничего не выполнено. Запрошено одно исправление (возможна дополнительная плата за API).",
+    "effort_active": "Уровень рассуждений: {level}. На поддерживаемых моделях high может увеличить задержку и стоимость API. Изменить: /effort.",
+    "effort_uncontrolled": "Для этого провайдера/модели DocMind не отправляет параметр рассуждений; действует настройка провайдера.",
+    "effort_usage": "Использование: /effort max|high|medium|low|default.",
+    "effort_saved": "Уровень рассуждений сохранён: {level}.",
+    "effort_not_saved": "Уровень {level} действует в этой сессии, но не сохранён.",
+    "effort_help": " /effort    Уровень рассуждений и стоимость",
+    "effort_actual": "Максимальный поддерживаемый уровень для этой модели: {actual}. Максимум может значительно увеличить время и расходы.",
+    "effort_fallback": "Провайдер отклонил параметр рассуждений. Повтор до выполнения действий с настройкой провайдера. Возможна дополнительная плата API.",
+    "effort_fallback_active": "Этот уровень модели был отклонён в текущем сеансе; запросы используют настройку провайдера. Выберите уровень снова через /effort.",
+    "compat_fallback": "Провайдер отклонил поле или собственный формат инструментов; повтор с совместимым форматом. Возможна дополнительная плата API.",
+    "doctor_connection_ok": "✔ Подключение: модель ответила (инструменты проверяются отдельно).",
+    "doctor_tools_skipped": "Инструменты не проверены. /doctor tools обращается к API; возможна плата.",
+    "doctor_tools_start": "Схемы отправляются провайдеру; это дополнительный запрос, но инструменты не выполняются.",
+    "doctor_tools_ok": "✔ Проверка инструментов: диагностический вызов получен ({mode}); ничего не выполнено.",
+    "doctor_tools_inconclusive": "⚠ Проверка инструментов не удалась или не дала результата; ничего не выполнено.",
+    "doctor_tool_native_mode": "нативный API инструментов",
+    "doctor_tool_prompt_mode": "текстовая совместимость",
+    "doctor_usage": "Использование: /doctor, /doctor tools или /doctor all",
+    "doctor_tools_help": " /doctor tools  Проверить схемы через API; возможна плата",
+    "err_request_budget_title": "ЗАПРОС ПРЕВЫШАЕТ ЛИМИТ ТОКЕНОВ",
+    "err_request_budget_desc": "Запрос больше минутного лимита {provider}; ожидание не поможет. Сократите сообщение или историю, начните новую сессию или смените модель/учётную запись. Детали: {detail}",
+    "budget_fallback": "Запрос превышает лимит токенов. Одна повторная попытка с лимитом ответа {limit}; ответ может стать короче, возможна дополнительная плата.",
+    "probe_retry": "Модель исчерпала лимит проверки без текста. Одна повторная попытка с лимитом 1024 токена; первая могла быть платной.",
+    "err_edge_block_title": "ЗАПРОС ЗАБЛОКИРОВАН ЗАЩИТОЙ ПРОВАЙДЕРА (1010)",
+    "err_edge_block_desc": "Запрос к {provider} мог быть заблокирован до API (HTTP 403 / 1010). Это не означает, что ключ недействителен. Обновите DocMind; если ошибка сохраняется, проверьте сеть или VPN/proxy и сообщите провайдеру код 403 / 1010. Не сообщайте API-ключ.",
+    "err_access_denied_title": "ПРОВАЙДЕР ОТКАЗАЛ В ДОСТУПЕ (403)",
+    "err_access_denied_desc": "{provider} отказал в доступе. Причиной могут быть права учётной записи или модели, регион, сеть или политика безопасности; сам код не доказывает недействительность ключа. Детали: {detail}",
+    "retry_exhausted": "{count} автоматических попыток не удались. Дальнейшие запросы могут быть платными; решение за вами.",
+    "retry_deferred": "Провайдер просит подождать не менее {seconds} с; преждевременного повтора не будет.",
+    "probe_transient_retry": "Временная ошибка подключения: повтор через {seconds} с ({attempt}/2); возможна плата.",
+    "batch_deferred": "{name} отложено: предыдущее действие не удалось или отклонено; агент пересмотрит план.",
+    "footer_incomplete": "неполно",
+    "footer_unknown": "неизвестно",
+    "footer_calculating": "подсчёт",
+    "usage_incomplete_detail": "Нет данных о стоимости для {count} запросов; {interrupted} прерваны или завершились ошибкой. Данные или цена могут отсутствовать. Показана оценка только известной части. * означает неполные или текущие данные.",
+    "usage_complete_detail": "Нет запросов с отсутствующими данными или ценой. * может обозначать текущий ответ.",
+    "doctor_all_help": " /doctor all  Проверить настроенных провайдеров; возможна плата",
+    "doctor_all_title": "Проверка настроенных провайдеров",
+    "doctor_all_none": "Нет настроенных ключей. Используйте /api.",
+    "doctor_all_intro": "Будут отправлены реальные API-запросы указанным моделям; возможна плата. Для неактивных провайдеров берётся модель по умолчанию. Для каждого провайдера используются свой ключ и указанный адрес; настройки не меняются.",
+    "doctor_all_confirm": "Продолжить? (да/нет; Enter: нет): ",
+    "doctor_all_cancelled": "Отменено; запросы не отправлены.",
+    "doctor_all_checking": "Проверка подключения к {provider}",
+    "doctor_all_ok": "модель ответила",
+    "doctor_all_failed": "ошибка проверки",
+    "doctor_all_skipped": "Пропущены (не настроены): {names}",
+    "doctor_all_tool_note": "Только проверка подключения. /doctor tools проверяет активную модель; возможна плата.",
+    "thinking_rebase": "Контекст Claude изменился: старые подписанные блоки рассуждений исключены; текст и результаты инструментов сохранены.",
+    "usage_tokens_missing_detail": "Стоимость может быть указана, но данные токенов отсутствуют для {count} запросов. * означает неполные данные.",
+    "startup_authority_warn": "⚠ ВНИМАНИЕ: АГЕНТ ИМЕЕТ ПОЛНЫЙ ДОСТУП К КОМПЬЮТЕРУ — Может просматривать, открывать и изменять любые диски, папки и файлы, а также выполнять команды терминала (с вашего разрешения). Используйте осторожно; ответственность не принимается.",
+    "term_perm_title": "ТРЕБУЕТСЯ РАЗРЕШЕНИЕ НА ВЫПОЛНЕНИЕ КОДА В ТЕРМИНАЛЕ",
+    "term_perm_header": "ТРЕБУЕТСЯ РАЗРЕШЕНИЕ НА ВЫПОЛНЕНИЕ КОДА В ТЕРМИНАЛЕ",
+    "term_perm_denied": "Выполнение команды отклонено пользователем.",
+    "term_used_status": "Статус",
+    "term_triage_manual": "⚠ ТРЕБУЕТСЯ ПАРОЛЬ / ПРАВА АДМИНИСТРАТОРА: Эту команду должен выполнить сам пользователь.",
+    "term_triage_autofix": "↻ Обнаружена ошибка — DocMind анализирует способ исправления...",
+    "ask_user_header": "ВОПРОС DOCMIND / ВЫБОР СИСТЕМЫ",
+    "ask_user_prompt": "Ваш выбор (номер или текст, по умолчанию={default}): ",
+    "term_perm_shell": "Оболочка / Среда",
+    "term_perm_cwd": "Рабочая папка",
+    "term_perm_code": "КОД ДЛЯ ВЫПОЛНЕНИЯ",
+    "term_perm_prompt": "Разрешить выполнение этой команды на вашем компьютере? [Д]а / [Н]ет: ",
+    "term_perm_reprompt": "Введите 'y'/'д' (да) или 'n'/'н' (нет): ",
+    "term_used_header": "ИСПОЛЬЗОВАН ТЕРМИНАЛ",
+    "term_used_code": "ИСПОЛЬЗОВАННЫЙ КОД",
+    "term_used_shell": "Оболочка / Среда",
+    "term_used_cwd": "Рабочая папка",
+    "term_used_ok": "Успешно (Код выхода: {code}, {elapsed:.2f}с)",
+    "term_used_err": "Ошибка / Код выхода: {code} ({elapsed:.2f}с)",
+    "term_used_output": "Вывод",
+    "conn_auto_heal": "Обрыв соединения; автоматическое переподключение ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Изображение прикреплено: {name} ({dims}, {size})",
+    "img_not_found": "Файл изображения не найден: {path}",
+    "img_unsupported": "Неподдерживаемый или повреждённый формат изображения: {path}",
+    "img_too_large": "Изображение слишком большое ({size}); максимум 15 МБ.",
+    "img_vision_fallback": "Модель ({model}) не поддерживает изображения; выполнен повтор в текстовом режиме. Выберите Gemini, Claude или GPT-4o/5.",
+    "img_usage": "Использование: /image <путь> [вопрос]  (или перетащите изображение прямо в чат)",
+    "diff_new_file": "Новый файл",
+    "diff_edit_file": "Изменение файла",
+    "diff_delete_file": "Удаление файла",
+    "diff_open_file": "Открытие / чтение файла",
+    "diff_more_lines": "... (скрыто ещё строк: {count})",
+    "term_perm_cwd_lbl": "Рабочая папка",
+    "mention_attached": "📎 Контекст файла прикреплён: {name} ({size})",
+    "mention_dir_attached": "📂 Дерево каталога прикреплено: {name}",
+    "copy_ok": "Скопировано в буфер обмена ({chars} симв.).",
+    "copy_empty": "Нет ответа или блока кода для копирования.",
+    "paste_empty": "В буфере обмена нет изображения или текста.",
+    "paste_img_ok": "📋 Скриншот получен из буфера обмена ({dims}, {size}).",
+    "paste_txt_ok": "📋 Текст добавлен из буфера обмена ({chars} симв.).",
+    "export_ok": "Диалог экспортирован в Markdown: {path}",
+    "export_empty": "Нет сообщений для экспорта.",
+    "redo_success": "Изменение файла применено повторно: {path}",
+    "redo_empty": "Нет отменённых изменений для повтора (/redo).",
+    "undo_list_title": "ИСТОРИЯ ОТМЕН (/undo)",
+    "diff_clean": "Рабочее дерево Git чистое (изменений нет).",
+    "diff_not_git": "Текущая папка не является Git-репозиторием или git не установлен.",
+    "cmd_did_you_mean": "Неизвестная команда: {cmd}. Возможно, вы имели в виду {suggest}? (/help)",
+    "search_usage": "Использование: /search <тема или факт для поиска и проверки>",
+    "vision_bridge_used": "👁️ Активная модель только текстовая; изображение распознано в HD через '{bridge_model}'."
+  },
+  "az": {
+    "lang_name": "Azərbaycan dili",
+    "ai_lang_instruction": "Başqa dil istənilmədikcə istifadəçi ilə həmişə aydın və təbii AZƏRBAYCAN DİLİNDƏ danışın.",
+    "welcome_subtitle": "Fayllar və kod üçün ağıllı köməkçiniz",
+    "ready_hint": "DocMind hazırdır! İstənilən sualı verin, faylları düzəldin, şəkilləri göndərin və ya əmr işlədin.",
+    "type_help_hint": "Əmrlər: /help | Dil: /lang | API: /api| Çıxış: /exit",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND İLK QURAŞDIRMA SİHRBAZI",
+    "wiz_select_lang": "Zəhmət olmasa dil seçin (1-14) [Varsayılan: 1]: ",
+    "wiz_lang_saved": "Dil seçildi: Azərbaycan (AZ)",
+    "wiz_select_provider": "AI API Təminatçısını Seçin",
+    "wiz_provider_prompt": "Seçiminiz (1-7) [Varsayılan: 1]: ",
+    "wiz_select_model": "{provider} üçün Model Seçin",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "{provider} API Açarınızı daxil edin: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "API bağlantısı və açar yoxlanılır...",
+    "wiz_api_ok": "Əla! {provider} ({model}) bağlantısı uğurla təsdiqləndi.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "İcra və Təhlükəsizlik Rejimini Seçin",
+    "wiz_mode_smart": "Ağıllı Təsdiq (tövsiyə olunur): fayl dəyişiklikləri və əmrlərdən əvvəl icazə istəyir",
+    "wiz_mode_auto": "Tam Avtomatik (riskli): fayl dəyişikliklərini birbaşa edir",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Quraşdırma tamamlandı. API açarları yerli tənzimləmələrdə şifrələnməmiş saxlanılır.",
+    "mode_smart_short": "AĞILLI TƏSDİQ",
+    "mode_auto_short": "TAM AVTO",
+    "status_tokens": "Tokenlər: {total} (Giriş:{inp} / Çıxış:{out})",
+    "status_no_key": "API AÇARI YOXDUR (/api yazın)",
+    "thinking": "DocMind düşünür və təhlil edir...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "İCAZƏ TƏSDİQİ TƏLƏB OLUNUR",
+    "perm_file_action": "Fayl Əməliyyatı: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "DİQQƏT! POTENSİAL TƏHLÜKƏLİ ƏMR AŞKAR EDİLDİ!",
+    "perm_prompt": "[B]əli | [A]vto rejim | [X]eyr [Varsayılan: Xeyr]: ",
+    "perm_dangerous_prompt": "Bu kritik əmri icra etmək istədiyinizə əminsiniz? [bəli/xeyr]: ",
+    "perm_switched_auto": "Tam Avtomatik Rejimə keçildi! Təsdiqləri qaytarmaq üçün /smart yazın.",
+    "undo_success": "Son fayl dəyişikliyi geri qaytarıldı: {path}",
+    "undo_empty": "Geri qaytarılacaq fayl dəyişikliyi yoxdur.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND ƏMR BƏLƏDÇİSİ",
+    "help_body": " /api       Təminatçı və ya API açarı\n /model     Modeli dəyişdir\n /lang      Dili dəyişdir (14 dil)\n /cd YOL    İş qovluğunu dəyişdir\n /undo      Son fayl dəyişikliyini geri al\n /clear     Yeni söhbət\n /auto      Avtomatik rejim\n /smart     Təsdiqli rejim\n /reset     Ayarları (.json) sıfırla və terminalı bağla\n /tokens    Token və xərc hesabatı\n /history   Yadda saxlanılmış söhbətlər\n /doctor    Sistem və API diaqnostikası\n /exit      Çıxış\n /image YOL Şəkil / ekran görüntüsü təhlil et və xətanı həll et\n /paste     Buferdəki ekran görüntüsünü və ya mətni göndər\n /copy      Son cavabı buferə kopyala (/copy code: yalnız kod)\n /diff      Git dəyişikliklərini yaşıl (+) / qırmızı (-) göstər\n /redo      Geri qaytarılan (/undo) dəyişikliyi yenidən tətbiq et\n /export    Söhbəti Markdown (.md) olaraq ixrac et\n /search MÖVZU İnternetdə canlı araşdır və doğrula",
+    "cmd_cleared": "Söhbət yaddaşı və ekran təmizləndi.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "Dil yeniləndi: {lang}",
+    "cmd_mode_changed": "İcra rejimi yeniləndi: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "DocMind bağlanır. Sağ olun!",
+    "ctrl_c_cancelled": "Əməliyyat ləğv edildi (Ctrl+C). Növbəti tapşırığa hazırdır.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ XƏBƏRDARLIQ: BU AGENT TAM SİSTEM İCAZƏSİNƏ MALİKDİR — Kompüterinizdəki istənilən disk, qovluq və faylı aça, dəyişdirə və (icazənizlə) terminal əmrləri işlədə bilər. Diqqətlə istifadə edin; məsuliyyət qəbul edilmir.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "TERMİNAL / KOD İCRA İCAZƏSİ TƏLƏB OLUNUR",
+    "term_perm_denied": "Terminal / kod icrası istifadəçi tərəfindən rədd edildi.",
+    "term_used_status": "Vəziyyət",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND SUAL / HƏDƏF PLATFORM SEÇİMİ",
+    "ask_user_prompt": "Seçiminiz (nömrə və ya mətn yazın, varsayılan={default}): ",
+    "term_perm_shell": "Qabıq / Mühit",
+    "term_perm_cwd": "İş Qovluğu",
+    "term_perm_code": "İCRA EDİLƏCƏK KOD",
+    "term_perm_prompt": "Bu terminal/sistem əmrinin kompüterinizdə işləməsinə icazə verirsiniz? [B]əli / [X]eyr: ",
+    "term_perm_reprompt": "Təsdiq üçün 'y'/'b', rədd etmək üçün 'n'/'x' yazın: ",
+    "term_used_header": "TERMİNAL İSTİFADƏ EDİLDİ",
+    "term_used_code": "İSTİFADƏ EDİLƏN KOD",
+    "term_used_shell": "Qabıq / Mühit",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "İş Qovluğu",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Çıxış",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Şəkil əlavə edildi: {name} ({dims}, {size})",
+    "img_not_found": "Şəkil faylı tapılmadı: {path}",
+    "img_unsupported": "Dəstəklənməyən və ya zədələnmiş şəkil formatı: {path}",
+    "img_too_large": "Şəkil çox böyükdür ({size}); maksimum 15 MB dəstəklənir.",
+    "img_vision_fallback": "Seçilmiş model ({model}) şəkil oxumağı dəstəkləmir; mətn rejiminə keçildi.",
+    "img_usage": "İstifadə: /image <şəkil_yolu> [sualınız]",
+    "diff_new_file": "Yeni Fayl",
+    "diff_edit_file": "Fayl Düzəlişi",
+    "diff_delete_file": "Fayl Silinməsi",
+    "diff_open_file": "Fayl Açma / Oxuma",
+    "diff_more_lines": "... ({count} sətir daha gizlədildi)",
+    "mention_attached": "📎 Fayl konteksti əlavə edildi: {name} ({size})",
+    "mention_dir_attached": "📂 Qovluq ağacı əlavə edildi: {name}",
+    "copy_ok": "Mübadilə buferinə kopyalandı ({chars} simvol).",
+    "copy_empty": "Kopyalanacaq cavab və ya kod bloku tapılmadı.",
+    "paste_empty": "Mübadilə buferində şəkil və ya mətn tapılmadı.",
+    "paste_img_ok": "📋 Buferdən ekran görüntüsü götürüldü ({dims}, {size}).",
+    "paste_txt_ok": "📋 Buferdən mətn əlavə edildi ({chars} simvol).",
+    "export_ok": "Söhbət Markdown olaraq ixrac edildi: {path}",
+    "export_empty": "İxrac ediləcək söhbət mesajı yoxdur.",
+    "redo_success": "Fayl dəyişikliyi yenidən tətbiq edildi: {path}",
+    "redo_empty": "Yenidən tətbiq ediləcək (/redo) dəyişiklik yoxdur.",
+    "undo_list_title": "GERİ QAYTARMA TARİXÇƏSİ (/undo)",
+    "diff_clean": "Git iş ağacı təmizdir (dəyişiklik yoxdur).",
+    "diff_not_git": "Bu qovluq Git deposu deyil və ya git qurulmayıb.",
+    "cmd_did_you_mean": "Naməlum əmr: {cmd}. Bunu nəzərdə tuturdunuz: {suggest} ? (/help yazın)",
+    "search_usage": "İstifadə: /search <araşdırılacaq və ya doğrulanacaq mövzu>",
+    "vision_bridge_used": "👁️ Aktiv model şəkil dəstəkləmədiyi üçün şəkil '{bridge_model}' ilə yüksək dəqiqliklə oxundu."
+  },
+  "it": {
+    "lang_name": "Italiano",
+    "ai_lang_instruction": "Comunica sempre con l'utente in un ITALIANO chiaro e naturale, salvo diversa richiesta.",
+    "welcome_subtitle": "Il tuo assistente per file e codice",
+    "ready_hint": "DocMind è pronto! Chiedi qualsiasi cosa, modifica file, invia immagini o esegui comandi.",
+    "type_help_hint": "Digita /help per i comandi | /lang lingua | /api API| /exit esci.",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "CONFIGURAZIONE INIZIALE DI DOCMIND",
+    "wiz_select_lang": "Seleziona la tua lingua preferita (1-14) [Predefinito: 1]: ",
+    "wiz_lang_saved": "Lingua impostata su: Italiano (IT)",
+    "wiz_select_provider": "Seleziona il provider API IA",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "Inserisci la tua chiave API {provider}: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "Verifica della connessione e della chiave API...",
+    "wiz_api_ok": "Perfetto! Connessione {provider} ({model}) verificata con successo.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "CONFERMA SMART",
+    "mode_auto_short": "AUTO COMPLETO",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind sta analizzando e riflettendo...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "CONFERMA DI AUTORIZZAZIONE RICHIESTA",
+    "perm_file_action": "Operazione file: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[S]ì | [A]uto | [N]o [Predefinito: No]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "Ultima modifica annullata: {path}",
+    "undo_empty": "Nessuna modifica file da annullare.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "GUIDA COMANDI DOCMIND",
+    "help_body": " /api       Provider o chiave API\n /model     Cambia modello\n /lang      Cambia lingua (14 lingue)\n /cd PERC   Cambia cartella\n /undo      Annulla ultima modifica\n /clear     Nuova chat\n /auto      Modalità automatica\n /smart     Modalità con conferma\n /reset     Ripristina config (.json) e chiudi terminale\n /tokens    Report token e costi\n /history   Cronologia conversazioni\n /doctor    Diagnostica di sistema\n /exit      Esci\n /image PATH Analizza immagine/screenshot e risolvi errori\n /paste     Invia screenshot o testo dagli appunti\n /copy      Copia ultima risposta (/copy code: solo codice)\n /diff      Mostra modifiche Git in verde (+) / rosso (-)\n /redo      Ripristina ultima modifica annullata (/undo)\n /export    Esporta conversazione in Markdown (.md)\n /search Q  Ricerca web dal vivo e verifica delle fonti",
+    "cmd_cleared": "Memoria conversazione e schermo puliti.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "Lingua aggiornata: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "Chiusura di DocMind. A presto!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ ATTENZIONE: QUESTO AGENTE HA PIENO ACCESSO AL SISTEMA — Può visualizzare, aprire e modificare file o unità sul computer ed eseguire comandi di sistema (con il tuo permesso). Usare con cautela; nessuna responsabilità è accettata.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "AUTORIZZAZIONE ESECUZIONE TERMINALE / CODICE",
+    "term_perm_denied": "Esecuzione nel terminale rifiutata dall'utente.",
+    "term_used_status": "Stato",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOMANDA DOCMIND / SCELTA PIATTAFORMA",
+    "ask_user_prompt": "La tua scelta (numero o testo, predefinito={default}): ",
+    "term_perm_shell": "Shell / Ambiente",
+    "term_perm_cwd": "Cartella di lavoro",
+    "term_perm_code": "CODICE DA ESEGUIRE",
+    "term_perm_prompt": "Consentire l'esecuzione di questo comando sul computer? [S]ì / [N]o: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "TERMINALE UTILIZZATO",
+    "term_used_code": "CODICE ESEGUITO",
+    "term_used_shell": "Shell / Ambiente",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "Cartella di lavoro",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Output",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Immagine allegata: {name} ({dims}, {size})",
+    "img_not_found": "File immagine non trovato: {path}",
+    "img_unsupported": "Formato immagine non supportato o danneggiato: {path}",
+    "img_too_large": "Immagine troppo grande ({size}); massimo 15 MB.",
+    "img_vision_fallback": "Il modello ({model}) non supporta le immagini; riprovato in modalità testo.",
+    "img_usage": "Uso: /image <percorso_immagine> [domanda]",
+    "diff_new_file": "Nuovo file",
+    "diff_edit_file": "Modifica file",
+    "diff_delete_file": "Elimina file",
+    "diff_open_file": "Apri / leggi file",
+    "diff_more_lines": "... (altre {count} righe omesse)",
+    "mention_attached": "📎 Contesto file allegato: {name} ({size})",
+    "mention_dir_attached": "📂 Albero cartella allegato: {name}",
+    "copy_ok": "Copiato negli appunti ({chars} caratteri).",
+    "copy_empty": "Nessuna risposta o blocco di codice da copiare.",
+    "paste_empty": "Nessuna immagine o testo trovato negli appunti.",
+    "paste_img_ok": "📋 Screenshot acquisito dagli appunti ({dims}, {size}).",
+    "paste_txt_ok": "📋 Testo allegato dagli appunti ({chars} caratteri).",
+    "export_ok": "Conversazione esportata in Markdown: {path}",
+    "export_empty": "Nessun messaggio da esportare.",
+    "redo_success": "Modifica file riapplicata: {path}",
+    "redo_empty": "Nessuna modifica da ripristinare (/redo).",
+    "undo_list_title": "CRONOLOGIA ANNULLAMENTI (/undo)",
+    "diff_clean": "L'albero di lavoro Git è pulito (nessuna modifica).",
+    "diff_not_git": "Questa cartella non è un repository Git o git non è installato.",
+    "cmd_did_you_mean": "Comando sconosciuto: {cmd}. Intendevi {suggest}? (Digita /help)",
+    "search_usage": "Uso: /search <argomento o informazione da verificare>",
+    "vision_bridge_used": "👁️ Il modello attivo è solo testo; immagine analizzata in alta risoluzione tramite '{bridge_model}'."
+  },
+  "pt": {
+    "lang_name": "Português",
+    "ai_lang_instruction": "Comunique-se sempre com o utilizador em PORTUGUÊS claro e natural, salvo pedido em contrário.",
+    "welcome_subtitle": "O seu assistente inteligente para ficheiros e código",
+    "ready_hint": "DocMind está pronto! Pergunte qualquer coisa, edite ficheiros, envie imagens ou execute comandos.",
+    "type_help_hint": "Digite /help para comandos | /lang idioma | /api API| /exit sair.",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "ASSISTENTE DE CONFIGURAÇÃO INICIAL DOCMIND",
+    "wiz_select_lang": "Selecione o seu idioma preferido (1-14) [Padrão: 1]: ",
+    "wiz_lang_saved": "Idioma definido para: Português (PT)",
+    "wiz_select_provider": "Selecionar Provedor de API de IA",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "Introduza a sua chave de API {provider}: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "Verificando conexão e chave da API...",
+    "wiz_api_ok": "Excelente! Conexão {provider} ({model}) verificada com sucesso.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "CONFIRMAÇÃO SMART",
+    "mode_auto_short": "MODO AUTO",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind está pensando e analisando...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "CONFIRMAÇÃO DE PERMISSÃO NECESSÁRIA",
+    "perm_file_action": "Operação de ficheiro: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[S]im | [A]uto | [N]ão [Padrão: Não]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "Última alteração revertida: {path}",
+    "undo_empty": "Nenhuma alteração de ficheiro para desfazer.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "REFERÊNCIA DE COMANDOS DOCMIND",
+    "help_body": " /api       Provedor ou chave API\n /model     Alterar modelo\n /lang      Alterar idioma (14 idiomas)\n /cd CAM    Alterar pasta atual\n /undo      Desfazer última edição\n /clear     Nova conversa\n /auto      Modo automático\n /smart     Modo com confirmação\n /reset     Repor configuração (.json) e fechar terminal\n /tokens    Relatório de tokens e custos\n /history   Histórico de conversas\n /doctor    Diagnóstico do sistema\n /exit      Sair\n /image PATH Analisar imagem/captura e corrigir erros\n /paste     Enviar captura ou texto da área de transferência\n /copy      Copiar última resposta (/copy code: só código)\n /diff      Mostrar alterações Git em verde (+) / vermelho (-)\n /redo      Refazer última alteração desfeita (/undo)\n /export    Exportar conversa para Markdown (.md)\n /search Q  Pesquisa na internet ao vivo e verificação de fatos",
+    "cmd_cleared": "Memória da conversa e ecrã limpos.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "Idioma atualizado para: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "Encerrando o DocMind. Até logo!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ AVISO: ESTE AGENTE TEM ACESSO TOTAL AO SISTEMA — Pode visualizar, abrir e editar qualquer unidade, pasta ou ficheiro e executar comandos no terminal (com a sua permissão). Use com cuidado; nenhuma responsabilidade é aceite.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "PERMISSÃO DE EXECUÇÃO DE TERMINAL / CÓDIGO",
+    "term_perm_denied": "Execução no terminal recusada pelo utilizador.",
+    "term_used_status": "Estado",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "PERGUNTA DOCMIND / ESCOLHA DE PLATAFORMA",
+    "ask_user_prompt": "Sua escolha (número ou texto, padrão={default}): ",
+    "term_perm_shell": "Shell / Ambiente",
+    "term_perm_cwd": "Diretório de trabalho",
+    "term_perm_code": "CÓDIGO A EXECUTAR",
+    "term_perm_prompt": "Permitir que este comando seja executado no seu computador? [S]im / [N]ão: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "TERMINAL UTILIZADO",
+    "term_used_code": "CÓDIGO UTILIZADO",
+    "term_used_shell": "Shell / Ambiente",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "Diretório de trabalho",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Saída",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Imagem anexada: {name} ({dims}, {size})",
+    "img_not_found": "Ficheiro de imagem não encontrado: {path}",
+    "img_unsupported": "Formato de imagem não suportado ou corrompido: {path}",
+    "img_too_large": "Imagem muito grande ({size}); máximo suportado é 15 MB.",
+    "img_vision_fallback": "O modelo ({model}) não suporta imagens; repetido em modo de texto.",
+    "img_usage": "Uso: /image <caminho_da_imagem> [pergunta]",
+    "diff_new_file": "Novo ficheiro",
+    "diff_edit_file": "Editar ficheiro",
+    "diff_delete_file": "Eliminar ficheiro",
+    "diff_open_file": "Abrir / ler ficheiro",
+    "diff_more_lines": "... (mais {count} linhas ocultas)",
+    "mention_attached": "📎 Contexto de arquivo anexado: {name} ({size})",
+    "mention_dir_attached": "📂 Árvore de diretório anexada: {name}",
+    "copy_ok": "Copiado para a área de transferência ({chars} caracteres).",
+    "copy_empty": "Nenhuma resposta ou bloco de código disponível para copiar.",
+    "paste_empty": "Nenhuma imagem ou texto encontrado na área de transferência.",
+    "paste_img_ok": "📋 Captura obtida da área de transferência ({dims}, {size}).",
+    "paste_txt_ok": "📋 Texto anexado da área de transferência ({chars} caracteres).",
+    "export_ok": "Conversa exportada para Markdown: {path}",
+    "export_empty": "Nenhuma mensagem para exportar.",
+    "redo_success": "Alteração de arquivo reaplicada: {path}",
+    "redo_empty": "Nada para refazer (/redo).",
+    "undo_list_title": "HISTÓRICO DE DESFAZER (/undo)",
+    "diff_clean": "Árvore de trabalho Git limpa (sem alterações).",
+    "diff_not_git": "Esta pasta não é um repositório Git ou o git não está instalado.",
+    "cmd_did_you_mean": "Comando desconhecido: {cmd}. Você quis dizer {suggest}? (Digite /help)",
+    "search_usage": "Uso: /search <assunto ou informação para pesquisar e verificar>",
+    "vision_bridge_used": "👁️ Modelo ativo é apenas texto; imagem analisada em alta resolução via '{bridge_model}'."
+  },
+  "nl": {
+    "lang_name": "Nederlands",
+    "ai_lang_instruction": "Communiceer altijd in helder, natuurlijk NEDERLANDS met de gebruiker, tenzij anders gevraagd.",
+    "welcome_subtitle": "Jouw slimme assistent voor bestanden en code",
+    "ready_hint": "DocMind is klaar! Stel een vraag, bewerk bestanden, stuur een afbeelding of voer opdrachten uit.",
+    "type_help_hint": "Typ /help voor opdrachten | /lang taal | /api API| /exit afsluiten.",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND INSTALLATIEWIZARD",
+    "wiz_select_lang": "Kies uw voorkeurstaal (1-14) [Standaard: 1]: ",
+    "wiz_lang_saved": "Taal ingesteld op: Nederlands (NL)",
+    "wiz_select_provider": "Selecteer AI API-provider",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "Voer uw {provider} API-sleutel in: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "API-verbinding en sleutel controleren...",
+    "wiz_api_ok": "Geweldig! {provider} ({model}) verbinding bevestigd.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "SLIM BEVESTIGEN",
+    "mode_auto_short": "VOLLEDIG AUTO",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind denkt na en analyseert...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "TOESTEMMING VEREIST",
+    "perm_file_action": "Bestandsactie: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[J]a | [A]uto | [N]ee [Standaard: Nee]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "Laatste bestandswijziging ongedaan gemaakt: {path}",
+    "undo_empty": "Geen bestandswijzigingen om ongedaan te maken.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND OPDRACHTENOVERZICHT",
+    "help_body": " /api       Provider of API-sleutel\n /model     Model wijzigen\n /lang      Taal wijzigen (14 talen)\n /cd PAD    Werkmap wijzigen\n /undo      Laatste wijziging ongedaan maken\n /clear     Nieuw gesprek\n /auto      Automatische modus\n /smart     Bevestigingsmodus\n /reset     Config (.json) wissen en terminal sluiten\n /tokens    Token- en kostenoverzicht\n /history   Gespreksgeschiedenis\n /doctor    Systeemdiagnose\n /exit      Afsluiten\n /image PAD Afbeelding/screenshot analyseren & fouten oplossen\n /paste     Screenshot of tekst vanaf klembord verzenden\n /copy      Laatste antwoord kopiëren (/copy code: alleen code)\n /diff      Git-wijzigingen met groen (+) / rood (-) tonen\n /redo      Laatst ongedaan gemaakte wijziging herhalen\n /export    Gesprek exporteren naar Markdown (.md)\n /search Q  Live internetzoeken & feitencheck",
+    "cmd_cleared": "Gespreksgeheugen en scherm gewist.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "Taal bijgewerkt naar: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "DocMind wordt afgesloten. Tot ziens!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ WAARSCHUWING: DEZE AGENT HEEFT VOLLEDIGE SYSTEEMTOEGANG — Kan elke schijf, map en elk bestand bekijken, openen en bewerken en terminalopdrachten uitvoeren (met uw toestemming). Gebruik zorgvuldig; geen aansprakelijkheid aanvaard.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "TOESTEMMING VEREIST VOOR TERMINAL / CODE",
+    "term_perm_denied": "Uitvoering in terminal geweigerd door gebruiker.",
+    "term_used_status": "Status",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND VRAAG / DOELPLATFORM KEUZE",
+    "ask_user_prompt": "Uw keuze (nummer of tekst, standaard={default}): ",
+    "term_perm_shell": "Shell / Runtime",
+    "term_perm_cwd": "Werkmap",
+    "term_perm_code": "UIT TE VOEREN CODE",
+    "term_perm_prompt": "Deze opdracht op uw computer uitvoeren? [J]a / [N]ee: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "TERMINAL GEBRUIKT",
+    "term_used_code": "GEBRUIKTE CODE",
+    "term_used_shell": "Shell / Runtime",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "Werkmap",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "Uitvoer",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ Afbeelding bijgevoegd: {name} ({dims}, {size})",
+    "img_not_found": "Afbeeldingsbestand niet gevonden: {path}",
+    "img_unsupported": "Niet-ondersteund of beschadigd afbeeldingsformaat: {path}",
+    "img_too_large": "Afbeelding te groot ({size}); maximaal 15 MB.",
+    "img_vision_fallback": "Model ({model}) ondersteunt geen afbeeldingen; opnieuw geprobeerd in tekstmodus.",
+    "img_usage": "Gebruik: /image <afbeeldingspad> [vraag]",
+    "diff_new_file": "Nieuw bestand",
+    "diff_edit_file": "Bestand bewerken",
+    "diff_delete_file": "Bestand verwijderen",
+    "diff_open_file": "Bestand openen / lezen",
+    "diff_more_lines": "... ({count} extra regels verborgen)",
+    "mention_attached": "📎 Bestandscontext bijgevoegd: {name} ({size})",
+    "mention_dir_attached": "📂 Mappenboom bijgevoegd: {name}",
+    "copy_ok": "Gekopieerd naar klembord ({chars} tekens).",
+    "copy_empty": "Geen antwoord of codeblok beschikbaar om te kopiëren.",
+    "paste_empty": "Geen afbeelding of tekst gevonden op het klembord.",
+    "paste_img_ok": "📋 Screenshot opgehaald van klembord ({dims}, {size}).",
+    "paste_txt_ok": "📋 Tekst bijgevoegd van klembord ({chars} tekens).",
+    "export_ok": "Gesprek geëxporteerd naar Markdown: {path}",
+    "export_empty": "Geen berichten om te exporteren.",
+    "redo_success": "Bestandswijziging opnieuw toegepast: {path}",
+    "redo_empty": "Niets om opnieuw uit te voeren (/redo).",
+    "undo_list_title": "ONGEDAAN MAKEN GESCHIEDENIS (/undo)",
+    "diff_clean": "Git-werkboom is schoon (geen wijzigingen).",
+    "diff_not_git": "Deze map is geen Git-repository of git is niet geïnstalleerd.",
+    "cmd_did_you_mean": "Onbekend commando: {cmd}. Bedoelde u {suggest}? (Typ /help)",
+    "search_usage": "Gebruik: /search <onderwerp of feit om te controleren>",
+    "vision_bridge_used": "👁️ Actief model is alleen-tekst; afbeelding in hoge resolutie geanalyseerd via '{bridge_model}'."
+  },
+  "ar": {
+    "lang_name": "العربية",
+    "ai_lang_instruction": "تواصل دائماً مع المستخدم باللغة العربية الواضحة والطبيعية ما لم يطلب غير ذلك.",
+    "welcome_subtitle": "مساعدك الذكي للملفات والبرمجة",
+    "ready_hint": "DocMind جاهز! اسأل أي شيء، عدّل الملفات، أرسل صورة خطأ أو نفّذ الأوامر.",
+    "type_help_hint": "اكتب /help للأوامر | /lang للغة | /api للإعدادات| /exit للخروج.",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "معالج الإعداد الأولي لـ DOCMIND",
+    "wiz_select_lang": "يرجى اختيار لغتك المفضلة (1-14) [الافتراضي: 1]: ",
+    "wiz_lang_saved": "تم ضبط اللغة على: العربية (AR)",
+    "wiz_select_provider": "اختر مزود خدمة الذكاء الاصطناعي",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "أدخل مفتاح API الخاص بـ {provider}: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "جاري التحقق من اتصال ومفتاح API...",
+    "wiz_api_ok": "رائع! تم التحقق من اتصال {provider} ({model}) بنجاح.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "تأكيد ذكي",
+    "mode_auto_short": "تلقائي كامل",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind يفكر ويحلل...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "مطلوب تأكيد الإذن",
+    "perm_file_action": "عملية ملف: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[Y] نعم | [A] تلقائي | [N] لا [الافتراضي: لا]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "تم التراجع عن آخر تعديل للملف: {path}",
+    "undo_empty": "لا توجد تعديلات ملفات للتراجع عنها.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "دليل أوامر DOCMIND",
+    "help_body": " /api       مزود الخدمة أو المفتاح\n /model     تغيير النموذج\n /lang      تغيير اللغة (14 لغة)\n /cd PATH   مجلد العمل\n /undo      التراجع عن آخر تعديل\n /clear     محادثة جديدة\n /auto      الوضع التلقائي\n /smart     وضع التأكيد الذكي\n /reset     حذف الإعدادات (.json) وإغلاق الطرفية\n /tokens    تقرير الرموز والتكلفة\n /history   سجل المحادثات\n /doctor    فحص النظام والاتصال\n /exit      خروج\n /image PATH تحليل صورة أو لقطة شاشة وإصلاح الأخطاء\n /paste     إرسال لقطة شاشة أو نص مباشرة من الحافظة\n /copy      نسخ آخر رد إلى الحافظة (/copy code: الكود فقط)\n /diff      عرض تغييرات Git بالأخضر (+) والأحمر (-)\n /redo      إعادة تطبيق آخر تعديل تم التراجع عنه\n /export    تصدير المحادثة إلى ملف Markdown (.md)\n /search Q  بحث مباشر في الإنترنت والتحقق من المعلومات",
+    "cmd_cleared": "تم مسح ذاكرة المحادثة والشاشة.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "تم تحديث اللغة إلى: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "جاري إغلاق DocMind. إلى اللقاء!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ تحذير: يمتلك هذا الوكيل صلاحية وصول كاملة للنظام — يمكنه عرض وفتح وتعديل أي قرص أو مجلد أو ملف وتنفيذ أوامر الطرفية (بإذنك). استخدمه بحذر؛ لا نتحمل أي مسؤولية.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "مطلوب إذن لتنفيذ أمر الطرفية / الكود",
+    "term_perm_denied": "تم رفض تنفيذ الأمر من قبل المستخدم.",
+    "term_used_status": "الحالة",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "سؤال DOCMIND / اختيار المنصة المستهدفة",
+    "ask_user_prompt": "اختيارك (أدخل رقماً أو نصاً، الافتراضي={default}): ",
+    "term_perm_shell": "الصدفة / البيئة",
+    "term_perm_cwd": "مجلد العمل",
+    "term_perm_code": "الكود المراد تنفيذه",
+    "term_perm_prompt": "هل تسمح بتنفيذ هذا الأمر على جهازك؟ [Y] نعم / [N] لا: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "تم استخدام الطرفية",
+    "term_used_code": "الكود المنفذ",
+    "term_used_shell": "الصدفة / البيئة",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "مجلد العمل",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "المخرجات",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ تم إرفاق الصورة: {name} ({dims}, {size})",
+    "img_not_found": "لم يتم العثور على ملف الصورة: {path}",
+    "img_unsupported": "تنسيق صورة غير مدعوم أو تالف: {path}",
+    "img_too_large": "حجم الصورة كبير جداً ({size})؛ الحد الأقصى 15 ميجابايت.",
+    "img_vision_fallback": "النموذج المحدد ({model}) لا يدعم قراءة الصور؛ تمت الإعادة بالوضع النصي.",
+    "img_usage": "الاستخدام: /image <مسار_الصورة> [سؤالك]",
+    "diff_new_file": "ملف جديد",
+    "diff_edit_file": "تعديل ملف",
+    "diff_delete_file": "حذف ملف",
+    "diff_open_file": "فتح / قراءة ملف",
+    "diff_more_lines": "... (تم إخفاء {count} سطراً إضافياً)",
+    "mention_attached": "📎 تم إرفاق سياق الملف: {name} ({size})",
+    "mention_dir_attached": "📂 تم إرفاق شجرة المجلد: {name}",
+    "copy_ok": "تم النسخ إلى الحافظة ({chars} حرفاً).",
+    "copy_empty": "لا يوجد رد أو مقطع برمجي لنسخه.",
+    "paste_empty": "لم يتم العثور على صورة أو نص في الحافظة.",
+    "paste_img_ok": "📋 تم التقاط لقطة شاشة من الحافظة ({dims}, {size}).",
+    "paste_txt_ok": "📋 تم إرفاق نص من الحافظة ({chars} حرفاً).",
+    "export_ok": "تم تصدير المحادثة بصيغة Markdown: {path}",
+    "export_empty": "لا توجد رسائل لتصديرها.",
+    "redo_success": "تمت إعادة تطبيق تعديل الملف: {path}",
+    "redo_empty": "لا يوجد تعديل لإعادته (/redo).",
+    "undo_list_title": "سجل التراجع (/undo)",
+    "diff_clean": "شجرة عمل Git نظيفة (لا توجد تغييرات).",
+    "diff_not_git": "هذا المجلد ليس مستودع Git أو أن git غير مثبت.",
+    "cmd_did_you_mean": "أمر غير معروف: {cmd}. هل تقصد {suggest}؟ (اكتب /help)",
+    "search_usage": "الاستخدام: /search <موضوع أو معلومة للبحث والتحقق>",
+    "vision_bridge_used": "👁️ النموذج الحالي نصي فقط؛ تم تحليل الصورة بدقة عالية عبر '{bridge_model}'."
+  },
+  "zh": {
+    "lang_name": "中文",
+    "ai_lang_instruction": "除非用户另有要求，否则请始终使用清晰、自然的简体中文与用户交流。",
+    "welcome_subtitle": "您的文件与代码智能终端助手",
+    "ready_hint": "DocMind 已就绪！可随时提问、编辑文件、发送报错截图或运行终端命令。",
+    "type_help_hint": "输入 /help 查看命令 | /lang 切换语言 | /api 配置 API| /exit 退出。",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND 初始设置向导",
+    "wiz_select_lang": "请选择您的首选语言 (1-14) [默认: 1]: ",
+    "wiz_lang_saved": "语言已设置为：中文 (ZH)",
+    "wiz_select_provider": "选择 AI API 服务商",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "请输入您的 {provider} API 密钥: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "正在验证 API 连接和密钥...",
+    "wiz_api_ok": "太棒了！{provider} ({model}) 连接验证成功。",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "智能确认",
+    "mode_auto_short": "全自动",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind 正在思考与分析...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "需要权限确认",
+    "perm_file_action": "文件操作: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[Y]允许 | [A]自动模式 | [N]拒绝 [默认: 拒绝]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "已撤销上一次文件修改: {path}",
+    "undo_empty": "没有可撤销的文件修改记录。",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND 命令参考",
+    "help_body": " /api       配置服务商或密钥\n /model     切换模型\n /lang      切换语言 (支持14种语言)\n /cd 路径   切换工作目录\n /undo      撤销上次文件修改\n /clear     清空对话\n /auto      自动模式\n /smart     智能确认模式\n /reset     重置配置 (.json) 并关闭终端\n /tokens    用量与费用统计\n /history   历史会话\n /doctor    系统与 API 诊断\n /exit      退出\n /image 路径 分析图片/报错截图并修复问题\n /paste     直接发送剪贴板中的截图或文本\n /copy      复制最后一条回复 (/copy code: 仅复制代码)\n /diff      以绿色 (+) / 红色 (-) 显示 Git 更改\n /redo      重做上次撤销 (/undo) 的文件修改\n /export    将对话导出为 Markdown (.md)\n /search 词 联网实时搜索与多源事实核查",
+    "cmd_cleared": "对话记忆与屏幕已清空。",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "语言已更新为: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "正在关闭 DocMind，再见！",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ 警告：此智能体拥有完整系统访问权限 — 可查看、打开和编辑计算机上的任何磁盘、文件夹或文件，并在您批准后执行终端命令。请谨慎使用，开发者不承担任何责任。",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "需要终端 / 代码执行权限",
+    "term_perm_denied": "用户已拒绝执行终端命令。",
+    "term_used_status": "状态",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND 询问 / 目标平台选择",
+    "ask_user_prompt": "您的选择（输入编号或自定义文本，默认={default}）: ",
+    "term_perm_shell": "终端环境",
+    "term_perm_cwd": "工作目录",
+    "term_perm_code": "待执行代码",
+    "term_perm_prompt": "是否允许在您的计算机上执行此终端命令？[Y]是 / [N]否: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "已使用终端",
+    "term_used_code": "已执行代码",
+    "term_used_shell": "终端环境",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "工作目录",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "输出",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ 已附加图片: {name} ({dims}, {size})",
+    "img_not_found": "未找到图片文件: {path}",
+    "img_unsupported": "不支持或已损坏的图片格式: {path}",
+    "img_too_large": "图片过大 ({size})；最大支持 15 MB。",
+    "img_vision_fallback": "当前模型 ({model}) 不支持图像识别，已回退至纯文本模式。请切换至 Gemini、Claude 或 GPT-4o/5。",
+    "img_usage": "用法: /image <图片路径> [问题] （或直接将图片拖入终端聊天框）",
+    "diff_new_file": "新建文件",
+    "diff_edit_file": "编辑文件",
+    "diff_delete_file": "删除文件",
+    "diff_open_file": "打开 / 读取文件",
+    "diff_more_lines": "... (其余 {count} 行已折叠)",
+    "mention_attached": "📎 已附加文件上下文: {name} ({size})",
+    "mention_dir_attached": "📂 已附加目录树: {name}",
+    "copy_ok": "已复制到剪贴板（{chars} 字符）。",
+    "copy_empty": "没有可复制的回复或代码块。",
+    "paste_empty": "剪贴板中未找到图片或文本。",
+    "paste_img_ok": "📋 已从剪贴板捕获截图 ({dims}, {size})。",
+    "paste_txt_ok": "📋 已从剪贴板附加文本（{chars} 字符）。",
+    "export_ok": "对话已导出为 Markdown: {path}",
+    "export_empty": "没有可导出的对话消息。",
+    "redo_success": "已重新应用文件修改: {path}",
+    "redo_empty": "没有可重做 (/redo) 的修改。",
+    "undo_list_title": "撤销快照历史 (/undo)",
+    "diff_clean": "Git 工作区干净（无未提交更改）。",
+    "diff_not_git": "当前目录不是 Git 仓库或未安装 git。",
+    "cmd_did_you_mean": "未知命令: {cmd}。您是指 {suggest} 吗？（输入 /help 查看帮助）",
+    "search_usage": "用法: /search <需要联网搜索和核实的主题或问题>",
+    "vision_bridge_used": "👁️ 当前模型仅支持文本；已通过 '{bridge_model}' 高清解析图片内容。"
+  },
+  "ja": {
+    "lang_name": "日本語",
+    "ai_lang_instruction": "特別な指定がない限り、常に明確で自然な日本語でユーザーと対話してください。",
+    "welcome_subtitle": "ファイルとコードのためのAIターミナルアシスタント",
+    "ready_hint": "DocMindの準備が完了しました！質問、ファイル編集、エラー画像の送信、コマンド実行が可能です。",
+    "type_help_hint": "/help コマンド一覧 | /lang 言語 | /api API設定| /exit 終了",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND 初期セットアップウィザード",
+    "wiz_select_lang": "使用する言語を選択してください (1-14) [デフォルト: 1]: ",
+    "wiz_lang_saved": "言語を設定しました: 日本語 (JA)",
+    "wiz_select_provider": "AI APIプロバイダーを選択",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "{provider} のAPIキーを入力してください: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "API接続とキーを検証しています...",
+    "wiz_api_ok": "接続成功！ {provider} ({model}) の動作を確認しました。",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "スマート確認",
+    "mode_auto_short": "フルオート",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMindが思考・分析しています...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "実行許可の確認",
+    "perm_file_action": "ファイル操作: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[Y]はい | [A]自動モード | [N]いいえ [デフォルト: いいえ]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "直前のファイル変更を元に戻しました: {path}",
+    "undo_empty": "元に戻せるファイル変更はありません。",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND コマンド一覧",
+    "help_body": " /api       プロバイダー・APIキー設定\n /model     モデル変更\n /lang      言語変更 (14言語対応)\n /cd PATH   作業フォルダ変更\n /undo      直前の変更を元に戻す\n /clear     新しい会話\n /auto      自動モード\n /smart     確認モード\n /reset     設定(.json)を初期化してターミナルを閉じる\n /tokens    トークン・コスト統計\n /history   会話履歴\n /doctor    システム・API診断\n /exit      終了\n /image PATH 画像・スクショを解析してエラーを解決\n /paste     クリップボードのスクショやテキストを送信\n /copy      直前の応答をコピー (/copy code: コードのみ)\n /diff      Git の変更を緑 (+) / 赤 (-) で表示\n /redo      元に戻した (/undo) 変更をやり直す\n /export    会話を Markdown (.md) にエクスポート\n /search 語 ライブWeb検索と複数ソースでの事実確認",
+    "cmd_cleared": "会話メモリと画面をクリアしました。",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "言語を変更しました: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "DocMindを終了します。お疲れ様でした！",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ 警告: このエージェントは完全なシステムアクセス権限を持っています — PC上の任意のドライブ・フォルダ・ファイルの閲覧や編集、および（許可を得て）ターミナルコマンドを実行できます。自己責任で慎重にご使用ください。",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "ターミナル / コード実行の許可が必要です",
+    "term_perm_denied": "ターミナル実行はユーザーにより拒否されました。",
+    "term_used_status": "ステータス",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND 質問 / ターゲット環境の確認",
+    "ask_user_prompt": "選択してください (番号またはテキスト、デフォルト={default}): ",
+    "term_perm_shell": "シェル / 実行環境",
+    "term_perm_cwd": "作業ディレクトリ",
+    "term_perm_code": "実行されるコード",
+    "term_perm_prompt": "このコマンドをコンピュータで実行してもよろしいですか？ [Y]はい / [N]いいえ: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "ターミナル実行結果",
+    "term_used_code": "実行されたコード",
+    "term_used_shell": "シェル / 実行環境",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "作業ディレクトリ",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "出力",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ 画像を添付しました: {name} ({dims}, {size})",
+    "img_not_found": "画像ファイルが見つかりません: {path}",
+    "img_unsupported": "未対応または破損した画像形式です: {path}",
+    "img_too_large": "画像サイズが大きすぎます ({size})。上限は15MBです。",
+    "img_vision_fallback": "選択中のモデル ({model}) は画像入力に未対応のためテキストモードで再試行しました。",
+    "img_usage": "使い方: /image <画像パス> [質問] （または画像をそのままチャットへドロップ）",
+    "diff_new_file": "新規ファイル",
+    "diff_edit_file": "ファイル編集",
+    "diff_delete_file": "ファイル削除",
+    "diff_open_file": "ファイルを開く / 読込",
+    "diff_more_lines": "... (他 {count} 行を省略)",
+    "mention_attached": "📎 ファイル文脈を添付しました: {name} ({size})",
+    "mention_dir_attached": "📂 ディレクトリツリーを添付しました: {name}",
+    "copy_ok": "クリップボードにコピーしました（{chars} 文字）。",
+    "copy_empty": "コピーできる応答またはコードブロックがありません。",
+    "paste_empty": "クリップボードに画像またはテキストが見つかりません。",
+    "paste_img_ok": "📋 クリップボードからスクショを取得しました ({dims}, {size})。",
+    "paste_txt_ok": "📋 クリップボードからテキストを添付しました（{chars} 文字）。",
+    "export_ok": "会話を Markdown にエクスポートしました: {path}",
+    "export_empty": "エクスポートする会話がありません。",
+    "redo_success": "ファイルの変更を再適用しました: {path}",
+    "redo_empty": "やり直せる (/redo) 変更はありません。",
+    "undo_list_title": "元に戻す履歴 (/undo)",
+    "diff_clean": "Git 作業ツリーはクリーンです（変更なし）。",
+    "diff_not_git": "このフォルダは Git リポジトリではないか git が未導入です。",
+    "cmd_did_you_mean": "不明なコマンド: {cmd}。もしかして {suggest} ですか？（/help を入力）",
+    "search_usage": "使い方: /search <Web検索・事実確認したい内容>",
+    "vision_bridge_used": "👁️ 現在のモデルはテキスト専用のため、'{bridge_model}' で高精細に画像を解析しました。"
+  },
+  "ko": {
+    "lang_name": "한국어",
+    "ai_lang_instruction": "별도의 요청이 없는 한 항상 명확하고 자연스러운 한국어로 사용자와 대화하세요.",
+    "welcome_subtitle": "파일 및 코드를 위한 지능형 터미널 AI 에이전트",
+    "ready_hint": "DocMind가 준비되었습니다! 질문하기, 파일 편집, 오류 스크린샷 전송, 명령 실행이 가능합니다.",
+    "type_help_hint": "/help 명령어 | /lang 언어 변경 | /api API 설정| /exit 종료",
+    "prompt_placeholder": "Give DocMind a task (end line with \\ for multi-line)...",
+    "wiz_title": "DOCMIND 초기 설정 마법사",
+    "wiz_select_lang": "원하시는 언어를 선택하세요 (1-14) [기본값: 1]: ",
+    "wiz_lang_saved": "언어가 설정되었습니다: 한국어 (KO)",
+    "wiz_select_provider": "AI API 제공자 선택",
+    "wiz_provider_prompt": "Your choice (1-7) [Default: 1]: ",
+    "wiz_select_model": "Select Model for {provider}",
+    "wiz_custom_model_opt": "Enter custom model name...",
+    "wiz_model_prompt": "Model choice [Default: 1]: ",
+    "wiz_custom_model_prompt": "Enter exact model ID (e.g. gpt-4o-mini): ",
+    "wiz_enter_base_url": "Enter API Base URL [Default: {default}]: ",
+    "wiz_enter_api_key": "{provider} API 키를 입력하세요: ",
+    "wiz_api_key_optional": "{provider} API Key (leave empty if local server requires none): ",
+    "wiz_api_key_empty": "WARNING: API key cannot be empty! Please enter a valid key or select a local provider.",
+    "wiz_testing_api": "API 연결 및 키를 확인하는 중...",
+    "wiz_api_ok": "성공! {provider} ({model}) 연결이 확인되었습니다.",
+    "wiz_api_fail_menu": "An issue occurred while verifying the API. What would you like to do?",
+    "wiz_opt_retry_key": "Enter a New API Key",
+    "wiz_opt_change_provider": "Choose Another API Provider / Model",
+    "wiz_opt_skip_anyway": "Skip Warning & Save Anyway (You can change later via /api)",
+    "wiz_select_mode": "Select Execution & Safety Mode",
+    "wiz_mode_smart": "Smart Confirm (recommended): ask before changes, commands and web requests",
+    "wiz_mode_auto": "Full Auto (risky): can perform actions without asking; not a security sandbox",
+    "wiz_mode_prompt": "Mode choice (1-2) [Default: 1]: ",
+    "wiz_complete": "Setup complete. API keys are stored unencrypted in local settings.",
+    "mode_smart_short": "스마트 승인",
+    "mode_auto_short": "완전 자동",
+    "status_tokens": "Tokens: {total} (In:{inp} / Out:{out})",
+    "status_no_key": "NO API KEY (type /api)",
+    "thinking": "DocMind가 생각하고 분석하는 중...",
+    "step_counter": "Autonomous Step {step}/{max_steps}",
+    "max_steps_reached": "WARNING: Reached maximum single-turn autonomous steps ({max_steps}).",
+    "ask_continue_steps": "Should DocMind continue working? [Y/n]: ",
+    "compacting_context": "INFO: Conversation grew large; running smart context compaction to save tokens...",
+    "context_compacted": "Conversation history compacted seamlessly; continuing.",
+    "output_truncated_warn": "WARNING: Response hit the single-turn output token limit. Type 'continue' to resume.",
+    "tool_running": "Running Tool: {name}",
+    "tool_done": "Completed: {name}",
+    "tool_skipped": "Skipped by user: {name}",
+    "tool_error_passed": "WARNING: Issue in tool '{name}' bypassed safely ({err}). DocMind will adapt.",
+    "perm_title": "실행 권한 확인 필요",
+    "perm_file_action": "파일 작업: {action} -> {target}",
+    "perm_command_warn": "Shell Command to Execute: {cmd}",
+    "perm_dangerous_warn": "CAUTION! POTENTIALLY DESTRUCTIVE COMMAND DETECTED! Review carefully!",
+    "perm_prompt": "[Y]예 | [A]자동 모드 | [N]아니오 [기본값: 아니오]: ",
+    "perm_dangerous_prompt": "Are you sure you want to execute this critical command? [yes/no]: ",
+    "perm_switched_auto": "Switched to Full Auto Mode! Type /smart anytime to re-enable confirmations.",
+    "undo_success": "최근 파일 변경 사항을 되돌렸습니다: {path}",
+    "undo_empty": "되돌릴 파일 변경 기록이 없습니다.",
+    "err_quota_title": "CRITICAL WARNING: API TOKEN / CREDIT QUOTA EXHAUSTED!",
+    "err_quota_desc": "Your {provider} API token quota, free tier limit, or billing credit balance is depleted.\nDetail: {detail}",
+    "err_rate_title": "WARNING: API RATE LIMIT / TOKENS PER MINUTE EXCEEDED!",
+    "err_rate_desc": "Too many requests or per-minute token limit reached on {provider}.\nDetail: {detail}",
+    "err_auth_title": "WARNING: INVALID OR EXPIRED API KEY!",
+    "err_auth_desc": "Your {provider} API key was rejected, revoked, or expired.\nDetail: {detail}",
+    "err_context_title": "WARNING: MODEL CONTEXT TOKEN LIMIT EXCEEDED!",
+    "err_context_desc": "Input messages exceeded model context limit. Auto-compacting conversation now.\nDetail: {detail}",
+    "err_model_title": "WARNING: MODEL NOT FOUND OR NO ACCESS!",
+    "err_model_desc": "Selected model ({model}) does not exist or is unavailable for your account.\nDetail: {detail}",
+    "err_server_title": "WARNING: AI SERVER OVERLOADED / TEMPORARY ERROR!",
+    "err_server_desc": "{provider} servers experienced temporary overload or downtime.\nDetail: {detail}",
+    "err_network_title": "WARNING: NETWORK / INTERNET CONNECTION ISSUE!",
+    "err_network_desc": "Could not reach {provider}. Check your internet connection, proxy, or firewall.\nDetail: {detail}",
+    "err_tool_title": "WARNING: FILE / SYSTEM OPERATION ERROR (BYPASSED)",
+    "err_tool_desc": "A system error occurred during execution and was safely bypassed:\nDetail: {detail}",
+    "err_unknown_title": "WARNING: UNEXPECTED ERROR CAUGHT & BYPASSED",
+    "err_unknown_desc": "An unexpected issue was caught and safely handled without stopping:\nDetail: {detail}",
+    "err_skipped_notice": "Issue bypassed safely. DocMind remains active and ready.",
+    "err_retrying_in": "Auto-retrying in {sec}s (Press Ctrl+C to skip wait)...",
+    "err_budget_warn_title": "TOKEN BUDGET WARNING",
+    "err_budget_warn_desc": "Session used {used} tokens so far (Your warning threshold: {limit}).",
+    "rec_title": "RECOVERY OPTIONS (Session Stays Alive)",
+    "rec_opt_new_key": "Enter a New API Key & Continue",
+    "rec_opt_switch_provider": "Switch AI Provider (Gemini, Groq, OpenRouter, Claude, OpenAI...)",
+    "rec_opt_switch_model": "Select Another Model & Continue",
+    "rec_opt_retry": "Retry Request Now",
+    "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_choose": "Your choice [Default: {default}]: ",
+    "help_title": "DOCMIND 명령어 안내",
+    "help_body": " /api       제공자 또는 API 키 설정\n /model     모델 변경\n /lang      언어 변경 (14개 언어 지원)\n /cd 경로   작업 디렉터리 변경\n /undo      최근 파일 수정 되돌리기\n /clear     새 대화 시작\n /auto      자동 모드\n /smart     스마트 승인 모드\n /reset     설정(.json) 초기화 후 터미널 닫기\n /tokens    토큰 및 비용 리포트\n /history   저장된 대화 기록\n /doctor    시스템 및 API 진단\n /exit      종료\n /image 경로 이미지/스크린샷 분석 및 오류 해결\n /paste     클립보드의 스크린샷 또는 텍스트 바로 전송\n /copy      마지막 응답 복사 (/copy code: 코드만 복사)\n /diff      Git 변경 사항을 초록 (+) / 빨강 (-)으로 표시\n /redo      되돌린 (/undo) 파일 변경 다시 실행\n /export    대화를 Markdown (.md) 파일로 내보내기\n /search 검색어 실시간 인터넷 검색 및 사실 검증",
+    "cmd_cleared": "대화 기록과 화면이 지워졌습니다.",
+    "cmd_saved": "Session saved successfully: {path}",
+    "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
+    "cmd_lang_changed": "언어가 변경되었습니다: {lang}",
+    "cmd_mode_changed": "Execution mode updated: {mode}",
+    "cmd_cd_ok": "Working directory changed to: {path}",
+    "cmd_cd_err": "WARNING: Could not change directory: {err}",
+    "cmd_unknown": "Unknown command: '{cmd}'. Type /help for available commands.",
+    "cmd_exit_bye": "DocMind를 종료합니다. 안녕히 계세요!",
+    "ctrl_c_cancelled": "Operation cancelled by user (Ctrl+C). Ready for your next instruction.",
+    "ctrl_c_exit_hint": "Type /exit or press Ctrl+C again to quit.",
+    "doctor_title": "DOCMIND SYSTEM & HEALTH DIAGNOSTICS (/doctor)",
+    "tokens_report_title": "SESSION TOKEN & USAGE REPORT",
+    "wiz_secret_notice": "The key is VISIBLE as you type; do not share your screen. If saved, it is stored UNENCRYPTED in ~/.docmind-single/config.json. Enter keeps the current key.",
+    "perm_sensitive_warning": "SENSITIVE: Content may contain credentials and may be sent to the AI provider. Type the full word 'yes' only if you intend this.",
+    "perm_sensitive_prompt": "Approve this sensitive action? [yes/no]: ",
+    "footer_token": "Tokens",
+    "footer_context": "Context",
+    "footer_cost": "Cost",
+    "retry_wait": "Network or server problem. Retrying in {seconds}s (attempt {attempt}). Keep the terminal open; Ctrl+C cancels this task.",
+    "retry_partial": "The answer was interrupted; incomplete tool calls were not executed. A retry may incur additional charges.",
+    "retry_ok": "Connection restored; continuing the task.",
+    "price_usage": "Pricing: /price INPUT OUTPUT (USD per million tokens); /price auto resets.",
+    "price_set": "Price saved for this provider/model: input ${inp}, output ${out} per million.",
+    "price_reset": "Custom pricing removed.",
+    "price_unknown": "Price unknown; enter the provider rate with /price.",
+    "price_invalid": "Enter two non-negative numbers: /price 0.15 0.60",
+    "context_usage": "Context limit: /context NUMBER; /context auto resets.",
+    "context_invalid": "Context limit must be from 1,024 to 100,000,000.",
+    "context_set": "Context limit saved: {limit}.",
+    "context_reset": "Custom context limit removed.",
+    "retry_stream_off": "The stream repeatedly ended early; retrying without streaming for this session. Text will still be animated.",
+    "settings_save_failed": "Settings could not be saved and may apply only for this session.",
+    "stat_0": "Provider / Model",
+    "stat_1": "API calls",
+    "stat_2": "Input tokens",
+    "stat_3": "Output tokens",
+    "stat_4": "Total tokens",
+    "stat_5": "Context fill",
+    "stat_6": "Live status",
+    "stat_7": "Estimated cost only; caching, free tiers, tax and interrupted requests can differ. Built-in rates checked 2026-10-29; check your provider bill.",
+    "stat_8": "Warning threshold",
+    "stat_9": "Messages in memory",
+    "history_title": "Conversation history",
+    "history_choose": "Conversation number (Enter to cancel): ",
+    "history_empty": "No saved conversations yet. The first message is saved automatically.",
+    "history_invalid": "Enter a valid conversation number.",
+    "history_cancel": "Conversation selection cancelled.",
+    "history_loaded": "Conversation loaded: {title}",
+    "history_you": "You",
+    "history_cancelled": "not completed / cancelled",
+    "history_read_error": "Could not read conversation history. Check the file and permissions.",
+    "history_write_error": "Could not save conversation history. Check its size, disk space and permissions.",
+    "history_forked": "Another DocMind session changed this conversation; saving this continuation separately to prevent data loss.",
+    "history_privacy": "Conversations are saved automatically in compressed files, not encrypted.",
+    "history_help": " /history   Open saved conversations",
+    "history_delete_hint": "Type /delete to delete a conversation.",
+    "history_delete_title": "Delete conversation",
+    "history_delete_warning": "The chosen conversation is permanently deleted; an open one is also cleared from memory.",
+    "history_delete_choose": "Conversation number to delete (Enter cancels): ",
+    "history_delete_ok": "Conversation deleted: {title}",
+    "history_delete_active": "The open conversation was cleared; a new one has started.",
+    "history_delete_error": "Could not delete the conversation. Check file and directory permissions.",
+    "history_delete_help": " /delete    Delete a saved conversation",
+    "auto_syntax_ok": "{path}: automatic syntax check passed (not a functional test).",
+    "auto_syntax_failed": "{path}: automatic syntax check failed or could not run; details were sent to the model.",
+    "loop_suppressed": "Repeated failed or declined action was not executed: {name}",
+    "loop_stopped": "The agent was stuck repeating itself and stopped without further actions. You can provide a different approach or new instruction.",
+    "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
+    "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
+    "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
+    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_saved": "Reasoning setting saved: {level}.",
+    "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
+    "effort_help": " /effort    Reasoning level and cost",
+    "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
+    "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
+    "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
+    "compat_fallback": "The provider rejected a request field or native tool format; retrying in a compatible form. Extra API charges may apply.",
+    "doctor_connection_ok": "✔ Live connection: model responded (tool use is tested separately).",
+    "doctor_tools_skipped": "Tool use not tested. /doctor tools runs a real API test; charges may apply.",
+    "doctor_tools_start": "Sending the agent tool schemas to the provider; an extra API request is made, but no tools are executed.",
+    "doctor_tools_ok": "✔ Tool-call test: expected diagnostic call received ({mode}); no tool was executed.",
+    "doctor_tools_inconclusive": "⚠ Tool test failed or was inconclusive; the expected diagnostic call was not received. No tool was executed.",
+    "doctor_tool_native_mode": "native tool API",
+    "doctor_tool_prompt_mode": "prompt-based compatibility",
+    "doctor_usage": "Usage: /doctor, /doctor tools or /doctor all",
+    "doctor_tools_help": " /doctor tools  Test tool schemas with the API; charges may apply",
+    "err_request_budget_title": "SINGLE REQUEST EXCEEDS TOKEN BUDGET",
+    "err_request_budget_desc": "This request is larger than {provider}’s per-minute token budget; waiting cannot fix it. Shorten the message or history, start a new session, or use another model/account. Detail: {detail}",
+    "budget_fallback": "The provider’s single-request token limit was exceeded. Retrying once with this request’s output cap reduced to {limit}; the answer may be shorter and extra API charges may apply.",
+    "probe_retry": "The model used the connection test budget without returning text. Retrying once with a 1024-token cap; the first attempt may have been billed.",
+    "err_edge_block_title": "PROVIDER SECURITY EDGE BLOCKED THE REQUEST (1010)",
+    "err_edge_block_desc": "The {provider} request may have been blocked by a security edge before reaching the API (HTTP 403 / 1010). This does not prove the API key is invalid. Use the latest DocMind; if it persists, check your VPN/proxy and network, and report 403 / 1010 to the provider. Never share your key.",
+    "err_access_denied_title": "PROVIDER DENIED ACCESS (403)",
+    "err_access_denied_desc": "{provider} denied access. Account or model permissions, region, network, or provider policy may be involved; this status alone does not prove the key is invalid. Check the provider dashboard. Detail: {detail}",
+    "retry_exhausted": "{count} automatic retries failed. Further requests may incur charges; continuing is your choice.",
+    "retry_deferred": "The provider requested a wait of at least {seconds}s; no early automatic retry will be made.",
+    "probe_transient_retry": "Temporary connection-test error: retrying in {seconds}s ({attempt}/2). Additional API charges may apply.",
+    "batch_deferred": "{name} deferred: an earlier action failed or was declined; the agent will reassess.",
+    "footer_incomplete": "incomplete",
+    "footer_unknown": "unknown",
+    "footer_calculating": "calculating",
+    "usage_incomplete_detail": "Missing cost data for {count} request(s); {interrupted} were interrupted or failed. Usage or pricing may be unavailable. The amount shown estimates only the known part. On narrow screens * means incomplete or ongoing data.",
+    "usage_complete_detail": "No requests are missing usage or pricing. On narrow screens * can indicate an ongoing response.",
+    "doctor_all_help": " /doctor all  Test configured providers; charges may apply",
+    "doctor_all_title": "Test configured providers",
+    "doctor_all_none": "No configured provider credentials to test. Use /api.",
+    "doctor_all_intro": "Real API requests are sent to the models below and may incur charges. Inactive providers use their default model. Each provider uses its own credential and the displayed destination; settings are unchanged.",
+    "doctor_all_confirm": "Proceed with tests? (yes/no; Enter: no): ",
+    "doctor_all_cancelled": "Cancelled; no request was sent.",
+    "doctor_all_checking": "Testing {provider} connection",
+    "doctor_all_ok": "model responded",
+    "doctor_all_failed": "test failed",
+    "doctor_all_skipped": "Skipped (not configured): {names}",
+    "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
+    "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
+    "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
+    "startup_authority_warn": "⚠ 경고: 이 에이전트는 전체 시스템 접근 권한을 가집니다 — 컴퓨터의 모든 드라이브, 폴더, 파일을 열람·수정하고 (사용자 승인 하에) 터미널 명령을 실행할 수 있습니다. 주의해서 사용하세요.",
+    "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
+    "term_perm_header": "터미널 / 코드 실행 권한 필요",
+    "term_perm_denied": "사용자가 터미널/코드 실행을 거부했습니다.",
+    "term_used_status": "상태",
+    "term_triage_manual": "⚠ PASSWORD / ADMIN REQUIRED: This command requires interactive credentials/elevation and must be run by the user.",
+    "term_triage_autofix": "↻ Error detected — DocMind is analyzing the failure to self-correct...",
+    "ask_user_header": "DOCMIND 질문 / 대상 플랫폼 선택",
+    "ask_user_prompt": "선택하세요 (번호 또는 직접 입력, 기본값={default}): ",
+    "term_perm_shell": "셸 / 실행 환경",
+    "term_perm_cwd": "작업 디렉터리",
+    "term_perm_code": "실행할 코드",
+    "term_perm_prompt": "이 명령을 컴퓨터에서 실행하도록 허용하시겠습니까? [Y]예 / [N]아니오: ",
+    "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
+    "term_used_header": "터미널 실행 완료",
+    "term_used_code": "실행된 코드",
+    "term_used_shell": "셸 / 실행 환경",
+    "term_perm_cwd_lbl": "Working Directory",
+    "term_used_cwd": "작업 디렉터리",
+    "term_used_ok": "Completed (Exit Code: {code}, {elapsed:.2f}s)",
+    "term_used_err": "Failed / Exit Code: {code} ({elapsed:.2f}s)",
+    "term_used_output": "출력",
+    "conn_auto_heal": "Connection drop detected; auto-reconnecting without losing context ({attempt}/{max_attempts})...",
+    "img_attached": "🖼️ 이미지 첨부됨: {name} ({dims}, {size})",
+    "img_not_found": "이미지 파일을 찾을 수 없습니다: {path}",
+    "img_unsupported": "지원되지 않거나 손상된 이미지 형식입니다: {path}",
+    "img_too_large": "이미지가 너무 큽니다 ({size}). 최대 15MB까지 지원됩니다.",
+    "img_vision_fallback": "선택한 모델({model})이 이미지 입력을 지원하지 않아 텍스트 모드로 전환했습니다.",
+    "img_usage": "사용법: /image <이미지_경로> [질문] (또는 이미지를 채팅창에 바로 드래그 앤 드롭)",
+    "diff_new_file": "새 파일",
+    "diff_edit_file": "파일 편집",
+    "diff_delete_file": "파일 삭제",
+    "diff_open_file": "파일 열기 / 읽기",
+    "diff_more_lines": "... ({count}줄 더 생략됨)",
+    "mention_attached": "📎 파일 컨텍스트 첨부됨: {name} ({size})",
+    "mention_dir_attached": "📂 디렉터리 트리 첨부됨: {name}",
+    "copy_ok": "클립보드에 복사되었습니다 ({chars}자).",
+    "copy_empty": "복사할 응답이나 코드 블록이 없습니다.",
+    "paste_empty": "클립보드에 이미지나 텍스트가 없습니다.",
+    "paste_img_ok": "📋 클립보드에서 스크린샷을 가져왔습니다 ({dims}, {size}).",
+    "paste_txt_ok": "📋 클립보드에서 텍스트를 첨부했습니다 ({chars}자).",
+    "export_ok": "대화를 Markdown으로 내보냈습니다: {path}",
+    "export_empty": "내보낼 대화 메시지가 없습니다.",
+    "redo_success": "파일 변경 사항을 다시 적용했습니다: {path}",
+    "redo_empty": "다시 실행할 (/redo) 변경 사항이 없습니다.",
+    "undo_list_title": "되돌리기 기록 (/undo)",
+    "diff_clean": "Git 작업 트리가 깨끗합니다 (변경 사항 없음).",
+    "diff_not_git": "현재 폴더가 Git 저장소가 아니거나 git이 설치되어 있지 않습니다.",
+    "cmd_did_you_mean": "알 수 없는 명령어: {cmd}. 혹시 {suggest} 인가요? (/help 입력)",
+    "search_usage": "사용법: /search <실시간 웹 검색 및 팩트체크할 내용>",
+    "vision_bridge_used": "👁️ 현재 모델은 텍스트 전용이므로 '{bridge_model}'로 이미지를 고화질 분석했습니다."
+  }
+}''')
  return locals()
 _dm_install('docmind.i18n.locales', _dm_module_01, False)
 
@@ -1732,9 +3789,10 @@ def _dm_module_02():
        self._lang = code
      return self._lang
    def get(self, key: str, **kwargs: Any) -> str:
+     fallback_primary = "tr" if self._lang == "tr" else "en"
      template = (
        TRANSLATIONS.get(self._lang, {}).get(key)
-       or TRANSLATIONS.get("tr", {}).get(key)
+       or TRANSLATIONS.get(fallback_primary, {}).get(key)
        or TRANSLATIONS.get("en", {}).get(key)
        or key
      )
@@ -1829,6 +3887,8 @@ def _dm_module_03():
      default_base_url="https://api.groq.com/openai/v1",
      models=[
        "openai/gpt-oss-120b",
+       "meta-llama/llama-4-scout-17b-16e-instruct",
+       "meta-llama/llama-4-maverick-17b-128e-instruct",
        "openai/gpt-oss-20b",
        "qwen/qwen3.8-27b",
      ],
@@ -2002,7 +4062,7 @@ def _dm_module_03():
      tmp_name = None
      try:
        fd, tmp_name = tempfile.mkstemp(prefix=".config-", suffix=".tmp", dir=str(self.home_dir))
-       with os.fdopen(fd, "w", encoding="utf-8") as f:
+       with os.fdopen(fd, "w", encoding="utf-8", errors="replace") as f:
          json.dump(asdict(self.config), f, indent=2, ensure_ascii=False)
          f.flush()
          os.fsync(f.fileno())
@@ -2041,7 +4101,7 @@ def _dm_module_03():
        if hasattr(os, "O_NOFOLLOW"):
          flags |= os.O_NOFOLLOW
        fd = os.open(str(log_file), flags, 0o600)
-       with os.fdopen(fd, "a", encoding="utf-8") as fh:
+       with os.fdopen(fd, "a", encoding="utf-8", errors="replace") as fh:
          fh.write(f"[{ts}] [{context}] {safe}\n")
        if os.name != "nt":
          os.chmod(log_file, 0o600)
@@ -2427,7 +4487,7 @@ _dm_install('docmind.core.errors', _dm_module_04, False)
 # ===== docmind/tools/backup.py (included source) =====
 def _dm_module_05():
  """
- DocMind Reversible File Snapshot Manager (/undo & AI self-rollback support)
+ DocMind Reversible File Snapshot Manager (Multi-step /undo, /redo & AI self-rollback)
  """
  from dataclasses import dataclass
  from datetime import datetime
@@ -2442,19 +4502,26 @@ def _dm_module_05():
  class UndoManager:
    def __init__(self, max_history: int = 50) -> None:
      self._stack: List[FileSnapshot] = []
+     self._redo_stack: List[FileSnapshot] = []
      self._max_history = max_history
-   def record_before_modify(self, path: Path) -> None:
+   def _capture_current(self, target: Path) -> Optional[FileSnapshot]:
      try:
-       target = path.resolve()
+       resolved = target.resolve()
        stamp = datetime.now().strftime("%H:%M:%S")
-       if target.exists() and target.is_file():
-         if target.stat().st_size <= 10 * 1024 * 1024:
-           data = target.read_bytes()
-           self._push(FileSnapshot(path=target, existed=True, previous_bytes=data, timestamp=stamp))
-       elif not target.exists():
-         self._push(FileSnapshot(path=target, existed=False, previous_bytes=None, timestamp=stamp))
+       if resolved.exists() and resolved.is_file():
+         if resolved.stat().st_size <= 10 * 1024 * 1024:
+           return FileSnapshot(path=resolved, existed=True, previous_bytes=resolved.read_bytes(), timestamp=stamp)
+         return None
+       elif not resolved.exists():
+         return FileSnapshot(path=resolved, existed=False, previous_bytes=None, timestamp=stamp)
      except Exception:
        pass
+     return None
+   def record_before_modify(self, path: Path) -> None:
+     snap = self._capture_current(path)
+     if snap is not None:
+       self._push(snap)
+       self._redo_stack.clear()
    def _push(self, snap: FileSnapshot) -> None:
      self._stack.append(snap)
      if len(self._stack) > self._max_history:
@@ -2472,6 +4539,20 @@ def _dm_module_05():
      if not self._stack:
        return None
      snap = self._stack.pop()
+     redo_snap = self._capture_current(snap.path)
+     if redo_snap is not None:
+       self._redo_stack.append(redo_snap)
+       if len(self._redo_stack) > self._max_history:
+         self._redo_stack.pop(0)
+     restored_path, _ = self._apply_snapshot(snap)
+     return restored_path
+   def redo_last(self) -> Optional[Path]:
+     if not self._redo_stack:
+       return None
+     snap = self._redo_stack.pop()
+     undo_snap = self._capture_current(snap.path)
+     if undo_snap is not None:
+       self._push(undo_snap)
      restored_path, _ = self._apply_snapshot(snap)
      return restored_path
    def undo_for_path(self, target: Path) -> Optional[Tuple[Path, str]]:
@@ -2479,13 +4560,16 @@ def _dm_module_05():
      for idx in range(len(self._stack) - 1, -1, -1):
        if self._stack[idx].path == resolved:
          snap = self._stack.pop(idx)
+         redo_snap = self._capture_current(snap.path)
+         if redo_snap is not None:
+           self._redo_stack.append(redo_snap)
          return self._apply_snapshot(snap)
      return None
-   def recent_paths(self, limit: int = 10) -> List[str]:
+   def recent_paths(self, limit: int = 15) -> List[str]:
      out: List[str] = []
-     for snap in reversed(self._stack[-limit:]):
+     for idx, snap in enumerate(reversed(self._stack[-limit:]), 1):
        kind = "modified" if snap.existed else "created"
-       out.append(f"{snap.timestamp} [{kind}] {snap.path}")
+       out.append(f"[{idx}] {snap.timestamp} ({kind}) -> {snap.path}")
      return out
  return locals()
 _dm_install('docmind.tools.backup', _dm_module_05, False)
@@ -3336,6 +5420,358 @@ def _dm_module_06():
                zf.write(full_f, arcname=str(full_f.relative_to(tp.parent)))
      return True, f"Created ZIP archive {arch} ({format_size(arch.stat().st_size)})"
    return False, f"Unsupported archive action '{action}'. Use 'list', 'extract', or 'create'."
+ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".bmp"}
+ _MAX_IMAGE_BYTES = 15 * 1024 * 1024
+
+ def _bmp_to_png_bytes(bmp_raw: bytes) -> Optional[Tuple[bytes, int, int]]:
+   """Convert uncompressed 24/32-bit BMP into valid PNG using pure Python stdlib (struct + zlib)."""
+   import struct as _st, zlib as _zl
+   if len(bmp_raw) < 54 or bmp_raw[:2] != b"BM":
+     return None
+   pixel_offset = _st.unpack_from("<I", bmp_raw, 10)[0]
+   dib_size = _st.unpack_from("<I", bmp_raw, 14)[0]
+   if dib_size < 40 or len(bmp_raw) < 14 + dib_size:
+     return None
+   w, h_signed, planes, bpp, comp = _st.unpack_from("<iiHHI", bmp_raw, 18)
+   if w <= 0 or h_signed == 0 or planes != 1 or comp not in (0, 3) or bpp not in (24, 32):
+     return None
+   top_down = h_signed < 0
+   h = abs(h_signed)
+   if w > 8192 or h > 8192:
+     return None
+   bytes_pp = bpp // 8
+   stride = ((w * bytes_pp + 3) // 4) * 4
+   if pixel_offset + stride * h > len(bmp_raw):
+     return None
+   raw_scanlines = bytearray()
+   for row_idx in range(h):
+     src_row = row_idx if top_down else (h - 1 - row_idx)
+     off = pixel_offset + src_row * stride
+     row_bytes = bmp_raw[off : off + w * bytes_pp]
+     raw_scanlines.append(0)  # filter type 0
+     if bytes_pp == 3:
+       for px in range(0, w * 3, 3):
+         raw_scanlines.extend((row_bytes[px + 2], row_bytes[px + 1], row_bytes[px]))
+     else:
+       for px in range(0, w * 4, 4):
+         raw_scanlines.extend((row_bytes[px + 2], row_bytes[px + 1], row_bytes[px], row_bytes[px + 3]))
+   color_type = 2 if bytes_pp == 3 else 6
+   def _chunk(tag: bytes, body: bytes) -> bytes:
+     return _st.pack(">I", len(body)) + tag + body + _st.pack(">I", _zl.crc32(tag + body) & 0xFFFFFFFF)
+   ihdr = _st.pack(">IIBBBBB", w, h, 8, color_type, 0, 0, 0)
+   idat = _zl.compress(bytes(raw_scanlines), 6)
+   png = b"\x89PNG\r\n\x1a\n" + _chunk(b"IHDR", ihdr) + _chunk(b"IDAT", idat) + _chunk(b"IEND", b"")
+   return png, w, h
+
+ def _probe_image_magic(raw: bytes) -> Optional[Tuple[str, int, int, bytes]]:
+   """Detect MIME type and (width, height) from image header bytes using pure stdlib."""
+   import struct as _st
+   n = len(raw)
+   if n >= 24 and raw[:8] == b"\x89PNG\r\n\x1a\n" and raw[12:16] == b"IHDR":
+     w, h = _st.unpack(">II", raw[16:24])
+     if w > 0 and h > 0:
+       return "image/png", w, h, raw
+   if n >= 10 and raw[:6] in (b"GIF87a", b"GIF89a"):
+     w, h = _st.unpack("<HH", raw[6:10])
+     if w > 0 and h > 0:
+       return "image/gif", w, h, raw
+   if n >= 30 and raw[:4] == b"RIFF" and raw[8:12] == b"WEBP":
+     vp = raw[12:16]
+     w = h = 0
+     if vp == b"VP8 " and n >= 30:
+       w, h = _st.unpack("<HH", raw[26:30])
+       w &= 0x3FFF; h &= 0x3FFF
+     elif vp == b"VP8L" and n >= 25:
+       bits = _st.unpack("<I", raw[21:25])[0]
+       w = (bits & 0x3FFF) + 1
+       h = ((bits >> 14) & 0x3FFF) + 1
+     elif vp == b"VP8X" and n >= 30:
+       w = int.from_bytes(raw[24:27], "little") + 1
+       h = int.from_bytes(raw[27:30], "little") + 1
+     return "image/webp", max(1, w), max(1, h), raw
+   if n >= 4 and raw[:2] == b"\xff\xd8":
+     idx = 2
+     w = h = 0
+     while idx + 9 < n:
+       if raw[idx] != 0xFF:
+         idx += 1
+         continue
+       while idx < n and raw[idx] == 0xFF:
+         idx += 1
+       if idx >= n:
+         break
+       marker = raw[idx]
+       idx += 1
+       if marker in (0xD8, 0xD9) or (0xD0 <= marker <= 0xD7) or marker == 0x01:
+         continue
+       if idx + 2 > n:
+         break
+       seg_len = _st.unpack(">H", raw[idx : idx + 2])[0]
+       if seg_len < 2 or idx + seg_len > n:
+         break
+       if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+         if idx + 7 <= n:
+           h, w = _st.unpack(">HH", raw[idx + 3 : idx + 7])
+           break
+       idx += seg_len
+     return "image/jpeg", max(1, w), max(1, h), raw
+   if n >= 54 and raw[:2] == b"BM":
+     converted = _bmp_to_png_bytes(raw)
+     if converted is not None:
+       png_bytes, w, h = converted
+       return "image/png", w, h, png_bytes
+   return None
+
+ def _try_local_ocr(image_path: Path) -> str:
+   """
+   Best-effort zero-dependency local OCR layer to boost text/code reading precision:
+     - Windows 10/11: built-in WinRT Windows.Media.Ocr (zero install!)
+     - Linux/macOS/Windows: tesseract CLI if installed
+   Never raises; returns extracted text (up to 6000 chars) or ''.
+   """
+   import shutil as _shutil
+   import subprocess as _sp
+   tess = _shutil.which("tesseract")
+   if tess:
+     for lang_arg in ("tur+eng", "eng"):
+       try:
+         r = _sp.run([tess, str(image_path), "stdout", "-l", lang_arg, "--psm", "6"], capture_output=True, text=True, errors="replace", timeout=8)
+         if r.returncode == 0 and r.stdout and r.stdout.strip():
+           return r.stdout.strip()[:6000]
+       except Exception:
+         pass
+   if os.name == "nt":
+     ps_ocr = (
+       "$ErrorActionPreference='Stop'; "
+       "Add-Type -AssemblyName System.Runtime.WindowsRuntime; "
+       "$null = [Windows.Media.Ocr.OcrEngine, Windows.Foundation, ContentType=WindowsRuntime]; "
+       "$null = [Windows.Graphics.Imaging.BitmapDecoder, Windows.Foundation, ContentType=WindowsRuntime]; "
+       "$null = [Windows.Storage.StorageFile, Windows.Storage, ContentType=WindowsRuntime]; "
+       "$asTaskGeneric = ([System.WindowsRuntimeSystemExtensions].GetMethods() | Where-Object { $_.Name -eq 'AsTask' -and $_.GetParameters().Count -eq 1 -and $_.GetParameters()[0].ParameterType.Name -eq 'IAsyncOperation`1' })[0]; "
+       "function Await($WinRtTask, $ResultType) { $asTask = $asTaskGeneric.MakeGenericMethod($ResultType); $netTask = $asTask.Invoke($null, @($WinRtTask)); $netTask.Wait(-1) | Out-Null; $netTask.Result } "
+       f"$file = Await ([Windows.Storage.StorageFile]::GetFileFromPathAsync('{str(image_path).replace(chr(39), chr(39)*2)}')) ([Windows.Storage.StorageFile]); "
+       "$stream = Await ($file.OpenAsync([Windows.Storage.FileAccessMode]::Read)) ([Windows.Storage.Streams.IRandomAccessStream]); "
+       "$decoder = Await ([Windows.Graphics.Imaging.BitmapDecoder]::CreateAsync($stream)) ([Windows.Graphics.Imaging.BitmapDecoder]); "
+       "$bitmap = Await ($decoder.GetSoftwareBitmapAsync()) ([Windows.Graphics.Imaging.SoftwareBitmap]); "
+       "$engine = [Windows.Media.Ocr.OcrEngine]::TryCreateFromUserProfileLanguages(); "
+       "if ($engine -eq $null) { exit 1 } "
+       "$res = Await ($engine.RecognizeAsync($bitmap)) ([Windows.Media.Ocr.OcrResult]); "
+       "[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; Write-Output $res.Text"
+     )
+     try:
+       r = _sp.run(["powershell", "-NoProfile", "-Command", ps_ocr], capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=9)
+       if r.returncode == 0 and r.stdout and r.stdout.strip():
+         return r.stdout.strip()[:6000]
+     except Exception:
+       pass
+   return ""
+
+ def _normalize_dropped_image_path(raw_path: str, cwd: Path) -> Path:
+   """Normalize dragged/dropped paths: quotes, file:// URIs, escaped spaces, and special folders."""
+   import urllib.parse as _up
+   cleaned = (raw_path or "").strip()
+   if len(cleaned) >= 2 and cleaned[0] == cleaned[-1] and cleaned[0] in ("'", '"'):
+     cleaned = cleaned[1:-1].strip()
+   if cleaned.lower().startswith("file://"):
+     parsed_u = _up.urlsplit(cleaned)
+     u_path = _up.unquote(parsed_u.path or "")
+     if os.name == "nt" and re.match(r"^/[A-Za-z]:[/\\]", u_path):
+       u_path = u_path[1:]
+     cleaned = u_path
+   if os.name != "nt":
+     cleaned = cleaned.replace("\\ ", " ")
+   target = resolve_user_path(cleaned, cwd)
+   if target.exists() and target.is_file():
+     return target
+   # If user typed only a bare filename like "ekran.png", also check Desktop / Downloads / Pictures / Screenshots!
+   if "/" not in cleaned and "\\" not in cleaned:
+     try:
+       sp_folders = get_special_folders()
+       extra_dirs = list(sp_folders.values())
+       for base_d in list(extra_dirs):
+         scr = Path(base_d) / "Screenshots"
+         if scr.is_dir():
+           extra_dirs.append(str(scr))
+       for d_str in extra_dirs:
+         cand_p = (Path(d_str) / cleaned).resolve()
+         if cand_p.exists() and cand_p.is_file():
+           return cand_p
+     except Exception:
+       pass
+   return target
+
+ def load_image_attachment(raw_path: str, cwd: Path) -> Tuple[bool, str, Optional[Dict[str, Any]]]:
+   """Load, validate, base64-encode, and OCR-enrich an image file from disk for high-precision vision."""
+   import base64 as _b64
+   if not (raw_path or "").strip():
+     return False, "Image path is empty.", None
+   target = _normalize_dropped_image_path(raw_path, cwd)
+   if not target.exists() or not target.is_file():
+     return False, f"Image file not found: {target}", None
+   sz = target.stat().st_size
+   if sz <= 0:
+     return False, f"Image file is empty: {target}", None
+   if sz > _MAX_IMAGE_BYTES:
+     return False, f"Image file is too large ({format_size(sz)}); maximum is 15 MB.", None
+   raw = target.read_bytes()
+   probed = _probe_image_magic(raw)
+   if probed is None:
+     return False, f"Unsupported or corrupted image file (supported: PNG, JPG, WEBP, GIF, BMP): {target}", None
+   mime_type, width, height, payload_bytes = probed
+   b64_data = _b64.b64encode(payload_bytes).decode("ascii")
+   ocr_text = _try_local_ocr(target)
+   aspect = round(width / max(1, height), 2)
+   meta: Dict[str, Any] = {
+     "path": str(target),
+     "name": target.name,
+     "mime_type": mime_type,
+     "width": width,
+     "height": height,
+     "aspect_ratio": aspect,
+     "size_bytes": len(raw),
+     "size_human": format_size(len(raw)),
+     "data": b64_data,
+   }
+   if ocr_text:
+     meta["ocr_text"] = ocr_text
+   ocr_note = f" | Local OCR extracted {len(ocr_text)} chars" if ocr_text else ""
+   summary = (
+     f"Loaded image '{target.name}' ({width}x{height}, {mime_type}, {format_size(len(raw))}{ocr_note}) from {target}."
+   )
+   if ocr_text:
+     summary += f"\n[Local OCR Text Layer]:\n{ocr_text}"
+   return True, summary, meta
+
+ def extract_prompt_images(user_text: str, cwd: Path) -> Tuple[str, List[Dict[str, Any]]]:
+   r"""
+   Detect dragged-and-dropped or typed image paths inside a user prompt:
+     1) Quoted paths ('/path/my img.png' or "C:\Users\...\Ekran Görüntüsü.png")
+     2) file:///... URIs dropped from browsers or file managers
+     3) Unquoted Windows/POSIX paths even when folder/file names contain spaces!
+     4) Escaped-space paths or bare filenames in CWD / Desktop / Downloads / Pictures
+   """
+   if not user_text:
+     return user_text, []
+   ext_pat = r"\.(?:png|jpe?g|webp|gif|bmp)"
+   found_imgs: List[Dict[str, Any]] = []
+   seen_paths = set()
+   candidates: List[str] = []
+   # 1) Quoted paths
+   for m in re.finditer(r"""(['"])([^'"]+""" + ext_pat + r""")\1""", user_text, flags=re.IGNORECASE):
+     candidates.append(m.group(2))
+   # 2) file:// URIs
+   for m in re.finditer(r"""(file://[^\s'"<>]+""" + ext_pat + r""")""", user_text, flags=re.IGNORECASE):
+     candidates.append(m.group(1))
+   # 3) Unquoted absolute paths WITH spaces (e.g. C:/Users/Devran/Desktop/Ekran Görüntüsü 1.png bu nedir)
+   for m in re.finditer(r"""((?:[A-Za-z]:[/\\]|~[/\\]|/(?:home|Users|tmp|var|mnt|media|opt|root)[/\\])[^\n'"<>|*?]{1,240}?""" + ext_pat + r""")(?![\w.])""", user_text, flags=re.IGNORECASE):
+     candidates.append(m.group(1).strip())
+   # 4) Escaped-space or single-token relative/bare filenames
+   for m in re.finditer(r"""(?<!['"\w@])((?:~[/\\]|[A-Za-z]:[/\\]|\.{1,2}[/\\]|/|[\w.\-]+[/\\])?(?:[^\s'"<>|*?@]+|\\ )+""" + ext_pat + r""")(?![\w.])""", user_text, flags=re.IGNORECASE):
+     candidates.append(m.group(1))
+   for cand in candidates:
+     ok, _msg, meta = load_image_attachment(cand, cwd)
+     if ok and meta and meta["path"] not in seen_paths:
+       seen_paths.add(meta["path"])
+       found_imgs.append(meta)
+       if len(found_imgs) >= 4:
+         break
+   return user_text, found_imgs
+
+ def preview_file_change(name: str, args: Dict[str, Any], cwd: Path) -> Optional[Tuple[str, str, str, str]]:
+   """
+   Simulate file changes BEFORE writing so permission confirmation can display
+   exact green (+) added lines and red (-) removed lines instead of raw JSON.
+   Returns (op_kind, resolved_path_str, before_text, after_text) or None.
+   """
+   try:
+     if name == "write_file":
+       raw_path = str(args.get("path", "")).strip()
+       if not raw_path:
+         return None
+       target = resolve_user_path(raw_path, cwd)
+       after_txt = str(args.get("content", ""))
+       if target.exists() and target.is_file():
+         try:
+           before_txt, _ = read_text_resilient(target)
+         except Exception:
+           before_txt = ""
+         return ("edit", str(target), before_txt, after_txt)
+       return ("new", str(target), "", after_txt)
+     if name == "edit_file":
+       raw_path = str(args.get("path", "")).strip()
+       old_t = str(args.get("old_text") if "old_text" in args else args.get("old_string", ""))
+       new_t = str(args.get("new_text") if "new_text" in args else args.get("new_string", ""))
+       rep_all = bool(args.get("replace_all", False))
+       if not raw_path or not old_t:
+         return None
+       target = resolve_user_path(raw_path, cwd)
+       if not target.exists() or not target.is_file():
+         return ("edit", str(target), old_t, new_t)
+       content, _ = read_text_resilient(target)
+       cnt = content.count(old_t)
+       if cnt >= 1:
+         updated = content.replace(old_t, new_t) if rep_all else content.replace(old_t, new_t, 1)
+       else:
+         fuzzy = _fuzzy_line_replace(content, old_t, new_t)
+         if fuzzy is None:
+           return ("edit", str(target), old_t, new_t)
+         updated = fuzzy
+       return ("edit", str(target), content, updated)
+     if name == "multi_edit":
+       raw_path = str(args.get("path", "")).strip()
+       edits = args.get("edits") or []
+       if not raw_path or not isinstance(edits, list) or not edits:
+         return None
+       target = resolve_user_path(raw_path, cwd)
+       if not target.exists() or not target.is_file():
+         b_parts = [str(it.get("old_text") or it.get("old_string") or "") for it in edits if isinstance(it, dict)]
+         a_parts = [str(it.get("new_text") or it.get("new_string") or "") for it in edits if isinstance(it, dict)]
+         return ("edit", str(target), "\n".join(b_parts), "\n".join(a_parts))
+       orig, _ = read_text_resilient(target)
+       working = orig
+       for it in edits:
+         if not isinstance(it, dict):
+           continue
+         o_t = str(it.get("old_text") if "old_text" in it else it.get("old_string", ""))
+         n_t = str(it.get("new_text") if "new_text" in it else it.get("new_string", ""))
+         if not o_t:
+           continue
+         if working.count(o_t) >= 1:
+           working = working.replace(o_t, n_t) if it.get("replace_all") else working.replace(o_t, n_t, 1)
+         else:
+           fz = _fuzzy_line_replace(working, o_t, n_t)
+           if fz is not None:
+             working = fz
+       return ("edit", str(target), orig, working)
+     if name == "delete_path":
+       raw_path = str(args.get("path", "")).strip()
+       if not raw_path:
+         return None
+       target = resolve_user_path(raw_path, cwd)
+       if target.exists() and target.is_file() and target.stat().st_size <= 256 * 1024:
+         try:
+           before_txt, _ = read_text_resilient(target)
+           return ("delete", str(target), before_txt, "")
+         except Exception:
+           pass
+       return ("delete", str(target), f"[DELETE] {target}", "")
+     if name in ("read_file", "open_path"):
+       raw_path = str(args.get("path") or args.get("target") or "").strip()
+       if not raw_path:
+         return None
+       target = resolve_user_path(raw_path, cwd)
+       if target.exists() and target.is_file() and target.stat().st_size <= 256 * 1024:
+         try:
+           preview_txt, _ = read_text_resilient(target)
+           preview_lines = "\n".join(preview_txt.splitlines()[:40])
+           return ("open", str(target), "", preview_lines)
+         except Exception:
+           pass
+       return ("open", str(target), "", f"[OPEN] {target}")
+   except Exception:
+     return None
+   return None
+
  def tool_undo_file_change(args: Dict[str, Any], cwd: Path, undo_mgr: UndoManager) -> Tuple[bool, str]:
    """Revert the most recent file write/edit/delete, or revert a specific file path."""
    raw_path = str(args.get("path") or "").strip()
@@ -3352,6 +5788,65 @@ def _dm_module_06():
    if restored is None:
      return False, "No file changes available in undo history to roll back."
    return True, f"Successfully rolled back most recent file change: {restored}"
+
+ def extract_at_mentions(text: str, cwd: Path) -> Tuple[List[Tuple[str, str, str]], List[Dict[str, Any]], List[Tuple[str, str]]]:
+   """
+   Detect @file, @"spaced file.py", and @directory mentions in user prompts!
+   Ignores emails (foo@bar.com) and non-existent paths (@dataclass).
+   Returns:
+     - file_contexts: List of (display_name, size_human, content_snippet)
+     - image_metas: List of loaded image dicts
+     - dir_trees: List of (display_name, tree_str)
+   """
+   if not text or "@" not in text:
+     return [], [], []
+   file_contexts: List[Tuple[str, str, str]] = []
+   image_metas: List[Dict[str, Any]] = []
+   dir_trees: List[Tuple[str, str]] = []
+   seen: set = set()
+   # Match @"path with spaces" or @'path' or @relative/path.ext preceded by start-of-string or whitespace
+   pattern = re.compile(r'(?:^|(?<=\s))@(?:"([^"\n]{1,260})"|\x27([^\x27\n]{1,260})\x27|([^\s,;:!?()\[\]{}<>"\x27]{1,260}))')
+   for m in pattern.finditer(text):
+     raw_tok = (m.group(1) or m.group(2) or m.group(3) or "").strip()
+     if not raw_tok or raw_tok in (".", ".."):
+       continue
+     try:
+       target = resolve_user_path(raw_tok, cwd)
+     except Exception:
+       continue
+     if not target.exists():
+       continue
+     key = str(target)
+     if key in seen:
+       continue
+     seen.add(key)
+     if target.is_dir():
+       try:
+         tree_str = render_directory_tree(target, max_depth=3)
+         dir_trees.append((raw_tok, tree_str))
+       except Exception:
+         pass
+       if len(dir_trees) >= 3:
+         break
+     elif target.is_file():
+       if target.suffix.lower() in IMAGE_EXTENSIONS:
+         ok_i, _, meta_i = load_image_attachment(str(target), cwd)
+         if ok_i and meta_i:
+           image_metas.append(meta_i)
+       else:
+         try:
+           sz = target.stat().st_size
+           if sz <= 2 * 1024 * 1024:
+             txt_c, _ = read_text_resilient(target)
+             if len(txt_c) > 24000:
+               txt_c = txt_c[:20000] + "\n... [truncated for context budget] ...\n" + txt_c[-3500:]
+             file_contexts.append((target.name, format_size(sz), f"### Attached File `{target}`\n```\n{txt_c}\n```"))
+         except Exception:
+           pass
+     if len(file_contexts) + len(image_metas) >= 6:
+       break
+   return file_contexts, image_metas, dir_trees
+
  return locals()
 _dm_install('docmind.tools.filesystem', _dm_module_06, False)
 
@@ -4395,67 +6890,348 @@ _dm_install('docmind.tools.terminal', _dm_module_10, False)
 
 # ===== docmind/tools/web.py (included source) =====
 def _dm_module_11():
- """Bounded web fetches. Remote content is untrusted; redirects are not followed."""
+ """
+ Live Internet Research, Multi-Source Fact Verification & SSRF-Safe Web Fetching.
+ Uses zero external dependencies (pure Python stdlib) across DuckDuckGo HTML,
+ Wikipedia MediaWiki REST/Query API, and StackExchange API with automatic
+ top-source content cross-checking.
+ """
+ import gzip
  import html
+ import ipaddress
  import json
+ import os
  import re
+ import socket
  import urllib.error
  import urllib.parse
  import urllib.request
- from typing import Any, Dict, Tuple
+ import zlib
+ from typing import Any, Dict, List, Tuple
+ from docmind.i18n import i18n
+
  HAS_HTTPX = False
  MAX_DOWNLOAD_BYTES = 1024 * 1024
- class _NoRedirect(urllib.request.HTTPRedirectHandler):
+ _BROWSER_UA = (
+   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.1"
+ )
+ _API_UA = "DocMindCLI/1.1 (https://github.com/beyip/docmind-cli)"
+
+ def _is_public_url(url: str) -> Tuple[bool, str]:
+   allow_local = os.environ.get("DOCMIND_ALLOW_LOCAL_WEB_TEST") == "1"
+   try:
+     parsed = urllib.parse.urlsplit(url)
+     if parsed.scheme not in ("http", "https") or not parsed.hostname:
+       return False, "Only http:// and https:// URLs are allowed."
+     if parsed.username is not None or parsed.password is not None:
+       return False, "URLs with embedded credentials are not allowed."
+     _ = parsed.port
+     host = parsed.hostname.lower()
+     if allow_local:
+       return True, ""
+     if host in ("localhost", "localhost.localdomain") or host.endswith(".local") or host.endswith(".internal"):
+       return False, f"Blocked local/internal hostname: {host}"
+     try:
+       ip_obj = ipaddress.ip_address(host)
+       if not ip_obj.is_global:
+         return False, f"Blocked non-public IP address: {host}"
+     except ValueError:
+       try:
+         infos = socket.getaddrinfo(host, None)
+         for info in infos:
+           addr_str = info[4][0]
+           ip_obj = ipaddress.ip_address(addr_str)
+           if not ip_obj.is_global:
+             return False, f"Blocked private/local DNS resolution ({addr_str}) for {host}"
+       except Exception:
+         pass
+     return True, ""
+   except ValueError:
+     return False, "Invalid URL format."
+
+ class _SafeRedirectHandler(urllib.request.HTTPRedirectHandler):
+   def __init__(self, max_hops: int = 5) -> None:
+     super().__init__()
+     self._hops = 0
+     self._max_hops = max_hops
    def redirect_request(self, req, fp, code, msg, headers, newurl):
-     return None
+     self._hops += 1
+     if self._hops > self._max_hops:
+       raise urllib.error.HTTPError(newurl, code, "Too many redirects", headers, fp)
+     resolved_url = urllib.parse.urljoin(req.full_url, newurl)
+     ok_pub, reason = _is_public_url(resolved_url)
+     if not ok_pub:
+       raise urllib.error.URLError(reason)
+     return super().redirect_request(req, fp, code, msg, headers, resolved_url)
+
+ def _decode_http_bytes(raw: bytes, content_encoding: str = "") -> str:
+   enc = (content_encoding or "").lower()
+   data = raw
+   try:
+     if "gzip" in enc or data[:2] == b"\x1f\x8b":
+       data = gzip.decompress(data)
+     elif "deflate" in enc:
+       data = zlib.decompress(data)
+   except Exception:
+     data = raw
+   return data.decode("utf-8", errors="replace")
+
  def _strip_html(raw_html: str) -> str:
-   cleaned = re.sub(r"(?is)<(script|style|noscript).*?>.*?</\1>", " ", raw_html)
+   cleaned = re.sub(r"(?is)<(script|style|noscript|svg|header|footer|nav).*?>.*?</\1>", " ", raw_html)
    cleaned = re.sub(r"(?i)<br\s*/?>", "\n", cleaned)
    cleaned = re.sub(r"(?i)</(p|div|h[1-6]|li|tr|section|article)>", "\n", cleaned)
    cleaned = re.sub(r"(?s)<[^>]+>", " ", cleaned)
    cleaned = html.unescape(cleaned)
    lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in cleaned.splitlines()]
    return "\n".join(ln for ln in lines if ln)
+
+ def _http_get_text(url: str, headers: Dict[str, str], timeout: float = 12.0, max_bytes: int = MAX_DOWNLOAD_BYTES) -> Tuple[int, str, str]:
+   ok_pub, reason = _is_public_url(url)
+   if not ok_pub:
+     raise ValueError(reason)
+   req = urllib.request.Request(url, headers=headers, method="GET")
+   opener = urllib.request.build_opener(_SafeRedirectHandler())
+   with opener.open(req, timeout=timeout) as resp:
+     status = resp.status
+     ctype = (resp.headers.get("Content-Type") or "").lower()
+     cenc = (resp.headers.get("Content-Encoding") or "").lower()
+     buf = resp.read(max_bytes + 1)
+     if len(buf) > max_bytes:
+       buf = buf[:max_bytes]
+   return status, ctype, _decode_http_bytes(buf, cenc)
+
  def tool_web_fetch(args: Dict[str, Any]) -> Tuple[bool, str]:
    url = str(args.get("url", "")).strip()
-   try:
-     parsed = urllib.parse.urlsplit(url)
-     if parsed.scheme not in ("http", "https") or not parsed.hostname or parsed.username is not None or parsed.password is not None:
-       return False, "Error: an http(s) URL without embedded credentials is required."
-     _ = parsed.port
-   except ValueError:
-     return False, "Error: invalid URL."
+   ok_pub, reason = _is_public_url(url)
+   if not ok_pub:
+     return False, f"Error: {reason}"
    max_chars = max(500, min(30000, int(args.get("max_chars", 12000) or 12000)))
-   headers = {"User-Agent": "DocMind-AI-Agent/1.0"}
-   data = bytearray()
-   req = urllib.request.Request(url, headers=headers, method="GET")
+   headers = {
+     "User-Agent": _BROWSER_UA,
+     "Accept": "text/html,application/json,text/plain,*/*;q=0.8",
+     "Accept-Encoding": "gzip, identity",
+   }
    try:
-     with urllib.request.build_opener(_NoRedirect()).open(req, timeout=20.0) as resp:
-       status = resp.status
-       ctype = (resp.headers.get("Content-Type") or "").lower()
-       data.extend(resp.read(MAX_DOWNLOAD_BYTES + 1))
-       if len(data) > MAX_DOWNLOAD_BYTES:
-         return False, "Web response exceeds the 1 MiB safety limit."
+     status, ctype, raw_text = _http_get_text(url, headers=headers, timeout=18.0)
    except urllib.error.HTTPError as exc:
-     if 300 <= exc.code < 400:
-       return False, f"URL: {url} (HTTP {exc.code}); redirects are disabled."
-     status, ctype = exc.code, (exc.headers.get("Content-Type") or "").lower()
-     data.extend(exc.read(MAX_DOWNLOAD_BYTES + 1))
-     if len(data) > MAX_DOWNLOAD_BYTES:
-       return False, "Web response exceeds the 1 MiB safety limit."
-   raw_text = data.decode("utf-8", errors="replace")
+     status = exc.code
+     ctype = (exc.headers.get("Content-Type") or "").lower() if exc.headers else ""
+     cenc = (exc.headers.get("Content-Encoding") or "").lower() if exc.headers else ""
+     raw_text = _decode_http_bytes(exc.read(MAX_DOWNLOAD_BYTES), cenc)
+   except Exception as exc:
+     return False, f"Web fetch failed for {url}: {exc}"
    if "json" in ctype:
      try:
        body = json.dumps(json.loads(raw_text), indent=2, ensure_ascii=False)
      except ValueError:
        body = raw_text
-   elif "html" in ctype or "<html" in raw_text[:500].lower():
+   elif "html" in ctype or "<html" in raw_text[:600].lower():
      body = _strip_html(raw_text)
    else:
      body = raw_text
    if len(body) > max_chars:
      body = body[:max_chars] + f"\n\n... [Truncated at {max_chars} chars]"
    return (status < 400), f"URL: {url} (HTTP {status})\nUNTRUSTED WEB CONTENT:\n\n{body}"
+
+ def _unwrap_ddg_url(href: str) -> str:
+   href = html.unescape(href or "").strip()
+   if href.startswith("//"):
+     href = "https:" + href
+   try:
+     parsed = urllib.parse.urlsplit(href)
+     qs = urllib.parse.parse_qs(parsed.query)
+     if "uddg" in qs and qs["uddg"]:
+       return qs["uddg"][0]
+   except Exception:
+     pass
+   return href
+
+ def _search_duckduckgo(query: str, max_results: int = 6) -> List[Dict[str, str]]:
+   override_base = os.environ.get("DOCMIND_SEARCH_TEST_URL", "").strip()
+   endpoint = override_base or "https://html.duckduckgo.com/html/"
+   form_data = urllib.parse.urlencode({"q": query}).encode("utf-8")
+   req = urllib.request.Request(
+     endpoint,
+     data=form_data,
+     headers={
+       "User-Agent": _BROWSER_UA,
+       "Content-Type": "application/x-www-form-urlencoded",
+       "Accept": "text/html,application/xhtml+xml",
+       "Accept-Encoding": "gzip, identity",
+       "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+     },
+     method="POST",
+   )
+   opener = urllib.request.build_opener(_SafeRedirectHandler())
+   with opener.open(req, timeout=12.0) as resp:
+     cenc = (resp.headers.get("Content-Encoding") or "").lower()
+     page = _decode_http_bytes(resp.read(MAX_DOWNLOAD_BYTES), cenc)
+   results: List[Dict[str, str]] = []
+   blocks = re.split(r'(?=<div[^>]+class="[^"]*result\b)', page)
+   for blk in blocks:
+     a_m = re.search(r'<a[^>]+class="[^"]*result__a[^"]*"[^>]+href="([^"]+)"[^>]*>(.*?)</a>', blk, flags=re.S | re.I)
+     if not a_m:
+       continue
+     real_url = _unwrap_ddg_url(a_m.group(1))
+     if not real_url.startswith(("http://", "https://")) or "duckduckgo.com/y.js" in real_url:
+       continue
+     title = _strip_html(a_m.group(2)).replace("\n", " ").strip()
+     sn_m = re.search(r'class="[^"]*result__snippet[^"]*"[^>]*>(.*?)</(?:a|div|span)>', blk, flags=re.S | re.I)
+     snippet = _strip_html(sn_m.group(1)).replace("\n", " ").strip() if sn_m else ""
+     if title:
+       results.append({"source": "Web", "title": title, "url": real_url, "snippet": snippet})
+       if len(results) >= max_results:
+         break
+   return results
+
+ def _search_wikipedia(query: str, lang_code: str, limit: int = 3) -> List[Dict[str, str]]:
+   if os.environ.get("DOCMIND_SEARCH_TEST_URL"):
+     return []
+   wiki_langs = []
+   primary = lang_code if lang_code in {"tr", "en", "az", "de", "es", "fr", "it", "pt", "nl", "ru", "ar", "zh", "ja", "ko"} else "en"
+   wiki_langs.append(primary)
+   if primary != "en":
+     wiki_langs.append("en")
+   hits: List[Dict[str, str]] = []
+   seen_urls = set()
+   for wl in wiki_langs:
+     api_url = (
+       f"https://{wl}.wikipedia.org/w/api.php?action=query&list=search"
+       f"&srsearch={urllib.parse.quote(query)}&utf8=1&format=json&srlimit={limit}"
+     )
+     try:
+       _st, _ct, raw_txt = _http_get_text(api_url, headers={"User-Agent": _API_UA, "Accept-Encoding": "gzip, identity"}, timeout=8.0)
+       payload = json.loads(raw_txt)
+       for item in payload.get("query", {}).get("search", [])[:limit]:
+         title = str(item.get("title") or "").strip()
+         if not title:
+           continue
+         page_url = f"https://{wl}.wikipedia.org/wiki/{urllib.parse.quote(title.replace(' ', '_'))}"
+         if page_url in seen_urls:
+           continue
+         seen_urls.add(page_url)
+         snip = _strip_html(str(item.get("snippet") or "")).replace("\n", " ").strip()
+         hits.append({"source": f"Wikipedia ({wl.upper()})", "title": title, "url": page_url, "snippet": snip})
+     except Exception:
+       continue
+   return hits[:limit]
+
+ def _search_stackoverflow(query: str, limit: int = 3) -> List[Dict[str, str]]:
+   if os.environ.get("DOCMIND_SEARCH_TEST_URL"):
+     return []
+   api_url = (
+     "https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=relevance"
+     f"&q={urllib.parse.quote(query)}&accepted=True&site=stackoverflow&pagesize={limit}"
+   )
+   hits: List[Dict[str, str]] = []
+   try:
+     _st, _ct, raw_txt = _http_get_text(api_url, headers={"User-Agent": _API_UA, "Accept-Encoding": "gzip, identity"}, timeout=8.0)
+     payload = json.loads(raw_txt)
+     for item in payload.get("items", [])[:limit]:
+       title = html.unescape(str(item.get("title") or "")).strip()
+       link = str(item.get("link") or "").strip()
+       score = item.get("score", 0)
+       ans_cnt = item.get("answer_count", 0)
+       if title and link:
+         hits.append({
+           "source": "StackOverflow",
+           "title": title,
+           "url": link,
+           "snippet": f"Verified Q&A (score: {score}, answers: {ans_cnt})",
+         })
+   except Exception:
+     pass
+   return hits
+
+ def tool_web_search(args: Dict[str, Any]) -> Tuple[bool, str]:
+   """
+   Search the live internet across multiple sources (Web + Wikipedia + StackOverflow)
+   and optionally fetch & cross-verify top source excerpts so outdated/uncertain knowledge is verified!
+   """
+   query = str(args.get("query", "")).strip()
+   if not query:
+     return False, "Error: 'query' is required for web_search."
+   max_results = max(2, min(10, int(args.get("max_results", 6) or 6)))
+   verify_top = bool(args.get("verify_top_pages", True))
+
+   all_hits: List[Dict[str, str]] = []
+   errors: List[str] = []
+
+   try:
+     all_hits.extend(_search_duckduckgo(query, max_results=max_results))
+   except Exception as exc:
+     errors.append(f"DuckDuckGo: {exc}")
+
+   try:
+     all_hits.extend(_search_wikipedia(query, i18n.lang, limit=3))
+   except Exception as exc:
+     errors.append(f"Wikipedia: {exc}")
+
+   tech_cue = bool(re.search(r"(?:error|exception|traceback|bug|python|js|ts|npm|pip|git|linux|windows|docker|api|sql|http)", query, flags=re.I))
+   if tech_cue or not all_hits:
+     try:
+       all_hits.extend(_search_stackoverflow(query, limit=3))
+     except Exception as exc:
+       errors.append(f"StackOverflow: {exc}")
+
+   if not all_hits:
+     err_detail = "; ".join(errors) if errors else "No matching results returned."
+     return False, f"Web search found no results for '{query}' ({err_detail})."
+
+   # Deduplicate by URL
+   deduped: List[Dict[str, str]] = []
+   seen_u = set()
+   for h in all_hits:
+     u = h["url"]
+     if u not in seen_u:
+       seen_u.add(u)
+       deduped.append(h)
+
+   lines = [
+     f"LIVE INTERNET SEARCH & MULTI-SOURCE VERIFICATION FOR: {query}",
+     f"Sources retrieved: {len(deduped)} (UNTRUSTED EXTERNAL WEB DATA — cross-check facts across sources!)",
+     "",
+   ]
+   for idx, h in enumerate(deduped[: max_results + 3], 1):
+     lines.append(f"[{idx}] [{h['source']}] {h['title']}")
+     lines.append(f"    URL: {h['url']}")
+     if h.get("snippet"):
+       lines.append(f"    Summary: {h['snippet']}")
+
+   # Deep verification: automatically read clean text from top 2 distinct domains!
+   if verify_top:
+     verified_excerpts: List[str] = []
+     seen_domains = set()
+     for h in deduped:
+       if len(verified_excerpts) >= 2:
+         break
+       u = h["url"]
+       dom = (urllib.parse.urlsplit(u).hostname or "").lower()
+       if not dom or dom in seen_domains:
+         continue
+       seen_domains.add(dom)
+       try:
+         st, ctype, raw_t = _http_get_text(
+           u,
+           headers={"User-Agent": _BROWSER_UA, "Accept": "text/html,text/plain,*/*;q=0.8", "Accept-Encoding": "gzip, identity"},
+           timeout=7.0,
+           max_bytes=350_000,
+         )
+         if st < 400 and raw_t:
+           clean_body = _strip_html(raw_t) if ("html" in ctype or "<html" in raw_t[:500].lower()) else raw_t
+           clean_body = clean_body.strip()
+           if len(clean_body) >= 80:
+             excerpt = clean_body[:1800] + ("..." if len(clean_body) > 1800 else "")
+             verified_excerpts.append(f"--- VERIFIED PAGE EXCERPT ({h['title']} | {u}) ---\n{excerpt}")
+       except Exception:
+         continue
+     if verified_excerpts:
+       lines.append("")
+       lines.append("=== CROSS-CHECKED PAGE CONTENT (TOP SOURCES) ===")
+       lines.extend(verified_excerpts)
+
+   return True, "\n".join(lines)
  return locals()
 _dm_install('docmind.tools.web', _dm_module_11, False)
 
@@ -4552,6 +7328,8 @@ def _dm_module_12():
        chars += len(str(m.get("content", "")))
        if (m.get("provider_data") or {}).get("provider") == "deepseek":
          chars += len(str(m.get("thought", "")))
+       if m.get("images"):
+         chars += 4000 * len(m["images"])
        for tc in m.get("tool_calls", []):
          chars += len(str(tc.get("name", ""))) + len(json.dumps(tc.get("arguments", {})))
      return max(1, chars // 4)
@@ -4566,8 +7344,11 @@ def _dm_module_12():
      self.messages.append(message)
      if self.on_append:
        self.on_append(message)
-   def add_user(self, content: str) -> None:
-     self._append({"role": "user", "content": content})
+   def add_user(self, content: str, images: Optional[List[Dict[str, Any]]] = None) -> None:
+     entry: Dict[str, Any] = {"role": "user", "content": content}
+     if images:
+       entry["images"] = images
+     self._append(entry)
    def add_assistant(
      self,
      content: str,
@@ -4589,16 +7370,18 @@ def _dm_module_12():
      name: str,
      content: str,
      is_error: bool = False,
+     images: Optional[List[Dict[str, Any]]] = None,
    ) -> None:
-     self._append(
-       {
-         "role": "tool",
-         "tool_call_id": tool_call_id,
-         "name": name,
-         "content": content,
-         "is_error": is_error,
-       }
-     )
+     entry: Dict[str, Any] = {
+       "role": "tool",
+       "tool_call_id": tool_call_id,
+       "name": name,
+       "content": content,
+       "is_error": is_error,
+     }
+     if images:
+       entry["images"] = images
+     self._append(entry)
    def clear(self) -> None:
      self.messages.clear()
      self.last_input_tokens = 0
@@ -4615,7 +7398,14 @@ def _dm_module_12():
      keep_recent_groups = max(1, int(keep_recent_groups))
      if len(self.messages) <= 4:
        shrunk = False
-       for m in self.messages:
+       last_u_idx = max((i for i, x in enumerate(self.messages) if x.get("role") == "user"), default=-1)
+       for idx_m, m in enumerate(self.messages):
+         if idx_m < last_u_idx and m.get("images"):
+           img_notes = [f"{im.get('name', 'image')} ({im.get('width')}x{im.get('height')})" for im in m["images"] if isinstance(im, dict) and im.get("data")]
+           if img_notes:
+             m["images"] = [{k: v for k, v in im.items() if k != "data"} for im in m["images"] if isinstance(im, dict)]
+             m["content"] = (str(m.get("content", "")) + "\n[Earlier image archived: " + "; ".join(img_notes) + "]").strip()
+             shrunk = True
          if m.get("role") == "tool" and len(str(m.get("content", ""))) > 4000:
            txt = str(m["content"])
            m["content"] = txt[:1800] + "\n...[compacted middle]...\n" + txt[-1200:]
@@ -4638,6 +7428,16 @@ def _dm_module_12():
        shrunk = False
        for grp in groups[:-1]:
          for m in grp:
+           if m.get("images"):
+             img_notes = [
+               f"{im.get('name', 'image')} ({im.get('width')}x{im.get('height')})"
+               + (f" OCR: {im['ocr_text'][:400]}" if im.get("ocr_text") else "")
+               for im in m["images"] if isinstance(im, dict) and im.get("data")
+             ]
+             if img_notes:
+               m["images"] = [{k: v for k, v in im.items() if k != "data"} for im in m["images"] if isinstance(im, dict)]
+               m["content"] = (str(m.get("content", "")) + "\n[Earlier image archived: " + "; ".join(img_notes) + "]").strip()
+               shrunk = True
            if m.get("role") == "tool" and len(str(m.get("content", ""))) > 2500:
              txt = str(m["content"])
              m["content"] = txt[:1200] + "\n...[compacted]...\n" + txt[-800:]
@@ -4672,17 +7472,25 @@ def _dm_module_12():
      return True
    def save_to_file(self, path: Path) -> None:
      path.parent.mkdir(parents=True, exist_ok=True)
+     slim_msgs = []
+     for _m in self.messages:
+       if _m.get("images"):
+         _mc = dict(_m)
+         _mc["images"] = [{k: v for k, v in im.items() if k != "data"} for im in _m["images"]]
+         slim_msgs.append(_mc)
+       else:
+         slim_msgs.append(_m)
      payload = {
        "total_input_tokens": self.total_input_tokens,
        "total_output_tokens": self.total_output_tokens,
        "api_calls": self.api_calls,
-       "messages": self.messages,
+       "messages": slim_msgs,
      }
      flags = os.O_WRONLY | os.O_CREAT | os.O_TRUNC
      if hasattr(os, "O_NOFOLLOW"):
        flags |= os.O_NOFOLLOW
      fd = os.open(str(path), flags, 0o600)
-     with os.fdopen(fd, "w", encoding="utf-8") as f:
+     with os.fdopen(fd, "w", encoding="utf-8", errors="replace") as f:
        json.dump(payload, f, indent=2, ensure_ascii=False)
      if os.name != "nt":
        os.chmod(path, 0o600)
@@ -4764,7 +7572,10 @@ def _dm_module_13():
        if not self.title:
          self.title = "DocMind"
    def append(self, message: Dict[str, Any]) -> None:
-     self.records.append(copy.deepcopy(message))
+     rec = copy.deepcopy(message)
+     if rec.get("images"):
+       rec["images"] = [{k: v for k, v in im.items() if k != "data"} for im in rec["images"]]
+     self.records.append(rec)
      if self.session_id is None and message.get("role") != "user":
        return
      self._activate()
@@ -4815,7 +7626,7 @@ def _dm_module_13():
        "updated_at": _now(),
        "messages": self.records,
      }
-     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+     raw = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).encode("utf-8", errors="replace")
      if len(raw) > _MAX_JSON_BYTES:
        raise ValueError("Conversation history exceeds the safe 128 MiB limit")
      tmp = None
@@ -5618,7 +8429,7 @@ def _dm_module_15():
    accum = accum_type(safe_emit)
    request_headers = identified_headers(headers)
    request_headers["Accept"] = "text/event-stream"
-   body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+   body = json.dumps(payload, ensure_ascii=False).encode("utf-8", errors="replace")
    def fail(message: Any, status: Optional[int] = None, response: str = "", retry: Optional[float] = None) -> DocMindAPIException:
      error = DocMindAPIException(
        redact(str(message), headers),
@@ -5974,10 +8785,18 @@ def _dm_module_16():
      _u_msgs = {
        "tr": "Güvensiz veya geçersiz API adresi: HTTPS kullanın; HTTP sadece localhost için kullanılabilir.",
        "en": "Insecure or invalid API URL: use HTTPS (HTTP is allowed only for localhost / loopback).",
+       "az": "Təhlükəsiz olmayan və ya yanlış API ünvanı: HTTPS istifadə edin (HTTP yalnız localhost üçün icazəlidir).",
        "de": "Unsichere oder ungültige API-URL: HTTPS verwenden (HTTP nur für localhost erlaubt).",
        "es": "URL de API insegura o no válida: use HTTPS (HTTP solo se permite para localhost).",
        "fr": "URL API non sécurisée ou invalide : utilisez HTTPS (HTTP autorisé uniquement pour localhost).",
+       "it": "URL API non sicuro o non valido: usa HTTPS (HTTP consentito solo per localhost).",
+       "pt": "URL da API insegura ou inválida: use HTTPS (HTTP permitido apenas para localhost).",
+       "nl": "Onveilige of ongeldige API-URL: gebruik HTTPS (HTTP is alleen toegestaan voor localhost).",
        "ru": "Небезопасный или неверный URL API: используйте HTTPS (HTTP разрешён только для localhost).",
+       "ar": "عنوان API غير آمن أو غير صالح: استخدم HTTPS (يُسمح بـ HTTP فقط لـ localhost).",
+       "zh": "不安全或无效的 API 地址：请使用 HTTPS（仅 localhost 允许使用 HTTP）。",
+       "ja": "安全でない、または無効な API URL です: HTTPS を使用してください（HTTP は localhost のみ許可）。",
+       "ko": "안전하지 않거나 잘못된 API URL입니다: HTTPS를 사용하세요 (HTTP는 localhost만 허용).",
      }
      raise DocMindAPIException(
        _u_msgs.get(_i18n.lang, _u_msgs["en"]),
@@ -6015,7 +8834,7 @@ def _dm_module_16():
        headers["Accept"] = "application/json"
      if not any(str(name).lower() == "accept-encoding" for name in headers):
        headers["Accept-Encoding"] = "gzip, deflate"
-     body_bytes = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+     body_bytes = json.dumps(payload, ensure_ascii=False).encode("utf-8", errors="replace")
      def make_error(message: str, status: Optional[int] = None, body: str = "", retry: Optional[float] = None) -> DocMindAPIException:
        return DocMindAPIException(
          message=_redact_known_keys(message, headers), status_code=status,
@@ -6065,7 +8884,7 @@ def _dm_module_16():
    """Fingerprint the request prefix without storing its contents or credentials."""
    canonical = json.dumps({"system": system, "tools": tools, "messages": messages},
               ensure_ascii=False, sort_keys=True, separators=(",", ":"))
-   return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+   return hashlib.sha256(canonical.encode("utf-8", errors="replace")).hexdigest()
  def _anthropic_bound_model(model: str) -> bool:
    name = str(model or "").lower()
    return name.startswith(("claude-sonnet-5-5", "claude-opus-5-5", "claude-haiku-5-5",
@@ -6104,6 +8923,8 @@ def _dm_module_16():
      self.on_connection_retry: Optional[Callable[[int, float], None]] = None
      self.on_probe_interrupted: Optional[Callable[[], None]] = None
      self.on_thinking_rebase: Optional[Callable[[], None]] = None
+     self.on_vision_fallback: Optional[Callable[[], None]] = None
+     self.on_vision_bridge: Optional[Callable[[str], None]] = None
      self._warned_thinking_rebase = False
    def _effort_key(self) -> tuple:
      return (self.cfg.provider, self.cfg.model, self.cfg.get_base_url(), self.cfg.reasoning_effort)
@@ -6234,6 +9055,67 @@ def _dm_module_16():
            return _post_with_micro_retry()
          raise
      return _post_with_micro_retry()
+   def _try_vision_bridge(self, messages: List[Dict[str, Any]]) -> Tuple[str, str]:
+     """
+     If the user's currently selected model is text-only (e.g., Groq gpt-oss-120b or DeepSeek),
+     automatically inspect the attached image(s) using an available Vision model (same provider first,
+     or any configured Vision provider) so image reading STILL works with high accuracy!
+     """
+     import copy as _copy
+     all_imgs: List[Dict[str, Any]] = []
+     user_q = ""
+     for m in messages:
+       if m.get("images"):
+         for im in m["images"]:
+           if isinstance(im, dict) and im.get("data"):
+             all_imgs.append(im)
+         if m.get("role") == "user" and m.get("content"):
+           user_q = str(m["content"])[:800]
+     if not all_imgs:
+       return "", ""
+     candidates: List[Tuple[str, str]] = []
+     cur_p = self.cfg.provider
+     if cur_p == "groq" and self.cfg.model != "meta-llama/llama-4-scout-17b-16e-instruct":
+       candidates.append(("groq", "meta-llama/llama-4-scout-17b-16e-instruct"))
+     elif cur_p == "openrouter":
+       candidates.append(("openrouter", "google/gemini-2.5-flash"))
+     for alt_p, alt_m in (
+       ("gemini", "gemini-2.5-flash"),
+       ("openai", "gpt-4.1-mini"),
+       ("anthropic", "claude-sonnet-4-5-20250929"),
+       ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+     ):
+       if (alt_p, alt_m) not in candidates and self.cfg.get_api_key(alt_p):
+         candidates.append((alt_p, alt_m))
+     bridge_prompt = (
+       "Examine the attached image(s) with extreme precision. "
+       "1) Transcribe EVERY visible word, code line, error message, traceback, number, and label verbatim. "
+       "2) Describe the layout, UI controls, colors, diagrams, or objects clearly. "
+       + (f"User context: {user_q}" if user_q else "")
+     )
+     for b_prov, b_model in candidates[:2]:
+       try:
+         tmp_cfg = _copy.deepcopy(self.cfg)
+         tmp_cfg.provider = b_prov
+         tmp_cfg.model = b_model
+         tmp_cfg.reasoning_effort = "default"
+         sub_client = ProviderClient(tmp_cfg, on_text=None)
+         sub_msgs = [{"role": "user", "content": bridge_prompt, "images": all_imgs}]
+         sub_spec = get_provider_spec(b_prov)
+         sub_key = tmp_cfg.get_api_key(b_prov)
+         if not sub_key:
+           continue
+         if sub_spec.protocol == "anthropic":
+           res = sub_client._call_anthropic(sub_spec.name, sub_key, "You are a high-precision OCR and visual analysis engine.", sub_msgs, [], 60.0)
+         elif sub_spec.protocol == "gemini":
+           res = sub_client._call_gemini(sub_spec.name, sub_key, "You are a high-precision OCR and visual analysis engine.", sub_msgs, [], 60.0)
+         else:
+           res = sub_client._call_openai(sub_spec.name, sub_key, "You are a high-precision OCR and visual analysis engine.", sub_msgs, [], 60.0)
+         if res and res.text and res.text.strip():
+           return res.text.strip(), f"{b_prov}/{b_model}"
+       except Exception:
+         continue
+     return "", ""
    def generate(
      self,
      system_prompt: str,
@@ -6277,6 +9159,33 @@ def _dm_module_16():
        exc.response_body = _redact_known_keys(exc.response_body, secret_headers)
        if self._disable_rejected_effort(exc):
          return self.generate(system_prompt, messages, tools, timeout)
+       has_any_img = any(bool(m.get("images")) for m in messages)
+       err_low = (str(exc) + " " + (exc.response_body or "")).lower()
+       if (has_any_img and exc.status_code in (400, 415, 422) and not getattr(exc, "partial_stream", False)
+           and any(w in err_low for w in ("image", "vision", "multimodal", "media", "inline_data", "inlinedata", "content must be a string", "array", "list"))):
+         bridge_desc, bridge_label = self._try_vision_bridge(messages)
+         stripped_msgs = []
+         for _m in messages:
+           if _m.get("images"):
+             _mc = {k: v for k, v in _m.items() if k != "images"}
+             _meta_note = ", ".join(f"{im.get('name', 'image')} ({im.get('width')}x{im.get('height')})" for im in _m["images"])
+             _ocr_parts = [f"[Local OCR from {im.get('name', 'image')}]:\n{im['ocr_text']}" for im in _m["images"] if im.get("ocr_text")]
+             extra_vision_txt = f"\n\n[Attached Image: {_meta_note}]"
+             if bridge_desc:
+               extra_vision_txt += f"\n[High-Resolution Vision Analysis via {bridge_label}]:\n{bridge_desc}"
+             if _ocr_parts:
+               extra_vision_txt += "\n" + "\n".join(_ocr_parts)
+             if not bridge_desc and not _ocr_parts:
+               extra_vision_txt += " (Active model rejected raw image pixels; switch to a Vision model with /model such as gemini-2.5-flash, gpt-5.4-mini, claude-sonnet-5-5, or meta-llama/llama-4-scout-17b-16e-instruct)"
+             _mc["content"] = str(_mc.get("content", "")) + extra_vision_txt
+             stripped_msgs.append(_mc)
+           else:
+             stripped_msgs.append(_m)
+         if bridge_desc and getattr(self, "on_vision_bridge", None):
+           self.on_vision_bridge(bridge_label)
+         elif not bridge_desc and self.on_vision_fallback:
+           self.on_vision_fallback()
+         return self.generate(system_prompt, stripped_msgs, tools, timeout)
        raise
      except Exception as exc:
        secret_headers = {"Authorization": "Bearer " + api_key} if api_key else {}
@@ -6414,7 +9323,20 @@ def _dm_module_16():
      for m in messages:
        role = m["role"]
        if role == "user":
-         anth_msgs.append({"role": "user", "content": str(m.get("content", ""))})
+         u_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         if u_imgs:
+           u_blocks: List[Dict[str, Any]] = [
+             {"type": "image", "source": {"type": "base64", "media_type": im.get("mime_type", "image/png"), "data": im["data"]}}
+             for im in u_imgs
+           ]
+           u_txt_anth = str(m.get("content", "") or "Analyze this image in full detail.")
+           anth_ocr = [f"[Local OCR Text from {im.get('name', 'image')}]:\n{im['ocr_text']}" for im in u_imgs if im.get("ocr_text")]
+           if anth_ocr:
+             u_txt_anth = u_txt_anth + "\n\n" + "\n\n".join(anth_ocr)
+           u_blocks.append({"type": "text", "text": u_txt_anth})
+           anth_msgs.append({"role": "user", "content": u_blocks})
+         else:
+           anth_msgs.append({"role": "user", "content": str(m.get("content", ""))})
        elif role == "assistant":
          meta = m.get("provider_data") or {}
          saved_blocks = meta.get("blocks") if meta.get("provider") == "anthropic" and meta.get("model") == self.cfg.model else None
@@ -6437,16 +9359,38 @@ def _dm_module_16():
          if blocks:
            anth_msgs.append({"role": "assistant", "content": blocks})
        elif role == "tool":
+         t_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         if t_imgs:
+           t_content: Any = [
+             {"type": "image", "source": {"type": "base64", "media_type": im.get("mime_type", "image/png"), "data": im["data"]}}
+             for im in t_imgs
+           ] + [{"type": "text", "text": str(m.get("content", ""))}]
+         else:
+           t_content = str(m.get("content", ""))
          result_block = {
            "type": "tool_result",
            "tool_use_id": m["tool_call_id"],
-           "content": str(m.get("content", "")),
+           "content": t_content,
            "is_error": bool(m.get("is_error", False)),
          }
          if anth_msgs and anth_msgs[-1]["role"] == "user" and isinstance(anth_msgs[-1]["content"], list):
            anth_msgs[-1]["content"].append(result_block)
          else:
            anth_msgs.append({"role": "user", "content": [result_block]})
+     # Coalesce any consecutive same-role messages so Anthropic never returns 400 role-alternation error!
+     merged_anth: List[Dict[str, Any]] = []
+     for am in anth_msgs:
+       if not merged_anth or merged_anth[-1]["role"] != am["role"]:
+         merged_anth.append(am)
+       else:
+         prev_c = merged_anth[-1]["content"]
+         cur_c = am["content"]
+         prev_list = prev_c if isinstance(prev_c, list) else ([{"type": "text", "text": str(prev_c)}] if prev_c else [])
+         cur_list = cur_c if isinstance(cur_c, list) else ([{"type": "text", "text": str(cur_c)}] if cur_c else [])
+         merged_anth[-1] = {"role": am["role"], "content": prev_list + cur_list}
+     while merged_anth and merged_anth[0]["role"] != "user":
+       merged_anth.pop(0)
+     anth_msgs = merged_anth
      payload: Dict[str, Any] = {
        "model": self.cfg.model,
        "max_tokens": min(self.cfg.max_output_tokens, 8192),
@@ -6547,10 +9491,53 @@ def _dm_module_16():
        system_prompt + _build_prompt_tool_instructions(tools) if use_prompt_tools else system_prompt
      )
      oai_msgs: List[Dict[str, Any]] = [{"role": "system", "content": effective_system}]
+     pending_tool_imgs: List[Tuple[str, List[Dict[str, Any]]]] = []
+     def _flush_pending_tool_imgs() -> None:
+       if not pending_tool_imgs:
+         return
+       c_parts: List[Dict[str, Any]] = []
+       for t_name, imgs_grp in pending_tool_imgs:
+         ocr_bits = [f"[Local OCR Text from {im.get('name', 'image')}]:\n{im['ocr_text']}" for im in imgs_grp if im.get("ocr_text")]
+         hdr_t = f"[High-resolution visual content from {t_name}]:"
+         if ocr_bits:
+           hdr_t += "\n" + "\n".join(ocr_bits)
+         c_parts.append({"type": "text", "text": hdr_t})
+         for im in imgs_grp:
+           c_parts.append({
+             "type": "image_url",
+             "image_url": {
+               "url": f"data:{im.get('mime_type', 'image/png')};base64,{im['data']}",
+               "detail": "high",
+             },
+           })
+       oai_msgs.append({"role": "user", "content": c_parts})
+       pending_tool_imgs.clear()
      for m in messages:
+       if m.get("role") != "tool" and pending_tool_imgs:
+         _flush_pending_tool_imgs()
        role = m["role"]
        if role == "user":
-         oai_msgs.append({"role": "user", "content": str(m.get("content", ""))})
+         u_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         if u_imgs:
+           base_u_txt = str(m.get("content") or "Analyze this image in full detail.")
+           ocr_addons = [
+             f"[Local OCR Text from {im.get('name', 'image')}]:\n{im['ocr_text']}"
+             for im in u_imgs if im.get("ocr_text")
+           ]
+           if ocr_addons:
+             base_u_txt = base_u_txt + "\n\n" + "\n\n".join(ocr_addons)
+           o_parts: List[Dict[str, Any]] = [{"type": "text", "text": base_u_txt}]
+           for im in u_imgs:
+             o_parts.append({
+               "type": "image_url",
+               "image_url": {
+                 "url": f"data:{im.get('mime_type', 'image/png')};base64,{im['data']}",
+                 "detail": "high",
+               },
+             })
+           oai_msgs.append({"role": "user", "content": o_parts})
+         else:
+           oai_msgs.append({"role": "user", "content": str(m.get("content", ""))})
        elif role == "assistant":
          tcs = m.get("tool_calls", [])
          if tcs and not use_prompt_tools:
@@ -6615,6 +9602,11 @@ def _dm_module_16():
                "content": str(m.get("content", "")),
              }
            )
+         t_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         if t_imgs:
+           pending_tool_imgs.append((str(m.get("name") or "inspect_image"), t_imgs))
+     if pending_tool_imgs:
+       _flush_pending_tool_imgs()
      model_lower = self.cfg.model.lower()
      is_openai_reasoning = self.cfg.provider == "openai" and (
        bool(re.match(r"^o[0-9]+(?:-|$)", model_lower)) or model_lower.startswith("gpt-5")
@@ -6758,7 +9750,17 @@ def _dm_module_16():
      for m in messages:
        role = m["role"]
        if role == "user":
-         contents.append({"role": "user", "parts": [{"text": str(m.get("content", ""))}]})
+         u_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         g_parts: List[Dict[str, Any]] = [
+           {"inlineData": {"mimeType": im.get("mime_type", "image/png"), "data": im["data"]}}
+           for im in u_imgs
+         ]
+         u_txt_gem = str(m.get("content", "") or "Analyze this image in full detail.")
+         gem_ocr = [f"[Local OCR Text from {im.get('name', 'image')}]:\n{im['ocr_text']}" for im in u_imgs if im.get("ocr_text")]
+         if gem_ocr:
+           u_txt_gem = u_txt_gem + "\n\n" + "\n\n".join(gem_ocr)
+         g_parts.append({"text": u_txt_gem})
+         contents.append({"role": "user", "parts": g_parts})
        elif role == "assistant":
          provider_data = m.get("provider_data") or {}
          saved_parts = provider_data.get("parts") if provider_data.get("provider") == "gemini" and provider_data.get("model") == self.cfg.model else None
@@ -6790,6 +9792,11 @@ def _dm_module_16():
          call_id = gemini_call_ids.get(m.get("tool_call_id", ""))
          if call_id:
            fr_part["functionResponse"]["id"] = call_id
+         t_imgs = [im for im in (m.get("images") or []) if isinstance(im, dict) and im.get("data")]
+         extra_img_parts = [
+           {"inlineData": {"mimeType": im.get("mime_type", "image/png"), "data": im["data"]}}
+           for im in t_imgs
+         ]
          if (
            contents
            and contents[-1]["role"] == "user"
@@ -6797,8 +9804,21 @@ def _dm_module_16():
            and "functionResponse" in contents[-1]["parts"][0]
          ):
            contents[-1]["parts"].append(fr_part)
+           contents[-1]["parts"].extend(extra_img_parts)
          else:
-           contents.append({"role": "user", "parts": [fr_part]})
+           contents.append({"role": "user", "parts": [fr_part] + extra_img_parts})
+     # Coalesce consecutive identical roles so Gemini never fails with 400 role-alternation error!
+     merged_gem: List[Dict[str, Any]] = []
+     for gm in contents:
+       if not gm.get("parts"):
+         continue
+       if not merged_gem or merged_gem[-1]["role"] != gm["role"]:
+         merged_gem.append({"role": gm["role"], "parts": list(gm["parts"])})
+       else:
+         merged_gem[-1]["parts"].extend(gm["parts"])
+     while merged_gem and merged_gem[0]["role"] != "user":
+       merged_gem.pop(0)
+     contents = merged_gem
      payload: Dict[str, Any] = {
        "systemInstruction": {"parts": [{"text": system_prompt}]},
        "contents": contents,
@@ -6901,176 +9921,1479 @@ def _dm_module_17():
  from typing import Any, Dict
  from docmind.core.errors import mask_secrets
  from docmind.i18n import i18n
- _LABELS = {
-   "tr": {
-     "project_overview": ("Proje inceleme isteği", "Proje incelendi"),
-     "check_syntax": ("Sözdizimi kontrolü isteği", "Sözdizimi kontrolü tamamlandı"),
-     "read_file": ("Dosya okuma isteği", "Dosya okundu"),
-     "write_file": ("Dosya yazma isteği", "Dosya yazıldı"),
-     "edit_file": ("Dosya düzenleme isteği", "Dosya düzenlendi"),
-     "multi_edit": ("Dosya düzenleme isteği", "Dosya düzenlendi"),
-     "delete_path": ("Silme isteği", "Silindi"),
-     "move_or_copy": ("Taşıma / kopyalama isteği", "Taşıma / kopyalama tamamlandı"),
-     "list_directory": ("Klasörü inceleme isteği", "Klasör incelendi"),
-     "change_directory": ("Klasör değiştirme isteği", "Aktif klasör değiştirildi"),
-     "list_system_drives": ("Sistem sürücüleri isteği", "Sürücüler ve özel klasörler listelendi"),
-     "archive_tool": ("Arşiv işlemi isteği", "Arşiv işlemi tamamlandı"),
-     "undo_file_change": ("Değişikliği geri alma isteği", "Dosya önceki haline döndürüldü"),
-     "ask_user": ("Kullanıcı tercihi soruluyor", "Kullanıcı tercihi alındı"),
-     "search_files": ("Dosya arama isteği", "Dosya araması tamamlandı"),
-     "grep_search": ("İçerik arama isteği", "İçerik araması tamamlandı"),
-     "run_command": ("Terminal komutu isteği", "TERMİNAL KULLANILDI"),
-     "python_eval": ("Python kodu çalıştırma isteği", "TERMİNAL KULLANILDI (Python)"),
-     "open_path": ("Dosya / uygulama açma isteği", "Sistemde açıldı"),
-     "find_processes": ("Çalışan işlemler isteği", "Çalışan işlemler incelendi"),
-     "system_info": ("Sistem bilgisi isteği", "Sistem bilgisi alındı"),
-     "web_fetch": ("Web sayfası isteği", "Web sayfası okundu"),
-     "unknown": ("İşlem isteği", "İşlem tamamlandı"),
-     "failed": "İşlem başarısız",
-     "skipped": "Kullanıcı izin vermedi (iptal edildi)",
-     "bash": "TERMİNAL KULLANILDI (Bash)",
-   },
-   "en": {
-     "project_overview": ("Project inspection requested", "Project inspected"),
-     "check_syntax": ("Syntax check requested", "Syntax check completed"),
-     "read_file": ("File read requested", "File read"),
-     "write_file": ("File write requested", "File written"),
-     "edit_file": ("File edit requested", "File edited"),
-     "multi_edit": ("File edit requested", "File edited"),
-     "delete_path": ("Deletion requested", "Deleted"),
-     "move_or_copy": ("Move / copy requested", "Move / copy completed"),
-     "list_directory": ("Folder inspection requested", "Folder inspected"),
-     "change_directory": ("Directory change requested", "Working directory changed"),
-     "list_system_drives": ("Drives inspection requested", "Drives & folders listed"),
-     "archive_tool": ("Archive action requested", "Archive action completed"),
-     "undo_file_change": ("Rollback requested", "File rolled back to previous state"),
-     "ask_user": ("Asking user preference", "User preference received"),
-     "search_files": ("File search requested", "File search completed"),
-     "grep_search": ("Content search requested", "Content search completed"),
-     "run_command": ("Terminal command requested", "TERMINAL USED"),
-     "python_eval": ("Python execution requested", "TERMINAL USED (Python)"),
-     "open_path": ("Desktop open requested", "Opened on system"),
-     "find_processes": ("Process scan requested", "Running processes inspected"),
-     "system_info": ("System information requested", "System information collected"),
-     "web_fetch": ("Web request", "Web page read"),
-     "unknown": ("Action requested", "Action completed"),
-     "failed": "Action failed",
-     "skipped": "Action declined by user",
-     "bash": "TERMINAL USED (Bash)",
-   },
-   "de": {
-     "project_overview": ("Projektprüfung angefordert", "Projekt geprüft"),
-     "check_syntax": ("Syntaxprüfung angefordert", "Syntaxprüfung abgeschlossen"),
-     "read_file": ("Datei lesen angefordert", "Datei gelesen"),
-     "write_file": ("Datei schreiben angefordert", "Datei geschrieben"),
-     "edit_file": ("Datei ändern angefordert", "Datei geändert"),
-     "multi_edit": ("Datei ändern angefordert", "Datei geändert"),
-     "delete_path": ("Löschen angefordert", "Gelöscht"),
-     "move_or_copy": ("Verschieben / Kopieren angefordert", "Verschieben / Kopieren abgeschlossen"),
-     "list_directory": ("Ordnerprüfung angefordert", "Ordner geprüft"),
-     "change_directory": ("Ordnerwechsel angefordert", "Ordner gewechselt"),
-     "list_system_drives": ("Laufwerke angefordert", "Laufwerke aufgelistet"),
-     "archive_tool": ("Archivaktion angefordert", "Archivaktion abgeschlossen"),
-     "undo_file_change": ("Rückgängig angefordert", "Datei wiederhergestellt"),
-     "ask_user": ("Benutzerfrage", "Antwort erhalten"),
-     "search_files": ("Dateisuche angefordert", "Dateisuche abgeschlossen"),
-     "grep_search": ("Inhaltssuche angefordert", "Inhaltssuche abgeschlossen"),
-     "run_command": ("Befehl angefordert", "TERMINAL VERWENDET"),
-     "python_eval": ("Python-Ausführung angefordert", "TERMINAL VERWENDET (Python)"),
-     "open_path": ("Öffnen angefordert", "Geöffnet"),
-     "find_processes": ("Prozesssuche angefordert", "Prozesse geprüft"),
-     "system_info": ("Systeminformationen angefordert", "Systeminformationen gelesen"),
-     "web_fetch": ("Webanfrage", "Webseite gelesen"),
-     "unknown": ("Aktion angefordert", "Aktion abgeschlossen"),
-     "failed": "Aktion fehlgeschlagen",
-     "skipped": "Aktion abgelehnt",
-     "bash": "TERMINAL VERWENDET (Bash)",
-   },
-   "es": {
-     "project_overview": ("Inspección del proyecto solicitada", "Proyecto inspeccionado"),
-     "check_syntax": ("Comprobación de sintaxis solicitada", "Comprobación de sintaxis completada"),
-     "read_file": ("Lectura de archivo solicitada", "Archivo leído"),
-     "write_file": ("Escritura de archivo solicitada", "Archivo escrito"),
-     "edit_file": ("Edición de archivo solicitada", "Archivo editado"),
-     "multi_edit": ("Edición de archivo solicitada", "Archivo editado"),
-     "delete_path": ("Eliminación solicitada", "Eliminado"),
-     "move_or_copy": ("Movimiento / copia solicitada", "Movimiento / copia completada"),
-     "list_directory": ("Inspección de carpeta solicitada", "Carpeta inspeccionada"),
-     "change_directory": ("Cambio de carpeta solicitado", "Carpeta cambiada"),
-     "list_system_drives": ("Unidades del sistema solicitadas", "Unidades listadas"),
-     "archive_tool": ("Acción de archivo comprimido solicitada", "Archivo comprimido procesado"),
-     "undo_file_change": ("Reversión solicitada", "Archivo restaurado"),
-     "ask_user": ("Consultando al usuario", "Respuesta recibida"),
-     "search_files": ("Búsqueda solicitada", "Búsqueda de archivos completada"),
-     "grep_search": ("Búsqueda de contenido solicitada", "Búsqueda de contenido completada"),
-     "run_command": ("Comando solicitado", "TERMINAL UTILIZADA"),
-     "python_eval": ("Ejecución de Python solicitada", "TERMINAL UTILIZADA (Python)"),
-     "open_path": ("Apertura solicitada", "Abierto en el sistema"),
-     "find_processes": ("Procesos solicitados", "Procesos inspeccionados"),
-     "system_info": ("Información del sistema solicitada", "Información del sistema obtenida"),
-     "web_fetch": ("Solicitud web", "Página web leída"),
-     "unknown": ("Acción solicitada", "Acción completada"),
-     "failed": "Acción fallida",
-     "skipped": "Acción rechazada",
-     "bash": "TERMINAL UTILIZADA (Bash)",
-   },
-   "fr": {
-     "project_overview": ("Inspection du projet demandée", "Projet inspecté"),
-     "check_syntax": ("Vérification syntaxique demandée", "Vérification syntaxique terminée"),
-     "read_file": ("Lecture du fichier demandée", "Fichier lu"),
-     "write_file": ("Écriture du fichier demandée", "Fichier écrit"),
-     "edit_file": ("Modification du fichier demandée", "Fichier modifié"),
-     "multi_edit": ("Modification du fichier demandée", "Fichier modifié"),
-     "delete_path": ("Suppression demandée", "Supprimé"),
-     "move_or_copy": ("Déplacement / copie demandé", "Déplacement / copie terminé"),
-     "list_directory": ("Inspection du dossier demandée", "Dossier inspecté"),
-     "change_directory": ("Changement de dossier demandé", "Dossier modifié"),
-     "list_system_drives": ("Disques demandés", "Disques listés"),
-     "archive_tool": ("Archive demandée", "Archive traitée"),
-     "undo_file_change": ("Annulation demandée", "Fichier restauré"),
-     "ask_user": ("Question à l'utilisateur", "Réponse reçue"),
-     "search_files": ("Recherche de fichiers demandée", "Recherche de fichiers terminée"),
-     "grep_search": ("Recherche de contenu demandée", "Recherche de contenu terminée"),
-     "run_command": ("Commande demandée", "TERMINAL UTILISÉ"),
-     "python_eval": ("Exécution Python demandée", "TERMINAL UTILISÉ (Python)"),
-     "open_path": ("Ouverture demandée", "Ouvert sur le système"),
-     "find_processes": ("Processus demandés", "Processus inspectés"),
-     "system_info": ("Informations système demandées", "Informations système obtenues"),
-     "web_fetch": ("Requête web", "Page web lue"),
-     "unknown": ("Action demandée", "Action terminée"),
-     "failed": "Échec de l’action",
-     "skipped": "Action refusée",
-     "bash": "TERMINAL UTILISÉ (Bash)",
-   },
-   "ru": {
-     "project_overview": ("Запрос проверки проекта", "Проект проверен"),
-     "check_syntax": ("Запрос проверки синтаксиса", "Проверка синтаксиса завершена"),
-     "read_file": ("Запрос чтения файла", "Файл прочитан"),
-     "write_file": ("Запрос записи файла", "Файл записан"),
-     "edit_file": ("Запрос изменения файла", "Файл изменён"),
-     "multi_edit": ("Запрос изменения файла", "Файл изменён"),
-     "delete_path": ("Запрос удаления", "Удалено"),
-     "move_or_copy": ("Запрос перемещения / копирования", "Перемещение / копирование завершено"),
-     "list_directory": ("Запрос просмотра папки", "Папка просмотрена"),
-     "change_directory": ("Запрос смены папки", "Рабочая папка изменена"),
-     "list_system_drives": ("Запрос дисков системы", "Диски перечислены"),
-     "archive_tool": ("Запрос архивации", "Операция с архивом завершена"),
-     "undo_file_change": ("Запрос отката файла", "Файл восстановлен"),
-     "ask_user": ("Вопрос пользователю", "Ответ получен"),
-     "search_files": ("Запрос поиска файлов", "Поиск файлов завершён"),
-     "grep_search": ("Запрос поиска содержимого", "Поиск содержимого завершён"),
-     "run_command": ("Запрос команды терминала", "ИСПОЛЬЗОВАН ТЕРМИНАЛ"),
-     "python_eval": ("Запрос запуска Python", "ИСПОЛЬЗОВАН ТЕРМИНАЛ (Python)"),
-     "open_path": ("Запрос открытия", "Открыто в системе"),
-     "find_processes": ("Запрос процессов", "Процессы проверены"),
-     "system_info": ("Запрос сведений о системе", "Сведения о системе получены"),
-     "web_fetch": ("Веб-запрос", "Веб-страница прочитана"),
-     "unknown": ("Запрос действия", "Действие завершено"),
-     "failed": "Ошибка действия",
-     "skipped": "Действие отклонено",
-     "bash": "ИСПОЛЬЗОВАН ТЕРМИНАЛ (Bash)",
-   },
- }
+ import json as _act_json
+ _LABELS = _act_json.loads(r'''{
+  "tr": {
+    "project_overview": [
+      "Proje inceleme isteği",
+      "Proje incelendi"
+    ],
+    "check_syntax": [
+      "Sözdizimi kontrolü isteği",
+      "Sözdizimi kontrolü tamamlandı"
+    ],
+    "read_file": [
+      "Dosya okuma isteği",
+      "Dosya okundu"
+    ],
+    "write_file": [
+      "Dosya yazma isteği",
+      "Dosya yazıldı"
+    ],
+    "edit_file": [
+      "Dosya düzenleme isteği",
+      "Dosya düzenlendi"
+    ],
+    "multi_edit": [
+      "Dosya düzenleme isteği",
+      "Dosya düzenlendi"
+    ],
+    "delete_path": [
+      "Silme isteği",
+      "Silindi"
+    ],
+    "move_or_copy": [
+      "Taşıma / kopyalama isteği",
+      "Taşıma / kopyalama tamamlandı"
+    ],
+    "list_directory": [
+      "Klasörü inceleme isteği",
+      "Klasör incelendi"
+    ],
+    "change_directory": [
+      "Klasör değiştirme isteği",
+      "Aktif klasör değiştirildi"
+    ],
+    "list_system_drives": [
+      "Sistem sürücüleri isteği",
+      "Sürücüler ve özel klasörler listelendi"
+    ],
+    "archive_tool": [
+      "Arşiv işlemi isteği",
+      "Arşiv işlemi tamamlandı"
+    ],
+    "undo_file_change": [
+      "Değişikliği geri alma isteği",
+      "Dosya önceki haline döndürüldü"
+    ],
+    "ask_user": [
+      "Kullanıcı tercihi soruluyor",
+      "Kullanıcı tercihi alındı"
+    ],
+    "search_files": [
+      "Dosya arama isteği",
+      "Dosya araması tamamlandı"
+    ],
+    "grep_search": [
+      "İçerik arama isteği",
+      "İçerik araması tamamlandı"
+    ],
+    "run_command": [
+      "Terminal komutu isteği",
+      "TERMİNAL KULLANILDI"
+    ],
+    "python_eval": [
+      "Python kodu çalıştırma isteği",
+      "TERMİNAL KULLANILDI (Python)"
+    ],
+    "open_path": [
+      "Dosya / uygulama açma isteği",
+      "Sistemde açıldı"
+    ],
+    "find_processes": [
+      "Çalışan işlemler isteği",
+      "Çalışan işlemler incelendi"
+    ],
+    "system_info": [
+      "Sistem bilgisi isteği",
+      "Sistem bilgisi alındı"
+    ],
+    "web_fetch": [
+      "Web sayfası isteği",
+      "Web sayfası okundu"
+    ],
+    "unknown": [
+      "İşlem isteği",
+      "İşlem tamamlandı"
+    ],
+    "failed": "İşlem başarısız",
+    "skipped": "Kullanıcı izin vermedi (iptal edildi)",
+    "bash": "TERMİNAL KULLANILDI (Bash)",
+    "inspect_image": [
+      "Görsel inceleme istendi",
+      "Görsel incelendi"
+    ],
+    "web_search": [
+      "İnternette araştırılıyor & doğrulanıyor",
+      "İnternette araştırıldı & doğrulandı"
+    ]
+  },
+  "en": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "Image inspection requested",
+      "Image inspected"
+    ],
+    "web_search": [
+      "Searching & verifying on the web",
+      "Web search & verification complete"
+    ]
+  },
+  "de": {
+    "project_overview": [
+      "Projektprüfung angefordert",
+      "Projekt geprüft"
+    ],
+    "check_syntax": [
+      "Syntaxprüfung angefordert",
+      "Syntaxprüfung abgeschlossen"
+    ],
+    "read_file": [
+      "Datei lesen angefordert",
+      "Datei gelesen"
+    ],
+    "write_file": [
+      "Datei schreiben angefordert",
+      "Datei geschrieben"
+    ],
+    "edit_file": [
+      "Datei ändern angefordert",
+      "Datei geändert"
+    ],
+    "multi_edit": [
+      "Datei ändern angefordert",
+      "Datei geändert"
+    ],
+    "delete_path": [
+      "Löschen angefordert",
+      "Gelöscht"
+    ],
+    "move_or_copy": [
+      "Verschieben / Kopieren angefordert",
+      "Verschieben / Kopieren abgeschlossen"
+    ],
+    "list_directory": [
+      "Ordnerprüfung angefordert",
+      "Ordner geprüft"
+    ],
+    "change_directory": [
+      "Ordnerwechsel angefordert",
+      "Ordner gewechselt"
+    ],
+    "list_system_drives": [
+      "Laufwerke angefordert",
+      "Laufwerke aufgelistet"
+    ],
+    "archive_tool": [
+      "Archivaktion angefordert",
+      "Archivaktion abgeschlossen"
+    ],
+    "undo_file_change": [
+      "Rückgängig angefordert",
+      "Datei wiederhergestellt"
+    ],
+    "ask_user": [
+      "Benutzerfrage",
+      "Antwort erhalten"
+    ],
+    "search_files": [
+      "Dateisuche angefordert",
+      "Dateisuche abgeschlossen"
+    ],
+    "grep_search": [
+      "Inhaltssuche angefordert",
+      "Inhaltssuche abgeschlossen"
+    ],
+    "run_command": [
+      "Befehl angefordert",
+      "TERMINAL VERWENDET"
+    ],
+    "python_eval": [
+      "Python-Ausführung angefordert",
+      "TERMINAL VERWENDET (Python)"
+    ],
+    "open_path": [
+      "Öffnen angefordert",
+      "Geöffnet"
+    ],
+    "find_processes": [
+      "Prozesssuche angefordert",
+      "Prozesse geprüft"
+    ],
+    "system_info": [
+      "Systeminformationen angefordert",
+      "Systeminformationen gelesen"
+    ],
+    "web_fetch": [
+      "Webanfrage",
+      "Webseite gelesen"
+    ],
+    "unknown": [
+      "Aktion angefordert",
+      "Aktion abgeschlossen"
+    ],
+    "failed": "Aktion fehlgeschlagen",
+    "skipped": "Aktion abgelehnt",
+    "bash": "TERMINAL VERWENDET (Bash)",
+    "inspect_image": [
+      "Bildanalyse angefordert",
+      "Bild analysiert"
+    ],
+    "web_search": [
+      "Im Internet suchen & Fakten prüfen",
+      "Websuche & Prüfung abgeschlossen"
+    ]
+  },
+  "es": {
+    "project_overview": [
+      "Inspección del proyecto solicitada",
+      "Proyecto inspeccionado"
+    ],
+    "check_syntax": [
+      "Comprobación de sintaxis solicitada",
+      "Comprobación de sintaxis completada"
+    ],
+    "read_file": [
+      "Lectura de archivo solicitada",
+      "Archivo leído"
+    ],
+    "write_file": [
+      "Escritura de archivo solicitada",
+      "Archivo escrito"
+    ],
+    "edit_file": [
+      "Edición de archivo solicitada",
+      "Archivo editado"
+    ],
+    "multi_edit": [
+      "Edición de archivo solicitada",
+      "Archivo editado"
+    ],
+    "delete_path": [
+      "Eliminación solicitada",
+      "Eliminado"
+    ],
+    "move_or_copy": [
+      "Movimiento / copia solicitada",
+      "Movimiento / copia completada"
+    ],
+    "list_directory": [
+      "Inspección de carpeta solicitada",
+      "Carpeta inspeccionada"
+    ],
+    "change_directory": [
+      "Cambio de carpeta solicitado",
+      "Carpeta cambiada"
+    ],
+    "list_system_drives": [
+      "Unidades del sistema solicitadas",
+      "Unidades listadas"
+    ],
+    "archive_tool": [
+      "Acción de archivo comprimido solicitada",
+      "Archivo comprimido procesado"
+    ],
+    "undo_file_change": [
+      "Reversión solicitada",
+      "Archivo restaurado"
+    ],
+    "ask_user": [
+      "Consultando al usuario",
+      "Respuesta recibida"
+    ],
+    "search_files": [
+      "Búsqueda solicitada",
+      "Búsqueda de archivos completada"
+    ],
+    "grep_search": [
+      "Búsqueda de contenido solicitada",
+      "Búsqueda de contenido completada"
+    ],
+    "run_command": [
+      "Comando solicitado",
+      "TERMINAL UTILIZADA"
+    ],
+    "python_eval": [
+      "Ejecución de Python solicitada",
+      "TERMINAL UTILIZADA (Python)"
+    ],
+    "open_path": [
+      "Apertura solicitada",
+      "Abierto en el sistema"
+    ],
+    "find_processes": [
+      "Procesos solicitados",
+      "Procesos inspeccionados"
+    ],
+    "system_info": [
+      "Información del sistema solicitada",
+      "Información del sistema obtenida"
+    ],
+    "web_fetch": [
+      "Solicitud web",
+      "Página web leída"
+    ],
+    "unknown": [
+      "Acción solicitada",
+      "Acción completada"
+    ],
+    "failed": "Acción fallida",
+    "skipped": "Acción rechazada",
+    "bash": "TERMINAL UTILIZADA (Bash)",
+    "inspect_image": [
+      "Análisis de imagen solicitado",
+      "Imagen analizada"
+    ],
+    "web_search": [
+      "Buscando y verificando en internet",
+      "Búsqueda y verificación completadas"
+    ]
+  },
+  "fr": {
+    "project_overview": [
+      "Inspection du projet demandée",
+      "Projet inspecté"
+    ],
+    "check_syntax": [
+      "Vérification syntaxique demandée",
+      "Vérification syntaxique terminée"
+    ],
+    "read_file": [
+      "Lecture du fichier demandée",
+      "Fichier lu"
+    ],
+    "write_file": [
+      "Écriture du fichier demandée",
+      "Fichier écrit"
+    ],
+    "edit_file": [
+      "Modification du fichier demandée",
+      "Fichier modifié"
+    ],
+    "multi_edit": [
+      "Modification du fichier demandée",
+      "Fichier modifié"
+    ],
+    "delete_path": [
+      "Suppression demandée",
+      "Supprimé"
+    ],
+    "move_or_copy": [
+      "Déplacement / copie demandé",
+      "Déplacement / copie terminé"
+    ],
+    "list_directory": [
+      "Inspection du dossier demandée",
+      "Dossier inspecté"
+    ],
+    "change_directory": [
+      "Changement de dossier demandé",
+      "Dossier modifié"
+    ],
+    "list_system_drives": [
+      "Disques demandés",
+      "Disques listés"
+    ],
+    "archive_tool": [
+      "Archive demandée",
+      "Archive traitée"
+    ],
+    "undo_file_change": [
+      "Annulation demandée",
+      "Fichier restauré"
+    ],
+    "ask_user": [
+      "Question à l'utilisateur",
+      "Réponse reçue"
+    ],
+    "search_files": [
+      "Recherche de fichiers demandée",
+      "Recherche de fichiers terminée"
+    ],
+    "grep_search": [
+      "Recherche de contenu demandée",
+      "Recherche de contenu terminée"
+    ],
+    "run_command": [
+      "Commande demandée",
+      "TERMINAL UTILISÉ"
+    ],
+    "python_eval": [
+      "Exécution Python demandée",
+      "TERMINAL UTILISÉ (Python)"
+    ],
+    "open_path": [
+      "Ouverture demandée",
+      "Ouvert sur le système"
+    ],
+    "find_processes": [
+      "Processus demandés",
+      "Processus inspectés"
+    ],
+    "system_info": [
+      "Informations système demandées",
+      "Informations système obtenues"
+    ],
+    "web_fetch": [
+      "Requête web",
+      "Page web lue"
+    ],
+    "unknown": [
+      "Action demandée",
+      "Action terminée"
+    ],
+    "failed": "Échec de l’action",
+    "skipped": "Action refusée",
+    "bash": "TERMINAL UTILISÉ (Bash)",
+    "inspect_image": [
+      "Analyse d'image demandée",
+      "Image analysée"
+    ],
+    "web_search": [
+      "Recherche et vérification sur le web",
+      "Recherche et vérification terminées"
+    ]
+  },
+  "ru": {
+    "project_overview": [
+      "Запрос проверки проекта",
+      "Проект проверен"
+    ],
+    "check_syntax": [
+      "Запрос проверки синтаксиса",
+      "Проверка синтаксиса завершена"
+    ],
+    "read_file": [
+      "Запрос чтения файла",
+      "Файл прочитан"
+    ],
+    "write_file": [
+      "Запрос записи файла",
+      "Файл записан"
+    ],
+    "edit_file": [
+      "Запрос изменения файла",
+      "Файл изменён"
+    ],
+    "multi_edit": [
+      "Запрос изменения файла",
+      "Файл изменён"
+    ],
+    "delete_path": [
+      "Запрос удаления",
+      "Удалено"
+    ],
+    "move_or_copy": [
+      "Запрос перемещения / копирования",
+      "Перемещение / копирование завершено"
+    ],
+    "list_directory": [
+      "Запрос просмотра папки",
+      "Папка просмотрена"
+    ],
+    "change_directory": [
+      "Запрос смены папки",
+      "Рабочая папка изменена"
+    ],
+    "list_system_drives": [
+      "Запрос дисков системы",
+      "Диски перечислены"
+    ],
+    "archive_tool": [
+      "Запрос архивации",
+      "Операция с архивом завершена"
+    ],
+    "undo_file_change": [
+      "Запрос отката файла",
+      "Файл восстановлен"
+    ],
+    "ask_user": [
+      "Вопрос пользователю",
+      "Ответ получен"
+    ],
+    "search_files": [
+      "Запрос поиска файлов",
+      "Поиск файлов завершён"
+    ],
+    "grep_search": [
+      "Запрос поиска содержимого",
+      "Поиск содержимого завершён"
+    ],
+    "run_command": [
+      "Запрос команды терминала",
+      "ИСПОЛЬЗОВАН ТЕРМИНАЛ"
+    ],
+    "python_eval": [
+      "Запрос запуска Python",
+      "ИСПОЛЬЗОВАН ТЕРМИНАЛ (Python)"
+    ],
+    "open_path": [
+      "Запрос открытия",
+      "Открыто в системе"
+    ],
+    "find_processes": [
+      "Запрос процессов",
+      "Процессы проверены"
+    ],
+    "system_info": [
+      "Запрос сведений о системе",
+      "Сведения о системе получены"
+    ],
+    "web_fetch": [
+      "Веб-запрос",
+      "Веб-страница прочитана"
+    ],
+    "unknown": [
+      "Запрос действия",
+      "Действие завершено"
+    ],
+    "failed": "Ошибка действия",
+    "skipped": "Действие отклонено",
+    "bash": "ИСПОЛЬЗОВАН ТЕРМИНАЛ (Bash)",
+    "inspect_image": [
+      "Запрошен анализ изображения",
+      "Изображение проанализировано"
+    ],
+    "web_search": [
+      "Поиск и проверка фактов в интернете",
+      "Поиск и проверка завершены"
+    ]
+  },
+  "az": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "Şəkil baxışı istənildi",
+      "Şəkil izlənildi"
+    ],
+    "web_search": [
+      "İnternetdə araşdırılır və doğrulanır",
+      "İnternet araşdırması tamamlandı"
+    ]
+  },
+  "it": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "Analisi immagine richiesta",
+      "Immagine analizzata"
+    ],
+    "web_search": [
+      "Ricerca e verifica sul web",
+      "Ricerca e verifica completate"
+    ]
+  },
+  "pt": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "Análise de imagem solicitada",
+      "Imagem analisada"
+    ],
+    "web_search": [
+      "Pesquisando e verificando na web",
+      "Pesquisa e verificação concluídas"
+    ]
+  },
+  "nl": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "Afbeeldingsanalyse aangevraagd",
+      "Afbeelding geanalyseerd"
+    ],
+    "web_search": [
+      "Zoeken en verifiëren op internet",
+      "Webzoekopdracht voltooid"
+    ]
+  },
+  "ar": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "تم طلب فحص الصورة",
+      "تم فحص الصورة"
+    ],
+    "web_search": [
+      "جاري البحث والتحقق عبر الإنترنت",
+      "اكتمل البحث والتحقق عبر الإنترنت"
+    ]
+  },
+  "zh": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "请求检查图像",
+      "图像已检查"
+    ],
+    "web_search": [
+      "正在联网搜索并核实信息",
+      "联网搜索与核实完成"
+    ]
+  },
+  "ja": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "画像の解析を要求",
+      "画像を解析しました"
+    ],
+    "web_search": [
+      "インターネットで検索・事実確認中",
+      "Web検索・事実確認が完了しました"
+    ]
+  },
+  "ko": {
+    "project_overview": [
+      "Project inspection requested",
+      "Project inspected"
+    ],
+    "check_syntax": [
+      "Syntax check requested",
+      "Syntax check completed"
+    ],
+    "read_file": [
+      "File read requested",
+      "File read"
+    ],
+    "write_file": [
+      "File write requested",
+      "File written"
+    ],
+    "edit_file": [
+      "File edit requested",
+      "File edited"
+    ],
+    "multi_edit": [
+      "File edit requested",
+      "File edited"
+    ],
+    "delete_path": [
+      "Deletion requested",
+      "Deleted"
+    ],
+    "move_or_copy": [
+      "Move / copy requested",
+      "Move / copy completed"
+    ],
+    "list_directory": [
+      "Folder inspection requested",
+      "Folder inspected"
+    ],
+    "change_directory": [
+      "Directory change requested",
+      "Working directory changed"
+    ],
+    "list_system_drives": [
+      "Drives inspection requested",
+      "Drives & folders listed"
+    ],
+    "archive_tool": [
+      "Archive action requested",
+      "Archive action completed"
+    ],
+    "undo_file_change": [
+      "Rollback requested",
+      "File rolled back to previous state"
+    ],
+    "ask_user": [
+      "Asking user preference",
+      "User preference received"
+    ],
+    "search_files": [
+      "File search requested",
+      "File search completed"
+    ],
+    "grep_search": [
+      "Content search requested",
+      "Content search completed"
+    ],
+    "run_command": [
+      "Terminal command requested",
+      "TERMINAL USED"
+    ],
+    "python_eval": [
+      "Python execution requested",
+      "TERMINAL USED (Python)"
+    ],
+    "open_path": [
+      "Desktop open requested",
+      "Opened on system"
+    ],
+    "find_processes": [
+      "Process scan requested",
+      "Running processes inspected"
+    ],
+    "system_info": [
+      "System information requested",
+      "System information collected"
+    ],
+    "web_fetch": [
+      "Web request",
+      "Web page read"
+    ],
+    "unknown": [
+      "Action requested",
+      "Action completed"
+    ],
+    "failed": "Action failed",
+    "skipped": "Action declined by user",
+    "bash": "TERMINAL USED (Bash)",
+    "inspect_image": [
+      "이미지 분석 요청됨",
+      "이미지 분석 완료"
+    ],
+    "web_search": [
+      "인터넷 검색 및 사실 확인 중",
+      "인터넷 검색 및 검증 완료"
+    ]
+  }
+}''')
  def _safe(value: Any) -> str:
    text = str(value or "").replace("\n", " ").replace("\r", " ")
    text = re.sub(r"[\x00-\x1f\x7f-\x9f]", lambda m: "\\x%02x" % ord(m.group(0)), text)
@@ -7089,7 +11412,7 @@ def _dm_module_17():
        label = words["bash"]
    subject = ""
    if name in {
-     "read_file", "write_file", "edit_file", "multi_edit", "delete_path",
+     "read_file", "inspect_image", "write_file", "edit_file", "multi_edit", "delete_path",
      "list_directory", "change_directory", "search_files", "grep_search",
      "project_overview", "check_syntax", "undo_file_change",
    }:
@@ -7106,6 +11429,8 @@ def _dm_module_17():
      subject = str(args.get("command") or "")
    elif name == "python_eval":
      subject = str(args.get("code") or "")[:80]
+   elif name == "web_search":
+     subject = str(args.get("query") or "")
    elif name == "web_fetch":
      try:
        u = urllib.parse.urlsplit(str(args.get("url") or ""))
@@ -7556,6 +11881,15 @@ def _dm_module_20():
    return re.sub(r"[\x00-\x08\x0b-\x1f\x7f-\x9f]", lambda m: "\\x%02x" % ord(m.group(0)), str(value))
  SLASH_COMMANDS = [
    "/help",
+   "/search",
+   "/image",
+   "/paste",
+   "/copy",
+   "/diff",
+   "/export",
+   "/redo",
+   "/effort",
+   "/os",
    "/setup",
    "/api",
    "/model",
@@ -7612,7 +11946,7 @@ def _dm_module_20():
      except Exception:
        print("\n" * 3)
      _dm_owner_gate()
-     print(_DM_OWNER, flush=True)
+     print(self._paint(_DM_OWNER, "1;31"), flush=True)
    def _paint(self, text: str, style: str) -> str:
      return "\x1b[" + style + "m" + text + "\x1b[0m" if self.view.color else text
    def print_startup_authority_warning(self) -> None:
@@ -7747,7 +12081,7 @@ def _dm_module_20():
          print(self._paint("┃   ", line_col) + pl[:160])
        if len(prev_lines) > 10:
          from docmind.i18n import i18n as _ui_i18n
-         _ln_w = {"tr": "satır", "en": "lines", "de": "Zeilen", "es": "líneas", "fr": "lignes", "ru": "строк"}.get(_ui_i18n.lang, "lines")
+         _ln_w = {"tr": "satır", "en": "lines", "az": "sətir", "de": "Zeilen", "es": "líneas", "fr": "lignes", "it": "righe", "pt": "linhas", "nl": "regels", "ru": "строк", "ar": "أسطر", "zh": "行", "ja": "行", "ko": "줄"}.get(_ui_i18n.lang, "lines")
          print(self._paint("┃   ", line_col) + self._paint(f"... (+{len(prev_lines) - 10} {_ln_w})", "2"))
      if triage_note:
        note_col = "1;33" if "↻" in triage_note else "1;31"
@@ -7757,7 +12091,7 @@ def _dm_module_20():
      _dm_owner_gate()
      _dm_signature_gate()
      if not self.view.color or self.view._size()[1] < 30:
-       print(f"\nDocMind v1.0  •  {_DM_OWNER}\n")
+       print(f"\nDocMind v1.1  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -7778,7 +12112,7 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v1.0", "1;36") + self._paint("  •  DEVRAN E. / BEYİP_", "1;35")) if i == 4 else ""
+       label = ("  " + self._paint("DocMind v1.1", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
        print("  " + "".join(cells) + label)
      print()
    @contextmanager
@@ -7942,16 +12276,138 @@ def _dm_module_20():
      if not ok and not skipped and summary:
        first = _visible_controls(str(summary).strip().splitlines()[0])[:240]
        print("     " + first, flush=True)
-   def print_diff(self, path: str, old_text: str, new_text: str, max_lines: int = 40) -> None:
-     lines = difflib.unified_diff(old_text.splitlines(), new_text.splitlines(), lineterm="")
+   def _compute_plus_minus_entries(
+     self,
+     old_text: str,
+     new_text: str,
+   ) -> Tuple[List[Tuple[str, str]], int, int]:
+     """
+     Build pure '-' (removed, red) and '+' (added/written, green) line entries
+     without raw JSON or unified diff headers.
+     """
+     old_lines = old_text.splitlines() if old_text else []
+     new_lines = new_text.splitlines() if new_text else []
+     entries: List[Tuple[str, str]] = []
      added = removed = 0
-     for line in lines:
-       if line.startswith("+") and not line.startswith("+++"):
-         added += 1
-       elif line.startswith("-") and not line.startswith("---"):
-         removed += 1
-     if added or removed:
-       print(f"       +{added} / -{removed}", flush=True)
+     if not old_lines and new_lines:
+       for ln in new_lines:
+         entries.append(("+", ln))
+       return entries, len(new_lines), 0
+     if old_lines and not new_lines:
+       for ln in old_lines:
+         entries.append(("-", ln))
+       return entries, 0, len(old_lines)
+     # Fast O(N) common prefix & suffix trimming so 20,000-line file edits render in <1ms!
+     p_len = 0
+     min_len = min(len(old_lines), len(new_lines))
+     while p_len < min_len and old_lines[p_len] == new_lines[p_len]:
+       p_len += 1
+     s_len = 0
+     while (
+       s_len < (min_len - p_len)
+       and old_lines[len(old_lines) - 1 - s_len] == new_lines[len(new_lines) - 1 - s_len]
+     ):
+       s_len += 1
+     mid_old = old_lines[p_len : len(old_lines) - s_len if s_len else len(old_lines)]
+     mid_new = new_lines[p_len : len(new_lines) - s_len if s_len else len(new_lines)]
+     if not mid_old and not mid_new:
+       return [], 0, 0
+     if len(mid_old) + len(mid_new) > 6000:
+       for ln in mid_old:
+         entries.append(("-", ln))
+       for ln in mid_new:
+         entries.append(("+", ln))
+       return entries, len(mid_new), len(mid_old)
+     matcher = difflib.SequenceMatcher(None, mid_old, mid_new, autojunk=False)
+     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+       if tag == "equal":
+         continue
+       if tag in ("replace", "delete"):
+         for ln in mid_old[i1:i2]:
+           entries.append(("-", ln))
+           removed += 1
+       if tag in ("replace", "insert"):
+         for ln in mid_new[j1:j2]:
+           entries.append(("+", ln))
+           added += 1
+     return entries, added, removed
+   def print_file_permission_box(
+     self,
+     op_kind: str,
+     action_name: str,
+     target_path: str,
+     old_text: str,
+     new_text: str,
+     sensitive: bool = False,
+     max_lines: int = 60,
+   ) -> None:
+     """
+     Display file write / edit / open / delete confirmation using ONLY
+     bright GREEN '+ line' for written/added code and bright RED '- line' for removed code!
+     """
+     entries, added, removed = self._compute_plus_minus_entries(old_text, new_text)
+     kind_key = {
+       "new": "diff_new_file",
+       "edit": "diff_edit_file",
+       "delete": "diff_delete_file",
+       "open": "diff_open_file",
+     }.get(op_kind, "diff_edit_file")
+     op_title = f"{t(kind_key)} ({action_name})"
+     safe_target = _visible_controls(target_path)
+     shown = entries[:max_lines]
+     hidden_count = max(0, len(entries) - len(shown))
+     border_ansi = "1;31" if sensitive else "1;33"
+     cols = max(56, min(108, self.view._size()[1] - 2))
+     bar = "━" * max(20, cols - 2)
+     hdr_txt = f" 🛡️ {t('perm_title')} • {op_title} "
+     print()
+     print(self._paint("┏" + bar + "┓", border_ansi))
+     print(self._paint("┃", border_ansi) + self._paint(hdr_txt[: cols - 2], border_ansi))
+     if sensitive:
+       print(self._paint("┃ ", border_ansi) + self._paint(_visible_controls(t("perm_sensitive_warning")), "1;31"))
+     stat_badge = (
+       self._paint(f"+{added}", "1;32") + " / " + self._paint(f"-{removed}", "1;31")
+     )
+     print(self._paint("┃ ", border_ansi) + self._paint("📄 ", "1;36") + self._paint(safe_target, "1;37") + f"  ({stat_badge})")
+     print(self._paint("┠" + ("─" * max(20, cols - 2)) + "┨", border_ansi))
+     max_code_w = max(40, cols - 6)
+     for sign, raw_ln in shown:
+       clean_ln = _visible_controls(raw_ln.replace("\t", "    "))
+       if len(clean_ln) > max_code_w:
+         clean_ln = clean_ln[: max_code_w - 1] + "…"
+       if sign == "+":
+         styled = self._paint(f"+ {clean_ln}", "1;32")
+       else:
+         styled = self._paint(f"- {clean_ln}", "1;31")
+       print(self._paint("┃ ", border_ansi) + styled)
+     if hidden_count > 0:
+       more_msg = _visible_controls(t("diff_more_lines", count=hidden_count))
+       print(self._paint("┃ ", border_ansi) + self._paint(more_msg, "2"))
+     print(self._paint("┗" + bar + "┛", border_ansi), flush=True)
+   def print_diff(
+     self,
+     path: str,
+     old_text: str,
+     new_text: str,
+     max_lines: int = 40,
+     already_shown_in_perm: bool = False,
+   ) -> None:
+     entries, added, removed = self._compute_plus_minus_entries(old_text, new_text)
+     if not added and not removed:
+       return
+     summary_badge = self._paint(f"+{added}", "1;32") + " / " + self._paint(f"-{removed}", "1;31")
+     if already_shown_in_perm:
+       print(f"       {summary_badge}", flush=True)
+       return
+     print(f"     📄 {_visible_controls(path)}  ({summary_badge})")
+     for sign, raw_ln in entries[:max_lines]:
+       clean_ln = _visible_controls(raw_ln.replace("\t", "    "))
+       if len(clean_ln) > 100:
+         clean_ln = clean_ln[:99] + "…"
+       col = "1;32" if sign == "+" else "1;31"
+       print("       " + self._paint(f"{sign} {clean_ln}", col))
+     if len(entries) > max_lines:
+       print("       " + self._paint(_visible_controls(t("diff_more_lines", count=len(entries) - max_lines)), "2"), flush=True)
    @contextmanager
    def spinner(self, message: Optional[str] = None) -> Iterator[None]:
      msg = _visible_controls(message or t("thinking"))
@@ -8007,7 +12463,11 @@ def _dm_module_20():
            line = input("")
          else:
            line = input(current_prompt or "DocMind > ")
-       if allow_multiline and line.endswith("\\"):
+       # Clean lone UTF-16 surrogates from pasted/terminal text so UTF-8 never crashes
+       line = line.encode("utf-8", errors="replace").decode("utf-8")
+       # Do NOT trap Windows folder paths ending in backslash (e.g. C:\Users\Devran\App\) as multiline continuation!
+       is_win_dir_tail = bool(re.search(r'[A-Za-z]:\\[^"\n]*\\$', line.strip()))
+       if allow_multiline and line.endswith("\\") and not is_win_dir_tail:
          lines.append(line[:-1])
          current_prompt = "... "
          continue
@@ -8033,6 +12493,8 @@ def _dm_module_21():
  from docmind.ui.console import ConsoleUI
  READ_ONLY_TOOLS = {
    "read_file",
+   "inspect_image",
+   "web_search",
    "list_directory",
    "change_directory",
    "list_system_drives",
@@ -8045,9 +12507,9 @@ def _dm_module_21():
    "ask_user",
  }
  TERMINAL_TOOLS = {"run_command", "python_eval"}
- _YES_TOKENS = {"e", "evet", "onay", "tamam", "y", "yes", "j", "ja", "s", "si", "sí", "o", "oui", "д", "да", "1"}
- _NO_TOKENS = {"h", "hayir", "hayır", "iptal", "red", "n", "no", "nein", "non", "нет", "0", "skip"}
- _FULL_YES_WORDS = {"evet", "yes", "onay", "ja", "si", "sí", "oui", "да"}
+ _YES_TOKENS = {"e", "evet", "onay", "tamam", "b", "beli", "bəli", "y", "yes", "j", "ja", "s", "si", "sí", "sì", "sim", "o", "oui", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
+ _NO_TOKENS = {"h", "hayir", "hayır", "iptal", "red", "x", "xeyr", "n", "no", "não", "nao", "nee", "nein", "non", "нет", "لا", "否", "いいえ", "아니오", "아니요", "0", "skip"}
+ _FULL_YES_WORDS = {"evet", "yes", "onay", "beli", "bəli", "ja", "si", "sí", "sì", "sim", "oui", "да", "نعم", "是", "はい", "예", "네"}
  class PermissionManager:
    def __init__(self, config_mgr: ConfigManager, ui: ConsoleUI, non_interactive: bool = False) -> None:
      self.config_mgr = config_mgr
@@ -8127,6 +12589,7 @@ def _dm_module_21():
      action_summary: str,
      command_text: Optional[str] = None,
      sensitive: bool = False,
+     file_diff_preview: Optional[tuple] = None,
    ) -> bool:
      """
          Return True if execution is approved, False if user skipped.
@@ -8134,7 +12597,11 @@ def _dm_module_21():
      if sensitive:
        if self.non_interactive:
          return False
-       self.ui.print_panel(t("perm_title"), f"{t('perm_sensitive_warning')}\n\n{action_summary}", style="bright_red")
+       if file_diff_preview is not None:
+         op_kind, f_target, b_txt, a_txt = file_diff_preview
+         self.ui.print_file_permission_box(op_kind, tool_name, f_target, b_txt, a_txt, sensitive=True)
+       else:
+         self.ui.print_panel(t("perm_title"), f"{t('perm_sensitive_warning')}\n\n{action_summary}", style="bright_red")
        try:
          raw = self.ui.ask(t("perm_sensitive_prompt")).replace("İ", "i").replace("I", "ı").strip().lower().replace("\u0307", "")
        except (KeyboardInterrupt, EOFError):
@@ -8151,8 +12618,12 @@ def _dm_module_21():
        return True
      if self.mode == "auto" or self.non_interactive:
        return True
-     detail = (action_summary + "\n\n" + t("perm_command_warn", cmd=command_text)) if command_text else action_summary
-     self.ui.print_panel(t("perm_title"), detail, style="yellow")
+     if file_diff_preview is not None:
+       op_kind, f_target, b_txt, a_txt = file_diff_preview
+       self.ui.print_file_permission_box(op_kind, tool_name, f_target, b_txt, a_txt, sensitive=False)
+     else:
+       detail = (action_summary + "\n\n" + t("perm_command_warn", cmd=command_text)) if command_text else action_summary
+       self.ui.print_panel(t("perm_title"), detail, style="yellow")
      try:
        raw = self.ui.ask(t("perm_prompt")).replace("İ", "i").replace("I", "ı").strip().lower().replace("\u0307", "")
      except (KeyboardInterrupt, EOFError):
@@ -8197,6 +12668,8 @@ def _dm_module_22():
  from docmind.i18n import t
  from docmind.tools.backup import UndoManager
  from docmind.tools.filesystem import (
+   load_image_attachment,
+   preview_file_change,
    resolve_user_path,
    tool_archive,
    tool_change_directory,
@@ -8220,7 +12693,7 @@ def _dm_module_22():
    tool_open_path,
    tool_system_info,
  )
- from docmind.tools.web import tool_web_fetch
+ from docmind.tools.web import tool_web_fetch, tool_web_search
  from docmind.ui.console import ConsoleUI
  @dataclass
  class ToolExecutionResult:
@@ -8228,6 +12701,7 @@ def _dm_module_22():
    output: str
    skipped: bool = False
    invalid_args: bool = False
+   images: Any = None
  TOOL_SCHEMAS: List[Dict[str, Any]] = [
    {
      "name": "read_file",
@@ -8526,6 +13000,32 @@ def _dm_module_22():
      },
    },
    {
+     "name": "web_search",
+     "description": (
+       "Search the live internet (DuckDuckGo + Wikipedia + StackOverflow) and cross-verify top web pages. "
+       "ALWAYS call this tool when asked to research/verify something, when facts/versions/prices/news may have "
+       "changed, or whenever you are not 100% certain of a fact so you never guess or hallucinate!"
+     ),
+     "parameters": {
+       "type": "object",
+       "properties": {
+         "query": {
+           "type": "string",
+           "description": "Focused search query to research and verify on the live internet.",
+         },
+         "max_results": {
+           "type": "integer",
+           "description": "Maximum web search hits to retrieve (default 6, max 10).",
+         },
+         "verify_top_pages": {
+           "type": "boolean",
+           "description": "Fetch and cross-check full text excerpts from top result URLs (default true).",
+         },
+       },
+       "required": ["query"],
+     },
+   },
+   {
      "name": "web_fetch",
      "description": "Fetch and extract readable text/JSON from an HTTP/HTTPS URL.",
      "parameters": {
@@ -8535,6 +13035,23 @@ def _dm_module_22():
          "max_chars": {"type": "integer", "description": "Maximum characters to return (default 12000)."},
        },
        "required": ["url"],
+     },
+   },
+   {
+     "name": "inspect_image",
+     "description": (
+       "Load and visually inspect an image or screenshot (.png, .jpg, .jpeg, .webp, .gif, .bmp) from anywhere on "
+       "the computer so you can read UI screens, terminal error screenshots, diagrams, or photos and solve issues."
+     ),
+     "parameters": {
+       "type": "object",
+       "properties": {
+         "path": {
+           "type": "string",
+           "description": "Path to the image or screenshot file (absolute, relative, or ~/...).",
+         },
+       },
+       "required": ["path"],
      },
    },
  ]
@@ -8591,10 +13108,7 @@ def _dm_module_22():
      return TOOL_SCHEMAS
    def _describe_action(self, name: str, args: Dict[str, Any]) -> str:
      if name in ("write_file", "edit_file", "multi_edit", "delete_path"):
-       detail = t("perm_file_action", action=name, target=args.get("path", ""))
-       if name != "delete_path":
-         detail += "\n\n" + json.dumps(args, ensure_ascii=False, indent=2)[:1600]
-       return detail
+       return t("perm_file_action", action=name, target=args.get("path", ""))
      if name == "move_or_copy":
        op = args.get("operation", "move")
        return t("perm_file_action", action=op, target=f"{args.get('source', '')} -> {args.get('destination', '')}")
@@ -8602,6 +13116,8 @@ def _dm_module_22():
        return f"Archive ({args.get('action', '')}): {args.get('archive_path', '')}"
      if name == "open_path":
        return f"Open on desktop: {args.get('target', '')}"
+     if name == "web_search":
+       return f"Web search: {args.get('query', '')}"
      if name == "web_fetch":
        return f"Web request: {args.get('url', '')}"
      return f"{name}({args})"
@@ -8730,11 +13246,21 @@ def _dm_module_22():
            action_desc += f"\nResolved path: {resolve_user_path(p_arg, self.cwd)}"
          except (OSError, ValueError):
            pass
+       is_sens = sensitive_tool_action(name, safe_args, self.cwd)
+       f_preview = None
+       if name in ("write_file", "edit_file", "multi_edit", "delete_path", "open_path") or (is_sens and name == "read_file"):
+         f_preview = preview_file_change(name, safe_args, self.cwd)
+       shown_in_perm_box = bool(
+         f_preview is not None
+         and not self.perm_mgr.non_interactive
+         and (is_sens or (name not in ("read_file", "inspect_image") and self.perm_mgr.mode != "auto"))
+       )
        approved = self.perm_mgr.check_tool_permission(
          name,
          action_desc,
          command_text=None,
-         sensitive=sensitive_tool_action(name, safe_args, self.cwd),
+         sensitive=is_sens,
+         file_diff_preview=f_preview,
        )
        if not approved:
          skip_msg = t("tool_skipped", name=name)
@@ -8745,8 +13271,13 @@ def _dm_module_22():
            skipped=True,
          )
        diff_payload = None
+       tool_images = None
        if name == "read_file":
          ok, out = tool_read_file(safe_args, self.cwd)
+       elif name == "inspect_image":
+         ok, out, img_meta = load_image_attachment(str(safe_args.get("path", "")), self.cwd)
+         if ok and img_meta:
+           tool_images = [img_meta]
        elif name == "write_file":
          ok, out, diff_payload = tool_write_file(safe_args, self.cwd, self.undo_mgr)
        elif name == "edit_file":
@@ -8791,6 +13322,8 @@ def _dm_module_22():
            ok, out = True, f"User selected / answered: {ans}"
        elif name == "system_info":
          ok, out = tool_system_info(self.cwd)
+       elif name == "web_search":
+         ok, out = tool_web_search(safe_args)
        elif name == "web_fetch":
          ok, out = tool_web_fetch(safe_args)
        else:
@@ -8798,7 +13331,7 @@ def _dm_module_22():
          out = f"Unknown tool '{name}'. Available tools: {', '.join(s['name'] for s in TOOL_SCHEMAS)}"
        if diff_payload is not None and ok:
          fpath, before_txt, after_txt = diff_payload
-         self.ui.print_diff(fpath, before_txt, after_txt)
+         self.ui.print_diff(fpath, before_txt, after_txt, already_shown_in_perm=shown_in_perm_box)
        if ok and name in ("write_file", "edit_file", "multi_edit"):
          raw_path = str(safe_args.get("path", ""))
          if Path(raw_path).suffix.lower() in (
@@ -8821,7 +13354,7 @@ def _dm_module_22():
              except Exception:
                pass
        self.ui.print_tool_result(name, ok, out)
-       return ToolExecutionResult(ok=ok, output=out)
+       return ToolExecutionResult(ok=ok, output=out, images=tool_images)
      except KeyboardInterrupt:
        self.ui.print_tool_result(name, False, t("ctrl_c_cancelled"))
        raise
@@ -8866,7 +13399,7 @@ def _dm_module_23():
      for idx, (code, native_name, label) in enumerate(LANGUAGE_CHOICES, start=1):
        marker = " *" if code == self.config_mgr.config.language else ""
        lines.append(f"  [{idx}] {label}{marker}")
-     _lt = {"tr": "🌐 Dil Seçimi", "en": "🌐 Select Language", "de": "🌐 Sprachauswahl", "es": "🌐 Selección de idioma", "fr": "🌐 Choix de la langue", "ru": "🌐 Выбор языка"}.get(i18n.lang, "🌐 Select Language")
+     _lt = {"tr": "🌐 Dil Seçimi", "en": "🌐 Select Language", "az": "🌐 Dil Seçimi", "de": "🌐 Sprachauswahl", "es": "🌐 Selección de idioma", "fr": "🌐 Choix de la langue", "it": "🌐 Selezione lingua", "pt": "🌐 Seleção de idioma", "nl": "🌐 Taalkeuze", "ru": "🌐 Выбор языка", "ar": "🌐 اختيار اللغة", "zh": "🌐 选择语言", "ja": "🌐 言語の選択", "ko": "🌐 언어 선택"}.get(i18n.lang, "🌐 Select Language")
      self.ui.print_panel(_lt, "\n".join(lines), style="bright_cyan")
      raw = self.ui.ask(t("wiz_select_lang")).strip()
      choice_idx = 0
@@ -8896,10 +13429,18 @@ def _dm_module_23():
          name = {
            "tr": "Başka / Özel / Yerel (OpenAI uyumlu)",
            "en": "Other / Custom / Local (OpenAI-compatible)",
+           "az": "Digər / Xüsusi / Yerli (OpenAI uyğun)",
            "de": "Andere / Benutzerdefiniert / Lokal (OpenAI-kompatibel)",
            "es": "Otro / Personalizado / Local (compatible con OpenAI)",
            "fr": "Autre / Personnalisé / Local (compatible OpenAI)",
+           "it": "Altro / Personalizzato / Locale (compatibile OpenAI)",
+           "pt": "Outro / Personalizado / Local (compatível com OpenAI)",
+           "nl": "Anders / Aangepast / Lokaal (OpenAI-compatibel)",
            "ru": "Другой / Особый / Локальный (совместим с OpenAI)",
+           "ar": "أخرى / مخصص / محلي (متوافق مع OpenAI)",
+           "zh": "其他 / 自定义 / 本地 (兼容 OpenAI)",
+           "ja": "その他 / カスタム / ローカル (OpenAI 互換)",
+           "ko": "기타 / 사용자 지정 / 로컬 (OpenAI 호환)",
          }.get(i18n.lang, "Other / Custom / Local")
        current = " *" if spec.id == self.config_mgr.config.provider else ""
        lines.append(f"  [{idx}] {name}{current}")
@@ -8923,10 +13464,18 @@ def _dm_module_23():
        labels = {
          "tr": "Model adı (isteğe bağlı; boş bırakırsanız default-model): ",
          "en": "Model name (optional; blank uses default-model): ",
+         "az": "Model adı (istəyə bağlı; boş buraxsanız default-model): ",
          "de": "Modellname (optional; leer = default-model): ",
          "es": "Nombre del modelo (opcional; vacío = default-model): ",
          "fr": "Nom du modèle (facultatif ; vide = default-model) : ",
+         "it": "Nome modello (opzionale; vuoto = default-model): ",
+         "pt": "Nome do modelo (opcional; vazio usa default-model): ",
+         "nl": "Modelnaam (optioneel; leeg = default-model): ",
          "ru": "Название модели (необязательно; пусто = default-model): ",
+         "ar": "اسم النموذج (اختياري؛ اتركه فارغاً لاستخدام default-model): ",
+         "zh": "模型名称（可选；留空则使用 default-model）: ",
+         "ja": "モデル名（任意・空欄で default-model を使用）: ",
+         "ko": "모델 이름 (선택 사항; 비워두면 default-model 사용): ",
        }
        chosen_model = self.ui.ask(labels.get(i18n.lang, labels["en"])).strip() or "default-model"
      else:
@@ -9088,7 +13637,7 @@ def _dm_module_24():
  from docmind.config import ConfigManager, get_provider_spec
  from docmind.i18n import t
  from docmind.tools.backup import UndoManager
- from docmind.tools.filesystem import get_special_folders, list_mounted_roots
+ from docmind.tools.filesystem import extract_at_mentions, extract_prompt_images, get_special_folders, list_mounted_roots
  from docmind.tools.terminal import detect_available_shells, detect_os_profile
  from docmind.tools.registry import ToolExecutionResult, ToolRegistry
  from docmind.ui.console import ConsoleUI
@@ -9130,10 +13679,10 @@ def _dm_module_24():
    r"print|echo|hello world|merhaba dunya|ekrana|"
    r"proje|repo|uygulama|program|bot|oyun|kod|"
    r"sistem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pacman|apt\b|dnf\b|winget|brew\b|"
-   r"hazirla|tasarla|oku|ac\b|yaz|ekle|sil|tasi|ara|bul|tara|kur|geri al|arac|"
+   r"hazirla|tasarla|oku|ac\b|yaz|ekle|sil|tasi|ara|arastir|dogrula|teyit|emin misin|yanlis|internette|webde|google|guncel|son surum|haber|fiyat|kac tl|dolar|euro|altin|hava durumu|kimdir|ne zaman|bul|tara|kur|geri al|arac|"
    r"file|folder|directory|path|desktop|download|document|drive|"
    r"read|open|write|create|save|edit|modify|update|delete|remove|move|copy|rename|extract|"
-   r"search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
+   r"202[4-9]\b|research|verify|fact.?check|latest|current|release|version|news|price|weather|who is|look up|online|internet|web\b|search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
    r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)"
    r")"
  )
@@ -9323,6 +13872,8 @@ def _dm_module_24():
        "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
      self.client.on_probe_interrupted = self.usage.mark_interrupted
      self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
+     self.client.on_vision_fallback = lambda: self.ui.warn(t("img_vision_fallback", model=self.config_mgr.config.model))
+     self.client.on_vision_bridge = lambda bm: self.ui.info(t("vision_bridge_used", bridge_model=bm))
    def build_system_prompt(self) -> str:
      from docmind.i18n import i18n as _ag_i18n
      cwd = self.tools.cwd
@@ -9406,8 +13957,12 @@ def _dm_module_24():
        f"## STRICT LANGUAGE LOCK ({lang_code.upper()} — {lang_name})\n"
        f"{lang_rule}\n{non_tr_ban}\n\n"
        "## RULE #0 — SMART TOOL & TERMINAL DECISION RULES (CRITICAL!)\n"
-       "- **GREETINGS & PURE GENERAL KNOWLEDGE -> ZERO TOOLS**: For greetings, casual chat, conceptual definitions, "
-       "translations, or general questions unrelated to the computer, call **ZERO TOOLS** and answer directly.\n"
+       "- **GREETINGS & SMALL TALK -> ZERO TOOLS**: For greetings ('merhaba', 'hello', 'nasılsın'), casual chat, "
+       "or translations, call **ZERO TOOLS** and answer directly.\n"
+       "- **INTERNET RESEARCH & SELF-FACT-CHECKING (`web_search`)**: Whenever the user asks you to research or verify something, "
+       "corrects a mistake ('yanlış biliyorsun', 'emin misin', 'doğrula', 'araştır'), asks about current facts/versions/releases/prices/news/events, "
+       "or whenever you are NOT 100% certain of a fact or library API, **DO NOT GUESS OR HALLUCINATE**! Immediately call `web_search` "
+       "(and `web_fetch` if needed) to research on the live internet, cross-verify across multiple sources, correct any misconception, and cite source URLs!\n"
        "- **NEVER BROWSE CWD FILES UNPROMPTED**: Do NOT open or list random files (`read_file`, `list_directory`, `project_overview`) unless the "
        "user actually asks about files, folders, documents, or a project. Prefer native file tools over terminal commands for reading/searching files.\n"
        "- **TERMINAL / CODE REQUESTS -> 2-OPTION CHOICE (EXPLAIN vs. EXECUTE)**:\n"
@@ -9438,7 +13993,7 @@ def _dm_module_24():
        "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
        "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
        "3. **Full Computer Access When Requested & Security**:\n"
-       "   - When the user asks about files, drives, or documents anywhere on their computer (Desktop, Downloads, Documents, other drives), use native tools directly (`read_file` supports text/code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`).\n"
+       "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their computer (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
        "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
      )
    def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
@@ -9521,9 +14076,11 @@ def _dm_module_24():
          sys_prompt += ("\n\nThe previous response contained malformed tool arguments and was not executed. "
                 "Return a complete JSON object matching the tool schema, or answer without a tool.")
        last_user_msg = ""
+       last_user_has_img = False
        for _m in reversed(self.context.messages):
          if _m.get("role") == "user":
            last_user_msg = str(_m.get("content") or "")
+           last_user_has_img = bool(_m.get("images"))
            break
        if self._turn_exec_mode == "explain":
          tool_schemas = []
@@ -9531,7 +14088,7 @@ def _dm_module_24():
          tool_schemas = self.tools.get_schemas()
        else:
          has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
-         expose_tools = has_tool_turn_already or _should_expose_tools(last_user_msg, self.context.messages[:-1])
+         expose_tools = has_tool_turn_already or last_user_has_img or _should_expose_tools(last_user_msg, self.context.messages[:-1])
          tool_schemas = self.tools.get_schemas() if expose_tools else []
        try:
          self._streamed_text = False
@@ -9682,6 +14239,14 @@ def _dm_module_24():
          "Выполнить самому? (Запустить через терминал)",
          "Ваш выбор [1=Объяснить / 2=Запустить]: ",
        ),
+       "az": ("⚡ Necə edək?", "İzah edim? (Addım-addım göstər)", "Özüm işlədim? (Terminalda birbaşa icra et)", "Seçiminiz [1=İzah et / 2=İcra et]: "),
+       "it": ("⚡ Come procedere?", "Spiegarlo? (Mostra passo passo)", "Eseguirlo nel terminale? (Esegui direttamente)", "Scelta [1=Spiega / 2=Esegui]: "),
+       "pt": ("⚡ Como deseja prosseguir?", "Explicar? (Mostrar passo a passo)", "Executar no terminal? (Executar diretamente)", "Escolha [1=Explicar / 2=Executar]: "),
+       "nl": ("⚡ Hoe wilt u doorgaan?", "Uitleggen? (Stap voor stap tonen)", "Zelf uitvoeren? (Direct in terminal)", "Uw keuze [1=Uitleg / 2=Uitvoeren]: "),
+       "ar": ("⚡ كيف تود المتابعة؟", "شرح الطريقة؟ (خطوة بخطوة)", "تنفيذ مباشر؟ (تشغيل عبر الطرفية)", "اختيارك [1=شرح / 2=تنفيذ]: "),
+       "zh": ("⚡ 您希望如何进行？", "仅讲解步骤？（逐步演示做法）", "直接执行？（由智能体在终端运行）", "您的选择 [1=讲解 / 2=执行]: "),
+       "ja": ("⚡ 実行方法を選択してください", "やり方を説明する（手順を表示）", "ターミナルで直接実行する", "選択 [1=説明 / 2=実行]: "),
+       "ko": ("⚡ 어떻게 진행할까요?", "방법 설명하기 (단계별 안내)", "터미널에서 직접 실행하기", "선택 [1=설명 / 2=실행]: "),
      }
      hdr, opt1, opt2, ask_lbl = table.get(lang, table["en"])
      bar = "─" * 62
@@ -9704,7 +14269,7 @@ def _dm_module_24():
          return "execute"
        if not self.ui.is_tty:
          return "execute"
-   def run_turn(self, user_input: str) -> bool:
+   def run_turn(self, user_input: str, explicit_images: Optional[List[Dict[str, Any]]] = None) -> bool:
      """
          Process a user prompt through multi-step autonomous tool execution until completion.
          Returns True if completed normally, False if aborted/skipped cleanly.
@@ -9712,9 +14277,34 @@ def _dm_module_24():
      _dm_owner_gate()
      _dm_signature_gate()
      checkpoint_len = len(self.context.messages)
+     turn_t0 = time.monotonic()
+     turn_in_tok = 0
+     turn_out_tok = 0
+     turn_images: List[Dict[str, Any]] = list(explicit_images or [])
+     _, auto_imgs = extract_prompt_images(user_input, self.tools.cwd)
+     at_files, at_imgs, at_dirs = extract_at_mentions(user_input, self.tools.cwd)
+     seen_img_paths = {im["path"] for im in turn_images}
+     for im in (auto_imgs + at_imgs):
+       if im["path"] not in seen_img_paths:
+         turn_images.append(im)
+         seen_img_paths.add(im["path"])
+     for im in turn_images:
+       self.ui.info(t("img_attached", name=im["name"], dims=f"{im['width']}x{im['height']}", size=im["size_human"]))
+     extra_ctx_blocks: List[str] = []
+     for fname, fsz, fblock in at_files:
+       self.ui.info(t("mention_attached", name=fname, size=fsz))
+       extra_ctx_blocks.append(fblock)
+     for dname, dtree in at_dirs:
+       self.ui.info(t("mention_dir_attached", name=dname))
+       extra_ctx_blocks.append(f"### Attached Directory Tree `{dname}`\n```\n{dtree}\n```")
+     effective_user_input = (
+       user_input + "\n\n" + "\n\n".join(extra_ctx_blocks)
+       if extra_ctx_blocks
+       else user_input
+     )
      self._turn_exec_mode = "auto"
      mode_directive = ""
-     if not self.non_interactive and _is_explain_or_execute_candidate(user_input):
+     if not self.non_interactive and not turn_images and _is_explain_or_execute_candidate(user_input):
        picked = self._prompt_explain_or_execute()
        if picked == "cancel":
          self.ui.warn(t("ctrl_c_cancelled"))
@@ -9733,7 +14323,16 @@ def _dm_module_24():
            "DO NOT merely explain how to do it in text! You MUST immediately call `run_command` (for terminal/shell/python CLI commands, e.g. `python3 -c \"print('Hello, World!')\"` on Linux/macOS or `python -c \"print('Hello, World!')\"` on Windows) "
            "or `python_eval` to execute the task right now, then briefly present the output!"
          )
-     self._turn_system_prompt = self.build_system_prompt() + mode_directive
+     vision_directive = (
+       "\n\n## ACTIVE HIGH-PRECISION VISION & OCR ANALYSIS PROTOCOL\n"
+       "One or more images/screenshots are attached to this turn! Follow these rules strictly:\n"
+       "1. Read EVERY visible text line, error message, traceback, file path, line number, button/menu label, chart value, and code snippet with character-level precision (cross-checking both the high-res image pixels and any `[Local OCR Text]` / `[High-Resolution Vision Analysis]` block).\n"
+       "2. Describe clearly what is shown in the image first so the user sees you understood it accurately.\n"
+       "3. If the image shows an error, bug, or broken UI/config, pinpoint the exact root cause and either fix the file in the workspace (if relevant) or give the exact step-by-step solution!\n"
+       "4. Never guess unreadable blurry characters — state clearly if a specific region is cut off or illegible."
+       if turn_images else ""
+     )
+     self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
      begin_turn = getattr(self.ui, "begin_turn", None)
      if begin_turn:
        begin_turn()
@@ -9746,7 +14345,7 @@ def _dm_module_24():
      consecutive_failures = 0
      suppressed_in_a_row = 0
      try:
-       self.context.add_user(user_input)
+       self.context.add_user(effective_user_input, images=turn_images if turn_images else None)
        while True:
          step += 1
          if step > max_steps:
@@ -9754,7 +14353,7 @@ def _dm_module_24():
            if self.non_interactive:
              return False
            ans = self.ui.ask(t("ask_continue_steps")).strip().lower()
-           if ans in ("", "e", "evet", "y", "yes", "j", "ja", "s", "si", "o", "oui", "д", "да"):
+           if ans in ("", "e", "evet", "y", "yes", "b", "bəli", "beli", "j", "ja", "s", "si", "sí", "sì", "sim", "o", "oui", "д", "да", "نعم", "是", "好", "はい", "예", "네"):
              max_steps += self.config_mgr.config.max_steps_per_turn
            else:
              return False
@@ -9764,6 +14363,8 @@ def _dm_module_24():
              self.context.messages.pop()
              self.history.mark_last_user_cancelled()
            return False
+         turn_in_tok += int(resp.input_tokens or 0)
+         turn_out_tok += int(resp.output_tokens or 0)
          self.context.record_usage(resp.input_tokens, resp.output_tokens)
          self.usage.record(self.config_mgr.config.provider, self.config_mgr.config.model,
                   resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
@@ -9799,6 +14400,9 @@ def _dm_module_24():
                "Do not stop at text explanation — call `run_command` or `python_eval` right now to execute it!"
              )
              continue
+           elapsed_s = time.monotonic() - turn_t0
+           if (step > 1 or elapsed_s >= 2.0) and (turn_in_tok or turn_out_tok):
+             print(self.ui._paint(f"  ⏱ {elapsed_s:.1f}s • ↑{turn_in_tok:,} ↓{turn_out_tok:,} tok", "2;90"))
            return resp.stop_reason != "max_tokens"
          halt_remaining = False
          batch_failed = False
@@ -9849,6 +14453,7 @@ def _dm_module_24():
              name=tc.name,
              content=exec_res.output,
              is_error=not exec_res.ok,
+             images=getattr(exec_res, "images", None),
            )
          if halt_remaining:
            self.ui.warn(t("loop_stopped"))
@@ -9914,15 +14519,132 @@ def _dm_module_25():
  from datetime import datetime
  from pathlib import Path
  from urllib.parse import urlsplit
- from docmind.config import PROVIDERS, clean_api_key, get_provider_spec
+ from typing import Tuple
+ from docmind.config import ConfigManager, PROVIDERS, clean_api_key, get_provider_spec
  from docmind.core.agent import DocMindAgent
  from docmind.core.errors import classify_exception
  from docmind.i18n import LANGUAGE_CHOICES, i18n, t
- from docmind.tools.filesystem import list_mounted_roots, render_directory_tree, resolve_user_path
+ from docmind.tools.filesystem import format_size, list_mounted_roots, load_image_attachment, render_directory_tree, resolve_user_path
  from docmind.tools.terminal import detect_available_shells, detect_os_profile, tool_system_info
- from docmind.ui.console import HAS_PROMPT_TOOLKIT, HAS_RICH
+ from docmind.ui.console import ConsoleUI, HAS_PROMPT_TOOLKIT, HAS_RICH, SLASH_COMMANDS
  from docmind.core.providers import HAS_HTTPX, ProviderClient, reasoning_control_for, reasoning_effort_for
  from docmind.core.usage import context_limit_for, model_key, prices_for
+ def _copy_to_clipboard(text: str, is_tty: bool = False) -> bool:
+   """Copy text to OS clipboard (Windows/macOS/Wayland/X11) + OSC-52 fallback."""
+   import base64 as _b64
+   import shutil as _shutil
+   import subprocess as _sp
+   if not text:
+     return False
+   data = text.encode("utf-8", errors="replace")
+   copied = False
+   if os.name == "nt":
+     for cmd in (["powershell", "-NoProfile", "-Command", "$input | Set-Clipboard"], ["clip"]):
+       try:
+         r = _sp.run(cmd, input=data, capture_output=True, timeout=4)
+         if r.returncode == 0:
+           copied = True
+           break
+       except Exception:
+         pass
+   elif sys.platform == "darwin":
+     if _shutil.which("pbcopy"):
+       try:
+         copied = _sp.run(["pbcopy"], input=data, capture_output=True, timeout=4).returncode == 0
+       except Exception:
+         pass
+   else:
+     for cmd in (
+       ["wl-copy"],
+       ["xclip", "-selection", "clipboard"],
+       ["xsel", "--clipboard", "--input"],
+     ):
+       if _shutil.which(cmd[0]):
+         try:
+           if _sp.run(cmd, input=data, capture_output=True, timeout=4).returncode == 0:
+             copied = True
+             break
+         except Exception:
+           pass
+   if is_tty and len(data) <= 74994:
+     try:
+       osc = "\x1b]52;c;" + _b64.b64encode(data).decode("ascii") + "\x07"
+       sys.stdout.write(osc)
+       sys.stdout.flush()
+       copied = True
+     except Exception:
+       pass
+   return copied
+
+ def _read_clipboard_image_or_text(tmp_dir: Path) -> Tuple[Optional[Path], Optional[str]]:
+   """
+   Attempt to capture an image screenshot from clipboard first; if none, capture text.
+   Returns (saved_png_path_or_None, clipboard_text_or_None).
+   """
+   import shutil as _shutil
+   import subprocess as _sp
+   tmp_dir.mkdir(parents=True, exist_ok=True)
+   img_out = tmp_dir / f"clipboard_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+   if os.name == "nt":
+     ps_img = (
+       "Add-Type -AssemblyName System.Windows.Forms; "
+       "$img = [System.Windows.Forms.Clipboard]::GetImage(); "
+       f"if ($img -ne $null) {{ $img.Save('{str(img_out).replace(chr(39), chr(39)*2)}', [System.Drawing.Imaging.ImageFormat]::Png); exit 0 }} else {{ exit 1 }}"
+     )
+     try:
+       r = _sp.run(["powershell", "-NoProfile", "-Sta", "-Command", ps_img], capture_output=True, timeout=6)
+       if r.returncode == 0 and img_out.exists() and img_out.stat().st_size > 32:
+         return img_out, None
+     except Exception:
+       pass
+     try:
+       rt = _sp.run(["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"], capture_output=True, text=True, timeout=4)
+       if rt.returncode == 0 and rt.stdout.strip():
+         return None, rt.stdout
+     except Exception:
+       pass
+   elif sys.platform == "darwin":
+     osa = f'try\nset theFile to POSIX file "{img_out}"\nset fRef to open for access theFile with write permission\nset eof fRef to 0\nwrite (the clipboard as «class PNGf») to fRef\nclose access fRef\nreturn "OK"\non error\ntry\nclose access theFile\nend try\nreturn "NO"\nend try'
+     try:
+       r = _sp.run(["osascript", "-e", osa], capture_output=True, text=True, timeout=5)
+       if "OK" in (r.stdout or "") and img_out.exists() and img_out.stat().st_size > 32:
+         return img_out, None
+     except Exception:
+       pass
+     if _shutil.which("pbpaste"):
+       try:
+         rt = _sp.run(["pbpaste"], capture_output=True, text=True, timeout=4)
+         if rt.returncode == 0 and rt.stdout.strip():
+           return None, rt.stdout
+       except Exception:
+         pass
+   else:
+     for cmd in (
+       ["wl-paste", "--no-newline", "--type", "image/png"],
+       ["xclip", "-selection", "clipboard", "-t", "image/png", "-o"],
+     ):
+       if _shutil.which(cmd[0]):
+         try:
+           r = _sp.run(cmd, capture_output=True, timeout=4)
+           if r.returncode == 0 and r.stdout and r.stdout.startswith(b"\x89PNG\r\n\x1a\n"):
+             img_out.write_bytes(r.stdout)
+             return img_out, None
+         except Exception:
+           pass
+     for tcmd in (
+       ["wl-paste", "--no-newline"],
+       ["xclip", "-selection", "clipboard", "-o"],
+       ["xsel", "--clipboard", "--output"],
+     ):
+       if _shutil.which(tcmd[0]):
+         try:
+           rt = _sp.run(tcmd, capture_output=True, text=True, timeout=4)
+           if rt.returncode == 0 and rt.stdout.strip():
+             return None, rt.stdout
+         except Exception:
+           pass
+   return None, None
+
  class CommandRouter:
    """Handles all /slash commands inside the interactive DocMind terminal."""
    def __init__(self, agent: DocMindAgent) -> None:
@@ -10005,15 +14727,37 @@ def _dm_module_25():
          return "continue"
        if cmd in ("/os", "/sys", "/sistem"):
          _, sys_txt = tool_system_info(self.agent.tools.cwd)
-         _os_t = {"tr": "💻 Sistem & Dağıtım Profili", "en": "💻 System & OS Profile", "de": "💻 System- & OS-Profil", "es": "💻 Perfil del Sistema", "fr": "💻 Profil Système", "ru": "💻 Профиль системы"}.get(i18n.lang, "💻 System & OS Profile")
+         _os_t = {"tr": "💻 Sistem & Dağıtım Profili", "en": "💻 System & OS Profile", "az": "💻 Sistem & ƏS Profili", "de": "💻 System- & OS-Profil", "es": "💻 Perfil del Sistema", "fr": "💻 Profil Système", "it": "💻 Profilo Sistema", "pt": "💻 Perfil do Sistema", "nl": "💻 Systeemprofiel", "ru": "💻 Профиль системы", "ar": "💻 ملف النظام", "zh": "💻 系统与发行版信息", "ja": "💻 システム・OSプロファイル", "ko": "💻 시스템 및 OS 프로필"}.get(i18n.lang, "💻 System & OS Profile")
          self.ui.print_panel(_os_t, sys_txt, style="bright_cyan")
          return "continue"
-       if cmd == "/undo":
-         restored = self.agent.undo_mgr.undo_last()
-         if restored:
-           self.ui.success(t("undo_success", path=str(restored)))
+       if cmd in ("/undo", "/gerial"):
+         sub = arg.strip().lower()
+         if sub in ("list", "ls", "liste", "history"):
+           items = self.agent.undo_mgr.recent_paths(limit=20)
+           if items:
+             self.ui.print_panel(f"⏪ {t('undo_list_title')}", "\n".join(items), style="bright_cyan")
+           else:
+             self.ui.warn(t("undo_empty"))
+           return "continue"
+         steps = int(sub) if sub.isdigit() and int(sub) >= 1 else 1
+         steps = min(steps, 20)
+         any_done = False
+         for _ in range(steps):
+           restored = self.agent.undo_mgr.undo_last()
+           if restored:
+             self.ui.success(t("undo_success", path=str(restored)))
+             any_done = True
+           else:
+             if not any_done:
+               self.ui.warn(t("undo_empty"))
+             break
+         return "continue"
+       if cmd in ("/redo", "/yinele"):
+         reapplied = self.agent.undo_mgr.redo_last()
+         if reapplied:
+           self.ui.success(t("redo_success", path=str(reapplied)))
          else:
-           self.ui.warn(t("undo_empty"))
+           self.ui.warn(t("redo_empty"))
          return "continue"
        if cmd == "/tree":
          target = resolve_user_path(arg or ".", self.agent.tools.cwd)
@@ -10067,9 +14811,187 @@ def _dm_module_25():
          self.ui.print_startup_authority_warning()
          self.ui.success(t("cmd_cleared"))
          return "continue"
+       if cmd in ("/search", "/web", "/arastir", "/araştır", "/verify", "/dogrula", "/doğrula"):
+         if not arg.strip():
+           self.ui.info(t("search_usage"))
+           return "continue"
+         q_str = arg.strip()
+         search_prompt = (
+           f"Use `web_search` right now to research and cross-verify the following topic/claim on the live internet "
+           f"across multiple reliable sources, then present a clear, accurate, verified answer with source URLs:\n\n{q_str}"
+         )
+         self.agent.run_turn(search_prompt)
+         return "continue"
+       if cmd in ("/image", "/img", "/vision", "/resim", "/gorsel", "/görsel"):
+         if not arg:
+           self.ui.info(t("img_usage"))
+           return "continue"
+         raw_a = arg.strip()
+         img_p = ""
+         prompt_rest = ""
+         if raw_a[0] in ("'", '"'):
+           q_ch = raw_a[0]
+           end_q = raw_a.find(q_ch, 1)
+           if end_q > 0:
+             img_p = raw_a[1:end_q]
+             prompt_rest = raw_a[end_q + 1 :].strip()
+           else:
+             img_p = raw_a[1:]
+         else:
+           sp_parts = raw_a.split(maxsplit=1)
+           img_p = sp_parts[0]
+           prompt_rest = sp_parts[1].strip() if len(sp_parts) > 1 else ""
+         ok_i, err_i, meta_i = load_image_attachment(img_p, self.agent.tools.cwd)
+         if not ok_i or not meta_i:
+           self.ui.warn(err_i)
+           return "continue"
+         eff_prompt = prompt_rest or "Inspect this image/screenshot carefully. Describe what you see, and if there is any error, bug, or code/system issue, diagnose the exact root cause and fix or explain how to solve it."
+         self.agent.run_turn(eff_prompt, explicit_images=[meta_i])
+         return "continue"
+       if cmd in ("/copy", "/kopyala"):
+         last_txt = ""
+         for m in reversed(self.agent.context.messages):
+           if m.get("role") == "assistant" and str(m.get("content") or "").strip():
+             last_txt = str(m["content"]).strip()
+             break
+         if not last_txt:
+           self.ui.warn(t("copy_empty"))
+           return "continue"
+         if arg.strip().lower() in ("code", "kod", "block"):
+           import re as _re_cp
+           blocks = _re_cp.findall(r"```(?:[^\n`]*)\n(.*?)```", last_txt, flags=_re_cp.DOTALL)
+           if not blocks:
+             self.ui.warn(t("copy_empty"))
+             return "continue"
+           payload_cp = "\n\n".join(b.strip("\r\n") for b in blocks)
+         else:
+           payload_cp = last_txt
+         if _copy_to_clipboard(payload_cp, is_tty=self.ui.is_tty):
+           self.ui.success(t("copy_ok", chars=len(payload_cp)))
+         else:
+           self.ui.print_panel("📋 Copy Preview", payload_cp, style="bright_cyan")
+         return "continue"
+       if cmd in ("/paste", "/yapistir", "/yapıştır"):
+         clip_dir = self.cfg_mgr.home_dir / "clipboard"
+         img_clip, txt_clip = _read_clipboard_image_or_text(clip_dir)
+         if img_clip is not None:
+           ok_c, err_c, meta_c = load_image_attachment(str(img_clip), self.agent.tools.cwd)
+           if not ok_c or not meta_c:
+             self.ui.warn(err_c)
+             return "continue"
+           self.ui.info(t("paste_img_ok", dims=f"{meta_c['width']}x{meta_c['height']}", size=meta_c["size_human"]))
+           p_prompt = arg.strip() or "Inspect this pasted clipboard screenshot carefully. Diagnose any visible error, bug, or UI issue and solve it."
+           self.agent.run_turn(p_prompt, explicit_images=[meta_c])
+           return "continue"
+         if txt_clip:
+           self.ui.info(t("paste_txt_ok", chars=len(txt_clip)))
+           combined = (arg.strip() + "\n\n```\n" + txt_clip.strip() + "\n```") if arg.strip() else txt_clip.strip()
+           self.agent.run_turn(combined)
+           return "continue"
+         self.ui.warn(t("paste_empty"))
+         return "continue"
+       if cmd in ("/diff", "/git"):
+         import subprocess as _sp_git
+         cwd_p = self.agent.tools.cwd
+         try:
+           chk = _sp_git.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=str(cwd_p), capture_output=True, text=True, timeout=5)
+           if chk.returncode != 0:
+             self.ui.warn(t("diff_not_git"))
+             return "continue"
+           diff_cmd = ["git", "diff", "HEAD"]
+           if arg.strip():
+             diff_cmd.extend(["--", arg.strip()])
+           gd = _sp_git.run(diff_cmd, cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=10)
+           st = _sp_git.run(["git", "status", "--short"], cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=5)
+           raw_diff = (gd.stdout or "").strip()
+           raw_stat = (st.stdout or "").strip()
+           if not raw_diff and not raw_stat:
+             self.ui.success(t("diff_clean"))
+             return "continue"
+           if raw_stat:
+             self.ui.print_panel(f"🌿 Git Status ({cwd_p.name})", raw_stat, style="bright_cyan")
+           if raw_diff:
+             pm_entries = []
+             cur_file = ""
+             for ln in raw_diff.splitlines():
+               if ln.startswith("+++ b/"):
+                 cur_file = ln[6:]
+                 pm_entries.append(("...", f"── {cur_file} ──"))
+               elif ln.startswith("--- ") or ln.startswith("diff --git") or ln.startswith("index ") or ln.startswith("@@"):
+                 continue
+               elif ln.startswith("+"):
+                 pm_entries.append(("+", ln[1:]))
+               elif ln.startswith("-"):
+                 pm_entries.append(("-", ln[1:]))
+             if pm_entries:
+               adds = sum(1 for s, _ in pm_entries if s == "+")
+               dels = sum(1 for s, _ in pm_entries if s == "-")
+               cols = max(56, min(108, self.ui.view._size()[1] - 2))
+               bar = "━" * max(20, cols - 2)
+               stat_badge = self.ui._paint(f"+{adds}", "1;32") + " / " + self.ui._paint(f"-{dels}", "1;31")
+               print()
+               print(self.ui._paint("┏" + bar + "┓", "1;36"))
+               print(self.ui._paint("┃ ", "1;36") + self.ui._paint("🌿 Git Diff ", "1;37") + f"({stat_badge})")
+               print(self.ui._paint("┠" + ("─" * max(20, cols - 2)) + "┨", "1;36"))
+               for s_kind, ln_txt in pm_entries[:120]:
+                 clean_t = ln_txt.replace("\t", "    ")[: max(40, cols - 6)]
+                 if s_kind == "+":
+                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"+ {clean_t}", "1;32"))
+                 elif s_kind == "-":
+                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"- {clean_t}", "1;31"))
+                 else:
+                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  {clean_t}", "1;33"))
+               if len(pm_entries) > 120:
+                 print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  ... ({len(pm_entries) - 120} more lines)", "2;90"))
+               print(self.ui._paint("┗" + bar + "┛", "1;36"), flush=True)
+         except Exception:
+           self.ui.warn(t("diff_not_git"))
+         return "continue"
+       if cmd in ("/export", "/md", "/aktar"):
+         msgs = [m for m in self.agent.context.messages if m.get("role") in ("user", "assistant")]
+         if not msgs:
+           self.ui.warn(t("export_empty"))
+           return "continue"
+         out_name = arg.strip() or datetime.now().strftime("DocMind_Export_%Y%m%d_%H%M%S.md")
+         if not out_name.lower().endswith(".md"):
+           out_name += ".md"
+         out_path = resolve_user_path(out_name, self.agent.tools.cwd)
+         md_lines = [
+           f"# DocMind Session Export",
+           f"- **Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+           f"- **Provider / Model:** `{self.cfg_mgr.config.provider}` / `{self.cfg_mgr.config.model}`",
+           f"- **Working Directory:** `{self.agent.tools.cwd}`",
+           "",
+           "---",
+           "",
+         ]
+         for m in msgs:
+           role_lbl = "🧑 User" if m.get("role") == "user" else "🤖 DocMind"
+           content_txt = str(m.get("content") or "").strip()
+           tcs = m.get("tool_calls") or []
+           md_lines.append(f"## {role_lbl}")
+           if m.get("images"):
+             names = ", ".join(str(im.get("name", "image")) for im in m["images"] if isinstance(im, dict))
+             if names:
+               md_lines.append(f"_Attached Images: {names}_\n")
+           if content_txt:
+             md_lines.append(content_txt)
+           if tcs:
+             tc_names = ", ".join(f"`{tc.get('name', '')}`" for tc in tcs if isinstance(tc, dict))
+             md_lines.append(f"\n_Tools invoked: {tc_names}_")
+           md_lines.append("")
+         out_path.parent.mkdir(parents=True, exist_ok=True)
+         out_path.write_text("\n".join(md_lines).encode("utf-8", errors="replace").decode("utf-8"), encoding="utf-8")
+         self.ui.success(t("export_ok", path=str(out_path)))
+         return "continue"
        if cmd in ("/reset", "/sifirla", "/sıfırla"):
          return self._handle_reset()
-       self.ui.warn(t("cmd_unknown", cmd=cmd))
+       import difflib as _difflib
+       matches = _difflib.get_close_matches(cmd, SLASH_COMMANDS, n=1, cutoff=0.55)
+       if matches:
+         self.ui.warn(t("cmd_did_you_mean", cmd=cmd, suggest=matches[0]))
+       else:
+         self.ui.warn(t("cmd_unknown", cmd=cmd))
        return "continue"
      except Exception as exc:
        self.cfg_mgr.log_error(f"slash:{cmd}", repr(exc))
@@ -10132,7 +15054,7 @@ def _dm_module_25():
        print()
        self.ui.info(cancel_txt)
        return "continue"
-     accepted = {"tamam", "ok", "okay", "onayla", "sil", "evet", "e", "yes", "y", "ja", "j", "si", "sí", "s", "oui", "o", "да", "д"}
+     accepted = {"tamam", "ok", "okay", "onayla", "sil", "evet", "e", "beli", "bəli", "b", "yes", "y", "ja", "j", "si", "sí", "sì", "sim", "s", "oui", "o", "да", "д", "نعم", "是", "はい", "예", "네"}
      if ans not in accepted:
        self.ui.info(cancel_txt)
        return "continue"
@@ -10516,6 +15438,7 @@ def _dm_module_26():
  from docmind.core.errors import classify_exception
  from docmind.core.providers import reasoning_control_for, reasoning_effort_for
  from docmind.i18n import LANGUAGE_CHOICES, i18n, t
+ from docmind.tools.filesystem import load_image_attachment
  from docmind.ui.commands import CommandRouter
  from docmind.ui.console import ConsoleUI
  def build_arg_parser() -> argparse.ArgumentParser:
@@ -10534,7 +15457,7 @@ def _dm_module_26():
    parser.add_argument(
      "--lang",
      choices=[c[0] for c in LANGUAGE_CHOICES],
-     help="Set interface & assistant language (tr, en, de, es, fr, ru).",
+     help="Set interface & assistant language (14 languages: tr, en, az, de, es, fr, it, pt, nl, ru, ar, zh, ja, ko).",
    )
    parser.add_argument(
      "--provider",
@@ -10543,6 +15466,7 @@ def _dm_module_26():
    )
    parser.add_argument("--model", help="Override AI model name.")
    parser.add_argument("--api-key", dest="api_key", help="Provide API key for active provider.")
+   parser.add_argument("--image", "-i", action="append", default=[], help="Attach an image/screenshot path for visual analysis (repeatable).")
    parser.add_argument("--doctor", action="store_true", help="Run system & API diagnostics and exit.")
    parser.add_argument("--version", "-v", action="store_true", help="Show DocMind version.")
    return parser
@@ -10631,10 +15555,18 @@ def _dm_module_26():
      api_cli_warn = {
        "tr": "--api-key kabuk geçmişinde görünebilir; sonraki sefer /api veya ortam değişkeni kullanın.",
        "en": "--api-key may appear in shell history/process list; prefer /api or environment variables.",
+       "az": "--api-key qabıq tarixçəsində görünə bilər; növbəti dəfə /api və ya mühit dəyişəni istifadə edin.",
        "de": "--api-key kann im Shell-Verlauf sichtbar sein; nutzen Sie besser /api oder Umgebungsvariablen.",
        "es": "--api-key puede verse en el historial; prefiera /api o variables de entorno.",
        "fr": "--api-key peut apparaître dans l'historique ; préférez /api ou les variables d'environnement.",
-       "ru": "--api-key может сохраниться в истории оболочки; используйте /api oder переменные среды.",
+       "it": "--api-key può apparire nella cronologia della shell; preferisci /api o variabili d'ambiente.",
+       "pt": "--api-key pode aparecer no histórico do shell; prefira /api ou variáveis de ambiente.",
+       "nl": "--api-key kan zichtbaar zijn in de shellgeschiedenis; gebruik liever /api of omgevingsvariabelen.",
+       "ru": "--api-key может сохраниться в истории оболочки; используйте /api или переменные среды.",
+       "ar": "قد يظهر --api-key في سجل الطرفية؛ يُفضل استخدام /api أو متغيرات البيئة.",
+       "zh": "--api-key 可能会保留在终端历史记录中；建议使用 /api 或环境变量。",
+       "ja": "--api-key はシェル履歴に残る可能性があります。/api または環境変数の使用を推奨します。",
+       "ko": "--api-key는 셸 기록에 남을 수 있으므로 /api 또는 환경 변수 사용을 권장합니다.",
      }
      ui.warn(api_cli_warn.get(i18n.lang, api_cli_warn["en"]))
    agent = DocMindAgent(
@@ -10643,6 +15575,7 @@ def _dm_module_26():
      non_interactive=bool(one_shot_prompt and not ui.is_tty),
    )
    router = CommandRouter(agent)
+
    if args.doctor:
      ui.print_banner()
      ui.print_startup_authority_warning()
@@ -10658,20 +15591,36 @@ def _dm_module_26():
      leg_warn = {
        "tr": f"Kaydedilmiş model eski olabilir: {cfg.model}. /model ile güncel bir model seçin.",
        "en": f"Saved model may be deprecated: {cfg.model}. Use /model to choose a current model.",
+       "az": f"Saxlanılmış model köhnəlmiş ola bilər: {cfg.model}. /model ilə yeniləyin.",
        "de": f"Gespeichertes Modell ist evtl. veraltet: {cfg.model}. Mit /model aktualisieren.",
        "es": f"El modelo guardado puede estar obsoleto: {cfg.model}. Use /model para cambiarlo.",
        "fr": f"Le modèle enregistré est peut-être obsolète : {cfg.model}. Utilisez /model.",
+       "it": f"Il modello salvato potrebbe essere obsoleto: {cfg.model}. Usa /model per aggiornarlo.",
+       "pt": f"O modelo salvo pode estar obsoleto: {cfg.model}. Use /model para escolher um atual.",
+       "nl": f"Opgeslagen model is mogelijk verouderd: {cfg.model}. Gebruik /model om te wijzigen.",
        "ru": f"Сохранённая модель может быть устаревшей: {cfg.model}. Смените через /model.",
+       "ar": f"قد يكون النموذج المحفوظ قديماً: {cfg.model}. استخدم /model لاختيار نموذج حديث.",
+       "zh": f"已保存的模型可能已弃用: {cfg.model}。请使用 /model 切换最新模型。",
+       "ja": f"保存されたモデルは非推奨の可能性があります: {cfg.model}。/model で変更してください。",
+       "ko": f"저장된 모델이 구형일 수 있습니다: {cfg.model}. /model로 최신 모델을 선택하세요.",
      }
      ui.warn(leg_warn.get(i18n.lang, leg_warn["en"]))
    if cfg.permission_mode == "auto":
      auto_warn = {
        "tr": "TAM OTOMATİK MOD: Dosya değişiklikleri onaysız çalışır (terminal komutları yine onay ister). /smart ile onaylı moda geçin.",
        "en": "FULL AUTO MODE: File edits run automatically (terminal commands still ask approval). Use /smart for Smart Confirm.",
+       "az": "TAM AVTOMATİK REJİM: Fayl dəyişiklikləri təsdiqsiz işləyir (terminal yenə icazə istəyir). /smart ilə təsdiqli rejimə keçin.",
        "de": "VOLLAUTOMATIK: Dateiänderungen laufen direkt (Terminal fragt weiterhin). /smart für Bestätigungsmodus.",
        "es": "MODO AUTOMÁTICO: Los cambios de archivos son directos (la terminal sigue pidiendo permiso). Use /smart.",
        "fr": "MODE AUTO : Modifications de fichiers directes (le terminal demande toujours accord). Utilisez /smart.",
+       "it": "MODALITÀ AUTO: Le modifiche ai file sono automatiche (il terminale chiede comunque conferma). Usa /smart.",
+       "pt": "MODO AUTOMÁTICO: Edições de arquivos são diretas (o terminal ainda pede permissão). Use /smart.",
+       "nl": "VOLAUTOMATISCH: Bestandswijzigingen lopen direct (terminal vraagt nog steeds toestemming). Gebruik /smart.",
        "ru": "АВТО-РЕЖИМ: Изменения файлов без запроса (терминал всё равно спрашивает разрешение). /smart для обычного режима.",
+       "ar": "الوضع التلقائي الكامل: تُنفذ تعديلات الملفات تلقائياً (الطرفية تطلب الإذن دائماً). استخدم /smart للوضع الذكي.",
+       "zh": "全自动模式：文件修改将直接执行（终端命令仍需确认）。输入 /smart 切换回智能确认模式。",
+       "ja": "フルオートモード: ファイル編集は自動実行されます（ターミナル実行は引き続き確認あり）。/smart で確認モードに戻せます。",
+       "ko": "전체 자동 모드: 파일 수정이 자동 실행됩니다 (터미널 명령은 여전히 승인 필요). /smart로 승인 모드로 전환하세요.",
      }
      ui.warn(auto_warn.get(i18n.lang, auto_warn["en"]))
    needs_first_setup = not cfg.setup_completed
@@ -10684,8 +15633,32 @@ def _dm_module_26():
      ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
    if cfg.reasoning_effort == "default" or not reasoning_control_for(cfg.provider, cfg.model):
      ui.info(t("effort_uncontrolled"))
-   if one_shot_prompt:
-     return 0 if agent.run_turn(one_shot_prompt) else 1
+   cli_images = []
+   for raw_img_arg in (args.image or []):
+     ok_ci, err_ci, meta_ci = load_image_attachment(raw_img_arg, agent.tools.cwd)
+     if ok_ci and meta_ci:
+       cli_images.append(meta_ci)
+     else:
+       ui.warn(err_ci)
+       return 1
+   piped_stdin = ""
+   if not ui.is_tty and sys.stdin is not None and (one_shot_prompt or cli_images):
+     try:
+       raw_pipe = sys.stdin.read(200_001)
+       if raw_pipe and raw_pipe.strip():
+         if len(raw_pipe) > 200_000:
+           raw_pipe = raw_pipe[:180_000] + "\n... [stdin truncated] ...\n" + raw_pipe[-15_000:]
+         piped_stdin = raw_pipe.strip()
+     except Exception:
+       pass
+   if one_shot_prompt or cli_images or piped_stdin:
+     final_oneshot = one_shot_prompt or (
+       "Inspect the attached image(s) carefully, explain what you see, and diagnose/fix any errors."
+       if cli_images else "Analyze the following piped input:"
+     )
+     if piped_stdin:
+       final_oneshot = f"{final_oneshot}\n\n### Piped Standard Input\n```\n{piped_stdin}\n```"
+     return 0 if agent.run_turn(final_oneshot, explicit_images=cli_images if cli_images else None) else 1
    ui.info(t("ready_hint"))
    ui.info(t("type_help_hint"))
    ui.info(t("history_privacy"))

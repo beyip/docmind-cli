@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.0`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.1`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.1`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 
@@ -38,7 +38,7 @@ git clone https://github.com/beyip/docmind-cli.git
 cd docmind-cli
 ```
 
-> **Important:** Do **not** modify comments, headers, or code inside `DocMind.py`. DocMind verifies its embedded **SHA-256 + RSA-3072 cryptographic signature** on startup and refuses to run if the file has been altered.
+> **Important:** Do **not** modify comments, headers, or code inside `DocMind.py`. DocMind verifies its embedded **SHA-256 + RSA-3072 cryptographic signature** (`OWNER: DEVRAN E. / BEYİP_`) on startup and refuses to run if the file has been altered.
 
 ---
 
@@ -56,18 +56,16 @@ python DocMind.py
 
 ### Step-by-Step Onboarding Flow
 
-1. **Language Selection (`[1-6]` — First-Time Setup Only):**  
-   On your very first run (or when running `--setup`), DocMind asks for your preferred language before anything else—and remembers it automatically on all future launches (use `/lang` anytime to switch later):
-   - `[1]` Türkçe (`TR`)
-   - `[2]` English (`EN`)
-   - `[3]` Deutsch (`DE`)
-   - `[4]` Español (`ES`)
-   - `[5]` Français (`FR`)
-   - `[6]` Русский (`RU`)
+1. **Language Selection (`[1-14]` — First-Time Setup Only):**  
+   On your very first run (or when running `--setup`), DocMind asks for your preferred language before anything else and remembers it automatically on all future launches (switchable anytime via `/lang`):
+   - `[1]` Türkçe (`TR`) · `[2]` English (`EN`) · `[3]` Azərbaycan (`AZ`) · `[4]` Deutsch (`DE`)
+   - `[5]` Español (`ES`) · `[6]` Français (`FR`) · `[7]` Italiano (`IT`) · `[8]` Português (`PT`)
+   - `[9]` Nederlands (`NL`) · `[10]` Русский (`RU`) · `[11]` العربية (`AR`) · `[12]` 中文 (`ZH`)
+   - `[13]` 日本語 (`JA`) · `[14]` 한국어 (`KO`)
 2. **Startup Authority Notice:**  
-   DocMind displays a compact red warning reminding you that the agent has full access to inspect and manage files across your computer.
+   DocMind displays its bright-red `OWNER: DEVRAN E. / BEYİP_` seal and a compact authority notice reminding you that the agent can inspect and manage files across your computer with your consent.
 3. **AI Provider & Model Selection:**  
-   On first run, the Setup Wizard asks you to pick a provider (`Gemini`, `Anthropic`, `OpenAI`, `Groq`, `OpenRouter`, `DeepSeek`, or `Custom / Local`) and choose a model.
+   Pick a provider (`Gemini`, `Anthropic`, `OpenAI`, `Groq`, `OpenRouter`, `DeepSeek`, or `Custom / Local`) and choose a model.
 4. **API Key Verification:**  
    Paste your API key when prompted. DocMind tests the connection live and stores your configuration locally in:
    - **Linux / macOS:** `~/.docmind-single/config.json`
@@ -75,115 +73,122 @@ python DocMind.py
 
 ---
 
-## 4. Everyday Usage Examples
+## 4. Sending Images & Visual Debugging (`Vision` in `v1.1`)
 
-Once at the `DocMind ❯` prompt, type natural-language requests:
+Supported formats: **`.png`, `.jpg`, `.jpeg`, `.webp`, `.gif`, `.bmp`** (BMP screenshots are automatically converted to lossless PNG in pure Python).
 
-- **Explore Drives & Folders Anywhere on Your Machine:**
-  - *"List all drives on my computer and check free disk space."*
-  - *"Summarize the PDF or Word document on my Desktop."*
-  - *"Find all `.zip` archives in my Downloads folder and extract the latest one."*
-- **Software Development & Self-Healing Code Edits:**
-  - *"Inspect this project, find why the script crashes, fix the bug, and verify syntax."*
-  - *"Write a system cleanup utility."* *(DocMind automatically detects your exact OS — e.g., Arch Linux or Windows 11 — and asks whether you want the code tailored to your OS or written universally cross-platform.)*
-- **Controlled Terminal & System Operations:**
-  - *"Check which process is using the most memory."*
-  - *"Run my test suite and fix any failing tests."*
+You can send screenshots or images in **5 easy ways**:
 
-### How Explain-vs-Execute & Terminal Permission Work
+1. **Drag & Drop Directly into the Terminal:**  
+   Drag an image from your Desktop/File Explorer into the `DocMind ❯` prompt (works with spaces in paths and `file://` URIs):
+   ```text
+   DocMind ❯ C:\Users\Devran\Desktop\Error Screenshot 1.png fix the bug shown here
+   ```
+2. **Paste Directly from Clipboard (`/paste`) — No File Needed:**  
+   Take a screenshot (`Win + Shift + S`, `PrintScreen`, or macOS `Cmd + Ctrl + Shift + 4`) and run:
+   ```text
+   DocMind ❯ /paste explain and fix this error
+   ```
+3. **`/image` Slash Command:**
+   ```text
+   DocMind ❯ /image "screenshots/crash.png" why is this failing?
+   ```
+4. **`@` Inline Context Mentions (Combine Code + Screenshots):**
+   ```text
+   DocMind ❯ @src/server.py @crash.png fix the exception shown in the screenshot
+   ```
+5. **CLI `--image` / `-i` Flag:**
+   ```bash
+   python3 DocMind.py --image crash.png "Diagnose and fix this error"
+   ```
 
-0. **2-Option Mode Selection (`[1] Explain` vs. `[2] Run in Terminal`):**  
-   When you ask for a command, terminal output, or runnable snippet (for example, *"Print Hello World in the terminal using Python"*), DocMind asks:
-   - `[1]` **Explain it** — DocMind explains step-by-step how to run it without executing anything.
-   - `[2]` **Run it myself** — DocMind invokes the terminal (`run_command` / `python_eval`) to perform the action live on your machine.
-1. **Pre-Execution Approval:**  
-   Before executing any shell command (`run_command`) or Python snippet (`python_eval`) — even in `/auto` mode — DocMind shows a permission box containing:
-   - Shell / Runtime (`bash`, `powershell`, `cmd`, or `python`)
-   - Working Directory
-   - Exact Command / Code to Execute  
-   Approve with `y` / `yes` (or `e` / `evet` in Turkish) or decline with `n` / `no`.
-2. **Execution Report:**  
-   After running, DocMind prints a clear execution box showing the command used, exit code, duration, and output preview.
-3. **Smart Self-Repair vs. Manual Password Commands:**  
-   - If a command fails due to a fixable issue (wrong flag, path typo, syntax error), DocMind analyzes the error, corrects the command/code, asks for your approval again, and verifies the fix. Also, any broken file edit can be rolled back automatically via snapshots (`undo_file_change` or `/undo`).
-   - If a command requires an interactive password or elevated privileges (`sudo`, `root`, `pkexec`, SSH passphrase, or Windows `Run as Administrator`), DocMind **will not** retry blindly — instead, it explains why elevation is needed and gives you the exact OS-specific command to run in your own terminal.
+> **Smart Vision Bridge:** Even if your active model is text-only (such as `openai/gpt-oss-120b` on Groq or `deepseek-chat`), DocMind automatically bridges the image through a Vision-capable model (`meta-llama/llama-4-scout-17b-16e-instruct` or another configured Vision provider) and enriches it with local OCR when available.
 
 ---
 
-## 5. Interactive Slash Commands
+## 5. Live Internet Research, `@mentions` & Green `+` / Red `-` Approvals
 
-Type any of these commands at the `DocMind ❯` prompt:
+- **Live Web Search & Fact Verification:**  
+  Ask about current software releases, prices, documentation, or say *"research and verify this"* — or run **`/search <query>`** directly. DocMind queries DuckDuckGo, Wikipedia, and StackOverflow, then cross-checks top web pages before answering with source URLs.
+- **Inline `@file` & `@folder` Mentions:**  
+  Reference existing files or folders directly in chat (`@app.py`, `@"my notes.docx"`, `@src/`) to attach their content or directory tree immediately.
+- **Green `+` / Red `-` File Approval System:**  
+  Before creating, editing, or deleting a file in Smart Confirm mode, DocMind renders a clean preview box showing **bright green `+` lines** for added/written code and **bright red `-` lines** for removed code.
+- **Interactive Explain-vs-Execute & Mandatory Terminal Consent:**  
+  For runnable tasks, choose between `[1] Explain` and `[2] Run in Terminal`. Every shell/Python execution requires explicit pre-execution approval and prints a full summary afterward.
+
+---
+
+## 6. Interactive Slash Commands
+
+Type any of these commands at the `DocMind ❯` prompt (includes Tab completion and fuzzy typo suggestions):
 
 | Command | Description |
 | :--- | :--- |
 | `/help` | Show all available slash commands and shortcuts |
+| `/search <query>` | Search the live internet & cross-verify facts across multiple sources |
+| `/image <path> [prompt]` | Attach an image/screenshot and analyze or fix errors |
+| `/paste [prompt]` | Capture screenshot or text directly from your OS clipboard |
+| `/copy [code]` | Copy the last assistant reply (`/copy code` copies code blocks only) |
+| `/diff [path]` | Show Git status and uncommitted changes in green `+` / red `-` lines |
+| `/undo [N \| list]` | Revert the last `N` file modifications or inspect snapshot history (`/undo list`) |
+| `/redo` | Re-apply the most recently undone file modification |
+| `/export [file.md]` | Export the current conversation transcript to a clean Markdown file |
 | `/setup` | Re-run the full interactive configuration wizard |
 | `/api` | Switch AI provider or update your API key |
 | `/model [name]` | Select or type a different model |
-| `/lang [code]` | Change language (`tr`, `en`, `de`, `es`, `fr`, `ru`) |
+| `/lang [code]` | Switch interface & AI language (`tr`, `en`, `az`, `de`, `es`, `fr`, `it`, `pt`, `nl`, `ru`, `ar`, `zh`, `ja`, `ko`) |
 | `/effort [level]` | Adjust reasoning effort (`low`, `medium`, `high`, `max`, `default`) |
-| `/smart` | Enable **Smart Confirm** mode (prompts before file writes & commands) |
+| `/smart` | Enable **Smart Confirm** mode (green `+` / red `-` approval before file edits & commands) |
 | `/auto` | Enable **Full Auto** mode for file edits (terminal commands still require approval) |
 | `/os` | Display detected OS/Linux distribution, package managers, shells, and drives |
-| `/doctor` | Run system & live API health diagnostics (`/doctor tools` tests tool calling; `/doctor all` checks all configured providers) |
-| `/cd <path>` | Change active working directory (supports `~`, `Desktop`, `Downloads`, absolute paths) |
+| `/doctor` | Run system & live API diagnostics (`/doctor tools` tests tool schemas; `/doctor all` checks all configured providers) |
+| `/cd <path>` | Change active working directory |
 | `/tree [path]` | Render a visual directory tree |
-| `/undo` | Revert the most recent file edit/write/deletion from snapshot history |
 | `/tokens` | Show session token consumption and estimated API cost |
+| `/price` | Configure custom USD token pricing for the active model |
 | `/context` | View active context window usage or compact history (`/context compact`) |
 | `/history` | Browse and resume past conversation sessions |
-| `/save [name]` | Export current conversation to `~/.docmind-single/sessions/` |
+| `/delete` | Delete a saved conversation from history |
+| `/save [name]` | Save current conversation to `~/.docmind-single/sessions/` |
 | `/load <name>` | Load a saved session |
 | `/clear` | Clear terminal screen and start a fresh conversation |
 | `/reset` | Delete saved `.json` configuration after confirmation and close the terminal |
 | `/exit` | Exit DocMind CLI cleanly |
 
-> **Multiline Input Tip:** End a line with `\` to continue writing on the next line, or type `"""` to enter a multi-line block and finish with `"""`.
-
 ---
 
-## 6. Command-Line Flags (CLI Arguments)
+## 7. Command-Line Flags & Piped Input
 
 ```bash
 # Show version
 python3 DocMind.py --version
 
-# Launch directly in a specific language (skips startup language prompt)
-python3 DocMind.py --lang en
+# Launch directly in a specific language (14 languages supported)
+python3 DocMind.py --lang tr
+
+# Analyze a screenshot directly from the terminal
+python3 DocMind.py --image error.png "Fix the bug shown in this screenshot"
+
+# Pipe logs or git diffs directly into DocMind
+cat build.log | python3 DocMind.py "Diagnose why the build failed"
 
 # Run system & API diagnostics and exit
 python3 DocMind.py --doctor
 
-# Launch setup wizard directly
-python3 DocMind.py --setup
-
-# Override provider / model / permission mode
-python3 DocMind.py --provider gemini --model gemini-3.8-flash --smart
-
 # One-shot task execution
-python3 DocMind.py --lang en "Summarize README.md in 5 bullet points"
+python3 DocMind.py --lang en "Summarize @README.md in 5 bullet points"
 ```
 
 ---
 
-## 7. Resetting Configuration
+## 8. Resetting Configuration
 
-Inside DocMind CLI, simply run `/reset` and confirm (`ok` / `yes`) to automatically delete your saved `.json` configuration file and close the terminal.
-
-Alternatively, you can delete `config.json` manually from your shell:
-
-- **Linux / macOS:**
-  ```bash
-  rm -f ~/.docmind-single/config.json
-  ```
-- **Windows (PowerShell):**
-  ```powershell
-  Remove-Item -Force "$HOME\.docmind-single\config.json" -ErrorAction SilentlyContinue
-  ```
+Inside DocMind CLI, run `/reset` and confirm to automatically delete your saved `.json` configuration file and close the terminal, or delete `~/.docmind-single/config.json` (`%USERPROFILE%\.docmind-single\config.json` on Windows) manually.
 
 ---
 
-## 8. Credits & License
+## 9. Credits & License
 
 - **Creator / Owner:** `DEVRAN E. / BEYİP_`
 - **License:** Released under the [MIT License](./LICENSE).
