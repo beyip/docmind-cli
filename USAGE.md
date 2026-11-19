@@ -217,6 +217,34 @@ retry. You can still revert manually with `/undo`.
 | `max` | `max` / `xhigh` on OpenAI | **always off** |
 | `aggressive` | deepest level the model documents (`max` / `xhigh` / top `thinking`) | **always off** |
 
+### 6.4 `Aggressive` mode — the Aggressive Engine
+
+`/effort aggressive` (or menu item `1`) is not just the deepest reasoning value. After the `Y/N` warning it arms the
+**Aggressive Engine**, a quality contract applied to every turn:
+
+| Layer | What it does |
+| --- | --- |
+| Prompt protocol | clarify once → plan → read the code → implement → verify → fix → report. No unverified "done". |
+| Perfection audit | after a turn that wrote code, an audit of the working folder runs (pruned walk, size/file-count bounded). **Blocking** = real syntax errors anywhere, or findings in files this turn touched → the turn cannot end until they are fixed. Pre-existing markers elsewhere are reported as advisory and never block |
+| Tool | read-only `aggressive_audit` (model can call it any time; nothing is executed) |
+| Snapshots | previous revision of every rewritten file is kept in `.docmind_backups/` (newest 20 per file) |
+| Project memory | `AGGRESSIVE_PLAN.md` (plan/assumptions) and `AGGRESSIVE_JOURNAL.md` (decisions, open work) |
+
+```text
+DocMind ❯ /effort aggressive
+[!] AGGRESSIVE MODE WARNING ... (Y/N) ❯ y
+[OK] 🔴 AGGRESSIVE MODE ACTIVE: token saving disabled, deepest reasoning enabled.
+```
+
+Turn the engine off while keeping the deepest reasoning (it behaves like the plain deep mode):
+
+```text
+DocMind ❯ /effort engine off
+[!] Aggressive engine is off for this session; only the deepest reasoning level is applied.
+DocMind ❯ /effort engine
+[..] Aggressive engine: off  (/effort engine on|off)
+```
+
 ### 6.4 `Aggressive` mode
 
 ```text
@@ -263,7 +291,7 @@ Type any of these commands at the `DocMind ❯` prompt (includes Tab completion 
 | `/api` | Switch AI provider or update your API key |
 | `/model [name]` | Select or type a different model |
 | `/lang [code]` | Switch interface & AI language (`tr`, `en`, `az`, `de`, `es`, `fr`, `it`, `pt`, `nl`, `ru`, `ar`, `zh`, `ja`, `ko`) |
-| `/effort [level]` | Show the level menu when used alone; adjust reasoning effort (`low`, `medium`, `high`, `hard`, `max`, `aggressive`, `default`). Turkish aliases: `/zeka dusuk/orta/yuksek/zor/maksimum/agresif` |
+| `/effort [level]` | Show the level menu when used alone; adjust reasoning effort (`low`, `medium`, `high`, `hard`, `max`, `aggressive`, `default`). Turkish aliases: `/zeka dusuk/orta/yuksek/zor/maksimum/agresif`. `/effort engine on\|off` toggles the Aggressive Engine |
 | `/token-save [on\|off\|status]` | Toggle token saving (ON by default). Refused in `aggressive`/`high`/`hard` modes |
 | `/smart` | Enable **Smart Confirm** mode (green `+` / red `-` approval before file edits & commands) |
 | `/auto` | Enable **Full Auto** mode for file edits (terminal commands still require approval) |

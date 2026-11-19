@@ -22,6 +22,12 @@
 - **Pick by number:** right after the menu you can type `1`–`7` (or any level name); `Enter` cancels and
   keeps the current level. Choosing `1` (aggressive) still asks the `Y/N` confirmation first.
 - An unknown `/effort` argument now prints the usage line **and** the menu.
+- **🔥 The Aggressive Engine (new):** `Aggressive` no longer just raises the reasoning number. It arms an engineering
+  protocol — plan + risk scan first, syntax check on every written file, live execution verification, a **perfection
+  audit** before a turn is allowed to end (syntax, `TODO/FIXME`, swallowed exceptions), automatic `.docmind_backups/`
+  snapshots and project memory in `AGGRESSIVE_PLAN.md` / `AGGRESSIVE_JOURNAL.md`. The model also gets a read-only
+  `aggressive_audit` tool. Switch the engine off with `/effort engine off` (it then behaves like the old deep-reasoning
+  mode) — the level itself stays `aggressive`.
 - **📦 Included from the earlier v1.2 work below:** token saving, aggressive/hard levels and the mode guard.
 
 ## 🛡️ Hardening, rendering & fixes in `v1.2`

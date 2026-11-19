@@ -6,6 +6,25 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ## `v1.2` — Token Saving, Aggressive Reasoning Mode & Stability
 
+### Added — Aggressive Engine (makes Aggressive genuinely aggressive)
+- **`Aggressive` is now a full quality contract, not just a reasoning number.** With `/effort aggressive` the agent
+  receives a mandatory engineering protocol in its system prompt: clarify once then commit, plan before touching files,
+  read the code instead of guessing, never ship unverified work, hunt bugs to the root cause, keep the project folder
+  coherent, protect user data, and close every turn with what changed / what was verified / what is left.
+- **Perfection audit before a turn can end.** After a turn that actually wrote/edited something, DocMind scans the
+  working folder (syntax via `check_syntax`, `TODO/FIXME/XXX/HACK/WIP/STUB` markers, swallowed exceptions and
+  unimplemented stubs). Only **blocking** findings — a real syntax error anywhere, or a problem inside a file the
+  turn touched — are fed back and force another round; pre-existing markers in legacy files are reported once and
+  never trap the conversation in a loop. The walk is pruned (`.git`, `node_modules`, virtualenvs, build dirs), size
+  and file-count bounded, and never follows symlink loops.
+- **New tool `aggressive_audit`** (read-only) exposes that audit to the model on demand; it never executes project code.
+- **Automatic write snapshots:** every file the agent rewrites keeps its previous revision in `.docmind_backups/`
+  (newest 20 revisions per file are kept, older ones rotate out).
+- **Project memory files:** `AGGRESSIVE_PLAN.md` (plan, assumptions, verification steps) and `AGGRESSIVE_JOURNAL.md`
+  (decisions, changed files, open work) are created on the first aggressive run of a folder and kept up to date.
+- **`/effort engine on|off`** toggles the engine itself (persisted as `aggressive_mode`); `/effort engine` shows the state.
+- Strings for the new messages in Turkish, English and German (the rest fall back through the normal i18n chain).
+
 ### Added
 - **Token saving (`/token-save on|off|status`, ON by default).**
   - Persisted in `~/.docmind-single/config.json`; restored on every launch.

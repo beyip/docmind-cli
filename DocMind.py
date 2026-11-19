@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '7653b4d0a61e6db5f89250c64554f925080dd322d7e49ffa11e1795a384ec635'
-_DM_SIGNATURE = '3f98d5a5c36470a90c826a6679ad7307a066312f35f3e19cb19e6bf5779f2de450393d6906bda93314f0e766542d265d27347f727911fb7c7c84a75efc89da869bd862fa952701ff8e289557e511b6778b315c25b6cc8c777a82b6ee93b0067a6b5e4e199c15e99cb6b1ee12c7bfc47204fb87b6625238dc16b3fae561ee9d31c637546a12f2a9c5986e29ecee32f9e362beeff0833d656650be94ec54362dcd61611aa4acdb55f0a58f4ac24f8522d0e42a6839d33abfd43402b8f1717f6e5e6db48f5570954af9aef4f12264f5247cafbf822844a1269a42fd6db185dababb118985bb86eebb24eb70a75a78346d9265343e47da23693409922710b2423fc5f7a5d483ba3049a841b98b4225689b993718d18803b2217c8f1090077a199ba30d874ca2331eb602a9d56bbb85c83ae908dff52ee9d65fe3757c33c76f9ee9fdf2c615863c72bb0ec23106f1c753a4631b54fad5ab50f894010f85cc049c9786070fb438606aba91e29597bfe28b44b7372b9ac204ec7d20e1fd3ecf327d6f89'
-_DM_PUBLIC_N = int('cf32358b4296594259856122aa66a9d8880488a28417d50a3b7cd2421eada4dcbd834733838288f1b9ae5d62ce30db9da7264834b415bca3d758b3116c63ce35d9f97ecb4db1d72549d6ee9844384216146c9d03cc311d2e67c5f4eff6c5a2cbb27f0a07cc3e1a4134bb60e71502ce866a07bad6be93895a4f1ab93e6af0bfa722f8f127cb754dfb3a3ef911cb75795ecf746d7a9469914cb88370b4e84ebe65ba95df5ce88216f8d57444b67b69b454c2d5f2826e119a48ee15cf9bdf8dee9185668eaec34544fbb0d14a6456f4f7c1af072fb3803765910b4bdf0ef2f8efe688a0d9a02a1b80ad7ff153996c346128046d3e0381c14090c9eb0c83bcfbdfcf544b27d08d2483b9a41b3b8d2160facc34ddf9cdf2cfe9021603eaefae7032ea0a434ed3fc572d3b5456f94f41de5e36eeee8b40a8426337861f6d77b3907d37d8023c3c74357348ece9711f06d7458844e6e0091afd68d7c437713c1a6452b61cd299075c864be6dbda652c2014a5f11793fd9580f203296d944db3c00b0113', 16)
+_DM_SOURCE_HASH = 'fb16f81dcecc6433f52e14038a1f2a77526bd84c8a578b038209bed1d926a99d'
+_DM_SIGNATURE = '4f857da79812838c1e91b88814dd1df2bb38dc5269a007cc2867ffbf68c522789f00bac1dd549c3816cb4a7b8ec1bd39149d99677b0086df2487b5d3830304f98def4d6c637a5cf1d9c230f7a03337f16f6c13113d827ef411dfbbd3ee39731907f9c96265dd4f0e61bfdc03b2d1940e8c9b342bf9e9e1cb3f46bc740845278e54192e26ff382b54c5ee5ea4f954ff2a49d42a57a16aa1fb7fd19f66856a249974132fb1e6ef86236c004792b7f79c33aadad16eef8e228e70c6b2aa9c7166c780867b01a6f10ca66d100f0772fa9ce760dcb5f7d6b38f4c185de72f82d7b66d635efc4c21905f3a5ae1a86f3cc8122995d477ebe72bb4b2ad76de965a6d58085688984946a7dd96badeb4679fb69b804b58ad71a7e8ba06d32813f1fe7d561f0588172f9e240ec719fef8b5a6d0e220f3e4aeb31ef392ccaee12dff79bd313035d56cd1d39d90662c716e88805a3052ded094bb4ed28db5405104e771d50cd08f33a50205fa186ff14adbae09aefd75019791092ddf71d9f32baac6b8fa4883'
+_DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -341,7 +341,7 @@ def _dm_module_01():
     "effort_usage": "Kullanım: /effort aggressive|max|high|hard|medium|low|default (veya /zeka agresif|maksimum|yüksek|zor|orta|düşük|varsayılan).",
     "effort_saved": "Düşünme ayarı kaydedildi: {level}.",
     "effort_not_saved": "Düşünme ayarı bu oturumda {level}; ayarlara kaydedilemedi.",
-    "effort_help": " /effort    Düşünme düzeyi ve maliyet",
+    "effort_help": " /effort    Düşünme düzeyi, aggressive motoru ve maliyet",
     "effort_actual": "Bu model için API’ye gönderilecek en yüksek desteklenen düzey: {actual}. Maksimum seviye önemli ölçüde daha fazla zaman ve ücret gerektirebilir.",
     "effort_fallback": "Sağlayıcı düşünme parametresini reddetti. İşlem yapılmadan yeniden deneniyor; bu model/düzey için sağlayıcının varsayılanı kullanılacak. Ek API ücreti oluşabilir.",
     "effort_fallback_active": "Bu oturumda bu model/düzey reddedildi; isteklerde şu anda sağlayıcının varsayılanı kullanılıyor. /effort ile yeniden seçebilirsiniz.",
@@ -445,15 +445,22 @@ def _dm_module_01():
     "token_save_usage": "Kullanım: /token-save on | /token-save off | /token-save status",
     "token_save_note": "Not: Token tasarrufu yalnızca gereksiz tekrarı ve ham veriyi kırpar; modelin akıl yürütme gücü azaltılmaz.",
     "aggressive_warn_title": "AGGRESSIVE MOD UYARISI",
-    "aggressive_warn_body": "Aggressive mod şunları yapar:\n - Varsayılan olarak token tasarrufunu KAPATIR.\n - Daha fazla token tüketebilir (API maliyeti artabilir).\n - Çok derin düşünmeyi ve tam araç erişimini etkinleştirir.\nOnaylarsanız diğer sistemler normal çalışmaya devam eder.",
+    "aggressive_warn_body": "Aggressive mod şunları yapar:\n - Varsayılan olarak token tasarrufunu KAPATIR.\n - Daha fazla token tüketebilir (API maliyeti artabilir).\n - Çok derin düşünmeyi ve tam araç erişimini etkinleştirir.\n - Agresif motoru açar: plan + risk taraması, her yazılan dosyada sözdizimi kontrolü, tur sonunda kusursuzluk denetimi, proje hafızası (AGGRESSIVE_PLAN/AGGRESSIVE_JOURNAL) ve .docmind_backups yedekleri.\nOnaylarsanız diğer sistemler normal çalışmaya devam eder.",
     "aggressive_confirm_prompt": "Aggressive modu etkinleştirmek istiyor musunuz? (Y/N): ",
     "aggressive_cancelled": "Aggressive mod iptal edildi; önceki düşünme ayarı korundu: {level}.",
     "aggressive_enabled": "🔴 AGGRESSIVE MOD ETKİN: token tasarrufu kapatıldı, en derin düşünme açık. Yapay zekâ tam gücünde çalışıyor!",
+    "aggressive_engine_on": "⚙ AGGRESSIVE MOTORU DEVREDE: her turda plan + risk taraması, yazılan her dosyada otomatik sözdizimi kontrolü, iş bitiminde kusursuzluk denetimi ve proje hafızası güncellemesi zorunlu.",
+    "aggressive_engine_off": "Aggressive motoru bu oturumda devre dışı; yalnızca en derin düşünme düzeyi uygulanıyor.",
+    "aggressive_audit_running": "Kusursuzluk denetimi çalışıyor: çalışma klasöründeki kod dosyaları sözdizimi, TODO/FIXME ve hata kalıpları için taranıyor...",
+    "aggressive_audit_clean": "Kusursuzluk denetimi temiz: sözdizimi hatası, yarım iş veya şüpheli hata kalıbı bulunamadı ({files} dosya tarandı).",
+    "aggressive_audit_advisory": "Bunlar bu turda dokunulmayan, önceden var olan bulgular; turu kilitlemezler ama ileride düzeltilmeli.",
+    "aggressive_audit_issues": "Kusursuzluk denetimi {count} bulgu saptadı; ilgili dosyalar listelendi ve düzeltilmeleri gerekiyor.",
+    "aggressive_audit_tool": "Çalışma klasöründe kusursuzluk denetimi: sözdizimi hataları, TODO/FIXME/XXX işaretleri, gerçek hata kalıpları ve proje hafızası durumu (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, otomatik yedekler).",
     "aggressive_left": "Aggressive moddan çıkıldı: {level}. Token tasarrufu yeniden açılabilir.",
-    "effort_aggressive_note": "Aggressive = maksimum düşünme gücü; token tasarrufu bu modda açılamaz.",
+    "effort_aggressive_note": "Aggressive = maksimum düşünme gücü; token tasarrufu bu modda açılamaz. Motor açıkken plan, doğrulama ve kusursuzluk denetimi zorunludur (/effort engine off ile kapatılır).",
     "token_save_trim_note": "\n... [token tasarrufu: {omitted} karakter kırpıldı; gerekiyorsa dosyayı yeniden okuyun] ...\n",
     "effort_menu_title": "DÜŞÜNME DÜZEYİ SEÇENEKLERİ (/effort)",
-    "effort_menu_table": "1|agresif|aggressive|en derin (maksimum)|KAPALI|Tam güç: çok adımlı planlama, derin kod analizi, kendi kendini doğrulama.\n2|maksimum|max|max / xhigh|yalnız düşük–orta|Çok yüksek düşünme; uzun ve zor görevler için.\n3|yüksek|high|high|KAPALI|Dengeli yüksek düzey; günlük geliştirme için iyi varsayılan.\n4|zor|hard|high|KAPALI|'Yüksek'in sert varyantı; aynı derinlik, daha titiz çalışma.\n5|orta|medium|medium|AÇIK / KAPALI|Hız ile kalite dengesi; günlük sorular ve küçük düzenlemeler.\n6|düşük|low|low|AÇIK / KAPALI|En hızlı ve en ucuz; kısa sorular ve basit komutlar.\n7|varsayılan|default|sağlayıcı seçer|AÇIK / KAPALI|Hiçbir düşünme parametresi gönderilmez; sağlayıcının kendi ayarı geçerli olur.",
+    "effort_menu_table": "1|agresif|aggressive|en derin (maksimum)|KAPALI|Tam güç: plan + risk taraması, yazılan her dosya için sözdizimi testi, canlı çalıştırma doğrulaması, tur sonunda kusursuzluk denetimi ve proje hafızası.\n2|maksimum|max|max / xhigh|yalnız düşük–orta|Çok yüksek düşünme; uzun ve zor görevler için.\n3|yüksek|high|high|KAPALI|Dengeli yüksek düzey; günlük geliştirme için iyi varsayılan.\n4|zor|hard|high|KAPALI|'Yüksek'in sert varyantı; aynı derinlik, daha titiz çalışma.\n5|orta|medium|medium|AÇIK / KAPALI|Hız ile kalite dengesi; günlük sorular ve küçük düzenlemeler.\n6|düşük|low|low|AÇIK / KAPALI|En hızlı ve en ucuz; kısa sorular ve basit komutlar.\n7|varsayılan|default|sağlayıcı seçer|AÇIK / KAPALI|Hiçbir düşünme parametresi gönderilmez; sağlayıcının kendi ayarı geçerli olur.",
     "effort_menu_hint": "Seçmek için: /effort <düzey>   •   örn. /effort medium   •   Türkçe karşılıklar da çalışır: düşük, orta, yüksek, zor, maksimum, agresif",
     "effort_menu_current": "Şu anki düzey: {level}   |   Token tasarrufu: {state}",
     "effort_menu_legend": "Tek satırlık özet: düşük → en hızlı ve en ucuz, agresif → en derin düşünme (token tasarrufu kapalı).",
@@ -626,7 +633,7 @@ def _dm_module_01():
     "effort_usage": "Usage: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -730,15 +737,22 @@ def _dm_module_01():
     "token_save_usage": "Usage: /token-save on | /token-save off | /token-save status",
     "token_save_note": "Note: token saving only trims repetition and raw data; the model's reasoning power is not reduced.",
     "aggressive_warn_title": "AGGRESSIVE MODE WARNING",
-    "aggressive_warn_body": "Aggressive mode will:\n - Disable token saving by default.\n - Possibly consume more tokens (higher API cost).\n - Enable very deep reasoning and full tool access.\nIf you accept, every other system keeps working normally.",
+    "aggressive_warn_body": "Aggressive mode will:\n - Disable token saving by default.\n - Possibly consume more tokens (higher API cost).\n - Enable very deep reasoning and full tool access.\n - Arm the Aggressive Engine: plan + risk scan, syntax check on every written file, a perfection audit at the end of each turn, project memory (AGGRESSIVE_PLAN/AGGRESSIVE_JOURNAL) and .docmind_backups snapshots.\nIf you accept, every other system keeps working normally.",
     "aggressive_confirm_prompt": "Enable aggressive mode? (Y/N): ",
     "aggressive_cancelled": "Aggressive mode cancelled; previous reasoning level kept: {level}.",
     "aggressive_enabled": "🔴 AGGRESSIVE MODE ACTIVE: token saving disabled, deepest reasoning enabled. The AI is at full power!",
+    "aggressive_engine_on": "AGGRESSIVE ENGINE ARMED: every turn runs a plan + risk scan, every written file gets an automatic syntax check, each turn ends with a perfection audit and a project-memory update.",
+    "aggressive_engine_off": "Aggressive engine is off for this session; only the deepest reasoning level is applied.",
+    "aggressive_audit_running": "Running the perfection audit: syntax, TODO/FIXME markers and error patterns across code files in the working folder...",
+    "aggressive_audit_clean": "Perfection audit clean: no syntax errors, unfinished work or suspicious error patterns found ({files} files scanned).",
+    "aggressive_audit_advisory": "These findings are pre-existing in files this turn did not touch; they do not block the turn but should be fixed later.",
+    "aggressive_audit_issues": "Perfection audit found {count} issue(s); the affected files are listed and must be fixed.",
+    "aggressive_audit_tool": "Perfection audit of the working folder: syntax errors, TODO/FIXME/XXX markers, real error patterns and project-memory status (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, automatic backups).",
     "aggressive_left": "Left aggressive mode: {level}. Token saving can be enabled again.",
-    "effort_aggressive_note": "Aggressive = maximum reasoning; token saving cannot be enabled in this mode.",
+    "effort_aggressive_note": "Aggressive = maximum reasoning; token saving cannot be enabled in this mode. With the engine armed, planning, verification and the perfection audit are mandatory (/effort engine off disables it).",
     "token_save_trim_note": "\n... [token saving: {omitted} characters trimmed; re-read the file if you need them] ...\n",
     "effort_menu_title": "REASONING LEVEL OPTIONS (/effort)",
-    "effort_menu_table": "1|aggressive|aggressive|deepest (maximum)|OFF|Full power: multi-step planning, deep code analysis, self-verification.\n2|max|max|max / xhigh|low–medium only|Very high reasoning; for long and hard tasks.\n3|high|high|high|OFF|High, balanced reasoning; a good default for daily development.\n4|hard|hard|high|OFF|The strict variant of high; same depth, more rigorous behaviour.\n5|medium|medium|medium|on / off|Speed vs. quality balance; daily questions and small edits.\n6|low|low|low|on / off|Fastest and cheapest; short questions and simple commands.\n7|default|default|provider decides|on / off|No reasoning parameter is sent; the provider default applies.",
+    "effort_menu_table": "1|aggressive|aggressive|deepest (maximum)|OFF|Full power: plan + risk scan, syntax test for every written file, live execution verification, perfection audit and project memory at the end of each turn.\n2|max|max|max / xhigh|low–medium only|Very high reasoning; for long and hard tasks.\n3|high|high|high|OFF|High, balanced reasoning; a good default for daily development.\n4|hard|hard|high|OFF|The strict variant of high; same depth, more rigorous behaviour.\n5|medium|medium|medium|on / off|Speed vs. quality balance; daily questions and small edits.\n6|low|low|low|on / off|Fastest and cheapest; short questions and simple commands.\n7|default|default|provider decides|on / off|No reasoning parameter is sent; the provider default applies.",
     "effort_menu_hint": "To choose: /effort <level>   •   e.g. /effort medium   •   Turkish aliases work too: dusuk, orta, yuksek, zor, maksimum, agresif",
     "effort_menu_current": "Current level: {level}   |   Token saving: {state}",
     "effort_menu_legend": "In one line: low → fastest and cheapest, aggressive → deepest reasoning (token saving off).",
@@ -1019,6 +1033,13 @@ def _dm_module_01():
     "aggressive_confirm_prompt": "Aggressive-Modus aktivieren? (Y/N): ",
     "aggressive_cancelled": "Aggressive-Modus abgebrochen; vorherige Denkstufe bleibt: {level}.",
     "aggressive_enabled": "🔴 AGGRESSIVE-MODUS AKTIV: Token-Sparmodus aus, tiefstes Nachdenken an. Die KI läuft mit voller Kraft!",
+    "aggressive_engine_on": "AGGRESSIVE-MOTOR AKTIV: jede Runde mit Plan- und Risikoprüfung, jede geschriebene Datei mit automatischer Syntaxkontrolle, Abschluss mit Perfektions-Audit und Projektgedächtnis.",
+    "aggressive_engine_off": "Aggressive-Motor in dieser Sitzung aus; nur die tiefste Denkstufe wird angewendet.",
+    "aggressive_audit_running": "Perfektions-Audit läuft: Syntax, TODO/FIXME-Marker und Fehlermuster in den Codedateien des Arbeitsordners...",
+    "aggressive_audit_clean": "Perfektions-Audit sauber: keine Syntaxfehler, offene Arbeiten oder verdächtige Fehlermuster ({files} Dateien geprüft).",
+    "aggressive_audit_advisory": "Diese Funde stammen aus Dateien, die diese Runde nicht berührt hat; sie blockieren die Runde nicht, sollten aber später behoben werden.",
+    "aggressive_audit_issues": "Das Audit hat {count} Problem(e) gefunden; die betroffenen Dateien sind aufgeführt und müssen behoben werden.",
+    "aggressive_audit_tool": "Perfektions-Audit des Arbeitsordners: Syntaxfehler, TODO/FIXME/XXX-Marker, echte Fehlermuster und Projektgedächtnis-Status.",
     "aggressive_left": "Aggressive-Modus verlassen: {level}. Token-Sparmodus kann wieder aktiviert werden.",
     "effort_aggressive_note": "Aggressive = maximale Denkleistung; in diesem Modus ist Token-Sparen nicht erlaubt.",
     "token_save_trim_note": "\n... [Token-Sparmodus: {omitted} Zeichen gekürzt; Datei bei Bedarf erneut lesen] ...\n",
@@ -2051,7 +2072,7 @@ def _dm_module_01():
     "effort_usage": "İstifadə: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -2336,7 +2357,7 @@ def _dm_module_01():
     "effort_usage": "Uso: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -2621,7 +2642,7 @@ def _dm_module_01():
     "effort_usage": "Uso: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -2906,7 +2927,7 @@ def _dm_module_01():
     "effort_usage": "Gebruik: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -3191,7 +3212,7 @@ def _dm_module_01():
     "effort_usage": "الاستخدام: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -3476,7 +3497,7 @@ def _dm_module_01():
     "effort_usage": "用法：/effort aggressive|max|high|hard|medium|low|default。",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -3761,7 +3782,7 @@ def _dm_module_01():
     "effort_usage": "使用法: /effort aggressive|max|high|hard|medium|low|default",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -4046,7 +4067,7 @@ def _dm_module_01():
     "effort_usage": "사용법: /effort aggressive|max|high|hard|medium|low|default",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
-    "effort_help": " /effort    Reasoning level and cost",
+    "effort_help": " /effort    Reasoning level, aggressive engine and cost",
     "effort_actual": "Highest supported level sent for this model: {actual}. Maximum may use substantially more time and money.",
     "effort_fallback": "The provider rejected the reasoning parameter. Retrying before any action; the provider default will be used for this model/level. Extra API charges may apply.",
     "effort_fallback_active": "This model/level was rejected during this session; requests currently use the provider default. Select a level again with /effort.",
@@ -4171,7 +4192,7 @@ def _dm_module_01():
     "model_invalid": "모델 이름이 올바르지 않습니다. 문자, 숫자 및 . _ : / @ + - 만 사용할 수 있습니다.",
     "auto_syntax_rolled_back": "{path}: 구문 오류가 감지되어 파일을 이전 정상 버전으로 자동 복원했습니다."
   }
-}''')
+ }''')
  return locals()
 _dm_install('docmind.i18n.locales', _dm_module_01, False)
 
@@ -4232,7 +4253,7 @@ def _dm_module_03():
  import tempfile
  from dataclasses import dataclass, field, asdict
  from pathlib import Path
- from typing import Any, Dict, List, Optional, Tuple
+ from typing import Any, Dict, List, Optional, Set, Tuple
  from docmind.i18n import i18n
  @dataclass(frozen=True)
  class ProviderSpec:
@@ -4249,11 +4270,25 @@ def _dm_module_03():
  EFFORT_LEVELS: Tuple[str, ...] = ("aggressive", "max", "high", "hard", "medium", "low", "default")
  # Modes where token saving is NOT allowed; the value itself is always persisted as False.
  TOKEN_SAVE_BLOCKED_LEVELS: frozenset = frozenset({"aggressive", "high", "hard"})
+ class _AggressiveCfgHolder:
+   """Live pointer to the active config, used by the Aggressive prompt layer."""
+   cfg = None
+
+
+ _aggressive_cfg_holder = _AggressiveCfgHolder()
+
+
+ def aggressive_active(cfg: "DocMindConfig") -> bool:
+   """True while the Aggressive Engine is armed for the current config."""
+   return str(getattr(cfg, "reasoning_effort", "default") or "default").lower() == "aggressive"
+
+
  def token_save_allowed(level: str) -> bool:
    """True when the given reasoning level may use token saving."""
    return str(level or "default").lower() not in TOKEN_SAVE_BLOCKED_LEVELS
  def token_save_effective(cfg: "DocMindConfig") -> bool:
    """Single source of truth used by the client, agent and command router."""
+   _aggressive_cfg_holder.cfg = cfg
    level = str(getattr(cfg, "reasoning_effort", "default") or "default").lower()
    if not token_save_allowed(level):
      return False
@@ -4400,6 +4435,8 @@ def _dm_module_03():
    base_urls: Dict[str, str] = field(default_factory=dict)
    permission_mode: str = "smart"
    max_steps_per_turn: int = 65
+   # Aggressive Engine: extra verification + project-memory layers (on by default).
+   aggressive_mode: bool = True
    max_output_tokens: int = 12288
    reasoning_effort: str = "high"
    token_save: bool = True
@@ -4496,6 +4533,8 @@ def _dm_module_03():
          cfg.reasoning_effort = "high"
        if not isinstance(getattr(cfg, "token_save", True), bool):
          cfg.token_save = True
+       if not isinstance(getattr(cfg, "aggressive_mode", True), bool):
+         cfg.aggressive_mode = True
        if not token_save_allowed(cfg.reasoning_effort):
          cfg.token_save = False
        i18n.set_lang(cfg.language)
@@ -4565,6 +4604,7 @@ def _dm_module_03():
      except Exception:
        pass
  return locals()
+ # --- Aggressive Engine bridge: expose helpers to the inlined modules -----------------------
 _dm_install('docmind.config', _dm_module_03, False)
 
 # ===== docmind/core/errors.py (included source) =====
@@ -5621,6 +5661,10 @@ def _dm_module_06():
        old_text, _ = read_text_resilient(target)
      except Exception:
        old_text = ""
+     try:
+       aggressive_snapshot(target, cwd)
+     except Exception:
+       pass
    undo_mgr.record_before_modify(target)
    try:
      _atomic_write_text(target, content, encoding="utf-8")
@@ -6922,6 +6966,222 @@ def _dm_module_09():
      marker = ">>" if (idx + 1) == lineno else "  "
      out.append(f"  {marker} {idx + 1:5d} | {lines[idx]}")
    return "\n".join(out)
+# --- Aggressive Engine (v1.2): project memory, perfection audit, write snapshots -----------
+ AGGRESSIVE_PLAN_FILE = "AGGRESSIVE_PLAN.md"
+ AGGRESSIVE_JOURNAL_FILE = "AGGRESSIVE_JOURNAL.md"
+ AGGRESSIVE_BACKUP_DIR = ".docmind_backups"
+ AGGRESSIVE_WORK_TOOLS = {"write_file", "edit_file", "multi_edit", "delete_path", "move_or_copy",
+                          "run_command", "python_eval", "archive_tool"}
+ AGGRESSIVE_AUDIT_SKIP_DIRS = {
+   ".git", ".hg", ".svn", "node_modules", "__pycache__", ".venv", "venv", "env",
+   ".mypy_cache", ".pytest_cache", ".ruff_cache", "dist", "build", "target",
+   ".idea", ".vscode", ".tox", "site-packages", AGGRESSIVE_BACKUP_DIR,
+ }
+ AGGRESSIVE_CODE_EXTS = {
+   ".py", ".pyi", ".js", ".mjs", ".cjs", ".ts", ".tsx", ".jsx", ".json",
+   ".sh", ".bash", ".zsh", ".toml", ".xml", ".svg", ".html", ".css", ".sql",
+ }
+ import datetime as _ag_dt
+ import re as _ag_re
+ import shutil as _ag_shutil
+ AGGRESSIVE_MARKER_RE = _ag_re.compile(r"(?i)\b(TODO|FIXME|XXX|HACK|WIP|STUB)\b")
+ AGGRESSIVE_ERROR_PATTERNS = (
+   (_ag_re.compile(r"except\s*(?:Exception|BaseException)?\s*:\s*(?:pass|\.\.\.)\s*$", _ag_re.M), "silently swallowed exception"),
+   (_ag_re.compile(r"\bnot implemented\b|\bNotImplementedError\b", _ag_re.I), "unimplemented stub"),
+ )
+
+
+ def aggressive_directive() -> str:
+   """The behaviour contract that makes Aggressive mode actually aggressive."""
+   from docmind.config import aggressive_active as _ag_is_on
+   from docmind.config import _aggressive_cfg_holder as _ag_holder
+   if not _ag_is_on(getattr(_ag_holder, "cfg", None)):
+     return ""
+   try:
+     first_run = not (Path.cwd() / AGGRESSIVE_PLAN_FILE).is_file()
+   except Exception:
+     first_run = False
+   steps = [
+     "**1. CLARIFY ONCE, THEN COMMIT.** If (and only if) a requirement is genuinely ambiguous, ask one compact "
+     "`ask_user` question with concrete options, then start. Never ask what you can answer yourself, never re-ask "
+     "something already in the conversation, and never end a task with open questions you could have resolved by "
+     "reading the code or the internet.",
+     "**2. PLAN BEFORE TOUCHING FILES.** Derive the full plan (files, edits, order, risks, verification) before "
+     "the first write. For multi-step work keep it in AGGRESSIVE_PLAN.md so it survives context trimming, and keep "
+     "it updated as you go.",
+     "**3. READ THE CODE, DO NOT GUESS.** Never assume a function, class, config key or import exists: open the "
+     "file with `read_file` / `grep_search` first. If a library API or version detail is not 100% certain, verify "
+     "it with `web_search` before writing code against it.",
+     "**4. NEVER SHIP UNVERIFIED WORK.** Every written or edited code file passes `check_syntax` and, where it can "
+     "run, a real execution test (`run_command` / `python_eval`). Every failure is fixed before you report back; "
+     "if something cannot be tested, say exactly what is untested and why.",
+     "**5. HUNT BUGS TO THE ROOT.** Reproduce, read the real traceback, fix the cause rather than the symptom, "
+     "then re-run the exact failing case and confirm it passes. No 'should work' answers, no leftover debug "
+     "prints, no dead code, no silent `except: pass`.",
+     "**6. PROJECT HYGIENE.** Keep the folder coherent: no duplicate files, no half-written modules, no orphan "
+     "imports, no TODOs. Remaining work goes into AGGRESSIVE_JOURNAL.md instead of comments.",
+     "**7. PROTECT THE USER'S DATA.** Never delete or overwrite user files or data without an explicit "
+     "instruction; prefer additive edits. The previous revision of anything you rewrite is already kept in "
+     ".docmind_backups/.",
+     "**8. CLOSE PROPERLY.** End every turn with: what changed (paths), what you verified (and how), what is left "
+     "(if anything, with the next concrete step). Add one short paragraph about your decisions to "
+     "AGGRESSIVE_JOURNAL.md.",
+   ]
+   head = (
+     "\n\n## AGGRESSIVE ENGINE (ACTIVE - maximum quality contract)\n"
+     "The user selected the Aggressive level. Aggressive means *zero-defect delivery*, not louder answers: you are "
+     "the senior engineer who owns this project. Token saving is off, so use whatever context and steps the job "
+     "needs; these rules override every 'keep it short' instinct.\n"
+   )
+   tail = (
+     "\n**Extra tools in this mode:** `aggressive_audit` (perfection audit of the working folder: syntax, "
+     "TODO/FIXME markers, error patterns, project memory) and `.docmind_backups/` (previous revision of every "
+     "file you rewrote).\n"
+   )
+   if first_run:
+     tail += (
+       "**First Aggressive run in this folder:** create AGGRESSIVE_PLAN.md with the plan and assumptions, execute "
+       "it, then record the outcome in AGGRESSIVE_JOURNAL.md.\n"
+     )
+   return head + "\n".join("- " + s for s in steps) + "\n" + tail
+
+
+ def aggressive_audit_folder(cwd: Path, max_files: int = 600, touched: Optional[Set[str]] = None,
+                            with_patterns: bool = True) -> Tuple[bool, str, int]:
+   """Scan code files in the working folder (pruned walk, bounded).
+
+     Returns (clean, report, scanned). Findings are tagged so the caller can tell
+     blocking problems (syntax errors, anything inside a file the agent just wrote)
+     from advisory ones (pre-existing TODOs in a legacy folder).
+     """
+   findings: List[str] = []
+   blocking: List[str] = []
+   scanned = 0
+   touched = {str(t).replace(os.sep, "/") for t in (touched or set())}
+   suffix_check = {".py", ".pyi", ".js", ".mjs", ".cjs", ".sh", ".bash", ".json", ".toml", ".xml"}
+   stopped = False
+   try:
+     for dirpath, dirnames, filenames in os.walk(cwd, onerror=lambda _e: None):
+       dirnames[:] = sorted(d for d in dirnames if d not in AGGRESSIVE_AUDIT_SKIP_DIRS and not d.startswith(".docmind_backups"))
+       for name in sorted(filenames):
+         if scanned >= max_files:
+           stopped = True
+           break
+         path = Path(dirpath) / name
+         if path.suffix.lower() not in AGGRESSIVE_CODE_EXTS:
+           continue
+         try:
+           if path.stat().st_size > 2 * 1024 * 1024:
+             continue
+           from docmind.tools.filesystem import read_text_resilient as _ag_read_text
+           text, _ = _ag_read_text(path)
+         except Exception:
+           continue
+         scanned += 1
+         try:
+           rel = str(path.relative_to(cwd)).replace(os.sep, "/")
+         except Exception:
+           rel = str(path).replace(os.sep, "/")
+         is_touched = rel in touched or name in touched
+         markers = []
+         for line_no, line in enumerate(text.splitlines(), 1):
+           found = AGGRESSIVE_MARKER_RE.search(line)
+           if found:
+             markers.append(f"{found.group(1).upper()}@{line_no}")
+             if len(markers) >= 3:
+               break
+         if markers:
+           item = f"{rel}: unfinished markers {', '.join(markers)}"
+           findings.append(item)
+           if is_touched:
+             blocking.append(item)
+         if path.suffix.lower() in suffix_check:
+           ok, detail = tool_check_syntax({"path": str(path)}, cwd)
+           skippable = ("No built-in syntax parser", "Node.js not installed", "No POSIX shell parser")
+           # unreadable/binary payloads and absurdly long single-line files are advisory only
+           advisory_only = ("null bytes", "exceeds 4 MiB", "not a regular file")
+           if not ok and not any(tag in detail for tag in skippable):
+             first = detail.splitlines()[0] if detail else "syntax error"
+             item = f"{rel}: SYNTAX -> {first}"
+             findings.append(item)
+             if not any(tag in detail for tag in advisory_only):
+               blocking.append(item)        # a genuine syntax error always blocks
+             continue
+         if with_patterns and path.suffix.lower() == ".py":
+           for pattern, label in AGGRESSIVE_ERROR_PATTERNS:
+             if pattern.search(text):
+               item = f"{rel}: {label}"
+               findings.append(item)
+               if is_touched:
+                 blocking.append(item)
+               break
+       if stopped:
+         break
+   except Exception as exc:
+     return False, f"Audit could not read {cwd}: {exc}", scanned
+   lines = [f"Scanned {scanned} code file(s) in {cwd}."]
+   if findings:
+     lines.append(f"Found {len(findings)} issue(s) ({len(blocking)} blocking):")
+     lines.extend(" - " + item for item in findings[:40])
+     if len(findings) > 40:
+       lines.append(f" ... and {len(findings) - 40} more")
+   else:
+     lines.append("No syntax errors, unfinished markers or suspicious error patterns found.")
+   if stopped:
+     lines.append(f"(stopped after {max_files} files)")
+   lines.append(
+     "Project memory: plan=" + ("present" if (cwd / AGGRESSIVE_PLAN_FILE).is_file() else "missing")
+     + ", journal=" + ("present" if (cwd / AGGRESSIVE_JOURNAL_FILE).is_file() else "missing")
+     + ", backups=" + ("present" if (cwd / AGGRESSIVE_BACKUP_DIR).is_dir() else "none")
+   )
+   result = "\n".join(lines)
+   if blocking:
+     result += "\nBLOCKING:\n" + "\n".join(" - " + item for item in blocking[:24])
+   return (len(blocking) == 0), result, scanned
+
+
+ def tool_aggressive_audit(args: Dict[str, Any], cwd: Path) -> Tuple[bool, str]:
+   """Tool entry point: audit the working folder (never executes project code)."""
+   raw = str(args.get("path") or "").strip()
+   folder = resolve_user_path(raw, cwd) if raw else cwd
+   if not folder.is_dir():
+     return False, f"Error: not a directory: {folder}"
+   try:
+     limit = int(args.get("max_files") or 600)
+   except (TypeError, ValueError):
+     limit = 600
+   ok, detail, _scanned = aggressive_audit_folder(folder, max(20, min(2000, limit)))
+   return ok, detail
+
+
+ def aggressive_snapshot(path: Path, cwd: Path) -> Optional[str]:
+   """Keep the previous revision of a file before the agent rewrites it."""
+   try:
+     if not path.is_file() or path.stat().st_size > 4 * 1024 * 1024:
+       return None
+     root = cwd if cwd.is_dir() else path.parent
+     try:
+       rel = path.resolve().relative_to(root.resolve())
+     except Exception:
+       rel = Path(path.name)
+     dest = root / AGGRESSIVE_BACKUP_DIR / rel
+     dest.parent.mkdir(parents=True, exist_ok=True)
+     stamp = _ag_dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+     dest = dest.with_name(f"{dest.name}.{stamp}{dest.suffix}.bak")
+     _ag_shutil.copy2(path, dest)
+     # keep only the newest 20 revisions per file so a long session cannot bloat the folder
+     try:
+       pattern = f"{dest.name.rsplit('.', 2)[0]}.*.bak"
+       old = sorted(dest.parent.glob(pattern))
+       for stale in old[:-20]:
+         stale.unlink(missing_ok=True)
+     except Exception:
+       pass
+     return str(dest)
+   except Exception:
+     return None
+
+
  def tool_check_syntax(args: Dict[str, Any], cwd: Path) -> Tuple[bool, str]:
    """Validate Python, JSON, TOML, XML/SVG, Shell (.sh), or JS (.js/.mjs) syntax without executing user logic."""
    raw_path = str(args.get("path", "")).strip()
@@ -12219,7 +12479,7 @@ def _dm_module_17():
       "인터넷 검색 및 검증 완료"
     ]
   }
-}''')
+ }''')
  def _safe(value: Any) -> str:
    text = str(value or "").replace("\n", " ").replace("\r", " ")
    text = re.sub(r"[\x00-\x1f\x7f-\x9f]", lambda m: "\\x%02x" % ord(m.group(0)), text)
@@ -13373,6 +13633,7 @@ def _dm_module_21():
    "system_info",
    "find_processes",
    "ask_user",
+   "aggressive_audit",
  }
  TERMINAL_TOOLS = {"run_command", "python_eval"}
  _YES_TOKENS = {"e", "evet", "onay", "tamam", "b", "beli", "bəli", "y", "yes", "j", "ja", "s", "si", "sí", "sì", "sim", "o", "oui", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
@@ -13536,760 +13797,778 @@ def _dm_module_22():
  from docmind.i18n import t
  from docmind.tools.backup import UndoManager
  from docmind.tools.filesystem import (
-   load_image_attachment,
-   preview_file_change,
-   resolve_user_path,
-   tool_archive,
-   tool_change_directory,
-   tool_delete_path,
-   tool_edit_file,
-   tool_list_directory,
-   tool_list_system_drives,
-   tool_move_or_copy,
-   tool_multi_edit,
-   tool_read_file,
-   tool_undo_file_change,
-   tool_write_file,
+  load_image_attachment,
+  preview_file_change,
+  resolve_user_path,
+  tool_archive,
+  tool_change_directory,
+  tool_delete_path,
+  tool_edit_file,
+  tool_list_directory,
+  tool_list_system_drives,
+  tool_move_or_copy,
+  tool_multi_edit,
+  tool_read_file,
+  tool_undo_file_change,
+  tool_write_file,
  )
  from docmind.tools.project import tool_check_syntax, tool_project_overview
  from docmind.tools.search import tool_grep_search, tool_search_files
  from docmind.tools.terminal import (
-   resolve_shell_invocation,
-   run_command_detailed,
-   run_python_detailed,
-   tool_find_processes,
-   tool_open_path,
-   tool_system_info,
+  resolve_shell_invocation,
+  run_command_detailed,
+  run_python_detailed,
+  tool_find_processes,
+  tool_open_path,
+  tool_system_info,
  )
  from docmind.tools.web import tool_web_fetch, tool_web_search
  from docmind.ui.console import ConsoleUI
  @dataclass
  class ToolExecutionResult:
-   ok: bool
-   output: str
-   skipped: bool = False
-   invalid_args: bool = False
-   images: Any = None
+  ok: bool
+  output: str
+  skipped: bool = False
+  invalid_args: bool = False
+  images: Any = None
  TOOL_SCHEMAS: List[Dict[str, Any]] = [
-   {
-     "name": "read_file",
-     "description": (
-       "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop, "
-       "Downloads, Documents, localized OS folder names, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
-       "text & code, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), OpenDocument (.odt/.ods/.odp), PDF (.pdf), "
-       "SQLite (.sqlite/.db), archives (.zip/.tar.gz), and binary/image metadata."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "File path anywhere on the computer."},
-         "offset": {"type": "integer", "description": "1-based starting line number (default 1)."},
-         "limit": {"type": "integer", "description": "Maximum number of lines to return (default 400)."},
-       },
-       "required": ["path"],
-     },
-   },
-   {
-     "name": "write_file",
-     "description": "Create a new file or overwrite an existing file anywhere on the computer. Automatically creates parent folders.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "Target file path."},
-         "content": {"type": "string", "description": "Complete text content to write."},
-       },
-       "required": ["path", "content"],
-     },
-   },
-   {
-     "name": "edit_file",
-     "description": "Surgically edit an existing file anywhere on the computer by replacing old_text with new_text.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "File path to edit."},
-         "old_text": {"type": "string", "description": "Exact existing lines/block to find."},
-         "new_text": {"type": "string", "description": "Replacement lines/block."},
-         "replace_all": {"type": "boolean", "description": "Replace every occurrence if true (default false)."},
-       },
-       "required": ["path", "old_text", "new_text"],
-     },
-   },
-   {
-     "name": "multi_edit",
-     "description": "Apply multiple sequential old_text -> new_text edits to a single file atomically.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "File path to edit."},
-         "edits": {
-           "type": "array",
-           "description": "Ordered list of {old_text, new_text} edit operations.",
-           "items": {
-             "type": "object",
-             "properties": {
-               "old_text": {"type": "string"},
-               "new_text": {"type": "string"},
-             },
-             "required": ["old_text", "new_text"],
-           },
-         },
-       },
-       "required": ["path", "edits"],
-     },
-   },
-   {
-     "name": "delete_path",
-     "description": "Delete a file or directory anywhere on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "File or folder path to delete."},
-       },
-       "required": ["path"],
-     },
-   },
-   {
-     "name": "move_or_copy",
-     "description": "Move, rename, or copy a file or directory anywhere on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "source": {"type": "string", "description": "Source file or directory path."},
-         "destination": {"type": "string", "description": "Destination file or directory path."},
-         "operation": {
-           "type": "string",
-           "enum": ["move", "copy"],
-           "description": "'move' (rename/relocate) or 'copy'.",
-         },
-       },
-       "required": ["source", "destination", "operation"],
-     },
-   },
-   {
-     "name": "list_directory",
-     "description": "ONLY use when the user asks what is inside a folder/project or when locating a requested file. NEVER call for general chat/questions. List files and folders inside any directory on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "Directory path to inspect (default '.')."},
-         "recursive": {"type": "boolean", "description": "Recurse into subdirectories if true."},
-         "max_depth": {"type": "integer", "description": "Max tree depth (1-5)."},
-         "show_hidden": {"type": "boolean", "description": "Show dotfiles/hidden items (default true)."},
-       },
-     },
-   },
-   {
-     "name": "change_directory",
-     "description": "Change the active working directory (cd) to any folder on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "Target directory path (absolute, relative, ~, Desktop, Downloads, etc.)."},
-       },
-       "required": ["path"],
-     },
-   },
-   {
-     "name": "list_system_drives",
-     "description": "List all disk drives / mounted filesystems (with free & total GB) and user special folders (Desktop, Downloads, Documents, Home, Temp).",
-     "parameters": {
-       "type": "object",
-       "properties": {},
-     },
-   },
-   {
-     "name": "archive_tool",
-     "description": "List, extract, or create .zip and .tar.gz archives anywhere on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "action": {"type": "string", "enum": ["list", "extract", "create"], "description": "Archive operation."},
-         "archive_path": {"type": "string", "description": "Path to the .zip or .tar.gz archive."},
-         "target_paths": {
-           "type": "array",
-           "items": {"type": "string"},
-           "description": "Files/folders to pack when action='create'.",
-         },
-         "output_dir": {"type": "string", "description": "Destination folder when action='extract'."},
-       },
-       "required": ["action", "archive_path"],
-     },
-   },
-   {
-     "name": "search_files",
-     "description": "Find files by glob pattern (e.g. '*.pdf', '*rapor*', '*.py') inside any folder or drive on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "pattern": {"type": "string", "description": "Filename glob pattern, e.g. '*.py' or '*report*'."},
-         "path": {"type": "string", "description": "Root directory to search from (default '.')."},
-         "include_hidden": {"type": "boolean", "description": "Include hidden files/folders if true."},
-         "max_results": {"type": "integer", "description": "Maximum results (default 100)."},
-       },
-       "required": ["pattern"],
-     },
-   },
-   {
-     "name": "grep_search",
-     "description": "Search file contents using regex or literal text inside any file or folder on the computer.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "query": {"type": "string", "description": "Regex or text string to search for."},
-         "path": {"type": "string", "description": "Directory or file path to search in (default '.')."},
-         "file_pattern": {"type": "string", "description": "Optional filename glob filter, e.g. '*.py'."},
-         "case_sensitive": {"type": "boolean", "description": "Case-sensitive search if true."},
-         "max_matches": {"type": "integer", "description": "Maximum matches (default 80)."},
-       },
-       "required": ["query"],
-     },
-   },
-   {
-     "name": "project_overview",
-     "description": "ONLY use when the user explicitly asks to analyze or summarize a project folder/codebase. NEVER call for simple questions or chat.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "Directory path (default '.')."},
-         "max_depth": {"type": "integer", "description": "Maximum directory depth (1-5)."},
-       },
-     },
-   },
-   {
-     "name": "check_syntax",
-     "description": "Non-executing syntax check for Python (.py), JSON (.json), or TOML (.toml) files.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "File path to syntax-check."},
-         "language": {"type": "string", "description": "Optional language override ('python', 'json', 'toml')."},
-       },
-       "required": ["path"],
-     },
-   },
-   {
-     "name": "run_command",
-     "description": (
-       "Execute a terminal command on the user's OS (Bash/sh on Linux/macOS, PowerShell/CMD on Windows). Use whenever the user chooses/asks to run a command, print output in terminal, run Python/shell snippets, test/build code, or inspect live system state. Do NOT use for casual greetings or pure file reads already handled by read_file. Always asks user approval before executing."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "command": {"type": "string", "description": "Exact terminal command for the current OS/shell."},
-         "shell": {
-           "type": "string",
-           "enum": ["auto", "bash", "powershell", "cmd", "sh"],
-           "description": "Shell to use: 'auto' (Bash on Linux/macOS, PowerShell on Windows), or 'bash', 'powershell', 'cmd', 'sh'.",
-         },
-         "workdir": {"type": "string", "description": "Optional working directory for this command."},
-         "timeout": {"type": "integer", "description": "Timeout in seconds (default 90, max 600)."},
-       },
-       "required": ["command"],
-     },
-   },
-   {
-     "name": "python_eval",
-     "description": (
-       "Execute a Python 3 snippet/code on the user's computer and return real stdout/stderr. Use whenever the user asks/chooses to run Python code (including printing Hello World, calculations, scripts, or verifications). Do NOT call during casual greetings or when the user chose explanation-only mode. Always asks user approval before executing."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "code": {"type": "string", "description": "Python 3 code to execute."},
-         "timeout": {"type": "integer", "description": "Timeout in seconds (default 45, max 300)."},
-       },
-       "required": ["code"],
-     },
-   },
-   {
-     "name": "open_path",
-     "description": "Open any file, folder, application, or URL in the user's desktop OS (Windows Explorer/Start, Linux xdg-open, macOS open).",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "target": {"type": "string", "description": "File path, folder path, application name, or URL to open."},
-       },
-       "required": ["target"],
-     },
-   },
-   {
-     "name": "find_processes",
-     "description": "List or filter currently running processes on Windows or Linux/macOS.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "query": {"type": "string", "description": "Optional process name or PID filter (e.g. 'python', 'chrome', 'node')."},
-         "limit": {"type": "integer", "description": "Maximum rows to return (default 60)."},
-       },
-     },
-   },
-   {
-     "name": "system_info",
-     "description": "Inspect OS version, CPU/RAM, Python runtime, available shells (Bash/PowerShell/CMD), mounted drives, and special folders.",
-     "parameters": {
-       "type": "object",
-       "properties": {},
-     },
-   },
-   {
-     "name": "undo_file_change",
-     "description": (
-       "Roll back / revert a broken or unwanted file modification (write_file, edit_file, multi_edit, or file deletion) "
-       "using DocMind's snapshot history. Pass 'path' to revert a specific file, or omit 'path' to undo the latest file change."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {"type": "string", "description": "Optional specific file path to restore to its previous snapshot."},
-       },
-     },
-   },
-   {
-     "name": "ask_user",
-     "description": (
-       "Ask the user an interactive question with numbered choices directly in the terminal and receive their immediate answer. "
-       "ALWAYS use this BEFORE writing platform-specific scripts/code when the target OS was not explicitly specified "
-       "(stating their detected OS and offering choices such as targeting their detected OS, universal cross-platform Windows+Linux, or another OS). "
-       "CRITICAL LANGUAGE RULE: Write `question` and every item in `options` 100% in the user's active selected language (NEVER write Turkish if the active language is English, German, Spanish, French, or Russian!)."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "question": {"type": "string", "description": "Clear question to show the user in their language."},
-         "options": {
-           "type": "array",
-           "items": {"type": "string"},
-           "description": "2 to 5 concise choices (option 1 is default if user presses Enter).",
-         },
-         "default_index": {"type": "integer", "description": "1-based default option index (default 1)."},
-       },
-       "required": ["question"],
-     },
-   },
-   {
-     "name": "web_search",
-     "description": (
-       "Search the live internet (DuckDuckGo + Wikipedia + StackOverflow) and cross-verify top web pages. "
-       "ALWAYS call this tool when asked to research/verify something, when facts/versions/prices/news may have "
-       "changed, or whenever you are not 100% certain of a fact so you never guess or hallucinate!"
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "query": {
-           "type": "string",
-           "description": "Focused search query to research and verify on the live internet.",
-         },
-         "max_results": {
-           "type": "integer",
-           "description": "Maximum web search hits to retrieve (default 6, max 10).",
-         },
-         "verify_top_pages": {
-           "type": "boolean",
-           "description": "Fetch and cross-check full text excerpts from top result URLs (default true).",
-         },
-       },
-       "required": ["query"],
-     },
-   },
-   {
-     "name": "web_fetch",
-     "description": "Fetch and extract readable text/JSON from an HTTP/HTTPS URL.",
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "url": {"type": "string", "description": "Full http:// or https:// URL."},
-         "max_chars": {"type": "integer", "description": "Maximum characters to return (default 12000)."},
-       },
-       "required": ["url"],
-     },
-   },
-   {
-     "name": "inspect_image",
-     "description": (
-       "Load and visually inspect an image or screenshot (.png, .jpg, .jpeg, .webp, .gif, .bmp) from anywhere on "
-       "the computer so you can read UI screens, terminal error screenshots, diagrams, or photos and solve issues."
-     ),
-     "parameters": {
-       "type": "object",
-       "properties": {
-         "path": {
-           "type": "string",
-           "description": "Path to the image or screenshot file (absolute, relative, or ~/...).",
-         },
-       },
-       "required": ["path"],
-     },
-   },
+  {
+    "name": "read_file",
+    "description": (
+      "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop, "
+      "Downloads, Documents, localized OS folder names, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
+      "text & code, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), OpenDocument (.odt/.ods/.odp), PDF (.pdf), "
+      "SQLite (.sqlite/.db), archives (.zip/.tar.gz), and binary/image metadata."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "File path anywhere on the computer."},
+        "offset": {"type": "integer", "description": "1-based starting line number (default 1)."},
+        "limit": {"type": "integer", "description": "Maximum number of lines to return (default 400)."},
+      },
+      "required": ["path"],
+    },
+  },
+  {
+    "name": "write_file",
+    "description": "Create a new file or overwrite an existing file anywhere on the computer. Automatically creates parent folders.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Target file path."},
+        "content": {"type": "string", "description": "Complete text content to write."},
+      },
+      "required": ["path", "content"],
+    },
+  },
+  {
+    "name": "edit_file",
+    "description": "Surgically edit an existing file anywhere on the computer by replacing old_text with new_text.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "File path to edit."},
+        "old_text": {"type": "string", "description": "Exact existing lines/block to find."},
+        "new_text": {"type": "string", "description": "Replacement lines/block."},
+        "replace_all": {"type": "boolean", "description": "Replace every occurrence if true (default false)."},
+      },
+      "required": ["path", "old_text", "new_text"],
+    },
+  },
+  {
+    "name": "multi_edit",
+    "description": "Apply multiple sequential old_text -> new_text edits to a single file atomically.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "File path to edit."},
+        "edits": {
+          "type": "array",
+          "description": "Ordered list of {old_text, new_text} edit operations.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "old_text": {"type": "string"},
+              "new_text": {"type": "string"},
+            },
+            "required": ["old_text", "new_text"],
+          },
+        },
+      },
+      "required": ["path", "edits"],
+    },
+  },
+  {
+    "name": "delete_path",
+    "description": "Delete a file or directory anywhere on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "File or folder path to delete."},
+      },
+      "required": ["path"],
+    },
+  },
+  {
+    "name": "move_or_copy",
+    "description": "Move, rename, or copy a file or directory anywhere on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "source": {"type": "string", "description": "Source file or directory path."},
+        "destination": {"type": "string", "description": "Destination file or directory path."},
+        "operation": {
+          "type": "string",
+          "enum": ["move", "copy"],
+          "description": "'move' (rename/relocate) or 'copy'.",
+        },
+      },
+      "required": ["source", "destination", "operation"],
+    },
+  },
+  {
+    "name": "list_directory",
+    "description": "ONLY use when the user asks what is inside a folder/project or when locating a requested file. NEVER call for general chat/questions. List files and folders inside any directory on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Directory path to inspect (default '.')."},
+        "recursive": {"type": "boolean", "description": "Recurse into subdirectories if true."},
+        "max_depth": {"type": "integer", "description": "Max tree depth (1-5)."},
+        "show_hidden": {"type": "boolean", "description": "Show dotfiles/hidden items (default true)."},
+      },
+    },
+  },
+  {
+    "name": "change_directory",
+    "description": "Change the active working directory (cd) to any folder on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Target directory path (absolute, relative, ~, Desktop, Downloads, etc.)."},
+      },
+      "required": ["path"],
+    },
+  },
+  {
+    "name": "list_system_drives",
+    "description": "List all disk drives / mounted filesystems (with free & total GB) and user special folders (Desktop, Downloads, Documents, Home, Temp).",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+    },
+  },
+  {
+    "name": "archive_tool",
+    "description": "List, extract, or create .zip and .tar.gz archives anywhere on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "action": {"type": "string", "enum": ["list", "extract", "create"], "description": "Archive operation."},
+        "archive_path": {"type": "string", "description": "Path to the .zip or .tar.gz archive."},
+        "target_paths": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Files/folders to pack when action='create'.",
+        },
+        "output_dir": {"type": "string", "description": "Destination folder when action='extract'."},
+      },
+      "required": ["action", "archive_path"],
+    },
+  },
+  {
+    "name": "search_files",
+    "description": "Find files by glob pattern (e.g. '*.pdf', '*rapor*', '*.py') inside any folder or drive on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "pattern": {"type": "string", "description": "Filename glob pattern, e.g. '*.py' or '*report*'."},
+        "path": {"type": "string", "description": "Root directory to search from (default '.')."},
+        "include_hidden": {"type": "boolean", "description": "Include hidden files/folders if true."},
+        "max_results": {"type": "integer", "description": "Maximum results (default 100)."},
+      },
+      "required": ["pattern"],
+    },
+  },
+  {
+    "name": "grep_search",
+    "description": "Search file contents using regex or literal text inside any file or folder on the computer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {"type": "string", "description": "Regex or text string to search for."},
+        "path": {"type": "string", "description": "Directory or file path to search in (default '.')."},
+        "file_pattern": {"type": "string", "description": "Optional filename glob filter, e.g. '*.py'."},
+        "case_sensitive": {"type": "boolean", "description": "Case-sensitive search if true."},
+        "max_matches": {"type": "integer", "description": "Maximum matches (default 80)."},
+      },
+      "required": ["query"],
+    },
+  },
+  {
+    "name": "project_overview",
+    "description": "ONLY use when the user explicitly asks to analyze or summarize a project folder/codebase. NEVER call for simple questions or chat.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Directory path (default '.')."},
+        "max_depth": {"type": "integer", "description": "Maximum directory depth (1-5)."},
+      },
+    },
+  },
+  {
+    "name": "check_syntax",
+    "description": "Non-executing syntax check for Python (.py), JSON (.json), or TOML (.toml) files.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "File path to syntax-check."},
+        "language": {"type": "string", "description": "Optional language override ('python', 'json', 'toml')."},
+      },
+      "required": ["path"],
+    },
+  },
+  {
+    "name": "run_command",
+    "description": (
+      "Execute a terminal command on the user's OS (Bash/sh on Linux/macOS, PowerShell/CMD on Windows). Use whenever the user chooses/asks to run a command, print output in terminal, run Python/shell snippets, test/build code, or inspect live system state. Do NOT use for casual greetings or pure file reads already handled by read_file. Always asks user approval before executing."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "command": {"type": "string", "description": "Exact terminal command for the current OS/shell."},
+        "shell": {
+          "type": "string",
+          "enum": ["auto", "bash", "powershell", "cmd", "sh"],
+          "description": "Shell to use: 'auto' (Bash on Linux/macOS, PowerShell on Windows), or 'bash', 'powershell', 'cmd', 'sh'.",
+        },
+        "workdir": {"type": "string", "description": "Optional working directory for this command."},
+        "timeout": {"type": "integer", "description": "Timeout in seconds (default 90, max 600)."},
+      },
+      "required": ["command"],
+    },
+  },
+  {
+    "name": "python_eval",
+    "description": (
+      "Execute a Python 3 snippet/code on the user's computer and return real stdout/stderr. Use whenever the user asks/chooses to run Python code (including printing Hello World, calculations, scripts, or verifications). Do NOT call during casual greetings or when the user chose explanation-only mode. Always asks user approval before executing."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "code": {"type": "string", "description": "Python 3 code to execute."},
+        "timeout": {"type": "integer", "description": "Timeout in seconds (default 45, max 300)."},
+      },
+      "required": ["code"],
+    },
+  },
+  {
+    "name": "open_path",
+    "description": "Open any file, folder, application, or URL in the user's desktop OS (Windows Explorer/Start, Linux xdg-open, macOS open).",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {"type": "string", "description": "File path, folder path, application name, or URL to open."},
+      },
+      "required": ["target"],
+    },
+  },
+  {
+    "name": "find_processes",
+    "description": "List or filter currently running processes on Windows or Linux/macOS.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {"type": "string", "description": "Optional process name or PID filter (e.g. 'python', 'chrome', 'node')."},
+        "limit": {"type": "integer", "description": "Maximum rows to return (default 60)."},
+      },
+    },
+  },
+  {
+    "name": "system_info",
+    "description": "Inspect OS version, CPU/RAM, Python runtime, available shells (Bash/PowerShell/CMD), mounted drives, and special folders.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+    },
+  },
+  {
+    "name": "undo_file_change",
+    "description": (
+      "Roll back / revert a broken or unwanted file modification (write_file, edit_file, multi_edit, or file deletion) "
+      "using DocMind's snapshot history. Pass 'path' to revert a specific file, or omit 'path' to undo the latest file change."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Optional specific file path to restore to its previous snapshot."},
+      },
+    },
+  },
+  {
+    "name": "ask_user",
+    "description": (
+      "Ask the user an interactive question with numbered choices directly in the terminal and receive their immediate answer. "
+      "ALWAYS use this BEFORE writing platform-specific scripts/code when the target OS was not explicitly specified "
+      "(stating their detected OS and offering choices such as targeting their detected OS, universal cross-platform Windows+Linux, or another OS). "
+      "CRITICAL LANGUAGE RULE: Write `question` and every item in `options` 100% in the user's active selected language (NEVER write Turkish if the active language is English, German, Spanish, French, or Russian!)."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "question": {"type": "string", "description": "Clear question to show the user in their language."},
+        "options": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "2 to 5 concise choices (option 1 is default if user presses Enter).",
+        },
+        "default_index": {"type": "integer", "description": "1-based default option index (default 1)."},
+      },
+      "required": ["question"],
+    },
+  },
+  {
+    "name": "web_search",
+    "description": (
+      "Search the live internet (DuckDuckGo + Wikipedia + StackOverflow) and cross-verify top web pages. "
+      "ALWAYS call this tool when asked to research/verify something, when facts/versions/prices/news may have "
+      "changed, or whenever you are not 100% certain of a fact so you never guess or hallucinate!"
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Focused search query to research and verify on the live internet.",
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum web search hits to retrieve (default 6, max 10).",
+        },
+        "verify_top_pages": {
+          "type": "boolean",
+          "description": "Fetch and cross-check full text excerpts from top result URLs (default true).",
+        },
+      },
+      "required": ["query"],
+    },
+  },
+  {
+    "name": "web_fetch",
+    "description": "Fetch and extract readable text/JSON from an HTTP/HTTPS URL.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "url": {"type": "string", "description": "Full http:// or https:// URL."},
+        "max_chars": {"type": "integer", "description": "Maximum characters to return (default 12000)."},
+      },
+      "required": ["url"],
+    },
+  },
+  {
+    "name": "inspect_image",
+    "description": (
+      "Load and visually inspect an image or screenshot (.png, .jpg, .jpeg, .webp, .gif, .bmp) from anywhere on "
+      "the computer so you can read UI screens, terminal error screenshots, diagrams, or photos and solve issues."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path to the image or screenshot file (absolute, relative, or ~/...).",
+        },
+      },
+      "required": ["path"],
+    },
+  },
+  {
+    "name": "aggressive_audit",
+    "description": (
+      "Perfection audit for Aggressive mode: scans code files in the working folder for syntax errors, "
+      "TODO/FIXME/XXX unfinished markers, suspicious error patterns and the project-memory files "
+      "(AGGRESSIVE_PLAN.md, AGGRESSIVE_JOURNAL.md, automatic backups). Nothing is executed."
+    ),
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {"type": "string", "description": "Optional folder to audit (default: current working folder)."},
+        "max_files": {"type": "integer", "description": "Maximum number of code files to inspect (default 600)."},
+      },
+      "required": [],
+    },
+  },
  ]
  def _coerce_tool_args(args: Any) -> Dict[str, Any]:
-   """Tools always receive a mapping, even when the model sends junk."""
-   if isinstance(args, dict):
-     return args
-   if isinstance(args, str):
-     try:
-       import json as _json
-       parsed = _json.loads(args)
-       if isinstance(parsed, dict):
-         return parsed
-     except Exception:
-       pass
-     return {}
-   if isinstance(args, (list, tuple)):
-     merged: Dict[str, Any] = {}
-     for item in args:
-       if isinstance(item, dict):
-         merged.update(item)
-     return merged
-   return {}
+  """Tools always receive a mapping, even when the model sends junk."""
+  if isinstance(args, dict):
+    return args
+  if isinstance(args, str):
+    try:
+      import json as _json
+      parsed = _json.loads(args)
+      if isinstance(parsed, dict):
+        return parsed
+    except Exception:
+      pass
+    return {}
+  if isinstance(args, (list, tuple)):
+    merged: Dict[str, Any] = {}
+    for item in args:
+      if isinstance(item, dict):
+        merged.update(item)
+    return merged
+  return {}
  def _validate_arguments(name: str, args: Any) -> str:
-   """Validate tool call arguments against schema before asking permission or executing."""
-   definition = next((item for item in TOOL_SCHEMAS if item["name"] == name), None)
-   args = _coerce_tool_args(args)
-   if definition is None:
-     return "Unknown tool: " + str(name)
-   def check(value: Any, schema: Dict[str, Any], location: str) -> str:
-     if not isinstance(schema, dict):
-       return ""
-     kind = schema.get("type")
-     expected = {
-       "object": lambda v: isinstance(v, dict),
-       "array": lambda v: isinstance(v, list),
-       "string": lambda v: isinstance(v, str),
-       "integer": lambda v: isinstance(v, int) and not isinstance(v, bool),
-       "boolean": lambda v: isinstance(v, bool),
-     }
-     if kind in expected and not expected[kind](value):
-       return f"{location} must be {kind}"
-     if "enum" in schema and value not in schema["enum"]:
-       return f"{location} must be one of: " + ", ".join(map(str, schema["enum"]))
-     if kind == "object":
-       if not isinstance(value, dict):
-         return f"{location} must be object"
-       for key in schema.get("required", []) or []:
-         if key not in value:
-           return f"{location}.{key} is required"
-       for key, prop in (schema.get("properties") or {}).items():
-         if key in value and value[key] is not None:
-           issue = check(value[key], prop, f"{location}.{key}")
-           if issue:
-             return issue
-     elif kind == "array":
-       if not isinstance(value, list):
-         return f"{location} must be array"
-       for idx, item in enumerate(value):
-         issue = check(item, schema.get("items", {}), f"{location}[{idx}]")
-         if issue:
-           return issue
-     return ""
-   return check(args, definition["parameters"], "arguments")
+  """Validate tool call arguments against schema before asking permission or executing."""
+  definition = next((item for item in TOOL_SCHEMAS if item["name"] == name), None)
+  args = _coerce_tool_args(args)
+  if definition is None:
+    return "Unknown tool: " + str(name)
+  def check(value: Any, schema: Dict[str, Any], location: str) -> str:
+    if not isinstance(schema, dict):
+      return ""
+    kind = schema.get("type")
+    expected = {
+      "object": lambda v: isinstance(v, dict),
+      "array": lambda v: isinstance(v, list),
+      "string": lambda v: isinstance(v, str),
+      "integer": lambda v: isinstance(v, int) and not isinstance(v, bool),
+      "boolean": lambda v: isinstance(v, bool),
+    }
+    if kind in expected and not expected[kind](value):
+      return f"{location} must be {kind}"
+    if "enum" in schema and value not in schema["enum"]:
+      return f"{location} must be one of: " + ", ".join(map(str, schema["enum"]))
+    if kind == "object":
+      if not isinstance(value, dict):
+        return f"{location} must be object"
+      for key in schema.get("required", []) or []:
+        if key not in value:
+          return f"{location}.{key} is required"
+      for key, prop in (schema.get("properties") or {}).items():
+        if key in value and value[key] is not None:
+          issue = check(value[key], prop, f"{location}.{key}")
+          if issue:
+            return issue
+    elif kind == "array":
+      if not isinstance(value, list):
+        return f"{location} must be array"
+      for idx, item in enumerate(value):
+        issue = check(item, schema.get("items", {}), f"{location}[{idx}]")
+        if issue:
+          return issue
+    return ""
+  return check(args, definition["parameters"], "arguments")
  class ToolRegistry:
-   def __init__(
-     self,
-     config_mgr: ConfigManager,
-     ui: ConsoleUI,
-     perm_mgr: PermissionManager,
-     undo_mgr: UndoManager,
-   ) -> None:
-     self.config_mgr = config_mgr
-     self.ui = ui
-     self.perm_mgr = perm_mgr
-     self.undo_mgr = undo_mgr
-     self.cwd: Path = Path.cwd().resolve()
-   def set_cwd(self, new_cwd: Path) -> None:
-     self.cwd = new_cwd.resolve()
-   def get_schemas(self) -> List[Dict[str, Any]]:
-     return TOOL_SCHEMAS
-   def _describe_action(self, name: str, args: Dict[str, Any]) -> str:
-     if name in ("write_file", "edit_file", "multi_edit", "delete_path"):
-       return t("perm_file_action", action=name, target=args.get("path", ""))
-     if name == "move_or_copy":
-       op = args.get("operation", "move")
-       return t("perm_file_action", action=op, target=f"{args.get('source', '')} -> {args.get('destination', '')}")
-     if name == "archive_tool":
-       return f"Archive ({args.get('action', '')}): {args.get('archive_path', '')}"
-     if name == "open_path":
-       return f"Open on desktop: {args.get('target', '')}"
-     if name == "web_search":
-       return f"Web search: {args.get('query', '')}"
-     if name == "web_fetch":
-       return f"Web request: {args.get('url', '')}"
-     return f"{name}({args})"
-   def execute(self, name: str, args: Dict[str, Any]) -> ToolExecutionResult:
-     """
-         Validate arguments, enforce mandatory terminal consent & transparent reporting,
-         execute cross-platform tools, show diffs, and catch any exception cleanly.
-         """
-     safe_args = _coerce_tool_args(args)
-     if name == "edit_file" and isinstance(safe_args, dict):
-       if "old_string" in safe_args and "old_text" not in safe_args:
-         safe_args = dict(safe_args, old_text=safe_args["old_string"])
-       if "new_string" in safe_args and "new_text" not in safe_args:
-         safe_args = dict(safe_args, new_text=safe_args["new_string"])
-     elif name == "read_file" and isinstance(safe_args, dict) and "start_line" in safe_args and "offset" not in safe_args:
-       try:
-         s_ln = max(1, int(safe_args.get("start_line") or 1))
-         e_ln = max(s_ln, int(safe_args.get("end_line") or (s_ln + 399)))
-       except (TypeError, ValueError):
-         s_ln, e_ln = 1, 400
-       safe_args = dict(safe_args, offset=s_ln, limit=max(1, e_ln - s_ln + 1))
-     self.ui.print_tool_start(name, safe_args)
-     try:
-       issue = _validate_arguments(name, safe_args)
-       if issue:
-         out = f"Tool '{name}' was not executed: invalid arguments ({issue}). Correct the call and try again."
-         self.ui.print_tool_result(name, False, out)
-         return ToolExecutionResult(ok=False, output=out, invalid_args=True)
-       if name == "run_command":
-         cmd_str = str(safe_args["command"])
-         shell_req = str(safe_args.get("shell") or "auto")
-         wdir_raw = safe_args.get("workdir")
-         exec_dir = resolve_user_path(str(wdir_raw), self.cwd) if wdir_raw else self.cwd
-         try:
-           _, shell_label = resolve_shell_invocation(shell_req, cmd_str)
-         except Exception as shell_exc:
-           err_txt = str(shell_exc)
-           self.ui.print_tool_result(name, False, err_txt)
-           return ToolExecutionResult(ok=False, output=err_txt)
-         approved = self.perm_mgr.check_terminal_permission(
-           tool_name="run_command",
-           code_text=cmd_str,
-           shell_label=shell_label,
-           cwd_str=str(exec_dir),
-         )
-         if not approved:
-           skip_msg = t("tool_skipped", name=name)
-           self.ui.print_tool_result(name, False, skip_msg)
-           return ToolExecutionResult(
-             ok=False,
-             output=f"Terminal command '{cmd_str}' was declined by the user. Respect the refusal and ask or use a non-terminal alternative.",
-             skipped=True,
-           )
-         res = run_command_detailed(
-           command=cmd_str,
-           cwd=self.cwd,
-           timeout=int(safe_args.get("timeout", 90) or 90),
-           workdir=str(wdir_raw) if wdir_raw else None,
-           shell=shell_req,
-         )
-         preview = res.get("stdout") or res.get("stderr") or ""
-         if res.get("stdout") and res.get("stderr"):
-           preview = f"{res['stdout'].rstrip()}\n[STDERR]\n{res['stderr'].rstrip()}"
-         triage_obj = res.get("triage")
-         triage_txt = t(triage_obj["summary_key"]) if isinstance(triage_obj, dict) and triage_obj.get("summary_key") else ""
-         self.ui.print_terminal_used(
-           shell_name=str(res.get("shell") or shell_label),
-           cwd_str=str(res.get("cwd") or exec_dir),
-           code_str=cmd_str,
-           ok=bool(res.get("ok")),
-           exit_code=int(res.get("exit_code", -1)),
-           elapsed=float(res.get("elapsed", 0.0)),
-           preview=preview,
-           triage_note=triage_txt,
-         )
-         ok = bool(res.get("ok"))
-         out = str(res.get("formatted") or "")
-         self.ui.print_tool_result(name, ok, out)
-         return ToolExecutionResult(ok=ok, output=out)
-       if name == "python_eval":
-         code_str = str(safe_args["code"])
-         py_label = f"python ({sys.executable})"
-         approved = self.perm_mgr.check_terminal_permission(
-           tool_name="python_eval",
-           code_text=code_str,
-           shell_label=py_label,
-           cwd_str=str(self.cwd),
-         )
-         if not approved:
-           skip_msg = t("tool_skipped", name=name)
-           self.ui.print_tool_result(name, False, skip_msg)
-           return ToolExecutionResult(
-             ok=False,
-             output="Python code execution was declined by the user. Respect the refusal and ask how to proceed.",
-             skipped=True,
-           )
-         res = run_python_detailed(
-           code=code_str,
-           cwd=self.cwd,
-           timeout=int(safe_args.get("timeout", 45) or 45),
-         )
-         preview = res.get("stdout") or res.get("stderr") or ""
-         if res.get("stdout") and res.get("stderr"):
-           preview = f"{res['stdout'].rstrip()}\n[STDERR]\n{res['stderr'].rstrip()}"
-         triage_obj = res.get("triage")
-         triage_txt = t(triage_obj["summary_key"]) if isinstance(triage_obj, dict) and triage_obj.get("summary_key") else ""
-         self.ui.print_terminal_used(
-           shell_name=str(res.get("shell") or py_label),
-           cwd_str=str(res.get("cwd") or self.cwd),
-           code_str=code_str,
-           ok=bool(res.get("ok")),
-           exit_code=int(res.get("exit_code", -1)),
-           elapsed=float(res.get("elapsed", 0.0)),
-           preview=preview,
-           triage_note=triage_txt,
-         )
-         ok = bool(res.get("ok"))
-         out = str(res.get("formatted") or "")
-         self.ui.print_tool_result(name, ok, out)
-         return ToolExecutionResult(ok=ok, output=out)
-       action_desc = self._describe_action(name, safe_args)
-       if name in (
-         "read_file", "write_file", "edit_file", "multi_edit", "delete_path",
-         "list_directory", "change_directory", "search_files", "grep_search",
-         "project_overview", "check_syntax",
-       ):
-         p_arg = str(safe_args.get("path", "."))
-         try:
-           action_desc += f"\nResolved path: {resolve_user_path(p_arg, self.cwd)}"
-         except (OSError, ValueError):
-           pass
-       is_sens = sensitive_tool_action(name, safe_args, self.cwd)
-       f_preview = None
-       if name in ("write_file", "edit_file", "multi_edit", "delete_path", "open_path") or (is_sens and name == "read_file"):
-         f_preview = preview_file_change(name, safe_args, self.cwd)
-       shown_in_perm_box = bool(
-         f_preview is not None
-         and not self.perm_mgr.non_interactive
-         and (is_sens or (name not in ("read_file", "inspect_image") and self.perm_mgr.mode != "auto"))
-       )
-       approved = self.perm_mgr.check_tool_permission(
-         name,
-         action_desc,
-         command_text=None,
-         sensitive=is_sens,
-         file_diff_preview=f_preview,
-       )
-       if not approved:
-         skip_msg = t("tool_skipped", name=name)
-         self.ui.print_tool_result(name, False, skip_msg)
-         return ToolExecutionResult(
-           ok=False,
-           output=f"Action '{name}' was declined/skipped by the user. Ask how they prefer to proceed.",
-           skipped=True,
-         )
-       diff_payload = None
-       tool_images = None
-       ok, out = False, "Tool produced no result."
-       if name == "read_file":
-         ok, out = tool_read_file(safe_args, self.cwd)
-       elif name == "inspect_image":
-         ok, out, img_meta = load_image_attachment(str(safe_args.get("path", "")), self.cwd)
-         if ok and img_meta:
-           tool_images = [img_meta]
-       elif name == "write_file":
-         ok, out, diff_payload = tool_write_file(safe_args, self.cwd, self.undo_mgr)
-       elif name == "edit_file":
-         ok, out, diff_payload = tool_edit_file(safe_args, self.cwd, self.undo_mgr)
-       elif name == "multi_edit":
-         ok, out, diff_payload = tool_multi_edit(safe_args, self.cwd, self.undo_mgr)
-       elif name == "delete_path":
-         ok, out = tool_delete_path(safe_args, self.cwd, self.undo_mgr)
-       elif name == "move_or_copy":
-         ok, out = tool_move_or_copy(safe_args, self.cwd)
-       elif name == "list_directory":
-         ok, out = tool_list_directory(safe_args, self.cwd)
-       elif name == "change_directory":
-         ok, out = tool_change_directory(safe_args, self.cwd, self.set_cwd)
-       elif name == "list_system_drives":
-         ok, out = tool_list_system_drives()
-       elif name == "archive_tool":
-         ok, out = tool_archive(safe_args, self.cwd)
-       elif name == "search_files":
-         ok, out = tool_search_files(safe_args, self.cwd)
-       elif name == "grep_search":
-         ok, out = tool_grep_search(safe_args, self.cwd)
-       elif name == "project_overview":
-         ok, out = tool_project_overview(safe_args, self.cwd)
-       elif name == "check_syntax":
-         ok, out = tool_check_syntax(safe_args, self.cwd)
-       elif name == "open_path":
-         ok, out = tool_open_path(safe_args, self.cwd)
-       elif name == "find_processes":
-         ok, out = tool_find_processes(safe_args)
-       elif name == "undo_file_change":
-         ok, out = tool_undo_file_change(safe_args, self.cwd, self.undo_mgr)
-       elif name == "ask_user":
-         q_str = str(safe_args.get("question", "")).strip()
-         opts = [str(x) for x in (safe_args.get("options") or [])]
-         try:
-           def_idx = int(safe_args.get("default_index", 1) or 1)
-         except (TypeError, ValueError):
-           def_idx = 1
-         if self.perm_mgr.non_interactive:
-           chosen = opts[max(0, min(len(opts) - 1, def_idx - 1))] if opts else "default"
-           ok, out = True, f"User response (non-interactive default): {chosen}"
-         else:
-           ans = self.ui.prompt_user_choice(q_str, opts, def_idx)
-           ok, out = True, f"User selected / answered: {ans}"
-       elif name == "system_info":
-         ok, out = tool_system_info(self.cwd)
-       elif name == "web_search":
-         ok, out = tool_web_search(safe_args)
-       elif name == "web_fetch":
-         ok, out = tool_web_fetch(safe_args)
-       else:
-         ok = False
-         out = f"Unknown tool '{name}'. Available tools: {', '.join(s['name'] for s in TOOL_SCHEMAS)}"
-       if diff_payload is not None and ok:
-         fpath, before_txt, after_txt = diff_payload
-         self.ui.print_diff(fpath, before_txt, after_txt, already_shown_in_perm=shown_in_perm_box)
-       if ok and name in ("write_file", "edit_file", "multi_edit"):
-         raw_path = str(safe_args.get("path", ""))
-         if Path(raw_path).suffix.lower() in (
-           ".py", ".pyi", ".json", ".toml", ".xml", ".svg", ".sh", ".bash", ".js", ".mjs", ".cjs"
-         ):
-           check_args = {"path": raw_path}
-           if not sensitive_tool_action("check_syntax", check_args, self.cwd):
-             try:
-               check_ok, check_out = tool_check_syntax(check_args, self.cwd)
-               out += "\nAutomatic syntax check: " + check_out
-               if check_ok:
-                 self.ui.info(t("auto_syntax_ok", path=raw_path))
-               else:
-                 self.ui.warn(t("auto_syntax_failed", path=raw_path))
-                 restored: Optional[Path] = None
-                 try:
-                   target_path = resolve_user_path(raw_path, self.cwd)
-                   last_path = self.undo_mgr.peek_last_path()
-                   if last_path is not None and str(last_path) == str(target_path):
-                     restored = self.undo_mgr.undo_last()
-                 except Exception:
-                   restored = None
-                 if restored is not None:
-                   self.ui.warn(t("auto_syntax_rolled_back", path=str(restored)))
-                   out += (
-                     "\n[ROLLBACK: SYNTAX ERROR] The file was reverted to its previous, working "
-                     "version automatically. Re-read the file, fix the reported error and retry."
-                   )
-                 else:
-                   out += (
-                     "\n[ACTION REQUIRED: SYNTAX ERROR INTRODUCED] "
-                     "Immediately go back and fix the syntax error in this file using edit_file, "
-                     "or revert to the clean snapshot via undo_file_change!"
-                   )
-             except Exception:
-               pass
-       self.ui.print_tool_result(name, ok, out)
-       return ToolExecutionResult(ok=ok, output=out, images=tool_images)
-     except KeyboardInterrupt:
-       self.ui.print_tool_result(name, False, t("ctrl_c_cancelled"))
-       raise
-     except Exception as exc:
-       self.config_mgr.log_error(f"tool:{name}", repr(exc))
-       alert = classify_exception(exc)
-       self.ui.print_alert(alert)
-       detail = mask_secrets(str(exc))
-       for secret in self.config_mgr.config.api_keys.values():
-         if secret:
-           detail = detail.replace(secret, "[REDACTED]")
-       warn_note = t("tool_error_passed", name=name, err=detail)
-       self.ui.warn(warn_note)
-       self.ui.print_tool_result(name, False, f"{type(exc).__name__}: {detail}")
-       return ToolExecutionResult(
-         ok=False,
-         output=f"Tool '{name}' encountered an error ({type(exc).__name__}: {detail}). Adapt and try an alternative approach.",
-       )
+  def __init__(
+    self,
+    config_mgr: ConfigManager,
+    ui: ConsoleUI,
+    perm_mgr: PermissionManager,
+    undo_mgr: UndoManager,
+  ) -> None:
+    self.config_mgr = config_mgr
+    self.ui = ui
+    self.perm_mgr = perm_mgr
+    self.undo_mgr = undo_mgr
+    self.cwd: Path = Path.cwd().resolve()
+  def set_cwd(self, new_cwd: Path) -> None:
+    self.cwd = new_cwd.resolve()
+  def get_schemas(self) -> List[Dict[str, Any]]:
+    return TOOL_SCHEMAS
+  def _describe_action(self, name: str, args: Dict[str, Any]) -> str:
+    if name in ("write_file", "edit_file", "multi_edit", "delete_path"):
+      return t("perm_file_action", action=name, target=args.get("path", ""))
+    if name == "move_or_copy":
+      op = args.get("operation", "move")
+      return t("perm_file_action", action=op, target=f"{args.get('source', '')} -> {args.get('destination', '')}")
+    if name == "archive_tool":
+      return f"Archive ({args.get('action', '')}): {args.get('archive_path', '')}"
+    if name == "open_path":
+      return f"Open on desktop: {args.get('target', '')}"
+    if name == "web_search":
+      return f"Web search: {args.get('query', '')}"
+    if name == "web_fetch":
+      return f"Web request: {args.get('url', '')}"
+    return f"{name}({args})"
+  def execute(self, name: str, args: Dict[str, Any]) -> ToolExecutionResult:
+    """
+        Validate arguments, enforce mandatory terminal consent & transparent reporting,
+        execute cross-platform tools, show diffs, and catch any exception cleanly.
+        """
+    safe_args = _coerce_tool_args(args)
+    if name == "edit_file" and isinstance(safe_args, dict):
+      if "old_string" in safe_args and "old_text" not in safe_args:
+        safe_args = dict(safe_args, old_text=safe_args["old_string"])
+      if "new_string" in safe_args and "new_text" not in safe_args:
+        safe_args = dict(safe_args, new_text=safe_args["new_string"])
+    elif name == "read_file" and isinstance(safe_args, dict) and "start_line" in safe_args and "offset" not in safe_args:
+      try:
+        s_ln = max(1, int(safe_args.get("start_line") or 1))
+        e_ln = max(s_ln, int(safe_args.get("end_line") or (s_ln + 399)))
+      except (TypeError, ValueError):
+        s_ln, e_ln = 1, 400
+      safe_args = dict(safe_args, offset=s_ln, limit=max(1, e_ln - s_ln + 1))
+    self.ui.print_tool_start(name, safe_args)
+    try:
+      issue = _validate_arguments(name, safe_args)
+      if issue:
+        out = f"Tool '{name}' was not executed: invalid arguments ({issue}). Correct the call and try again."
+        self.ui.print_tool_result(name, False, out)
+        return ToolExecutionResult(ok=False, output=out, invalid_args=True)
+      if name == "run_command":
+        cmd_str = str(safe_args["command"])
+        shell_req = str(safe_args.get("shell") or "auto")
+        wdir_raw = safe_args.get("workdir")
+        exec_dir = resolve_user_path(str(wdir_raw), self.cwd) if wdir_raw else self.cwd
+        try:
+          _, shell_label = resolve_shell_invocation(shell_req, cmd_str)
+        except Exception as shell_exc:
+          err_txt = str(shell_exc)
+          self.ui.print_tool_result(name, False, err_txt)
+          return ToolExecutionResult(ok=False, output=err_txt)
+        approved = self.perm_mgr.check_terminal_permission(
+          tool_name="run_command",
+          code_text=cmd_str,
+          shell_label=shell_label,
+          cwd_str=str(exec_dir),
+        )
+        if not approved:
+          skip_msg = t("tool_skipped", name=name)
+          self.ui.print_tool_result(name, False, skip_msg)
+          return ToolExecutionResult(
+            ok=False,
+            output=f"Terminal command '{cmd_str}' was declined by the user. Respect the refusal and ask or use a non-terminal alternative.",
+            skipped=True,
+          )
+        res = run_command_detailed(
+          command=cmd_str,
+          cwd=self.cwd,
+          timeout=int(safe_args.get("timeout", 90) or 90),
+          workdir=str(wdir_raw) if wdir_raw else None,
+          shell=shell_req,
+        )
+        preview = res.get("stdout") or res.get("stderr") or ""
+        if res.get("stdout") and res.get("stderr"):
+          preview = f"{res['stdout'].rstrip()}\n[STDERR]\n{res['stderr'].rstrip()}"
+        triage_obj = res.get("triage")
+        triage_txt = t(triage_obj["summary_key"]) if isinstance(triage_obj, dict) and triage_obj.get("summary_key") else ""
+        self.ui.print_terminal_used(
+          shell_name=str(res.get("shell") or shell_label),
+          cwd_str=str(res.get("cwd") or exec_dir),
+          code_str=cmd_str,
+          ok=bool(res.get("ok")),
+          exit_code=int(res.get("exit_code", -1)),
+          elapsed=float(res.get("elapsed", 0.0)),
+          preview=preview,
+          triage_note=triage_txt,
+        )
+        ok = bool(res.get("ok"))
+        out = str(res.get("formatted") or "")
+        self.ui.print_tool_result(name, ok, out)
+        return ToolExecutionResult(ok=ok, output=out)
+      if name == "python_eval":
+        code_str = str(safe_args["code"])
+        py_label = f"python ({sys.executable})"
+        approved = self.perm_mgr.check_terminal_permission(
+          tool_name="python_eval",
+          code_text=code_str,
+          shell_label=py_label,
+          cwd_str=str(self.cwd),
+        )
+        if not approved:
+          skip_msg = t("tool_skipped", name=name)
+          self.ui.print_tool_result(name, False, skip_msg)
+          return ToolExecutionResult(
+            ok=False,
+            output="Python code execution was declined by the user. Respect the refusal and ask how to proceed.",
+            skipped=True,
+          )
+        res = run_python_detailed(
+          code=code_str,
+          cwd=self.cwd,
+          timeout=int(safe_args.get("timeout", 45) or 45),
+        )
+        preview = res.get("stdout") or res.get("stderr") or ""
+        if res.get("stdout") and res.get("stderr"):
+          preview = f"{res['stdout'].rstrip()}\n[STDERR]\n{res['stderr'].rstrip()}"
+        triage_obj = res.get("triage")
+        triage_txt = t(triage_obj["summary_key"]) if isinstance(triage_obj, dict) and triage_obj.get("summary_key") else ""
+        self.ui.print_terminal_used(
+          shell_name=str(res.get("shell") or py_label),
+          cwd_str=str(res.get("cwd") or self.cwd),
+          code_str=code_str,
+          ok=bool(res.get("ok")),
+          exit_code=int(res.get("exit_code", -1)),
+          elapsed=float(res.get("elapsed", 0.0)),
+          preview=preview,
+          triage_note=triage_txt,
+        )
+        ok = bool(res.get("ok"))
+        out = str(res.get("formatted") or "")
+        self.ui.print_tool_result(name, ok, out)
+        return ToolExecutionResult(ok=ok, output=out)
+      action_desc = self._describe_action(name, safe_args)
+      if name in (
+        "read_file", "write_file", "edit_file", "multi_edit", "delete_path",
+        "list_directory", "change_directory", "search_files", "grep_search",
+        "project_overview", "check_syntax",
+      ):
+        p_arg = str(safe_args.get("path", "."))
+        try:
+          action_desc += f"\nResolved path: {resolve_user_path(p_arg, self.cwd)}"
+        except (OSError, ValueError):
+          pass
+      is_sens = sensitive_tool_action(name, safe_args, self.cwd)
+      f_preview = None
+      if name in ("write_file", "edit_file", "multi_edit", "delete_path", "open_path") or (is_sens and name == "read_file"):
+        f_preview = preview_file_change(name, safe_args, self.cwd)
+      shown_in_perm_box = bool(
+        f_preview is not None
+        and not self.perm_mgr.non_interactive
+        and (is_sens or (name not in ("read_file", "inspect_image") and self.perm_mgr.mode != "auto"))
+      )
+      approved = self.perm_mgr.check_tool_permission(
+        name,
+        action_desc,
+        command_text=None,
+        sensitive=is_sens,
+        file_diff_preview=f_preview,
+      )
+      if not approved:
+        skip_msg = t("tool_skipped", name=name)
+        self.ui.print_tool_result(name, False, skip_msg)
+        return ToolExecutionResult(
+          ok=False,
+          output=f"Action '{name}' was declined/skipped by the user. Ask how they prefer to proceed.",
+          skipped=True,
+        )
+      diff_payload = None
+      tool_images = None
+      ok, out = False, "Tool produced no result."
+      if name == "read_file":
+        ok, out = tool_read_file(safe_args, self.cwd)
+      elif name == "inspect_image":
+        ok, out, img_meta = load_image_attachment(str(safe_args.get("path", "")), self.cwd)
+        if ok and img_meta:
+          tool_images = [img_meta]
+      elif name == "write_file":
+        ok, out, diff_payload = tool_write_file(safe_args, self.cwd, self.undo_mgr)
+      elif name == "edit_file":
+        ok, out, diff_payload = tool_edit_file(safe_args, self.cwd, self.undo_mgr)
+      elif name == "multi_edit":
+        ok, out, diff_payload = tool_multi_edit(safe_args, self.cwd, self.undo_mgr)
+      elif name == "delete_path":
+        ok, out = tool_delete_path(safe_args, self.cwd, self.undo_mgr)
+      elif name == "move_or_copy":
+        ok, out = tool_move_or_copy(safe_args, self.cwd)
+      elif name == "list_directory":
+        ok, out = tool_list_directory(safe_args, self.cwd)
+      elif name == "change_directory":
+        ok, out = tool_change_directory(safe_args, self.cwd, self.set_cwd)
+      elif name == "list_system_drives":
+        ok, out = tool_list_system_drives()
+      elif name == "archive_tool":
+        ok, out = tool_archive(safe_args, self.cwd)
+      elif name == "search_files":
+        ok, out = tool_search_files(safe_args, self.cwd)
+      elif name == "grep_search":
+        ok, out = tool_grep_search(safe_args, self.cwd)
+      elif name == "project_overview":
+        ok, out = tool_project_overview(safe_args, self.cwd)
+      elif name == "check_syntax":
+        ok, out = tool_check_syntax(safe_args, self.cwd)
+      elif name == "open_path":
+        ok, out = tool_open_path(safe_args, self.cwd)
+      elif name == "find_processes":
+        ok, out = tool_find_processes(safe_args)
+      elif name == "undo_file_change":
+        ok, out = tool_undo_file_change(safe_args, self.cwd, self.undo_mgr)
+      elif name == "ask_user":
+        q_str = str(safe_args.get("question", "")).strip()
+        opts = [str(x) for x in (safe_args.get("options") or [])]
+        try:
+          def_idx = int(safe_args.get("default_index", 1) or 1)
+        except (TypeError, ValueError):
+          def_idx = 1
+        if self.perm_mgr.non_interactive:
+          chosen = opts[max(0, min(len(opts) - 1, def_idx - 1))] if opts else "default"
+          ok, out = True, f"User response (non-interactive default): {chosen}"
+        else:
+          ans = self.ui.prompt_user_choice(q_str, opts, def_idx)
+          ok, out = True, f"User selected / answered: {ans}"
+      elif name == "system_info":
+        ok, out = tool_system_info(self.cwd)
+      elif name == "web_search":
+        ok, out = tool_web_search(safe_args)
+      elif name == "web_fetch":
+        ok, out = tool_web_fetch(safe_args)
+      elif name == "aggressive_audit":
+        ok, out = tool_aggressive_audit(safe_args, self.cwd)
+      else:
+        ok = False
+        out = f"Unknown tool '{name}'. Available tools: {', '.join(s['name'] for s in TOOL_SCHEMAS)}"
+      if diff_payload is not None and ok:
+        fpath, before_txt, after_txt = diff_payload
+        self.ui.print_diff(fpath, before_txt, after_txt, already_shown_in_perm=shown_in_perm_box)
+      if ok and name in ("write_file", "edit_file", "multi_edit"):
+        raw_path = str(safe_args.get("path", ""))
+        if Path(raw_path).suffix.lower() in (
+          ".py", ".pyi", ".json", ".toml", ".xml", ".svg", ".sh", ".bash", ".js", ".mjs", ".cjs"
+        ):
+          check_args = {"path": raw_path}
+          if not sensitive_tool_action("check_syntax", check_args, self.cwd):
+            try:
+              check_ok, check_out = tool_check_syntax(check_args, self.cwd)
+              out += "\nAutomatic syntax check: " + check_out
+              if check_ok:
+                self.ui.info(t("auto_syntax_ok", path=raw_path))
+              else:
+                self.ui.warn(t("auto_syntax_failed", path=raw_path))
+                restored: Optional[Path] = None
+                try:
+                  target_path = resolve_user_path(raw_path, self.cwd)
+                  last_path = self.undo_mgr.peek_last_path()
+                  if last_path is not None and str(last_path) == str(target_path):
+                    restored = self.undo_mgr.undo_last()
+                except Exception:
+                  restored = None
+                if restored is not None:
+                  self.ui.warn(t("auto_syntax_rolled_back", path=str(restored)))
+                  out += (
+                    "\n[ROLLBACK: SYNTAX ERROR] The file was reverted to its previous, working "
+                    "version automatically. Re-read the file, fix the reported error and retry."
+                  )
+                else:
+                  out += (
+                    "\n[ACTION REQUIRED: SYNTAX ERROR INTRODUCED] "
+                    "Immediately go back and fix the syntax error in this file using edit_file, "
+                    "or revert to the clean snapshot via undo_file_change!"
+                  )
+            except Exception:
+              pass
+      self.ui.print_tool_result(name, ok, out)
+      return ToolExecutionResult(ok=ok, output=out, images=tool_images)
+    except KeyboardInterrupt:
+      self.ui.print_tool_result(name, False, t("ctrl_c_cancelled"))
+      raise
+    except Exception as exc:
+      self.config_mgr.log_error(f"tool:{name}", repr(exc))
+      alert = classify_exception(exc)
+      self.ui.print_alert(alert)
+      detail = mask_secrets(str(exc))
+      for secret in self.config_mgr.config.api_keys.values():
+        if secret:
+          detail = detail.replace(secret, "[REDACTED]")
+      warn_note = t("tool_error_passed", name=name, err=detail)
+      self.ui.warn(warn_note)
+      self.ui.print_tool_result(name, False, f"{type(exc).__name__}: {detail}")
+      return ToolExecutionResult(
+        ok=False,
+        output=f"Tool '{name}' encountered an error ({type(exc).__name__}: {detail}). Adapt and try an alternative approach.",
+      )
  return locals()
 _dm_install('docmind.tools.registry', _dm_module_22, False)
 
@@ -14306,230 +14585,230 @@ def _dm_module_23():
  from docmind.i18n import LANGUAGE_CHOICES, i18n, t
  from docmind.ui.console import ConsoleUI
  class SetupWizard:
-   def __init__(self, config_mgr: ConfigManager, ui: ConsoleUI, on_usage=None, on_unknown_usage=None) -> None:
-     self.config_mgr = config_mgr
-     self.ui = ui
-     self.on_usage = on_usage
-     self.on_unknown_usage = on_unknown_usage
-   def select_language(self) -> str:
-     lines = []
-     for idx, (code, native_name, label) in enumerate(LANGUAGE_CHOICES, start=1):
-       marker = " *" if code == self.config_mgr.config.language else ""
-       lines.append(f"  [{idx}] {label}{marker}")
-     _lt = {"tr": "🌐 Dil Seçimi", "en": "🌐 Select Language", "az": "🌐 Dil Seçimi", "de": "🌐 Sprachauswahl", "es": "🌐 Selección de idioma", "fr": "🌐 Choix de la langue", "it": "🌐 Selezione lingua", "pt": "🌐 Seleção de idioma", "nl": "🌐 Taalkeuze", "ru": "🌐 Выбор языка", "ar": "🌐 اختيار اللغة", "zh": "🌐 选择语言", "ja": "🌐 言語の選択", "ko": "🌐 언어 선택"}.get(i18n.lang, "🌐 Select Language")
-     self.ui.print_panel(_lt, "\n".join(lines), style="bright_cyan")
-     raw = self.ui.ask(t("wiz_select_lang")).strip()
-     choice_idx = 0
-     if raw.isdigit():
-       val = int(raw)
-       if 1 <= val <= len(LANGUAGE_CHOICES):
-         choice_idx = val - 1
-     elif raw.lower() in {c[0] for c in LANGUAGE_CHOICES}:
-       for i, c in enumerate(LANGUAGE_CHOICES):
-         if c[0] == raw.lower():
-           choice_idx = i
-           break
-     selected_code = LANGUAGE_CHOICES[choice_idx][0]
-     self.config_mgr.config.language = selected_code
-     i18n.set_lang(selected_code)
-     self.config_mgr.save()
-     self.ui.success(t("wiz_lang_saved"))
-     return selected_code
-   def select_provider(self) -> str:
-     by_id = {spec.id: spec for spec in PROVIDERS}
-     order = ["gemini", "anthropic", "openai", "groq", "openrouter", "deepseek", "custom"]
-     choices = [by_id[key] for key in order]
-     lines = []
-     for idx, spec in enumerate(choices, 1):
-       name = spec.name
-       if spec.id == "custom":
-         name = {
-           "tr": "Başka / Özel / Yerel (OpenAI uyumlu)",
-           "en": "Other / Custom / Local (OpenAI-compatible)",
-           "az": "Digər / Xüsusi / Yerli (OpenAI uyğun)",
-           "de": "Andere / Benutzerdefiniert / Lokal (OpenAI-kompatibel)",
-           "es": "Otro / Personalizado / Local (compatible con OpenAI)",
-           "fr": "Autre / Personnalisé / Local (compatible OpenAI)",
-           "it": "Altro / Personalizzato / Locale (compatibile OpenAI)",
-           "pt": "Outro / Personalizado / Local (compatível com OpenAI)",
-           "nl": "Anders / Aangepast / Lokaal (OpenAI-compatibel)",
-           "ru": "Другой / Особый / Локальный (совместим с OpenAI)",
-           "ar": "أخرى / مخصص / محلي (متوافق مع OpenAI)",
-           "zh": "其他 / 自定义 / 本地 (兼容 OpenAI)",
-           "ja": "その他 / カスタム / ローカル (OpenAI 互換)",
-           "ko": "기타 / 사용자 지정 / 로컬 (OpenAI 호환)",
-         }.get(i18n.lang, "Other / Custom / Local")
-       current = " *" if spec.id == self.config_mgr.config.provider else ""
-       lines.append(f"  [{idx}] {name}{current}")
-     self.ui.print_panel(f"🤖 {t('wiz_select_provider')}", "\n".join(lines), style="bright_cyan")
-     raw = self.ui.ask(t("wiz_provider_prompt")).strip()
-     chosen = choices[0]
-     if raw.isdigit() and 1 <= int(raw) <= len(choices):
-       chosen = choices[int(raw) - 1]
-     elif raw:
-       chosen = next((spec for spec in choices if spec.id == raw.lower()), choices[0])
-     self.config_mgr.config.provider = chosen.id
-     if chosen.id == "custom":
-       self.select_model()
-     else:
-       self.config_mgr.config.model = chosen.models[0]
-     self.config_mgr.save()
-     return chosen.id
-   def select_model(self) -> str:
-     spec = get_provider_spec(self.config_mgr.config.provider)
-     if spec.id == "custom":
-       labels = {
-         "tr": "Model adı (isteğe bağlı; boş bırakırsanız default-model): ",
-         "en": "Model name (optional; blank uses default-model): ",
-         "az": "Model adı (istəyə bağlı; boş buraxsanız default-model): ",
-         "de": "Modellname (optional; leer = default-model): ",
-         "es": "Nombre del modelo (opcional; vacío = default-model): ",
-         "fr": "Nom du modèle (facultatif ; vide = default-model) : ",
-         "it": "Nome modello (opzionale; vuoto = default-model): ",
-         "pt": "Nome do modelo (opcional; vazio usa default-model): ",
-         "nl": "Modelnaam (optioneel; leeg = default-model): ",
-         "ru": "Название модели (необязательно; пусто = default-model): ",
-         "ar": "اسم النموذج (اختياري؛ اتركه فارغاً لاستخدام default-model): ",
-         "zh": "模型名称（可选；留空则使用 default-model）: ",
-         "ja": "モデル名（任意・空欄で default-model を使用）: ",
-         "ko": "모델 이름 (선택 사항; 비워두면 default-model 사용): ",
-       }
-       chosen_model = self.ui.ask(labels.get(i18n.lang, labels["en"])).strip() or "default-model"
-     else:
-       lines = []
-       for idx, m_name in enumerate(spec.models, start=1):
-         current = " *" if m_name == self.config_mgr.config.model else ""
-         lines.append(f"  [{idx}] {m_name}{current}")
-       custom_num = len(spec.models) + 1
-       lines.append(f"  [{custom_num}] {t('wiz_custom_model_opt')}")
-       self.ui.print_panel(f"🧠 {t('wiz_select_model', provider=spec.name)}", "\n".join(lines), style="bright_cyan")
-       raw = self.ui.ask(t("wiz_model_prompt")).strip()
-       if raw.isdigit():
-         num = int(raw)
-         if 1 <= num <= len(spec.models):
-           chosen_model = spec.models[num - 1]
-         elif num == custom_num:
-           chosen_model = self.ui.ask(t("wiz_custom_model_prompt")).strip() or spec.models[0]
-         else:
-           chosen_model = spec.models[0]
-       elif raw:
-         chosen_model = raw
-       else:
-         chosen_model = spec.models[0]
-     self.config_mgr.config.model = chosen_model
-     self.config_mgr.save()
-     return chosen_model
-   def prompt_api_key_and_verify(self) -> bool:
-     """Read a visible key and offer model/provider changes or a retry on failure."""
-     ask_key = True
-     ask_custom_url = True
-     while True:
-       spec = get_provider_spec(self.config_mgr.config.provider)
-       existing = self.config_mgr.config.get_api_key(spec.id)
-       if ask_key:
-         prompt_lbl = (
-           t("wiz_api_key_optional", provider=spec.name)
-           if spec.key_optional else t("wiz_enter_api_key", provider=spec.name)
-         )
-         self.ui.info(t("wiz_secret_notice"))
-         entered = clean_api_key(self.ui.ask_secret(prompt_lbl))
-         if entered:
-           self.config_mgr.config.set_api_key(entered, spec.id)
-         elif not existing and not spec.key_optional:
-           self.ui.warn(t("wiz_api_key_empty"))
-           menu = (
-             f"  [1] {t('wiz_opt_retry_key')}\n"
-             f"  [2] {t('wiz_opt_change_provider')}\n"
-             f"  [5] {t('wiz_opt_skip_anyway')}"
-           )
-           self.ui.print_panel(t("wiz_api_fail_menu"), menu, style="yellow")
-           sub = self.ui.ask(t("rec_choose", default="1")).strip() or "1"
-           if sub == "2":
-             self.select_provider()
-             ask_custom_url = True
-           elif sub in ("3", "5"):
-             self.config_mgr.save()
-             return False
-           continue
-       if spec.id == "custom" and ask_custom_url:
-         current_url = self.config_mgr.config.get_base_url("custom")
-         entered_url = self.ui.ask(t("wiz_enter_base_url", default=current_url)).strip()
-         self.config_mgr.config.set_base_url(entered_url or current_url, "custom")
-         ask_custom_url = False
-       self.config_mgr.save()
-       def retry_notice(key, **values):
-         if self.on_unknown_usage:
-           self.on_unknown_usage()
-         self.ui.warn(t(key, **values))
-       client = ProviderClient(self.config_mgr.config, on_effort_fallback=lambda: retry_notice("effort_fallback"))
-       client.on_compat_fallback = lambda: retry_notice("compat_fallback")
-       client.on_budget_fallback = lambda limit: retry_notice("budget_fallback", limit=limit)
-       client.on_probe_retry = lambda: retry_notice("probe_retry")
-       client.on_probe_interrupted = self.on_unknown_usage
-       client.on_connection_retry = lambda attempt, delay: retry_notice(
-         "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
-       with self.ui.spinner(t("wiz_testing_api")):
-         ok, api_err = client.verify_connection(timeout=30.0)
-       if self.on_usage and client.last_verification_response is not None:
-         self.on_usage(client.last_verification_response)
-       elif not ok and self.on_unknown_usage:
-         self.on_unknown_usage()
-       if ok:
-         self.ui.success(t("wiz_api_ok", provider=spec.name, model=self.config_mgr.config.model))
-         self.ui.info(t("doctor_tools_skipped"))
-         return True
-       if api_err is not None:
-         self.ui.print_alert(classify_exception(api_err, provider_name=spec.name, model_name=self.config_mgr.config.model))
-       menu = (
-         f"  [1] 🔑 {t('wiz_opt_retry_key')}\n"
-         f"  [2] 🔄 {t('wiz_opt_change_provider')}\n"
-         f"  [3] 🧠 {t('rec_opt_switch_model')}\n"
-         f"  [4] 🔁 {t('rec_opt_retry')}\n"
-         f"  [5] ⏭️  {t('wiz_opt_skip_anyway')}"
-       )
-       self.ui.print_panel(t("wiz_api_fail_menu"), menu, style="yellow")
-       choice = self.ui.ask(t("rec_choose", default="1")).strip() or "1"
-       if choice == "2":
-         self.select_provider()
-         ask_custom_url = True
-         ask_key = True
-       elif choice == "3":
-         self.select_model()
-         ask_key = False
-       elif choice == "4":
-         ask_key = False
-       elif choice == "5":
-         self.ui.info(t("err_skipped_notice"))
-         return False
-       else:
-         ask_key = True
-   def select_permission_mode(self) -> str:
-     lines = [
-       f"  [1] 🛡️  {t('wiz_mode_smart')}",
-       f"  [2] 🚀 {t('wiz_mode_auto')}",
-     ]
-     self.ui.print_panel(t("wiz_select_mode"), "\n".join(lines), style="bright_cyan")
-     raw = self.ui.ask(t("wiz_mode_prompt")).strip()
-     mode = "auto" if raw == "2" else "smart"
-     self.config_mgr.config.permission_mode = mode
-     self.config_mgr.save()
-     return mode
-   def run_full_setup(self, skip_language: bool = False) -> None:
-     self.ui.print_panel(f"✨ {t('wiz_title')}", t("welcome_subtitle"), style="bright_magenta")
-     previous_setup_state = self.config_mgr.config.setup_completed
-     try:
-       if not skip_language:
-         self.select_language()
-       self.select_provider()
-       self.prompt_api_key_and_verify()
-       self.config_mgr.config.setup_completed = True
-       self.config_mgr.save()
-       self.ui.success(t("wiz_complete"))
-     except (KeyboardInterrupt, EOFError):
-       print()
-       self.config_mgr.config.setup_completed = previous_setup_state
-       self.config_mgr.save()
-       self.ui.warn(t("ctrl_c_cancelled"))
+  def __init__(self, config_mgr: ConfigManager, ui: ConsoleUI, on_usage=None, on_unknown_usage=None) -> None:
+    self.config_mgr = config_mgr
+    self.ui = ui
+    self.on_usage = on_usage
+    self.on_unknown_usage = on_unknown_usage
+  def select_language(self) -> str:
+    lines = []
+    for idx, (code, native_name, label) in enumerate(LANGUAGE_CHOICES, start=1):
+      marker = " *" if code == self.config_mgr.config.language else ""
+      lines.append(f"  [{idx}] {label}{marker}")
+    _lt = {"tr": "🌐 Dil Seçimi", "en": "🌐 Select Language", "az": "🌐 Dil Seçimi", "de": "🌐 Sprachauswahl", "es": "🌐 Selección de idioma", "fr": "🌐 Choix de la langue", "it": "🌐 Selezione lingua", "pt": "🌐 Seleção de idioma", "nl": "🌐 Taalkeuze", "ru": "🌐 Выбор языка", "ar": "🌐 اختيار اللغة", "zh": "🌐 选择语言", "ja": "🌐 言語の選択", "ko": "🌐 언어 선택"}.get(i18n.lang, "🌐 Select Language")
+    self.ui.print_panel(_lt, "\n".join(lines), style="bright_cyan")
+    raw = self.ui.ask(t("wiz_select_lang")).strip()
+    choice_idx = 0
+    if raw.isdigit():
+      val = int(raw)
+      if 1 <= val <= len(LANGUAGE_CHOICES):
+        choice_idx = val - 1
+    elif raw.lower() in {c[0] for c in LANGUAGE_CHOICES}:
+      for i, c in enumerate(LANGUAGE_CHOICES):
+        if c[0] == raw.lower():
+          choice_idx = i
+          break
+    selected_code = LANGUAGE_CHOICES[choice_idx][0]
+    self.config_mgr.config.language = selected_code
+    i18n.set_lang(selected_code)
+    self.config_mgr.save()
+    self.ui.success(t("wiz_lang_saved"))
+    return selected_code
+  def select_provider(self) -> str:
+    by_id = {spec.id: spec for spec in PROVIDERS}
+    order = ["gemini", "anthropic", "openai", "groq", "openrouter", "deepseek", "custom"]
+    choices = [by_id[key] for key in order]
+    lines = []
+    for idx, spec in enumerate(choices, 1):
+      name = spec.name
+      if spec.id == "custom":
+        name = {
+          "tr": "Başka / Özel / Yerel (OpenAI uyumlu)",
+          "en": "Other / Custom / Local (OpenAI-compatible)",
+          "az": "Digər / Xüsusi / Yerli (OpenAI uyğun)",
+          "de": "Andere / Benutzerdefiniert / Lokal (OpenAI-kompatibel)",
+          "es": "Otro / Personalizado / Local (compatible con OpenAI)",
+          "fr": "Autre / Personnalisé / Local (compatible OpenAI)",
+          "it": "Altro / Personalizzato / Locale (compatibile OpenAI)",
+          "pt": "Outro / Personalizado / Local (compatível com OpenAI)",
+          "nl": "Anders / Aangepast / Lokaal (OpenAI-compatibel)",
+          "ru": "Другой / Особый / Локальный (совместим с OpenAI)",
+          "ar": "أخرى / مخصص / محلي (متوافق مع OpenAI)",
+          "zh": "其他 / 自定义 / 本地 (兼容 OpenAI)",
+          "ja": "その他 / カスタム / ローカル (OpenAI 互換)",
+          "ko": "기타 / 사용자 지정 / 로컬 (OpenAI 호환)",
+        }.get(i18n.lang, "Other / Custom / Local")
+      current = " *" if spec.id == self.config_mgr.config.provider else ""
+      lines.append(f"  [{idx}] {name}{current}")
+    self.ui.print_panel(f"🤖 {t('wiz_select_provider')}", "\n".join(lines), style="bright_cyan")
+    raw = self.ui.ask(t("wiz_provider_prompt")).strip()
+    chosen = choices[0]
+    if raw.isdigit() and 1 <= int(raw) <= len(choices):
+      chosen = choices[int(raw) - 1]
+    elif raw:
+      chosen = next((spec for spec in choices if spec.id == raw.lower()), choices[0])
+    self.config_mgr.config.provider = chosen.id
+    if chosen.id == "custom":
+      self.select_model()
+    else:
+      self.config_mgr.config.model = chosen.models[0]
+    self.config_mgr.save()
+    return chosen.id
+  def select_model(self) -> str:
+    spec = get_provider_spec(self.config_mgr.config.provider)
+    if spec.id == "custom":
+      labels = {
+        "tr": "Model adı (isteğe bağlı; boş bırakırsanız default-model): ",
+        "en": "Model name (optional; blank uses default-model): ",
+        "az": "Model adı (istəyə bağlı; boş buraxsanız default-model): ",
+        "de": "Modellname (optional; leer = default-model): ",
+        "es": "Nombre del modelo (opcional; vacío = default-model): ",
+        "fr": "Nom du modèle (facultatif ; vide = default-model) : ",
+        "it": "Nome modello (opzionale; vuoto = default-model): ",
+        "pt": "Nome do modelo (opcional; vazio usa default-model): ",
+        "nl": "Modelnaam (optioneel; leeg = default-model): ",
+        "ru": "Название модели (необязательно; пусто = default-model): ",
+        "ar": "اسم النموذج (اختياري؛ اتركه فارغاً لاستخدام default-model): ",
+        "zh": "模型名称（可选；留空则使用 default-model）: ",
+        "ja": "モデル名（任意・空欄で default-model を使用）: ",
+        "ko": "모델 이름 (선택 사항; 비워두면 default-model 사용): ",
+      }
+      chosen_model = self.ui.ask(labels.get(i18n.lang, labels["en"])).strip() or "default-model"
+    else:
+      lines = []
+      for idx, m_name in enumerate(spec.models, start=1):
+        current = " *" if m_name == self.config_mgr.config.model else ""
+        lines.append(f"  [{idx}] {m_name}{current}")
+      custom_num = len(spec.models) + 1
+      lines.append(f"  [{custom_num}] {t('wiz_custom_model_opt')}")
+      self.ui.print_panel(f"🧠 {t('wiz_select_model', provider=spec.name)}", "\n".join(lines), style="bright_cyan")
+      raw = self.ui.ask(t("wiz_model_prompt")).strip()
+      if raw.isdigit():
+        num = int(raw)
+        if 1 <= num <= len(spec.models):
+          chosen_model = spec.models[num - 1]
+        elif num == custom_num:
+          chosen_model = self.ui.ask(t("wiz_custom_model_prompt")).strip() or spec.models[0]
+        else:
+          chosen_model = spec.models[0]
+      elif raw:
+        chosen_model = raw
+      else:
+        chosen_model = spec.models[0]
+    self.config_mgr.config.model = chosen_model
+    self.config_mgr.save()
+    return chosen_model
+  def prompt_api_key_and_verify(self) -> bool:
+    """Read a visible key and offer model/provider changes or a retry on failure."""
+    ask_key = True
+    ask_custom_url = True
+    while True:
+      spec = get_provider_spec(self.config_mgr.config.provider)
+      existing = self.config_mgr.config.get_api_key(spec.id)
+      if ask_key:
+        prompt_lbl = (
+          t("wiz_api_key_optional", provider=spec.name)
+          if spec.key_optional else t("wiz_enter_api_key", provider=spec.name)
+        )
+        self.ui.info(t("wiz_secret_notice"))
+        entered = clean_api_key(self.ui.ask_secret(prompt_lbl))
+        if entered:
+          self.config_mgr.config.set_api_key(entered, spec.id)
+        elif not existing and not spec.key_optional:
+          self.ui.warn(t("wiz_api_key_empty"))
+          menu = (
+            f"  [1] {t('wiz_opt_retry_key')}\n"
+            f"  [2] {t('wiz_opt_change_provider')}\n"
+            f"  [5] {t('wiz_opt_skip_anyway')}"
+          )
+          self.ui.print_panel(t("wiz_api_fail_menu"), menu, style="yellow")
+          sub = self.ui.ask(t("rec_choose", default="1")).strip() or "1"
+          if sub == "2":
+            self.select_provider()
+            ask_custom_url = True
+          elif sub in ("3", "5"):
+            self.config_mgr.save()
+            return False
+          continue
+      if spec.id == "custom" and ask_custom_url:
+        current_url = self.config_mgr.config.get_base_url("custom")
+        entered_url = self.ui.ask(t("wiz_enter_base_url", default=current_url)).strip()
+        self.config_mgr.config.set_base_url(entered_url or current_url, "custom")
+        ask_custom_url = False
+      self.config_mgr.save()
+      def retry_notice(key, **values):
+        if self.on_unknown_usage:
+          self.on_unknown_usage()
+        self.ui.warn(t(key, **values))
+      client = ProviderClient(self.config_mgr.config, on_effort_fallback=lambda: retry_notice("effort_fallback"))
+      client.on_compat_fallback = lambda: retry_notice("compat_fallback")
+      client.on_budget_fallback = lambda limit: retry_notice("budget_fallback", limit=limit)
+      client.on_probe_retry = lambda: retry_notice("probe_retry")
+      client.on_probe_interrupted = self.on_unknown_usage
+      client.on_connection_retry = lambda attempt, delay: retry_notice(
+        "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
+      with self.ui.spinner(t("wiz_testing_api")):
+        ok, api_err = client.verify_connection(timeout=30.0)
+      if self.on_usage and client.last_verification_response is not None:
+        self.on_usage(client.last_verification_response)
+      elif not ok and self.on_unknown_usage:
+        self.on_unknown_usage()
+      if ok:
+        self.ui.success(t("wiz_api_ok", provider=spec.name, model=self.config_mgr.config.model))
+        self.ui.info(t("doctor_tools_skipped"))
+        return True
+      if api_err is not None:
+        self.ui.print_alert(classify_exception(api_err, provider_name=spec.name, model_name=self.config_mgr.config.model))
+      menu = (
+        f"  [1] 🔑 {t('wiz_opt_retry_key')}\n"
+        f"  [2] 🔄 {t('wiz_opt_change_provider')}\n"
+        f"  [3] 🧠 {t('rec_opt_switch_model')}\n"
+        f"  [4] 🔁 {t('rec_opt_retry')}\n"
+        f"  [5] ⏭️  {t('wiz_opt_skip_anyway')}"
+      )
+      self.ui.print_panel(t("wiz_api_fail_menu"), menu, style="yellow")
+      choice = self.ui.ask(t("rec_choose", default="1")).strip() or "1"
+      if choice == "2":
+        self.select_provider()
+        ask_custom_url = True
+        ask_key = True
+      elif choice == "3":
+        self.select_model()
+        ask_key = False
+      elif choice == "4":
+        ask_key = False
+      elif choice == "5":
+        self.ui.info(t("err_skipped_notice"))
+        return False
+      else:
+        ask_key = True
+  def select_permission_mode(self) -> str:
+    lines = [
+      f"  [1] 🛡️  {t('wiz_mode_smart')}",
+      f"  [2] 🚀 {t('wiz_mode_auto')}",
+    ]
+    self.ui.print_panel(t("wiz_select_mode"), "\n".join(lines), style="bright_cyan")
+    raw = self.ui.ask(t("wiz_mode_prompt")).strip()
+    mode = "auto" if raw == "2" else "smart"
+    self.config_mgr.config.permission_mode = mode
+    self.config_mgr.save()
+    return mode
+  def run_full_setup(self, skip_language: bool = False) -> None:
+    self.ui.print_panel(f"✨ {t('wiz_title')}", t("welcome_subtitle"), style="bright_magenta")
+    previous_setup_state = self.config_mgr.config.setup_completed
+    try:
+      if not skip_language:
+        self.select_language()
+      self.select_provider()
+      self.prompt_api_key_and_verify()
+      self.config_mgr.config.setup_completed = True
+      self.config_mgr.save()
+      self.ui.success(t("wiz_complete"))
+    except (KeyboardInterrupt, EOFError):
+      print()
+      self.config_mgr.config.setup_completed = previous_setup_state
+      self.config_mgr.save()
+      self.ui.warn(t("ctrl_c_cancelled"))
  return locals()
 _dm_install('docmind.ui.wizard', _dm_module_23, False)
 
@@ -14550,7 +14829,7 @@ def _dm_module_24():
  import time
  from datetime import datetime
  from pathlib import Path
- from typing import Any, Dict, List, Optional
+ from typing import Any, Dict, List, Optional, Set
  from docmind.config import ConfigManager, get_provider_spec, token_save_effective
  from docmind.i18n import t
  from docmind.tools.backup import UndoManager
@@ -14569,866 +14848,969 @@ def _dm_module_24():
  from docmind.core.streaming import KEEPALIVE_POOL
  _TR_ASCII_MAP = str.maketrans("çğıöşü", "cgiosu")
  def _tr_fold(text: str) -> str:
-   return (text or "").replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
+  return (text or "").replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
  def _ascii_fold(text: str) -> str:
-   return _tr_fold(text).translate(_TR_ASCII_MAP)
+  return _tr_fold(text).translate(_TR_ASCII_MAP)
  _PURE_CHAT_EXACT = {
-   "merhaba", "selam", "selamlar", "slm", "sa", "as", "selamun aleykum",
-   "gunaydin", "iyi gunler", "iyi aksamlar", "iyi geceler", "merhabalar",
-   "nasilsin", "naber", "ne haber", "iyi misin", "keyifler nasil",
-   "tesekkurler", "tesekkur ederim", "sag ol", "sagol", "eyvallah",
-   "tamam", "tamamdir", "ok", "okay", "peki", "anladim", "harika", "super", "guzel",
-   "kimsin", "sen kimsin", "adin ne", "nesin sen", "ne yapabilirsin", "neler yapabilirsin",
-   "hi", "hello", "hey", "yo", "good morning", "good evening", "how are you", "whats up",
-   "thanks", "thank you", "thx", "who are you", "what is your name", "what can you do",
-   "hallo", "hola", "bonjour", "salut", "привет", "здравствуйте", "спасибо",
+  "merhaba", "selam", "selamlar", "slm", "sa", "as", "selamun aleykum",
+  "gunaydin", "iyi gunler", "iyi aksamlar", "iyi geceler", "merhabalar",
+  "nasilsin", "naber", "ne haber", "iyi misin", "keyifler nasil",
+  "tesekkurler", "tesekkur ederim", "sag ol", "sagol", "eyvallah",
+  "tamam", "tamamdir", "ok", "okay", "peki", "anladim", "harika", "super", "guzel",
+  "kimsin", "sen kimsin", "adin ne", "nesin sen", "ne yapabilirsin", "neler yapabilirsin",
+  "hi", "hello", "hey", "yo", "good morning", "good evening", "how are you", "whats up",
+  "thanks", "thank you", "thx", "who are you", "what is your name", "what can you do",
+  "hallo", "hola", "bonjour", "salut", "привет", "здравствуйте", "спасибо",
  }
  _ACTION_CUES_ASCII_RE = re.compile(
-   r"(?:"
-   r"[/\\~]|\b[a-z]:|"
-   r"\.(?:py|js|ts|tsx|jsx|json|md|txt|pdf|docx?|xlsx?|pptx?|odt|ods|odp|zip|tar|gz|sh|bat|ps1|cmd|html?|css|sql|db|sqlite|ya?ml|toml|ini|cfg|conf|log|csv|xml|c|cpp|h|rs|go|java|kt|cs|php|rb)\b|"
-   r"\b(?:dosya|klasor|dizin|masaust|indirilen|belge|disk|surucu|"
-   r"olustur|duzenle|degistir|guncelle|kaldir|kopyala|adlandir|arsiv|cikar|"
-   r"listele|incele|analiz|ozetle|kontrol|duzelt|onar|"
-   r"calistir|kostur|baslat|durdur|yukle|indir|derle|test|yazdir|"
-   r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|script|betik|"
-   r"pyt?hon|pyrthon|pyhton|phyton|piton|node|npm|pip|git|java|gcc|cargo|go\b|"
-   r"print|echo|hello world|merhaba dunya|ekrana|"
-   r"proje|repo|uygulama|program|bot|oyun|kod|"
-   r"sistem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pacman|apt\b|dnf\b|winget|brew\b|"
-   r"hazirla|tasarla|oku|ac\b|yaz|ekle|sil|tasi|ara|arastir|dogrula|teyit|emin misin|yanlis|internette|webde|google|guncel|son surum|haber|fiyat|kac tl|dolar|euro|altin|hava durumu|kimdir|ne zaman|bul|tara|kur|geri al|arac|"
-   r"file|folder|directory|path|desktop|download|document|drive|"
-   r"read|open|write|create|save|edit|modify|update|delete|remove|move|copy|rename|extract|"
-   r"202[4-9]\b|research|verify|fact.?check|latest|current|release|version|news|price|weather|who is|look up|online|internet|web\b|search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
-   r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)"
-   r")"
+  r"(?:"
+  r"[/\\~]|\b[a-z]:|"
+  r"\.(?:py|js|ts|tsx|jsx|json|md|txt|pdf|docx?|xlsx?|pptx?|odt|ods|odp|zip|tar|gz|sh|bat|ps1|cmd|html?|css|sql|db|sqlite|ya?ml|toml|ini|cfg|conf|log|csv|xml|c|cpp|h|rs|go|java|kt|cs|php|rb)\b|"
+  r"\b(?:dosya|klasor|dizin|masaust|indirilen|belge|disk|surucu|"
+  r"olustur|duzenle|degistir|guncelle|kaldir|kopyala|adlandir|arsiv|cikar|"
+  r"listele|incele|analiz|ozetle|kontrol|duzelt|onar|"
+  r"calistir|kostur|baslat|durdur|yukle|indir|derle|test|yazdir|"
+  r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|script|betik|"
+  r"pyt?hon|pyrthon|pyhton|phyton|piton|node|npm|pip|git|java|gcc|cargo|go\b|"
+  r"print|echo|hello world|merhaba dunya|ekrana|"
+  r"proje|repo|uygulama|program|bot|oyun|kod|"
+  r"sistem|islem|process|ram\b|cpu\b|bellek|port\b|wifi|paket|pacman|apt\b|dnf\b|winget|brew\b|"
+  r"hazirla|tasarla|oku|ac\b|yaz|ekle|sil|tasi|ara|arastir|dogrula|teyit|emin misin|yanlis|internette|webde|google|guncel|son surum|haber|fiyat|kac tl|dolar|euro|altin|hava durumu|kimdir|ne zaman|bul|tara|kur|geri al|arac|"
+  r"file|folder|directory|path|desktop|download|document|drive|"
+  r"read|open|write|create|save|edit|modify|update|delete|remove|move|copy|rename|extract|"
+  r"202[4-9]\b|research|verify|fact.?check|latest|current|release|version|news|price|weather|who is|look up|online|internet|web\b|search|find|grep|list|inspect|analyze|summarize|check|fix|debug|undo|"
+  r"run|execute|start|stop|kill|install|build|compile|project|app|tool|system|memory|network|fetch|url|https?)"
+  r")"
  )
  _TERMINAL_CANDIDATE_RE = re.compile(
-   r"\b(?:"
-   r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|"
-   r"calistir|kostur|yazdir|print|echo|hello\s+world|merhaba\s+dunya|ekrana\s+yaz|"
-   r"pyt?hon|pyrthon|pyhton|phyton|piton|"
-   r"run\b|execute\b|compile|derle|test\s+et|testleri|paket\s+kur|pip\s+install|npm\s+run|git\s+"
-   r")"
+  r"\b(?:"
+  r"terminal|konsol|komut|kabuk|shell|bash|powershell|pwsh|cmd|"
+  r"calistir|kostur|yazdir|print|echo|hello\s+world|merhaba\s+dunya|ekrana\s+yaz|"
+  r"pyt?hon|pyrthon|pyhton|phyton|piton|"
+  r"run\b|execute\b|compile|derle|test\s+et|testleri|paket\s+kur|pip\s+install|npm\s+run|git\s+"
+  r")"
  )
  _PURE_CONCEPT_QUESTION_RE = re.compile(
-   r"^(?:nedir|ne\s+demek|farki\s+ne|nasil\s+calisir|what\s+is|what\s+are|why\s+is|explain\s+what)\b|"
-   r"\b(?:nedir|ne\s+demek|ne\s+ise\s+yarar)\s*\??$"
+  r"^(?:nedir|ne\s+demek|farki\s+ne|nasil\s+calisir|what\s+is|what\s+are|why\s+is|explain\s+what)\b|"
+  r"\b(?:nedir|ne\s+demek|ne\s+ise\s+yarar)\s*\??$"
  )
  def _should_expose_tools(user_input: str, messages: List[Dict[str, Any]]) -> bool:
-   """Only suppress tools on unmistakable greetings / small talk; keep tools available for all real tasks!"""
-   raw = (user_input or "").strip()
-   if not raw:
-     return False
-   folded = _ascii_fold(raw)
-   norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
-   norm = re.sub(r"\s+", " ", norm).strip()
-   if norm in _PURE_CHAT_EXACT:
-     return False
-   if _ACTION_CUES_ASCII_RE.search(folded):
-     return True
-   recent_msgs = messages[-4:] if len(messages) >= 4 else messages
-   for m in recent_msgs:
-     if m.get("role") == "tool" or m.get("tool_calls"):
-       return True
-     if m.get("role") == "assistant" and "?" in str(m.get("content") or ""):
-       return True
-   if re.fullmatch(r"[0-9\s+\-*/()%.,=^?]+(?:kac|eder|yapiyor|yapar|equals|what is)?[0-9\s?]*", folded):
-     return False
-   if len(norm.split()) <= 4 and _PURE_CONCEPT_QUESTION_RE.search(norm):
-     return False
-   if len(norm.split()) <= 3:
-     return False
-   return True
+  """Only suppress tools on unmistakable greetings / small talk; keep tools available for all real tasks!"""
+  raw = (user_input or "").strip()
+  if not raw:
+    return False
+  folded = _ascii_fold(raw)
+  norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
+  norm = re.sub(r"\s+", " ", norm).strip()
+  if norm in _PURE_CHAT_EXACT:
+    return False
+  if _ACTION_CUES_ASCII_RE.search(folded):
+    return True
+  recent_msgs = messages[-4:] if len(messages) >= 4 else messages
+  for m in recent_msgs:
+    if m.get("role") == "tool" or m.get("tool_calls"):
+      return True
+    if m.get("role") == "assistant" and "?" in str(m.get("content") or ""):
+      return True
+  if re.fullmatch(r"[0-9\s+\-*/()%.,=^?]+(?:kac|eder|yapiyor|yapar|equals|what is)?[0-9\s?]*", folded):
+    return False
+  if len(norm.split()) <= 4 and _PURE_CONCEPT_QUESTION_RE.search(norm):
+    return False
+  if len(norm.split()) <= 3:
+    return False
+  return True
  def _is_explain_or_execute_candidate(user_input: str) -> bool:
-   """
-   Detect requests involving terminal/command/code execution or printing in terminal
-   where the agent should ask the user: [1] Explain how to do it vs [2] Run it myself!
-   """
-   raw = (user_input or "").strip()
-   if not raw or raw.startswith("/"):
-     return False
-   folded = _ascii_fold(raw)
-   norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
-   norm = re.sub(r"\s+", " ", norm).strip()
-   if norm in _PURE_CHAT_EXACT or _PURE_CONCEPT_QUESTION_RE.search(norm):
-     return False
-   # Pure file read/summarize without terminal/execution cues should directly read the file
-   file_read_only = bool(re.search(r"\b(?:ozetle|oku\b|icerigini|read\b|summarize)\b", folded)) and not bool(
-     re.search(r"\b(?:terminal|calistir|kostur|yazdir|print|echo|bash|powershell|cmd)\b", folded)
-   )
-   if file_read_only:
-     return False
-   return bool(_TERMINAL_CANDIDATE_RE.search(folded))
+  """
+  Detect requests involving terminal/command/code execution or printing in terminal
+  where the agent should ask the user: [1] Explain how to do it vs [2] Run it myself!
+  """
+  raw = (user_input or "").strip()
+  if not raw or raw.startswith("/"):
+    return False
+  folded = _ascii_fold(raw)
+  norm = re.sub(r"[^\w\s]+", " ", folded, flags=re.UNICODE)
+  norm = re.sub(r"\s+", " ", norm).strip()
+  if norm in _PURE_CHAT_EXACT or _PURE_CONCEPT_QUESTION_RE.search(norm):
+    return False
+  # Pure file read/summarize without terminal/execution cues should directly read the file
+  file_read_only = bool(re.search(r"\b(?:ozetle|oku\b|icerigini|read\b|summarize)\b", folded)) and not bool(
+    re.search(r"\b(?:terminal|calistir|kostur|yazdir|print|echo|bash|powershell|cmd)\b", folded)
+  )
+  if file_read_only:
+    return False
+  return bool(_TERMINAL_CANDIDATE_RE.search(folded))
  def _tool_fingerprint(name: str, arguments: Any) -> str:
-   try:
-     encoded = json.dumps([name, arguments], ensure_ascii=False, sort_keys=True, separators=(',', ':'), default=str)
-   except (TypeError, ValueError):
-     encoded = repr((name, arguments))
-   return hashlib.sha256(encoded.encode('utf-8', errors='replace')).hexdigest()
+  try:
+    encoded = json.dumps([name, arguments], ensure_ascii=False, sort_keys=True, separators=(',', ':'), default=str)
+  except (TypeError, ValueError):
+    encoded = repr((name, arguments))
+  return hashlib.sha256(encoded.encode('utf-8', errors='replace')).hexdigest()
  class DocMindAgent:
-   def __init__(
-     self,
-     config_mgr: ConfigManager,
-     ui: ConsoleUI,
-     non_interactive: bool = False,
-   ) -> None:
-     self.config_mgr = config_mgr
-     self.ui = ui
-     self.non_interactive = non_interactive
-     self.perm_mgr = PermissionManager(config_mgr, ui, non_interactive=non_interactive)
-     self.undo_mgr = UndoManager()
-     self.tools = ToolRegistry(config_mgr, ui, self.perm_mgr, self.undo_mgr)
-     self.context = ConversationContext()
-     self.history = ConversationHistory(config_mgr.home_dir, self._history_error, self._history_fork)
-     self.context.on_append = self.history.append
-     self.usage = UsageTracker()
-     self.wizard = SetupWizard(config_mgr, ui, on_usage=self.record_verification_usage,
-                  on_unknown_usage=self.usage.mark_interrupted)
-     self._streamed_text = False
-     self._streamed_chunks: List[str] = []
-     self._turn_system_prompt: Optional[str] = None
-     self._turn_exec_mode: str = "auto"
-     self.refresh_client()
-   def _history_error(self, exc: Exception) -> None:
-     self.config_mgr.log_error("history.write", repr(exc))
-     self.ui.warn(t("history_write_error"))
-   def _history_fork(self) -> None:
-     self.ui.warn(t("history_forked"))
-   def record_verification_usage(self, resp: ModelResponse, provider: Optional[str] = None,
-                  model: Optional[str] = None) -> None:
-     self.context.record_usage(resp.input_tokens, resp.output_tokens, update_context=False)
-     self.usage.record(provider or self.config_mgr.config.provider, model or self.config_mgr.config.model,
-              resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
-     refresh = getattr(self.ui, "refresh_footer", None)
-     if refresh:refresh()
-   def _receive_stream_text(self, text: str) -> None:
-     self._streamed_text = self._streamed_text or bool(text)
-     self._streamed_chunks.append(text)
-     self.usage.live_chars += len(text)
-     callback = getattr(self.ui, "stream_assistant_text", None)
-     if callback:
-       callback(text)
-   def _finish_streamed_message(self, fast: bool = False) -> None:
-     if self._streamed_text:
-       callback = getattr(self.ui, "finish_streamed_message", None)
-       if callback:
-         try:
-           callback(fast=fast)
-         except TypeError:
-           callback()
-   def status_text(self, width: Optional[int] = None) -> str:
-     cfg = self.config_mgr.config
-     stats = self.usage.summary(cfg)
-     total = f"{self.context.total_tokens:,}"
-     if stats['missing_tokens']:
-       total += " (" + t("footer_incomplete") + ")"
-     if stats['live_tokens']:
-       total += " +~" + f"{stats['live_tokens']:,}"
-     limit, verified = context_limit_for(cfg)
-     estimated = self.context.current_context_estimate()
-     estimated += stats['live_tokens']
-     pct = (estimated / max(limit, 1)) * 100.0
-     limit_label = f"{limit:,}" + ("?" if not verified else "")
-     if stats['missing_cost'] and not stats['known_cost_calls']:
-       cost = t("footer_unknown")
-     else:
-       amount = stats['cost']
-       decimals = 6 if amount < .01 else (4 if amount < 1 else 2)
-       cost = "~$" + f"{amount:.{decimals}f}"
-       if stats['missing_cost']:
-         cost += " (" + t("footer_incomplete") + ")"
-       elif stats['live_tokens']:
-         cost += " (" + t("footer_calculating") + ")"
-     full = (f"{t('footer_token')}: {total}  |  {t('footer_context')}: ~{estimated:,}/{limit_label} ({pct:.1f}%)"
-         f"  |  {t('footer_cost')}: {cost}")
-     if width is None or len(full) <= width:
-       return full
-     number = self.context.total_tokens + stats['live_tokens']
-     if number >= 1_000_000_000:
-       short_num = f"{number/1_000_000_000:.1f}B"
-     elif number >= 1_000_000:
-       short_num = f"{number/1_000_000:.1f}M"
-     elif number >= 10_000:
-       short_num = f"{number/1_000:.1f}k"
-     else:
-       short_num = f"{number:,}"
-     if stats['live_tokens']:
-       short_num = "~" + short_num
-     if stats['missing_tokens']:
-       short_num += "*"
-     if stats['missing_cost'] and not stats['known_cost_calls']:
-       short_cost = t("footer_unknown")
-     else:
-       short_cost = "~$" + f"{stats['cost']:.3g}"
-       if stats['missing_cost']:
-         short_cost += " (" + t("footer_incomplete") + ")"
-       elif stats['live_tokens']:
-         short_cost += " (" + t("footer_calculating") + ")"
-     percent = f"{pct:.1f}" if pct < 1000 else ">999"
-     compact = f"T:{short_num} C:{percent}% {short_cost}"
-     if len(compact) > width:
-       percent = f"{pct:.0f}" if pct < 1000 else ">999"
-       short_cost = t("footer_unknown") if stats['missing_cost'] and not stats['known_cost_calls'] else (
-         "~$" + f"{stats['cost']:.2g}" + ("*" if stats['missing_cost'] or stats['live_tokens'] else ""))
-       compact = f"T:{short_num} C:{percent}% {short_cost}"
-     return compact
-   def refresh_client(self) -> None:
-     supports_stream = bool(getattr(self.ui, "is_tty", False) and
-                callable(getattr(self.ui, "stream_assistant_text", None)) and
-                not self.non_interactive)
-     def retry_notice(key, **values):
-       self.usage.mark_interrupted()
-       self.ui.warn(t(key, **values))
-     self.client = ProviderClient(self.config_mgr.config, self._receive_stream_text if supports_stream else None,
-                   on_effort_fallback=lambda: retry_notice("effort_fallback"))
-     self.client.on_compat_fallback = lambda: retry_notice("compat_fallback")
-     self.client.on_budget_fallback = lambda limit: retry_notice("budget_fallback", limit=limit)
-     self.client.on_probe_retry = lambda: retry_notice("probe_retry")
-     self.client.on_connection_retry = lambda attempt, delay: retry_notice(
-       "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
-     self.client.on_probe_interrupted = self.usage.mark_interrupted
-     self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
-     self.client.on_vision_fallback = lambda: self.ui.warn(t("img_vision_fallback", model=self.config_mgr.config.model))
-     self.client.on_vision_bridge = lambda bm: self.ui.info(t("vision_bridge_used", bridge_model=bm))
-   def build_system_prompt(self) -> str:
-     from docmind.i18n import i18n as _ag_i18n
-     cwd = self.tools.cwd
-     try:
-       os_prof = detect_os_profile()
-     except Exception:
-       os_prof = {
-         "os_family": "Windows" if os.name == "nt" else "Linux",
-         "pretty_name": f"{platform.system()} {platform.release()}",
-         "distro_id": platform.system().lower(),
-         "pkg_managers": [],
-         "dev_tools": [],
-         "desktop": "unknown",
-       }
-     try:
-       folders = get_special_folders()
-       folders_str = ", ".join(f"{k}={v}" for k, v in folders.items())
-     except Exception:
-       folders_str = str(Path.home())
-     try:
-       roots = list_mounted_roots()
-       drives_str = ", ".join(
-         f"{r['root']} ({r.get('free_gb', '?')}GB free/{r.get('total_gb', '?')}GB)"
-         if "total_gb" in r else str(r["root"])
-         for r in roots
-       ) or "/"
-     except Exception:
-       drives_str = "/"
-     try:
-       shells = detect_available_shells()
-       shells_str = ", ".join(f"{k}={v}" for k, v in shells.items()) or "default"
-     except Exception:
-       shells_str = "default"
-     now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
-     lang_code = _ag_i18n.lang
-     lang_name = t("lang_name")
-     lang_rule = t("ai_lang_instruction")
-     pretty_os = os_prof.get("pretty_name", platform.system())
-     os_family = os_prof.get("os_family", platform.system())
-     pkg_str = ", ".join(os_prof.get("pkg_managers") or []) or "none detected"
-     dev_str = ", ".join(os_prof.get("dev_tools") or []) or "python"
-     mode_desc = (
-       "Full Auto for file operations (terminal/Python commands STILL ask explicit user permission first)"
-       if self.config_mgr.config.permission_mode == "auto"
-       else "Smart Confirm (read/search/navigation tools are automatic; file-write and terminal tools ask user approval)"
-     )
-     os_q_examples = {
-       "tr": (
-         f'Örnek: "İşletim sisteminiz {pretty_os} ({os_family}) olarak algılandı; buna uyumlu yapacağım. Başka bir sistem ister misiniz yoksa evrensel (Windows + Linux) mi olsun?" '
-         f'Seçenekler: ["{pretty_os} uyumlu yap", "Çapraz platform / Evrensel (Windows + Linux)", "Windows uyumlu yap", "Farklı sistem"]'
-       ),
-       "en": (
-         f'Example: "Detected operating system: {pretty_os} ({os_family}). Would you like me to build this specifically for {pretty_os}, make it cross-platform (Windows + Linux), or target another OS?" '
-         f'Options: ["Target {pretty_os} ({os_family})", "Cross-platform (Windows + Linux)", "Target Windows", "Other OS"]'
-       ),
-       "de": (
-         f'Beispiel: "Erkanntes Betriebssystem: {pretty_os} ({os_family}). Soll der Code für {pretty_os}, plattformübergreifend (Windows + Linux) oder für ein anderes System erstellt werden?" '
-         f'Optionen: ["Für {pretty_os} ({os_family})", "Plattformübergreifend (Windows + Linux)", "Für Windows", "Anderes System"]'
-       ),
-       "es": (
-         f'Ejemplo: "Sistema operativo detectado: {pretty_os} ({os_family}). ¿Desea que sea compatible con {pretty_os}, multiplataforma (Windows + Linux) u otro sistema?" '
-         f'Opciones: ["Para {pretty_os} ({os_family})", "Multiplataforma (Windows + Linux)", "Para Windows", "Otro sistema"]'
-       ),
-       "fr": (
-         f'Exemple : "Système détecté : {pretty_os} ({os_family}). Voulez-vous cibler {pretty_os}, le rendre multiplateforme (Windows + Linux) ou cibler un autre OS ?" '
-         f'Options : ["Cibler {pretty_os} ({os_family})", "Multiplateforme (Windows + Linux)", "Cibler Windows", "Autre système"]'
-       ),
-       "ru": (
-         f'Пример: "Обнаружена ОС: {pretty_os} ({os_family}). Сделать совместимо с {pretty_os}, кроссплатформенно (Windows + Linux) или для другой ОС?" '
-         f'Варианты: ["Для {pretty_os} ({os_family})", "Кроссплатформенно (Windows + Linux)", "Для Windows", "Другая ОС"]'
-       ),
-     }
-     os_q_guide = os_q_examples.get(lang_code, os_q_examples["en"])
-     token_save_hint = (
-       "- Token Saving: ON -> answer completely and correctly, but do not repeat listings, duplicate file dumps or already-known context; re-read a file only when the trimmed part is really needed.\n\n"
-       if token_save_effective(self.config_mgr.config) else ""
-     )
-     non_tr_ban = (
-       f"CRITICAL: Active interface language is **{lang_name} ({lang_code.upper()})**. Do NOT output any Turkish words, headers, or option labels! Every assistant message and every `ask_user` question/option MUST be 100% in **{lang_name}**."
-       if lang_code != "tr"
-       else "KRİTİK: Aktif arayüz dili **Türkçe (TR)**. Tüm mesajlarını ve `ask_user` soru/seçeneklerini doğal ve akıcı **Türkçe** olarak yaz."
-     )
-     return (
-       "You are DocMind, an intelligent, self-correcting, OS-aware AI assistant and software engineering agent.\n\n"
-       f"## STRICT LANGUAGE LOCK ({lang_code.upper()} — {lang_name})\n"
-       f"{lang_rule}\n{non_tr_ban}\n\n"
-       "## RULE #0 — SMART TOOL & TERMINAL DECISION RULES (CRITICAL!)\n"
-       "- **GREETINGS & SMALL TALK -> ZERO TOOLS**: For greetings ('merhaba', 'hello', 'nasılsın'), casual chat, "
-       "or translations, call **ZERO TOOLS** and answer directly.\n"
-       "- **INTERNET RESEARCH & SELF-FACT-CHECKING (`web_search`)**: Whenever the user asks you to research or verify something, "
-       "corrects a mistake ('yanlış biliyorsun', 'emin misin', 'doğrula', 'araştır'), asks about current facts/versions/releases/prices/news/events, "
-       "or whenever you are NOT 100% certain of a fact or library API, **DO NOT GUESS OR HALLUCINATE**! Immediately call `web_search` "
-       "(and `web_fetch` if needed) to research on the live internet, cross-verify across multiple sources, correct any misconception, and cite source URLs!\n"
-       "- **NEVER BROWSE CWD FILES UNPROMPTED**: Do NOT open or list random files (`read_file`, `list_directory`, `project_overview`) unless the "
-       "user actually asks about files, folders, documents, or a project. Prefer native file tools over terminal commands for reading/searching files.\n"
-       "- **TERMINAL / CODE REQUESTS -> 2-OPTION CHOICE (EXPLAIN vs. EXECUTE)**:\n"
-       "  • When `ACTIVE USER SELECTION` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
-       "  • If `ACTIVE USER SELECTION` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
-       f"FIRST call `ask_user` in **{lang_name}** with 2 choices: [1] Explain how to do it vs [2] Run it directly in the terminal, then strictly follow their choice!\n\n"
-       "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
-       f"- Date/Time: {now_str}\n"
-       f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
-       f"- Desktop / Display Session: {os_prof.get('desktop', 'unknown')}\n"
-       f"- Installed Package Managers: {pkg_str}\n"
-       f"- Installed Dev Tools: {dev_str}\n"
-       f"- Python Runtime: {sys.version.split()[0]} ({sys.executable})\n"
-       f"- Active Working Directory (CWD): {cwd}\n"
-       f"- Mounted Drives / Roots: {drives_str}\n"
-       f"- User Special Folders: {folders_str}\n"
-       f"- Available Shells for run_command: {shells_str}\n"
-       f"- Permission Mode: {mode_desc}\n"
-       f"{token_save_hint}"
-       "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
-       "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
-       f"   - Detected system: **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
-       "Always tailor system commands to this exact OS/distro (`pacman` on Arch Linux, `apt` on Debian/Ubuntu, `dnf` on Fedora, PowerShell/`winget` on Windows).\n"
-       f"   - When the user asks you to build/save a platform-dependent script, program, or tool — unless they already specified the target OS — FIRST call `ask_user` in **{lang_name}** to confirm target platform! ({os_q_guide})\n\n"
-       "2. **Self-Reflection, Error Triage & Rollback Loop**:\n"
-       "   - **When `run_command` or `python_eval` FAILS**:\n"
-       "     • **Case A — Requires User Password / `sudo` / `root` / Administrator (`USER_MUST_RUN_MANUALLY`)**: "
-       f"DO NOT retry privileged/password commands! Explain clearly in **{lang_name}** why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
-       "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
-       "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
-       "3. **Full Computer Access When Requested & Security**:\n"
-       "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their computer (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
-       "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
-     )
-   def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
-     """Wait without closing the terminal; Ctrl+C cancels only this task."""
-     wait = max(1, math.ceil(seconds))
-     self.ui.warn(t("retry_wait", seconds=wait, attempt=attempt))
-     try:
-       with self.ui.spinner(t("retry_wait", seconds=wait, attempt=attempt)):
-         deadline = time.monotonic() + wait
-         while time.monotonic() < deadline:
-           time.sleep(min(.2, max(0, deadline - time.monotonic())))
-       return True
-     except KeyboardInterrupt:
-       print()
-       self.ui.warn(t("ctrl_c_cancelled"))
-       return False
-   def _interactive_recovery(self, alert: DocMindAlert) -> str:
-     """
-         Show recovery options when API quota/tokens run out, key is invalid, model is missing,
-         or network fails. Returns action: 'retry' | 'skip'.
-         """
-     if self.non_interactive:
-       self.ui.info(t("err_skipped_notice"))
-       return "skip"
-     default_opt = "5" if alert.retry_exhausted else ("1" if alert.suggest_key_change else ("3" if alert.suggest_model_change else "4"))
-     menu_lines = [
-       f"  [1] 🔑 {t('rec_opt_new_key')}",
-       f"  [2] 🔄 {t('rec_opt_switch_provider')}",
-       f"  [3] 🧠 {t('rec_opt_switch_model')}",
-       f"  [4] 🔁 {t('rec_opt_retry')}",
-       f"  [5] ⏭️  {t('rec_opt_skip')}",
-     ]
-     self.ui.print_panel(f"🛠️ {t('rec_title')}", "\n".join(menu_lines), style="bright_yellow")
-     try:
-       choice = self.ui.ask(t("rec_choose", default=default_opt)).strip() or default_opt
-     except (KeyboardInterrupt, EOFError):
-       print()
-       return "skip"
-     if choice == "1":
-       spec = get_provider_spec(self.config_mgr.config.provider)
-       self.ui.info(t("wiz_secret_notice"))
-       new_key = self.ui.ask_secret(t("wiz_enter_api_key", provider=spec.name)).strip()
-       if new_key:
-         self.config_mgr.config.set_api_key(new_key, spec.id)
-         self.config_mgr.save()
-         self.refresh_client()
-         return "retry"
-       return "skip"
-     if choice == "2":
-       self.wizard.select_provider()
-       self.wizard.prompt_api_key_and_verify()
-       self.refresh_client()
-       return "retry"
-     if choice == "3":
-       self.wizard.select_model()
-       self.refresh_client()
-       return "retry"
-     if choice == "4":
-       return "retry"
-     self.ui.info(t("err_skipped_notice"))
-     return "skip"
-   def _generate_resilient(self) -> Optional[ModelResponse]:
-     """
-         Execute an LLM API call wrapped in full error classification, auto-compaction,
-         rate-limit backoff, token exhaustion alerting, and interactive hot-swap recovery.
-         """
-     auto_retries = 0
-     incomplete_streams = 0
-     compaction_attempted = False
-     invalid_tool_retried = False
-     while True:
-       spec = get_provider_spec(self.config_mgr.config.provider)
-       context_limit, _ = context_limit_for(self.config_mgr.config)
-       token_save = token_save_effective(self.config_mgr.config)
-       if token_save:
-         self.context.save_tokens(t("token_save_trim_note"))
-       if self.context.needs_compaction(context_limit, token_save=token_save):
-         self.ui.info(t("compacting_context"))
-         if self.context.compact():
-           self.ui.success(t("context_compacted"))
-       sys_prompt = self._turn_system_prompt or self.build_system_prompt()
-       if invalid_tool_retried and spec.protocol != "anthropic":
-         sys_prompt += ("\n\nThe previous response contained malformed tool arguments and was not executed. "
-                "Return a complete JSON object matching the tool schema, or answer without a tool.")
-       last_user_msg = ""
-       last_user_has_img = False
-       for _m in reversed(self.context.messages):
-         if _m.get("role") == "user":
-           last_user_msg = str(_m.get("content") or "")
-           last_user_has_img = bool(_m.get("images"))
-           break
-       if self._turn_exec_mode == "explain":
-         tool_schemas = []
-       elif self._turn_exec_mode == "execute":
-         tool_schemas = self.tools.get_schemas()
-       else:
-         has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
-         expose_tools = has_tool_turn_already or last_user_has_img or _should_expose_tools(last_user_msg, self.context.messages[:-1])
-         tool_schemas = self.tools.get_schemas() if expose_tools else []
-       try:
-         self._streamed_text = False
-         self._streamed_chunks = []
-         with self.ui.spinner(t("thinking")):
-           resp = self.client.generate(
-             system_prompt=sys_prompt,
-             messages=self.context.messages,
-             tools=tool_schemas,
-           )
-         if auto_retries:
-           self._finish_streamed_message(fast=bool(resp.tool_calls))
-           self.ui.success(t("retry_ok"))
-         return resp
-       except KeyboardInterrupt:
-         self.usage.mark_interrupted()
-         self.history.record_partial("".join(self._streamed_chunks))
-         self._finish_streamed_message(fast=True)
-         print()
-         self.ui.warn(t("ctrl_c_cancelled"))
-         return None
-       except Exception as exc:
-         partial = bool(getattr(exc, "partial_stream", False))
-         self.usage.mark_interrupted()
-         self.history.record_partial("".join(self._streamed_chunks))
-         self._finish_streamed_message(fast=True)
-         self.config_mgr.log_error("agent.generate", repr(exc))
-         alert = classify_exception(exc, provider_name=spec.name, model_name=self.config_mgr.config.model)
-         groq_tool_failure = False
-         if (self.config_mgr.config.provider == "groq" and
-             getattr(exc, "status_code", None) in (400, 422)):
-           try:
-             body = json.loads(getattr(exc, "response_body", "") or "{}")
-             item = body.get("error", {}) if isinstance(body, dict) else {}
-             groq_tool_failure = isinstance(item, dict) and (
-               item.get("code") == "tool_use_failed" or
-               "failed_generation" in item or
-               str(item.get("message", "")).lower() == "invalid tool call generated")
-           except (ValueError, TypeError):
-             pass
-         if ((getattr(exc, "invalid_tool_arguments", False) or groq_tool_failure) and not partial and
-             not self._streamed_text and not invalid_tool_retried):
-           invalid_tool_retried = True
-           self.ui.warn(t("tool_args_retry"))
-           continue
-         if alert.category == ErrorCategory.CONTEXT_OVERFLOW and not compaction_attempted and not partial:
-           self.ui.print_alert(alert)
-           compaction_attempted = True
-           self.ui.info(t("compacting_context"))
-           if self.context.compact(keep_recent_groups=2):
-             self.ui.success(t("context_compacted"))
-             continue
-         err_low = str(exc).lower()
-         protocol_failure = any(marker in err_low for marker in (
-           "invalid utf-8", "stream exceeded", "response exceeded"))
-         stream_drop = any(marker in err_low for marker in (
-           "final completion marker", "incomplete streamed tool", "incompletechunkedread",
-           "connection reset", "unexpected eof", "broken pipe", "protocol_error"))
-         if (alert.auto_retryable or stream_drop) and not protocol_failure:
-           delay = retry_delay(auto_retries + 1, alert.retry_after)
-           if auto_retries < 6 and delay is not None:
-             auto_retries += 1
-             KEEPALIVE_POOL.drop_origin(self.config_mgr.config.get_base_url())
-             if stream_drop:
-               incomplete_streams += 1
-               delay = min(delay, 1.0)
-               self.ui.info(t("conn_auto_heal", attempt=auto_retries, max_attempts=6))
-               if incomplete_streams >= 1 and self.client.on_text is not None:
-                 self.client.on_text = None
-             refresh = getattr(self.ui, "refresh_footer", None)
-             if refresh:refresh()
-             if partial:
-               self.ui.warn(t("retry_partial"))
-             if self._sleep_interruptible(delay, auto_retries):
-               continue
-             return None
-           alert.retry_exhausted = True
-           if delay is None and alert.retry_after is not None:
-             self.ui.warn(t("retry_deferred", seconds=int(alert.retry_after + 0.999)))
-           else:
-             self.ui.warn(t("retry_exhausted", count=auto_retries))
-         self.ui.print_alert(alert)
-         decision = self._interactive_recovery(alert)
-         if decision == "retry":
-           auto_retries = 0
-           continue
-         return None
-   def _check_token_budget_warning(self) -> None:
-     limit = self.config_mgr.config.token_warning_limit
-     if limit > 0 and self.context.total_tokens >= limit and not self.context.budget_warned:
-       self.context.budget_warned = True
-       warn_alert = DocMindAlert(
-         category=ErrorCategory.RATE_LIMITED,
-         title=t("err_budget_warn_title"),
-         description=t(
-           "err_budget_warn_desc",
-           used=f"{self.context.total_tokens:,}",
-           limit=f"{limit:,}",
-         ),
-         raw_detail="User token threshold reached",
-       )
-       self.ui.print_alert(warn_alert)
-   def _prompt_explain_or_execute(self) -> str:
-     """
-     Ask the user with 2 clear options:
-       [1] Explain how to do it
-       [2] Execute it directly using the terminal
-     Returns 'explain', 'execute', or 'cancel'.
-     """
-     from docmind.i18n import i18n
-     if self.config_mgr.config.language and i18n.lang != self.config_mgr.config.language:
-       i18n.set_lang(self.config_mgr.config.language)
-     lang = i18n.lang
-     table = {
-       "tr": (
-         "⚡ Nasıl Yapalım?",
-         "Anlatayım mı? (Nasıl yapılacağını adım adım açıkla)",
-         "Ben mi çalıştırayım? (Terminal kullanarak kendim çalıştırayım)",
-         "Seçiminiz [1=Anlat / 2=Ben Çalıştırayım]: ",
-       ),
-       "en": (
-         "⚡ How Would You Like to Proceed?",
-         "Explain it? (Show step-by-step how to do it)",
-         "Run it myself? (Execute directly using the terminal)",
-         "Your choice [1=Explain / 2=Run in Terminal]: ",
-       ),
-       "de": (
-         "⚡ Wie möchten Sie fortfahren?",
-         "Erklären? (Schritt für Schritt zeigen)",
-         "Selbst ausführen? (Direkt im Terminal ausführen)",
-         "Ihre Wahl [1=Erklären / 2=Ausführen]: ",
-       ),
-       "es": (
-         "⚡ ¿Cómo desea continuar?",
-         "¿Explicarlo? (Mostrar paso a paso cómo hacerlo)",
-         "¿Ejecutarlo yo mismo? (Ejecutar usando la terminal)",
-         "Su elección [1=Explicar / 2=Ejecutar]: ",
-       ),
-       "fr": (
-         "⚡ Comment souhaitez-vous procéder ?",
-         "Expliquer ? (Montrer étape par étape)",
-         "Exécuter moi-même ? (Lancer dans le terminal)",
-         "Votre choix [1=Expliquer / 2=Exécuter] : ",
-       ),
-       "ru": (
-         "⚡ Как поступим?",
-         "Объяснить? (Показать пошагово, как сделать)",
-         "Выполнить самому? (Запустить через терминал)",
-         "Ваш выбор [1=Объяснить / 2=Запустить]: ",
-       ),
-       "az": ("⚡ Necə edək?", "İzah edim? (Addım-addım göstər)", "Özüm işlədim? (Terminalda birbaşa icra et)", "Seçiminiz [1=İzah et / 2=İcra et]: "),
-       "it": ("⚡ Come procedere?", "Spiegarlo? (Mostra passo passo)", "Eseguirlo nel terminale? (Esegui direttamente)", "Scelta [1=Spiega / 2=Esegui]: "),
-       "pt": ("⚡ Como deseja prosseguir?", "Explicar? (Mostrar passo a passo)", "Executar no terminal? (Executar diretamente)", "Escolha [1=Explicar / 2=Executar]: "),
-       "nl": ("⚡ Hoe wilt u doorgaan?", "Uitleggen? (Stap voor stap tonen)", "Zelf uitvoeren? (Direct in terminal)", "Uw keuze [1=Uitleg / 2=Uitvoeren]: "),
-       "ar": ("⚡ كيف تود المتابعة؟", "شرح الطريقة؟ (خطوة بخطوة)", "تنفيذ مباشر؟ (تشغيل عبر الطرفية)", "اختيارك [1=شرح / 2=تنفيذ]: "),
-       "zh": ("⚡ 您希望如何进行？", "仅讲解步骤？（逐步演示做法）", "直接执行？（由智能体在终端运行）", "您的选择 [1=讲解 / 2=执行]: "),
-       "ja": ("⚡ 実行方法を選択してください", "やり方を説明する（手順を表示）", "ターミナルで直接実行する", "選択 [1=説明 / 2=実行]: "),
-       "ko": ("⚡ 어떻게 진행할까요?", "방법 설명하기 (단계별 안내)", "터미널에서 직접 실행하기", "선택 [1=설명 / 2=실행]: "),
-     }
-     hdr, opt1, opt2, ask_lbl = table.get(lang, table["en"])
-     bar = "─" * 62
-     print()
-     print(self.ui._paint(f"╭─── {hdr} " + bar[: max(4, 56 - len(hdr))] + "╮", "1;36"))
-     print(self.ui._paint("│  ", "36") + self.ui._paint("[1] ", "1;33") + opt1)
-     print(self.ui._paint("│  ", "36") + self.ui._paint("[2] ", "1;32") + opt2)
-     print(self.ui._paint("╰" + bar + "╯", "36"), flush=True)
-     explain_words = {"1", "anlat", "anlatayim", "acikla", "explain", "erklaren", "explicar", "expliquer", "объяснить"}
-     exec_words = {"2", "calistir", "ben", "sen", "sen calistir", "ben calistirayim", "terminal", "uygula", "run", "execute", "ausfuhren", "ejecutar", "executer", "запустить"}
-     while True:
-       try:
-         ans = _ascii_fold(self.ui.ask(ask_lbl)).strip().rstrip(".")
-       except (KeyboardInterrupt, EOFError):
-         print()
-         return "cancel"
-       if ans in explain_words:
-         return "explain"
-       if ans in exec_words:
-         return "execute"
-       if not self.ui.is_tty:
-         return "execute"
-   def run_turn(self, user_input: str, explicit_images: Optional[List[Dict[str, Any]]] = None) -> bool:
-     """
-         Process a user prompt through multi-step autonomous tool execution until completion.
-         Returns True if completed normally, False if aborted/skipped cleanly.
-         """
-     _dm_owner_gate()
-     _dm_signature_gate()
-     checkpoint_len = len(self.context.messages)
-     turn_t0 = time.monotonic()
-     turn_in_tok = 0
-     turn_out_tok = 0
-     turn_images: List[Dict[str, Any]] = list(explicit_images or [])
-     _, auto_imgs = extract_prompt_images(user_input, self.tools.cwd)
-     at_files, at_imgs, at_dirs = extract_at_mentions(user_input, self.tools.cwd)
-     seen_img_paths = {im["path"] for im in turn_images}
-     for im in (auto_imgs + at_imgs):
-       if im["path"] not in seen_img_paths:
-         turn_images.append(im)
-         seen_img_paths.add(im["path"])
-     for im in turn_images:
-       self.ui.info(t("img_attached", name=im["name"], dims=f"{im['width']}x{im['height']}", size=im["size_human"]))
-     extra_ctx_blocks: List[str] = []
-     for fname, fsz, fblock in at_files:
-       self.ui.info(t("mention_attached", name=fname, size=fsz))
-       extra_ctx_blocks.append(fblock)
-     for dname, dtree in at_dirs:
-       self.ui.info(t("mention_dir_attached", name=dname))
-       extra_ctx_blocks.append(f"### Attached Directory Tree `{dname}`\n```\n{dtree}\n```")
-     effective_user_input = (
-       user_input + "\n\n" + "\n\n".join(extra_ctx_blocks)
-       if extra_ctx_blocks
-       else user_input
-     )
-     self._turn_exec_mode = "auto"
-     mode_directive = ""
-     if not self.non_interactive and not turn_images and _is_explain_or_execute_candidate(user_input):
-       picked = self._prompt_explain_or_execute()
-       if picked == "cancel":
-         self.ui.warn(t("ctrl_c_cancelled"))
-         return False
-       self._turn_exec_mode = picked
-       if picked == "explain":
-         mode_directive = (
-           "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXPLAIN_ONLY]\n"
-           "The user explicitly chose option [1] ('Explain how to do it'). "
-           "DO NOT call `run_command` or `python_eval` or any tool. Explain clearly and concisely how to perform their request with ready-to-copy command/code examples."
-         )
-       elif picked == "execute":
-         mode_directive = (
-           "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXECUTE_IN_TERMINAL]\n"
-           "The user explicitly chose option [2] ('Run it yourself using the terminal')! "
-           "DO NOT merely explain how to do it in text! You MUST immediately call `run_command` (for terminal/shell/python CLI commands, e.g. `python3 -c \"print('Hello, World!')\"` on Linux/macOS or `python -c \"print('Hello, World!')\"` on Windows) "
-           "or `python_eval` to execute the task right now, then briefly present the output!"
-         )
-     vision_directive = (
-       "\n\n## ACTIVE HIGH-PRECISION VISION & OCR ANALYSIS PROTOCOL\n"
-       "One or more images/screenshots are attached to this turn! Follow these rules strictly:\n"
-       "1. Read EVERY visible text line, error message, traceback, file path, line number, button/menu label, chart value, and code snippet with character-level precision (cross-checking both the high-res image pixels and any `[Local OCR Text]` / `[High-Resolution Vision Analysis]` block).\n"
-       "2. Describe clearly what is shown in the image first so the user sees you understood it accurately.\n"
-       "3. If the image shows an error, bug, or broken UI/config, pinpoint the exact root cause and either fix the file in the workspace (if relevant) or give the exact step-by-step solution!\n"
-       "4. Never guess unreadable blurry characters — state clearly if a specific region is cut off or illegible."
-       if turn_images else ""
-     )
-     self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
-     begin_turn = getattr(self.ui, "begin_turn", None)
-     if begin_turn:
-       begin_turn()
-     max_steps = max(5, self.config_mgr.config.max_steps_per_turn)
-     step = 0
-     execute_nudged = False
-     denied_calls = set()
-     manual_auth_calls = set()
-     last_failed_key = None
-     consecutive_failures = 0
-     suppressed_in_a_row = 0
-     try:
-       self.context.add_user(effective_user_input, images=turn_images if turn_images else None)
-       while True:
-         step += 1
-         if step > max_steps:
-           self.ui.warn(t("max_steps_reached", max_steps=max_steps))
-           if self.non_interactive:
-             return False
-           ans = self.ui.ask(t("ask_continue_steps")).strip().lower()
-           if ans in ("", "e", "evet", "y", "yes", "b", "bəli", "beli", "j", "ja", "s", "si", "sí", "sì", "sim", "o", "oui", "д", "да", "نعم", "是", "好", "はい", "예", "네"):
-             max_steps += self.config_mgr.config.max_steps_per_turn
-           else:
-             return False
-         resp = self._generate_resilient()
-         if resp is None:
-           if len(self.context.messages) == checkpoint_len + 1:
-             self.context.messages.pop()
-             self.history.mark_last_user_cancelled()
-           return False
-         turn_in_tok += int(resp.input_tokens or 0)
-         turn_out_tok += int(resp.output_tokens or 0)
-         self.context.record_usage(resp.input_tokens, resp.output_tokens)
-         self.usage.record(self.config_mgr.config.provider, self.config_mgr.config.model,
-                  resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
-         refresh = getattr(self.ui, "refresh_footer", None)
-         if refresh:refresh()
-         serialized_tcs: List[Dict[str, Any]] = [
-           {
-             "id": tc.id,
-             "name": tc.name,
-             "arguments": tc.arguments,
-             "metadata": tc.metadata,
-           }
-           for tc in resp.tool_calls
-         ]
-         self.context.add_assistant(
-           content=resp.text,
-           tool_calls=serialized_tcs if serialized_tcs else None,
-           thought=resp.thought,
-           provider_data=resp.provider_data,
-         )
-         if self._streamed_text:
-           self._finish_streamed_message(fast=bool(resp.tool_calls))
-         elif resp.text:
-           self.ui.print_assistant_message(resp.text)
-         self._check_token_budget_warning()
-         if resp.stop_reason == "max_tokens":
-           self.ui.warn(t("output_truncated_warn"))
-         if not resp.tool_calls:
-           if self._turn_exec_mode == "execute" and step == 1 and not execute_nudged and resp.stop_reason != "max_tokens":
-             execute_nudged = True
-             self.context.add_user(
-               "[SYSTEM REMINDER]: The user selected option [2] ('Run it yourself in the terminal'). "
-               "Do not stop at text explanation — call `run_command` or `python_eval` right now to execute it!"
-             )
-             continue
-           elapsed_s = time.monotonic() - turn_t0
-           if (step > 1 or elapsed_s >= 2.0) and (turn_in_tok or turn_out_tok):
-             print(self.ui._paint(f"  ⏱ {elapsed_s:.1f}s • ↑{turn_in_tok:,} ↓{turn_out_tok:,} tok", "2;90"))
-           return resp.stop_reason != "max_tokens"
-         halt_remaining = False
-         batch_failed = False
-         for tc in resp.tool_calls:
-           key = _tool_fingerprint(tc.name, tc.arguments)
-           same_denial = key in denied_calls
-           needs_manual_user = key in manual_auth_calls
-           repeated_failure = key == last_failed_key and consecutive_failures >= 2
-           dependent_action = batch_failed and tc.name not in READ_ONLY_TOOLS
-           blocked = halt_remaining or same_denial or needs_manual_user or repeated_failure or dependent_action
-           if blocked:
-             if halt_remaining:
-               explanation = "Not executed: the agent stopped after a repeated-action loop."
-             elif same_denial:
-               explanation = "Not executed: the user already declined this exact action in this turn. Respect the refusal; ask before a new direction."
-             elif needs_manual_user:
-               explanation = "Not executed: this exact command failed because it requires interactive password/sudo/Administrator privileges. Do not retry it; explain to the user how to run it in their own terminal."
-             elif repeated_failure:
-               explanation = "Not executed: the same read-only or invalid call failed twice consecutively. Diagnose the error or use different arguments."
-             else:
-               explanation = "Not executed: an earlier action in this batch failed or was declined. Reassess the result before another write or command."
-             self.ui.print_tool_start(tc.name, tc.arguments if isinstance(tc.arguments, dict) else {})
-             self.ui.print_tool_result(tc.name, False, t("batch_deferred" if dependent_action and not (halt_remaining or same_denial or repeated_failure) else "loop_suppressed", name=tc.name))
-             exec_res = ToolExecutionResult(ok=False, output=explanation)
-             if not halt_remaining and (same_denial or repeated_failure):
-               suppressed_in_a_row += 1
-               if suppressed_in_a_row >= 3:
-                 halt_remaining = True
-           else:
-             exec_res = self.tools.execute(tc.name, tc.arguments)
-             suppressed_in_a_row = 0
-             if exec_res.skipped:
-               denied_calls.add(key)
-             elif not exec_res.ok and "USER_MUST_RUN_MANUALLY" in exec_res.output:
-               manual_auth_calls.add(key)
-               last_failed_key, consecutive_failures = None, 0
-             elif not exec_res.ok and (tc.name in READ_ONLY_TOOLS or getattr(exec_res, "invalid_args", False)):
-               if key == last_failed_key:
-                 consecutive_failures += 1
-               else:
-                 last_failed_key, consecutive_failures = key, 1
-             else:
-               last_failed_key, consecutive_failures = None, 0
-           if not exec_res.ok:
-             batch_failed = True
-           self.context.add_tool_result(
-             tool_call_id=tc.id,
-             name=tc.name,
-             content=exec_res.output,
-             is_error=not exec_res.ok,
-             images=getattr(exec_res, "images", None),
-           )
-         if halt_remaining:
-           self.ui.warn(t("loop_stopped"))
-           return False
-     except KeyboardInterrupt:
-       print()
-       self.ui.warn(t("ctrl_c_cancelled"))
-       if len(self.context.messages) == checkpoint_len + 1 and self.context.messages[-1].get("role") == "user":
-         self.context.messages.pop()
-         self.history.mark_last_user_cancelled()
-       self._heal_dangling_tool_calls()
-       return False
-     except Exception as exc:
-       self.config_mgr.log_error("agent.run_turn", repr(exc))
-       alert = classify_exception(exc)
-       self.ui.print_alert(alert)
-       self._heal_dangling_tool_calls()
-       self.ui.info(t("err_skipped_notice"))
-       return False
-     finally:
-       self._turn_system_prompt = None
-       self._turn_exec_mode = "auto"
-     return True
-   def _heal_dangling_tool_calls(self) -> None:
-     """
-         If Ctrl+C interrupted mid-tool-execution, ensure every assistant tool_call
-         has a matching tool_result message so subsequent turns never 400 on Anthropic/OpenAI!
-         """
-     if not self.context.messages:
-       return
-     for idx in range(len(self.context.messages) - 1, -1, -1):
-       msg = self.context.messages[idx]
-       if msg["role"] == "user":
-         break
-       if msg["role"] == "assistant" and msg.get("tool_calls"):
-         answered_ids = {
-           m.get("tool_call_id")
-           for m in self.context.messages[idx + 1 :]
-           if m.get("role") == "tool"
-         }
-         for tc in msg["tool_calls"]:
-           if tc["id"] not in answered_ids:
-             self.context.add_tool_result(
-               tool_call_id=tc["id"],
-               name=tc["name"],
-               content="Operation cancelled by user (Ctrl+C).",
-               is_error=True,
-             )
-         break
+  def __init__(
+    self,
+    config_mgr: ConfigManager,
+    ui: ConsoleUI,
+    non_interactive: bool = False,
+  ) -> None:
+    self.config_mgr = config_mgr
+    self.ui = ui
+    self.non_interactive = non_interactive
+    self.perm_mgr = PermissionManager(config_mgr, ui, non_interactive=non_interactive)
+    self.undo_mgr = UndoManager()
+    self.tools = ToolRegistry(config_mgr, ui, self.perm_mgr, self.undo_mgr)
+    self.context = ConversationContext()
+    self.history = ConversationHistory(config_mgr.home_dir, self._history_error, self._history_fork)
+    self.context.on_append = self.history.append
+    self.usage = UsageTracker()
+    self.wizard = SetupWizard(config_mgr, ui, on_usage=self.record_verification_usage,
+                 on_unknown_usage=self.usage.mark_interrupted)
+    self._streamed_text = False
+    self._streamed_chunks: List[str] = []
+    self._turn_system_prompt: Optional[str] = None
+    self._turn_exec_mode: str = "auto"
+    self.refresh_client()
+  def _history_error(self, exc: Exception) -> None:
+    self.config_mgr.log_error("history.write", repr(exc))
+    self.ui.warn(t("history_write_error"))
+  def _history_fork(self) -> None:
+    self.ui.warn(t("history_forked"))
+  def record_verification_usage(self, resp: ModelResponse, provider: Optional[str] = None,
+                 model: Optional[str] = None) -> None:
+    self.context.record_usage(resp.input_tokens, resp.output_tokens, update_context=False)
+    self.usage.record(provider or self.config_mgr.config.provider, model or self.config_mgr.config.model,
+             resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
+    refresh = getattr(self.ui, "refresh_footer", None)
+    if refresh:refresh()
+  def _receive_stream_text(self, text: str) -> None:
+    self._streamed_text = self._streamed_text or bool(text)
+    self._streamed_chunks.append(text)
+    self.usage.live_chars += len(text)
+    callback = getattr(self.ui, "stream_assistant_text", None)
+    if callback:
+      callback(text)
+  def _finish_streamed_message(self, fast: bool = False) -> None:
+    if self._streamed_text:
+      callback = getattr(self.ui, "finish_streamed_message", None)
+      if callback:
+        try:
+          callback(fast=fast)
+        except TypeError:
+          callback()
+  def status_text(self, width: Optional[int] = None) -> str:
+    cfg = self.config_mgr.config
+    stats = self.usage.summary(cfg)
+    total = f"{self.context.total_tokens:,}"
+    if stats['missing_tokens']:
+      total += " (" + t("footer_incomplete") + ")"
+    if stats['live_tokens']:
+      total += " +~" + f"{stats['live_tokens']:,}"
+    limit, verified = context_limit_for(cfg)
+    estimated = self.context.current_context_estimate()
+    estimated += stats['live_tokens']
+    pct = (estimated / max(limit, 1)) * 100.0
+    limit_label = f"{limit:,}" + ("?" if not verified else "")
+    if stats['missing_cost'] and not stats['known_cost_calls']:
+      cost = t("footer_unknown")
+    else:
+      amount = stats['cost']
+      decimals = 6 if amount < .01 else (4 if amount < 1 else 2)
+      cost = "~$" + f"{amount:.{decimals}f}"
+      if stats['missing_cost']:
+        cost += " (" + t("footer_incomplete") + ")"
+      elif stats['live_tokens']:
+        cost += " (" + t("footer_calculating") + ")"
+    full = (f"{t('footer_token')}: {total}  |  {t('footer_context')}: ~{estimated:,}/{limit_label} ({pct:.1f}%)"
+        f"  |  {t('footer_cost')}: {cost}")
+    if width is None or len(full) <= width:
+      return full
+    number = self.context.total_tokens + stats['live_tokens']
+    if number >= 1_000_000_000:
+      short_num = f"{number/1_000_000_000:.1f}B"
+    elif number >= 1_000_000:
+      short_num = f"{number/1_000_000:.1f}M"
+    elif number >= 10_000:
+      short_num = f"{number/1_000:.1f}k"
+    else:
+      short_num = f"{number:,}"
+    if stats['live_tokens']:
+      short_num = "~" + short_num
+    if stats['missing_tokens']:
+      short_num += "*"
+    if stats['missing_cost'] and not stats['known_cost_calls']:
+      short_cost = t("footer_unknown")
+    else:
+      short_cost = "~$" + f"{stats['cost']:.3g}"
+      if stats['missing_cost']:
+        short_cost += " (" + t("footer_incomplete") + ")"
+      elif stats['live_tokens']:
+        short_cost += " (" + t("footer_calculating") + ")"
+    percent = f"{pct:.1f}" if pct < 1000 else ">999"
+    compact = f"T:{short_num} C:{percent}% {short_cost}"
+    if len(compact) > width:
+      percent = f"{pct:.0f}" if pct < 1000 else ">999"
+      short_cost = t("footer_unknown") if stats['missing_cost'] and not stats['known_cost_calls'] else (
+        "~$" + f"{stats['cost']:.2g}" + ("*" if stats['missing_cost'] or stats['live_tokens'] else ""))
+      compact = f"T:{short_num} C:{percent}% {short_cost}"
+    return compact
+  def refresh_client(self) -> None:
+    supports_stream = bool(getattr(self.ui, "is_tty", False) and
+               callable(getattr(self.ui, "stream_assistant_text", None)) and
+               not self.non_interactive)
+    def retry_notice(key, **values):
+      self.usage.mark_interrupted()
+      self.ui.warn(t(key, **values))
+    self.client = ProviderClient(self.config_mgr.config, self._receive_stream_text if supports_stream else None,
+                  on_effort_fallback=lambda: retry_notice("effort_fallback"))
+    self.client.on_compat_fallback = lambda: retry_notice("compat_fallback")
+    self.client.on_budget_fallback = lambda limit: retry_notice("budget_fallback", limit=limit)
+    self.client.on_probe_retry = lambda: retry_notice("probe_retry")
+    self.client.on_connection_retry = lambda attempt, delay: retry_notice(
+      "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
+    self.client.on_probe_interrupted = self.usage.mark_interrupted
+    self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
+    self.client.on_vision_fallback = lambda: self.ui.warn(t("img_vision_fallback", model=self.config_mgr.config.model))
+    self.client.on_vision_bridge = lambda bm: self.ui.info(t("vision_bridge_used", bridge_model=bm))
+  def _aggressive_final_gate(self, touched: Optional[Set[str]] = None) -> str:
+    """Aggressive mode: audit the folder before a turn is allowed to end.
+
+    Only *blocking* problems force another round: syntax errors anywhere, or findings
+    inside files this turn touched. Pre-existing markers elsewhere are reported once
+    and never trap the turn in a loop.
+    """
+    cwd = Path(self.tools.cwd)
+    self.ui.info(t("aggressive_audit_running"))
+    try:
+      from docmind.tools.project import aggressive_audit_folder as _ag_audit
+      clean, detail, scanned = _ag_audit(cwd, touched=touched)
+    except Exception as exc:
+      self.ui.warn(f"Aggressive audit unavailable: {exc}")
+      return "done"
+    if clean:
+      self.ui.success(t("aggressive_audit_clean", files=scanned))
+      return "done"
+    blocking: List[str] = []
+    if "BLOCKING:" in detail:
+      blocking = [ln.strip() for ln in detail.split("BLOCKING:", 1)[1].splitlines() if ln.strip().startswith("- ")]
+    advisory = [ln.strip() for ln in detail.splitlines()
+                if ln.strip().startswith("- ") and ln.strip() not in blocking]
+    if advisory:
+      self.ui.warn(t("aggressive_audit_issues", count=len(advisory)))
+      for line in advisory[:8]:
+        print("   " + line)
+      self.ui.info(t("aggressive_audit_advisory"))
+    if not blocking:
+      return "done"
+    self.ui.warn(t("aggressive_audit_issues", count=len(blocking)))
+    for line in blocking[:12]:
+      print("   " + line)
+    self.context.add_user(
+      "[AGGRESSIVE AUDIT] These problems must be fixed before this turn can end:\n"
+      + "\n".join(blocking[:20])
+      + "\nFix them now (syntax errors, unfinished markers or error patterns in the files you just wrote), re-run "
+        "the relevant check, then report. Leave unrelated pre-existing findings alone."
+    )
+    return "continue"
+
+
+  def build_system_prompt(self) -> str:
+    from docmind.i18n import i18n as _ag_i18n
+    cwd = self.tools.cwd
+    try:
+      os_prof = detect_os_profile()
+    except Exception:
+      os_prof = {
+        "os_family": "Windows" if os.name == "nt" else "Linux",
+        "pretty_name": f"{platform.system()} {platform.release()}",
+        "distro_id": platform.system().lower(),
+        "pkg_managers": [],
+        "dev_tools": [],
+        "desktop": "unknown",
+      }
+    try:
+      folders = get_special_folders()
+      folders_str = ", ".join(f"{k}={v}" for k, v in folders.items())
+    except Exception:
+      folders_str = str(Path.home())
+    try:
+      roots = list_mounted_roots()
+      drives_str = ", ".join(
+        f"{r['root']} ({r.get('free_gb', '?')}GB free/{r.get('total_gb', '?')}GB)"
+        if "total_gb" in r else str(r["root"])
+        for r in roots
+      ) or "/"
+    except Exception:
+      drives_str = "/"
+    try:
+      shells = detect_available_shells()
+      shells_str = ", ".join(f"{k}={v}" for k, v in shells.items()) or "default"
+    except Exception:
+      shells_str = "default"
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+    lang_code = _ag_i18n.lang
+    lang_name = t("lang_name")
+    lang_rule = t("ai_lang_instruction")
+    pretty_os = os_prof.get("pretty_name", platform.system())
+    os_family = os_prof.get("os_family", platform.system())
+    pkg_str = ", ".join(os_prof.get("pkg_managers") or []) or "none detected"
+    dev_str = ", ".join(os_prof.get("dev_tools") or []) or "python"
+    mode_desc = (
+      "Full Auto for file operations (terminal/Python commands STILL ask explicit user permission first)"
+      if self.config_mgr.config.permission_mode == "auto"
+      else "Smart Confirm (read/search/navigation tools are automatic; file-write and terminal tools ask user approval)"
+    )
+    os_q_examples = {
+      "tr": (
+        f'Örnek: "İşletim sisteminiz {pretty_os} ({os_family}) olarak algılandı; buna uyumlu yapacağım. Başka bir sistem ister misiniz yoksa evrensel (Windows + Linux) mi olsun?" '
+        f'Seçenekler: ["{pretty_os} uyumlu yap", "Çapraz platform / Evrensel (Windows + Linux)", "Windows uyumlu yap", "Farklı sistem"]'
+      ),
+      "en": (
+        f'Example: "Detected operating system: {pretty_os} ({os_family}). Would you like me to build this specifically for {pretty_os}, make it cross-platform (Windows + Linux), or target another OS?" '
+        f'Options: ["Target {pretty_os} ({os_family})", "Cross-platform (Windows + Linux)", "Target Windows", "Other OS"]'
+      ),
+      "de": (
+        f'Beispiel: "Erkanntes Betriebssystem: {pretty_os} ({os_family}). Soll der Code für {pretty_os}, plattformübergreifend (Windows + Linux) oder für ein anderes System erstellt werden?" '
+        f'Optionen: ["Für {pretty_os} ({os_family})", "Plattformübergreifend (Windows + Linux)", "Für Windows", "Anderes System"]'
+      ),
+      "es": (
+        f'Ejemplo: "Sistema operativo detectado: {pretty_os} ({os_family}). ¿Desea que sea compatible con {pretty_os}, multiplataforma (Windows + Linux) u otro sistema?" '
+        f'Opciones: ["Para {pretty_os} ({os_family})", "Multiplataforma (Windows + Linux)", "Para Windows", "Otro sistema"]'
+      ),
+      "fr": (
+        f'Exemple : "Système détecté : {pretty_os} ({os_family}). Voulez-vous cibler {pretty_os}, le rendre multiplateforme (Windows + Linux) ou cibler un autre OS ?" '
+        f'Options : ["Cibler {pretty_os} ({os_family})", "Multiplateforme (Windows + Linux)", "Cibler Windows", "Autre système"]'
+      ),
+      "ru": (
+        f'Пример: "Обнаружена ОС: {pretty_os} ({os_family}). Сделать совместимо с {pretty_os}, кроссплатформенно (Windows + Linux) или для другой ОС?" '
+        f'Варианты: ["Для {pretty_os} ({os_family})", "Кроссплатформенно (Windows + Linux)", "Для Windows", "Другая ОС"]'
+      ),
+    }
+    os_q_guide = os_q_examples.get(lang_code, os_q_examples["en"])
+    token_save_hint = (
+      "- Token Saving: ON -> answer completely and correctly, but do not repeat listings, duplicate file dumps or already-known context; re-read a file only when the trimmed part is really needed.\n\n"
+      if token_save_effective(self.config_mgr.config) else ""
+    )
+    non_tr_ban = (
+      f"CRITICAL: Active interface language is **{lang_name} ({lang_code.upper()})**. Do NOT output any Turkish words, headers, or option labels! Every assistant message and every `ask_user` question/option MUST be 100% in **{lang_name}**."
+      if lang_code != "tr"
+      else "KRİTİK: Aktif arayüz dili **Türkçe (TR)**. Tüm mesajlarını ve `ask_user` soru/seçeneklerini doğal ve akıcı **Türkçe** olarak yaz."
+    )
+    return (
+      "You are DocMind, an intelligent, self-correcting, OS-aware AI assistant and software engineering agent.\n\n"
+      f"## STRICT LANGUAGE LOCK ({lang_code.upper()} — {lang_name})\n"
+      f"{lang_rule}\n{non_tr_ban}\n\n"
+      "## RULE #0 — SMART TOOL & TERMINAL DECISION RULES (CRITICAL!)\n"
+      "- **GREETINGS & SMALL TALK -> ZERO TOOLS**: For greetings ('merhaba', 'hello', 'nasılsın'), casual chat, "
+      "or translations, call **ZERO TOOLS** and answer directly.\n"
+      "- **INTERNET RESEARCH & SELF-FACT-CHECKING (`web_search`)**: Whenever the user asks you to research or verify something, "
+      "corrects a mistake ('yanlış biliyorsun', 'emin misin', 'doğrula', 'araştır'), asks about current facts/versions/releases/prices/news/events, "
+      "or whenever you are NOT 100% certain of a fact or library API, **DO NOT GUESS OR HALLUCINATE**! Immediately call `web_search` "
+      "(and `web_fetch` if needed) to research on the live internet, cross-verify across multiple sources, correct any misconception, and cite source URLs!\n"
+      "- **NEVER BROWSE CWD FILES UNPROMPTED**: Do NOT open or list random files (`read_file`, `list_directory`, `project_overview`) unless the "
+      "user actually asks about files, folders, documents, or a project. Prefer native file tools over terminal commands for reading/searching files.\n"
+      "- **TERMINAL / CODE REQUESTS -> 2-OPTION CHOICE (EXPLAIN vs. EXECUTE)**:\n"
+      "  • When `ACTIVE USER SELECTION` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
+      "  • If `ACTIVE USER SELECTION` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
+      f"FIRST call `ask_user` in **{lang_name}** with 2 choices: [1] Explain how to do it vs [2] Run it directly in the terminal, then strictly follow their choice!\n\n"
+      "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
+      f"- Date/Time: {now_str}\n"
+      f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
+      f"- Desktop / Display Session: {os_prof.get('desktop', 'unknown')}\n"
+      f"- Installed Package Managers: {pkg_str}\n"
+      f"- Installed Dev Tools: {dev_str}\n"
+      f"- Python Runtime: {sys.version.split()[0]} ({sys.executable})\n"
+      f"- Active Working Directory (CWD): {cwd}\n"
+      f"- Mounted Drives / Roots: {drives_str}\n"
+      f"- User Special Folders: {folders_str}\n"
+      f"- Available Shells for run_command: {shells_str}\n"
+      f"- Permission Mode: {mode_desc}\n"
+      f"{token_save_hint}"
+      "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
+      "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
+      f"   - Detected system: **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
+      "Always tailor system commands to this exact OS/distro (`pacman` on Arch Linux, `apt` on Debian/Ubuntu, `dnf` on Fedora, PowerShell/`winget` on Windows).\n"
+      f"   - When the user asks you to build/save a platform-dependent script, program, or tool — unless they already specified the target OS — FIRST call `ask_user` in **{lang_name}** to confirm target platform! ({os_q_guide})\n\n"
+      "2. **Self-Reflection, Error Triage & Rollback Loop**:\n"
+      "   - **When `run_command` or `python_eval` FAILS**:\n"
+      "     • **Case A — Requires User Password / `sudo` / `root` / Administrator (`USER_MUST_RUN_MANUALLY`)**: "
+      f"DO NOT retry privileged/password commands! Explain clearly in **{lang_name}** why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
+      "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
+      "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
+      "3. **Full Computer Access When Requested & Security**:\n"
+      "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their computer (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
+      "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
+      + aggressive_directive()
+    )
+  def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
+    """Wait without closing the terminal; Ctrl+C cancels only this task."""
+    wait = max(1, math.ceil(seconds))
+    self.ui.warn(t("retry_wait", seconds=wait, attempt=attempt))
+    try:
+      with self.ui.spinner(t("retry_wait", seconds=wait, attempt=attempt)):
+        deadline = time.monotonic() + wait
+        while time.monotonic() < deadline:
+          time.sleep(min(.2, max(0, deadline - time.monotonic())))
+      return True
+    except KeyboardInterrupt:
+      print()
+      self.ui.warn(t("ctrl_c_cancelled"))
+      return False
+  def _interactive_recovery(self, alert: DocMindAlert) -> str:
+    """
+        Show recovery options when API quota/tokens run out, key is invalid, model is missing,
+        or network fails. Returns action: 'retry' | 'skip'.
+        """
+    if self.non_interactive:
+      self.ui.info(t("err_skipped_notice"))
+      return "skip"
+    default_opt = "5" if alert.retry_exhausted else ("1" if alert.suggest_key_change else ("3" if alert.suggest_model_change else "4"))
+    menu_lines = [
+      f"  [1] 🔑 {t('rec_opt_new_key')}",
+      f"  [2] 🔄 {t('rec_opt_switch_provider')}",
+      f"  [3] 🧠 {t('rec_opt_switch_model')}",
+      f"  [4] 🔁 {t('rec_opt_retry')}",
+      f"  [5] ⏭️  {t('rec_opt_skip')}",
+    ]
+    self.ui.print_panel(f"🛠️ {t('rec_title')}", "\n".join(menu_lines), style="bright_yellow")
+    try:
+      choice = self.ui.ask(t("rec_choose", default=default_opt)).strip() or default_opt
+    except (KeyboardInterrupt, EOFError):
+      print()
+      return "skip"
+    if choice == "1":
+      spec = get_provider_spec(self.config_mgr.config.provider)
+      self.ui.info(t("wiz_secret_notice"))
+      new_key = self.ui.ask_secret(t("wiz_enter_api_key", provider=spec.name)).strip()
+      if new_key:
+        self.config_mgr.config.set_api_key(new_key, spec.id)
+        self.config_mgr.save()
+        self.refresh_client()
+        return "retry"
+      return "skip"
+    if choice == "2":
+      self.wizard.select_provider()
+      self.wizard.prompt_api_key_and_verify()
+      self.refresh_client()
+      return "retry"
+    if choice == "3":
+      self.wizard.select_model()
+      self.refresh_client()
+      return "retry"
+    if choice == "4":
+      return "retry"
+    self.ui.info(t("err_skipped_notice"))
+    return "skip"
+  def _generate_resilient(self) -> Optional[ModelResponse]:
+    """
+        Execute an LLM API call wrapped in full error classification, auto-compaction,
+        rate-limit backoff, token exhaustion alerting, and interactive hot-swap recovery.
+        """
+    auto_retries = 0
+    incomplete_streams = 0
+    compaction_attempted = False
+    invalid_tool_retried = False
+    while True:
+      spec = get_provider_spec(self.config_mgr.config.provider)
+      context_limit, _ = context_limit_for(self.config_mgr.config)
+      token_save = token_save_effective(self.config_mgr.config)
+      if token_save:
+        self.context.save_tokens(t("token_save_trim_note"))
+      if self.context.needs_compaction(context_limit, token_save=token_save):
+        self.ui.info(t("compacting_context"))
+        if self.context.compact():
+          self.ui.success(t("context_compacted"))
+      sys_prompt = self._turn_system_prompt or self.build_system_prompt()
+      if invalid_tool_retried and spec.protocol != "anthropic":
+        sys_prompt += ("\n\nThe previous response contained malformed tool arguments and was not executed. "
+               "Return a complete JSON object matching the tool schema, or answer without a tool.")
+      last_user_msg = ""
+      last_user_has_img = False
+      for _m in reversed(self.context.messages):
+        if _m.get("role") == "user":
+          last_user_msg = str(_m.get("content") or "")
+          last_user_has_img = bool(_m.get("images"))
+          break
+      if self._turn_exec_mode == "explain":
+        tool_schemas = []
+      elif self._turn_exec_mode == "execute":
+        tool_schemas = self.tools.get_schemas()
+      else:
+        has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
+        expose_tools = has_tool_turn_already or last_user_has_img or _should_expose_tools(last_user_msg, self.context.messages[:-1])
+        tool_schemas = self.tools.get_schemas() if expose_tools else []
+      try:
+        self._streamed_text = False
+        self._streamed_chunks = []
+        with self.ui.spinner(t("thinking")):
+          resp = self.client.generate(
+            system_prompt=sys_prompt,
+            messages=self.context.messages,
+            tools=tool_schemas,
+          )
+        if auto_retries:
+          self._finish_streamed_message(fast=bool(resp.tool_calls))
+          self.ui.success(t("retry_ok"))
+        return resp
+      except KeyboardInterrupt:
+        self.usage.mark_interrupted()
+        self.history.record_partial("".join(self._streamed_chunks))
+        self._finish_streamed_message(fast=True)
+        print()
+        self.ui.warn(t("ctrl_c_cancelled"))
+        return None
+      except Exception as exc:
+        partial = bool(getattr(exc, "partial_stream", False))
+        self.usage.mark_interrupted()
+        self.history.record_partial("".join(self._streamed_chunks))
+        self._finish_streamed_message(fast=True)
+        self.config_mgr.log_error("agent.generate", repr(exc))
+        alert = classify_exception(exc, provider_name=spec.name, model_name=self.config_mgr.config.model)
+        groq_tool_failure = False
+        if (self.config_mgr.config.provider == "groq" and
+            getattr(exc, "status_code", None) in (400, 422)):
+          try:
+            body = json.loads(getattr(exc, "response_body", "") or "{}")
+            item = body.get("error", {}) if isinstance(body, dict) else {}
+            groq_tool_failure = isinstance(item, dict) and (
+              item.get("code") == "tool_use_failed" or
+              "failed_generation" in item or
+              str(item.get("message", "")).lower() == "invalid tool call generated")
+          except (ValueError, TypeError):
+            pass
+        if ((getattr(exc, "invalid_tool_arguments", False) or groq_tool_failure) and not partial and
+            not self._streamed_text and not invalid_tool_retried):
+          invalid_tool_retried = True
+          self.ui.warn(t("tool_args_retry"))
+          continue
+        if alert.category == ErrorCategory.CONTEXT_OVERFLOW and not compaction_attempted and not partial:
+          self.ui.print_alert(alert)
+          compaction_attempted = True
+          self.ui.info(t("compacting_context"))
+          if self.context.compact(keep_recent_groups=2):
+            self.ui.success(t("context_compacted"))
+            continue
+        err_low = str(exc).lower()
+        protocol_failure = any(marker in err_low for marker in (
+          "invalid utf-8", "stream exceeded", "response exceeded"))
+        stream_drop = any(marker in err_low for marker in (
+          "final completion marker", "incomplete streamed tool", "incompletechunkedread",
+          "connection reset", "unexpected eof", "broken pipe", "protocol_error"))
+        if (alert.auto_retryable or stream_drop) and not protocol_failure:
+          delay = retry_delay(auto_retries + 1, alert.retry_after)
+          if auto_retries < 6 and delay is not None:
+            auto_retries += 1
+            KEEPALIVE_POOL.drop_origin(self.config_mgr.config.get_base_url())
+            if stream_drop:
+              incomplete_streams += 1
+              delay = min(delay, 1.0)
+              self.ui.info(t("conn_auto_heal", attempt=auto_retries, max_attempts=6))
+              if incomplete_streams >= 1 and self.client.on_text is not None:
+                self.client.on_text = None
+            refresh = getattr(self.ui, "refresh_footer", None)
+            if refresh:refresh()
+            if partial:
+              self.ui.warn(t("retry_partial"))
+            if self._sleep_interruptible(delay, auto_retries):
+              continue
+            return None
+          alert.retry_exhausted = True
+          if delay is None and alert.retry_after is not None:
+            self.ui.warn(t("retry_deferred", seconds=int(alert.retry_after + 0.999)))
+          else:
+            self.ui.warn(t("retry_exhausted", count=auto_retries))
+        self.ui.print_alert(alert)
+        decision = self._interactive_recovery(alert)
+        if decision == "retry":
+          auto_retries = 0
+          continue
+        return None
+  def _check_token_budget_warning(self) -> None:
+    limit = self.config_mgr.config.token_warning_limit
+    if limit > 0 and self.context.total_tokens >= limit and not self.context.budget_warned:
+      self.context.budget_warned = True
+      warn_alert = DocMindAlert(
+        category=ErrorCategory.RATE_LIMITED,
+        title=t("err_budget_warn_title"),
+        description=t(
+          "err_budget_warn_desc",
+          used=f"{self.context.total_tokens:,}",
+          limit=f"{limit:,}",
+        ),
+        raw_detail="User token threshold reached",
+      )
+      self.ui.print_alert(warn_alert)
+  def _prompt_explain_or_execute(self) -> str:
+    """
+    Ask the user with 2 clear options:
+      [1] Explain how to do it
+      [2] Execute it directly using the terminal
+    Returns 'explain', 'execute', or 'cancel'.
+    """
+    from docmind.i18n import i18n
+    if self.config_mgr.config.language and i18n.lang != self.config_mgr.config.language:
+      i18n.set_lang(self.config_mgr.config.language)
+    lang = i18n.lang
+    table = {
+      "tr": (
+        "⚡ Nasıl Yapalım?",
+        "Anlatayım mı? (Nasıl yapılacağını adım adım açıkla)",
+        "Ben mi çalıştırayım? (Terminal kullanarak kendim çalıştırayım)",
+        "Seçiminiz [1=Anlat / 2=Ben Çalıştırayım]: ",
+      ),
+      "en": (
+        "⚡ How Would You Like to Proceed?",
+        "Explain it? (Show step-by-step how to do it)",
+        "Run it myself? (Execute directly using the terminal)",
+        "Your choice [1=Explain / 2=Run in Terminal]: ",
+      ),
+      "de": (
+        "⚡ Wie möchten Sie fortfahren?",
+        "Erklären? (Schritt für Schritt zeigen)",
+        "Selbst ausführen? (Direkt im Terminal ausführen)",
+        "Ihre Wahl [1=Erklären / 2=Ausführen]: ",
+      ),
+      "es": (
+        "⚡ ¿Cómo desea continuar?",
+        "¿Explicarlo? (Mostrar paso a paso cómo hacerlo)",
+        "¿Ejecutarlo yo mismo? (Ejecutar usando la terminal)",
+        "Su elección [1=Explicar / 2=Ejecutar]: ",
+      ),
+      "fr": (
+        "⚡ Comment souhaitez-vous procéder ?",
+        "Expliquer ? (Montrer étape par étape)",
+        "Exécuter moi-même ? (Lancer dans le terminal)",
+        "Votre choix [1=Expliquer / 2=Exécuter] : ",
+      ),
+      "ru": (
+        "⚡ Как поступим?",
+        "Объяснить? (Показать пошагово, как сделать)",
+        "Выполнить самому? (Запустить через терминал)",
+        "Ваш выбор [1=Объяснить / 2=Запустить]: ",
+      ),
+      "az": ("⚡ Necə edək?", "İzah edim? (Addım-addım göstər)", "Özüm işlədim? (Terminalda birbaşa icra et)", "Seçiminiz [1=İzah et / 2=İcra et]: "),
+      "it": ("⚡ Come procedere?", "Spiegarlo? (Mostra passo passo)", "Eseguirlo nel terminale? (Esegui direttamente)", "Scelta [1=Spiega / 2=Esegui]: "),
+      "pt": ("⚡ Como deseja prosseguir?", "Explicar? (Mostrar passo a passo)", "Executar no terminal? (Executar diretamente)", "Escolha [1=Explicar / 2=Executar]: "),
+      "nl": ("⚡ Hoe wilt u doorgaan?", "Uitleggen? (Stap voor stap tonen)", "Zelf uitvoeren? (Direct in terminal)", "Uw keuze [1=Uitleg / 2=Uitvoeren]: "),
+      "ar": ("⚡ كيف تود المتابعة؟", "شرح الطريقة؟ (خطوة بخطوة)", "تنفيذ مباشر؟ (تشغيل عبر الطرفية)", "اختيارك [1=شرح / 2=تنفيذ]: "),
+      "zh": ("⚡ 您希望如何进行？", "仅讲解步骤？（逐步演示做法）", "直接执行？（由智能体在终端运行）", "您的选择 [1=讲解 / 2=执行]: "),
+      "ja": ("⚡ 実行方法を選択してください", "やり方を説明する（手順を表示）", "ターミナルで直接実行する", "選択 [1=説明 / 2=実行]: "),
+      "ko": ("⚡ 어떻게 진행할까요?", "방법 설명하기 (단계별 안내)", "터미널에서 직접 실행하기", "선택 [1=설명 / 2=실행]: "),
+    }
+    hdr, opt1, opt2, ask_lbl = table.get(lang, table["en"])
+    bar = "─" * 62
+    print()
+    print(self.ui._paint(f"╭─── {hdr} " + bar[: max(4, 56 - len(hdr))] + "╮", "1;36"))
+    print(self.ui._paint("│  ", "36") + self.ui._paint("[1] ", "1;33") + opt1)
+    print(self.ui._paint("│  ", "36") + self.ui._paint("[2] ", "1;32") + opt2)
+    print(self.ui._paint("╰" + bar + "╯", "36"), flush=True)
+    explain_words = {"1", "anlat", "anlatayim", "acikla", "explain", "erklaren", "explicar", "expliquer", "объяснить"}
+    exec_words = {"2", "calistir", "ben", "sen", "sen calistir", "ben calistirayim", "terminal", "uygula", "run", "execute", "ausfuhren", "ejecutar", "executer", "запустить"}
+    while True:
+      try:
+        ans = _ascii_fold(self.ui.ask(ask_lbl)).strip().rstrip(".")
+      except (KeyboardInterrupt, EOFError):
+        print()
+        return "cancel"
+      if ans in explain_words:
+        return "explain"
+      if ans in exec_words:
+        return "execute"
+      if not self.ui.is_tty:
+        return "execute"
+  def run_turn(self, user_input: str, explicit_images: Optional[List[Dict[str, Any]]] = None) -> bool:
+    """
+        Process a user prompt through multi-step autonomous tool execution until completion.
+        Returns True if completed normally, False if aborted/skipped cleanly.
+        """
+    _dm_owner_gate()
+    _dm_signature_gate()
+    checkpoint_len = len(self.context.messages)
+    turn_t0 = time.monotonic()
+    turn_in_tok = 0
+    turn_out_tok = 0
+    turn_images: List[Dict[str, Any]] = list(explicit_images or [])
+    _, auto_imgs = extract_prompt_images(user_input, self.tools.cwd)
+    at_files, at_imgs, at_dirs = extract_at_mentions(user_input, self.tools.cwd)
+    seen_img_paths = {im["path"] for im in turn_images}
+    for im in (auto_imgs + at_imgs):
+      if im["path"] not in seen_img_paths:
+        turn_images.append(im)
+        seen_img_paths.add(im["path"])
+    for im in turn_images:
+      self.ui.info(t("img_attached", name=im["name"], dims=f"{im['width']}x{im['height']}", size=im["size_human"]))
+    extra_ctx_blocks: List[str] = []
+    for fname, fsz, fblock in at_files:
+      self.ui.info(t("mention_attached", name=fname, size=fsz))
+      extra_ctx_blocks.append(fblock)
+    for dname, dtree in at_dirs:
+      self.ui.info(t("mention_dir_attached", name=dname))
+      extra_ctx_blocks.append(f"### Attached Directory Tree `{dname}`\n```\n{dtree}\n```")
+    effective_user_input = (
+      user_input + "\n\n" + "\n\n".join(extra_ctx_blocks)
+      if extra_ctx_blocks
+      else user_input
+    )
+    self._turn_exec_mode = "auto"
+    mode_directive = ""
+    if not self.non_interactive and not turn_images and _is_explain_or_execute_candidate(user_input):
+      picked = self._prompt_explain_or_execute()
+      if picked == "cancel":
+        self.ui.warn(t("ctrl_c_cancelled"))
+        return False
+      self._turn_exec_mode = picked
+      if picked == "explain":
+        mode_directive = (
+          "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXPLAIN_ONLY]\n"
+          "The user explicitly chose option [1] ('Explain how to do it'). "
+          "DO NOT call `run_command` or `python_eval` or any tool. Explain clearly and concisely how to perform their request with ready-to-copy command/code examples."
+        )
+      elif picked == "execute":
+        mode_directive = (
+          "\n\n## ACTIVE USER SELECTION: [USER_MODE: EXECUTE_IN_TERMINAL]\n"
+          "The user explicitly chose option [2] ('Run it yourself using the terminal')! "
+          "DO NOT merely explain how to do it in text! You MUST immediately call `run_command` (for terminal/shell/python CLI commands, e.g. `python3 -c \"print('Hello, World!')\"` on Linux/macOS or `python -c \"print('Hello, World!')\"` on Windows) "
+          "or `python_eval` to execute the task right now, then briefly present the output!"
+        )
+    vision_directive = (
+      "\n\n## ACTIVE HIGH-PRECISION VISION & OCR ANALYSIS PROTOCOL\n"
+      "One or more images/screenshots are attached to this turn! Follow these rules strictly:\n"
+      "1. Read EVERY visible text line, error message, traceback, file path, line number, button/menu label, chart value, and code snippet with character-level precision (cross-checking both the high-res image pixels and any `[Local OCR Text]` / `[High-Resolution Vision Analysis]` block).\n"
+      "2. Describe clearly what is shown in the image first so the user sees you understood it accurately.\n"
+      "3. If the image shows an error, bug, or broken UI/config, pinpoint the exact root cause and either fix the file in the workspace (if relevant) or give the exact step-by-step solution!\n"
+      "4. Never guess unreadable blurry characters — state clearly if a specific region is cut off or illegible."
+      if turn_images else ""
+    )
+    self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
+    begin_turn = getattr(self.ui, "begin_turn", None)
+    if begin_turn:
+      begin_turn()
+    max_steps = max(5, self.config_mgr.config.max_steps_per_turn)
+    step = 0
+    execute_nudged = False
+    denied_calls = set()
+    attempted_tools = set()
+    touched_files: Set[str] = set()
+    manual_auth_calls = set()
+    last_failed_key = None
+    consecutive_failures = 0
+    suppressed_in_a_row = 0
+    try:
+      self.context.add_user(effective_user_input, images=turn_images if turn_images else None)
+      while True:
+        step += 1
+        if step > max_steps:
+          self.ui.warn(t("max_steps_reached", max_steps=max_steps))
+          if self.non_interactive:
+            return False
+          ans = self.ui.ask(t("ask_continue_steps")).strip().lower()
+          if ans in ("", "e", "evet", "y", "yes", "b", "bəli", "beli", "j", "ja", "s", "si", "sí", "sì", "sim", "o", "oui", "д", "да", "نعم", "是", "好", "はい", "예", "네"):
+            max_steps += self.config_mgr.config.max_steps_per_turn
+          else:
+            return False
+        resp = self._generate_resilient()
+        if resp is None:
+          if len(self.context.messages) == checkpoint_len + 1:
+            self.context.messages.pop()
+            self.history.mark_last_user_cancelled()
+          return False
+        turn_in_tok += int(resp.input_tokens or 0)
+        turn_out_tok += int(resp.output_tokens or 0)
+        self.context.record_usage(resp.input_tokens, resp.output_tokens)
+        self.usage.record(self.config_mgr.config.provider, self.config_mgr.config.model,
+                 resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
+        refresh = getattr(self.ui, "refresh_footer", None)
+        if refresh:refresh()
+        serialized_tcs: List[Dict[str, Any]] = [
+          {
+            "id": tc.id,
+            "name": tc.name,
+            "arguments": tc.arguments,
+            "metadata": tc.metadata,
+          }
+          for tc in resp.tool_calls
+        ]
+        self.context.add_assistant(
+          content=resp.text,
+          tool_calls=serialized_tcs if serialized_tcs else None,
+          thought=resp.thought,
+          provider_data=resp.provider_data,
+        )
+        if self._streamed_text:
+          self._finish_streamed_message(fast=bool(resp.tool_calls))
+        elif resp.text:
+          self.ui.print_assistant_message(resp.text)
+        self._check_token_budget_warning()
+        if resp.stop_reason == "max_tokens":
+          self.ui.warn(t("output_truncated_warn"))
+        if not resp.tool_calls:
+          if self._turn_exec_mode == "execute" and step == 1 and not execute_nudged and resp.stop_reason != "max_tokens":
+            execute_nudged = True
+            self.context.add_user(
+              "[SYSTEM REMINDER]: The user selected option [2] ('Run it yourself in the terminal'). "
+              "Do not stop at text explanation — call `run_command` or `python_eval` right now to execute it!"
+            )
+            continue
+          worked = bool(attempted_tools & AGGRESSIVE_WORK_TOOLS)
+          if aggressive_active(self.config_mgr.config) and getattr(self.config_mgr.config, "aggressive_mode", True) \
+              and worked and "aggressive_audit" not in attempted_tools:
+            verdict = self._aggressive_final_gate(touched_files)
+            if verdict == "continue":
+              continue
+          elapsed_s = time.monotonic() - turn_t0
+          if (step > 1 or elapsed_s >= 2.0) and (turn_in_tok or turn_out_tok):
+            print(self.ui._paint(f"  ⏱ {elapsed_s:.1f}s • ↑{turn_in_tok:,} ↓{turn_out_tok:,} tok", "2;90"))
+          return resp.stop_reason != "max_tokens"
+        halt_remaining = False
+        batch_failed = False
+        for tc in resp.tool_calls:
+          attempted_tools.add(tc.name)
+          if tc.name in ("write_file", "edit_file", "multi_edit"):
+            try:
+              target = str((tc.arguments or {}).get("path") or "").strip()
+            except Exception:
+              target = ""
+            if target:
+              touched_files.add(target.replace(os.sep, "/"))
+          key = _tool_fingerprint(tc.name, tc.arguments)
+          same_denial = key in denied_calls
+          needs_manual_user = key in manual_auth_calls
+          repeated_failure = key == last_failed_key and consecutive_failures >= 2
+          dependent_action = batch_failed and tc.name not in READ_ONLY_TOOLS
+          blocked = halt_remaining or same_denial or needs_manual_user or repeated_failure or dependent_action
+          if blocked:
+            if halt_remaining:
+              explanation = "Not executed: the agent stopped after a repeated-action loop."
+            elif same_denial:
+              explanation = "Not executed: the user already declined this exact action in this turn. Respect the refusal; ask before a new direction."
+            elif needs_manual_user:
+              explanation = "Not executed: this exact command failed because it requires interactive password/sudo/Administrator privileges. Do not retry it; explain to the user how to run it in their own terminal."
+            elif repeated_failure:
+              explanation = "Not executed: the same read-only or invalid call failed twice consecutively. Diagnose the error or use different arguments."
+            else:
+              explanation = "Not executed: an earlier action in this batch failed or was declined. Reassess the result before another write or command."
+            self.ui.print_tool_start(tc.name, tc.arguments if isinstance(tc.arguments, dict) else {})
+            self.ui.print_tool_result(tc.name, False, t("batch_deferred" if dependent_action and not (halt_remaining or same_denial or repeated_failure) else "loop_suppressed", name=tc.name))
+            exec_res = ToolExecutionResult(ok=False, output=explanation)
+            if not halt_remaining and (same_denial or repeated_failure):
+              suppressed_in_a_row += 1
+              if suppressed_in_a_row >= 3:
+                halt_remaining = True
+          else:
+            exec_res = self.tools.execute(tc.name, tc.arguments)
+            suppressed_in_a_row = 0
+            if exec_res.skipped:
+              denied_calls.add(key)
+            elif not exec_res.ok and "USER_MUST_RUN_MANUALLY" in exec_res.output:
+              manual_auth_calls.add(key)
+              last_failed_key, consecutive_failures = None, 0
+            elif not exec_res.ok and (tc.name in READ_ONLY_TOOLS or getattr(exec_res, "invalid_args", False)):
+              if key == last_failed_key:
+                consecutive_failures += 1
+              else:
+                last_failed_key, consecutive_failures = key, 1
+            else:
+              last_failed_key, consecutive_failures = None, 0
+          if not exec_res.ok:
+            batch_failed = True
+          self.context.add_tool_result(
+            tool_call_id=tc.id,
+            name=tc.name,
+            content=exec_res.output,
+            is_error=not exec_res.ok,
+            images=getattr(exec_res, "images", None),
+          )
+        if halt_remaining:
+          self.ui.warn(t("loop_stopped"))
+          return False
+    except KeyboardInterrupt:
+      print()
+      self.ui.warn(t("ctrl_c_cancelled"))
+      if len(self.context.messages) == checkpoint_len + 1 and self.context.messages[-1].get("role") == "user":
+        self.context.messages.pop()
+        self.history.mark_last_user_cancelled()
+      self._heal_dangling_tool_calls()
+      return False
+    except Exception as exc:
+      self.config_mgr.log_error("agent.run_turn", repr(exc))
+      alert = classify_exception(exc)
+      self.ui.print_alert(alert)
+      self._heal_dangling_tool_calls()
+      self.ui.info(t("err_skipped_notice"))
+      return False
+    finally:
+      self._turn_system_prompt = None
+      self._turn_exec_mode = "auto"
+    return True
+  def _heal_dangling_tool_calls(self) -> None:
+    """
+        If Ctrl+C interrupted mid-tool-execution, ensure every assistant tool_call
+        has a matching tool_result message so subsequent turns never 400 on Anthropic/OpenAI!
+        """
+    if not self.context.messages:
+      return
+    for idx in range(len(self.context.messages) - 1, -1, -1):
+      msg = self.context.messages[idx]
+      if msg["role"] == "user":
+        break
+      if msg["role"] == "assistant" and msg.get("tool_calls"):
+        answered_ids = {
+          m.get("tool_call_id")
+          for m in self.context.messages[idx + 1 :]
+          if m.get("role") == "tool"
+        }
+        for tc in msg["tool_calls"]:
+          if tc["id"] not in answered_ids:
+            self.context.add_tool_result(
+              tool_call_id=tc["id"],
+              name=tc["name"],
+              content="Operation cancelled by user (Ctrl+C).",
+              is_error=True,
+            )
+        break
  return locals()
+ def _dm_aggressive_bridge() -> None:
+     import types as _b_types
+     class _BridgeHolder:
+       cfg = None
+     holder = _BridgeHolder
+     helpers = {
+         "aggressive_active": aggressive_active,
+         "aggressive_audit_folder": aggressive_audit_folder,
+         "tool_aggressive_audit": tool_aggressive_audit,
+         "aggressive_snapshot": aggressive_snapshot,
+         "aggressive_directive": aggressive_directive,
+         "AGGRESSIVE_PLAN_FILE": AGGRESSIVE_PLAN_FILE,
+         "AGGRESSIVE_JOURNAL_FILE": AGGRESSIVE_JOURNAL_FILE,
+         "AGGRESSIVE_BACKUP_DIR": AGGRESSIVE_BACKUP_DIR,
+     }
+     targets = (
+         "docmind.tools.project",
+         "docmind.tools.filesystem",
+         "docmind.core.agent",
+         "docmind.ui.commands",
+         "docmind.config",
+         "docmind.core.permissions",
+     )
+     for name in targets:
+         mod = _dm_sys.modules.get(name)
+         if mod is None:
+             continue
+         for key, value in helpers.items():
+             if not hasattr(mod, key):
+                 setattr(mod, key, value)
+         if not hasattr(mod, "_aggressive_cfg_holder"):
+             setattr(mod, "_aggressive_cfg_holder", holder)
+     # keep the config pointer live for the prompt layer from now on
+     cfg_mod = _dm_sys.modules.get("docmind.config")
+     if cfg_mod is not None and not getattr(cfg_mod, "_aggressive_bound", False):
+         orig_eff = cfg_mod.token_save_effective
+         def _bound_eff(cfg, _orig=orig_eff):
+             holder.cfg = cfg
+             return _orig(cfg)
+         cfg_mod.token_save_effective = _bound_eff
+         cfg_mod._aggressive_bound = True
+
+
+ _dm_aggressive_bridge()
 _dm_install('docmind.core.agent', _dm_module_24, False)
 
 # ===== docmind/ui/commands.py (included source) =====
@@ -15457,1074 +15839,1093 @@ def _dm_module_25():
  from docmind.core.providers import HAS_HTTPX, ProviderClient, reasoning_control_for, reasoning_effort_for
  from docmind.core.usage import context_limit_for, model_key, prices_for
  def _copy_to_clipboard(text: str, is_tty: bool = False) -> bool:
-   """Copy text to OS clipboard (Windows/macOS/Wayland/X11) + OSC-52 fallback."""
-   import base64 as _b64
-   import shutil as _shutil
-   import subprocess as _sp
-   if not text:
-     return False
-   data = text.encode("utf-8", errors="replace")
-   copied = False
-   if os.name == "nt":
-     for cmd in (["powershell", "-NoProfile", "-Command", "$input | Set-Clipboard"], ["clip"]):
-       try:
-         r = _sp.run(cmd, input=data, capture_output=True, timeout=4)
-         if r.returncode == 0:
-           copied = True
-           break
-       except Exception:
-         pass
-   elif sys.platform == "darwin":
-     if _shutil.which("pbcopy"):
-       try:
-         copied = _sp.run(["pbcopy"], input=data, capture_output=True, timeout=4).returncode == 0
-       except Exception:
-         pass
-   else:
-     for cmd in (
-       ["wl-copy"],
-       ["xclip", "-selection", "clipboard"],
-       ["xsel", "--clipboard", "--input"],
-     ):
-       if _shutil.which(cmd[0]):
-         try:
-           if _sp.run(cmd, input=data, capture_output=True, timeout=4).returncode == 0:
-             copied = True
-             break
-         except Exception:
-           pass
-   if is_tty and len(data) <= 74994:
-     try:
-       osc = "\x1b]52;c;" + _b64.b64encode(data).decode("ascii") + "\x07"
-       sys.stdout.write(osc)
-       sys.stdout.flush()
-       copied = True
-     except Exception:
-       pass
-   return copied
+  """Copy text to OS clipboard (Windows/macOS/Wayland/X11) + OSC-52 fallback."""
+  import base64 as _b64
+  import shutil as _shutil
+  import subprocess as _sp
+  if not text:
+    return False
+  data = text.encode("utf-8", errors="replace")
+  copied = False
+  if os.name == "nt":
+    for cmd in (["powershell", "-NoProfile", "-Command", "$input | Set-Clipboard"], ["clip"]):
+      try:
+        r = _sp.run(cmd, input=data, capture_output=True, timeout=4)
+        if r.returncode == 0:
+          copied = True
+          break
+      except Exception:
+        pass
+  elif sys.platform == "darwin":
+    if _shutil.which("pbcopy"):
+      try:
+        copied = _sp.run(["pbcopy"], input=data, capture_output=True, timeout=4).returncode == 0
+      except Exception:
+        pass
+  else:
+    for cmd in (
+      ["wl-copy"],
+      ["xclip", "-selection", "clipboard"],
+      ["xsel", "--clipboard", "--input"],
+    ):
+      if _shutil.which(cmd[0]):
+        try:
+          if _sp.run(cmd, input=data, capture_output=True, timeout=4).returncode == 0:
+            copied = True
+            break
+        except Exception:
+          pass
+  if is_tty and len(data) <= 74994:
+    try:
+      osc = "\x1b]52;c;" + _b64.b64encode(data).decode("ascii") + "\x07"
+      sys.stdout.write(osc)
+      sys.stdout.flush()
+      copied = True
+    except Exception:
+      pass
+  return copied
 
  def _read_clipboard_image_or_text(tmp_dir: Path) -> Tuple[Optional[Path], Optional[str]]:
-   """
-   Attempt to capture an image screenshot from clipboard first; if none, capture text.
-   Returns (saved_png_path_or_None, clipboard_text_or_None).
-   """
-   import shutil as _shutil
-   import subprocess as _sp
-   tmp_dir.mkdir(parents=True, exist_ok=True)
-   img_out = tmp_dir / f"clipboard_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
-   if os.name == "nt":
-     ps_img = (
-       "Add-Type -AssemblyName System.Windows.Forms; "
-       "$img = [System.Windows.Forms.Clipboard]::GetImage(); "
-       f"if ($img -ne $null) {{ $img.Save('{str(img_out).replace(chr(39), chr(39)*2)}', [System.Drawing.Imaging.ImageFormat]::Png); exit 0 }} else {{ exit 1 }}"
-     )
-     try:
-       r = _sp.run(["powershell", "-NoProfile", "-Sta", "-Command", ps_img], capture_output=True, timeout=6)
-       if r.returncode == 0 and img_out.exists() and img_out.stat().st_size > 32:
-         return img_out, None
-     except Exception:
-       pass
-     try:
-       rt = _sp.run(["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"], capture_output=True, text=True, timeout=4)
-       if rt.returncode == 0 and rt.stdout.strip():
-         return None, rt.stdout
-     except Exception:
-       pass
-   elif sys.platform == "darwin":
-     osa = f'try\nset theFile to POSIX file "{img_out}"\nset fRef to open for access theFile with write permission\nset eof fRef to 0\nwrite (the clipboard as «class PNGf») to fRef\nclose access fRef\nreturn "OK"\non error\ntry\nclose access theFile\nend try\nreturn "NO"\nend try'
-     try:
-       r = _sp.run(["osascript", "-e", osa], capture_output=True, text=True, timeout=5)
-       if "OK" in (r.stdout or "") and img_out.exists() and img_out.stat().st_size > 32:
-         return img_out, None
-     except Exception:
-       pass
-     if _shutil.which("pbpaste"):
-       try:
-         rt = _sp.run(["pbpaste"], capture_output=True, text=True, timeout=4)
-         if rt.returncode == 0 and rt.stdout.strip():
-           return None, rt.stdout
-       except Exception:
-         pass
-   else:
-     for cmd in (
-       ["wl-paste", "--no-newline", "--type", "image/png"],
-       ["xclip", "-selection", "clipboard", "-t", "image/png", "-o"],
-     ):
-       if _shutil.which(cmd[0]):
-         try:
-           r = _sp.run(cmd, capture_output=True, timeout=4)
-           if r.returncode == 0 and r.stdout and r.stdout.startswith(b"\x89PNG\r\n\x1a\n"):
-             img_out.write_bytes(r.stdout)
-             return img_out, None
-         except Exception:
-           pass
-     for tcmd in (
-       ["wl-paste", "--no-newline"],
-       ["xclip", "-selection", "clipboard", "-o"],
-       ["xsel", "--clipboard", "--output"],
-     ):
-       if _shutil.which(tcmd[0]):
-         try:
-           rt = _sp.run(tcmd, capture_output=True, text=True, timeout=4)
-           if rt.returncode == 0 and rt.stdout.strip():
-             return None, rt.stdout
-         except Exception:
-           pass
-   return None, None
+  """
+  Attempt to capture an image screenshot from clipboard first; if none, capture text.
+  Returns (saved_png_path_or_None, clipboard_text_or_None).
+  """
+  import shutil as _shutil
+  import subprocess as _sp
+  tmp_dir.mkdir(parents=True, exist_ok=True)
+  img_out = tmp_dir / f"clipboard_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+  if os.name == "nt":
+    ps_img = (
+      "Add-Type -AssemblyName System.Windows.Forms; "
+      "$img = [System.Windows.Forms.Clipboard]::GetImage(); "
+      f"if ($img -ne $null) {{ $img.Save('{str(img_out).replace(chr(39), chr(39)*2)}', [System.Drawing.Imaging.ImageFormat]::Png); exit 0 }} else {{ exit 1 }}"
+    )
+    try:
+      r = _sp.run(["powershell", "-NoProfile", "-Sta", "-Command", ps_img], capture_output=True, timeout=6)
+      if r.returncode == 0 and img_out.exists() and img_out.stat().st_size > 32:
+        return img_out, None
+    except Exception:
+      pass
+    try:
+      rt = _sp.run(["powershell", "-NoProfile", "-Command", "Get-Clipboard -Raw"], capture_output=True, text=True, timeout=4)
+      if rt.returncode == 0 and rt.stdout.strip():
+        return None, rt.stdout
+    except Exception:
+      pass
+  elif sys.platform == "darwin":
+    osa = f'try\nset theFile to POSIX file "{img_out}"\nset fRef to open for access theFile with write permission\nset eof fRef to 0\nwrite (the clipboard as «class PNGf») to fRef\nclose access fRef\nreturn "OK"\non error\ntry\nclose access theFile\nend try\nreturn "NO"\nend try'
+    try:
+      r = _sp.run(["osascript", "-e", osa], capture_output=True, text=True, timeout=5)
+      if "OK" in (r.stdout or "") and img_out.exists() and img_out.stat().st_size > 32:
+        return img_out, None
+    except Exception:
+      pass
+    if _shutil.which("pbpaste"):
+      try:
+        rt = _sp.run(["pbpaste"], capture_output=True, text=True, timeout=4)
+        if rt.returncode == 0 and rt.stdout.strip():
+          return None, rt.stdout
+      except Exception:
+        pass
+  else:
+    for cmd in (
+      ["wl-paste", "--no-newline", "--type", "image/png"],
+      ["xclip", "-selection", "clipboard", "-t", "image/png", "-o"],
+    ):
+      if _shutil.which(cmd[0]):
+        try:
+          r = _sp.run(cmd, capture_output=True, timeout=4)
+          if r.returncode == 0 and r.stdout and r.stdout.startswith(b"\x89PNG\r\n\x1a\n"):
+            img_out.write_bytes(r.stdout)
+            return img_out, None
+        except Exception:
+          pass
+    for tcmd in (
+      ["wl-paste", "--no-newline"],
+      ["xclip", "-selection", "clipboard", "-o"],
+      ["xsel", "--clipboard", "--output"],
+    ):
+      if _shutil.which(tcmd[0]):
+        try:
+          rt = _sp.run(tcmd, capture_output=True, text=True, timeout=4)
+          if rt.returncode == 0 and rt.stdout.strip():
+            return None, rt.stdout
+        except Exception:
+          pass
+  return None, None
 
  class CommandRouter:
-   """Handles all /slash commands inside the interactive DocMind terminal."""
-   def __init__(self, agent: DocMindAgent) -> None:
-     self.agent = agent
-     self.ui = agent.ui
-     self.cfg_mgr = agent.config_mgr
-   def handle(self, raw_line: str) -> str:
-     """
-         Execute a slash command.
-         Returns: 'continue' (stay in REPL) or 'exit' (terminate session cleanly).
-         """
-     _dm_owner_gate()
-     _dm_digest_gate()
-     parts = raw_line.strip().split(maxsplit=1)
-     cmd = parts[0].replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
-     arg = parts[1].strip() if len(parts) > 1 else ""
-     try:
-       if cmd in ("/exit", "/quit", "/q", "/cikis", "/çıkış"):
-         self.ui.info(t("cmd_exit_bye"))
-         return "exit"
-       if cmd in ("/help", "/h", "/?", "/yardim", "/yardım"):
-         self.ui.print_panel(f"📖 {t('help_title')}", t("help_body"), style="bright_cyan")
-         return "continue"
-       if cmd == "/setup":
-         self.agent.wizard.run_full_setup()
-         self.agent.refresh_client()
-         return "continue"
-       if cmd == "/api":
-         self.agent.wizard.select_provider()
-         self.agent.wizard.prompt_api_key_and_verify()
-         self.agent.refresh_client()
-         return "continue"
-       if cmd == "/model":
-         if arg and not re.match(r"^[A-Za-z0-9._:/@+\-]{1,120}$", arg):
-           self.ui.warn(t("model_invalid"))
-           return "continue"
-         if arg:
-           self.cfg_mgr.config.model = arg
-           self.cfg_mgr.save()
-           self.agent.refresh_client()
-           self.ui.success(f"Model -> {arg}")
-         else:
-           chosen = self.agent.wizard.select_model()
-           self.agent.refresh_client()
-           self.ui.success(f"Model -> {chosen}")
-         return "continue"
-       if cmd == "/lang":
-         valid_codes = {c[0] for c in LANGUAGE_CHOICES}
-         if arg.lower() in valid_codes:
-           code = arg.lower()
-           self.cfg_mgr.config.language = code
-           i18n.set_lang(code)
-           self.cfg_mgr.save()
-           self.ui.success(t("cmd_lang_changed", lang=t("lang_name")))
-         else:
-           self.agent.wizard.select_language()
-         return "continue"
-       if cmd in ("/auto", "/yolo"):
-         self.agent.perm_mgr.set_mode("auto")
-         self.ui.success(t("cmd_mode_changed", mode=t("mode_auto_short")))
-         return "continue"
-       if cmd == "/smart":
-         self.agent.perm_mgr.set_mode("smart")
-         self.ui.success(t("cmd_mode_changed", mode=t("mode_smart_short")))
-         return "continue"
-       if cmd in ("/effort", "/zeka"):
-         self._handle_effort(arg)
-         return "continue"
-       if cmd in ("/token-save", "/tokensave", "/token_save", "/tasarruf"):
-         self._handle_token_save(arg)
-         return "continue"
-       if cmd == "/tokens":
-         self._handle_tokens(arg)
-         return "continue"
-       if cmd in ("/history", "/geçmiş", "/gecmis"):
-         self._handle_history(arg)
-         return "continue"
-       if cmd == "/delete":
-         self._handle_delete(arg)
-         return "continue"
-       if cmd in ("/price", "/fiyat"):
-         self._handle_price(arg)
-         return "continue"
-       if cmd in ("/context", "/baglam", "/bağlam"):
-         self._handle_context(arg)
-         return "continue"
-       if cmd in ("/os", "/sys", "/sistem"):
-         _, sys_txt = tool_system_info(self.agent.tools.cwd)
-         _os_t = {"tr": "💻 Sistem & Dağıtım Profili", "en": "💻 System & OS Profile", "az": "💻 Sistem & ƏS Profili", "de": "💻 System- & OS-Profil", "es": "💻 Perfil del Sistema", "fr": "💻 Profil Système", "it": "💻 Profilo Sistema", "pt": "💻 Perfil do Sistema", "nl": "💻 Systeemprofiel", "ru": "💻 Профиль системы", "ar": "💻 ملف النظام", "zh": "💻 系统与发行版信息", "ja": "💻 システム・OSプロファイル", "ko": "💻 시스템 및 OS 프로필"}.get(i18n.lang, "💻 System & OS Profile")
-         self.ui.print_panel(_os_t, sys_txt, style="bright_cyan")
-         return "continue"
-       if cmd in ("/undo", "/gerial"):
-         sub = arg.strip().lower()
-         if sub in ("list", "ls", "liste", "history"):
-           items = self.agent.undo_mgr.recent_paths(limit=20)
-           if items:
-             self.ui.print_panel(f"⏪ {t('undo_list_title')}", "\n".join(items), style="bright_cyan")
-           else:
-             self.ui.warn(t("undo_empty"))
-           return "continue"
-         steps = int(sub) if sub.isdigit() and int(sub) >= 1 else 1
-         steps = min(steps, 20)
-         any_done = False
-         for _ in range(steps):
-           restored = self.agent.undo_mgr.undo_last()
-           if restored:
-             self.ui.success(t("undo_success", path=str(restored)))
-             any_done = True
-           else:
-             if not any_done:
-               self.ui.warn(t("undo_empty"))
-             break
-         return "continue"
-       if cmd in ("/redo", "/yinele"):
-         reapplied = self.agent.undo_mgr.redo_last()
-         if reapplied:
-           self.ui.success(t("redo_success", path=str(reapplied)))
-         else:
-           self.ui.warn(t("redo_empty"))
-         return "continue"
-       if cmd == "/tree":
-         target = resolve_user_path(arg or ".", self.agent.tools.cwd)
-         if target.exists() and target.is_dir():
-           tree_txt = render_directory_tree(target, max_depth=3)
-           self.ui.print_panel(f"🌳 {target}", tree_txt, style="bright_green")
-         else:
-           self.ui.warn(f"Directory not found: {target}")
-         return "continue"
-       if cmd == "/cd":
-         if not arg:
-           self.ui.info(f"CWD: {self.agent.tools.cwd}")
-           return "continue"
-         try:
-           new_dir = resolve_user_path(arg, self.agent.tools.cwd)
-           if not new_dir.exists() or not new_dir.is_dir():
-             raise FileNotFoundError(str(new_dir))
-           os.chdir(new_dir)
-           self.agent.tools.set_cwd(new_dir)
-           self.ui.success(t("cmd_cd_ok", path=str(new_dir)))
-         except Exception as exc:
-           self.ui.warn(t("cmd_cd_err", err=str(exc)))
-         return "continue"
-       if cmd == "/save":
-         name = arg or datetime.now().strftime("session_%Y%m%d_%H%M%S")
-         if name in (".", "..") or "/" in name or "\\" in name:
-           self.ui.warn("Session name must be a simple filename, not a path.")
-           return "continue"
-         if not name.endswith(".json"):
-           name += ".json"
-         save_path = self.cfg_mgr.sessions_dir / name
-         self.agent.context.save_to_file(save_path)
-         self.ui.success(t("cmd_saved", path=str(save_path)))
-         return "continue"
-       if cmd == "/load":
-         self._handle_load(arg)
-         return "continue"
-       if cmd == "/doctor":
-         if arg.lower() in ("all", "tümü", "tumu"):
-           self._run_doctor_all()
-         elif arg and arg.lower() not in ("tools", "araç", "arac"):
-           self.ui.warn(t("doctor_usage"))
-         else:
-           self._run_doctor(test_tools=bool(arg))
-         return "continue"
-       if cmd in ("/clear", "/temizle"):
-         self.agent.context.clear()
-         self.agent.history.new_session()
-         self.ui.clear()
-         self.ui.print_banner()
-         self.ui.print_startup_authority_warning()
-         self.ui.success(t("cmd_cleared"))
-         return "continue"
-       if cmd in ("/search", "/web", "/arastir", "/araştır", "/verify", "/dogrula", "/doğrula"):
-         if not arg.strip():
-           self.ui.info(t("search_usage"))
-           return "continue"
-         q_str = arg.strip()
-         search_prompt = (
-           f"Use `web_search` right now to research and cross-verify the following topic/claim on the live internet "
-           f"across multiple reliable sources, then present a clear, accurate, verified answer with source URLs:\n\n{q_str}"
-         )
-         self.agent.run_turn(search_prompt)
-         return "continue"
-       if cmd in ("/image", "/img", "/vision", "/resim", "/gorsel", "/görsel"):
-         if not arg:
-           self.ui.info(t("img_usage"))
-           return "continue"
-         raw_a = arg.strip()
-         img_p = ""
-         prompt_rest = ""
-         if raw_a[0] in ("'", '"'):
-           q_ch = raw_a[0]
-           end_q = raw_a.find(q_ch, 1)
-           if end_q > 0:
-             img_p = raw_a[1:end_q]
-             prompt_rest = raw_a[end_q + 1 :].strip()
-           else:
-             img_p = raw_a[1:]
-         else:
-           sp_parts = raw_a.split(maxsplit=1)
-           img_p = sp_parts[0]
-           prompt_rest = sp_parts[1].strip() if len(sp_parts) > 1 else ""
-         ok_i, err_i, meta_i = load_image_attachment(img_p, self.agent.tools.cwd)
-         if not ok_i or not meta_i:
-           self.ui.warn(err_i)
-           return "continue"
-         eff_prompt = prompt_rest or "Inspect this image/screenshot carefully. Describe what you see, and if there is any error, bug, or code/system issue, diagnose the exact root cause and fix or explain how to solve it."
-         self.agent.run_turn(eff_prompt, explicit_images=[meta_i])
-         return "continue"
-       if cmd in ("/copy", "/kopyala"):
-         last_txt = ""
-         for m in reversed(self.agent.context.messages):
-           if m.get("role") == "assistant" and str(m.get("content") or "").strip():
-             last_txt = str(m["content"]).strip()
-             break
-         if not last_txt:
-           self.ui.warn(t("copy_empty"))
-           return "continue"
-         if arg.strip().lower() in ("code", "kod", "block"):
-           import re as _re_cp
-           blocks = _re_cp.findall(r"```(?:[^\n`]*)\n(.*?)```", last_txt, flags=_re_cp.DOTALL)
-           if not blocks:
-             self.ui.warn(t("copy_empty"))
-             return "continue"
-           payload_cp = "\n\n".join(b.strip("\r\n") for b in blocks)
-         else:
-           payload_cp = last_txt
-         if _copy_to_clipboard(payload_cp, is_tty=self.ui.is_tty):
-           self.ui.success(t("copy_ok", chars=len(payload_cp)))
-         else:
-           self.ui.print_panel("📋 Copy Preview", payload_cp, style="bright_cyan")
-         return "continue"
-       if cmd in ("/paste", "/yapistir", "/yapıştır"):
-         clip_dir = self.cfg_mgr.home_dir / "clipboard"
-         img_clip, txt_clip = _read_clipboard_image_or_text(clip_dir)
-         if img_clip is not None:
-           ok_c, err_c, meta_c = load_image_attachment(str(img_clip), self.agent.tools.cwd)
-           if not ok_c or not meta_c:
-             self.ui.warn(err_c)
-             return "continue"
-           self.ui.info(t("paste_img_ok", dims=f"{meta_c['width']}x{meta_c['height']}", size=meta_c["size_human"]))
-           p_prompt = arg.strip() or "Inspect this pasted clipboard screenshot carefully. Diagnose any visible error, bug, or UI issue and solve it."
-           self.agent.run_turn(p_prompt, explicit_images=[meta_c])
-           return "continue"
-         if txt_clip:
-           self.ui.info(t("paste_txt_ok", chars=len(txt_clip)))
-           combined = (arg.strip() + "\n\n```\n" + txt_clip.strip() + "\n```") if arg.strip() else txt_clip.strip()
-           self.agent.run_turn(combined)
-           return "continue"
-         self.ui.warn(t("paste_empty"))
-         return "continue"
-       if cmd in ("/diff", "/git"):
-         import subprocess as _sp_git
-         cwd_p = self.agent.tools.cwd
-         try:
-           chk = _sp_git.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=str(cwd_p), capture_output=True, text=True, timeout=5)
-           if chk.returncode != 0:
-             self.ui.warn(t("diff_not_git"))
-             return "continue"
-           diff_cmd = ["git", "diff", "HEAD"]
-           if arg.strip():
-             diff_cmd.extend(["--", arg.strip()])
-           gd = _sp_git.run(diff_cmd, cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=10)
-           st = _sp_git.run(["git", "status", "--short"], cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=5)
-           raw_diff = (gd.stdout or "").strip()
-           raw_stat = (st.stdout or "").strip()
-           if not raw_diff and not raw_stat:
-             self.ui.success(t("diff_clean"))
-             return "continue"
-           if raw_stat:
-             self.ui.print_panel(f"🌿 Git Status ({cwd_p.name})", raw_stat, style="bright_cyan")
-           if raw_diff:
-             pm_entries = []
-             cur_file = ""
-             for ln in raw_diff.splitlines():
-               if ln.startswith("+++ b/"):
-                 cur_file = ln[6:]
-                 pm_entries.append(("...", f"── {cur_file} ──"))
-               elif ln.startswith("--- ") or ln.startswith("diff --git") or ln.startswith("index ") or ln.startswith("@@"):
-                 continue
-               elif ln.startswith("+"):
-                 pm_entries.append(("+", ln[1:]))
-               elif ln.startswith("-"):
-                 pm_entries.append(("-", ln[1:]))
-             if pm_entries:
-               adds = sum(1 for s, _ in pm_entries if s == "+")
-               dels = sum(1 for s, _ in pm_entries if s == "-")
-               cols = max(56, min(108, self.ui.view._size()[1] - 2))
-               bar = "━" * max(20, cols - 2)
-               stat_badge = self.ui._paint(f"+{adds}", "1;32") + " / " + self.ui._paint(f"-{dels}", "1;31")
-               print()
-               print(self.ui._paint("┏" + bar + "┓", "1;36"))
-               print(self.ui._paint("┃ ", "1;36") + self.ui._paint("🌿 Git Diff ", "1;37") + f"({stat_badge})")
-               print(self.ui._paint("┠" + ("─" * max(20, cols - 2)) + "┨", "1;36"))
-               for s_kind, ln_txt in pm_entries[:120]:
-                 clean_t = ln_txt.replace("\t", "    ")[: max(40, cols - 6)]
-                 if s_kind == "+":
-                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"+ {clean_t}", "1;32"))
-                 elif s_kind == "-":
-                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"- {clean_t}", "1;31"))
-                 else:
-                   print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  {clean_t}", "1;33"))
-               if len(pm_entries) > 120:
-                 print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  ... ({len(pm_entries) - 120} more lines)", "2;90"))
-               print(self.ui._paint("┗" + bar + "┛", "1;36"), flush=True)
-         except Exception:
-           self.ui.warn(t("diff_not_git"))
-         return "continue"
-       if cmd in ("/export", "/md", "/aktar"):
-         msgs = [m for m in self.agent.context.messages if m.get("role") in ("user", "assistant")]
-         if not msgs:
-           self.ui.warn(t("export_empty"))
-           return "continue"
-         out_name = arg.strip() or datetime.now().strftime("DocMind_Export_%Y%m%d_%H%M%S.md")
-         if not out_name.lower().endswith(".md"):
-           out_name += ".md"
-         out_path = resolve_user_path(out_name, self.agent.tools.cwd)
-         md_lines = [
-           "# DocMind Session Export",
-           f"- **Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-           f"- **Provider / Model:** `{self.cfg_mgr.config.provider}` / `{self.cfg_mgr.config.model}`",
-           f"- **Working Directory:** `{self.agent.tools.cwd}`",
-           "",
-           "---",
-           "",
-         ]
-         for m in msgs:
-           role_lbl = "🧑 User" if m.get("role") == "user" else "🤖 DocMind"
-           content_txt = str(m.get("content") or "").strip()
-           tcs = m.get("tool_calls") or []
-           md_lines.append(f"## {role_lbl}")
-           if m.get("images"):
-             names = ", ".join(str(im.get("name", "image")) for im in m["images"] if isinstance(im, dict))
-             if names:
-               md_lines.append(f"_Attached Images: {names}_\n")
-           if content_txt:
-             md_lines.append(content_txt)
-           if tcs:
-             tc_names = ", ".join(f"`{tc.get('name', '')}`" for tc in tcs if isinstance(tc, dict))
-             md_lines.append(f"\n_Tools invoked: {tc_names}_")
-           md_lines.append("")
-         out_path.parent.mkdir(parents=True, exist_ok=True)
-         out_path.write_text("\n".join(md_lines).encode("utf-8", errors="replace").decode("utf-8"), encoding="utf-8")
-         self.ui.success(t("export_ok", path=str(out_path)))
-         return "continue"
-       if cmd in ("/reset", "/sifirla", "/sıfırla"):
-         return self._handle_reset()
-       import difflib as _difflib
-       matches = _difflib.get_close_matches(cmd, SLASH_COMMANDS, n=1, cutoff=0.55)
-       if matches:
-         self.ui.warn(t("cmd_did_you_mean", cmd=cmd, suggest=matches[0]))
-       else:
-         self.ui.warn(t("cmd_unknown", cmd=cmd))
-       return "continue"
-     except Exception as exc:
-       self.cfg_mgr.log_error(f"slash:{cmd}", repr(exc))
-       alert = classify_exception(exc)
-       self.ui.print_alert(alert)
-       self.ui.info(t("err_skipped_notice"))
-       return "continue"
-   def _handle_reset(self) -> str:
-     cfg_path = self.cfg_mgr.config_path
-     lang = i18n.lang
-     msgs = {
-       "tr": (
-         "⚠ FABRİKA AYARLARINA SIFIRLAMA (/reset)",
-         f"DİKKAT: Kayıtlı yapılandırma dosyanız ({cfg_path}) — API anahtarları, dil ve model ayarları dahil — kalıcı olarak silinecek ve ardından terminal kapatılacaktır.",
-         "Sıfırlamayı onaylıyor musunuz? [tamam / evet / iptal=Enter]: ",
-         "Sıfırlama iptal edildi; ayarlarınıza dokunulmadı.",
-         "Ayar dosyası (.json) silindi ve DocMind sıfırlandı. Terminal kapatılıyor...",
-       ),
-       "en": (
-         "⚠ FACTORY RESET (/reset)",
-         f"WARNING: Your saved configuration file ({cfg_path}) — including API keys, language, and model preferences — will be permanently deleted, and the terminal will close.",
-         "Confirm reset? [ok / yes / Enter=cancel]: ",
-         "Reset cancelled; your configuration was kept.",
-         "Configuration (.json) deleted and DocMind has been reset. Closing terminal...",
-       ),
-       "de": (
-         "⚠ ZURÜCKSETZEN (/reset)",
-         f"WARNUNG: Ihre Konfigurationsdatei ({cfg_path}) — inkl. API-Schlüssel, Sprache und Modell — wird dauerhaft gelöscht und das Terminal geschlossen.",
-         "Zurücksetzen bestätigen? [ok / ja / Enter=Abbruch]: ",
-         "Zurücksetzen abgebrochen.",
-         "Konfiguration (.json) gelöscht. Terminal wird geschlossen...",
-       ),
-       "es": (
-         "⚠ RESTABLECER AJUSTES (/reset)",
-         f"ADVERTENCIA: Su archivo de configuración ({cfg_path}) — incluidas claves API, idioma y modelo — se eliminará permanentemente y la terminal se cerrará.",
-         "¿Confirmar restablecimiento? [ok / si / Enter=cancelar]: ",
-         "Restablecimiento cancelado.",
-         "Configuración (.json) eliminada. Cerrando terminal...",
-       ),
-       "fr": (
-         "⚠ RÉINITIALISATION (/reset)",
-         f"ATTENTION : Votre fichier de configuration ({cfg_path}) — clés API, langue et modèle inclus — sera définitivement supprimé et le terminal se fermera.",
-         "Confirmer la réinitialisation ? [ok / oui / Entrée=annuler] : ",
-         "Réinitialisation annulée.",
-         "Configuration (.json) supprimée. Fermeture du terminal...",
-       ),
-       "ru": (
-         "⚠ СБРОС НАСТРОЕК (/reset)",
-         f"ВНИМАНИЕ: Файл конфигурации ({cfg_path}) — включая API-ключи, язык и модель — будет удалён, а терминал закроется.",
-         "Подтвердить сброс? [ok / да / Enter=отмена]: ",
-         "Сброс отменён.",
-         "Файл настроек (.json) удалён. Закрытие терминала...",
-       ),
-     }
-     title, body, prompt_txt, cancel_txt, done_txt = msgs.get(lang, msgs["en"])
-     self.ui.print_panel(title, body, style="bright_red")
-     try:
-       ans = self.ui.ask(prompt_txt).strip().strip("'\"").lower()
-     except (KeyboardInterrupt, EOFError):
-       print()
-       self.ui.info(cancel_txt)
-       return "continue"
-     accepted = {"tamam", "ok", "okay", "onayla", "sil", "evet", "e", "beli", "bəli", "b", "yes", "y", "ja", "j", "si", "sí", "sì", "sim", "s", "oui", "o", "да", "д", "نعم", "是", "はい", "예", "네"}
-     if ans not in accepted:
-       self.ui.info(cancel_txt)
-       return "continue"
-     for target in (cfg_path, cfg_path.with_suffix(".json.tmp")):
-       try:
-         if target.exists():
-           target.unlink()
-       except OSError:
-         pass
-     self.ui.success(done_txt)
-     sys.stdout.flush()
-     return "reset_exit"
-   def _handle_history(self, arg: str = "") -> None:
-     try:
-       sessions = self.agent.history.list_sessions()
-     except Exception as exc:
-       self.cfg_mgr.log_error("history.list", repr(exc))
-       self.ui.warn(t("history_read_error")); return
-     if not sessions:
-       self.ui.info(t("history_empty")); return
-     if not arg:
-       lines = []
-       for n, item in enumerate(sessions, 1):
-         try:
-           stamp = datetime.fromisoformat(item["updated_at"]).astimezone().strftime("%Y-%m-%d %H:%M")
-         except (ValueError, TypeError, OverflowError):
-           stamp = item["updated_at"].replace("T", " ")[:16]
-         lines.append(f"  [{n}] {item['title']}  •  {stamp}")
-       lines.append("\n  " + t("history_delete_hint"))
-       self.ui.print_panel(t("history_title"), "\n".join(lines), style="cyan")
-       try:
-         arg = self.ui.ask(t("history_choose")).strip()
-       except (EOFError, KeyboardInterrupt):
-         print(); self.ui.info(t("history_cancel")); return
-     if not arg:
-       self.ui.info(t("history_cancel")); return
-     parts = arg.split(maxsplit=1)
-     if parts[0].lower() == "/delete":
-       self._handle_delete(parts[1] if len(parts) > 1 else "", sessions)
-       return
-     if not arg.isdigit() or not (1 <= int(arg) <= len(sessions)):
-       self.ui.warn(t("history_invalid")); return
-     selected = sessions[int(arg) - 1]
-     try:
-       messages = self.agent.history.load(selected["id"])
-     except Exception as exc:
-       self.cfg_mgr.log_error("history.load", repr(exc))
-       self.ui.warn(t("history_read_error")); return
-     context = self.agent.context
-     context.messages = messages
-     context.last_input_tokens = 0
-     context.last_context_estimate = 0
-     self.agent._heal_dangling_tool_calls()
-     self.ui.success(t("history_loaded", title=selected["title"]))
-     for message in self.agent.history.records:
-       role = message.get("role")
-       text = str(message.get("content") or "")
-       if text and role in ("user", "assistant"):
-         label = t("history_you") if role == "user" else "DocMind"
-         self.ui.print_history_message(label, text, bool(message.get("_history_cancelled") or message.get("_history_incomplete")))
-     print()
-   def _handle_delete(self, arg: str = "", sessions=None) -> None:
-     if sessions is None:
-       try:
-         sessions = self.agent.history.list_sessions()
-       except Exception as exc:
-         self.cfg_mgr.log_error("history.delete_list", repr(exc))
-         self.ui.warn(t("history_read_error")); return
-       if not sessions:
-         self.ui.info(t("history_empty")); return
-       lines = [f"  [{n}] {item['title']}" for n, item in enumerate(sessions, 1)]
-       lines.append("\n  " + t("history_delete_warning"))
-       self.ui.print_panel(t("history_delete_title"), "\n".join(lines), style="yellow")
-     else:
-       self.ui.warn(t("history_delete_warning"))
-     if not arg:
-       try:
-         arg = self.ui.ask(t("history_delete_choose")).strip()
-       except (EOFError, KeyboardInterrupt):
-         print(); self.ui.info(t("history_cancel")); return
-     if not arg:
-       self.ui.info(t("history_cancel")); return
-     if not arg.isdigit() or not (1 <= int(arg) <= len(sessions)):
-       self.ui.warn(t("history_invalid")); return
-     selected = sessions[int(arg) - 1]
-     try:
-       active = self.agent.history.delete(selected["id"])
-     except Exception as exc:
-       self.cfg_mgr.log_error("history.delete", repr(exc))
-       self.ui.warn(t("history_delete_error")); return
-     if active:
-       self.agent.context.clear()
-     self.ui.success(t("history_delete_ok", title=selected["title"]))
-     if active:
-       self.ui.info(t("history_delete_active"))
-   def _handle_price(self, arg: str = "") -> None:
-     cfg = self.cfg_mgr.config
-     key = model_key(cfg.provider, cfg.model)
-     if not isinstance(cfg.price_overrides, dict):cfg.price_overrides = {}
-     if not arg:
-       rates = prices_for(cfg, cfg.provider, cfg.model)
-       self.ui.info(t("price_usage"))
-       if rates is None:self.ui.info(t("price_unknown"))
-       else:self.ui.info(f"{cfg.provider} / {cfg.model}: ${rates[0]:g} / ${rates[1]:g} per 1M")
-       return
-     if arg.strip().lower() in ("auto", "reset", "sıfırla", "sifirla"):
-       cfg.price_overrides.pop(key, None)
-       if self.cfg_mgr.save():self.ui.success(t("price_reset"))
-       else:self.ui.warn(t("settings_save_failed"))
-       return
-     parts = arg.replace(",", ".").split()
-     try:
-       if len(parts)!=2:raise ValueError()
-       inp,out = float(parts[0]),float(parts[1])
-       if not (math.isfinite(inp) and math.isfinite(out) and 0 <= inp < 1e9 and 0 <= out < 1e9):raise ValueError()
-     except ValueError:
-       self.ui.warn(t("price_invalid"));return
-     cfg.price_overrides[key] = [inp,out]
-     if self.cfg_mgr.save():self.ui.success(t("price_set", inp=f"{inp:g}", out=f"{out:g}"))
-     else:self.ui.warn(t("settings_save_failed"))
-   def _handle_context(self, arg: str = "") -> None:
-     cfg = self.cfg_mgr.config
-     key = model_key(cfg.provider, cfg.model)
-     if not isinstance(cfg.context_overrides, dict):cfg.context_overrides = {}
-     if not arg:
-       limit,known=context_limit_for(cfg)
-       self.ui.info(t("context_usage"));self.ui.info(f"{cfg.provider} / {cfg.model}: ~{limit:,}" + ("" if known else " ?"));return
-     if arg.strip().lower() in ("auto", "reset", "sıfırla", "sifirla"):
-       cfg.context_overrides.pop(key,None)
-       if self.cfg_mgr.save():self.ui.success(t("context_reset"))
-       else:self.ui.warn(t("settings_save_failed"))
-       return
-     cleaned=arg.strip().replace(",","").replace(".","")
-     if not cleaned.isdigit() or not (1024<=int(cleaned)<=100_000_000):
-       self.ui.warn(t("context_invalid"));return
-     cfg.context_overrides[key]=int(cleaned)
-     if self.cfg_mgr.save():self.ui.success(t("context_set", limit=f"{int(cleaned):,}"))
-     else:self.ui.warn(t("settings_save_failed"))
-   _AGGRESSIVE_YES = {"y", "yes", "e", "evet", "onay", "b", "beli", "bəli", "j", "ja", "o", "oui",
-             "s", "si", "sí", "sì", "sim", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
-   def _confirm_aggressive(self) -> bool:
-     """First-activation warning for the Aggressive reasoning mode."""
-     self.ui.print_panel(glyph("⚠ ", "(!) ") + t("aggressive_warn_title"), t("aggressive_warn_body"), style="bright_red")
-     if getattr(self.agent, "non_interactive", False):
-       return False
-     try:
-       raw = self.ui.ask(t("aggressive_confirm_prompt")).strip().lower().replace("\u0307", "")
-     except (KeyboardInterrupt, EOFError):
-       print()
-       return False
-     return raw in self._AGGRESSIVE_YES
-   def _show_effort_state(self) -> None:
-     cfg = self.cfg_mgr.config
-     level = cfg.reasoning_effort
-     self.ui.info(t("effort_active", level=level))
-     supported = bool(reasoning_control_for(cfg.provider, cfg.model))
-     requested = getattr(self.agent.client, "requested_reasoning_effort", None)
-     in_fallback = supported and level != "default" and callable(requested) and not requested()
-     if in_fallback:
-       self.ui.warn(t("effort_fallback_active"))
-     elif level in ("max", "aggressive") and reasoning_effort_for(cfg):
-       self.ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
-     if level == "default" or not supported:
-       self.ui.info(t("effort_uncontrolled"))
-     if level == "aggressive":
-       self.ui.info(t("effort_aggressive_note"))
-     state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
-     self.ui.info(t("token_save_state", state=state))
-   def _render_effort_menu(self) -> None:
-     """Print the reasoning levels as a real table: aligned columns, wrapped notes."""
-     import textwrap
-     cfg = self.cfg_mgr.config
-     current = str(cfg.reasoning_effort or "default")
-     save_label = t("effort_menu_col_save")
-     rows = []
-     for raw in str(t("effort_menu_table")).split("\n"):
-       parts = [p.strip() for p in raw.split("|")]
-       if len(parts) >= 6:
-         rows.append(parts[:6])
-     if not rows:
-       self.ui.warn(t("effort_usage"))
-       return
-     cols = 80
-     view = getattr(self.ui, "view", None)
-     try:
-       if view is not None and hasattr(view, "_size"):
-         cols = int(view._size()[1])
-       elif hasattr(self.ui, "_size"):
-         cols = int(self.ui._size()[1])
-     except Exception:
-       cols = 80
-     num_w = max(len(t("effort_menu_col_no")), max(len(r[0]) for r in rows))
-     name_w = min(18, max(len(t("effort_menu_col_name")), max(len(r[1]) for r in rows)))
-     token_w = min(16, max(3, max(len(r[2]) for r in rows)))
-     save_w = min(20, max(len(save_label), max(len(r[4]) for r in rows)))
-     api_texts = ["-> " + r[3] for r in rows]
-     api_w = min(24, max(len(a) for a in api_texts)) + 2
-     narrow = cols < (num_w + name_w + token_w + save_w + api_w + 40)
-     side = 5 + api_w
-     desc_w = max(34, cols - side - 6)
-     header = (
-       t("effort_menu_col_no").rjust(num_w) + "  " + t("effort_menu_col_name").ljust(name_w)
-       + "  " + t("effort_menu_col_api").ljust(token_w) + "  " + save_label.ljust(save_w)
-     )
-     lines = [header.rstrip(), "-" * min(len(header), max(24, cols - 8))]
-     for num, label, token, sent, save, desc in rows:
-       is_current = current in (token.lower(), label.lower())
-       mark = glyph("◀", "<") if is_current else ""
-       head = (
-         num.rjust(num_w) + "  " + label.ljust(name_w) + "  " + token.ljust(token_w)
-         + "  " + save.ljust(save_w)
-       )
-       if mark:
-         head = head + "  " + mark
-       lines.append(head.rstrip())
-       api_note = "-> " + sent
-       if narrow:
-         wrapped = textwrap.wrap(desc, width=max(34, cols - 10), break_on_hyphens=False, break_long_words=False) or [""]
-         lines.append("     " + api_note)
-         for chunk in wrapped:
-           lines.append("     " + chunk)
-       else:
-         wrapped = textwrap.wrap(desc, width=desc_w, break_on_hyphens=False, break_long_words=False) or [""]
-         lines.append(("     " + api_note).ljust(side) + wrapped[0])
-         for chunk in wrapped[1:]:
-           lines.append(" " * side + chunk)
-       lines.append("")
-     self.ui.print_panel(
-       glyph("🎚️ ", "") + t("effort_menu_title"), "\n".join(lines).rstrip(), style="bright_cyan", center=True
-     )
-     state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
-     self.ui.info(t("effort_menu_current", level=current, state=state))
-     self.ui.info(t("effort_menu_hint"))
-     self.ui.info(t("effort_menu_legend"))
-     if current == "aggressive":
-       self.ui.info(t("effort_aggressive_note"))
-   def _handle_effort(self, arg: str) -> None:
-     cfg = self.cfg_mgr.config
-     aliases = {
-       "aggressive": "aggressive", "agresif": "aggressive", "saldırgan": "aggressive", "saldirgan": "aggressive",
-       "max": "max", "maximum": "max", "maksimum": "max",
-       "high": "high", "yüksek": "high", "yuksek": "high",
-       "hard": "hard", "zor": "hard", "sert": "hard",
-       "medium": "medium", "orta": "medium",
-       "low": "low", "düşük": "low", "dusuk": "low",
-       "default": "default", "auto": "default", "varsayılan": "default", "varsayilan": "default",
-     }
-     if not arg.strip():
-       self._render_effort_menu()
-       self._prompt_effort_selection()
-       return
-     if arg.strip().lower() in ("status", "durum", "state"):
-       self._show_effort_state()
-       return
-     if arg:
-       value = aliases.get(arg.strip().lower().replace("\u0307", ""))
-       if not value:
-         self.ui.warn(t("effort_usage"))
-         self._render_effort_menu()
-         return
-       previous = cfg.reasoning_effort
-       if value == "aggressive" and previous != "aggressive":
-         if not self._confirm_aggressive():
-           self.ui.warn(t("aggressive_cancelled", level=previous))
-           self.ui.refresh_footer() if hasattr(self.ui, "refresh_footer") else None
-           return
-       cfg.reasoning_effort = value
-       if value == "aggressive":
-         # Aggressive always means maximum reasoning and no token saving.
-         cfg.token_save = False
-         saved = self.cfg_mgr.save()
-         self.agent.refresh_client()
-         self.ui.success(glyph("🔴 ", "") + t("aggressive_enabled"))
-         if not saved:
-           self.ui.warn(t("settings_save_failed"))
-       else:
-         if not token_save_allowed(value):
-           cfg.token_save = False
-         saved = self.cfg_mgr.save()
-         self.agent.refresh_client()
-         if saved:
-           self.ui.success(t("effort_saved", level=value))
-         else:
-           self.ui.warn(t("effort_not_saved", level=value))
-         if previous == "aggressive":
-           self.ui.info(t("aggressive_left", level=value))
-           if not token_save_allowed(value):
-             self.ui.info(t("token_save_blocked", level=value))
-     self._show_effort_state()
-   def _prompt_effort_selection(self) -> None:
-     """After printing the menu, accept the printed number so nobody has to memorise codes."""
-     if getattr(self.agent, "non_interactive", False) or not bool(getattr(self.ui, "is_tty", False)):
-       return
-     try:
-       raw = self.ui.ask(t("effort_menu_prompt")).strip().replace("\u0307", "")
-     except (KeyboardInterrupt, EOFError):
-       print()
-       return
-     low = raw.lower()
-     if not low or low in ("q", "iptal", "cancel", "exit", "hayir", "hayır", "n", "no", "0"):
-       self.ui.info(t("effort_menu_kept", level=self.cfg_mgr.config.reasoning_effort))
-       return
-     numbers = {"1": "aggressive", "2": "max", "3": "high", "4": "hard",
-                "5": "medium", "6": "low", "7": "default"}
-     target = numbers.get(low, raw)
-     self._handle_effort(target)
-   def _handle_token_save(self, arg: str) -> None:
-     cfg = self.cfg_mgr.config
-     level = cfg.reasoning_effort
-     cmd = (arg or "").strip().lower().replace("\u0307", "")
-     if cmd in ("", "status", "durum", "state", "?"):
-       state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
-       self.ui.info(t("token_save_state", state=state))
-       if not token_save_allowed(level):
-         self.ui.warn(t("token_save_blocked", level=level))
-       else:
-         self.ui.info(t("token_save_note"))
-       return
-     want_on = cmd in ("on", "aç", "ac", "acik", "açık", "aktif", "enable", "true", "1", "evet", "yes")
-     want_off = cmd in ("off", "kapat", "kapali", "kapalı", "pasif", "disable", "false", "0", "hayir", "hayır", "no")
-     if not (want_on or want_off):
-       self.ui.warn(t("token_save_usage"))
-       return
-     if want_on:
-       if not token_save_allowed(level):
-         self.ui.warn(t("token_save_blocked", level=level))
-         return
-       cfg.token_save = True
-       if self.cfg_mgr.save():
-         self.ui.success(t("token_save_on"))
-       else:
-         self.ui.warn(t("settings_save_failed"))
-       self.ui.info(t("token_save_note"))
-     else:
-       cfg.token_save = False
-       if self.cfg_mgr.save():
-         self.ui.success(t("token_save_off"))
-       else:
-         self.ui.warn(t("settings_save_failed"))
-     self.ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
-   def _handle_tokens(self, arg: str) -> None:
-     cfg = self.cfg_mgr.config
-     ctx = self.agent.context
-     if arg:
-       cleaned = arg.replace("limit", "").strip()
-       if cleaned.isdigit():
-         cfg.token_warning_limit = int(cleaned)
-         ctx.budget_warned = False
-         self.cfg_mgr.save()
-         self.ui.success(f"Token Warning Limit -> {cfg.token_warning_limit:,}")
-     spec = get_provider_spec(cfg.provider)
-     est_ctx = ctx.current_context_estimate()
-     context_limit, known_limit = context_limit_for(cfg)
-     pct = (est_ctx / max(1, context_limit)) * 100.0
-     limit_str = f"{cfg.token_warning_limit:,}" if cfg.token_warning_limit > 0 else "Unlimited (Auto)"
-     stats = self.agent.usage.summary(cfg)
-     if stats['missing_cost']:
-       incomplete = t("usage_incomplete_detail", count=stats['missing_cost'],
-              interrupted=self.agent.usage.interrupted_attempts)
-     elif stats['missing_tokens']:
-       incomplete = t("usage_tokens_missing_detail", count=stats['missing_tokens'])
-     else:
-       incomplete = t("usage_complete_detail")
-     report = (
-       f"  {t('stat_0')}: {spec.name} ({cfg.model})\n"
-       f"  {t('stat_1')}: {ctx.api_calls}\n"
-       f"  {t('stat_2')}: {ctx.total_input_tokens:,}\n"
-       f"  {t('stat_3')}: {ctx.total_output_tokens:,}\n"
-       f"  {t('stat_4')}: {ctx.total_tokens:,}\n"
-       f"  {t('stat_5')}: ~{est_ctx:,} / {context_limit:,}{'' if known_limit else '?'} ({pct:.1f}%)\n"
-       f"  {t('stat_6')}: {self.agent.status_text()}\n"
-       f"  {t('stat_8')}: {limit_str}\n"
-       f"  {t('stat_9')}: {len(ctx.messages)}\n\n"
-       f"  {incomplete}\n"
-       f"  {t('stat_7')}"
-     )
-     self.ui.print_panel(f"🪙 {t('tokens_report_title')}", report, style="bright_cyan")
-   def _handle_load(self, arg: str) -> None:
-     sessions = sorted(self.cfg_mgr.sessions_dir.glob("*.json"))
-     if not arg:
-       if not sessions:
-         self.ui.info("No saved sessions found in ~/.docmind-single/sessions/")
-         return
-       listing = "\n".join(f"  - {p.name}" for p in sessions[-15:])
-       self.ui.print_panel("💾 Saved Sessions (/load <name>)", listing, style="cyan")
-       return
-     fname = arg if arg.endswith(".json") else f"{arg}.json"
-     candidate = Path(arg) if Path(arg).exists() else (self.cfg_mgr.sessions_dir / fname)
-     if not candidate.exists():
-       self.ui.warn(f"Session file not found: {candidate}")
-       return
-     ctx = self.agent.context
-     session = (ctx.total_input_tokens, ctx.total_output_tokens, ctx.api_calls, ctx.budget_warned)
-     count = ctx.load_from_file(candidate)
-     ctx.total_input_tokens, ctx.total_output_tokens, ctx.api_calls, ctx.budget_warned = session
-     ctx.last_input_tokens = 0
-     ctx.last_context_estimate = 0
-     self.agent.history.new_session(seed=ctx.messages)
-     self.ui.success(t("cmd_loaded", count=count, path=str(candidate)))
-   def _run_doctor_all(self) -> bool:
-     """Explicit, consented checks for configured providers; never mix credentials."""
-     cfg = self.cfg_mgr.config
-     targets = []
-     skipped = []
-     for spec in PROVIDERS:
-       if spec.id == cfg.provider:
-         key = cfg.get_api_key(spec.id)
-       else:
-         key = clean_api_key(cfg.api_keys.get(spec.id, ""))
-         if not key:
-           key = next((clean_api_key(os.environ.get(var, "")) for var in spec.env_vars
-                 if clean_api_key(os.environ.get(var, ""))), "")
-       if spec.id == "custom" and spec.id != cfg.provider and (not key or spec.id not in cfg.base_urls):
-         skipped.append(spec.name)
-         continue
-       if not key and not (spec.key_optional and spec.id == cfg.provider):
-         skipped.append(spec.name)
-         continue
-       model = cfg.model if spec.id == cfg.provider else spec.models[0]
-       targets.append((spec, model, key))
-     if not targets:
-       self.ui.info(t("doctor_all_none"))
-       return False
-     def safe_origin(provider_id):
-       try:
-         url = urlsplit(cfg.get_base_url(provider_id))
-         host = url.hostname or "invalid"
-         if ":" in host:
-           host = "[" + host + "]"
-         port = (":" + str(url.port)) if url.port else ""
-         return url.scheme + "://" + host + port
-       except (TypeError, ValueError):
-         return "(invalid URL)"
-     plan = "\n".join("  - " + spec.name + " / " + model + " → " + safe_origin(spec.id)
-             for spec, model, _ in targets)
-     self.ui.print_panel(t("doctor_all_title"), t("doctor_all_intro") + "\n" + plan,
-               style="yellow")
-     try:
-       confirmed = self.ui.ask(t("doctor_all_confirm")).strip().lower()
-     except (EOFError, KeyboardInterrupt):
-       self.ui.info(t("doctor_all_cancelled"))
-       return False
-     if confirmed not in ("e", "evet", "y", "yes", "j", "ja", "s", "si", "sí", "o", "oui", "д", "да"):
-       self.ui.info(t("doctor_all_cancelled"))
-       return False
-     lines = []
-     all_ok = True
-     for spec, model, key in targets:
-       probe_cfg = copy.deepcopy(cfg)
-       probe_cfg.provider, probe_cfg.model = spec.id, model
-       probe_cfg.api_keys = {spec.id: key} if key else {}
-       def notice(wording, **values):
-         self.agent.usage.mark_interrupted()
-         self.ui.warn(t(wording, **values))
-       client = ProviderClient(probe_cfg, on_effort_fallback=lambda: notice("effort_fallback"))
-       client.on_probe_retry = lambda: notice("probe_retry")
-       client.on_probe_interrupted = self.agent.usage.mark_interrupted
-       client.on_compat_fallback = lambda: notice("compat_fallback")
-       client.on_budget_fallback = lambda limit: notice("budget_fallback", limit=limit)
-       client.on_connection_retry = lambda attempt, delay: notice(
-         "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
-       with self.ui.spinner(t("doctor_all_checking", provider=spec.name)):
-         ok, err = client.verify_connection(timeout=30.0)
-       response = client.last_verification_response
-       if response is not None:
-         self.agent.record_verification_usage(response, spec.id, model)
-       elif not ok:
-         self.agent.usage.mark_interrupted()
-       if ok:
-         lines.append("✔ " + spec.name + " / " + model + " — " + t("doctor_all_ok"))
-       else:
-         all_ok = False
-         alert = classify_exception(err, spec.name, model) if err else None
-         lines.append("⚠ " + spec.name + " / " + model + " — " +
-               (alert.title if alert else t("doctor_all_failed")))
-         if alert:
-           self.ui.print_alert(alert)
-     if skipped:
-       lines.append(t("doctor_all_skipped", names=", ".join(skipped)))
-     lines.append(t("doctor_all_tool_note"))
-     self.ui.print_panel(t("doctor_all_title"), "\n".join(lines), style="bright_green" if all_ok else "yellow")
-     return all_ok
-   def _run_doctor(self, test_tools: bool = False) -> bool:
-     cfg = self.cfg_mgr.config
-     spec = get_provider_spec(cfg.provider)
-     has_key = cfg.has_valid_credentials()
-     checks = [
-       f"✔ Python Runtime      : {sys.version.split()[0]} ({platform.system()} {platform.machine()})",
-       f"✔ Rich TUI Engine     : {'Installed (Enhanced UI)' if HAS_RICH else 'Fallback ANSI Active'}",
-       f"✔ PromptToolkit       : {'Installed (History + Autocomplete)' if HAS_PROMPT_TOOLKIT else 'Standard Input Active'}",
-       f"✔ HTTP Transport      : {'httpx' if HAS_HTTPX else 'urllib (stdlib)'}",
-       f"✔ Config Path         : {self.cfg_mgr.config_path} ({'Exists' if self.cfg_mgr.config_path.exists() else 'New'})",
-       f"✔ Working Directory   : {self.agent.tools.cwd} ({'Writable' if os.access(self.agent.tools.cwd, os.W_OK) else 'Read-Only'})",
-       f"✔ Active Language     : {cfg.language.upper()} ({t('lang_name')})",
-       f"✔ Active Provider     : {spec.name} | Model: {cfg.model}",
-       f"{'✔' if has_key else '⚠'} API Key Configured  : {'Yes' if has_key else 'Missing (/api to set)'}",
-     ]
-     if has_key:
-       with self.ui.spinner(t("wiz_testing_api")):
-         ok, err = self.agent.client.verify_connection(timeout=30.0)
-       if self.agent.client.last_verification_response is not None:
-         self.agent.record_verification_usage(self.agent.client.last_verification_response)
-       elif not ok:
-         self.agent.usage.mark_interrupted()
-       if ok:
-         checks.append(t("doctor_connection_ok"))
-       else:
-         checks.append("⚠ Live API Connection : FAILED (See warning box below)")
-         self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
-         if err:
-           self.ui.print_alert(classify_exception(err, spec.name, cfg.model))
-         return False
-     else:
-       checks.append("⚠ Live API Connection : NOT TESTED (configure /api first)")
-       self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
-       return False
-     if test_tools:
-       self.ui.info(t("doctor_tools_start"))
-       with self.ui.spinner(t("wiz_testing_api")):
-         tool_ok, tool_err = self.agent.client.verify_tool_connection(self.agent.tools.get_schemas(), timeout=45.0)
-       if self.agent.client.last_tool_test_response is not None:
-         self.agent.record_verification_usage(self.agent.client.last_tool_test_response)
-       elif not tool_ok:
-         self.agent.usage.mark_interrupted()
-       if tool_ok:
-         mode = t("doctor_tool_prompt_mode") if self.agent.client._prompt_tool_fallback else t("doctor_tool_native_mode")
-         checks.append(t("doctor_tools_ok", mode=mode))
-       else:
-         checks.append(t("doctor_tools_inconclusive"))
-         self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
-         if tool_err:
-           self.ui.print_alert(classify_exception(tool_err, spec.name, cfg.model))
-         return False
-     else:
-       checks.append("ℹ " + t("doctor_tools_skipped"))
-     self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="bright_green")
-     return True
+  """Handles all /slash commands inside the interactive DocMind terminal."""
+  def __init__(self, agent: DocMindAgent) -> None:
+    self.agent = agent
+    self.ui = agent.ui
+    self.cfg_mgr = agent.config_mgr
+  def handle(self, raw_line: str) -> str:
+    """
+        Execute a slash command.
+        Returns: 'continue' (stay in REPL) or 'exit' (terminate session cleanly).
+        """
+    _dm_owner_gate()
+    _dm_digest_gate()
+    parts = raw_line.strip().split(maxsplit=1)
+    cmd = parts[0].replace("İ", "i").replace("I", "ı").lower().replace("\u0307", "")
+    arg = parts[1].strip() if len(parts) > 1 else ""
+    try:
+      if cmd in ("/exit", "/quit", "/q", "/cikis", "/çıkış"):
+        self.ui.info(t("cmd_exit_bye"))
+        return "exit"
+      if cmd in ("/help", "/h", "/?", "/yardim", "/yardım"):
+        self.ui.print_panel(f"📖 {t('help_title')}", t("help_body"), style="bright_cyan")
+        return "continue"
+      if cmd == "/setup":
+        self.agent.wizard.run_full_setup()
+        self.agent.refresh_client()
+        return "continue"
+      if cmd == "/api":
+        self.agent.wizard.select_provider()
+        self.agent.wizard.prompt_api_key_and_verify()
+        self.agent.refresh_client()
+        return "continue"
+      if cmd == "/model":
+        if arg and not re.match(r"^[A-Za-z0-9._:/@+\-]{1,120}$", arg):
+          self.ui.warn(t("model_invalid"))
+          return "continue"
+        if arg:
+          self.cfg_mgr.config.model = arg
+          self.cfg_mgr.save()
+          self.agent.refresh_client()
+          self.ui.success(f"Model -> {arg}")
+        else:
+          chosen = self.agent.wizard.select_model()
+          self.agent.refresh_client()
+          self.ui.success(f"Model -> {chosen}")
+        return "continue"
+      if cmd == "/lang":
+        valid_codes = {c[0] for c in LANGUAGE_CHOICES}
+        if arg.lower() in valid_codes:
+          code = arg.lower()
+          self.cfg_mgr.config.language = code
+          i18n.set_lang(code)
+          self.cfg_mgr.save()
+          self.ui.success(t("cmd_lang_changed", lang=t("lang_name")))
+        else:
+          self.agent.wizard.select_language()
+        return "continue"
+      if cmd in ("/auto", "/yolo"):
+        self.agent.perm_mgr.set_mode("auto")
+        self.ui.success(t("cmd_mode_changed", mode=t("mode_auto_short")))
+        return "continue"
+      if cmd == "/smart":
+        self.agent.perm_mgr.set_mode("smart")
+        self.ui.success(t("cmd_mode_changed", mode=t("mode_smart_short")))
+        return "continue"
+      if cmd in ("/effort", "/zeka"):
+        self._handle_effort(arg)
+        return "continue"
+      if cmd in ("/token-save", "/tokensave", "/token_save", "/tasarruf"):
+        self._handle_token_save(arg)
+        return "continue"
+      if cmd == "/tokens":
+        self._handle_tokens(arg)
+        return "continue"
+      if cmd in ("/history", "/geçmiş", "/gecmis"):
+        self._handle_history(arg)
+        return "continue"
+      if cmd == "/delete":
+        self._handle_delete(arg)
+        return "continue"
+      if cmd in ("/price", "/fiyat"):
+        self._handle_price(arg)
+        return "continue"
+      if cmd in ("/context", "/baglam", "/bağlam"):
+        self._handle_context(arg)
+        return "continue"
+      if cmd in ("/os", "/sys", "/sistem"):
+        _, sys_txt = tool_system_info(self.agent.tools.cwd)
+        _os_t = {"tr": "💻 Sistem & Dağıtım Profili", "en": "💻 System & OS Profile", "az": "💻 Sistem & ƏS Profili", "de": "💻 System- & OS-Profil", "es": "💻 Perfil del Sistema", "fr": "💻 Profil Système", "it": "💻 Profilo Sistema", "pt": "💻 Perfil do Sistema", "nl": "💻 Systeemprofiel", "ru": "💻 Профиль системы", "ar": "💻 ملف النظام", "zh": "💻 系统与发行版信息", "ja": "💻 システム・OSプロファイル", "ko": "💻 시스템 및 OS 프로필"}.get(i18n.lang, "💻 System & OS Profile")
+        self.ui.print_panel(_os_t, sys_txt, style="bright_cyan")
+        return "continue"
+      if cmd in ("/undo", "/gerial"):
+        sub = arg.strip().lower()
+        if sub in ("list", "ls", "liste", "history"):
+          items = self.agent.undo_mgr.recent_paths(limit=20)
+          if items:
+            self.ui.print_panel(f"⏪ {t('undo_list_title')}", "\n".join(items), style="bright_cyan")
+          else:
+            self.ui.warn(t("undo_empty"))
+          return "continue"
+        steps = int(sub) if sub.isdigit() and int(sub) >= 1 else 1
+        steps = min(steps, 20)
+        any_done = False
+        for _ in range(steps):
+          restored = self.agent.undo_mgr.undo_last()
+          if restored:
+            self.ui.success(t("undo_success", path=str(restored)))
+            any_done = True
+          else:
+            if not any_done:
+              self.ui.warn(t("undo_empty"))
+            break
+        return "continue"
+      if cmd in ("/redo", "/yinele"):
+        reapplied = self.agent.undo_mgr.redo_last()
+        if reapplied:
+          self.ui.success(t("redo_success", path=str(reapplied)))
+        else:
+          self.ui.warn(t("redo_empty"))
+        return "continue"
+      if cmd == "/tree":
+        target = resolve_user_path(arg or ".", self.agent.tools.cwd)
+        if target.exists() and target.is_dir():
+          tree_txt = render_directory_tree(target, max_depth=3)
+          self.ui.print_panel(f"🌳 {target}", tree_txt, style="bright_green")
+        else:
+          self.ui.warn(f"Directory not found: {target}")
+        return "continue"
+      if cmd == "/cd":
+        if not arg:
+          self.ui.info(f"CWD: {self.agent.tools.cwd}")
+          return "continue"
+        try:
+          new_dir = resolve_user_path(arg, self.agent.tools.cwd)
+          if not new_dir.exists() or not new_dir.is_dir():
+            raise FileNotFoundError(str(new_dir))
+          os.chdir(new_dir)
+          self.agent.tools.set_cwd(new_dir)
+          self.ui.success(t("cmd_cd_ok", path=str(new_dir)))
+        except Exception as exc:
+          self.ui.warn(t("cmd_cd_err", err=str(exc)))
+        return "continue"
+      if cmd == "/save":
+        name = arg or datetime.now().strftime("session_%Y%m%d_%H%M%S")
+        if name in (".", "..") or "/" in name or "\\" in name:
+          self.ui.warn("Session name must be a simple filename, not a path.")
+          return "continue"
+        if not name.endswith(".json"):
+          name += ".json"
+        save_path = self.cfg_mgr.sessions_dir / name
+        self.agent.context.save_to_file(save_path)
+        self.ui.success(t("cmd_saved", path=str(save_path)))
+        return "continue"
+      if cmd == "/load":
+        self._handle_load(arg)
+        return "continue"
+      if cmd == "/doctor":
+        if arg.lower() in ("all", "tümü", "tumu"):
+          self._run_doctor_all()
+        elif arg and arg.lower() not in ("tools", "araç", "arac"):
+          self.ui.warn(t("doctor_usage"))
+        else:
+          self._run_doctor(test_tools=bool(arg))
+        return "continue"
+      if cmd in ("/clear", "/temizle"):
+        self.agent.context.clear()
+        self.agent.history.new_session()
+        self.ui.clear()
+        self.ui.print_banner()
+        self.ui.print_startup_authority_warning()
+        self.ui.success(t("cmd_cleared"))
+        return "continue"
+      if cmd in ("/search", "/web", "/arastir", "/araştır", "/verify", "/dogrula", "/doğrula"):
+        if not arg.strip():
+          self.ui.info(t("search_usage"))
+          return "continue"
+        q_str = arg.strip()
+        search_prompt = (
+          f"Use `web_search` right now to research and cross-verify the following topic/claim on the live internet "
+          f"across multiple reliable sources, then present a clear, accurate, verified answer with source URLs:\n\n{q_str}"
+        )
+        self.agent.run_turn(search_prompt)
+        return "continue"
+      if cmd in ("/image", "/img", "/vision", "/resim", "/gorsel", "/görsel"):
+        if not arg:
+          self.ui.info(t("img_usage"))
+          return "continue"
+        raw_a = arg.strip()
+        img_p = ""
+        prompt_rest = ""
+        if raw_a[0] in ("'", '"'):
+          q_ch = raw_a[0]
+          end_q = raw_a.find(q_ch, 1)
+          if end_q > 0:
+            img_p = raw_a[1:end_q]
+            prompt_rest = raw_a[end_q + 1 :].strip()
+          else:
+            img_p = raw_a[1:]
+        else:
+          sp_parts = raw_a.split(maxsplit=1)
+          img_p = sp_parts[0]
+          prompt_rest = sp_parts[1].strip() if len(sp_parts) > 1 else ""
+        ok_i, err_i, meta_i = load_image_attachment(img_p, self.agent.tools.cwd)
+        if not ok_i or not meta_i:
+          self.ui.warn(err_i)
+          return "continue"
+        eff_prompt = prompt_rest or "Inspect this image/screenshot carefully. Describe what you see, and if there is any error, bug, or code/system issue, diagnose the exact root cause and fix or explain how to solve it."
+        self.agent.run_turn(eff_prompt, explicit_images=[meta_i])
+        return "continue"
+      if cmd in ("/copy", "/kopyala"):
+        last_txt = ""
+        for m in reversed(self.agent.context.messages):
+          if m.get("role") == "assistant" and str(m.get("content") or "").strip():
+            last_txt = str(m["content"]).strip()
+            break
+        if not last_txt:
+          self.ui.warn(t("copy_empty"))
+          return "continue"
+        if arg.strip().lower() in ("code", "kod", "block"):
+          import re as _re_cp
+          blocks = _re_cp.findall(r"```(?:[^\n`]*)\n(.*?)```", last_txt, flags=_re_cp.DOTALL)
+          if not blocks:
+            self.ui.warn(t("copy_empty"))
+            return "continue"
+          payload_cp = "\n\n".join(b.strip("\r\n") for b in blocks)
+        else:
+          payload_cp = last_txt
+        if _copy_to_clipboard(payload_cp, is_tty=self.ui.is_tty):
+          self.ui.success(t("copy_ok", chars=len(payload_cp)))
+        else:
+          self.ui.print_panel("📋 Copy Preview", payload_cp, style="bright_cyan")
+        return "continue"
+      if cmd in ("/paste", "/yapistir", "/yapıştır"):
+        clip_dir = self.cfg_mgr.home_dir / "clipboard"
+        img_clip, txt_clip = _read_clipboard_image_or_text(clip_dir)
+        if img_clip is not None:
+          ok_c, err_c, meta_c = load_image_attachment(str(img_clip), self.agent.tools.cwd)
+          if not ok_c or not meta_c:
+            self.ui.warn(err_c)
+            return "continue"
+          self.ui.info(t("paste_img_ok", dims=f"{meta_c['width']}x{meta_c['height']}", size=meta_c["size_human"]))
+          p_prompt = arg.strip() or "Inspect this pasted clipboard screenshot carefully. Diagnose any visible error, bug, or UI issue and solve it."
+          self.agent.run_turn(p_prompt, explicit_images=[meta_c])
+          return "continue"
+        if txt_clip:
+          self.ui.info(t("paste_txt_ok", chars=len(txt_clip)))
+          combined = (arg.strip() + "\n\n```\n" + txt_clip.strip() + "\n```") if arg.strip() else txt_clip.strip()
+          self.agent.run_turn(combined)
+          return "continue"
+        self.ui.warn(t("paste_empty"))
+        return "continue"
+      if cmd in ("/diff", "/git"):
+        import subprocess as _sp_git
+        cwd_p = self.agent.tools.cwd
+        try:
+          chk = _sp_git.run(["git", "rev-parse", "--is-inside-work-tree"], cwd=str(cwd_p), capture_output=True, text=True, timeout=5)
+          if chk.returncode != 0:
+            self.ui.warn(t("diff_not_git"))
+            return "continue"
+          diff_cmd = ["git", "diff", "HEAD"]
+          if arg.strip():
+            diff_cmd.extend(["--", arg.strip()])
+          gd = _sp_git.run(diff_cmd, cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=10)
+          st = _sp_git.run(["git", "status", "--short"], cwd=str(cwd_p), capture_output=True, text=True, errors="replace", timeout=5)
+          raw_diff = (gd.stdout or "").strip()
+          raw_stat = (st.stdout or "").strip()
+          if not raw_diff and not raw_stat:
+            self.ui.success(t("diff_clean"))
+            return "continue"
+          if raw_stat:
+            self.ui.print_panel(f"🌿 Git Status ({cwd_p.name})", raw_stat, style="bright_cyan")
+          if raw_diff:
+            pm_entries = []
+            cur_file = ""
+            for ln in raw_diff.splitlines():
+              if ln.startswith("+++ b/"):
+                cur_file = ln[6:]
+                pm_entries.append(("...", f"── {cur_file} ──"))
+              elif ln.startswith("--- ") or ln.startswith("diff --git") or ln.startswith("index ") or ln.startswith("@@"):
+                continue
+              elif ln.startswith("+"):
+                pm_entries.append(("+", ln[1:]))
+              elif ln.startswith("-"):
+                pm_entries.append(("-", ln[1:]))
+            if pm_entries:
+              adds = sum(1 for s, _ in pm_entries if s == "+")
+              dels = sum(1 for s, _ in pm_entries if s == "-")
+              cols = max(56, min(108, self.ui.view._size()[1] - 2))
+              bar = "━" * max(20, cols - 2)
+              stat_badge = self.ui._paint(f"+{adds}", "1;32") + " / " + self.ui._paint(f"-{dels}", "1;31")
+              print()
+              print(self.ui._paint("┏" + bar + "┓", "1;36"))
+              print(self.ui._paint("┃ ", "1;36") + self.ui._paint("🌿 Git Diff ", "1;37") + f"({stat_badge})")
+              print(self.ui._paint("┠" + ("─" * max(20, cols - 2)) + "┨", "1;36"))
+              for s_kind, ln_txt in pm_entries[:120]:
+                clean_t = ln_txt.replace("\t", "    ")[: max(40, cols - 6)]
+                if s_kind == "+":
+                  print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"+ {clean_t}", "1;32"))
+                elif s_kind == "-":
+                  print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"- {clean_t}", "1;31"))
+                else:
+                  print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  {clean_t}", "1;33"))
+              if len(pm_entries) > 120:
+                print(self.ui._paint("┃ ", "1;36") + self.ui._paint(f"  ... ({len(pm_entries) - 120} more lines)", "2;90"))
+              print(self.ui._paint("┗" + bar + "┛", "1;36"), flush=True)
+        except Exception:
+          self.ui.warn(t("diff_not_git"))
+        return "continue"
+      if cmd in ("/export", "/md", "/aktar"):
+        msgs = [m for m in self.agent.context.messages if m.get("role") in ("user", "assistant")]
+        if not msgs:
+          self.ui.warn(t("export_empty"))
+          return "continue"
+        out_name = arg.strip() or datetime.now().strftime("DocMind_Export_%Y%m%d_%H%M%S.md")
+        if not out_name.lower().endswith(".md"):
+          out_name += ".md"
+        out_path = resolve_user_path(out_name, self.agent.tools.cwd)
+        md_lines = [
+          "# DocMind Session Export",
+          f"- **Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+          f"- **Provider / Model:** `{self.cfg_mgr.config.provider}` / `{self.cfg_mgr.config.model}`",
+          f"- **Working Directory:** `{self.agent.tools.cwd}`",
+          "",
+          "---",
+          "",
+        ]
+        for m in msgs:
+          role_lbl = "🧑 User" if m.get("role") == "user" else "🤖 DocMind"
+          content_txt = str(m.get("content") or "").strip()
+          tcs = m.get("tool_calls") or []
+          md_lines.append(f"## {role_lbl}")
+          if m.get("images"):
+            names = ", ".join(str(im.get("name", "image")) for im in m["images"] if isinstance(im, dict))
+            if names:
+              md_lines.append(f"_Attached Images: {names}_\n")
+          if content_txt:
+            md_lines.append(content_txt)
+          if tcs:
+            tc_names = ", ".join(f"`{tc.get('name', '')}`" for tc in tcs if isinstance(tc, dict))
+            md_lines.append(f"\n_Tools invoked: {tc_names}_")
+          md_lines.append("")
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text("\n".join(md_lines).encode("utf-8", errors="replace").decode("utf-8"), encoding="utf-8")
+        self.ui.success(t("export_ok", path=str(out_path)))
+        return "continue"
+      if cmd in ("/reset", "/sifirla", "/sıfırla"):
+        return self._handle_reset()
+      import difflib as _difflib
+      matches = _difflib.get_close_matches(cmd, SLASH_COMMANDS, n=1, cutoff=0.55)
+      if matches:
+        self.ui.warn(t("cmd_did_you_mean", cmd=cmd, suggest=matches[0]))
+      else:
+        self.ui.warn(t("cmd_unknown", cmd=cmd))
+      return "continue"
+    except Exception as exc:
+      self.cfg_mgr.log_error(f"slash:{cmd}", repr(exc))
+      alert = classify_exception(exc)
+      self.ui.print_alert(alert)
+      self.ui.info(t("err_skipped_notice"))
+      return "continue"
+  def _handle_reset(self) -> str:
+    cfg_path = self.cfg_mgr.config_path
+    lang = i18n.lang
+    msgs = {
+      "tr": (
+        "⚠ FABRİKA AYARLARINA SIFIRLAMA (/reset)",
+        f"DİKKAT: Kayıtlı yapılandırma dosyanız ({cfg_path}) — API anahtarları, dil ve model ayarları dahil — kalıcı olarak silinecek ve ardından terminal kapatılacaktır.",
+        "Sıfırlamayı onaylıyor musunuz? [tamam / evet / iptal=Enter]: ",
+        "Sıfırlama iptal edildi; ayarlarınıza dokunulmadı.",
+        "Ayar dosyası (.json) silindi ve DocMind sıfırlandı. Terminal kapatılıyor...",
+      ),
+      "en": (
+        "⚠ FACTORY RESET (/reset)",
+        f"WARNING: Your saved configuration file ({cfg_path}) — including API keys, language, and model preferences — will be permanently deleted, and the terminal will close.",
+        "Confirm reset? [ok / yes / Enter=cancel]: ",
+        "Reset cancelled; your configuration was kept.",
+        "Configuration (.json) deleted and DocMind has been reset. Closing terminal...",
+      ),
+      "de": (
+        "⚠ ZURÜCKSETZEN (/reset)",
+        f"WARNUNG: Ihre Konfigurationsdatei ({cfg_path}) — inkl. API-Schlüssel, Sprache und Modell — wird dauerhaft gelöscht und das Terminal geschlossen.",
+        "Zurücksetzen bestätigen? [ok / ja / Enter=Abbruch]: ",
+        "Zurücksetzen abgebrochen.",
+        "Konfiguration (.json) gelöscht. Terminal wird geschlossen...",
+      ),
+      "es": (
+        "⚠ RESTABLECER AJUSTES (/reset)",
+        f"ADVERTENCIA: Su archivo de configuración ({cfg_path}) — incluidas claves API, idioma y modelo — se eliminará permanentemente y la terminal se cerrará.",
+        "¿Confirmar restablecimiento? [ok / si / Enter=cancelar]: ",
+        "Restablecimiento cancelado.",
+        "Configuración (.json) eliminada. Cerrando terminal...",
+      ),
+      "fr": (
+        "⚠ RÉINITIALISATION (/reset)",
+        f"ATTENTION : Votre fichier de configuration ({cfg_path}) — clés API, langue et modèle inclus — sera définitivement supprimé et le terminal se fermera.",
+        "Confirmer la réinitialisation ? [ok / oui / Entrée=annuler] : ",
+        "Réinitialisation annulée.",
+        "Configuration (.json) supprimée. Fermeture du terminal...",
+      ),
+      "ru": (
+        "⚠ СБРОС НАСТРОЕК (/reset)",
+        f"ВНИМАНИЕ: Файл конфигурации ({cfg_path}) — включая API-ключи, язык и модель — будет удалён, а терминал закроется.",
+        "Подтвердить сброс? [ok / да / Enter=отмена]: ",
+        "Сброс отменён.",
+        "Файл настроек (.json) удалён. Закрытие терминала...",
+      ),
+    }
+    title, body, prompt_txt, cancel_txt, done_txt = msgs.get(lang, msgs["en"])
+    self.ui.print_panel(title, body, style="bright_red")
+    try:
+      ans = self.ui.ask(prompt_txt).strip().strip("'\"").lower()
+    except (KeyboardInterrupt, EOFError):
+      print()
+      self.ui.info(cancel_txt)
+      return "continue"
+    accepted = {"tamam", "ok", "okay", "onayla", "sil", "evet", "e", "beli", "bəli", "b", "yes", "y", "ja", "j", "si", "sí", "sì", "sim", "s", "oui", "o", "да", "д", "نعم", "是", "はい", "예", "네"}
+    if ans not in accepted:
+      self.ui.info(cancel_txt)
+      return "continue"
+    for target in (cfg_path, cfg_path.with_suffix(".json.tmp")):
+      try:
+        if target.exists():
+          target.unlink()
+      except OSError:
+        pass
+    self.ui.success(done_txt)
+    sys.stdout.flush()
+    return "reset_exit"
+  def _handle_history(self, arg: str = "") -> None:
+    try:
+      sessions = self.agent.history.list_sessions()
+    except Exception as exc:
+      self.cfg_mgr.log_error("history.list", repr(exc))
+      self.ui.warn(t("history_read_error")); return
+    if not sessions:
+      self.ui.info(t("history_empty")); return
+    if not arg:
+      lines = []
+      for n, item in enumerate(sessions, 1):
+        try:
+          stamp = datetime.fromisoformat(item["updated_at"]).astimezone().strftime("%Y-%m-%d %H:%M")
+        except (ValueError, TypeError, OverflowError):
+          stamp = item["updated_at"].replace("T", " ")[:16]
+        lines.append(f"  [{n}] {item['title']}  •  {stamp}")
+      lines.append("\n  " + t("history_delete_hint"))
+      self.ui.print_panel(t("history_title"), "\n".join(lines), style="cyan")
+      try:
+        arg = self.ui.ask(t("history_choose")).strip()
+      except (EOFError, KeyboardInterrupt):
+        print(); self.ui.info(t("history_cancel")); return
+    if not arg:
+      self.ui.info(t("history_cancel")); return
+    parts = arg.split(maxsplit=1)
+    if parts[0].lower() == "/delete":
+      self._handle_delete(parts[1] if len(parts) > 1 else "", sessions)
+      return
+    if not arg.isdigit() or not (1 <= int(arg) <= len(sessions)):
+      self.ui.warn(t("history_invalid")); return
+    selected = sessions[int(arg) - 1]
+    try:
+      messages = self.agent.history.load(selected["id"])
+    except Exception as exc:
+      self.cfg_mgr.log_error("history.load", repr(exc))
+      self.ui.warn(t("history_read_error")); return
+    context = self.agent.context
+    context.messages = messages
+    context.last_input_tokens = 0
+    context.last_context_estimate = 0
+    self.agent._heal_dangling_tool_calls()
+    self.ui.success(t("history_loaded", title=selected["title"]))
+    for message in self.agent.history.records:
+      role = message.get("role")
+      text = str(message.get("content") or "")
+      if text and role in ("user", "assistant"):
+        label = t("history_you") if role == "user" else "DocMind"
+        self.ui.print_history_message(label, text, bool(message.get("_history_cancelled") or message.get("_history_incomplete")))
+    print()
+  def _handle_delete(self, arg: str = "", sessions=None) -> None:
+    if sessions is None:
+      try:
+        sessions = self.agent.history.list_sessions()
+      except Exception as exc:
+        self.cfg_mgr.log_error("history.delete_list", repr(exc))
+        self.ui.warn(t("history_read_error")); return
+      if not sessions:
+        self.ui.info(t("history_empty")); return
+      lines = [f"  [{n}] {item['title']}" for n, item in enumerate(sessions, 1)]
+      lines.append("\n  " + t("history_delete_warning"))
+      self.ui.print_panel(t("history_delete_title"), "\n".join(lines), style="yellow")
+    else:
+      self.ui.warn(t("history_delete_warning"))
+    if not arg:
+      try:
+        arg = self.ui.ask(t("history_delete_choose")).strip()
+      except (EOFError, KeyboardInterrupt):
+        print(); self.ui.info(t("history_cancel")); return
+    if not arg:
+      self.ui.info(t("history_cancel")); return
+    if not arg.isdigit() or not (1 <= int(arg) <= len(sessions)):
+      self.ui.warn(t("history_invalid")); return
+    selected = sessions[int(arg) - 1]
+    try:
+      active = self.agent.history.delete(selected["id"])
+    except Exception as exc:
+      self.cfg_mgr.log_error("history.delete", repr(exc))
+      self.ui.warn(t("history_delete_error")); return
+    if active:
+      self.agent.context.clear()
+    self.ui.success(t("history_delete_ok", title=selected["title"]))
+    if active:
+      self.ui.info(t("history_delete_active"))
+  def _handle_price(self, arg: str = "") -> None:
+    cfg = self.cfg_mgr.config
+    key = model_key(cfg.provider, cfg.model)
+    if not isinstance(cfg.price_overrides, dict):cfg.price_overrides = {}
+    if not arg:
+      rates = prices_for(cfg, cfg.provider, cfg.model)
+      self.ui.info(t("price_usage"))
+      if rates is None:self.ui.info(t("price_unknown"))
+      else:self.ui.info(f"{cfg.provider} / {cfg.model}: ${rates[0]:g} / ${rates[1]:g} per 1M")
+      return
+    if arg.strip().lower() in ("auto", "reset", "sıfırla", "sifirla"):
+      cfg.price_overrides.pop(key, None)
+      if self.cfg_mgr.save():self.ui.success(t("price_reset"))
+      else:self.ui.warn(t("settings_save_failed"))
+      return
+    parts = arg.replace(",", ".").split()
+    try:
+      if len(parts)!=2:raise ValueError()
+      inp,out = float(parts[0]),float(parts[1])
+      if not (math.isfinite(inp) and math.isfinite(out) and 0 <= inp < 1e9 and 0 <= out < 1e9):raise ValueError()
+    except ValueError:
+      self.ui.warn(t("price_invalid"));return
+    cfg.price_overrides[key] = [inp,out]
+    if self.cfg_mgr.save():self.ui.success(t("price_set", inp=f"{inp:g}", out=f"{out:g}"))
+    else:self.ui.warn(t("settings_save_failed"))
+  def _handle_context(self, arg: str = "") -> None:
+    cfg = self.cfg_mgr.config
+    key = model_key(cfg.provider, cfg.model)
+    if not isinstance(cfg.context_overrides, dict):cfg.context_overrides = {}
+    if not arg:
+      limit,known=context_limit_for(cfg)
+      self.ui.info(t("context_usage"));self.ui.info(f"{cfg.provider} / {cfg.model}: ~{limit:,}" + ("" if known else " ?"));return
+    if arg.strip().lower() in ("auto", "reset", "sıfırla", "sifirla"):
+      cfg.context_overrides.pop(key,None)
+      if self.cfg_mgr.save():self.ui.success(t("context_reset"))
+      else:self.ui.warn(t("settings_save_failed"))
+      return
+    cleaned=arg.strip().replace(",","").replace(".","")
+    if not cleaned.isdigit() or not (1024<=int(cleaned)<=100_000_000):
+      self.ui.warn(t("context_invalid"));return
+    cfg.context_overrides[key]=int(cleaned)
+    if self.cfg_mgr.save():self.ui.success(t("context_set", limit=f"{int(cleaned):,}"))
+    else:self.ui.warn(t("settings_save_failed"))
+  _AGGRESSIVE_YES = {"y", "yes", "e", "evet", "onay", "b", "beli", "bəli", "j", "ja", "o", "oui",
+            "s", "si", "sí", "sì", "sim", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
+  def _confirm_aggressive(self) -> bool:
+    """First-activation warning for the Aggressive reasoning mode."""
+    self.ui.print_panel(glyph("⚠ ", "(!) ") + t("aggressive_warn_title"), t("aggressive_warn_body"), style="bright_red")
+    if getattr(self.agent, "non_interactive", False):
+      return False
+    try:
+      raw = self.ui.ask(t("aggressive_confirm_prompt")).strip().lower().replace("\u0307", "")
+    except (KeyboardInterrupt, EOFError):
+      print()
+      return False
+    return raw in self._AGGRESSIVE_YES
+  def _show_effort_state(self) -> None:
+    cfg = self.cfg_mgr.config
+    level = cfg.reasoning_effort
+    self.ui.info(t("effort_active", level=level))
+    supported = bool(reasoning_control_for(cfg.provider, cfg.model))
+    requested = getattr(self.agent.client, "requested_reasoning_effort", None)
+    in_fallback = supported and level != "default" and callable(requested) and not requested()
+    if in_fallback:
+      self.ui.warn(t("effort_fallback_active"))
+    elif level in ("max", "aggressive") and reasoning_effort_for(cfg):
+      self.ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
+    if level == "default" or not supported:
+      self.ui.info(t("effort_uncontrolled"))
+    if level == "aggressive":
+      if getattr(cfg, "aggressive_mode", True):
+        self.ui.success(t("aggressive_engine_on"))
+      else:
+        self.ui.warn(t("aggressive_engine_off"))
+    state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+    self.ui.info(t("token_save_state", state=state))
+  def _render_effort_menu(self) -> None:
+    """Print the reasoning levels as a real table: aligned columns, wrapped notes."""
+    import textwrap
+    cfg = self.cfg_mgr.config
+    current = str(cfg.reasoning_effort or "default")
+    save_label = t("effort_menu_col_save")
+    rows = []
+    for raw in str(t("effort_menu_table")).split("\n"):
+      parts = [p.strip() for p in raw.split("|")]
+      if len(parts) >= 6:
+        rows.append(parts[:6])
+    if not rows:
+      self.ui.warn(t("effort_usage"))
+      return
+    cols = 80
+    view = getattr(self.ui, "view", None)
+    try:
+      if view is not None and hasattr(view, "_size"):
+        cols = int(view._size()[1])
+      elif hasattr(self.ui, "_size"):
+        cols = int(self.ui._size()[1])
+    except Exception:
+      cols = 80
+    num_w = max(len(t("effort_menu_col_no")), max(len(r[0]) for r in rows))
+    name_w = min(18, max(len(t("effort_menu_col_name")), max(len(r[1]) for r in rows)))
+    token_w = min(16, max(3, max(len(r[2]) for r in rows)))
+    save_w = min(20, max(len(save_label), max(len(r[4]) for r in rows)))
+    api_texts = ["-> " + r[3] for r in rows]
+    api_w = min(24, max(len(a) for a in api_texts)) + 2
+    narrow = cols < (num_w + name_w + token_w + save_w + api_w + 40)
+    side = 5 + api_w
+    desc_w = max(34, cols - side - 6)
+    header = (
+      t("effort_menu_col_no").rjust(num_w) + "  " + t("effort_menu_col_name").ljust(name_w)
+      + "  " + t("effort_menu_col_api").ljust(token_w) + "  " + save_label.ljust(save_w)
+    )
+    lines = [header.rstrip(), "-" * min(len(header), max(24, cols - 8))]
+    for num, label, token, sent, save, desc in rows:
+      is_current = current in (token.lower(), label.lower())
+      mark = glyph("◀", "<") if is_current else ""
+      head = (
+        num.rjust(num_w) + "  " + label.ljust(name_w) + "  " + token.ljust(token_w)
+        + "  " + save.ljust(save_w)
+      )
+      if mark:
+        head = head + "  " + mark
+      lines.append(head.rstrip())
+      api_note = "-> " + sent
+      if narrow:
+        wrapped = textwrap.wrap(desc, width=max(34, cols - 10), break_on_hyphens=False, break_long_words=False) or [""]
+        lines.append("     " + api_note)
+        for chunk in wrapped:
+          lines.append("     " + chunk)
+      else:
+        wrapped = textwrap.wrap(desc, width=desc_w, break_on_hyphens=False, break_long_words=False) or [""]
+        lines.append(("     " + api_note).ljust(side) + wrapped[0])
+        for chunk in wrapped[1:]:
+          lines.append(" " * side + chunk)
+      lines.append("")
+    self.ui.print_panel(
+      glyph("🎚️ ", "") + t("effort_menu_title"), "\n".join(lines).rstrip(), style="bright_cyan", center=True
+    )
+    state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+    self.ui.info(t("effort_menu_current", level=current, state=state))
+    self.ui.info(t("effort_menu_hint"))
+    self.ui.info(t("effort_menu_legend"))
+    if current == "aggressive":
+      self.ui.info(t("effort_aggressive_note"))
+  def _handle_effort(self, arg: str) -> None:
+    cfg = self.cfg_mgr.config
+    aliases = {
+      "aggressive": "aggressive", "agresif": "aggressive", "saldırgan": "aggressive", "saldirgan": "aggressive",
+      "max": "max", "maximum": "max", "maksimum": "max",
+      "high": "high", "yüksek": "high", "yuksek": "high",
+      "hard": "hard", "zor": "hard", "sert": "hard",
+      "medium": "medium", "orta": "medium",
+      "low": "low", "düşük": "low", "dusuk": "low",
+      "default": "default", "auto": "default", "varsayılan": "default", "varsayilan": "default",
+    }
+    if not arg.strip():
+      self._render_effort_menu()
+      self._prompt_effort_selection()
+      return
+    low_arg = arg.strip().lower().replace("\u0307", "")
+    if low_arg.split() and low_arg.split()[0] in ("engine", "motor"):
+      parts = low_arg.split()
+      want = parts[1] if len(parts) > 1 else ""
+      if want in ("on", "ac", "aç", "acik", "açık", "enable", "true", "1", "evet", "yes"):
+        cfg.aggressive_mode = True
+        self.cfg_mgr.save()
+        self.ui.success(t("aggressive_engine_on"))
+      elif want in ("off", "kapat", "kapali", "kapalı", "disable", "false", "0", "hayir", "hayır", "no"):
+        cfg.aggressive_mode = False
+        self.cfg_mgr.save()
+        self.ui.warn(t("aggressive_engine_off"))
+      else:
+        state = "on" if getattr(cfg, "aggressive_mode", True) else "off"
+        self.ui.info(f"Aggressive engine: {state}  (/effort engine on|off)")
+      return
+    if low_arg in ("status", "durum", "state"):
+      self._show_effort_state()
+      return
+    if arg:
+      value = aliases.get(arg.strip().lower().replace("\u0307", ""))
+      if not value:
+        self.ui.warn(t("effort_usage"))
+        self._render_effort_menu()
+        return
+      previous = cfg.reasoning_effort
+      if value == "aggressive" and previous != "aggressive":
+        if not self._confirm_aggressive():
+          self.ui.warn(t("aggressive_cancelled", level=previous))
+          self.ui.refresh_footer() if hasattr(self.ui, "refresh_footer") else None
+          return
+      cfg.reasoning_effort = value
+      if value == "aggressive":
+        # Aggressive always means maximum reasoning and no token saving.
+        cfg.token_save = False
+        saved = self.cfg_mgr.save()
+        self.agent.refresh_client()
+        self.ui.success(glyph("🔴 ", "") + t("aggressive_enabled"))
+        if not saved:
+          self.ui.warn(t("settings_save_failed"))
+      else:
+        if not token_save_allowed(value):
+          cfg.token_save = False
+        saved = self.cfg_mgr.save()
+        self.agent.refresh_client()
+        if saved:
+          self.ui.success(t("effort_saved", level=value))
+        else:
+          self.ui.warn(t("effort_not_saved", level=value))
+        if previous == "aggressive":
+          self.ui.info(t("aggressive_left", level=value))
+          if not token_save_allowed(value):
+            self.ui.info(t("token_save_blocked", level=value))
+    self._show_effort_state()
+  def _prompt_effort_selection(self) -> None:
+    """After printing the menu, accept the printed number so nobody has to memorise codes."""
+    if getattr(self.agent, "non_interactive", False) or not bool(getattr(self.ui, "is_tty", False)):
+      return
+    try:
+      raw = self.ui.ask(t("effort_menu_prompt")).strip().replace("\u0307", "")
+    except (KeyboardInterrupt, EOFError):
+      print()
+      return
+    low = raw.lower()
+    if not low or low in ("q", "iptal", "cancel", "exit", "hayir", "hayır", "n", "no", "0"):
+      self.ui.info(t("effort_menu_kept", level=self.cfg_mgr.config.reasoning_effort))
+      return
+    numbers = {"1": "aggressive", "2": "max", "3": "high", "4": "hard",
+               "5": "medium", "6": "low", "7": "default"}
+    target = numbers.get(low, raw)
+    self._handle_effort(target)
+  def _handle_token_save(self, arg: str) -> None:
+    cfg = self.cfg_mgr.config
+    level = cfg.reasoning_effort
+    cmd = (arg or "").strip().lower().replace("\u0307", "")
+    if cmd in ("", "status", "durum", "state", "?"):
+      state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+      self.ui.info(t("token_save_state", state=state))
+      if not token_save_allowed(level):
+        self.ui.warn(t("token_save_blocked", level=level))
+      else:
+        self.ui.info(t("token_save_note"))
+      return
+    want_on = cmd in ("on", "aç", "ac", "acik", "açık", "aktif", "enable", "true", "1", "evet", "yes")
+    want_off = cmd in ("off", "kapat", "kapali", "kapalı", "pasif", "disable", "false", "0", "hayir", "hayır", "no")
+    if not (want_on or want_off):
+      self.ui.warn(t("token_save_usage"))
+      return
+    if want_on:
+      if not token_save_allowed(level):
+        self.ui.warn(t("token_save_blocked", level=level))
+        return
+      cfg.token_save = True
+      if self.cfg_mgr.save():
+        self.ui.success(t("token_save_on"))
+      else:
+        self.ui.warn(t("settings_save_failed"))
+      self.ui.info(t("token_save_note"))
+    else:
+      cfg.token_save = False
+      if self.cfg_mgr.save():
+        self.ui.success(t("token_save_off"))
+      else:
+        self.ui.warn(t("settings_save_failed"))
+    self.ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
+  def _handle_tokens(self, arg: str) -> None:
+    cfg = self.cfg_mgr.config
+    ctx = self.agent.context
+    if arg:
+      cleaned = arg.replace("limit", "").strip()
+      if cleaned.isdigit():
+        cfg.token_warning_limit = int(cleaned)
+        ctx.budget_warned = False
+        self.cfg_mgr.save()
+        self.ui.success(f"Token Warning Limit -> {cfg.token_warning_limit:,}")
+    spec = get_provider_spec(cfg.provider)
+    est_ctx = ctx.current_context_estimate()
+    context_limit, known_limit = context_limit_for(cfg)
+    pct = (est_ctx / max(1, context_limit)) * 100.0
+    limit_str = f"{cfg.token_warning_limit:,}" if cfg.token_warning_limit > 0 else "Unlimited (Auto)"
+    stats = self.agent.usage.summary(cfg)
+    if stats['missing_cost']:
+      incomplete = t("usage_incomplete_detail", count=stats['missing_cost'],
+             interrupted=self.agent.usage.interrupted_attempts)
+    elif stats['missing_tokens']:
+      incomplete = t("usage_tokens_missing_detail", count=stats['missing_tokens'])
+    else:
+      incomplete = t("usage_complete_detail")
+    report = (
+      f"  {t('stat_0')}: {spec.name} ({cfg.model})\n"
+      f"  {t('stat_1')}: {ctx.api_calls}\n"
+      f"  {t('stat_2')}: {ctx.total_input_tokens:,}\n"
+      f"  {t('stat_3')}: {ctx.total_output_tokens:,}\n"
+      f"  {t('stat_4')}: {ctx.total_tokens:,}\n"
+      f"  {t('stat_5')}: ~{est_ctx:,} / {context_limit:,}{'' if known_limit else '?'} ({pct:.1f}%)\n"
+      f"  {t('stat_6')}: {self.agent.status_text()}\n"
+      f"  {t('stat_8')}: {limit_str}\n"
+      f"  {t('stat_9')}: {len(ctx.messages)}\n\n"
+      f"  {incomplete}\n"
+      f"  {t('stat_7')}"
+    )
+    self.ui.print_panel(f"🪙 {t('tokens_report_title')}", report, style="bright_cyan")
+  def _handle_load(self, arg: str) -> None:
+    sessions = sorted(self.cfg_mgr.sessions_dir.glob("*.json"))
+    if not arg:
+      if not sessions:
+        self.ui.info("No saved sessions found in ~/.docmind-single/sessions/")
+        return
+      listing = "\n".join(f"  - {p.name}" for p in sessions[-15:])
+      self.ui.print_panel("💾 Saved Sessions (/load <name>)", listing, style="cyan")
+      return
+    fname = arg if arg.endswith(".json") else f"{arg}.json"
+    candidate = Path(arg) if Path(arg).exists() else (self.cfg_mgr.sessions_dir / fname)
+    if not candidate.exists():
+      self.ui.warn(f"Session file not found: {candidate}")
+      return
+    ctx = self.agent.context
+    session = (ctx.total_input_tokens, ctx.total_output_tokens, ctx.api_calls, ctx.budget_warned)
+    count = ctx.load_from_file(candidate)
+    ctx.total_input_tokens, ctx.total_output_tokens, ctx.api_calls, ctx.budget_warned = session
+    ctx.last_input_tokens = 0
+    ctx.last_context_estimate = 0
+    self.agent.history.new_session(seed=ctx.messages)
+    self.ui.success(t("cmd_loaded", count=count, path=str(candidate)))
+  def _run_doctor_all(self) -> bool:
+    """Explicit, consented checks for configured providers; never mix credentials."""
+    cfg = self.cfg_mgr.config
+    targets = []
+    skipped = []
+    for spec in PROVIDERS:
+      if spec.id == cfg.provider:
+        key = cfg.get_api_key(spec.id)
+      else:
+        key = clean_api_key(cfg.api_keys.get(spec.id, ""))
+        if not key:
+          key = next((clean_api_key(os.environ.get(var, "")) for var in spec.env_vars
+                if clean_api_key(os.environ.get(var, ""))), "")
+      if spec.id == "custom" and spec.id != cfg.provider and (not key or spec.id not in cfg.base_urls):
+        skipped.append(spec.name)
+        continue
+      if not key and not (spec.key_optional and spec.id == cfg.provider):
+        skipped.append(spec.name)
+        continue
+      model = cfg.model if spec.id == cfg.provider else spec.models[0]
+      targets.append((spec, model, key))
+    if not targets:
+      self.ui.info(t("doctor_all_none"))
+      return False
+    def safe_origin(provider_id):
+      try:
+        url = urlsplit(cfg.get_base_url(provider_id))
+        host = url.hostname or "invalid"
+        if ":" in host:
+          host = "[" + host + "]"
+        port = (":" + str(url.port)) if url.port else ""
+        return url.scheme + "://" + host + port
+      except (TypeError, ValueError):
+        return "(invalid URL)"
+    plan = "\n".join("  - " + spec.name + " / " + model + " → " + safe_origin(spec.id)
+            for spec, model, _ in targets)
+    self.ui.print_panel(t("doctor_all_title"), t("doctor_all_intro") + "\n" + plan,
+              style="yellow")
+    try:
+      confirmed = self.ui.ask(t("doctor_all_confirm")).strip().lower()
+    except (EOFError, KeyboardInterrupt):
+      self.ui.info(t("doctor_all_cancelled"))
+      return False
+    if confirmed not in ("e", "evet", "y", "yes", "j", "ja", "s", "si", "sí", "o", "oui", "д", "да"):
+      self.ui.info(t("doctor_all_cancelled"))
+      return False
+    lines = []
+    all_ok = True
+    for spec, model, key in targets:
+      probe_cfg = copy.deepcopy(cfg)
+      probe_cfg.provider, probe_cfg.model = spec.id, model
+      probe_cfg.api_keys = {spec.id: key} if key else {}
+      def notice(wording, **values):
+        self.agent.usage.mark_interrupted()
+        self.ui.warn(t(wording, **values))
+      client = ProviderClient(probe_cfg, on_effort_fallback=lambda: notice("effort_fallback"))
+      client.on_probe_retry = lambda: notice("probe_retry")
+      client.on_probe_interrupted = self.agent.usage.mark_interrupted
+      client.on_compat_fallback = lambda: notice("compat_fallback")
+      client.on_budget_fallback = lambda limit: notice("budget_fallback", limit=limit)
+      client.on_connection_retry = lambda attempt, delay: notice(
+        "probe_transient_retry", attempt=attempt, seconds=int(delay + 0.999))
+      with self.ui.spinner(t("doctor_all_checking", provider=spec.name)):
+        ok, err = client.verify_connection(timeout=30.0)
+      response = client.last_verification_response
+      if response is not None:
+        self.agent.record_verification_usage(response, spec.id, model)
+      elif not ok:
+        self.agent.usage.mark_interrupted()
+      if ok:
+        lines.append("✔ " + spec.name + " / " + model + " — " + t("doctor_all_ok"))
+      else:
+        all_ok = False
+        alert = classify_exception(err, spec.name, model) if err else None
+        lines.append("⚠ " + spec.name + " / " + model + " — " +
+              (alert.title if alert else t("doctor_all_failed")))
+        if alert:
+          self.ui.print_alert(alert)
+    if skipped:
+      lines.append(t("doctor_all_skipped", names=", ".join(skipped)))
+    lines.append(t("doctor_all_tool_note"))
+    self.ui.print_panel(t("doctor_all_title"), "\n".join(lines), style="bright_green" if all_ok else "yellow")
+    return all_ok
+  def _run_doctor(self, test_tools: bool = False) -> bool:
+    cfg = self.cfg_mgr.config
+    spec = get_provider_spec(cfg.provider)
+    has_key = cfg.has_valid_credentials()
+    checks = [
+      f"✔ Python Runtime      : {sys.version.split()[0]} ({platform.system()} {platform.machine()})",
+      f"✔ Rich TUI Engine     : {'Installed (Enhanced UI)' if HAS_RICH else 'Fallback ANSI Active'}",
+      f"✔ PromptToolkit       : {'Installed (History + Autocomplete)' if HAS_PROMPT_TOOLKIT else 'Standard Input Active'}",
+      f"✔ HTTP Transport      : {'httpx' if HAS_HTTPX else 'urllib (stdlib)'}",
+      f"✔ Config Path         : {self.cfg_mgr.config_path} ({'Exists' if self.cfg_mgr.config_path.exists() else 'New'})",
+      f"✔ Working Directory   : {self.agent.tools.cwd} ({'Writable' if os.access(self.agent.tools.cwd, os.W_OK) else 'Read-Only'})",
+      f"✔ Active Language     : {cfg.language.upper()} ({t('lang_name')})",
+      f"✔ Active Provider     : {spec.name} | Model: {cfg.model}",
+      f"{'✔' if has_key else '⚠'} API Key Configured  : {'Yes' if has_key else 'Missing (/api to set)'}",
+    ]
+    if has_key:
+      with self.ui.spinner(t("wiz_testing_api")):
+        ok, err = self.agent.client.verify_connection(timeout=30.0)
+      if self.agent.client.last_verification_response is not None:
+        self.agent.record_verification_usage(self.agent.client.last_verification_response)
+      elif not ok:
+        self.agent.usage.mark_interrupted()
+      if ok:
+        checks.append(t("doctor_connection_ok"))
+      else:
+        checks.append("⚠ Live API Connection : FAILED (See warning box below)")
+        self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
+        if err:
+          self.ui.print_alert(classify_exception(err, spec.name, cfg.model))
+        return False
+    else:
+      checks.append("⚠ Live API Connection : NOT TESTED (configure /api first)")
+      self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
+      return False
+    if test_tools:
+      self.ui.info(t("doctor_tools_start"))
+      with self.ui.spinner(t("wiz_testing_api")):
+        tool_ok, tool_err = self.agent.client.verify_tool_connection(self.agent.tools.get_schemas(), timeout=45.0)
+      if self.agent.client.last_tool_test_response is not None:
+        self.agent.record_verification_usage(self.agent.client.last_tool_test_response)
+      elif not tool_ok:
+        self.agent.usage.mark_interrupted()
+      if tool_ok:
+        mode = t("doctor_tool_prompt_mode") if self.agent.client._prompt_tool_fallback else t("doctor_tool_native_mode")
+        checks.append(t("doctor_tools_ok", mode=mode))
+      else:
+        checks.append(t("doctor_tools_inconclusive"))
+        self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="yellow")
+        if tool_err:
+          self.ui.print_alert(classify_exception(tool_err, spec.name, cfg.model))
+        return False
+    else:
+      checks.append("ℹ " + t("doctor_tools_skipped"))
+    self.ui.print_panel(f"🩺 {t('doctor_title')}", "\n".join(checks), style="bright_green")
+    return True
  return locals()
 _dm_install('docmind.ui.commands', _dm_module_25, False)
 
@@ -16547,319 +16948,319 @@ def _dm_module_26():
  from docmind.ui.commands import CommandRouter
  from docmind.ui.console import ConsoleUI
  def build_arg_parser() -> argparse.ArgumentParser:
-   parser = argparse.ArgumentParser(
-     prog="docmind",
-     description="DocMind - Autonomous Terminal AI Agent (Claude-style file, code & shell assistant)",
-   )
-   parser.add_argument(
-     "prompt",
-     nargs="*",
-     help="Optional one-shot task/prompt to execute directly.",
-   )
-   parser.add_argument("--setup", action="store_true", help="Launch interactive setup wizard.")
-   parser.add_argument("--auto", "--yolo", dest="auto", action="store_true", help="Enable Full Auto execution mode.")
-   parser.add_argument("--smart", action="store_true", help="Enable Smart Confirm execution mode.")
-   parser.add_argument(
-     "--lang",
-     choices=[c[0] for c in LANGUAGE_CHOICES],
-     help="Set interface & assistant language (14 languages: tr, en, az, de, es, fr, it, pt, nl, ru, ar, zh, ja, ko).",
-   )
-   parser.add_argument(
-     "--provider",
-     choices=list(PROVIDER_MAP.keys()),
-     help="Select AI provider.",
-   )
-   parser.add_argument("--model", help="Override AI model name.")
-   parser.add_argument("--api-key", dest="api_key", help="Provide API key for active provider.")
-   parser.add_argument("--image", "-i", action="append", default=[], help="Attach an image/screenshot path for visual analysis (repeatable).")
-   parser.add_argument("--doctor", action="store_true", help="Run system & API diagnostics and exit.")
-   parser.add_argument("--version", "-v", action="store_true", help="Show DocMind version.")
-   return parser
+  parser = argparse.ArgumentParser(
+    prog="docmind",
+    description="DocMind - Autonomous Terminal AI Agent (Claude-style file, code & shell assistant)",
+  )
+  parser.add_argument(
+    "prompt",
+    nargs="*",
+    help="Optional one-shot task/prompt to execute directly.",
+  )
+  parser.add_argument("--setup", action="store_true", help="Launch interactive setup wizard.")
+  parser.add_argument("--auto", "--yolo", dest="auto", action="store_true", help="Enable Full Auto execution mode.")
+  parser.add_argument("--smart", action="store_true", help="Enable Smart Confirm execution mode.")
+  parser.add_argument(
+    "--lang",
+    choices=[c[0] for c in LANGUAGE_CHOICES],
+    help="Set interface & assistant language (14 languages: tr, en, az, de, es, fr, it, pt, nl, ru, ar, zh, ja, ko).",
+  )
+  parser.add_argument(
+    "--provider",
+    choices=list(PROVIDER_MAP.keys()),
+    help="Select AI provider.",
+  )
+  parser.add_argument("--model", help="Override AI model name.")
+  parser.add_argument("--api-key", dest="api_key", help="Provide API key for active provider.")
+  parser.add_argument("--image", "-i", action="append", default=[], help="Attach an image/screenshot path for visual analysis (repeatable).")
+  parser.add_argument("--doctor", action="store_true", help="Run system & API diagnostics and exit.")
+  parser.add_argument("--version", "-v", action="store_true", help="Show DocMind version.")
+  return parser
  def _prompt_startup_language(ui: ConsoleUI, cfg_mgr: ConfigManager) -> None:
-   cfg = cfg_mgr.config
-   default_num = 1
-   for idx, (code, _, _) in enumerate(LANGUAGE_CHOICES, 1):
-     if code == cfg.language:
-       default_num = idx
-       break
-   bar = "─" * 34
-   print()
-   print(ui._paint("╭─── 🌐 Select Language " + bar[:11] + "╮", "1;36"))
-   for idx, (code, native_name, _) in enumerate(LANGUAGE_CHOICES, 1):
-     mark = " *" if idx == default_num else ""
-     print(ui._paint("│  ", "36") + ui._paint(f"[{idx}] ", "1;33") + f"{native_name} ({code.upper()}){mark}")
-   print(ui._paint("╰" + bar + "╯", "36"), flush=True)
-   chosen_idx = default_num - 1
-   max_n = len(LANGUAGE_CHOICES)
-   while True:
-     try:
-       raw = ui.ask(f"[1-{max_n}]: ").strip()
-     except (KeyboardInterrupt, EOFError):
-       print()
-       break
-     if not raw:
-       break
-     if raw.isdigit() and 1 <= int(raw) <= max_n:
-       chosen_idx = int(raw) - 1
-       break
-     if not ui.is_tty:
-       break
-   sel_code = LANGUAGE_CHOICES[chosen_idx][0]
-   cfg.language = sel_code
-   i18n.set_lang(sel_code)
-   cfg_mgr.save()
+  cfg = cfg_mgr.config
+  default_num = 1
+  for idx, (code, _, _) in enumerate(LANGUAGE_CHOICES, 1):
+    if code == cfg.language:
+      default_num = idx
+      break
+  bar = "─" * 34
+  print()
+  print(ui._paint("╭─── 🌐 Select Language " + bar[:11] + "╮", "1;36"))
+  for idx, (code, native_name, _) in enumerate(LANGUAGE_CHOICES, 1):
+    mark = " *" if idx == default_num else ""
+    print(ui._paint("│  ", "36") + ui._paint(f"[{idx}] ", "1;33") + f"{native_name} ({code.upper()}){mark}")
+  print(ui._paint("╰" + bar + "╯", "36"), flush=True)
+  chosen_idx = default_num - 1
+  max_n = len(LANGUAGE_CHOICES)
+  while True:
+    try:
+      raw = ui.ask(f"[1-{max_n}]: ").strip()
+    except (KeyboardInterrupt, EOFError):
+      print()
+      break
+    if not raw:
+      break
+    if raw.isdigit() and 1 <= int(raw) <= max_n:
+      chosen_idx = int(raw) - 1
+      break
+    if not ui.is_tty:
+      break
+  sel_code = LANGUAGE_CHOICES[chosen_idx][0]
+  cfg.language = sel_code
+  i18n.set_lang(sel_code)
+  cfg_mgr.save()
  def run_cli(argv: Optional[List[str]] = None) -> int:
-   _dm_owner_gate()
-   _dm_digest_gate()
-   _dm_signature_gate()
-   parser = build_arg_parser()
-   args = parser.parse_args(argv)
-   if args.version:
-     print(f"{__app_name__} v{__version__}")
-     return 0
-   cfg_mgr = ConfigManager()
-   cfg = cfg_mgr.config
-   history_path = cfg_mgr.home_dir / "history.txt"
-   ui = ConsoleUI(history_file=history_path)
-   one_shot_prompt = " ".join(args.prompt).strip() if args.prompt else ""
-   startup_lang_asked = False
-   needs_setup_flow = bool(args.setup or (not cfg.setup_completed and not args.api_key and not args.doctor))
-   if args.lang:
-     cfg.language = args.lang
-     i18n.set_lang(args.lang)
-     cfg_mgr.save()
-     startup_lang_asked = True
-   elif needs_setup_flow and ui.is_tty:
-     _prompt_startup_language(ui, cfg_mgr)
-     cfg = cfg_mgr.config
-     startup_lang_asked = True
-   else:
-     i18n.set_lang(cfg.language)
-   dirty = False
-   if args.provider:
-     if cfg.provider != args.provider and not args.model:
-       cfg.model = get_provider_spec(args.provider).models[0]
-     cfg.provider = args.provider
-     dirty = True
-   if args.model:
-     cfg.model = args.model
-     dirty = True
-   if args.api_key:
-     cfg.set_api_key(args.api_key, cfg.provider)
-     cfg.setup_completed = True
-     dirty = True
-   if args.auto:
-     cfg.permission_mode = "auto"
-     dirty = True
-   elif args.smart:
-     cfg.permission_mode = "smart"
-     dirty = True
-   if dirty:
-     cfg_mgr.save()
-   if args.api_key:
-     api_cli_warn = {
-       "tr": "--api-key kabuk geçmişinde görünebilir; sonraki sefer /api veya ortam değişkeni kullanın.",
-       "en": "--api-key may appear in shell history/process list; prefer /api or environment variables.",
-       "az": "--api-key qabıq tarixçəsində görünə bilər; növbəti dəfə /api və ya mühit dəyişəni istifadə edin.",
-       "de": "--api-key kann im Shell-Verlauf sichtbar sein; nutzen Sie besser /api oder Umgebungsvariablen.",
-       "es": "--api-key puede verse en el historial; prefiera /api o variables de entorno.",
-       "fr": "--api-key peut apparaître dans l'historique ; préférez /api ou les variables d'environnement.",
-       "it": "--api-key può apparire nella cronologia della shell; preferisci /api o variabili d'ambiente.",
-       "pt": "--api-key pode aparecer no histórico do shell; prefira /api ou variáveis de ambiente.",
-       "nl": "--api-key kan zichtbaar zijn in de shellgeschiedenis; gebruik liever /api of omgevingsvariabelen.",
-       "ru": "--api-key может сохраниться в истории оболочки; используйте /api или переменные среды.",
-       "ar": "قد يظهر --api-key في سجل الطرفية؛ يُفضل استخدام /api أو متغيرات البيئة.",
-       "zh": "--api-key 可能会保留在终端历史记录中；建议使用 /api 或环境变量。",
-       "ja": "--api-key はシェル履歴に残る可能性があります。/api または環境変数の使用を推奨します。",
-       "ko": "--api-key는 셸 기록에 남을 수 있으므로 /api 또는 환경 변수 사용을 권장합니다.",
-     }
-     ui.warn(api_cli_warn.get(i18n.lang, api_cli_warn["en"]))
-   agent = DocMindAgent(
-     config_mgr=cfg_mgr,
-     ui=ui,
-     non_interactive=bool(one_shot_prompt and not ui.is_tty),
-   )
-   router = CommandRouter(agent)
+  _dm_owner_gate()
+  _dm_digest_gate()
+  _dm_signature_gate()
+  parser = build_arg_parser()
+  args = parser.parse_args(argv)
+  if args.version:
+    print(f"{__app_name__} v{__version__}")
+    return 0
+  cfg_mgr = ConfigManager()
+  cfg = cfg_mgr.config
+  history_path = cfg_mgr.home_dir / "history.txt"
+  ui = ConsoleUI(history_file=history_path)
+  one_shot_prompt = " ".join(args.prompt).strip() if args.prompt else ""
+  startup_lang_asked = False
+  needs_setup_flow = bool(args.setup or (not cfg.setup_completed and not args.api_key and not args.doctor))
+  if args.lang:
+    cfg.language = args.lang
+    i18n.set_lang(args.lang)
+    cfg_mgr.save()
+    startup_lang_asked = True
+  elif needs_setup_flow and ui.is_tty:
+    _prompt_startup_language(ui, cfg_mgr)
+    cfg = cfg_mgr.config
+    startup_lang_asked = True
+  else:
+    i18n.set_lang(cfg.language)
+  dirty = False
+  if args.provider:
+    if cfg.provider != args.provider and not args.model:
+      cfg.model = get_provider_spec(args.provider).models[0]
+    cfg.provider = args.provider
+    dirty = True
+  if args.model:
+    cfg.model = args.model
+    dirty = True
+  if args.api_key:
+    cfg.set_api_key(args.api_key, cfg.provider)
+    cfg.setup_completed = True
+    dirty = True
+  if args.auto:
+    cfg.permission_mode = "auto"
+    dirty = True
+  elif args.smart:
+    cfg.permission_mode = "smart"
+    dirty = True
+  if dirty:
+    cfg_mgr.save()
+  if args.api_key:
+    api_cli_warn = {
+      "tr": "--api-key kabuk geçmişinde görünebilir; sonraki sefer /api veya ortam değişkeni kullanın.",
+      "en": "--api-key may appear in shell history/process list; prefer /api or environment variables.",
+      "az": "--api-key qabıq tarixçəsində görünə bilər; növbəti dəfə /api və ya mühit dəyişəni istifadə edin.",
+      "de": "--api-key kann im Shell-Verlauf sichtbar sein; nutzen Sie besser /api oder Umgebungsvariablen.",
+      "es": "--api-key puede verse en el historial; prefiera /api o variables de entorno.",
+      "fr": "--api-key peut apparaître dans l'historique ; préférez /api ou les variables d'environnement.",
+      "it": "--api-key può apparire nella cronologia della shell; preferisci /api o variabili d'ambiente.",
+      "pt": "--api-key pode aparecer no histórico do shell; prefira /api ou variáveis de ambiente.",
+      "nl": "--api-key kan zichtbaar zijn in de shellgeschiedenis; gebruik liever /api of omgevingsvariabelen.",
+      "ru": "--api-key может сохраниться в истории оболочки; используйте /api или переменные среды.",
+      "ar": "قد يظهر --api-key في سجل الطرفية؛ يُفضل استخدام /api أو متغيرات البيئة.",
+      "zh": "--api-key 可能会保留在终端历史记录中；建议使用 /api 或环境变量。",
+      "ja": "--api-key はシェル履歴に残る可能性があります。/api または環境変数の使用を推奨します。",
+      "ko": "--api-key는 셸 기록에 남을 수 있으므로 /api 또는 환경 변수 사용을 권장합니다.",
+    }
+    ui.warn(api_cli_warn.get(i18n.lang, api_cli_warn["en"]))
+  agent = DocMindAgent(
+    config_mgr=cfg_mgr,
+    ui=ui,
+    non_interactive=bool(one_shot_prompt and not ui.is_tty),
+  )
+  router = CommandRouter(agent)
 
-   if args.doctor:
-     ui.print_banner()
-     ui.print_startup_authority_warning()
-     return 0 if router._run_doctor() else 1
-   ui.print_banner()
-   ui.print_startup_authority_warning()
-   legacy_models = {
-     "groq": {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "qwen/qwen3-32b"},
-     "gemini": {"gemini-2.0-flash", "gemini-2.0-flash-001"},
-     "anthropic": {"claude-sonnet-4-20250514", "claude-opus-4-20250514", "claude-3-5-sonnet-latest", "claude-3-5-haiku-latest"},
-   }
-   if cfg.model in legacy_models.get(cfg.provider, set()):
-     leg_warn = {
-       "tr": f"Kaydedilmiş model eski olabilir: {cfg.model}. /model ile güncel bir model seçin.",
-       "en": f"Saved model may be deprecated: {cfg.model}. Use /model to choose a current model.",
-       "az": f"Saxlanılmış model köhnəlmiş ola bilər: {cfg.model}. /model ilə yeniləyin.",
-       "de": f"Gespeichertes Modell ist evtl. veraltet: {cfg.model}. Mit /model aktualisieren.",
-       "es": f"El modelo guardado puede estar obsoleto: {cfg.model}. Use /model para cambiarlo.",
-       "fr": f"Le modèle enregistré est peut-être obsolète : {cfg.model}. Utilisez /model.",
-       "it": f"Il modello salvato potrebbe essere obsoleto: {cfg.model}. Usa /model per aggiornarlo.",
-       "pt": f"O modelo salvo pode estar obsoleto: {cfg.model}. Use /model para escolher um atual.",
-       "nl": f"Opgeslagen model is mogelijk verouderd: {cfg.model}. Gebruik /model om te wijzigen.",
-       "ru": f"Сохранённая модель может быть устаревшей: {cfg.model}. Смените через /model.",
-       "ar": f"قد يكون النموذج المحفوظ قديماً: {cfg.model}. استخدم /model لاختيار نموذج حديث.",
-       "zh": f"已保存的模型可能已弃用: {cfg.model}。请使用 /model 切换最新模型。",
-       "ja": f"保存されたモデルは非推奨の可能性があります: {cfg.model}。/model で変更してください。",
-       "ko": f"저장된 모델이 구형일 수 있습니다: {cfg.model}. /model로 최신 모델을 선택하세요.",
-     }
-     ui.warn(leg_warn.get(i18n.lang, leg_warn["en"]))
-   if cfg.permission_mode == "auto":
-     auto_warn = {
-       "tr": "TAM OTOMATİK MOD: Dosya değişiklikleri onaysız çalışır (terminal komutları yine onay ister). /smart ile onaylı moda geçin.",
-       "en": "FULL AUTO MODE: File edits run automatically (terminal commands still ask approval). Use /smart for Smart Confirm.",
-       "az": "TAM AVTOMATİK REJİM: Fayl dəyişiklikləri təsdiqsiz işləyir (terminal yenə icazə istəyir). /smart ilə təsdiqli rejimə keçin.",
-       "de": "VOLLAUTOMATIK: Dateiänderungen laufen direkt (Terminal fragt weiterhin). /smart für Bestätigungsmodus.",
-       "es": "MODO AUTOMÁTICO: Los cambios de archivos son directos (la terminal sigue pidiendo permiso). Use /smart.",
-       "fr": "MODE AUTO : Modifications de fichiers directes (le terminal demande toujours accord). Utilisez /smart.",
-       "it": "MODALITÀ AUTO: Le modifiche ai file sono automatiche (il terminale chiede comunque conferma). Usa /smart.",
-       "pt": "MODO AUTOMÁTICO: Edições de arquivos são diretas (o terminal ainda pede permissão). Use /smart.",
-       "nl": "VOLAUTOMATISCH: Bestandswijzigingen lopen direct (terminal vraagt nog steeds toestemming). Gebruik /smart.",
-       "ru": "АВТО-РЕЖИМ: Изменения файлов без запроса (терминал всё равно спрашивает разрешение). /smart для обычного режима.",
-       "ar": "الوضع التلقائي الكامل: تُنفذ تعديلات الملفات تلقائياً (الطرفية تطلب الإذن دائماً). استخدم /smart للوضع الذكي.",
-       "zh": "全自动模式：文件修改将直接执行（终端命令仍需确认）。输入 /smart 切换回智能确认模式。",
-       "ja": "フルオートモード: ファイル編集は自動実行されます（ターミナル実行は引き続き確認あり）。/smart で確認モードに戻せます。",
-       "ko": "전체 자동 모드: 파일 수정이 자동 실행됩니다 (터미널 명령은 여전히 승인 필요). /smart로 승인 모드로 전환하세요.",
-     }
-     ui.warn(auto_warn.get(i18n.lang, auto_warn["en"]))
-   needs_first_setup = not cfg.setup_completed
-   if args.setup or (needs_first_setup and ui.is_tty):
-     agent.wizard.run_full_setup(skip_language=startup_lang_asked)
-     agent.refresh_client()
-   cfg = cfg_mgr.config
-   ui.info(t("effort_active", level=cfg.reasoning_effort))
-   if cfg.reasoning_effort == "max" and reasoning_effort_for(cfg):
-     ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
-   if cfg.reasoning_effort == "default" or not reasoning_control_for(cfg.provider, cfg.model):
-     ui.info(t("effort_uncontrolled"))
-   if cfg.reasoning_effort == "aggressive":
-     ui.info(t("effort_aggressive_note"))
-   ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
-   cli_images = []
-   for raw_img_arg in (args.image or []):
-     ok_ci, err_ci, meta_ci = load_image_attachment(raw_img_arg, agent.tools.cwd)
-     if ok_ci and meta_ci:
-       cli_images.append(meta_ci)
-     else:
-       ui.warn(err_ci)
-       return 1
-   piped_stdin = ""
-   if not ui.is_tty and sys.stdin is not None and (one_shot_prompt or cli_images):
-     try:
-       raw_pipe = sys.stdin.read(200_001)
-       if raw_pipe and raw_pipe.strip():
-         if len(raw_pipe) > 200_000:
-           raw_pipe = raw_pipe[:180_000] + "\n... [stdin truncated] ...\n" + raw_pipe[-15_000:]
-         piped_stdin = raw_pipe.strip()
-     except Exception:
-       pass
-   if one_shot_prompt or cli_images or piped_stdin:
-     final_oneshot = one_shot_prompt or (
-       "Inspect the attached image(s) carefully, explain what you see, and diagnose/fix any errors."
-       if cli_images else "Analyze the following piped input:"
-     )
-     if piped_stdin:
-       final_oneshot = f"{final_oneshot}\n\n### Piped Standard Input\n```\n{piped_stdin}\n```"
-     return 0 if agent.run_turn(final_oneshot, explicit_images=cli_images if cli_images else None) else 1
-   ui.info(t("ready_hint"))
-   ui.info(t("type_help_hint"))
-   ui.info(t("history_privacy"))
-   print()
-   _should_close_terminal = [False]
-   with ui.live_footer(agent.status_text, agent.status_text):
-     ui.show_inline_status(agent.status_text())
-     consecutive_ctrl_c = 0
-     while True:
-       try:
-         user_text = ui.ask("DocMind ❯ ", allow_multiline=True)
-         consecutive_ctrl_c = 0
-       except KeyboardInterrupt:
-         print()
-         consecutive_ctrl_c += 1
-         if consecutive_ctrl_c >= 2:
-           ui.info(t("cmd_exit_bye")); return 0
-         ui.warn(t("ctrl_c_exit_hint")); continue
-       except EOFError:
-         print(); ui.info(t("cmd_exit_bye")); return 0
-       except Exception as exc:
-         cfg_mgr.log_error("repl.input", repr(exc))
-         ui.print_alert(classify_exception(exc)); continue
-       stripped = user_text.strip()
-       if not stripped:
-         continue
-       if stripped.startswith("/"):
-         try:
-           outcome = router.handle(stripped)
-         except KeyboardInterrupt:
-           print(); ui.warn(t("ctrl_c_cancelled"))
-           outcome = "continue"
-         if outcome == "reset_exit":
-           _should_close_terminal[0] = True
-           break
-         ui.refresh_footer()
-         if not ui.view.footer_active:
-           ui.show_inline_status(agent.status_text())
-         if outcome == "exit":
-           return 0
-         continue
-       if stripped.lower() in ("exit", "quit"):
-         ui.info(t("cmd_exit_bye"));return 0
-       agent.run_turn(stripped)
-       ui.refresh_footer()
-       ui.show_inline_status(agent.status_text())
-   if _should_close_terminal[0]:
-     _close_terminal_window()
-     return 0
+  if args.doctor:
+    ui.print_banner()
+    ui.print_startup_authority_warning()
+    return 0 if router._run_doctor() else 1
+  ui.print_banner()
+  ui.print_startup_authority_warning()
+  legacy_models = {
+    "groq": {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "qwen/qwen3-32b"},
+    "gemini": {"gemini-2.0-flash", "gemini-2.0-flash-001"},
+    "anthropic": {"claude-sonnet-4-20250514", "claude-opus-4-20250514", "claude-3-5-sonnet-latest", "claude-3-5-haiku-latest"},
+  }
+  if cfg.model in legacy_models.get(cfg.provider, set()):
+    leg_warn = {
+      "tr": f"Kaydedilmiş model eski olabilir: {cfg.model}. /model ile güncel bir model seçin.",
+      "en": f"Saved model may be deprecated: {cfg.model}. Use /model to choose a current model.",
+      "az": f"Saxlanılmış model köhnəlmiş ola bilər: {cfg.model}. /model ilə yeniləyin.",
+      "de": f"Gespeichertes Modell ist evtl. veraltet: {cfg.model}. Mit /model aktualisieren.",
+      "es": f"El modelo guardado puede estar obsoleto: {cfg.model}. Use /model para cambiarlo.",
+      "fr": f"Le modèle enregistré est peut-être obsolète : {cfg.model}. Utilisez /model.",
+      "it": f"Il modello salvato potrebbe essere obsoleto: {cfg.model}. Usa /model per aggiornarlo.",
+      "pt": f"O modelo salvo pode estar obsoleto: {cfg.model}. Use /model para escolher um atual.",
+      "nl": f"Opgeslagen model is mogelijk verouderd: {cfg.model}. Gebruik /model om te wijzigen.",
+      "ru": f"Сохранённая модель может быть устаревшей: {cfg.model}. Смените через /model.",
+      "ar": f"قد يكون النموذج المحفوظ قديماً: {cfg.model}. استخدم /model لاختيار نموذج حديث.",
+      "zh": f"已保存的模型可能已弃用: {cfg.model}。请使用 /model 切换最新模型。",
+      "ja": f"保存されたモデルは非推奨の可能性があります: {cfg.model}。/model で変更してください。",
+      "ko": f"저장된 모델이 구형일 수 있습니다: {cfg.model}. /model로 최신 모델을 선택하세요.",
+    }
+    ui.warn(leg_warn.get(i18n.lang, leg_warn["en"]))
+  if cfg.permission_mode == "auto":
+    auto_warn = {
+      "tr": "TAM OTOMATİK MOD: Dosya değişiklikleri onaysız çalışır (terminal komutları yine onay ister). /smart ile onaylı moda geçin.",
+      "en": "FULL AUTO MODE: File edits run automatically (terminal commands still ask approval). Use /smart for Smart Confirm.",
+      "az": "TAM AVTOMATİK REJİM: Fayl dəyişiklikləri təsdiqsiz işləyir (terminal yenə icazə istəyir). /smart ilə təsdiqli rejimə keçin.",
+      "de": "VOLLAUTOMATIK: Dateiänderungen laufen direkt (Terminal fragt weiterhin). /smart für Bestätigungsmodus.",
+      "es": "MODO AUTOMÁTICO: Los cambios de archivos son directos (la terminal sigue pidiendo permiso). Use /smart.",
+      "fr": "MODE AUTO : Modifications de fichiers directes (le terminal demande toujours accord). Utilisez /smart.",
+      "it": "MODALITÀ AUTO: Le modifiche ai file sono automatiche (il terminale chiede comunque conferma). Usa /smart.",
+      "pt": "MODO AUTOMÁTICO: Edições de arquivos são diretas (o terminal ainda pede permissão). Use /smart.",
+      "nl": "VOLAUTOMATISCH: Bestandswijzigingen lopen direct (terminal vraagt nog steeds toestemming). Gebruik /smart.",
+      "ru": "АВТО-РЕЖИМ: Изменения файлов без запроса (терминал всё равно спрашивает разрешение). /smart для обычного режима.",
+      "ar": "الوضع التلقائي الكامل: تُنفذ تعديلات الملفات تلقائياً (الطرفية تطلب الإذن دائماً). استخدم /smart للوضع الذكي.",
+      "zh": "全自动模式：文件修改将直接执行（终端命令仍需确认）。输入 /smart 切换回智能确认模式。",
+      "ja": "フルオートモード: ファイル編集は自動実行されます（ターミナル実行は引き続き確認あり）。/smart で確認モードに戻せます。",
+      "ko": "전체 자동 모드: 파일 수정이 자동 실행됩니다 (터미널 명령은 여전히 승인 필요). /smart로 승인 모드로 전환하세요.",
+    }
+    ui.warn(auto_warn.get(i18n.lang, auto_warn["en"]))
+  needs_first_setup = not cfg.setup_completed
+  if args.setup or (needs_first_setup and ui.is_tty):
+    agent.wizard.run_full_setup(skip_language=startup_lang_asked)
+    agent.refresh_client()
+  cfg = cfg_mgr.config
+  ui.info(t("effort_active", level=cfg.reasoning_effort))
+  if cfg.reasoning_effort == "max" and reasoning_effort_for(cfg):
+    ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
+  if cfg.reasoning_effort == "default" or not reasoning_control_for(cfg.provider, cfg.model):
+    ui.info(t("effort_uncontrolled"))
+  if cfg.reasoning_effort == "aggressive":
+    ui.info(t("effort_aggressive_note"))
+  ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
+  cli_images = []
+  for raw_img_arg in (args.image or []):
+    ok_ci, err_ci, meta_ci = load_image_attachment(raw_img_arg, agent.tools.cwd)
+    if ok_ci and meta_ci:
+      cli_images.append(meta_ci)
+    else:
+      ui.warn(err_ci)
+      return 1
+  piped_stdin = ""
+  if not ui.is_tty and sys.stdin is not None and (one_shot_prompt or cli_images):
+    try:
+      raw_pipe = sys.stdin.read(200_001)
+      if raw_pipe and raw_pipe.strip():
+        if len(raw_pipe) > 200_000:
+          raw_pipe = raw_pipe[:180_000] + "\n... [stdin truncated] ...\n" + raw_pipe[-15_000:]
+        piped_stdin = raw_pipe.strip()
+    except Exception:
+      pass
+  if one_shot_prompt or cli_images or piped_stdin:
+    final_oneshot = one_shot_prompt or (
+      "Inspect the attached image(s) carefully, explain what you see, and diagnose/fix any errors."
+      if cli_images else "Analyze the following piped input:"
+    )
+    if piped_stdin:
+      final_oneshot = f"{final_oneshot}\n\n### Piped Standard Input\n```\n{piped_stdin}\n```"
+    return 0 if agent.run_turn(final_oneshot, explicit_images=cli_images if cli_images else None) else 1
+  ui.info(t("ready_hint"))
+  ui.info(t("type_help_hint"))
+  ui.info(t("history_privacy"))
+  print()
+  _should_close_terminal = [False]
+  with ui.live_footer(agent.status_text, agent.status_text):
+    ui.show_inline_status(agent.status_text())
+    consecutive_ctrl_c = 0
+    while True:
+      try:
+        user_text = ui.ask("DocMind ❯ ", allow_multiline=True)
+        consecutive_ctrl_c = 0
+      except KeyboardInterrupt:
+        print()
+        consecutive_ctrl_c += 1
+        if consecutive_ctrl_c >= 2:
+          ui.info(t("cmd_exit_bye")); return 0
+        ui.warn(t("ctrl_c_exit_hint")); continue
+      except EOFError:
+        print(); ui.info(t("cmd_exit_bye")); return 0
+      except Exception as exc:
+        cfg_mgr.log_error("repl.input", repr(exc))
+        ui.print_alert(classify_exception(exc)); continue
+      stripped = user_text.strip()
+      if not stripped:
+        continue
+      if stripped.startswith("/"):
+        try:
+          outcome = router.handle(stripped)
+        except KeyboardInterrupt:
+          print(); ui.warn(t("ctrl_c_cancelled"))
+          outcome = "continue"
+        if outcome == "reset_exit":
+          _should_close_terminal[0] = True
+          break
+        ui.refresh_footer()
+        if not ui.view.footer_active:
+          ui.show_inline_status(agent.status_text())
+        if outcome == "exit":
+          return 0
+        continue
+      if stripped.lower() in ("exit", "quit"):
+        ui.info(t("cmd_exit_bye"));return 0
+      agent.run_turn(stripped)
+      ui.refresh_footer()
+      ui.show_inline_status(agent.status_text())
+  if _should_close_terminal[0]:
+    _close_terminal_window()
+    return 0
  def _close_terminal_window() -> None:
-   import os as _os
-   if _os.environ.get("DOCMIND_NO_CLOSE_TERMINAL") == "1":
-     return
-   if _os.name == "nt":
-     try:
-       import ctypes as _ct
-       hwnd = _ct.windll.kernel32.GetConsoleWindow()
-       if hwnd:
-         _ct.windll.user32.PostMessageW(hwnd, 0x0010, 0, 0)
-     except Exception:
-       pass
-   else:
-     try:
-       import signal as _sig
-       ppid = _os.getppid()
-       if ppid > 1:
-         comm = ""
-         proc_comm = Path(f"/proc/{ppid}/comm")
-         if proc_comm.exists():
-           comm = proc_comm.read_text(encoding="utf-8", errors="ignore").strip().lower()
-         else:
-           import subprocess as _sp
-           comm = _sp.run(["ps", "-p", str(ppid), "-o", "comm="], capture_output=True, text=True, timeout=2).stdout.strip().lower()
-         base = Path(comm).name.lstrip("-")
-         if base in {"bash", "zsh", "fish", "sh", "dash", "ksh", "tcsh", "csh"}:
-           _os.kill(ppid, _sig.SIGHUP)
-     except Exception:
-       pass
+  import os as _os
+  if _os.environ.get("DOCMIND_NO_CLOSE_TERMINAL") == "1":
+    return
+  if _os.name == "nt":
+    try:
+      import ctypes as _ct
+      hwnd = _ct.windll.kernel32.GetConsoleWindow()
+      if hwnd:
+        _ct.windll.user32.PostMessageW(hwnd, 0x0010, 0, 0)
+    except Exception:
+      pass
+  else:
+    try:
+      import signal as _sig
+      ppid = _os.getppid()
+      if ppid > 1:
+        comm = ""
+        proc_comm = Path(f"/proc/{ppid}/comm")
+        if proc_comm.exists():
+          comm = proc_comm.read_text(encoding="utf-8", errors="ignore").strip().lower()
+        else:
+          import subprocess as _sp
+          comm = _sp.run(["ps", "-p", str(ppid), "-o", "comm="], capture_output=True, text=True, timeout=2).stdout.strip().lower()
+        base = Path(comm).name.lstrip("-")
+        if base in {"bash", "zsh", "fish", "sh", "dash", "ksh", "tcsh", "csh"}:
+          _os.kill(ppid, _sig.SIGHUP)
+    except Exception:
+      pass
  def main() -> None:
-   try:
-     code = run_cli()
-     sys.exit(code)
-   except KeyboardInterrupt:
-     print()
-     sys.exit(0)
-   except Exception as fatal_exc:
-     ui = ConsoleUI()
-     ui.print_alert(classify_exception(fatal_exc))
-     sys.exit(1)
+  try:
+    code = run_cli()
+    sys.exit(code)
+  except KeyboardInterrupt:
+    print()
+    sys.exit(0)
+  except Exception as fatal_exc:
+    ui = ConsoleUI()
+    ui.print_alert(classify_exception(fatal_exc))
+    sys.exit(1)
  return locals()
 _dm_install('docmind.cli', _dm_module_26, False)
 if __name__ == "__main__":
-    if "--cli" in _dm_sys.argv:
-        _dm_sys.argv.remove("--cli")
-    from docmind.cli import main
-    main()
+   if "--cli" in _dm_sys.argv:
+       _dm_sys.argv.remove("--cli")
+   from docmind.cli import main
+   main()
