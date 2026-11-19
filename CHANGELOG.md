@@ -4,24 +4,6 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ---
 
-## `v1.3` — Interactive `/effort` option menu
-
-### Added
-- **`/effort` without an argument now prints a full option menu** (all 14 languages) instead of only
-  echoing the current level: every level is listed with a number, its Turkish/English alias, the value
-  actually sent to the API, whether token saving is allowed, and a one-line plain-language explanation
-  of what it is for (`low` → fastest/cheapest … `aggressive` → deepest reasoning). The active level is
-  marked with `◀`.
-- After the menu, DocMind asks **`Numara seçin (1-7) veya düzey adı yazın [Enter: vazgeç]`** — type the
-  printed number (`1`…`7`) or any level name; Enter (or `q`) leaves the current level untouched and says so.
-  `aggressive` still triggers the `Y/N` warning when chosen from the menu.
-- An unknown `/effort` argument now shows the usage line **and** the menu, so the codes are always visible.
-
-### Changed
-- `/help` text and the docs describe the menu flow; version strings, User-Agent and banner updated to `1.3`.
-
----
-
 ## `v1.2` — Token Saving, Aggressive Reasoning Mode & Stability
 
 ### Added
@@ -48,6 +30,12 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ### Changed
 - Token-saving state and the active level are printed on start-up and after every `/effort` / `/token-save`.
+- **🎚️ `/effort` option menu:** running `/effort` with no argument prints every level with a number, its
+  alias, the value sent to the API, whether token saving is allowed and a one-line explanation (active level
+  marked `◀`), then accepts the printed number (`1`–`7`) or any level name; `Enter`/`q` cancels and keeps the
+  current level. Choosing `aggressive` from the menu still asks for `Y/N`. An unknown `/effort` argument now
+  shows the usage line together with the menu.
+
 - `/help` gained the `/token-save` entry in all 14 languages; `/effort` usage text lists the new levels.
 - Old `v1.1` configs are migrated automatically (new `token_save` field defaults according to the saved level).
 

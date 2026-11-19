@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.3`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.2`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI `v1.3`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.2`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 

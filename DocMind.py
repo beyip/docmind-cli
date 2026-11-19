@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'c2d02d84dbed27043b90f733efd5f34562fa152546c3bad865c9032562a31f71'
-_DM_SIGNATURE = '9b9630926efdfd4c6552f9b12bcb3a325f8d38eae47209f77b1846376740066de6d7d98c336636c40b40be12db5882a48cd83094755f86e39d2cd8b10401c86633752f2782a5cedc354b06ed503b772b0e69c186f011dc5cde4939b5a964e13ac262cb74a811db86367c52b534d2d5d04835c885e927f9c46ec0eaa183b85482ddb7469301f9e2ad2c20d1b829ec46b01b619b099bb7545ed09fb5ca89fd8f3d897a104c997f58101ea40860c11e7758e4a81835cfa5d68716bc6f7b45ca31632911c8d2bc52fd0e089fe2db13410fb974444c2ac1e5ae7c2df52a0ddee44ca03e75fb6a9cc82212d46d8a4723366524195d61b6119173f259f530e7aee1cd1dd7edcf1b76b0741314772da18f79dad3b85170a64d73e64726bab91efb9a5c7d8654a1c4f97078b43822f7a66fc5a6e8734d3d0574e7cf10a9cabd35307114daa7190711cf806e2e21a6efc749d2c20afc467f77ddb55337b9849f79aa38560b988b585bd5507ff013b664432fde31ebd00ea00171ecac25aafed1051751c74b'
+_DM_SOURCE_HASH = '874ac34710f9e596288786719d9695251e1b1a9725632c5ad383fe3ca1b3fcce'
+_DM_SIGNATURE = '60527a07127509a807a48899e664473b3ff7c67ad94181be15f35353aee52ce67f704a056cb5e940fe48de1f40fe18f19b9558583cc2bd56082df55b7fb57994d1f2597ac93014e0487008df0da4ea27d13bb639de1b700687a1d3bb11a89f6f47bc892aae7e55e88629ef8b6a52efd929222f9275be38354507fcb96e7fc0677f4526556ac339f4e1871f5113d92fa43bebd1dc0be7da9e00fa113eb03aa97ba834eeeaca5d7e78fb88eb6d6239f39a08476b2081c30a1c400d2a70e0010a49c125de9d5ded9eb00799186726eca5ec80f8f090ce714a77de5d54e0f7db8e50b3f3f8404efb752ccd9746dfbb87274232a73fdc026997b4b3cbb363b51c2806ffb6add437ca79813307550d2715ba2b4f8107ec8101df5d24d86f8280760a654d82ef91e121b89268be08629437a1579377ab5cd58549015011b59a9e2bf5b3077dac697be302eb453b6cfea34aaccb25920dd4f135f54e35b96fe7eb42befa39d36b7cbfefb30b7f7c20747a742e86b35d9f979ff3008b0d8188c54a412580'
 _DM_PUBLIC_N = int('cf32358b4296594259856122aa66a9d8880488a28417d50a3b7cd2421eada4dcbd834733838288f1b9ae5d62ce30db9da7264834b415bca3d758b3116c63ce35d9f97ecb4db1d72549d6ee9844384216146c9d03cc311d2e67c5f4eff6c5a2cbb27f0a07cc3e1a4134bb60e71502ce866a07bad6be93895a4f1ab93e6af0bfa722f8f127cb754dfb3a3ef911cb75795ecf746d7a9469914cb88370b4e84ebe65ba95df5ce88216f8d57444b67b69b454c2d5f2826e119a48ee15cf9bdf8dee9185668eaec34544fbb0d14a6456f4f7c1af072fb3803765910b4bdf0ef2f8efe688a0d9a02a1b80ad7ff153996c346128046d3e0381c14090c9eb0c83bcfbdfcf544b27d08d2483b9a41b3b8d2160facc34ddf9cdf2cfe9021603eaefae7032ea0a434ed3fc572d3b5456f94f41de5e36eeee8b40a8426337861f6d77b3907d37d8023c3c74357348ece9711f06d7458844e6e0091afd68d7c437713c1a6452b61cd299075c864be6dbda652c2014a5f11793fd9580f203296d944db3c00b0113', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -169,7 +169,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.3"
+ __version__ = "1.2"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -7270,9 +7270,9 @@ def _dm_module_11():
  MAX_DOWNLOAD_BYTES = 1024 * 1024
  _BROWSER_UA = (
    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.3"
+   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.2"
  )
- _API_UA = "DocMindCLI/1.3 (https://github.com/beyip/docmind-cli)"
+ _API_UA = "DocMindCLI/1.2 (https://github.com/beyip/docmind-cli)"
 
  def _is_public_url(url: str) -> Tuple[bool, str]:
    allow_local = os.environ.get("DOCMIND_ALLOW_LOCAL_WEB_TEST") == "1"
@@ -12514,7 +12514,7 @@ def _dm_module_20():
      _dm_owner_gate()
      _dm_signature_gate()
      if not self.view.color or self.view._size()[1] < 30:
-       print("\nDocMind v1.3  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
+       print("\nDocMind v1.2  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -12535,7 +12535,7 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v1.3", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
+       label = ("  " + self._paint("DocMind v1.2", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
        print("  " + "".join(cells) + label)
      print()
    @contextmanager

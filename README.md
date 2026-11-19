@@ -1,6 +1,6 @@
-# ⚡ DocMind CLI (`v1.3`)
+# ⚡ DocMind CLI (`v1.2`)
 
-![Version](https://img.shields.io/badge/version-1.3-06b6d4?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.2-06b6d4?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero%20(stdlib%20only)-22c55e?style=flat-square)
 ![Languages](https://img.shields.io/badge/languages-14-f97316?style=flat-square)
@@ -14,7 +14,7 @@
 
 ---
 
-## 🆕 What's New in `v1.3`
+## 🆕 What's New in `v1.2`
 
 - **🎚️ `/effort` now shows a real option menu:** typing `/effort` alone lists every reasoning level with a
   number, its alias, the value sent to the API, whether token saving is allowed and a plain-language
@@ -22,8 +22,9 @@
 - **Pick by number:** right after the menu you can type `1`–`7` (or any level name); `Enter` cancels and
   keeps the current level. Choosing `1` (aggressive) still asks the `Y/N` confirmation first.
 - An unknown `/effort` argument now prints the usage line **and** the menu.
+- **📦 Included from the earlier v1.2 work below:** token saving, aggressive/hard levels and the mode guard.
 
-## 📦 What's New in `v1.2`
+## 📦 Also in `v1.2`
 
 - **🪙 Token Saving (ON by default, intelligence preserved):**
   - New `/token-save off` / `/token-save on` (and `/token-save status`) commands, remembered across sessions.
