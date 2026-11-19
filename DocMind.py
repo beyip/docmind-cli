@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'fb16f81dcecc6433f52e14038a1f2a77526bd84c8a578b038209bed1d926a99d'
-_DM_SIGNATURE = '4f857da79812838c1e91b88814dd1df2bb38dc5269a007cc2867ffbf68c522789f00bac1dd549c3816cb4a7b8ec1bd39149d99677b0086df2487b5d3830304f98def4d6c637a5cf1d9c230f7a03337f16f6c13113d827ef411dfbbd3ee39731907f9c96265dd4f0e61bfdc03b2d1940e8c9b342bf9e9e1cb3f46bc740845278e54192e26ff382b54c5ee5ea4f954ff2a49d42a57a16aa1fb7fd19f66856a249974132fb1e6ef86236c004792b7f79c33aadad16eef8e228e70c6b2aa9c7166c780867b01a6f10ca66d100f0772fa9ce760dcb5f7d6b38f4c185de72f82d7b66d635efc4c21905f3a5ae1a86f3cc8122995d477ebe72bb4b2ad76de965a6d58085688984946a7dd96badeb4679fb69b804b58ad71a7e8ba06d32813f1fe7d561f0588172f9e240ec719fef8b5a6d0e220f3e4aeb31ef392ccaee12dff79bd313035d56cd1d39d90662c716e88805a3052ded094bb4ed28db5405104e771d50cd08f33a50205fa186ff14adbae09aefd75019791092ddf71d9f32baac6b8fa4883'
+_DM_SOURCE_HASH = 'd123248efc9116ccab74525810bfb2a9266d77fccc1dd4bc435a65d43c6dd678'
+_DM_SIGNATURE = '335dd2425c1b6f683c5aee5e165e75e0336937e3ba3fc914bbc662af7fddf739c538afbce3b305d4f43b2cc38e6fcb94ee2e71c39ab88f20c4e6351815e9eaaddc4f33d59e8ae2a6d229aecdd4618c7af33aacb88df19f7e247529911ce5c78f1ed6a22d682cd3c49d9cbd488899f1d74b0d2ed692871dbd0a0ccd6221d7ca1348dbdb227f77c77e4e23f8bab4462d07c8b72829419ed50c393d0cfd45e1241ced7fbdb70852afcba68ae0e4fb8fc07b7b9e082028f33d31981d06cfadb17801a189b733e802fa6bcb995b9910381eb3c8a2e9607fe6a2b9b26fcb42ee3bb7b98c2f51a62452c41bb9d3f8f0d20a48b428c2a64b85764825d84b746c773a8860f057fbd382a832d2a4ce7e240dc747684a6ddff4f0ce99aef36b48c85d9a7d9217ca1639ddd22da062e880a9ad86a234c5c6b7b13402b9917d2479e824170c2779bd20c756305da9031fc522a4a0b0dd8f1deb7d8acb28742471eca59172b6d5c67494e8d6a91828c5fef42ec453db10e60c03d9ffeb563eadffc63f164ec63f'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -455,6 +455,9 @@ def _dm_module_01():
     "aggressive_audit_clean": "Kusursuzluk denetimi temiz: sözdizimi hatası, yarım iş veya şüpheli hata kalıbı bulunamadı ({files} dosya tarandı).",
     "aggressive_audit_advisory": "Bunlar bu turda dokunulmayan, önceden var olan bulgular; turu kilitlemezler ama ileride düzeltilmeli.",
     "aggressive_audit_issues": "Kusursuzluk denetimi {count} bulgu saptadı; ilgili dosyalar listelendi ve düzeltilmeleri gerekiyor.",
+    "aggressive_audit_gave_up": "Kusursuzluk denetimi 3 turda temizlenemedi ({count} bulgu kaldı); sonsuz döngüyü önlemek için tur kapatıldı.",
+    "aggressive_audit_stuck": "Kusursuzluk denetimi aynı {count} bulguyu tekrar buldu; döngüye girmemek için tur kapatıldı.",
+    "aggressive_audit_leftover": "Kalan bulgular yukarıda listelendi; istersen tek komutla düzeltmeye devam edebilirsin.",
     "aggressive_audit_tool": "Çalışma klasöründe kusursuzluk denetimi: sözdizimi hataları, TODO/FIXME/XXX işaretleri, gerçek hata kalıpları ve proje hafızası durumu (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, otomatik yedekler).",
     "aggressive_left": "Aggressive moddan çıkıldı: {level}. Token tasarrufu yeniden açılabilir.",
     "effort_aggressive_note": "Aggressive = maksimum düşünme gücü; token tasarrufu bu modda açılamaz. Motor açıkken plan, doğrulama ve kusursuzluk denetimi zorunludur (/effort engine off ile kapatılır).",
@@ -747,6 +750,9 @@ def _dm_module_01():
     "aggressive_audit_clean": "Perfection audit clean: no syntax errors, unfinished work or suspicious error patterns found ({files} files scanned).",
     "aggressive_audit_advisory": "These findings are pre-existing in files this turn did not touch; they do not block the turn but should be fixed later.",
     "aggressive_audit_issues": "Perfection audit found {count} issue(s); the affected files are listed and must be fixed.",
+    "aggressive_audit_gave_up": "Perfection audit could not clear {count} issue(s) in 3 rounds; the turn was closed to avoid an endless loop.",
+    "aggressive_audit_stuck": "Perfection audit found the same {count} issue(s) again; the turn was closed to avoid a loop.",
+    "aggressive_audit_leftover": "The remaining findings are listed above; ask again if you want them fixed.",
     "aggressive_audit_tool": "Perfection audit of the working folder: syntax errors, TODO/FIXME/XXX markers, real error patterns and project-memory status (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, automatic backups).",
     "aggressive_left": "Left aggressive mode: {level}. Token saving can be enabled again.",
     "effort_aggressive_note": "Aggressive = maximum reasoning; token saving cannot be enabled in this mode. With the engine armed, planning, verification and the perfection audit are mandatory (/effort engine off disables it).",
@@ -1039,6 +1045,9 @@ def _dm_module_01():
     "aggressive_audit_clean": "Perfektions-Audit sauber: keine Syntaxfehler, offene Arbeiten oder verdächtige Fehlermuster ({files} Dateien geprüft).",
     "aggressive_audit_advisory": "Diese Funde stammen aus Dateien, die diese Runde nicht berührt hat; sie blockieren die Runde nicht, sollten aber später behoben werden.",
     "aggressive_audit_issues": "Das Audit hat {count} Problem(e) gefunden; die betroffenen Dateien sind aufgeführt und müssen behoben werden.",
+    "aggressive_audit_gave_up": "Perfection audit could not clear {count} issue(s) in 3 rounds; the turn was closed to avoid an endless loop.",
+    "aggressive_audit_stuck": "Perfection audit found the same {count} issue(s) again; the turn was closed to avoid a loop.",
+    "aggressive_audit_leftover": "The remaining findings are listed above; ask again if you want them fixed.",
     "aggressive_audit_tool": "Perfektions-Audit des Arbeitsordners: Syntaxfehler, TODO/FIXME/XXX-Marker, echte Fehlermuster und Projektgedächtnis-Status.",
     "aggressive_left": "Aggressive-Modus verlassen: {level}. Token-Sparmodus kann wieder aktiviert werden.",
     "effort_aggressive_note": "Aggressive = maximale Denkleistung; in diesem Modus ist Token-Sparen nicht erlaubt.",
@@ -15070,7 +15079,8 @@ def _dm_module_24():
     self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
     self.client.on_vision_fallback = lambda: self.ui.warn(t("img_vision_fallback", model=self.config_mgr.config.model))
     self.client.on_vision_bridge = lambda bm: self.ui.info(t("vision_bridge_used", bridge_model=bm))
-  def _aggressive_final_gate(self, touched: Optional[Set[str]] = None) -> str:
+  def _aggressive_final_gate(self, touched: Optional[Set[str]] = None,
+                             rounds: int = 0) -> str:
     """Aggressive mode: audit the folder before a turn is allowed to end.
 
     Only *blocking* problems force another round: syntax errors anywhere, or findings
@@ -15103,11 +15113,24 @@ def _dm_module_24():
     self.ui.warn(t("aggressive_audit_issues", count=len(blocking)))
     for line in blocking[:12]:
       print("   " + line)
+    # Hard stops: never let the audit trap the conversation in a spiral.
+    if rounds >= 3:
+      self.ui.warn(t("aggressive_audit_gave_up", count=len(blocking)))
+      for line in blocking[:6]:
+        print("   " + line)
+      self.ui.info(t("aggressive_audit_leftover"))
+      return "done"
+    fingerprint = "|".join(blocking)
+    if rounds >= 1 and fingerprint == getattr(self, "_ag_gate_fingerprint", ""):
+      self.ui.warn(t("aggressive_audit_stuck", count=len(blocking)))
+      return "done"
+    self._ag_gate_fingerprint = fingerprint
+    remaining = max(0, 3 - rounds)
     self.context.add_user(
       "[AGGRESSIVE AUDIT] These problems must be fixed before this turn can end:\n"
       + "\n".join(blocking[:20])
-      + "\nFix them now (syntax errors, unfinished markers or error patterns in the files you just wrote), re-run "
-        "the relevant check, then report. Leave unrelated pre-existing findings alone."
+      + f"\nFix them now (syntax errors, unfinished markers or error patterns in the files you just wrote), re-run "
+        f"the relevant check, then report. Leave unrelated pre-existing findings alone. Attempts left: {remaining}."
     )
     return "continue"
 
@@ -15652,7 +15675,8 @@ def _dm_module_24():
           worked = bool(attempted_tools & AGGRESSIVE_WORK_TOOLS)
           if aggressive_active(self.config_mgr.config) and getattr(self.config_mgr.config, "aggressive_mode", True) \
               and worked and "aggressive_audit" not in attempted_tools:
-            verdict = self._aggressive_final_gate(touched_files)
+            self._ag_gate_rounds = int(getattr(self, "_ag_gate_rounds", 0)) + 1
+            verdict = self._aggressive_final_gate(touched_files, self._ag_gate_rounds)
             if verdict == "continue":
               continue
           elapsed_s = time.monotonic() - turn_t0
@@ -15767,51 +15791,74 @@ def _dm_module_24():
             )
         break
  return locals()
- def _dm_aggressive_bridge() -> None:
-     import types as _b_types
-     class _BridgeHolder:
-       cfg = None
-     holder = _BridgeHolder
-     helpers = {
-         "aggressive_active": aggressive_active,
-         "aggressive_audit_folder": aggressive_audit_folder,
-         "tool_aggressive_audit": tool_aggressive_audit,
-         "aggressive_snapshot": aggressive_snapshot,
-         "aggressive_directive": aggressive_directive,
-         "AGGRESSIVE_PLAN_FILE": AGGRESSIVE_PLAN_FILE,
-         "AGGRESSIVE_JOURNAL_FILE": AGGRESSIVE_JOURNAL_FILE,
-         "AGGRESSIVE_BACKUP_DIR": AGGRESSIVE_BACKUP_DIR,
-     }
-     targets = (
-         "docmind.tools.project",
-         "docmind.tools.filesystem",
-         "docmind.core.agent",
-         "docmind.ui.commands",
-         "docmind.config",
-         "docmind.core.permissions",
-     )
-     for name in targets:
-         mod = _dm_sys.modules.get(name)
-         if mod is None:
-             continue
-         for key, value in helpers.items():
-             if not hasattr(mod, key):
-                 setattr(mod, key, value)
-         if not hasattr(mod, "_aggressive_cfg_holder"):
-             setattr(mod, "_aggressive_cfg_holder", holder)
-     # keep the config pointer live for the prompt layer from now on
-     cfg_mod = _dm_sys.modules.get("docmind.config")
-     if cfg_mod is not None and not getattr(cfg_mod, "_aggressive_bound", False):
-         orig_eff = cfg_mod.token_save_effective
-         def _bound_eff(cfg, _orig=orig_eff):
-             holder.cfg = cfg
-             return _orig(cfg)
-         cfg_mod.token_save_effective = _bound_eff
-         cfg_mod._aggressive_bound = True
-
-
- _dm_aggressive_bridge()
 _dm_install('docmind.core.agent', _dm_module_24, False)
+
+# ===== Aggressive Engine wiring (top level, real globals) =====
+def _dm_aggressive_helpers():
+    """Resolve the engine helpers from the modules that actually own them."""
+    cfg_mod = _dm_sys.modules.get("docmind.config")
+    proj = _dm_sys.modules.get("docmind.tools.project")
+    out = {}
+    if cfg_mod is not None and hasattr(cfg_mod, "aggressive_active"):
+        out["aggressive_active"] = cfg_mod.aggressive_active
+    names = ("aggressive_directive", "aggressive_audit_folder", "aggressive_audit",
+             "tool_aggressive_audit", "aggressive_snapshot",
+             "AGGRESSIVE_PLAN_FILE", "AGGRESSIVE_JOURNAL_FILE",
+             "AGGRESSIVE_BACKUP_DIR", "AGGRESSIVE_WORK_TOOLS")
+    if proj is not None:
+        for name in names:
+            if hasattr(proj, name):
+                out[name] = getattr(proj, name)
+    return out
+
+
+def _dm_bind_globals(target_globals, helpers, seen=None):
+    """Give nested functions (born inside the module factories) the helper names."""
+    if target_globals is None:
+        return
+    if seen is None:
+        seen = set()
+    if id(target_globals) in seen:
+        return
+    seen.add(id(target_globals))
+    for key, value in helpers.items():
+        target_globals.setdefault(key, value)
+
+
+def _dm_aggressive_bridge(seen=None):
+    """Bind the Aggressive Engine helpers into every namespace that needs them.
+
+    Modules are assembled from factories, so functions nested inside a factory resolve
+    names against the root (__main__) globals rather than the module they are installed
+    into. Patching the real ``__globals__`` chain is the only reliable fix, otherwise
+    ``NameError: aggressive_directive`` resurfaces inside agent/prompt/registry code.
+    """
+    helpers = _dm_aggressive_helpers()
+    if not helpers:
+        return
+    if seen is None:
+        seen = set()
+    _dm_bind_globals(globals(), helpers, seen)
+    for mod_name in ("docmind", "docmind.config", "docmind.core.agent", "docmind.ui.commands",
+                     "docmind.core.permissions", "docmind.tools.project",
+                     "docmind.tools.registry", "docmind.tools.filesystem",
+                     "docmind.ui.wizard", "docmind.cli"):
+        mod = _dm_sys.modules.get(mod_name)
+        if mod is None or mod.__dict__ is globals():
+            continue
+        _dm_bind_globals(mod.__dict__, helpers, seen)
+        for value in list(mod.__dict__.values()):
+            if isinstance(value, _dm_types.FunctionType):
+                _dm_bind_globals(value.__globals__, helpers, seen)
+            elif isinstance(value, type):
+                for attr in list(value.__dict__.values()):
+                    if isinstance(attr, _dm_types.FunctionType):
+                        _dm_bind_globals(attr.__globals__, helpers, seen)
+                    elif isinstance(attr, (staticmethod, classmethod)):
+                        _dm_bind_globals(getattr(attr.__func__, "__globals__", None), helpers, seen)
+
+
+_dm_aggressive_bridge()
 
 # ===== docmind/ui/commands.py (included source) =====
 def _dm_module_25():

@@ -6,6 +6,19 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ## `v1.2` — Token Saving, Aggressive Reasoning Mode & Stability
 
+### Fixed — `NameError` inside the Aggressive Engine (v1.2 build of 2026-11-19)
+- **Root cause:** the modules are assembled from factories, so functions defined *inside* a factory resolve names
+  against the root (`__main__`) globals, not the module they end up in. The engine helpers
+  (`aggressive_directive`, `aggressive_audit_folder`, `tool_aggressive_audit`, `aggressive_snapshot`,
+  `AGGRESSIVE_*`) were therefore invisible to the agent / tool-registry / filesystem code and the program died with
+  `NameError: name 'aggressive_directive' is not defined` as soon as an Aggressive turn started.
+- **Fix:** a top-level `_dm_aggressive_bridge()` now collects the helpers from the modules that own them and binds
+  them into the real `__globals__` of every function in `docmind.core.agent`, `docmind.tools.registry`,
+  `docmind.tools.filesystem`, `docmind.ui.commands` and friends. The old bridge lived *inside* the agent factory
+  (where those names never existed) and was removed.
+- **Regression guard:** an AST scan of the whole file now reports **0** cross-module bare-name references, and the
+  prompt builder, the `aggressive_audit` tool dispatch and the perfection gate are exercised directly in tests.
+
 ### Added — Aggressive Engine (makes Aggressive genuinely aggressive)
 - **`Aggressive` is now a full quality contract, not just a reasoning number.** With `/effort aggressive` the agent
   receives a mandatory engineering protocol in its system prompt: clarify once then commit, plan before touching files,
