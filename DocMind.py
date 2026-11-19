@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '5ee85552fba5dbf2c9178c9e05cfadc48ad7a0b5aae999c4dd9153103c76c2af'
-_DM_SIGNATURE = '52d3e75b0a8bdce606f2303a2dd76df601a591c11515c81e4c795bf337e71c444073bf04aa5ea5510d6d73ff721cc3945647a1fcf276866765ad05d6254df65994374359e0a1a02b0d91158886c0834b99fcb2812c71e32531178a270be8e3b228c7ab021859c0d5166028a2a8bf14ae17b5f0fb133edea4950ac190ade60867b1c114482e3cc474ceeba82d7de988c8ead075f1aa36ea7c4acfcd0e5a1ab131d0400a4a2236026e2783d6ca2adbccda760154f1a61ab5da2a8ec48b08ae61ceaadff93881d07c106f0bb38bcd6c4ce8c6b4b216e8cf2b294c29b1fbd0489a71d569360f1211c28ed689abc497b165e1fe609cac20d0b0b17483037fb761316030e92126816c29ef77dae2dec1c8b5737d5e12b58d22f1837054c4dc5773f56d632f0ebc92eb47dbaada3a328d3428a2f3528cf44f715c7cfb101c44da50634bbec51705db6c1d6eb57f03a4340743e54a3a0e9c10c8b3f976137aa44bf1b22ad4f53059fe7a0c7f0c374a048e058fe0b2cd14cdd9d8d02a02eab42aa592cd7c'
+_DM_SOURCE_HASH = 'c2d02d84dbed27043b90f733efd5f34562fa152546c3bad865c9032562a31f71'
+_DM_SIGNATURE = '9b9630926efdfd4c6552f9b12bcb3a325f8d38eae47209f77b1846376740066de6d7d98c336636c40b40be12db5882a48cd83094755f86e39d2cd8b10401c86633752f2782a5cedc354b06ed503b772b0e69c186f011dc5cde4939b5a964e13ac262cb74a811db86367c52b534d2d5d04835c885e927f9c46ec0eaa183b85482ddb7469301f9e2ad2c20d1b829ec46b01b619b099bb7545ed09fb5ca89fd8f3d897a104c997f58101ea40860c11e7758e4a81835cfa5d68716bc6f7b45ca31632911c8d2bc52fd0e089fe2db13410fb974444c2ac1e5ae7c2df52a0ddee44ca03e75fb6a9cc82212d46d8a4723366524195d61b6119173f259f530e7aee1cd1dd7edcf1b76b0741314772da18f79dad3b85170a64d73e64726bab91efb9a5c7d8654a1c4f97078b43822f7a66fc5a6e8734d3d0574e7cf10a9cabd35307114daa7190711cf806e2e21a6efc749d2c20afc467f77ddb55337b9849f79aa38560b988b585bd5507ff013b664432fde31ebd00ea00171ecac25aafed1051751c74b'
 _DM_PUBLIC_N = int('cf32358b4296594259856122aa66a9d8880488a28417d50a3b7cd2421eada4dcbd834733838288f1b9ae5d62ce30db9da7264834b415bca3d758b3116c63ce35d9f97ecb4db1d72549d6ee9844384216146c9d03cc311d2e67c5f4eff6c5a2cbb27f0a07cc3e1a4134bb60e71502ce866a07bad6be93895a4f1ab93e6af0bfa722f8f127cb754dfb3a3ef911cb75795ecf746d7a9469914cb88370b4e84ebe65ba95df5ce88216f8d57444b67b69b454c2d5f2826e119a48ee15cf9bdf8dee9185668eaec34544fbb0d14a6456f4f7c1af072fb3803765910b4bdf0ef2f8efe688a0d9a02a1b80ad7ff153996c346128046d3e0381c14090c9eb0c83bcfbdfcf544b27d08d2483b9a41b3b8d2160facc34ddf9cdf2cfe9021603eaefae7032ea0a434ed3fc572d3b5456f94f41de5e36eeee8b40a8426337861f6d77b3907d37d8023c3c74357348ece9711f06d7458844e6e0091afd68d7c437713c1a6452b61cd299075c864be6dbda652c2014a5f11793fd9580f203296d944db3c00b0113', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -169,7 +169,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.2"
+ __version__ = "1.3"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -451,7 +451,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE MOD ETKİN: token tasarrufu kapatıldı, en derin düşünme açık. Yapay zekâ tam gücünde çalışıyor!",
     "aggressive_left": "Aggressive moddan çıkıldı: {level}. Token tasarrufu yeniden açılabilir.",
     "effort_aggressive_note": "Aggressive = maksimum düşünme gücü; token tasarrufu bu modda açılamaz.",
-    "token_save_trim_note": "\n... [token tasarrufu: {omitted} karakter kırpıldı; gerekiyorsa dosyayı yeniden okuyun] ...\n"
+    "token_save_trim_note": "\n... [token tasarrufu: {omitted} karakter kırpıldı; gerekiyorsa dosyayı yeniden okuyun] ...\n",
+    "effort_menu_title": "DÜŞÜNME DÜZEYİ SEÇENEKLERİ (/effort)",
+    "effort_menu_table": "1|agresif|aggressive|en derin (maksimum)|KAPALI|Tam güç: çok adımlı planlama, derin kod analizi, kendi kendini doğrulama.\n2|maksimum|max|max / xhigh|yalnız düşük–orta|Çok yüksek düşünme; uzun ve zor görevler için.\n3|yüksek|high|high|KAPALI|Dengeli yüksek düzey; günlük geliştirme için iyi varsayılan.\n4|zor|hard|high|KAPALI|'Yüksek'in sert varyantı; aynı derinlik, daha titiz çalışma.\n5|orta|medium|medium|AÇIK / KAPALI|Hız ile kalite dengesi; günlük sorular ve küçük düzenlemeler.\n6|düşük|low|low|AÇIK / KAPALI|En hızlı ve en ucuz; kısa sorular ve basit komutlar.\n7|varsayılan|default|sağlayıcı seçer|AÇIK / KAPALI|Hiçbir düşünme parametresi gönderilmez; sağlayıcının kendi ayarı geçerli olur.",
+    "effort_menu_hint": "Seçmek için: /effort <düzey>   •   örn. /effort medium   •   Türkçe karşılıklar da çalışır: düşük, orta, yüksek, zor, maksimum, agresif",
+    "effort_menu_current": "Şu anki düzey: {level}   |   Token tasarrufu: {state}",
+    "effort_menu_legend": "Tek satırlık özet: düşük → en hızlı ve en ucuz, agresif → en derin düşünme (token tasarrufu kapalı).",
+    "effort_menu_prompt": "Numara seçin (1-7) veya düzey adı yazın [Enter: vazgeç]: ",
+    "effort_menu_kept": "Seçim yapılmadı; düşünme düzeyi değişmedi: {level}.",
+    "effort_menu_col_save": "Token tasarrufu"
   },
   "en": {
     "lang_name": "English",
@@ -723,7 +731,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE MODE ACTIVE: token saving disabled, deepest reasoning enabled. The AI is at full power!",
     "aggressive_left": "Left aggressive mode: {level}. Token saving can be enabled again.",
     "effort_aggressive_note": "Aggressive = maximum reasoning; token saving cannot be enabled in this mode.",
-    "token_save_trim_note": "\n... [token saving: {omitted} characters trimmed; re-read the file if you need them] ...\n"
+    "token_save_trim_note": "\n... [token saving: {omitted} characters trimmed; re-read the file if you need them] ...\n",
+    "effort_menu_title": "REASONING LEVEL OPTIONS (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|deepest (maximum)|OFF|Full power: multi-step planning, deep code analysis, self-verification.\n2|max|max|max / xhigh|low–medium only|Very high reasoning; for long and hard tasks.\n3|high|high|high|OFF|High, balanced reasoning; a good default for daily development.\n4|hard|hard|high|OFF|The strict variant of high; same depth, more rigorous behaviour.\n5|medium|medium|medium|on / off|Speed vs. quality balance; daily questions and small edits.\n6|low|low|low|on / off|Fastest and cheapest; short questions and simple commands.\n7|default|default|provider decides|on / off|No reasoning parameter is sent; the provider default applies.",
+    "effort_menu_hint": "To choose: /effort <level>   •   e.g. /effort medium   •   Turkish aliases work too: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Current level: {level}   |   Token saving: {state}",
+    "effort_menu_legend": "In one line: low → fastest and cheapest, aggressive → deepest reasoning (token saving off).",
+    "effort_menu_prompt": "Pick a number (1-7) or type a level name [Enter: cancel]: ",
+    "effort_menu_kept": "No selection made; reasoning level unchanged: {level}.",
+    "effort_menu_col_save": "Token saving"
   },
   "de": {
     "lang_name": "Deutsch",
@@ -995,7 +1011,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE-MODUS AKTIV: Token-Sparmodus aus, tiefstes Nachdenken an. Die KI läuft mit voller Kraft!",
     "aggressive_left": "Aggressive-Modus verlassen: {level}. Token-Sparmodus kann wieder aktiviert werden.",
     "effort_aggressive_note": "Aggressive = maximale Denkleistung; in diesem Modus ist Token-Sparen nicht erlaubt.",
-    "token_save_trim_note": "\n... [Token-Sparmodus: {omitted} Zeichen gekürzt; Datei bei Bedarf erneut lesen] ...\n"
+    "token_save_trim_note": "\n... [Token-Sparmodus: {omitted} Zeichen gekürzt; Datei bei Bedarf erneut lesen] ...\n",
+    "effort_menu_title": "DENKSTUFEN – OPTIONEN (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|tiefste (Maximum)|AUS|Volle Leistung: mehrstufige Planung, tiefe Code-Analyse, Selbstprüfung.\n2|max|max|max / xhigh|nur low–medium|Sehr hohes Nachdenken; für lange und schwere Aufgaben.\n3|high|high|high|AUS|Hohe, ausgewogene Stufe; guter Standard für die tägliche Arbeit.\n4|hard|hard|high|AUS|Strenge Variante von high; gleiche Tiefe, strengeres Vorgehen.\n5|medium|medium|medium|an / aus|Balance aus Tempo und Qualität; Alltagsfragen und kleine Edits.\n6|low|low|low|an / aus|Am schnellsten und günstigsten; kurze Fragen und einfache Befehle.\n7|default|default|Anbieter entscheidet|an / aus|Es wird kein Denkparameter gesendet; der Anbieterstandard gilt.",
+    "effort_menu_hint": "Zum Wählen: /effort <Stufe>   •   z. B. /effort medium   •   Türkische Schreibweisen funktionieren auch: düşük, orta, yüksek, zor, maksimum, agresif",
+    "effort_menu_current": "Aktuelle Stufe: {level}   |   Token-Sparen: {state}",
+    "effort_menu_legend": "Kurz: low → am schnellsten und günstigsten, aggressive → tiefstes Nachdenken (Token-Sparen aus).",
+    "effort_menu_prompt": "Nummer wählen (1-7) oder Stufennamen eingeben [Enter: abbrechen]: ",
+    "effort_menu_kept": "Keine Auswahl; Denkstufe unverändert: {level}.",
+    "effort_menu_col_save": "Token-Sparen"
   },
   "es": {
     "lang_name": "Español",
@@ -1267,7 +1291,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 MODO AGRESSIVE ACTIVO: ahorro de tokens desactivado y razonamiento profundo activado. ¡La IA trabaja a plena potencia!",
     "aggressive_left": "Has salido del modo agresivo: {level}. El ahorro de tokens puede activarse de nuevo.",
     "effort_aggressive_note": "Aggressive = razonamiento máximo; el ahorro de tokens no se permite en este modo.",
-    "token_save_trim_note": "\n... [ahorro de tokens: {omitted} caracteres recortados; vuelve a leer el archivo si lo necesitas] ...\n"
+    "token_save_trim_note": "\n... [ahorro de tokens: {omitted} caracteres recortados; vuelve a leer el archivo si lo necesitas] ...\n",
+    "effort_menu_title": "OPCIONES DE NIVEL DE RAZONAMIENTO (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|lo más profundo (máximo)|OFF|Máxima potencia: planificación multipaso, análisis profundo, autoverificación.\n2|max|max|max / xhigh|solo low–medium|Razonamiento muy alto; para tareas largas y difíciles.\n3|high|high|high|OFF|Nivel alto y equilibrado; buen valor por defecto.\n4|hard|hard|high|OFF|Variante estricta de high; misma profundidad, más rigor.\n5|medium|medium|medium|on / off|Equilibrio velocidad/calidad; preguntas diarias.\n6|low|low|low|on / off|Lo más rápido y barato; preguntas cortas.\n7|default|default|decide el proveedor|on / off|No se envía parámetro de razonamiento; se usa el del proveedor.",
+    "effort_menu_hint": "Para elegir: /effort <nivel>   •   p. ej. /effort medium   •   También funcionan formas turcas: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Nivel actual: {level}   |   Ahorro de tokens: {state}",
+    "effort_menu_legend": "En una línea: low → lo más rápido y barato, aggressive → razonamiento más profundo (ahorro desactivado).",
+    "effort_menu_prompt": "Elige un número (1-7) o escribe el nombre del nivel [Enter: cancelar]: ",
+    "effort_menu_kept": "Sin selección; el nivel de razonamiento no cambió: {level}.",
+    "effort_menu_col_save": "Ahorro de tokens"
   },
   "fr": {
     "lang_name": "Français",
@@ -1539,7 +1571,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 MODE AGRESSIVE ACTIF : économie de tokens désactivée, raisonnement le plus profond activé. L’IA tourne à pleine puissance !",
     "aggressive_left": "Sortie du mode agressif : {level}. L’économie de tokens peut être réactivée.",
     "effort_aggressive_note": "Aggressive = raisonnement maximal ; l’économie de tokens est interdite dans ce mode.",
-    "token_save_trim_note": "\n... [économie de tokens : {omitted} caractères tronqués ; relisez le fichier si nécessaire] ...\n"
+    "token_save_trim_note": "\n... [économie de tokens : {omitted} caractères tronqués ; relisez le fichier si nécessaire] ...\n",
+    "effort_menu_title": "NIVEAUX DE RAISONNEMENT – OPTIONS (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|le plus profond (maximum)|OFF|Pleine puissance : planification multi-étapes, analyse de code profonde, auto-vérification.\n2|max|max|max / xhigh|low–medium seulement|Raisonnement très élevé ; pour les tâches longues et difficiles.\n3|high|high|high|OFF|Niveau élevé et équilibré ; bon réglage par défaut.\n4|hard|hard|high|OFF|Variante stricte de high ; même profondeur, plus de rigueur.\n5|medium|medium|medium|on / off|Équilibre vitesse/qualité ; questions quotidiennes.\n6|low|low|low|on / off|Le plus rapide et le moins cher ; questions courtes.\n7|default|default|choisi par le fournisseur|on / off|Aucun paramètre n’est envoyé ; le réglage du fournisseur s’applique.",
+    "effort_menu_hint": "Pour choisir : /effort <niveau>   •   par ex. /effort medium   •   Les graphies turques fonctionnent aussi : dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Niveau actuel : {level}   |   Économie de tokens : {state}",
+    "effort_menu_legend": "En bref : low → le plus rapide et le moins cher, aggressive → raisonnement le plus profond (économie désactivée).",
+    "effort_menu_prompt": "Choisissez un numéro (1-7) ou tapez un niveau [Entrée : annuler] : ",
+    "effort_menu_kept": "Aucune sélection ; niveau de raisonnement inchangé : {level}.",
+    "effort_menu_col_save": "Économie de tokens"
   },
   "ru": {
     "lang_name": "Русский",
@@ -1811,7 +1851,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 РЕЖИМ AGGRESSIVE АКТИВЕН: экономия токенов выключена, максимально глубокие рассуждения включены. ИИ работает на полную мощность!",
     "aggressive_left": "Выход из агрессивного режима: {level}. Экономию токенов можно снова включить.",
     "effort_aggressive_note": "Aggressive = максимальные рассуждения; экономия токенов в этом режиме запрещена.",
-    "token_save_trim_note": "\n... [экономия токенов: обрезано символов — {omitted}; при необходимости перечитайте файл] ...\n"
+    "token_save_trim_note": "\n... [экономия токенов: обрезано символов — {omitted}; при необходимости перечитайте файл] ...\n",
+    "effort_menu_title": "ВАРИАНТЫ УРОВНЯ РАССУЖДЕНИЙ (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|самый глубокий (максимум)|ВЫКЛ|Полная мощность: многошаговое планирование, глубокий анализ кода, самопроверка.\n2|max|max|max / xhigh|только low–medium|Очень высокий уровень; для долгих и сложных задач.\n3|high|high|high|ВЫКЛ|Высокий сбалансированный уровень; хороший стандарт.\n4|hard|hard|high|ВЫКЛ|Строгий вариант high; та же глубина, больше строгости.\n5|medium|medium|medium|вкл. / выкл.|Баланс скорости и качества; повседневные вопросы.\n6|low|low|low|вкл. / выкл.|Быстрее и дешевле всего; короткие вопросы.\n7|default|default|решает провайдер|вкл. / выкл.|Параметр не отправляется; действует настройка провайдера.",
+    "effort_menu_hint": "Чтобы выбрать: /effort <уровень>   •   напр. /effort medium   •   Турецкие варианты тоже работают: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Текущий уровень: {level}   |   Экономия токенов: {state}",
+    "effort_menu_legend": "Коротко: low → быстрее и дешевле всего, aggressive → самые глубокие рассуждения (экономия выключена).",
+    "effort_menu_prompt": "Выберите номер (1-7) или введите название уровня [Enter: отмена]: ",
+    "effort_menu_kept": "Выбор не сделан; уровень рассуждений не изменён: {level}.",
+    "effort_menu_col_save": "Экономия токенов"
   },
   "az": {
     "lang_name": "Azərbaycan dili",
@@ -2083,7 +2131,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE REJİM AKTİV: token qənaəti bağlandı, ən dərin düşünmə açıqdır. Süni intellekt tam gücdədir!",
     "aggressive_left": "Aggressive rejimindən çıxıldı: {level}. Token qənaəti yenidən açıla bilər.",
     "effort_aggressive_note": "Aggressive = maksimum düşünmə gücü; bu rejimdə token qənaəti açıla bilməz.",
-    "token_save_trim_note": "\n... [token qənaəti: {omitted} simvol kəsildi; lazım olsa faylı yenidən oxuyun] ...\n"
+    "token_save_trim_note": "\n... [token qənaəti: {omitted} simvol kəsildi; lazım olsa faylı yenidən oxuyun] ...\n",
+    "effort_menu_title": "DÜŞÜNMƏ SƏVİYYƏSİ SEÇİMLƏRİ (/effort)",
+    "effort_menu_table": "1|aqressiv|aggressive|ən dərin (maksimum)|BAĞLI|Tam güc: çoxaddımlı planlama, dərin kod analizi, özünü yoxlama.\n2|maksimum|max|max / xhigh|yalnız aşağı–orta|Çox yüksək düşünmə; uzun və çətin tapşırıqlar üçün.\n3|yüksək|high|high|BAĞLI|Balanslı yüksək səviyyə; gündəlik iş üçün yaxşı seçim.\n4|zor|hard|high|BAĞLI|High səviyyəsinin sərt variantı; eyni dərinlik, daha ciddi iş.\n5|orta|medium|medium|AÇIQ / BAĞLI|Sürət və keyfiyyət balansı; gündəlik suallar.\n6|düşük|low|low|AÇIQ / BAĞLI|Ən sürətli və ən ucuz; qısa suallar.\n7|susmaya görə|default|provayder seçir|AÇIQ / BAĞLI|Düşünmə parametri göndərilmir; provayderin ayarı keçərlidir.",
+    "effort_menu_hint": "Seçmək üçün: /effort <səviyyə>   •   məs. /effort medium   •   Türk dilində də yazmaq olar: düşük, orta, yüksək, zor, maksimum, agresif",
+    "effort_menu_current": "Hazırkı səviyyə: {level}   |   Token qənaəti: {state}",
+    "effort_menu_legend": "Bir sətirdə: düşük → ən sürətli və ən ucuz, aqressiv → ən dərin düşünmə (token qənaəti bağlı).",
+    "effort_menu_prompt": "Nömrə seçin (1-7) və ya səviyyə adı yazın [Enter: ləğv et]: ",
+    "effort_menu_kept": "Seçim edilmədi; düşünmə səviyyəsi dəyişmədi: {level}.",
+    "effort_menu_col_save": "Token qənaəti"
   },
   "it": {
     "lang_name": "Italiano",
@@ -2355,7 +2411,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 MODALITÀ AGRESSIVE ATTIVA: risparmio token disattivato, ragionamento profondo attivo. L’IA lavora a piena potenza!",
     "aggressive_left": "Uscita dalla modalità aggressiva: {level}. Il risparmio token può essere riattivato.",
     "effort_aggressive_note": "Aggressive = ragionamento massimo; in questa modalità il risparmio token non è consentito.",
-    "token_save_trim_note": "\n... [risparmio token: {omitted} caratteri tagliati; rileggi il file se serve] ...\n"
+    "token_save_trim_note": "\n... [risparmio token: {omitted} caratteri tagliati; rileggi il file se serve] ...\n",
+    "effort_menu_title": "OPZIONI DEL LIVELLO DI RAGIONAMENTO (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|il più profondo (massimo)|OFF|Piena potenza: pianificazione multi-passo, analisi profonda, autoverifica.\n2|max|max|max / xhigh|solo low–medium|Ragionamento molto alto; per compiti lunghi e difficili.\n3|high|high|high|OFF|Livello alto ed equilibrato; buon valore predefinito.\n4|hard|hard|high|OFF|Variante rigorosa di high; stessa profondità, più rigore.\n5|medium|medium|medium|on / off|Equilibrio velocità/qualità; domande quotidiane.\n6|low|low|low|on / off|Il più veloce ed economico; domande brevi.\n7|default|default|decide il provider|on / off|Nessun parametro viene inviato; vale il valore del provider.",
+    "effort_menu_hint": "Per scegliere: /effort <livello>   •   es. /effort medium   •   Funzionano anche le forme turche: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Livello attuale: {level}   |   Risparmio token: {state}",
+    "effort_menu_legend": "In breve: low → il più veloce ed economico, aggressive → ragionamento più profondo (risparmio disattivato).",
+    "effort_menu_prompt": "Scegli un numero (1-7) o scrivi il nome del livello [Invio: annulla]: ",
+    "effort_menu_kept": "Nessuna selezione; livello invariato: {level}.",
+    "effort_menu_col_save": "Risparmio token"
   },
   "pt": {
     "lang_name": "Português",
@@ -2627,7 +2691,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 MODO AGRESSIVE ATIVO: economia de tokens desativada, raciocínio profundo ativado. A IA está a plena potência!",
     "aggressive_left": "Saiu do modo agressivo: {level}. A economia de tokens pode ser ativada novamente.",
     "effort_aggressive_note": "Aggressive = raciocínio máximo; a economia de tokens não é permitida neste modo.",
-    "token_save_trim_note": "\n... [economia de tokens: {omitted} caracteres cortados; releia o arquivo se precisar] ...\n"
+    "token_save_trim_note": "\n... [economia de tokens: {omitted} caracteres cortados; releia o arquivo se precisar] ...\n",
+    "effort_menu_title": "OPÇÕES DE NÍVEL DE RACIOCÍNIO (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|o mais profundo (máximo)|OFF|Potência máxima: planeamento multi-etapas, análise profunda, autoverificação.\n2|max|max|max / xhigh|apenas low–medium|Raciocínio muito alto; para tarefas longas e difíceis.\n3|high|high|high|OFF|Nível alto e equilibrado; bom padrão.\n4|hard|hard|high|OFF|Variante rigorosa do high; mesma profundidade, mais rigor.\n5|medium|medium|medium|on / off|Equilíbrio velocidade/qualidade; perguntas do dia a dia.\n6|low|low|low|on / off|O mais rápido e barato; perguntas curtas.\n7|default|default|o provedor decide|on / off|Nenhum parâmetro é enviado; vale o padrão do provedor.",
+    "effort_menu_hint": "Para escolher: /effort <nível>   •   ex. /effort medium   •   Formas turcas também funcionam: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Nível atual: {level}   |   Economia de tokens: {state}",
+    "effort_menu_legend": "Em resumo: low → o mais rápido e barato, aggressive → raciocínio mais profundo (economia desativada).",
+    "effort_menu_prompt": "Escolha um número (1-7) ou escreva o nome do nível [Enter: cancelar]: ",
+    "effort_menu_kept": "Sem seleção; nível inalterado: {level}.",
+    "effort_menu_col_save": "Economia de tokens"
   },
   "nl": {
     "lang_name": "Nederlands",
@@ -2899,7 +2971,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGRESSIVE-MODUS ACTIEF: tokenbesparing uit, diepst mogelijke redeneren aan. De AI draait op volle kracht!",
     "aggressive_left": "Agressieve modus verlaten: {level}. Tokenbesparing kan weer aan.",
     "effort_aggressive_note": "Aggressive = maximaal redeneren; tokenbesparing is in deze modus niet toegestaan.",
-    "token_save_trim_note": "\n... [tokenbesparing: {omitted} tekens ingekort; lees het bestand opnieuw indien nodig] ...\n"
+    "token_save_trim_note": "\n... [tokenbesparing: {omitted} tekens ingekort; lees het bestand opnieuw indien nodig] ...\n",
+    "effort_menu_title": "OPTIES VOOR DENKNIVEAU (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|diepst (maximum)|UIT|Volle kracht: meerstaps planning, diepe code-analyse, zelfcontrole.\n2|max|max|max / xhigh|alleen low–medium|Zeer hoog redeneren; voor lange en lastige taken.\n3|high|high|high|UIT|Hoog en gebalanceerd; goede standaard.\n4|hard|hard|high|UIT|Strikte variant van high; zelfde diepte, strenger.\n5|medium|medium|medium|aan / uit|Balans snelheid/kwaliteit; dagelijkse vragen.\n6|low|low|low|aan / uit|Snelst en goedkoopst; korte vragen.\n7|default|default|provider beslist|aan / uit|Er wordt geen parameter gestuurd; de providerstandaard geldt.",
+    "effort_menu_hint": "Kiezen: /effort <niveau>   •   bijv. /effort medium   •   Turkse schrijfwijzen werken ook: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "Huidig niveau: {level}   |   Tokenbesparing: {state}",
+    "effort_menu_legend": "Kort: low → snelst en goedkoopst, aggressive → diepst redeneren (besparing uit).",
+    "effort_menu_prompt": "Kies een nummer (1-7) of typ een niveaunaam [Enter: annuleren]: ",
+    "effort_menu_kept": "Geen keuze; denkniveau ongewijzigd: {level}.",
+    "effort_menu_col_save": "Tokenbesparing"
   },
   "ar": {
     "lang_name": "العربية",
@@ -3171,7 +3251,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 وضع AGGRESSIVE مفعّل: تم إيقاف توفير الرموز وتشغيل أعمق تفكير. الذكاء الاصطناعي بكامل قوته!",
     "aggressive_left": "تم الخروج من الوضع العدواني: {level}. يمكن تفعيل توفير الرموز مرة أخرى.",
     "effort_aggressive_note": "Aggressive = أقصى تفكير؛ لا يُسمح بتوفير الرموز في هذا الوضع.",
-    "token_save_trim_note": "\n... [توفير الرموز: تم قص {omitted} حرفًا؛ أعد قراءة الملف إن لزم] ...\n"
+    "token_save_trim_note": "\n... [توفير الرموز: تم قص {omitted} حرفًا؛ أعد قراءة الملف إن لزم] ...\n",
+    "effort_menu_title": "خيارات مستوى التفكير (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|الأعمق (الحد الأقصى)|متوقف|كامل القوة: تخطيط متعدد الخطوات، تحليل عميق للكود، تحقق ذاتي.\n2|max|max|max / xhigh|low–medium فقط|تفكير عالٍ جدًا؛ للمهام الطويلة والصعبة.\n3|high|high|high|متوقف|مستوى عالٍ متوازن؛ افتراضي جيد.\n4|hard|hard|high|متوقف|نسخة صارمة من high؛ نفس العمق مع دقة أكبر.\n5|medium|medium|medium|مفعّل / متوقف|توازن بين السرعة والجودة؛ أسئلة يومية.\n6|low|low|low|مفعّل / متوقف|الأسرع والأرخص؛ أسئلة قصيرة.\n7|default|default|المزود يقرر|مفعّل / متوقف|لا يُرسل أي معامل؛ يسري إعداد المزود.",
+    "effort_menu_hint": "للاختيار: /effort <المستوى>   •   مثل /effort medium   •   الصيغ التركية تعمل أيضًا: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "المستوى الحالي: {level}   |   توفير الرموز: {state}",
+    "effort_menu_legend": "باختصار: low → الأسرع والأرخص، aggressive → أعمق تفكير (توفير الرموز متوقف).",
+    "effort_menu_prompt": "اختر رقمًا (1-7) أو اكتب اسم المستوى [Enter: إلغاء]: ",
+    "effort_menu_kept": "لم يتم الاختيار؛ مستوى التفكير لم يتغير: {level}.",
+    "effort_menu_col_save": "توفير الرموز"
   },
   "zh": {
     "lang_name": "中文",
@@ -3443,7 +3531,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE 模式已启用：令牌节省关闭，最深思考开启。AI 全功率运行！",
     "aggressive_left": "已退出 Aggressive 模式：{level}。可以重新开启令牌节省。",
     "effort_aggressive_note": "Aggressive = 最大推理强度；此模式下不允许开启令牌节省。",
-    "token_save_trim_note": "\n... [令牌节省：已裁剪 {omitted} 个字符；如需完整内容请重新读取文件] ...\n"
+    "token_save_trim_note": "\n... [令牌节省：已裁剪 {omitted} 个字符；如需完整内容请重新读取文件] ...\n",
+    "effort_menu_title": "思考等级选项（/effort）",
+    "effort_menu_table": "1|aggressive|aggressive|最深（最高）|关闭|全功率：多步规划、深度代码分析、自我验证。\n2|max|max|max / xhigh|仅低-中|极高推理强度；适合长而难的任务。\n3|high|high|high|关闭|较高且均衡；日常开发的好默认值。\n4|hard|hard|high|关闭|high 的严格版本；同样深度、更严谨。\n5|medium|medium|medium|开 / 关|速度与质量平衡；日常提问。\n6|low|low|low|开 / 关|最快最省；简短提问与简单命令。\n7|default|default|由服务商决定|开 / 关|不发送任何推理参数；使用服务商默认值。",
+    "effort_menu_hint": "选择方式：/effort <等级>   •   例如 /effort medium   •   土耳其语写法同样可用：dusuk、orta、yuksek、zor、maksimum、agresif",
+    "effort_menu_current": "当前等级：{level}   |   令牌节省：{state}",
+    "effort_menu_legend": "一句话：low → 最快最省，aggressive → 最深思考（令牌节省关闭）。",
+    "effort_menu_prompt": "选择编号 (1-7) 或输入等级名称 [Enter: 取消]：",
+    "effort_menu_kept": "未选择；思考等级保持不变：{level}。",
+    "effort_menu_col_save": "令牌节省"
   },
   "ja": {
     "lang_name": "日本語",
@@ -3715,7 +3811,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE モード有効: トークン節約オフ、最深の思考オン。AI は全力で稼働中！",
     "aggressive_left": "アグレッシブモードを終了しました: {level}。トークン節約を再び有効にできます。",
     "effort_aggressive_note": "Aggressive = 最大推論。このモードではトークン節約は許可されません。",
-    "token_save_trim_note": "\n... [トークン節約: {omitted} 文字を省略しました。必要ならファイルを再読み込みしてください] ...\n"
+    "token_save_trim_note": "\n... [トークン節約: {omitted} 文字を省略しました。必要ならファイルを再読み込みしてください] ...\n",
+    "effort_menu_title": "思考レベルの選択肢（/effort）",
+    "effort_menu_table": "1|aggressive|aggressive|最深（最大）|オフ|全力: 多段階プランニング、深いコード分析、自己検証。\n2|max|max|max / xhigh|low–medium のみ|非常に高い推論。長時間の難しい作業向け。\n3|high|high|high|オフ|高めでバランスの良い設定。日常開発の既定値。\n4|hard|hard|high|オフ|high の厳格版。同じ深さでより厳密に。\n5|medium|medium|medium|オン / オフ|速度と品質のバランス。日常的な質問向け。\n6|low|low|low|オン / オフ|最速・最安。短い質問や簡単なコマンド向け。\n7|default|default|プロバイダー任せ|オン / オフ|推論パラメータは送られず、プロバイダー既定値を使います。",
+    "effort_menu_hint": "選ぶには: /effort <レベル>   •   例: /effort medium   •   トルコ語表記も使えます: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "現在のレベル: {level}   |   トークン節約: {state}",
+    "effort_menu_legend": "ひとことで: low → 最速・最安、aggressive → 最深の思考（トークン節約オフ）。",
+    "effort_menu_prompt": "番号 (1-7) を選ぶかレベル名を入力 [Enter: キャンセル]: ",
+    "effort_menu_kept": "選択なし。思考レベルは変更されていません: {level}。",
+    "effort_menu_col_save": "トークン節約"
   },
   "ko": {
     "lang_name": "한국어",
@@ -3987,7 +4091,15 @@ def _dm_module_01():
     "aggressive_enabled": "🔴 AGGRESSIVE 모드 활성: 토큰 절약 꺼짐, 최심층 사고 켜짐. AI가 최대 성능으로 동작합니다!",
     "aggressive_left": "어그레시브 모드 종료: {level}. 토큰 절약을 다시 켤 수 있습니다.",
     "effort_aggressive_note": "Aggressive = 최대 추론. 이 모드에서는 토큰 절약을 사용할 수 없습니다.",
-    "token_save_trim_note": "\n... [토큰 절약: {omitted}자를 줄였습니다. 필요하면 파일을 다시 읽으세요] ...\n"
+    "token_save_trim_note": "\n... [토큰 절약: {omitted}자를 줄였습니다. 필요하면 파일을 다시 읽으세요] ...\n",
+    "effort_menu_title": "사고 수준 옵션 (/effort)",
+    "effort_menu_table": "1|aggressive|aggressive|가장 깊음(최대)|꺼짐|최대 성능: 다단계 계획, 깊은 코드 분석, 자기 검증.\n2|max|max|max / xhigh|low–medium만|매우 높은 추론. 길고 어려운 작업용.\n3|high|high|high|꺼짐|높고 균형 잡힌 수준. 일상 개발의 좋은 기본값.\n4|hard|hard|high|꺼짐|high의 엄격 버전. 같은 깊이, 더 엄격하게.\n5|medium|medium|medium|켜짐 / 꺼짐|속도와 품질의 균형. 일상 질문용.\n6|low|low|low|켜짐 / 꺼짐|가장 빠르고 저렴. 짧은 질문용.\n7|default|default|제공자 결정|켜짐 / 꺼짐|어떤 추론 파라미터도 보내지 않고 제공자 기본값을 사용합니다.",
+    "effort_menu_hint": "선택 방법: /effort <레벨>   •   예: /effort medium   •   터키어 표기도 사용 가능: dusuk, orta, yuksek, zor, maksimum, agresif",
+    "effort_menu_current": "현재 레벨: {level}   |   토큰 절약: {state}",
+    "effort_menu_legend": "한 줄 요약: low → 가장 빠르고 저렴, aggressive → 가장 깊은 사고(토큰 절약 꺼짐).",
+    "effort_menu_prompt": "번호(1-7)를 선택하거나 레벨 이름을 입력 [Enter: 취소]: ",
+    "effort_menu_kept": "선택하지 않았습니다. 사고 레벨은 그대로입니다: {level}.",
+    "effort_menu_col_save": "토큰 절약"
   }
 }''')
  return locals()
@@ -7158,9 +7270,9 @@ def _dm_module_11():
  MAX_DOWNLOAD_BYTES = 1024 * 1024
  _BROWSER_UA = (
    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.2"
+   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.3"
  )
- _API_UA = "DocMindCLI/1.2 (https://github.com/beyip/docmind-cli)"
+ _API_UA = "DocMindCLI/1.3 (https://github.com/beyip/docmind-cli)"
 
  def _is_public_url(url: str) -> Tuple[bool, str]:
    allow_local = os.environ.get("DOCMIND_ALLOW_LOCAL_WEB_TEST") == "1"
@@ -12402,7 +12514,7 @@ def _dm_module_20():
      _dm_owner_gate()
      _dm_signature_gate()
      if not self.view.color or self.view._size()[1] < 30:
-       print("\nDocMind v1.2  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
+       print("\nDocMind v1.3  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -12423,7 +12535,7 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v1.2", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
+       label = ("  " + self._paint("DocMind v1.3", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
        print("  " + "".join(cells) + label)
      print()
    @contextmanager
@@ -15545,6 +15657,46 @@ def _dm_module_25():
        self.ui.info(t("effort_aggressive_note"))
      state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
      self.ui.info(t("token_save_state", state=state))
+   def _render_effort_menu(self) -> None:
+     """Show every reasoning level with a plain-language explanation of what it does."""
+     import textwrap
+     cfg = self.cfg_mgr.config
+     current = str(cfg.reasoning_effort or "default")
+     save_label = t("effort_menu_col_save")
+     raw_rows = [r for r in str(t("effort_menu_table")).split("\n") if r.strip()]
+     entries = []
+     for row in raw_rows:
+       parts = [p.strip() for p in row.split("|")]
+       if len(parts) < 6:
+         continue
+       entries.append(parts[:6])
+     if not entries:
+       self.ui.warn(t("effort_usage"))
+       return
+     try:
+       width = max(46, min(78, int(getattr(self.view, "_size", lambda: (24, 80))()[1]) - 6))
+     except Exception:
+       width = 74
+     lines = []
+     for num, label, token, sent, save, desc in entries:
+       is_current = current in (token.lower(), label.lower())
+       mark = "◀" if is_current else " "
+       head = f"{num}) {label}"
+       if token and token.lower() != label.lower():
+         head += f" ({token})"
+       head += f"  →  {sent}   [{save_label}: {save}]"
+       line_head = (head + ("  " + mark if is_current else "")).rstrip()
+       lines.append(self.ui._paint(line_head, "1;36") if is_current else line_head)
+       for chunk in textwrap.wrap(desc, width=max(30, width - 5), break_on_hyphens=False) or [""]:
+         lines.append("     " + chunk)
+       lines.append("")
+     self.ui.print_panel("🎚️ " + t("effort_menu_title"), "\n".join(lines).rstrip(), style="bright_cyan")
+     state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+     self.ui.info(t("effort_menu_current", level=current, state=state))
+     self.ui.info(t("effort_menu_hint"))
+     self.ui.info(t("effort_menu_legend"))
+     if current == "aggressive":
+       self.ui.info(t("effort_aggressive_note"))
    def _handle_effort(self, arg: str) -> None:
      cfg = self.cfg_mgr.config
      aliases = {
@@ -15556,10 +15708,15 @@ def _dm_module_25():
        "low": "low", "düşük": "low", "dusuk": "low",
        "default": "default", "auto": "default", "varsayılan": "default", "varsayilan": "default",
      }
+     if not arg.strip():
+       self._render_effort_menu()
+       self._prompt_effort_selection()
+       return
      if arg:
        value = aliases.get(arg.strip().lower().replace("\u0307", ""))
        if not value:
          self.ui.warn(t("effort_usage"))
+         self._render_effort_menu()
          return
        previous = cfg.reasoning_effort
        if value == "aggressive" and previous != "aggressive":
@@ -15590,6 +15747,23 @@ def _dm_module_25():
            if not token_save_allowed(value):
              self.ui.info(t("token_save_blocked", level=value))
      self._show_effort_state()
+   def _prompt_effort_selection(self) -> None:
+     """After printing the menu, accept the printed number so nobody has to memorise codes."""
+     if getattr(self.agent, "non_interactive", False) or not bool(getattr(self.ui, "is_tty", False)):
+       return
+     try:
+       raw = self.ui.ask(t("effort_menu_prompt")).strip().replace("\u0307", "")
+     except (KeyboardInterrupt, EOFError):
+       print()
+       return
+     low = raw.lower()
+     if not low or low in ("q", "iptal", "cancel", "exit", "hayir", "hayır", "n", "no", "0"):
+       self.ui.info(t("effort_menu_kept", level=self.cfg_mgr.config.reasoning_effort))
+       return
+     numbers = {"1": "aggressive", "2": "max", "3": "high", "4": "hard",
+                "5": "medium", "6": "low", "7": "default"}
+     target = numbers.get(low, raw)
+     self._handle_effort(target)
    def _handle_token_save(self, arg: str) -> None:
      cfg = self.cfg_mgr.config
      level = cfg.reasoning_effort

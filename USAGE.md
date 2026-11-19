@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.2`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.3`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI `v1.2`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.3`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 
@@ -144,7 +144,38 @@ The choice is saved in `~/.docmind-single/config.json` and restored on the next 
 
 The only side effect is *fewer* tokens for the same answer: no reasoning level is lowered, no tool is removed, and no instruction changes. If you ever need the raw, untouched context (for example when the model must diff a very large file verbatim), run `/token-save off`.
 
-### 6.2 Reasoning levels
+### 6.2 Seeing the available levels (`/effort` with no argument)
+
+```text
+DocMind ❯ /effort
+```
+
+prints the option menu with the current level marked `◀`:
+
+```text
+1) aggressive  →  deepest (maximum)   [Token saving: OFF]
+     Full power: multi-step planning, deep code analysis, self-verification.
+
+2) max  →  max / xhigh   [Token saving: low–medium only]
+     Very high reasoning; for long and hard tasks.
+
+3) high  →  high   [Token saving: OFF]
+4) hard  →  high   [Token saving: OFF]  ◀
+5) medium  →  medium   [Token saving: on / off]
+6) low  →  low   [Token saving: on / off]
+7) default  →  provider decides   [Token saving: on / off]
+```
+
+Right after the list DocMind asks for a choice:
+
+- type a **number** (`1`–`7`) → that level is applied immediately (no need to remember its code name),
+- type a **level name** (`medium`, `hard`, `agresif`, …) → same result,
+- press **Enter** (or `q`) → nothing changes and DocMind tells you the level was kept.
+
+Menu choice `1` (`aggressive`) still shows the `Y/N` warning first. `/effort <level>` keeps working exactly as
+before if you prefer typing the level directly.
+
+### 6.3 Reasoning levels
 
 | Level | Sent to the API | Token saving |
 | :--- | :--- | :--- |
@@ -156,7 +187,7 @@ The only side effect is *fewer* tokens for the same answer: no reasoning level i
 | `max` | `max` / `xhigh` on OpenAI | **always off** |
 | `aggressive` | deepest level the model documents (`max` / `xhigh` / top `thinking`) | **always off** |
 
-### 6.3 `Aggressive` mode
+### 6.4 `Aggressive` mode
 
 ```text
 DocMind ❯ /effort aggressive
@@ -172,7 +203,7 @@ Press **`Y`** to activate it — every other system keeps working normally, and 
 
 If the provider rejects the deepest level, DocMind automatically retries one step lower (`high`) instead of dropping the reasoning parameter, and tells you about it.
 
-### 6.4 Mode compatibility guard
+### 6.5 Mode compatibility guard
 
 ```text
 DocMind ❯ /effort hard
@@ -202,7 +233,7 @@ Type any of these commands at the `DocMind ❯` prompt (includes Tab completion 
 | `/api` | Switch AI provider or update your API key |
 | `/model [name]` | Select or type a different model |
 | `/lang [code]` | Switch interface & AI language (`tr`, `en`, `az`, `de`, `es`, `fr`, `it`, `pt`, `nl`, `ru`, `ar`, `zh`, `ja`, `ko`) |
-| `/effort [level]` | Adjust reasoning effort (`low`, `medium`, `high`, `hard`, `max`, `aggressive`, `default`). Turkish aliases: `/zeka dusuk/orta/yuksek/zor/maksimum/agresif` |
+| `/effort [level]` | Show the level menu when used alone; adjust reasoning effort (`low`, `medium`, `high`, `hard`, `max`, `aggressive`, `default`). Turkish aliases: `/zeka dusuk/orta/yuksek/zor/maksimum/agresif` |
 | `/token-save [on\|off\|status]` | Toggle token saving (ON by default). Refused in `aggressive`/`high`/`hard` modes |
 | `/smart` | Enable **Smart Confirm** mode (green `+` / red `-` approval before file edits & commands) |
 | `/auto` | Enable **Full Auto** mode for file edits (terminal commands still require approval) |
