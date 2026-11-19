@@ -150,21 +150,32 @@ The only side effect is *fewer* tokens for the same answer: no reasoning level i
 DocMind ❯ /effort
 ```
 
-prints the option menu with the current level marked `◀`:
+prints the option menu with the current level marked `◀` (real table output, columns aligned):
 
 ```text
-1) aggressive  →  deepest (maximum)   [Token saving: OFF]
-     Full power: multi-step planning, deep code analysis, self-verification.
+No  Düzey       API         Token tasarrufu
+---------------------------------------------
+ 1  agresif     aggressive  KAPALI
+     -> en derin (maksimum)
+     Tam güç: çok adımlı planlama, derin kod analizi, kendi kendini doğrulama.
 
-2) max  →  max / xhigh   [Token saving: low–medium only]
-     Very high reasoning; for long and hard tasks.
+ 2  maksimum    max         yalnız düşük–orta
+     -> max / xhigh
+     Çok yüksek düşünme; uzun ve zor görevler için.
 
-3) high  →  high   [Token saving: OFF]
-4) hard  →  high   [Token saving: OFF]  ◀
-5) medium  →  medium   [Token saving: on / off]
-6) low  →  low   [Token saving: on / off]
-7) default  →  provider decides   [Token saving: on / off]
+ 3  yüksek      high        KAPALI             ◀
+     -> high
+     Dengeli yüksek düzey; günlük geliştirme için iyi varsayılan.
+
+ 4  zor         hard        KAPALI
+ 5  orta        medium      AÇIK / KAPALI
+ 6  düşük       low         AÇIK / KAPALI
+ 7  varsayılan  default     AÇIK / KAPALI
 ```
+
+The table adapts to the terminal width, descriptions wrap under a fixed column, and the panel keeps a constant left
+edge (no drifting/scattered rows). On a legacy console the symbols are folded automatically to ASCII
+(`⚠` → `(!)`, `◀` → `<-`), so no line ever shows empty squares; set `DOCMIND_ASCII=1` to force that mode.
 
 Right after the list DocMind asks for a choice:
 
@@ -174,6 +185,25 @@ Right after the list DocMind asks for a choice:
 
 Menu choice `1` (`aggressive`) still shows the `Y/N` warning first. `/effort <level>` keeps working exactly as
 before if you prefer typing the level directly.
+
+### 6.2.1 Terminal glyphs (`DOCMIND_ASCII`)
+
+DocMind detects the encoding of your terminal at start-up. If the console cannot render `⚠ ✓ ◀ → • …` (Windows
+`cp437`/`cp1254` consoles, `TERM=dumb`, `POSIX` locale, or a font missing those glyphs), the UI switches to ASCII
+equivalents and transliterates Turkish/accented letters instead of printing empty boxes. Model replies are filtered
+the same way, so a chat answer can never crash the screen.
+
+```bash
+DOCMIND_ASCII=1 docmind        # force ASCII (useful for old terminals or log files)
+DOCMIND_GLYPHS=unicode docmind # force the Unicode glyphs
+```
+
+### 6.2.2 Automatic rollback after a bad write
+
+When the agent writes or edits `.py`, `.pyi`, `.json`, `.toml`, `.xml`, `.svg`, `.sh`, `.bash`, `.js`, `.mjs` or
+`.cjs`, DocMind runs a syntax check right away. If the file no longer parses, the previous working version is
+restored from the undo snapshot, the fact is reported in your language and the model is told to re-read the file and
+retry. You can still revert manually with `/undo`.
 
 ### 6.3 Reasoning levels
 

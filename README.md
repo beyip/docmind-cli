@@ -24,6 +24,23 @@
 - An unknown `/effort` argument now prints the usage line **and** the menu.
 - **📦 Included from the earlier v1.2 work below:** token saving, aggressive/hard levels and the mode guard.
 
+## 🛡️ Hardening, rendering & fixes in `v1.2`
+
+- **No square boxes:** the terminal encoding is probed at start-up and every symbol DocMind cannot draw is folded to
+  readable ASCII (`⚠` → `(!)`, `✓` → `[OK]`, `◀` → `<-`, `→` → `->`), Turkish/accented letters are transliterated and
+  emoji are dropped on legacy consoles. Model output goes through the same filter, so a chat reply can never crash the
+  screen. Override with `DOCMIND_ASCII=1`.
+- **`/effort` is a clean table:** aligned `No | Level | API | Token saving` columns, fixed indent, wrapped descriptions,
+  `◀` on the active row and a layout that adapts to narrow terminals.
+- **Automatic rollback:** if an agent write introduces a syntax error in `.py/.json/.toml/.js/...` the previous working
+  version is restored immediately and the model is told what to fix.
+- **Security:** SSRF blocks for `127.1` / `2130706433` / `0x7f.1` / scoped IPv6 / `localhost.`, gzip-bomb caps, archive
+  entries with links or `..` rejected, symlink-aware credential-vault detection (`.ssh`, `.aws`, `.docker`, `.kube`,
+  `~/.config/gh`, `.netrc`, `.pgpass`, `.env`, keys, …), broader secret masking (`ghp_`, `xox?-`, JWT, `Bearer`,
+  `?api_key=`), `0600` config files and no API keys in shell history.
+- **Robustness:** malformed tool arguments are normalised instead of crashing the turn, `write_file` refuses directories
+  and special files, oversized files are never loaded into memory, and `OSError` is reported cleanly.
+
 ## 📦 Also in `v1.2`
 
 - **🪙 Token Saving (ON by default, intelligence preserved):**

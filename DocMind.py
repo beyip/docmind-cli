@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '874ac34710f9e596288786719d9695251e1b1a9725632c5ad383fe3ca1b3fcce'
-_DM_SIGNATURE = '60527a07127509a807a48899e664473b3ff7c67ad94181be15f35353aee52ce67f704a056cb5e940fe48de1f40fe18f19b9558583cc2bd56082df55b7fb57994d1f2597ac93014e0487008df0da4ea27d13bb639de1b700687a1d3bb11a89f6f47bc892aae7e55e88629ef8b6a52efd929222f9275be38354507fcb96e7fc0677f4526556ac339f4e1871f5113d92fa43bebd1dc0be7da9e00fa113eb03aa97ba834eeeaca5d7e78fb88eb6d6239f39a08476b2081c30a1c400d2a70e0010a49c125de9d5ded9eb00799186726eca5ec80f8f090ce714a77de5d54e0f7db8e50b3f3f8404efb752ccd9746dfbb87274232a73fdc026997b4b3cbb363b51c2806ffb6add437ca79813307550d2715ba2b4f8107ec8101df5d24d86f8280760a654d82ef91e121b89268be08629437a1579377ab5cd58549015011b59a9e2bf5b3077dac697be302eb453b6cfea34aaccb25920dd4f135f54e35b96fe7eb42befa39d36b7cbfefb30b7f7c20747a742e86b35d9f979ff3008b0d8188c54a412580'
+_DM_SOURCE_HASH = '7653b4d0a61e6db5f89250c64554f925080dd322d7e49ffa11e1795a384ec635'
+_DM_SIGNATURE = '3f98d5a5c36470a90c826a6679ad7307a066312f35f3e19cb19e6bf5779f2de450393d6906bda93314f0e766542d265d27347f727911fb7c7c84a75efc89da869bd862fa952701ff8e289557e511b6778b315c25b6cc8c777a82b6ee93b0067a6b5e4e199c15e99cb6b1ee12c7bfc47204fb87b6625238dc16b3fae561ee9d31c637546a12f2a9c5986e29ecee32f9e362beeff0833d656650be94ec54362dcd61611aa4acdb55f0a58f4ac24f8522d0e42a6839d33abfd43402b8f1717f6e5e6db48f5570954af9aef4f12264f5247cafbf822844a1269a42fd6db185dababb118985bb86eebb24eb70a75a78346d9265343e47da23693409922710b2423fc5f7a5d483ba3049a841b98b4225689b993718d18803b2217c8f1090077a199ba30d874ca2331eb602a9d56bbb85c83ae908dff52ee9d65fe3757c33c76f9ee9fdf2c615863c72bb0ec23106f1c753a4631b54fad5ab50f894010f85cc049c9786070fb438606aba91e29597bfe28b44b7372b9ac204ec7d20e1fd3ecf327d6f89'
 _DM_PUBLIC_N = int('cf32358b4296594259856122aa66a9d8880488a28417d50a3b7cd2421eada4dcbd834733838288f1b9ae5d62ce30db9da7264834b415bca3d758b3116c63ce35d9f97ecb4db1d72549d6ee9844384216146c9d03cc311d2e67c5f4eff6c5a2cbb27f0a07cc3e1a4134bb60e71502ce866a07bad6be93895a4f1ab93e6af0bfa722f8f127cb754dfb3a3ef911cb75795ecf746d7a9469914cb88370b4e84ebe65ba95df5ce88216f8d57444b67b69b454c2d5f2826e119a48ee15cf9bdf8dee9185668eaec34544fbb0d14a6456f4f7c1af072fb3803765910b4bdf0ef2f8efe688a0d9a02a1b80ad7ff153996c346128046d3e0381c14090c9eb0c83bcfbdfcf544b27d08d2483b9a41b3b8d2160facc34ddf9cdf2cfe9021603eaefae7032ea0a434ed3fc572d3b5456f94f41de5e36eeee8b40a8426337861f6d77b3907d37d8023c3c74357348ece9711f06d7458844e6e0091afd68d7c437713c1a6452b61cd299075c864be6dbda652c2014a5f11793fd9580f203296d944db3c00b0113', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -459,7 +459,12 @@ def _dm_module_01():
     "effort_menu_legend": "Tek satırlık özet: düşük → en hızlı ve en ucuz, agresif → en derin düşünme (token tasarrufu kapalı).",
     "effort_menu_prompt": "Numara seçin (1-7) veya düzey adı yazın [Enter: vazgeç]: ",
     "effort_menu_kept": "Seçim yapılmadı; düşünme düzeyi değişmedi: {level}.",
-    "effort_menu_col_save": "Token tasarrufu"
+    "effort_menu_col_save": "Token tasarrufu",
+    "effort_menu_col_no": "No",
+    "effort_menu_col_name": "Düzey",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Geçersiz model adı: yalnızca harf, rakam ve . _ : / @ + - karakterleri kullanılabilir.",
+    "auto_syntax_rolled_back": "{path}: sözdizimi hatası bulundu; dosya otomatik olarak önceki çalışan sürüme geri alındı."
   },
   "en": {
     "lang_name": "English",
@@ -739,7 +744,12 @@ def _dm_module_01():
     "effort_menu_legend": "In one line: low → fastest and cheapest, aggressive → deepest reasoning (token saving off).",
     "effort_menu_prompt": "Pick a number (1-7) or type a level name [Enter: cancel]: ",
     "effort_menu_kept": "No selection made; reasoning level unchanged: {level}.",
-    "effort_menu_col_save": "Token saving"
+    "effort_menu_col_save": "Token saving",
+    "effort_menu_col_no": "No",
+    "effort_menu_col_name": "Level",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Invalid model name: only letters, digits and . _ : / @ + - are allowed.",
+    "auto_syntax_rolled_back": "{path}: syntax error detected; the file was automatically reverted to its previous working version."
   },
   "de": {
     "lang_name": "Deutsch",
@@ -1019,7 +1029,12 @@ def _dm_module_01():
     "effort_menu_legend": "Kurz: low → am schnellsten und günstigsten, aggressive → tiefstes Nachdenken (Token-Sparen aus).",
     "effort_menu_prompt": "Nummer wählen (1-7) oder Stufennamen eingeben [Enter: abbrechen]: ",
     "effort_menu_kept": "Keine Auswahl; Denkstufe unverändert: {level}.",
-    "effort_menu_col_save": "Token-Sparen"
+    "effort_menu_col_save": "Token-Sparen",
+    "effort_menu_col_no": "Nr.",
+    "effort_menu_col_name": "Stufe",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Ungültiger Modellname: nur Buchstaben, Ziffern und . _ : / @ + - erlaubt.",
+    "auto_syntax_rolled_back": "{path}: Syntaxfehler gefunden; die Datei wurde automatisch auf die letzte funktionierende Version zurückgesetzt."
   },
   "es": {
     "lang_name": "Español",
@@ -1299,7 +1314,12 @@ def _dm_module_01():
     "effort_menu_legend": "En una línea: low → lo más rápido y barato, aggressive → razonamiento más profundo (ahorro desactivado).",
     "effort_menu_prompt": "Elige un número (1-7) o escribe el nombre del nivel [Enter: cancelar]: ",
     "effort_menu_kept": "Sin selección; el nivel de razonamiento no cambió: {level}.",
-    "effort_menu_col_save": "Ahorro de tokens"
+    "effort_menu_col_save": "Ahorro de tokens",
+    "effort_menu_col_no": "N.º",
+    "effort_menu_col_name": "Nivel",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Nombre de modelo no válido: solo se permiten letras, dígitos y . _ : / @ + -",
+    "auto_syntax_rolled_back": "{path}: se detectó un error de sintaxis; el archivo se revirtió automáticamente a su versión anterior."
   },
   "fr": {
     "lang_name": "Français",
@@ -1579,7 +1599,12 @@ def _dm_module_01():
     "effort_menu_legend": "En bref : low → le plus rapide et le moins cher, aggressive → raisonnement le plus profond (économie désactivée).",
     "effort_menu_prompt": "Choisissez un numéro (1-7) ou tapez un niveau [Entrée : annuler] : ",
     "effort_menu_kept": "Aucune sélection ; niveau de raisonnement inchangé : {level}.",
-    "effort_menu_col_save": "Économie de tokens"
+    "effort_menu_col_save": "Économie de tokens",
+    "effort_menu_col_no": "N°",
+    "effort_menu_col_name": "Niveau",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Nom de modèle invalide : seuls les lettres, chiffres et . _ : / @ + - sont autorisés.",
+    "auto_syntax_rolled_back": "{path} : erreur de syntaxe détectée ; le fichier a été automatiquement rétabli à sa version précédente."
   },
   "ru": {
     "lang_name": "Русский",
@@ -1859,7 +1884,12 @@ def _dm_module_01():
     "effort_menu_legend": "Коротко: low → быстрее и дешевле всего, aggressive → самые глубокие рассуждения (экономия выключена).",
     "effort_menu_prompt": "Выберите номер (1-7) или введите название уровня [Enter: отмена]: ",
     "effort_menu_kept": "Выбор не сделан; уровень рассуждений не изменён: {level}.",
-    "effort_menu_col_save": "Экономия токенов"
+    "effort_menu_col_save": "Экономия токенов",
+    "effort_menu_col_no": "№",
+    "effort_menu_col_name": "Уровень",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Недопустимое имя модели: разрешены только буквы, цифры и . _ : / @ + -",
+    "auto_syntax_rolled_back": "{path}: обнаружена синтаксическая ошибка; файл автоматически возвращён к предыдущей рабочей версии."
   },
   "az": {
     "lang_name": "Azərbaycan dili",
@@ -2139,7 +2169,12 @@ def _dm_module_01():
     "effort_menu_legend": "Bir sətirdə: düşük → ən sürətli və ən ucuz, aqressiv → ən dərin düşünmə (token qənaəti bağlı).",
     "effort_menu_prompt": "Nömrə seçin (1-7) və ya səviyyə adı yazın [Enter: ləğv et]: ",
     "effort_menu_kept": "Seçim edilmədi; düşünmə səviyyəsi dəyişmədi: {level}.",
-    "effort_menu_col_save": "Token qənaəti"
+    "effort_menu_col_save": "Token qənaəti",
+    "effort_menu_col_no": "№",
+    "effort_menu_col_name": "Səviyyə",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Yanlış model adı: yalnız hərf, rəqəm və . _ : / @ + - işarələri ola bilər.",
+    "auto_syntax_rolled_back": "{path}: sintaksis xətası tapıldı; fayl avtomatik olaraq əvvəlki işlək versiyaya qaytarıldı."
   },
   "it": {
     "lang_name": "Italiano",
@@ -2419,7 +2454,12 @@ def _dm_module_01():
     "effort_menu_legend": "In breve: low → il più veloce ed economico, aggressive → ragionamento più profondo (risparmio disattivato).",
     "effort_menu_prompt": "Scegli un numero (1-7) o scrivi il nome del livello [Invio: annulla]: ",
     "effort_menu_kept": "Nessuna selezione; livello invariato: {level}.",
-    "effort_menu_col_save": "Risparmio token"
+    "effort_menu_col_save": "Risparmio token",
+    "effort_menu_col_no": "N.",
+    "effort_menu_col_name": "Livello",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Nome modello non valido: sono ammessi solo lettere, cifre e . _ : / @ + -",
+    "auto_syntax_rolled_back": "{path}: rilevato un errore di sintassi; il file è stato ripristinato automaticamente alla versione precedente."
   },
   "pt": {
     "lang_name": "Português",
@@ -2699,7 +2739,12 @@ def _dm_module_01():
     "effort_menu_legend": "Em resumo: low → o mais rápido e barato, aggressive → raciocínio mais profundo (economia desativada).",
     "effort_menu_prompt": "Escolha um número (1-7) ou escreva o nome do nível [Enter: cancelar]: ",
     "effort_menu_kept": "Sem seleção; nível inalterado: {level}.",
-    "effort_menu_col_save": "Economia de tokens"
+    "effort_menu_col_save": "Economia de tokens",
+    "effort_menu_col_no": "N.º",
+    "effort_menu_col_name": "Nível",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Nome do modelo inválido: apenas letras, dígitos e . _ : / @ + - são permitidos.",
+    "auto_syntax_rolled_back": "{path}: erro de sintaxe detectado; o arquivo foi revertido automaticamente para a versão anterior."
   },
   "nl": {
     "lang_name": "Nederlands",
@@ -2979,7 +3024,12 @@ def _dm_module_01():
     "effort_menu_legend": "Kort: low → snelst en goedkoopst, aggressive → diepst redeneren (besparing uit).",
     "effort_menu_prompt": "Kies een nummer (1-7) of typ een niveaunaam [Enter: annuleren]: ",
     "effort_menu_kept": "Geen keuze; denkniveau ongewijzigd: {level}.",
-    "effort_menu_col_save": "Tokenbesparing"
+    "effort_menu_col_save": "Tokenbesparing",
+    "effort_menu_col_no": "Nr.",
+    "effort_menu_col_name": "Niveau",
+    "effort_menu_col_api": "API",
+    "model_invalid": "Ongeldige modelnaam: alleen letters, cijfers en . _ : / @ + - zijn toegestaan.",
+    "auto_syntax_rolled_back": "{path}: syntaxisfout gevonden; het bestand is automatisch teruggezet naar de vorige werkende versie."
   },
   "ar": {
     "lang_name": "العربية",
@@ -3259,7 +3309,12 @@ def _dm_module_01():
     "effort_menu_legend": "باختصار: low → الأسرع والأرخص، aggressive → أعمق تفكير (توفير الرموز متوقف).",
     "effort_menu_prompt": "اختر رقمًا (1-7) أو اكتب اسم المستوى [Enter: إلغاء]: ",
     "effort_menu_kept": "لم يتم الاختيار؛ مستوى التفكير لم يتغير: {level}.",
-    "effort_menu_col_save": "توفير الرموز"
+    "effort_menu_col_save": "توفير الرموز",
+    "effort_menu_col_no": "رقم",
+    "effort_menu_col_name": "المستوى",
+    "effort_menu_col_api": "API",
+    "model_invalid": "اسم نموذج غير صالح: يُسمح فقط بالحروف والأرقام والرموز . _ : / @ + -",
+    "auto_syntax_rolled_back": "{path}: تم اكتشاف خطأ في الصياغة؛ تمت إعادة الملف تلقائيًا إلى النسخة السابقة العاملة."
   },
   "zh": {
     "lang_name": "中文",
@@ -3539,7 +3594,12 @@ def _dm_module_01():
     "effort_menu_legend": "一句话：low → 最快最省，aggressive → 最深思考（令牌节省关闭）。",
     "effort_menu_prompt": "选择编号 (1-7) 或输入等级名称 [Enter: 取消]：",
     "effort_menu_kept": "未选择；思考等级保持不变：{level}。",
-    "effort_menu_col_save": "令牌节省"
+    "effort_menu_col_save": "令牌节省",
+    "effort_menu_col_no": "编号",
+    "effort_menu_col_name": "等级",
+    "effort_menu_col_api": "API",
+    "model_invalid": "模型名称无效：只允许字母、数字以及 . _ : / @ + -",
+    "auto_syntax_rolled_back": "{path}：检测到语法错误，文件已自动还原到上一个可用版本。"
   },
   "ja": {
     "lang_name": "日本語",
@@ -3819,7 +3879,12 @@ def _dm_module_01():
     "effort_menu_legend": "ひとことで: low → 最速・最安、aggressive → 最深の思考（トークン節約オフ）。",
     "effort_menu_prompt": "番号 (1-7) を選ぶかレベル名を入力 [Enter: キャンセル]: ",
     "effort_menu_kept": "選択なし。思考レベルは変更されていません: {level}。",
-    "effort_menu_col_save": "トークン節約"
+    "effort_menu_col_save": "トークン節約",
+    "effort_menu_col_no": "No",
+    "effort_menu_col_name": "レベル",
+    "effort_menu_col_api": "API",
+    "model_invalid": "モデル名が無効です。使用できるのは英数字と . _ : / @ + - のみです。",
+    "auto_syntax_rolled_back": "{path}: 構文エラーを検出したため、ファイルを自動的に以前の動作するバージョンに戻しました。"
   },
   "ko": {
     "lang_name": "한국어",
@@ -4099,7 +4164,12 @@ def _dm_module_01():
     "effort_menu_legend": "한 줄 요약: low → 가장 빠르고 저렴, aggressive → 가장 깊은 사고(토큰 절약 꺼짐).",
     "effort_menu_prompt": "번호(1-7)를 선택하거나 레벨 이름을 입력 [Enter: 취소]: ",
     "effort_menu_kept": "선택하지 않았습니다. 사고 레벨은 그대로입니다: {level}.",
-    "effort_menu_col_save": "토큰 절약"
+    "effort_menu_col_save": "토큰 절약",
+    "effort_menu_col_no": "번호",
+    "effort_menu_col_name": "레벨",
+    "effort_menu_col_api": "API",
+    "model_invalid": "모델 이름이 올바르지 않습니다. 문자, 숫자 및 . _ : / @ + - 만 사용할 수 있습니다.",
+    "auto_syntax_rolled_back": "{path}: 구문 오류가 감지되어 파일을 이전 정상 버전으로 자동 복원했습니다."
   }
 }''')
  return locals()
@@ -4156,6 +4226,7 @@ def _dm_module_03():
  """
  import json
  import os
+ import re
  import shutil
  import stat
  import tempfile
@@ -4291,6 +4362,22 @@ def _dm_module_03():
  PROVIDER_MAP: Dict[str, ProviderSpec] = {p.id: p for p in PROVIDERS}
  def get_provider_spec(provider_id: str) -> ProviderSpec:
    return PROVIDER_MAP.get(provider_id, PROVIDERS[0])
+ def _restrict_windows_acl(target) -> None:
+   """Windows has no chmod bits; restrict the config file to the current user."""
+   import subprocess
+   try:
+     if not target.is_file():
+       return
+     user = os.environ.get("USERNAME", "")
+     if not user:
+       return
+     subprocess.run(
+       ["icacls", str(target), "/inheritance:r", "/grant:r", f"{user}:F"],
+       stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+       timeout=6, check=False,
+     )
+   except Exception:
+     pass
  def clean_api_key(raw: str) -> str:
    """Strip accidental quotes, whitespace, or 'Bearer ' prefixes from pasted keys."""
    if not raw:
@@ -4375,6 +4462,20 @@ def _dm_module_03():
            os.chmod(d, 0o700)
        except OSError:
          pass
+     # Pre-existing installs may carry group/world readable config or logs: tighten them.
+     if os.name != "nt":
+       for target in (self.config_path, self.config_path.with_suffix(".json.bak"),
+                      self.logs_dir / "docmind.log", self.home_dir / "history.txt"):
+         try:
+           if target.is_file() and not target.is_symlink():
+             current = stat.S_IMODE(target.stat().st_mode)
+             if current & 0o077:
+               os.chmod(target, 0o600)
+         except OSError:
+           pass
+     else:
+       for target in (self.config_path, self.config_path.with_suffix(".json.bak")):
+         _restrict_windows_acl(target)
    def load(self) -> DocMindConfig:
      if not self.config_path.exists():
        cfg = DocMindConfig()
@@ -4534,6 +4635,21 @@ def _dm_module_04():
    masked = re.sub(r"(sk-[a-zA-Z0-9_\-]{6})[a-zA-Z0-9_\-]{8,}", r"\1***", text)
    masked = re.sub(r"(AIza[a-zA-Z0-9_\-]{5})[a-zA-Z0-9_\-]{8,}", r"\1***", masked)
    masked = re.sub(r"(gsk_[a-zA-Z0-9_\-]{5})[a-zA-Z0-9_\-]{8,}", r"\1***", masked)
+   # GitHub (classic/pat/fine-grained/app), Slack, Google OAuth, HF, Stripe, JWTs
+   masked = re.sub(r"\b(gh[pousr]_[A-Za-z0-9]{4})[A-Za-z0-9]{8,}", r"\1***", masked)
+   masked = re.sub(r"\b(github_pat_[A-Za-z0-9]{4})[A-Za-z0-9_]{8,}", r"\1***", masked)
+   masked = re.sub(r"\b(xox[abpsr]-[A-Za-z0-9\-]{4})[A-Za-z0-9\-]{8,}", r"\1***", masked)
+   masked = re.sub(r"\b(hf_[A-Za-z0-9]{4})[A-Za-z0-9]{8,}", r"\1***", masked)
+   masked = re.sub(r"\b((?:sk|rk)_(?:live|test)_[A-Za-z0-9]{4})[A-Za-z0-9]{8,}", r"\1***", masked)
+   masked = re.sub(r"\beyJ[A-Za-z0-9_\-]{6,}\.[A-Za-z0-9_\-]{6,}\.[A-Za-z0-9_\-]{6,}", lambda m: m.group(0)[:12] + "***", masked)
+   # Credentials hidden in URLs / query strings (?api_key=..., token=...)
+   masked = re.sub(
+     r"(?i)\b((?:api[_-]?key|apikey|access[_-]?token|auth[_-]?token|token|secret|password|passwd|pwd|client[_-]?secret)=)([^&\s\"'\\]{4})[^&\s\"'\\]*",
+     r"\1\2***", masked,
+   )
+   masked = re.sub(r"(?i)\b(Bearer|Basic)\s+([A-Za-z0-9._\-]{4})[A-Za-z0-9._\-]+", r"\1 \2***", masked)
+   masked = re.sub(r"-----BEGIN [A-Z ]*PRIVATE KEY-----[\s\S]*?-----END [A-Z ]*PRIVATE KEY-----",
+                   "[REDACTED PRIVATE KEY]", masked)
    return masked
  def extract_api_error_message(body: str, fallback: str = "") -> Tuple[str, str]:
    """
@@ -4891,6 +5007,9 @@ def _dm_module_05():
        snap.path.unlink()
        return snap.path, "removed newly created file"
      return snap.path, "restored state"
+   def peek_last_path(self) -> Optional[Path]:
+     """Path of the change that undo_last() would revert, without touching the stack."""
+     return self._stack[-1].path if self._stack else None
    def undo_last(self) -> Optional[Path]:
      if not self._stack:
        return None
@@ -4956,6 +5075,7 @@ def _dm_module_06():
  from typing import Any, Callable, Dict, List, Optional, Tuple
  from docmind.tools.backup import UndoManager
  ENCODINGS_TO_TRY = ("utf-8", "utf-8-sig", "cp1254", "cp1252", "latin-1")
+ MAX_READ_BYTES = 2 * 1024 * 1024  # hard cap: never load a giant/hostile file into memory
  IGNORED_DIRS = {".git", "__pycache__", "node_modules", ".venv", "venv", ".mypy_cache", ".pytest_cache"}
  def format_size(num_bytes: int) -> str:
    val = float(max(0, num_bytes))
@@ -5200,6 +5320,16 @@ def _dm_module_06():
      return Path(os.path.abspath(str(p)))
  def read_text_resilient(path: Path) -> Tuple[str, str]:
    """Read text file supporting UTF-8, UTF-8-BOM, UTF-16 LE/BE, Turkish CP1254, and Latin-1."""
+   if path.is_symlink() and not path.exists():
+     raise FileNotFoundError(f"dangling symbolic link: {path}")
+   try:
+     st = path.stat()
+   except OSError as exc:
+     raise OSError(f"cannot stat {path}: {exc}") from exc
+   if os.name != "nt" and (stat.S_ISFIFO(st.st_mode) or stat.S_ISCHR(st.st_mode) or stat.S_ISSOCK(st.st_mode)):
+     raise ValueError(f"refusing to read special file: {path}")
+   if st.st_size > MAX_READ_BYTES:
+     raise ValueError(f"file too large to read ({format_size(st.st_size)})")
    raw = path.read_bytes()
    if not raw:
      return "", "utf-8"
@@ -5475,6 +5605,16 @@ def _dm_module_06():
    if not raw_path:
      return False, "Error: 'path' parameter is required.", None
    target = resolve_user_path(raw_path, cwd)
+   if target.exists() and not target.is_file():
+     if target.is_dir():
+       return False, f"Error: '{target}' is a directory. Choose a file path instead.", None
+     if os.name != "nt" and (stat.S_ISFIFO(target.stat().st_mode) or stat.S_ISSOCK(target.stat().st_mode)):
+       return False, f"Error: '{target}' is a special file; refusing to write.", None
+   if not target.parent.exists():
+     try:
+       target.parent.mkdir(parents=True, exist_ok=True)
+     except OSError as exc:
+       return False, f"Error: cannot create folder '{target.parent}': {exc}", None
    old_text = ""
    if target.exists() and target.is_file():
      try:
@@ -5482,10 +5622,27 @@ def _dm_module_06():
      except Exception:
        old_text = ""
    undo_mgr.record_before_modify(target)
-   _atomic_write_text(target, content, encoding="utf-8")
+   try:
+     _atomic_write_text(target, content, encoding="utf-8")
+   except OSError as exc:
+     return False, f"Error: could not write '{target}': {exc}", None
+   _harden_new_file_permissions(target)
    line_count = len(content.splitlines())
    diff_info = (str(target), old_text, content)
    return True, f"Successfully wrote {line_count} lines ({format_size(len(content.encode('utf-8')))}) to {target}", diff_info
+ def _harden_new_file_permissions(target: Path) -> None:
+   """Do not leave freshly written scripts/binaries with execute bits set for others."""
+   if os.name == "nt":
+     return
+   try:
+     if not target.is_file():
+       return
+     current = stat.S_IMODE(target.stat().st_mode)
+     hardened = current & ~(stat.S_IXGRP | stat.S_IXOTH | stat.S_IWGRP | stat.S_IWOTH)
+     if hardened != current:
+       os.chmod(target, hardened)
+   except OSError:
+     pass
  def _fuzzy_line_replace(full_text: str, old_text: str, new_text: str) -> Optional[str]:
    src_lines = full_text.splitlines(keepends=True)
    raw_needle_lines = old_text.splitlines()
@@ -5539,6 +5696,7 @@ def _dm_module_06():
    undo_mgr.record_before_modify(target)
    write_enc = enc if enc in ("utf-8", "utf-8-sig", "cp1254", "utf-16-le", "utf-16-be") else "utf-8"
    _atomic_write_text(target, updated, encoding=write_enc)
+   _harden_new_file_permissions(target)
    return True, f"Edited {target} ({replaced_count} replacement(s) applied).", (str(target), content, updated)
  def tool_multi_edit(
    args: Dict[str, Any],
@@ -5729,23 +5887,37 @@ def _dm_module_06():
      dest.mkdir(parents=True, exist_ok=True)
      dest_resolved = dest.resolve()
      if zipfile.is_zipfile(arch):
+       link_attr = (getattr(zipfile, "SYMLINK_ATTR", 0xA1ED0000) if hasattr(zipfile, "SYMLINK_ATTR") else 0xA1ED0000)
        with zipfile.ZipFile(arch, "r") as zf:
          for member in zf.infolist():
            target_p = (dest_resolved / member.filename).resolve()
            if not target_p.is_relative_to(dest_resolved):
              return False, f"Blocked Zip-Slip path traversal entry: {member.filename}"
+           if member.filename.startswith(("/", "\\")) or ".." in Path(member.filename).parts:
+             return False, f"Blocked unsafe archive entry: {member.filename}"
+           mode_bits = (member.external_attr >> 16) & 0xF000
+           if mode_bits == link_attr or (member.external_attr >> 16) & 0o170000 == 0o120000:
+             return False, f"Blocked symbolic link entry in ZIP archive: {member.filename}"
          zf.extractall(dest_resolved)
        return True, f"Extracted ZIP archive {arch} -> {dest_resolved}"
      with tarfile.open(arch, "r:*") as tf:
        safe_members = []
        for m in tf.getmembers():
-         if m.issym() or m.islnk():
+         if m.issym() or m.islnk() or m.isdev() or getattr(m, "isfifo", lambda: False)():
            continue
+         if m.name.startswith(("/", "\\")) or ".." in Path(m.name).parts:
+           return False, f"Blocked unsafe archive entry: {m.name}"
          target_p = (dest_resolved / m.name).resolve()
          if not target_p.is_relative_to(dest_resolved):
            return False, f"Blocked Tar-Slip path traversal entry: {m.name}"
          safe_members.append(m)
-       tf.extractall(dest_resolved, members=safe_members)
+       try:
+         if hasattr(tarfile, "data_filter"):
+           tf.extractall(dest_resolved, members=safe_members, filter="data")
+         else:
+           tf.extractall(dest_resolved, members=safe_members)
+       except TypeError:
+         tf.extractall(dest_resolved, members=safe_members)
      return True, f"Extracted TAR archive {arch} -> {dest_resolved}"
    if action == "create":
      raw_targets = args.get("target_paths") or []
@@ -6215,15 +6387,23 @@ def _dm_module_07():
  cryptographic keys / credential stores and localhost SSRF URLs trigger extra consent.
  """
  import ipaddress
+ import os
  import re
  import urllib.parse
  from pathlib import Path
  from typing import Any, Dict
  from docmind.tools.filesystem import resolve_user_path
- _VAULT_DIRS = {".ssh", ".aws", ".gnupg", ".kube", ".docmind", ".docmind-single", ".azure"}
+ _VAULT_DIRS = {
+  ".ssh", ".aws", ".gnupg", ".kube", ".docmind", ".docmind-single", ".azure",
+  ".docker", ".password-store", ".terraform.d", ".gcloud", ".oci", ".pki",
+ }
+ _VAULT_SUFFIXES = (".pem", ".key", ".p12", ".pfx", ".kdbx", ".jks", ".keystore", ".ppk", ".asc", ".gpg")
  _VAULT_FILES = {
-   ".git-credentials", ".netrc", "credentials.json", "secrets.json",
-   "id_rsa", "id_ed25519", "id_ecdsa", "id_dsa",
+  ".git-credentials", ".netrc", "_netrc", ".pgpass", ".my.cnf", ".env",
+  ".npmrc", ".pypirc", ".htpasswd", ".s3cfg", ".boto", ".vault-token",
+  "credentials.json", "credentials", "secrets.json", "secrets.yaml", "secrets.yml",
+  "id_rsa", "id_ed25519", "id_ecdsa", "id_dsa",
+  "kubeconfig", "authorized_keys", "service-account.json", "token.json", "auth.json",
  }
  DANGEROUS_COMMAND_PATTERNS = [
    r"\brm\s+(-[a-zA-Z]*r[a-zA-Z]*f|-[a-zA-Z]*f[a-zA-Z]*r)\s+/(?:\s|$|\*)",
@@ -6239,8 +6419,14 @@ def _dm_module_07():
  def is_catastrophic_command(cmd: str) -> bool:
    if not cmd:
      return False
+   # Collapse quotes, backslashes, extra spaces and $IFS tricks before matching.
    lowered = cmd.strip().lower()
-   return any(re.search(pat, lowered) for pat in DANGEROUS_COMMAND_PATTERNS)
+   normalized = re.sub(r"[\"'`]|\\|\$ifs|\$\{[^}]*\}", "", lowered)
+   normalized = re.sub(r"\s+", " ", normalized)
+   return any(
+     re.search(pat, normalized) or re.search(pat, lowered)
+     for pat in DANGEROUS_COMMAND_PATTERNS
+   )
  def sensitive_path(raw: str, cwd: Path) -> bool:
    """Return True ONLY for private key/credential vaults (never blocks normal computer folders)."""
    if not raw:
@@ -6248,40 +6434,231 @@ def _dm_module_07():
    try:
      raw_path = Path(raw).expanduser()
      resolved = resolve_user_path(raw, cwd)
-     for p in (raw_path, resolved):
-       parts = [part.lower() for part in p.parts]
-       base = p.name.lower()
+     candidates = [raw_path, resolved]
+     # A symlink that points into a vault must be treated exactly like the vault itself.
+     for candidate in (resolved, raw_path):
+       try:
+         candidates.append(Path(os.path.realpath(str(candidate))))
+       except (OSError, ValueError):
+         pass
+     seen = set()
+     for candidate in candidates:
+       key = str(candidate)
+       if key in seen:
+         continue
+       seen.add(key)
+       parts = [part.lower() for part in candidate.parts]
+       base = candidate.name.lower()
+       if ".config" in parts:
+         if any(x in parts for x in ("gcloud", "gh", "glab", "hub", "heroku", "netlify", "vercel", "docker", "doctl")):
+           return True
+         if base in ("config.json", "hosts.yml", "config.yml", "access_tokens.db", "credentials"):
+           return True
+         continue
        if any(part in _VAULT_DIRS for part in parts):
          return True
-       if ".config" in parts and any(x in parts for x in ("gcloud", "gh")):
+       if base in _VAULT_FILES or base.startswith(("id_rsa.", "id_ed25519.", "id_ecdsa.")):
          return True
-       if base in _VAULT_FILES or base.startswith(("id_rsa.", "id_ed25519.")):
+       if base.endswith(_VAULT_SUFFIXES):
          return True
-       if base.endswith((".pem", ".key", ".p12", ".pfx", ".kdbx")):
+       if base.startswith((".env", "env.")) and base not in (".env.example", ".env.sample", ".env.template", "env.example"):
+         return True
+       if base in ("kubeconfig", "known_hosts", "authorized_keys", "service-account.json"):
          return True
    except (OSError, ValueError):
      return False
    return False
  def sensitive_tool_action(name: str, args: Dict[str, Any], cwd: Path) -> bool:
    """Check if a tool call touches a private credential vault or internal loopback SSRF target."""
-   for key in ("path", "source", "destination", "archive_path", "output_dir"):
+   for key in ("path", "source", "destination", "archive_path", "output_dir", "target", "file", "src", "dst"):
      if key in args and args.get(key) and sensitive_path(str(args[key]), cwd):
        return True
    if name == "web_fetch":
      try:
-       host = (urllib.parse.urlsplit(str(args.get("url", ""))).hostname or "").lower()
-       if host in ("localhost", "localhost.localdomain") or host.endswith(".local"):
+       host = (urllib.parse.urlsplit(str(args.get("url", ""))).hostname or "").lower().rstrip(".")
+       if host in ("localhost", "localhost.localdomain") or host.endswith((".local", ".internal", ".home.arpa")):
+         return True
+       if "%" in host:
          return True
        try:
          addr = ipaddress.ip_address(host)
          return not addr.is_global
        except ValueError:
-         pass
+         tail = host.rsplit(".", 1)[-1]
+         if host and (tail.isdigit() or host.startswith("0x")):
+           return True
      except ValueError:
        return True
    return False
  return locals()
 _dm_install('docmind.core.safety', _dm_module_07, False)
+
+
+# ===== docmind/core/sanitize.py (included source) =====
+def _dm_module_07b():
+ """
+ DocMind Terminal-Safe Text Layer (v1.2.1)
+
+ Terminals without a Unicode font (Windows cp437/cp1254 consoles, POSIX C/POSIX
+ locale, TERM=dumb, or a font missing the symbol) render every glyph they cannot
+ draw as an empty box. This module decides once per process which glyphs are
+ actually representable and folds the rest to plain ASCII equivalents, so the UI
+ never degrades into squares. It also strips lone UTF-16 surrogates that would
+ otherwise raise UnicodeEncodeError while printing model output.
+ """
+ import locale
+ import os
+ import re
+ import sys
+ from typing import Optional
+
+ # Glyphs DocMind prints on purpose, most fragile first.
+ _PROBE = "⚠✓✔✗◀▶→←•…━─│╭╮╰╯═║└├↑↓↔⏱☑"
+ _ASCII_MAP = {
+   "⚠": "(!)", "✓": "[OK]", "✔": "[OK]", "✗": "[X]", "✘": "[X]",
+   "◀": "<-", "▶": "->", "►": "->", "◄": "<-",
+   "→": "->", "←": "<-", "↔": "<->", "↑": "^", "↓": "v",
+   "•": "*", "·": "*", "…": "...", "≡": "=", "≠": "!=", "≤": "<=", "≥": ">=",
+   "━": "-", "─": "-", "═": "=", "│": "|", "║": "|",
+   "╭": "+", "╮": "+", "╰": "+", "╯": "+", "┌": "+", "┐": "+", "└": "+", "┘": "+",
+   "├": "+", "┤": "+", "┬": "+", "┴": "+", "┼": "+",
+   "⏱": "(t)", "⌛": "(t)", "⏳": "(t)", "☑": "[x]", "☐": "[ ]",
+   "\u00a0": " ", "\u200b": "", "\u200e": "", "\u200f": "",
+ }
+ _PICTOGRAPH_RANGES = (
+   (0x1F000, 0x1FAFF), (0x2600, 0x27BF), (0x2B00, 0x2BFF),
+   (0xFE00, 0xFE0F), (0x1F1E6, 0x1F1FF), (0xE0020, 0xE007F),
+ )
+ def _is_pictograph(ch: str) -> bool:
+   point = ord(ch)
+   return any(lo <= point <= hi for lo, hi in _PICTOGRAPH_RANGES)
+ def _candidate_encodings() -> list:
+   values = []
+   for value in (
+     getattr(sys.stdout, "encoding", None),
+     getattr(sys.stderr, "encoding", None),
+     locale.getpreferredencoding(False),
+     "utf-8",
+   ):
+     if value and value.lower() not in [v.lower() for v in values]:
+       values.append(value)
+   return values
+ def _resolve_encoding() -> str:
+   for value in _candidate_encodings():
+     try:
+       "probe".encode(value)
+       return value
+     except (LookupError, UnicodeEncodeError):
+       continue
+   return "utf-8"
+ TERMINAL_ENCODING = _resolve_encoding()
+ def _encoding_supports_glyphs(encoding: str) -> bool:
+   try:
+     _PROBE.encode(encoding)
+     return True
+   except (LookupError, UnicodeEncodeError):
+     return False
+   except Exception:
+     return False
+ _FORCE_ASCII = str(os.environ.get("DOCMIND_ASCII", "") or os.environ.get("DOCMIND_GLYPHS", "")).strip().lower()
+ ASCII_GLYPHS = bool(_FORCE_ASCII and _FORCE_ASCII not in ("0", "false", "no", "off", "unicode", "utf8", "utf-8")) \
+   or not _encoding_supports_glyphs(TERMINAL_ENCODING)
+ def terminal_supports_unicode(encoding: Optional[str] = None) -> bool:
+   enc = encoding or TERMINAL_ENCODING
+   return _encoding_supports_glyphs(enc)
+ def _strip_surrogates(value: str) -> str:
+   if not any("\ud800" <= ch <= "\udfff" for ch in value):
+     return value
+   return value.encode("utf-8", "replace").decode("utf-8", "replace")
+ _TRANSLIT = {
+   "ı": "i", "İ": "I", "ş": "s", "Ş": "S", "ğ": "g", "Ğ": "G", "ç": "c", "Ç": "C",
+   "ö": "o", "Ö": "O", "ü": "u", "Ü": "U", "ə": "e", "Ə": "E", "ñ": "n", "Ñ": "N",
+   "á": "a", "à": "a", "â": "a", "ä": "a", "å": "a", "ã": "a", "é": "e", "è": "e",
+   "ê": "e", "ë": "e", "í": "i", "ì": "i", "î": "i", "ï": "i", "ó": "o", "ò": "o",
+   "ô": "o", "õ": "o", "ø": "o", "ú": "u", "ù": "u", "û": "u", "ý": "y", "ÿ": "y",
+   "ß": "ss", "æ": "ae", "œ": "oe", "–": "-", "—": "-", "‘": "'", "’": "'",
+   "“": '"', "”": '"', "„": '"', "«": '"', "»": '"', "\u0307": "", "\u0301": "",
+   "\u0308": "", "\u0327": "", "№": "No.", "₺": "TL", "€": "EUR", "£": "GBP", "¥": "JPY",
+ }
+ def _fold(value: str, encoding: str) -> str:
+   out = []
+   for ch in value:
+     if ch in _ASCII_MAP:
+       out.append(_ASCII_MAP[ch])
+     elif ch in _TRANSLIT:
+       out.append(_TRANSLIT[ch])
+     elif _is_pictograph(ch):
+       continue
+     else:
+       out.append(ch)
+   folded = "".join(out)
+   try:
+     folded.encode(encoding)
+     return folded
+   except (UnicodeEncodeError, LookupError):
+     pass
+   safe = []
+   for ch in folded:
+     try:
+       ch.encode(encoding)
+       safe.append(ch)
+       continue
+     except (UnicodeEncodeError, LookupError):
+       pass
+     replacement = _TRANSLIT.get(ch)
+     if replacement is None:
+       import unicodedata
+       replacement = unicodedata.normalize("NFKD", ch).encode("ascii", "ignore").decode("ascii")
+     safe.append(replacement if replacement else ("?" if ch.strip() else ch))
+   return "".join(safe)
+ def sanitize_text(value: object, encoding: Optional[str] = None) -> str:
+   """Return text that the active terminal can always print without squares."""
+   if value is None:
+     return ""
+   data = value if isinstance(value, str) else str(value)
+   data = _strip_surrogates(data)
+   enc = encoding or TERMINAL_ENCODING
+   if ASCII_GLYPHS or not terminal_supports_unicode(enc):
+     return _fold(data, enc)
+   try:
+     data.encode(enc)
+     return data
+   except (UnicodeEncodeError, LookupError):
+     return _fold(data, enc)
+ def ascii_fold(value: object) -> str:
+   """Force pure ASCII (used for debug/plain fallbacks)."""
+   return _fold(_strip_surrogates("" if value is None else str(value)), "ascii")
+ class SanitizingWriter:
+   """Transparent sys.stdout/stderr replacement that folds unprintable glyphs."""
+   def __init__(self, stream) -> None:
+     self._stream = stream
+   def write(self, data) -> int:
+     if isinstance(data, str):
+       data = sanitize_text(data)
+     return self._stream.write(data)
+   def writelines(self, lines) -> None:
+     for line in lines:
+       self.write(line)
+   def __getattr__(self, name):
+     return getattr(self._stream, name)
+ _INSTALLED = []
+ def install_output_sanitizer() -> bool:
+   for name in ("stdout", "stderr"):
+     stream = getattr(sys, name, None)
+     if stream is None or isinstance(stream, SanitizingWriter):
+       continue
+     try:
+       setattr(sys, name, SanitizingWriter(stream))
+     except Exception:
+       continue
+     _INSTALLED.append(name)
+   return bool(_INSTALLED)
+ def glyph(symbol: str, fallback: str) -> str:
+   """Pick the fancy symbol when the terminal can render it, else the fallback."""
+   return symbol if not ASCII_GLYPHS else fallback
+ return locals()
+_dm_install('docmind.core.sanitize', _dm_module_07b, False)
+
 
 # ===== docmind/tools/search.py (included source) =====
 def _dm_module_08():
@@ -7283,25 +7660,39 @@ def _dm_module_11():
      if parsed.username is not None or parsed.password is not None:
        return False, "URLs with embedded credentials are not allowed."
      _ = parsed.port
-     host = parsed.hostname.lower()
+     host = parsed.hostname.lower().rstrip(".")
      if allow_local:
        return True, ""
-     if host in ("localhost", "localhost.localdomain") or host.endswith(".local") or host.endswith(".internal"):
+     if host in ("localhost", "localhost.localdomain") or host.endswith((".local", ".internal", ".home.arpa")):
        return False, f"Blocked local/internal hostname: {host}"
+     if "%" in host:
+       return False, f"Blocked scoped IPv6 address: {host}"
+     # Numeric hosts must be parsed the way the OS resolves them (0x7f.1, 2130706433, 127.1).
+     numeric_tail = host.rsplit(".", 1)[-1]
+     looks_numeric = bool(host) and (numeric_tail.isdigit() or host.lower().startswith("0x"))
      try:
        ip_obj = ipaddress.ip_address(host)
-       if not ip_obj.is_global:
+       if not ip_obj.is_global or ip_obj.is_multicast or ip_obj.is_reserved:
          return False, f"Blocked non-public IP address: {host}"
      except ValueError:
-       try:
-         infos = socket.getaddrinfo(host, None)
-         for info in infos:
-           addr_str = info[4][0]
-           ip_obj = ipaddress.ip_address(addr_str)
-           if not ip_obj.is_global:
-             return False, f"Blocked private/local DNS resolution ({addr_str}) for {host}"
-       except Exception:
-         pass
+       if looks_numeric:
+         try:
+           packed = socket.inet_aton(host)
+           alt = ipaddress.ip_address(packed)
+           if not alt.is_global:
+             return False, f"Blocked obfuscated private address: {host}"
+         except OSError:
+           return False, f"Invalid numeric host: {host}"
+       else:
+         try:
+           infos = socket.getaddrinfo(host, None)
+           for info in infos:
+             addr_str = info[4][0].split("%", 1)[0]
+             ip_obj = ipaddress.ip_address(addr_str)
+             if not ip_obj.is_global or ip_obj.is_multicast or ip_obj.is_reserved:
+               return False, f"Blocked private/local DNS resolution ({addr_str}) for {host}"
+         except Exception:
+           pass
      return True, ""
    except ValueError:
      return False, "Invalid URL format."
@@ -7321,16 +7712,29 @@ def _dm_module_11():
        raise urllib.error.URLError(reason)
      return super().redirect_request(req, fp, code, msg, headers, resolved_url)
 
+ MAX_DECOMPRESSED_BYTES = 12 * 1024 * 1024
+ def _bounded_decompress(raw: bytes, wbits: int = 47) -> bytes:
+   """Decompress a gzip/zlib payload while enforcing an absolute output cap (zip-bomb guard)."""
+   try:
+     dobj = zlib.decompressobj(wbits)
+     out = dobj.decompress(raw, MAX_DECOMPRESSED_BYTES)
+     if len(out) >= MAX_DECOMPRESSED_BYTES:
+       return out
+     return out + dobj.flush()
+   except Exception:
+     return b""
  def _decode_http_bytes(raw: bytes, content_encoding: str = "") -> str:
    enc = (content_encoding or "").lower()
    data = raw
    try:
      if "gzip" in enc or data[:2] == b"\x1f\x8b":
-       data = gzip.decompress(data)
+       data = _bounded_decompress(data, 47) or raw
      elif "deflate" in enc:
-       data = zlib.decompress(data)
+       data = _bounded_decompress(data, 15) or _bounded_decompress(data, -15) or raw
    except Exception:
      data = raw
+   if len(data) > MAX_DECOMPRESSED_BYTES:
+     data = data[:MAX_DECOMPRESSED_BYTES]
    return data.decode("utf-8", errors="replace")
 
  def _strip_html(raw_html: str) -> str:
@@ -12286,6 +12690,7 @@ def _dm_module_20():
  from docmind import __version__
  from docmind.config import DocMindConfig, get_provider_spec
  from docmind.core.errors import DocMindAlert, ErrorCategory, mask_secrets
+ from docmind.core.sanitize import glyph, install_output_sanitizer
  from docmind.i18n import t
  from docmind.ui.activity import describe_activity
  from docmind.ui.terminal_view import TerminalView
@@ -12298,9 +12703,21 @@ def _dm_module_20():
      pass
  HAS_RICH = False
  HAS_PROMPT_TOOLKIT = False
+ _CONTROL_RE = re.compile(r"[\x00-\x08\x0b-\x1f\x7f-\x9f]")
+ _ANSI_SEQUENCE_RE = re.compile(r"\x1b\[[0-9;?]*[ -/]*[@-~]")
  def _visible_controls(value: Any) -> str:
-   """Render terminal control bytes visibly instead of letting data move the cursor."""
-   return re.sub(r"[\x00-\x08\x0b-\x1f\x7f-\x9f]", lambda m: "\\x%02x" % ord(m.group(0)), str(value))
+   """Neutralise cursor-moving control bytes while keeping the ANSI colour codes DocMind emits."""
+   raw = str(value)
+   placeholders = []
+   def _keep(match):
+     placeholders.append(match.group(0))
+     return "\x00%d\x00" % (len(placeholders) - 1)
+   raw = _ANSI_SEQUENCE_RE.sub(_keep, raw)
+   raw = raw.replace("\x1b", "\\x1b")
+   raw = _CONTROL_RE.sub(lambda m: "" if m.group(0) == "\x00" else "\\x%02x" % ord(m.group(0)), raw)
+   for idx, seq in enumerate(placeholders):
+     raw = raw.replace("\x00%d\x00" % idx, seq)
+   return raw
  SLASH_COMMANDS = [
    "/help",
    "/search",
@@ -12338,6 +12755,11 @@ def _dm_module_20():
  ]
  class ConsoleUI:
    def __init__(self, history_file: Optional[Path] = None, input_fn: Optional[Callable[[str], str]] = None) -> None:
+     # Fold unprintable symbols before anything reaches the terminal (no more squares).
+     try:
+       install_output_sanitizer()
+     except Exception:
+       pass
      self._input_fn = input_fn
      self.is_tty = bool(sys.stdin and sys.stdin.isatty() and sys.stdout and sys.stdout.isatty())
      self.rich_console = Console(highlight=False) if HAS_RICH else None
@@ -12351,12 +12773,18 @@ def _dm_module_20():
      if self.is_tty and self._input_fn is None and os.name != "nt":
        try:
          import readline
+         # GNU readline writes everything to a file; keep it private and skip secret-looking lines.
+         try:
+           readline.set_history_length(500)
+         except Exception:
+           pass
        except ImportError:
          pass
      if HAS_PROMPT_TOOLKIT and self.is_tty and self._input_fn is None:
        try:
          hist = InMemoryHistory()
          completer = WordCompleter(SLASH_COMMANDS, ignore_case=True, sentence=False)
+         # InMemoryHistory only: a typed API key must never reach ~/.docmind/history.
          self._prompt_session = PromptSession(history=hist, completer=completer)
        except Exception:
          self._prompt_session = None
@@ -12582,19 +13010,19 @@ def _dm_module_20():
    def info(self, msg: str) -> None:
      msg = _visible_controls(msg)
      if self.rich_console:
-       self.rich_console.print(Text("ℹ ", style="bright_cyan") + Text(msg))
+       self.rich_console.print(Text(glyph("ℹ ", "[i] "), style="bright_cyan") + Text(msg))
      else:
-       print(self._paint(f"[i] {msg}", "36"))
+       print(self._paint(glyph("[i] ", "[i] ") + msg, "36"))
    def success(self, msg: str) -> None:
      msg = _visible_controls(msg)
      if self.rich_console:
-       self.rich_console.print(Text("✔ ", style="bold bright_green") + Text(msg, style="green"))
+       self.rich_console.print(Text(glyph("✔ ", "[OK] "), style="bold bright_green") + Text(msg, style="green"))
      else:
        print(self._paint(f"[OK] {msg}", "32"))
    def warn(self, msg: str) -> None:
      msg = _visible_controls(msg)
      if self.rich_console:
-       self.rich_console.print(Text("⚠ ", style="bold bright_yellow") + Text(msg, style="bright_yellow"))
+       self.rich_console.print(Text(glyph("⚠ ", "[!] "), style="bold bright_yellow") + Text(msg, style="bright_yellow"))
      else:
        print(self._paint(f"[!] {msg}", "33"))
    def print_alert(self, alert: DocMindAlert) -> None:
@@ -12625,15 +13053,32 @@ def _dm_module_20():
        if alert.status_code:
          print(f"[HTTP Status: {alert.status_code}]")
        print(self._paint(sep, color) + "\n")
-   def print_panel(self, title: str, body: str, style: str = "cyan") -> None:
+   def print_panel(self, title: str, body: str, style: str = "cyan", center: bool = False) -> None:
      title, body = _visible_controls(title), _visible_controls(body)
+     if center:
+       body = self._center_block(body)
      if self.rich_console:
        self.rich_console.print(
          Panel(Text(body), title=Text(title, style=f"bold {style}"), border_style=style, box=box.ROUNDED, padding=(0, 2))
        )
      else:
        head = self._paint(f"=== {title} ===", "1;36")
-       print(f"\n{head}\n{body}\n" + self._paint("=" * (len(title) + 8), "36"))
+       print(f"\n{head}\n{body}\n" + self._paint("=" * (len(title) + 8), "36"), flush=True)
+   def _center_block(self, body: str) -> str:
+     """Keep a block of pre-aligned lines centred inside the panel (no ragged drift)."""
+     rows = [row.rstrip() for row in body.split("\n")]
+     visible = [len(_visible_controls(row)) for row in rows if row.strip()]
+     if not visible:
+       return body
+     try:
+       cols = self.view._size()[1] if hasattr(self.view, "_size") else 80
+     except Exception:
+       cols = 80
+     widest = max(visible)
+     target = max(widest, min(cols - 8, widest + 4))
+     pad = max(0, (target - widest) // 2)
+     lead = " " * pad
+     return "\n".join((lead + row) if row.strip() else "" for row in rows)
    def begin_turn(self) -> None:
      self._tool_counter = 0
      self._waiting_notice = False
@@ -12956,7 +13401,7 @@ def _dm_module_21():
          Mandatory pre-execution user consent BEFORE running any terminal command or Python snippet.
          """
      dangerous = is_catastrophic_command(code_text)
-     if self.non_interactive:
+     if self.non_interactive or self.config_mgr.config.permission_mode == "noninteractive":
        if dangerous:
          self.ui.warn("Blocked catastrophic command in non-interactive mode.")
          return False
@@ -13478,12 +13923,35 @@ def _dm_module_22():
      },
    },
  ]
+ def _coerce_tool_args(args: Any) -> Dict[str, Any]:
+   """Tools always receive a mapping, even when the model sends junk."""
+   if isinstance(args, dict):
+     return args
+   if isinstance(args, str):
+     try:
+       import json as _json
+       parsed = _json.loads(args)
+       if isinstance(parsed, dict):
+         return parsed
+     except Exception:
+       pass
+     return {}
+   if isinstance(args, (list, tuple)):
+     merged: Dict[str, Any] = {}
+     for item in args:
+       if isinstance(item, dict):
+         merged.update(item)
+     return merged
+   return {}
  def _validate_arguments(name: str, args: Any) -> str:
    """Validate tool call arguments against schema before asking permission or executing."""
    definition = next((item for item in TOOL_SCHEMAS if item["name"] == name), None)
+   args = _coerce_tool_args(args)
    if definition is None:
      return "Unknown tool: " + str(name)
    def check(value: Any, schema: Dict[str, Any], location: str) -> str:
+     if not isinstance(schema, dict):
+       return ""
      kind = schema.get("type")
      expected = {
        "object": lambda v: isinstance(v, dict),
@@ -13497,15 +13965,19 @@ def _dm_module_22():
      if "enum" in schema and value not in schema["enum"]:
        return f"{location} must be one of: " + ", ".join(map(str, schema["enum"]))
      if kind == "object":
-       for key in schema.get("required", []):
+       if not isinstance(value, dict):
+         return f"{location} must be object"
+       for key in schema.get("required", []) or []:
          if key not in value:
            return f"{location}.{key} is required"
-       for key, prop in schema.get("properties", {}).items():
+       for key, prop in (schema.get("properties") or {}).items():
          if key in value and value[key] is not None:
            issue = check(value[key], prop, f"{location}.{key}")
            if issue:
              return issue
      elif kind == "array":
+       if not isinstance(value, list):
+         return f"{location} must be array"
        for idx, item in enumerate(value):
          issue = check(item, schema.get("items", {}), f"{location}[{idx}]")
          if issue:
@@ -13549,15 +14021,18 @@ def _dm_module_22():
          Validate arguments, enforce mandatory terminal consent & transparent reporting,
          execute cross-platform tools, show diffs, and catch any exception cleanly.
          """
-     safe_args = args if isinstance(args, dict) else {}
+     safe_args = _coerce_tool_args(args)
      if name == "edit_file" and isinstance(safe_args, dict):
        if "old_string" in safe_args and "old_text" not in safe_args:
          safe_args = dict(safe_args, old_text=safe_args["old_string"])
        if "new_string" in safe_args and "new_text" not in safe_args:
          safe_args = dict(safe_args, new_text=safe_args["new_string"])
      elif name == "read_file" and isinstance(safe_args, dict) and "start_line" in safe_args and "offset" not in safe_args:
-       s_ln = int(safe_args.get("start_line") or 1)
-       e_ln = int(safe_args.get("end_line") or (s_ln + 399))
+       try:
+         s_ln = max(1, int(safe_args.get("start_line") or 1))
+         e_ln = max(s_ln, int(safe_args.get("end_line") or (s_ln + 399)))
+       except (TypeError, ValueError):
+         s_ln, e_ln = 1, 400
        safe_args = dict(safe_args, offset=s_ln, limit=max(1, e_ln - s_ln + 1))
      self.ui.print_tool_start(name, safe_args)
      try:
@@ -13695,6 +14170,7 @@ def _dm_module_22():
          )
        diff_payload = None
        tool_images = None
+       ok, out = False, "Tool produced no result."
        if name == "read_file":
          ok, out = tool_read_file(safe_args, self.cwd)
        elif name == "inspect_image":
@@ -13736,7 +14212,10 @@ def _dm_module_22():
        elif name == "ask_user":
          q_str = str(safe_args.get("question", "")).strip()
          opts = [str(x) for x in (safe_args.get("options") or [])]
-         def_idx = int(safe_args.get("default_index", 1) or 1)
+         try:
+           def_idx = int(safe_args.get("default_index", 1) or 1)
+         except (TypeError, ValueError):
+           def_idx = 1
          if self.perm_mgr.non_interactive:
            chosen = opts[max(0, min(len(opts) - 1, def_idx - 1))] if opts else "default"
            ok, out = True, f"User response (non-interactive default): {chosen}"
@@ -13769,11 +14248,26 @@ def _dm_module_22():
                  self.ui.info(t("auto_syntax_ok", path=raw_path))
                else:
                  self.ui.warn(t("auto_syntax_failed", path=raw_path))
-                 out += (
-                   "\n[ACTION REQUIRED: SYNTAX ERROR INTRODUCED] "
-                   "Immediately go back and fix the syntax error in this file using edit_file, "
-                   "or revert to the clean snapshot via undo_file_change!"
-                 )
+                 restored: Optional[Path] = None
+                 try:
+                   target_path = resolve_user_path(raw_path, self.cwd)
+                   last_path = self.undo_mgr.peek_last_path()
+                   if last_path is not None and str(last_path) == str(target_path):
+                     restored = self.undo_mgr.undo_last()
+                 except Exception:
+                   restored = None
+                 if restored is not None:
+                   self.ui.warn(t("auto_syntax_rolled_back", path=str(restored)))
+                   out += (
+                     "\n[ROLLBACK: SYNTAX ERROR] The file was reverted to its previous, working "
+                     "version automatically. Re-read the file, fix the reported error and retry."
+                   )
+                 else:
+                   out += (
+                     "\n[ACTION REQUIRED: SYNTAX ERROR INTRODUCED] "
+                     "Immediately go back and fix the syntax error in this file using edit_file, "
+                     "or revert to the clean snapshot via undo_file_change!"
+                   )
              except Exception:
                pass
        self.ui.print_tool_result(name, ok, out)
@@ -14946,6 +15440,7 @@ def _dm_module_25():
  import copy
  import math
  import platform
+ import re
  import sys
  from datetime import datetime
  from pathlib import Path
@@ -14954,6 +15449,7 @@ def _dm_module_25():
  from docmind.config import ConfigManager, PROVIDERS, clean_api_key, get_provider_spec, token_save_allowed, token_save_effective
  from docmind.core.agent import DocMindAgent
  from docmind.core.errors import classify_exception
+ from docmind.core.sanitize import glyph
  from docmind.i18n import LANGUAGE_CHOICES, i18n, t
  from docmind.tools.filesystem import format_size, list_mounted_roots, load_image_attachment, render_directory_tree, resolve_user_path
  from docmind.tools.terminal import detect_available_shells, detect_os_profile, tool_system_info
@@ -15109,6 +15605,9 @@ def _dm_module_25():
          self.agent.refresh_client()
          return "continue"
        if cmd == "/model":
+         if arg and not re.match(r"^[A-Za-z0-9._:/@+\-]{1,120}$", arg):
+           self.ui.warn(t("model_invalid"))
+           return "continue"
          if arg:
            self.cfg_mgr.config.model = arg
            self.cfg_mgr.save()
@@ -15631,7 +16130,7 @@ def _dm_module_25():
              "s", "si", "sí", "sì", "sim", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
    def _confirm_aggressive(self) -> bool:
      """First-activation warning for the Aggressive reasoning mode."""
-     self.ui.print_panel("⚠ " + t("aggressive_warn_title"), t("aggressive_warn_body"), style="bright_red")
+     self.ui.print_panel(glyph("⚠ ", "(!) ") + t("aggressive_warn_title"), t("aggressive_warn_body"), style="bright_red")
      if getattr(self.agent, "non_interactive", False):
        return False
      try:
@@ -15658,39 +16157,67 @@ def _dm_module_25():
      state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
      self.ui.info(t("token_save_state", state=state))
    def _render_effort_menu(self) -> None:
-     """Show every reasoning level with a plain-language explanation of what it does."""
+     """Print the reasoning levels as a real table: aligned columns, wrapped notes."""
      import textwrap
      cfg = self.cfg_mgr.config
      current = str(cfg.reasoning_effort or "default")
      save_label = t("effort_menu_col_save")
-     raw_rows = [r for r in str(t("effort_menu_table")).split("\n") if r.strip()]
-     entries = []
-     for row in raw_rows:
-       parts = [p.strip() for p in row.split("|")]
-       if len(parts) < 6:
-         continue
-       entries.append(parts[:6])
-     if not entries:
+     rows = []
+     for raw in str(t("effort_menu_table")).split("\n"):
+       parts = [p.strip() for p in raw.split("|")]
+       if len(parts) >= 6:
+         rows.append(parts[:6])
+     if not rows:
        self.ui.warn(t("effort_usage"))
        return
+     cols = 80
+     view = getattr(self.ui, "view", None)
      try:
-       width = max(46, min(78, int(getattr(self.view, "_size", lambda: (24, 80))()[1]) - 6))
+       if view is not None and hasattr(view, "_size"):
+         cols = int(view._size()[1])
+       elif hasattr(self.ui, "_size"):
+         cols = int(self.ui._size()[1])
      except Exception:
-       width = 74
-     lines = []
-     for num, label, token, sent, save, desc in entries:
+       cols = 80
+     num_w = max(len(t("effort_menu_col_no")), max(len(r[0]) for r in rows))
+     name_w = min(18, max(len(t("effort_menu_col_name")), max(len(r[1]) for r in rows)))
+     token_w = min(16, max(3, max(len(r[2]) for r in rows)))
+     save_w = min(20, max(len(save_label), max(len(r[4]) for r in rows)))
+     api_texts = ["-> " + r[3] for r in rows]
+     api_w = min(24, max(len(a) for a in api_texts)) + 2
+     narrow = cols < (num_w + name_w + token_w + save_w + api_w + 40)
+     side = 5 + api_w
+     desc_w = max(34, cols - side - 6)
+     header = (
+       t("effort_menu_col_no").rjust(num_w) + "  " + t("effort_menu_col_name").ljust(name_w)
+       + "  " + t("effort_menu_col_api").ljust(token_w) + "  " + save_label.ljust(save_w)
+     )
+     lines = [header.rstrip(), "-" * min(len(header), max(24, cols - 8))]
+     for num, label, token, sent, save, desc in rows:
        is_current = current in (token.lower(), label.lower())
-       mark = "◀" if is_current else " "
-       head = f"{num}) {label}"
-       if token and token.lower() != label.lower():
-         head += f" ({token})"
-       head += f"  →  {sent}   [{save_label}: {save}]"
-       line_head = (head + ("  " + mark if is_current else "")).rstrip()
-       lines.append(self.ui._paint(line_head, "1;36") if is_current else line_head)
-       for chunk in textwrap.wrap(desc, width=max(30, width - 5), break_on_hyphens=False) or [""]:
-         lines.append("     " + chunk)
+       mark = glyph("◀", "<") if is_current else ""
+       head = (
+         num.rjust(num_w) + "  " + label.ljust(name_w) + "  " + token.ljust(token_w)
+         + "  " + save.ljust(save_w)
+       )
+       if mark:
+         head = head + "  " + mark
+       lines.append(head.rstrip())
+       api_note = "-> " + sent
+       if narrow:
+         wrapped = textwrap.wrap(desc, width=max(34, cols - 10), break_on_hyphens=False, break_long_words=False) or [""]
+         lines.append("     " + api_note)
+         for chunk in wrapped:
+           lines.append("     " + chunk)
+       else:
+         wrapped = textwrap.wrap(desc, width=desc_w, break_on_hyphens=False, break_long_words=False) or [""]
+         lines.append(("     " + api_note).ljust(side) + wrapped[0])
+         for chunk in wrapped[1:]:
+           lines.append(" " * side + chunk)
        lines.append("")
-     self.ui.print_panel("🎚️ " + t("effort_menu_title"), "\n".join(lines).rstrip(), style="bright_cyan")
+     self.ui.print_panel(
+       glyph("🎚️ ", "") + t("effort_menu_title"), "\n".join(lines).rstrip(), style="bright_cyan", center=True
+     )
      state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
      self.ui.info(t("effort_menu_current", level=current, state=state))
      self.ui.info(t("effort_menu_hint"))
@@ -15712,6 +16239,9 @@ def _dm_module_25():
        self._render_effort_menu()
        self._prompt_effort_selection()
        return
+     if arg.strip().lower() in ("status", "durum", "state"):
+       self._show_effort_state()
+       return
      if arg:
        value = aliases.get(arg.strip().lower().replace("\u0307", ""))
        if not value:
@@ -15730,7 +16260,7 @@ def _dm_module_25():
          cfg.token_save = False
          saved = self.cfg_mgr.save()
          self.agent.refresh_client()
-         self.ui.success(t("aggressive_enabled"))
+         self.ui.success(glyph("🔴 ", "") + t("aggressive_enabled"))
          if not saved:
            self.ui.warn(t("settings_save_failed"))
        else:
