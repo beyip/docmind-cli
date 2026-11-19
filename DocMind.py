@@ -42,9 +42,9 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '7c6230cd1d0bc7fc7a18e59e92aff79ad42ab158f42603cd48e8d99926c3e564'
-_DM_SIGNATURE = '36890cc0bb0c0814b734af7090a98eddec7fe112517188a116cb98d7fb1a2b3cdecb29e51cfc0f6686b615b9e435d133e778f4b95b5bbfc508bf99ebe1788c048cf0fbdab6d268b34561ebaa89cbfbc3bef4b3f56484245a804ffe68500a6c330d2f4cee85881249c6e111b5dc79c12e33885153751296d41e08eb5fc4b47d0072931a795d4eebe25d361cc44ede395918a6be56a2926642954bfef7fe3a0e0667eb3869eb823cb26a9a6a416881bf49fa8826dce5bbae7e959e80cebe84399b9beb76d0d8b66264e4381b45069b5852ac90391d723404500fc2fc6847e3f133ff82a425f00780ccc5393cdba0563d43a9516b87983faa7b7ba08ce88b4e8c537b1fb1b773c9886fbd10621923f49b51f344ccd3db78ee0bdc0be7902489d83c10d532fc8ef83d92abbb22a0a4dc5e8a788db874f77270e9e3f63a43d06f2edd32951ee785c2f554dfaf5d4d2570526118818075d00d48bf477067cde53830bec4b7cecd8a113b62fdf8becb1a1b88b3916918c9970a628d388556a3676a2da3'
-_DM_PUBLIC_N = int('d86d581a86b4d1476d4c4de60ec2c7b3fbf431778c00201e84d13ff417830304ed9be7176b53d0e7f96f183c40af6e65400f86e2d263aa3b0846a1828af7c73483e5b16f3314c13d1df4854352981349617fedb0aedc2668d7e41e17dd628bec1cb307522e66d3edff31ca347e5680f9cca20834c103d1477826acac63802efeb774a8d6a53a7d176cb9518569a45b85eeefe1db633a20c883d661802576e6faa6054ecb7766b12f7acadd15374075d43e78d15858078f2de42327cde01502d4cb416a66351cbb77b1d6484d2f6e78d5712d519a1f4392ca5f0708e6919b2bb395a23d7c0b8c8b63099f3be3d195e3451fc34146b45098dc1fe444e0307d1106ab0e2b8bb873776af9de97c6fa3c741e4fb11b76bdcf8d4aa5d11e955ceef7d7221ea23ff7e3baf22ffb180c6be60f6e7c6d20a5324294454ddbd700e6567ad5695c6cc60914c546fa70b7fda54561ca356896ed2697ca84b687beed8dcefb8f885a12a98881a1546af70e3cfb2cdb3071661d995bc3e4f8febbe9ae4614fcbd', 16)
+_DM_SOURCE_HASH = '5ee85552fba5dbf2c9178c9e05cfadc48ad7a0b5aae999c4dd9153103c76c2af'
+_DM_SIGNATURE = '52d3e75b0a8bdce606f2303a2dd76df601a591c11515c81e4c795bf337e71c444073bf04aa5ea5510d6d73ff721cc3945647a1fcf276866765ad05d6254df65994374359e0a1a02b0d91158886c0834b99fcb2812c71e32531178a270be8e3b228c7ab021859c0d5166028a2a8bf14ae17b5f0fb133edea4950ac190ade60867b1c114482e3cc474ceeba82d7de988c8ead075f1aa36ea7c4acfcd0e5a1ab131d0400a4a2236026e2783d6ca2adbccda760154f1a61ab5da2a8ec48b08ae61ceaadff93881d07c106f0bb38bcd6c4ce8c6b4b216e8cf2b294c29b1fbd0489a71d569360f1211c28ed689abc497b165e1fe609cac20d0b0b17483037fb761316030e92126816c29ef77dae2dec1c8b5737d5e12b58d22f1837054c4dc5773f56d632f0ebc92eb47dbaada3a328d3428a2f3528cf44f715c7cfb101c44da50634bbec51705db6c1d6eb57f03a4340743e54a3a0e9c10c8b3f976137aa44bf1b22ad4f53059fe7a0c7f0c374a048e058fe0b2cd14cdd9d8d02a02eab42aa592cd7c'
+_DM_PUBLIC_N = int('cf32358b4296594259856122aa66a9d8880488a28417d50a3b7cd2421eada4dcbd834733838288f1b9ae5d62ce30db9da7264834b415bca3d758b3116c63ce35d9f97ecb4db1d72549d6ee9844384216146c9d03cc311d2e67c5f4eff6c5a2cbb27f0a07cc3e1a4134bb60e71502ce866a07bad6be93895a4f1ab93e6af0bfa722f8f127cb754dfb3a3ef911cb75795ecf746d7a9469914cb88370b4e84ebe65ba95df5ce88216f8d57444b67b69b454c2d5f2826e119a48ee15cf9bdf8dee9185668eaec34544fbb0d14a6456f4f7c1af072fb3803765910b4bdf0ef2f8efe688a0d9a02a1b80ad7ff153996c346128046d3e0381c14090c9eb0c83bcfbdfcf544b27d08d2483b9a41b3b8d2160facc34ddf9cdf2cfe9021603eaefae7032ea0a434ed3fc572d3b5456f94f41de5e36eeee8b40a8426337861f6d77b3907d37d8023c3c74357348ece9711f06d7458844e6e0091afd68d7c437713c1a6452b61cd299075c864be6dbda652c2014a5f11793fd9580f203296d944db3c00b0113', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
     '# ==================================================\n'
@@ -169,7 +169,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.1"
+ __version__ = "1.2"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -266,7 +266,7 @@ def _dm_module_01():
     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
     "help_title": "DOCMIND KOMUT REHBERİ",
-    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula",
+    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
     "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
     "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
     "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
@@ -338,7 +338,7 @@ def _dm_module_01():
     "tool_args_retry": "Model geçersiz araç verisi üretti; işlem yapılmadı. Bir kez daha düzeltilmesi isteniyor (ek API ücreti oluşabilir).",
     "effort_active": "Düşünme ayarı: {level}. Desteklenen modellerde kullanılır; yüksek seviye süreyi ve API maliyetini artırabilir. /effort ile değiştirin.",
     "effort_uncontrolled": "Bu sağlayıcı/model için DocMind özel düşünme parametresi göndermiyor; sağlayıcının kendi ayarı geçerli.",
-    "effort_usage": "Kullanım: /effort max|high|medium|low|default (veya /zeka maksimum|yüksek|orta|düşük|varsayılan).",
+    "effort_usage": "Kullanım: /effort aggressive|max|high|hard|medium|low|default (veya /zeka agresif|maksimum|yüksek|zor|orta|düşük|varsayılan).",
     "effort_saved": "Düşünme ayarı kaydedildi: {level}.",
     "effort_not_saved": "Düşünme ayarı bu oturumda {level}; ayarlara kaydedilemedi.",
     "effort_help": " /effort    Düşünme düzeyi ve maliyet",
@@ -435,7 +435,23 @@ def _dm_module_01():
     "diff_not_git": "Bu klasör bir Git deposu değil veya git kurulu değil.",
     "cmd_did_you_mean": "Bilinmeyen komut: {cmd}. Bunu mu demek istediniz: {suggest} ? (/help yazın)",
     "search_usage": "Kullanım: /search <araştırılacak veya doğrulanacak konu>",
-    "vision_bridge_used": "👁️ Aktif model görsel desteklemediği için görsel '{bridge_model}' ile yüksek çözünürlüklü okundu."
+    "vision_bridge_used": "👁️ Aktif model görsel desteklemediği için görsel '{bridge_model}' ile yüksek çözünürlüklü okundu.",
+    "tok_on": "AÇIK",
+    "tok_off": "KAPALI",
+    "token_save_state": "Token tasarrufu: {state} (/token-save on|off)",
+    "token_save_on": "✔ Token tasarrufu AÇILDI: yanıtlar ve araç çıktıları kısaltılır, zekâ ve doğruluk aynı kalır.",
+    "token_save_off": "Token tasarrufu KAPATILDI: tam bağlam ve tam araç çıktıları kullanılır (daha fazla token tüketebilir).",
+    "token_save_blocked": "Token tasarrufu '{level}' modunda açılamaz. Aggressive, High ve Hard modlarında tasarruf zorunlu olarak kapalıdır; önce /effort medium veya low seçin.",
+    "token_save_usage": "Kullanım: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Not: Token tasarrufu yalnızca gereksiz tekrarı ve ham veriyi kırpar; modelin akıl yürütme gücü azaltılmaz.",
+    "aggressive_warn_title": "AGGRESSIVE MOD UYARISI",
+    "aggressive_warn_body": "Aggressive mod şunları yapar:\n - Varsayılan olarak token tasarrufunu KAPATIR.\n - Daha fazla token tüketebilir (API maliyeti artabilir).\n - Çok derin düşünmeyi ve tam araç erişimini etkinleştirir.\nOnaylarsanız diğer sistemler normal çalışmaya devam eder.",
+    "aggressive_confirm_prompt": "Aggressive modu etkinleştirmek istiyor musunuz? (Y/N): ",
+    "aggressive_cancelled": "Aggressive mod iptal edildi; önceki düşünme ayarı korundu: {level}.",
+    "aggressive_enabled": "🔴 AGGRESSIVE MOD ETKİN: token tasarrufu kapatıldı, en derin düşünme açık. Yapay zekâ tam gücünde çalışıyor!",
+    "aggressive_left": "Aggressive moddan çıkıldı: {level}. Token tasarrufu yeniden açılabilir.",
+    "effort_aggressive_note": "Aggressive = maksimum düşünme gücü; token tasarrufu bu modda açılamaz.",
+    "token_save_trim_note": "\n... [token tasarrufu: {omitted} karakter kırpıldı; gerekiyorsa dosyayı yeniden okuyun] ...\n"
   },
   "en": {
     "lang_name": "English",
@@ -522,7 +538,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND COMMAND REFERENCE",
-    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification",
+    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /token-save Toggle token saving (default: on)",
     "cmd_cleared": "Conversation memory and screen cleared.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -594,7 +610,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "Usage: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -691,7 +707,23 @@ def _dm_module_01():
     "diff_not_git": "Current folder is not a Git repository or git is not installed.",
     "cmd_did_you_mean": "Unknown command: {cmd}. Did you mean {suggest}? (Type /help)",
     "search_usage": "Usage: /search <topic or claim to research & verify>",
-    "vision_bridge_used": "👁️ Active model is text-only; analyzed image in high resolution via '{bridge_model}'."
+    "vision_bridge_used": "👁️ Active model is text-only; analyzed image in high resolution via '{bridge_model}'.",
+    "tok_on": "ON",
+    "tok_off": "OFF",
+    "token_save_state": "Token saving: {state} (/token-save on|off)",
+    "token_save_on": "✔ Token saving is ON: replies and tool outputs are shortened; intelligence and accuracy stay the same.",
+    "token_save_off": "Token saving is OFF: full context and full tool outputs are used (may consume more tokens).",
+    "token_save_blocked": "Token saving cannot be enabled in '{level}' mode. Aggressive, High and Hard modes always keep it off; choose /effort medium or low first.",
+    "token_save_usage": "Usage: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Note: token saving only trims repetition and raw data; the model's reasoning power is not reduced.",
+    "aggressive_warn_title": "AGGRESSIVE MODE WARNING",
+    "aggressive_warn_body": "Aggressive mode will:\n - Disable token saving by default.\n - Possibly consume more tokens (higher API cost).\n - Enable very deep reasoning and full tool access.\nIf you accept, every other system keeps working normally.",
+    "aggressive_confirm_prompt": "Enable aggressive mode? (Y/N): ",
+    "aggressive_cancelled": "Aggressive mode cancelled; previous reasoning level kept: {level}.",
+    "aggressive_enabled": "🔴 AGGRESSIVE MODE ACTIVE: token saving disabled, deepest reasoning enabled. The AI is at full power!",
+    "aggressive_left": "Left aggressive mode: {level}. Token saving can be enabled again.",
+    "effort_aggressive_note": "Aggressive = maximum reasoning; token saving cannot be enabled in this mode.",
+    "token_save_trim_note": "\n... [token saving: {omitted} characters trimmed; re-read the file if you need them] ...\n"
   },
   "de": {
     "lang_name": "Deutsch",
@@ -778,7 +810,7 @@ def _dm_module_01():
     "rec_opt_skip": "Fehler überspringen & zurück zum Chat",
     "rec_choose": "Ihre Wahl [Standard: {default}]: ",
     "help_title": "DOCMIND BEFEHLSÜBERSICHT",
-    "help_body": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Gespeicherte Gespräche öffnen\n /delete    Gespeichertes Gespräch löschen\n /effort    Denkstufe und Kosten\n /doctor tools  Werkzeugschemas über die API testen; Kosten möglich\n /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich\n /image PFAD Bild/Screenshot analysieren & Fehler beheben\n /paste     Screenshot oder Text aus Zwischenablage senden\n /copy      Letzte Antwort kopieren (/copy code: nur Code)\n /diff      Git-Änderungen mit Grün (+) / Rot (-) anzeigen\n /redo      Rückgängig gemachte Dateiänderung wiederholen\n /export    Gespräch als Markdown (.md) exportieren\n /search Q  Live-Internetsuche & Faktenprüfung",
+    "help_body": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden\n /tokens    Token / Kontext / Kosten\n /price     USD pro Million Token\n /context   Kontextlimit\n /history   Gespeicherte Gespräche öffnen\n /delete    Gespeichertes Gespräch löschen\n /effort    Denkstufe und Kosten\n /doctor tools  Werkzeugschemas über die API testen; Kosten möglich\n /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich\n /image PFAD Bild/Screenshot analysieren & Fehler beheben\n /paste     Screenshot oder Text aus Zwischenablage senden\n /copy      Letzte Antwort kopieren (/copy code: nur Code)\n /diff      Git-Änderungen mit Grün (+) / Rot (-) anzeigen\n /redo      Rückgängig gemachte Dateiänderung wiederholen\n /export    Gespräch als Markdown (.md) exportieren\n /search Q  Live-Internetsuche & Faktenprüfung\n /token-save Token-Sparmodus umschalten (Standard: an)",
     "cmd_cleared": "Gesprächsverlauf und Bildschirm geleert.",
     "cmd_saved": "Sitzung gespeichert: {path}",
     "cmd_loaded": "Sitzung geladen ({count} Nachrichten): {path}",
@@ -850,7 +882,7 @@ def _dm_module_01():
     "tool_args_retry": "Das Modell lieferte ungültige Werkzeugargumente; nichts wurde ausgeführt. Eine Korrektur wird angefordert (zusätzliche API-Kosten möglich).",
     "effort_active": "Denkstufe: {level}. Bei unterstützten Modellen; hoch kann Wartezeit und API-Kosten erhöhen. Ändern mit /effort.",
     "effort_uncontrolled": "Für diesen Anbieter/dieses Modell wird kein Denkparameter gesendet; der Standard des Anbieters gilt.",
-    "effort_usage": "Nutzung: /effort max|high|medium|low|default.",
+    "effort_usage": "Nutzung: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Denkstufe gespeichert: {level}.",
     "effort_not_saved": "Denkstufe ist {level} für diese Sitzung, konnte aber nicht gespeichert werden.",
     "effort_help": " /effort    Denkstufe und Kosten",
@@ -947,7 +979,23 @@ def _dm_module_01():
     "diff_not_git": "Kein Git-Repository oder Git ist nicht installiert.",
     "cmd_did_you_mean": "Unbekannter Befehl: {cmd}. Meinten Sie {suggest}? (/help für Hilfe)",
     "search_usage": "Verwendung: /search <Thema oder Fakt zum Prüfen>",
-    "vision_bridge_used": "👁️ Aktives Modell ist nur Text; Bild wurde hochauflösend über '{bridge_model}' analysiert."
+    "vision_bridge_used": "👁️ Aktives Modell ist nur Text; Bild wurde hochauflösend über '{bridge_model}' analysiert.",
+    "tok_on": "AN",
+    "tok_off": "AUS",
+    "token_save_state": "Token-Sparmodus: {state} (/token-save on|off)",
+    "token_save_on": "✔ Token-Sparmodus AN: Antworten und Werkzeugausgaben werden gekürzt; Intelligenz und Genauigkeit bleiben gleich.",
+    "token_save_off": "Token-Sparmodus AUS: voller Kontext und vollständige Werkzeugausgaben (kann mehr Tokens verbrauchen).",
+    "token_save_blocked": "Im Modus '{level}' kann der Token-Sparmodus nicht aktiviert werden. Aggressive, High und Hard halten ihn immer aus; wählen Sie zuerst /effort medium oder low.",
+    "token_save_usage": "Nutzung: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Hinweis: Der Sparmodus kürzt nur Wiederholungen und Rohdaten; die Denkleistung des Modells bleibt unverändert.",
+    "aggressive_warn_title": "WARNUNG: AGGRESSIVE-MODUS",
+    "aggressive_warn_body": "Der Aggressive-Modus:\n - schaltet standardmäßig den Token-Sparmodus AUS.\n - kann mehr Tokens verbrauchen (höhere API-Kosten).\n - aktiviert sehr tiefes Nachdenken und vollen Werkzeugzugriff.\nBei Zustimmung arbeiten alle anderen Systeme normal weiter.",
+    "aggressive_confirm_prompt": "Aggressive-Modus aktivieren? (Y/N): ",
+    "aggressive_cancelled": "Aggressive-Modus abgebrochen; vorherige Denkstufe bleibt: {level}.",
+    "aggressive_enabled": "🔴 AGGRESSIVE-MODUS AKTIV: Token-Sparmodus aus, tiefstes Nachdenken an. Die KI läuft mit voller Kraft!",
+    "aggressive_left": "Aggressive-Modus verlassen: {level}. Token-Sparmodus kann wieder aktiviert werden.",
+    "effort_aggressive_note": "Aggressive = maximale Denkleistung; in diesem Modus ist Token-Sparen nicht erlaubt.",
+    "token_save_trim_note": "\n... [Token-Sparmodus: {omitted} Zeichen gekürzt; Datei bei Bedarf erneut lesen] ...\n"
   },
   "es": {
     "lang_name": "Español",
@@ -1034,7 +1082,7 @@ def _dm_module_01():
     "rec_opt_skip": "Omitir error y volver al chat",
     "rec_choose": "Su opción [Por defecto: {default}]: ",
     "help_title": "GUÍA DE COMANDOS DE DOCMIND",
-    "help_body": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Abrir conversaciones guardadas\n /delete    Eliminar conversación guardada\n /effort    Razonamiento y coste\n /doctor tools  Prueba los esquemas con la API; puede tener coste\n /doctor all  Prueba proveedores configurados; puede tener coste\n /image RUTA Analizar imagen/captura y solucionar errores\n /paste     Enviar captura o texto desde el portapapeles\n /copy      Copiar última respuesta (/copy code: solo código)\n /diff      Mostrar cambios Git en verde (+) / rojo (-)\n /redo      Rehacer último cambio deshecho (/undo)\n /export    Exportar conversación a Markdown (.md)\n /search Q  Búsqueda web en vivo y verificación de datos",
+    "help_body": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir\n /tokens    Tokens / contexto / coste\n /price     USD por millón de tokens\n /context   Límite de contexto\n /history   Abrir conversaciones guardadas\n /delete    Eliminar conversación guardada\n /effort    Razonamiento y coste\n /doctor tools  Prueba los esquemas con la API; puede tener coste\n /doctor all  Prueba proveedores configurados; puede tener coste\n /image RUTA Analizar imagen/captura y solucionar errores\n /paste     Enviar captura o texto desde el portapapeles\n /copy      Copiar última respuesta (/copy code: solo código)\n /diff      Mostrar cambios Git en verde (+) / rojo (-)\n /redo      Rehacer último cambio deshecho (/undo)\n /export    Exportar conversación a Markdown (.md)\n /search Q  Búsqueda web en vivo y verificación de datos\n /token-save Activar/desactivar ahorro de tokens (por defecto: activo)",
     "cmd_cleared": "Historial y pantalla limpiados.",
     "cmd_saved": "Sesión guardada: {path}",
     "cmd_loaded": "Sesión cargada ({count} mensajes): {path}",
@@ -1106,7 +1154,7 @@ def _dm_module_01():
     "tool_args_retry": "El modelo devolvió argumentos inválidos; no se ejecutó nada. Se solicita una corrección (puede tener un coste adicional de API).",
     "effort_active": "Nivel de razonamiento: {level}. En modelos compatibles, high puede aumentar el tiempo y el coste de API. Cambia con /effort.",
     "effort_uncontrolled": "DocMind no envía un parámetro de razonamiento para este proveedor/modelo; se usa su valor predeterminado.",
-    "effort_usage": "Uso: /effort max|high|medium|low|default.",
+    "effort_usage": "Uso: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Nivel de razonamiento guardado: {level}.",
     "effort_not_saved": "El nivel es {level} en esta sesión, pero no pudo guardarse.",
     "effort_help": " /effort    Razonamiento y coste",
@@ -1203,7 +1251,23 @@ def _dm_module_01():
     "diff_not_git": "Esta carpeta no es un repositorio Git o git no está instalado.",
     "cmd_did_you_mean": "Comando desconocido: {cmd}. ¿Quiso decir {suggest}? (Escriba /help)",
     "search_usage": "Uso: /search <tema o dato a investigar y verificar>",
-    "vision_bridge_used": "👁️ El modelo activo es solo texto; imagen analizada en alta resolución con '{bridge_model}'."
+    "vision_bridge_used": "👁️ El modelo activo es solo texto; imagen analizada en alta resolución con '{bridge_model}'.",
+    "tok_on": "ACTIVADO",
+    "tok_off": "DESACTIVADO",
+    "token_save_state": "Ahorro de tokens: {state} (/token-save on|off)",
+    "token_save_on": "✔ Ahorro de tokens ACTIVADO: las respuestas y salidas de herramientas se acortan; la inteligencia y la precisión no cambian.",
+    "token_save_off": "Ahorro de tokens DESACTIVADO: se usa el contexto y las salidas completas (puede consumir más tokens).",
+    "token_save_blocked": "El ahorro de tokens no se puede activar en el modo '{level}'. Aggressive, High y Hard lo mantienen siempre desactivado; elige primero /effort medium o low.",
+    "token_save_usage": "Uso: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Nota: el ahorro solo recorta repeticiones y datos en bruto; la capacidad de razonamiento del modelo no disminuye.",
+    "aggressive_warn_title": "ADVERTENCIA DEL MODO AGRESSIVE",
+    "aggressive_warn_body": "El modo Aggressive:\n - Desactiva el ahorro de tokens por defecto.\n - Puede consumir más tokens (mayor coste de API).\n - Activa un razonamiento muy profundo y acceso total a herramientas.\nSi aceptas, el resto de sistemas sigue funcionando con normalidad.",
+    "aggressive_confirm_prompt": "¿Activar el modo agresivo? (Y/N): ",
+    "aggressive_cancelled": "Modo agresivo cancelado; se mantiene el nivel anterior: {level}.",
+    "aggressive_enabled": "🔴 MODO AGRESSIVE ACTIVO: ahorro de tokens desactivado y razonamiento profundo activado. ¡La IA trabaja a plena potencia!",
+    "aggressive_left": "Has salido del modo agresivo: {level}. El ahorro de tokens puede activarse de nuevo.",
+    "effort_aggressive_note": "Aggressive = razonamiento máximo; el ahorro de tokens no se permite en este modo.",
+    "token_save_trim_note": "\n... [ahorro de tokens: {omitted} caracteres recortados; vuelve a leer el archivo si lo necesitas] ...\n"
   },
   "fr": {
     "lang_name": "Français",
@@ -1290,7 +1354,7 @@ def _dm_module_01():
     "rec_opt_skip": "Ignorer l'erreur et revenir au chat",
     "rec_choose": "Votre choix [Défaut : {default}] : ",
     "help_title": "GUIDE DES COMMANDES DOCMIND",
-    "help_body": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Ouvrir les conversations enregistrées\n /delete    Supprimer une conversation enregistrée\n /effort    Raisonnement et coût\n /doctor tools  Tester les schémas via l’API ; frais possibles\n /doctor all  Tester les fournisseurs configurés ; frais possibles\n /image CHEMIN Analyser une image/capture et résoudre les erreurs\n /paste     Envoyer capture ou texte depuis le presse-papiers\n /copy      Copier la dernière réponse (/copy code : code seul)\n /diff      Afficher les changements Git en vert (+) / rouge (-)\n /redo      Rétablir la dernière modification annulée (/undo)\n /export    Exporter la conversation en Markdown (.md)\n /search Q  Recherche web en direct et vérification des faits",
+    "help_body": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter\n /tokens    Tokens / contexte / coût\n /price     USD par million de tokens\n /context   Limite de contexte\n /history   Ouvrir les conversations enregistrées\n /delete    Supprimer une conversation enregistrée\n /effort    Raisonnement et coût\n /doctor tools  Tester les schémas via l’API ; frais possibles\n /doctor all  Tester les fournisseurs configurés ; frais possibles\n /image CHEMIN Analyser une image/capture et résoudre les erreurs\n /paste     Envoyer capture ou texte depuis le presse-papiers\n /copy      Copier la dernière réponse (/copy code : code seul)\n /diff      Afficher les changements Git en vert (+) / rouge (-)\n /redo      Rétablir la dernière modification annulée (/undo)\n /export    Exporter la conversation en Markdown (.md)\n /search Q  Recherche web en direct et vérification des faits\n /token-save Activer/désactiver l’économie de tokens (par défaut : activée)",
     "cmd_cleared": "Historique et écran effacés.",
     "cmd_saved": "Session sauvegardée : {path}",
     "cmd_loaded": "Session chargée ({count} messages) : {path}",
@@ -1362,7 +1426,7 @@ def _dm_module_01():
     "tool_args_retry": "Arguments d'outil invalides ; rien n'a été exécuté. Une correction est demandée (coût API supplémentaire possible).",
     "effort_active": "Niveau de raisonnement : {level}. Sur les modèles compatibles, high peut augmenter le délai et le coût API. Modifier avec /effort.",
     "effort_uncontrolled": "DocMind n’envoie aucun paramètre de raisonnement pour ce fournisseur/modèle ; son réglage par défaut s’applique.",
-    "effort_usage": "Utilisation : /effort max|high|medium|low|default.",
+    "effort_usage": "Utilisation : /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Niveau de raisonnement enregistré : {level}.",
     "effort_not_saved": "Le niveau {level} est actif pour cette session, mais n’a pas pu être enregistré.",
     "effort_help": " /effort    Raisonnement et coût",
@@ -1459,7 +1523,23 @@ def _dm_module_01():
     "diff_not_git": "Ce dossier n'est pas un dépôt Git ou git n'est pas installé.",
     "cmd_did_you_mean": "Commande inconnue : {cmd}. Vouliez-vous dire {suggest} ? (Tapez /help)",
     "search_usage": "Utilisation : /search <sujet ou information à vérifier>",
-    "vision_bridge_used": "👁️ Modèle actif texte seul ; image analysée en haute résolution via '{bridge_model}'."
+    "vision_bridge_used": "👁️ Modèle actif texte seul ; image analysée en haute résolution via '{bridge_model}'.",
+    "tok_on": "ACTIVÉE",
+    "tok_off": "DÉSACTIVÉE",
+    "token_save_state": "Économie de tokens : {state} (/token-save on|off)",
+    "token_save_on": "✔ Économie de tokens ACTIVÉE : les réponses et sorties d’outils sont raccourcies ; l’intelligence et la précision restent identiques.",
+    "token_save_off": "Économie de tokens DÉSACTIVÉE : contexte et sorties d’outils complets (consommation de tokens plus élevée possible).",
+    "token_save_blocked": "L’économie de tokens ne peut pas être activée en mode '{level}'. Aggressive, High et Hard la laissent toujours désactivée ; choisissez d’abord /effort medium ou low.",
+    "token_save_usage": "Utilisation : /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Remarque : l’économie ne coupe que les répétitions et les données brutes ; la capacité de raisonnement du modèle reste intacte.",
+    "aggressive_warn_title": "AVERTISSEMENT : MODE AGRESSIVE",
+    "aggressive_warn_body": "Le mode Aggressive :\n - désactive l’économie de tokens par défaut ;\n - peut consommer plus de tokens (coût API plus élevé) ;\n - active un raisonnement très profond et l’accès complet aux outils.\nSi vous acceptez, tous les autres systèmes continuent de fonctionner normalement.",
+    "aggressive_confirm_prompt": "Activer le mode agressif ? (Y/N) : ",
+    "aggressive_cancelled": "Mode agressif annulé ; niveau précédent conservé : {level}.",
+    "aggressive_enabled": "🔴 MODE AGRESSIVE ACTIF : économie de tokens désactivée, raisonnement le plus profond activé. L’IA tourne à pleine puissance !",
+    "aggressive_left": "Sortie du mode agressif : {level}. L’économie de tokens peut être réactivée.",
+    "effort_aggressive_note": "Aggressive = raisonnement maximal ; l’économie de tokens est interdite dans ce mode.",
+    "token_save_trim_note": "\n... [économie de tokens : {omitted} caractères tronqués ; relisez le fichier si nécessaire] ...\n"
   },
   "ru": {
     "lang_name": "Русский",
@@ -1546,7 +1626,7 @@ def _dm_module_01():
     "rec_opt_skip": "Пропустить ошибку и вернуться в чат",
     "rec_choose": "Ваш выбор [По умолчанию: {default}]: ",
     "help_title": "СПРАВОЧНИК КОМАНД DOCMIND",
-    "help_body": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Открыть сохранённые разговоры\n /delete    Удалить сохранённый разговор\n /effort    Уровень рассуждений и стоимость\n /doctor tools  Проверить схемы через API; возможна плата\n /doctor all  Проверить настроенных провайдеров; возможна плата\n /image ПУТЬ Анализ изображения/скриншота и исправление ошибок\n /paste     Отправить скриншот или текст из буфера обмена\n /copy      Копировать последний ответ (/copy code: только код)\n /diff      Показать изменения Git зелёным (+) / красным (-)\n /redo      Повторить отменённое (/undo) изменение файла\n /export    Экспортировать диалог в Markdown (.md)\n /search Q  Живой поиск в интернете и проверка фактов",
+    "help_body": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход\n /tokens    Токены / контекст / стоимость\n /price     USD за миллион токенов\n /context   Лимит контекста\n /history   Открыть сохранённые разговоры\n /delete    Удалить сохранённый разговор\n /effort    Уровень рассуждений и стоимость\n /doctor tools  Проверить схемы через API; возможна плата\n /doctor all  Проверить настроенных провайдеров; возможна плата\n /image ПУТЬ Анализ изображения/скриншота и исправление ошибок\n /paste     Отправить скриншот или текст из буфера обмена\n /copy      Копировать последний ответ (/copy code: только код)\n /diff      Показать изменения Git зелёным (+) / красным (-)\n /redo      Повторить отменённое (/undo) изменение файла\n /export    Экспортировать диалог в Markdown (.md)\n /search Q  Живой поиск в интернете и проверка фактов\n /token-save Включить/выключить экономию токенов (по умолчанию: вкл.)",
     "cmd_cleared": "История диалога и экран очищены.",
     "cmd_saved": "Сессия сохранена: {path}",
     "cmd_loaded": "Сессия загружена ({count} сообщений): {path}",
@@ -1618,7 +1698,7 @@ def _dm_module_01():
     "tool_args_retry": "Модель вернула неверные аргументы; ничего не выполнено. Запрошено одно исправление (возможна дополнительная плата за API).",
     "effort_active": "Уровень рассуждений: {level}. На поддерживаемых моделях high может увеличить задержку и стоимость API. Изменить: /effort.",
     "effort_uncontrolled": "Для этого провайдера/модели DocMind не отправляет параметр рассуждений; действует настройка провайдера.",
-    "effort_usage": "Использование: /effort max|high|medium|low|default.",
+    "effort_usage": "Использование: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Уровень рассуждений сохранён: {level}.",
     "effort_not_saved": "Уровень {level} действует в этой сессии, но не сохранён.",
     "effort_help": " /effort    Уровень рассуждений и стоимость",
@@ -1715,7 +1795,23 @@ def _dm_module_01():
     "diff_not_git": "Текущая папка не является Git-репозиторием или git не установлен.",
     "cmd_did_you_mean": "Неизвестная команда: {cmd}. Возможно, вы имели в виду {suggest}? (/help)",
     "search_usage": "Использование: /search <тема или факт для поиска и проверки>",
-    "vision_bridge_used": "👁️ Активная модель только текстовая; изображение распознано в HD через '{bridge_model}'."
+    "vision_bridge_used": "👁️ Активная модель только текстовая; изображение распознано в HD через '{bridge_model}'.",
+    "tok_on": "ВКЛ",
+    "tok_off": "ВЫКЛ",
+    "token_save_state": "Экономия токенов: {state} (/token-save on|off)",
+    "token_save_on": "✔ Экономия токенов ВКЛЮЧЕНА: ответы и вывод инструментов сокращаются; интеллект и точность не меняются.",
+    "token_save_off": "Экономия токенов ВЫКЛЮЧЕНА: используется полный контекст и полный вывод инструментов (расход может вырасти).",
+    "token_save_blocked": "Экономию токенов нельзя включить в режиме '{level}'. Aggressive, High и Hard всегда держат её выключенной; сначала выберите /effort medium или low.",
+    "token_save_usage": "Использование: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Примечание: экономия убирает только повторы и сырые данные; способность модели рассуждать не снижается.",
+    "aggressive_warn_title": "ПРЕДУПРЕЖДЕНИЕ О РЕЖИМЕ AGGRESSIVE",
+    "aggressive_warn_body": "Режим Aggressive:\n - по умолчанию ВЫКЛЮЧАЕТ экономию токенов;\n - может расходовать больше токенов (выше стоимость API);\n - включает очень глубокие рассуждения и полный доступ к инструментам.\nПосле подтверждения остальные системы работают как обычно.",
+    "aggressive_confirm_prompt": "Включить агрессивный режим? (Y/N): ",
+    "aggressive_cancelled": "Агрессивный режим отменён; прежний уровень сохранён: {level}.",
+    "aggressive_enabled": "🔴 РЕЖИМ AGGRESSIVE АКТИВЕН: экономия токенов выключена, максимально глубокие рассуждения включены. ИИ работает на полную мощность!",
+    "aggressive_left": "Выход из агрессивного режима: {level}. Экономию токенов можно снова включить.",
+    "effort_aggressive_note": "Aggressive = максимальные рассуждения; экономия токенов в этом режиме запрещена.",
+    "token_save_trim_note": "\n... [экономия токенов: обрезано символов — {omitted}; при необходимости перечитайте файл] ...\n"
   },
   "az": {
     "lang_name": "Azərbaycan dili",
@@ -1802,7 +1898,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND ƏMR BƏLƏDÇİSİ",
-    "help_body": " /api       Təminatçı və ya API açarı\n /model     Modeli dəyişdir\n /lang      Dili dəyişdir (14 dil)\n /cd YOL    İş qovluğunu dəyişdir\n /undo      Son fayl dəyişikliyini geri al\n /clear     Yeni söhbət\n /auto      Avtomatik rejim\n /smart     Təsdiqli rejim\n /reset     Ayarları (.json) sıfırla və terminalı bağla\n /tokens    Token və xərc hesabatı\n /history   Yadda saxlanılmış söhbətlər\n /doctor    Sistem və API diaqnostikası\n /exit      Çıxış\n /image YOL Şəkil / ekran görüntüsü təhlil et və xətanı həll et\n /paste     Buferdəki ekran görüntüsünü və ya mətni göndər\n /copy      Son cavabı buferə kopyala (/copy code: yalnız kod)\n /diff      Git dəyişikliklərini yaşıl (+) / qırmızı (-) göstər\n /redo      Geri qaytarılan (/undo) dəyişikliyi yenidən tətbiq et\n /export    Söhbəti Markdown (.md) olaraq ixrac et\n /search MÖVZU İnternetdə canlı araşdır və doğrula",
+    "help_body": " /api       Təminatçı və ya API açarı\n /model     Modeli dəyişdir\n /lang      Dili dəyişdir (14 dil)\n /cd YOL    İş qovluğunu dəyişdir\n /undo      Son fayl dəyişikliyini geri al\n /clear     Yeni söhbət\n /auto      Avtomatik rejim\n /smart     Təsdiqli rejim\n /reset     Ayarları (.json) sıfırla və terminalı bağla\n /tokens    Token və xərc hesabatı\n /history   Yadda saxlanılmış söhbətlər\n /doctor    Sistem və API diaqnostikası\n /exit      Çıxış\n /image YOL Şəkil / ekran görüntüsü təhlil et və xətanı həll et\n /paste     Buferdəki ekran görüntüsünü və ya mətni göndər\n /copy      Son cavabı buferə kopyala (/copy code: yalnız kod)\n /diff      Git dəyişikliklərini yaşıl (+) / qırmızı (-) göstər\n /redo      Geri qaytarılan (/undo) dəyişikliyi yenidən tətbiq et\n /export    Söhbəti Markdown (.md) olaraq ixrac et\n /search MÖVZU İnternetdə canlı araşdır və doğrula\n /token-save Token qənaətini aç/bağla (susmaya görə: açıq)",
     "cmd_cleared": "Söhbət yaddaşı və ekran təmizləndi.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -1874,7 +1970,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "İstifadə: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -1971,7 +2067,23 @@ def _dm_module_01():
     "diff_not_git": "Bu qovluq Git deposu deyil və ya git qurulmayıb.",
     "cmd_did_you_mean": "Naməlum əmr: {cmd}. Bunu nəzərdə tuturdunuz: {suggest} ? (/help yazın)",
     "search_usage": "İstifadə: /search <araşdırılacaq və ya doğrulanacaq mövzu>",
-    "vision_bridge_used": "👁️ Aktiv model şəkil dəstəkləmədiyi üçün şəkil '{bridge_model}' ilə yüksək dəqiqliklə oxundu."
+    "vision_bridge_used": "👁️ Aktiv model şəkil dəstəkləmədiyi üçün şəkil '{bridge_model}' ilə yüksək dəqiqliklə oxundu.",
+    "tok_on": "AÇIQ",
+    "tok_off": "BAĞLI",
+    "token_save_state": "Token qənaəti: {state} (/token-save on|off)",
+    "token_save_on": "✔ Token qənaəti AÇILDI: cavablar və alət çıxışları qısaldılır, zəka və dəqiqlik eyni qalır.",
+    "token_save_off": "Token qənaəti BAĞLANDI: tam kontekst və tam alət çıxışları istifadə olunur (daha çox token xərcləyə bilər).",
+    "token_save_blocked": "Token qənaəti '{level}' rejimində açıla bilməz. Aggressive, High və Hard rejimlərində qənaət məcburi bağlıdır; əvvəlcə /effort medium və ya low seçin.",
+    "token_save_usage": "İstifadə: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Qeyd: token qənaəti yalnız təkrarı və xam məlumatı kəsir; modelin düşünmə gücü azalmır.",
+    "aggressive_warn_title": "AGGRESSIVE REJİM XƏBƏRDARLIĞI",
+    "aggressive_warn_body": "Aggressive rejimi:\n - Susmaya görə token qənaətini BAĞLAYIR.\n - Daha çox token xərcləyə bilər (API dəyəri arta bilər).\n - Çox dərin düşünməni və tam alət girişini aktivləşdirir.\nTəsdiq etsəniz, digər sistemlər normal işləməyə davam edir.",
+    "aggressive_confirm_prompt": "Aggressive rejimini aktivləşdirmək istəyirsiniz? (Y/N): ",
+    "aggressive_cancelled": "Aggressive rejimi ləğv edildi; əvvəlki düşünmə səviyyəsi qorundu: {level}.",
+    "aggressive_enabled": "🔴 AGGRESSIVE REJİM AKTİV: token qənaəti bağlandı, ən dərin düşünmə açıqdır. Süni intellekt tam gücdədir!",
+    "aggressive_left": "Aggressive rejimindən çıxıldı: {level}. Token qənaəti yenidən açıla bilər.",
+    "effort_aggressive_note": "Aggressive = maksimum düşünmə gücü; bu rejimdə token qənaəti açıla bilməz.",
+    "token_save_trim_note": "\n... [token qənaəti: {omitted} simvol kəsildi; lazım olsa faylı yenidən oxuyun] ...\n"
   },
   "it": {
     "lang_name": "Italiano",
@@ -2058,7 +2170,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "GUIDA COMANDI DOCMIND",
-    "help_body": " /api       Provider o chiave API\n /model     Cambia modello\n /lang      Cambia lingua (14 lingue)\n /cd PERC   Cambia cartella\n /undo      Annulla ultima modifica\n /clear     Nuova chat\n /auto      Modalità automatica\n /smart     Modalità con conferma\n /reset     Ripristina config (.json) e chiudi terminale\n /tokens    Report token e costi\n /history   Cronologia conversazioni\n /doctor    Diagnostica di sistema\n /exit      Esci\n /image PATH Analizza immagine/screenshot e risolvi errori\n /paste     Invia screenshot o testo dagli appunti\n /copy      Copia ultima risposta (/copy code: solo codice)\n /diff      Mostra modifiche Git in verde (+) / rosso (-)\n /redo      Ripristina ultima modifica annullata (/undo)\n /export    Esporta conversazione in Markdown (.md)\n /search Q  Ricerca web dal vivo e verifica delle fonti",
+    "help_body": " /api       Provider o chiave API\n /model     Cambia modello\n /lang      Cambia lingua (14 lingue)\n /cd PERC   Cambia cartella\n /undo      Annulla ultima modifica\n /clear     Nuova chat\n /auto      Modalità automatica\n /smart     Modalità con conferma\n /reset     Ripristina config (.json) e chiudi terminale\n /tokens    Report token e costi\n /history   Cronologia conversazioni\n /doctor    Diagnostica di sistema\n /exit      Esci\n /image PATH Analizza immagine/screenshot e risolvi errori\n /paste     Invia screenshot o testo dagli appunti\n /copy      Copia ultima risposta (/copy code: solo codice)\n /diff      Mostra modifiche Git in verde (+) / rosso (-)\n /redo      Ripristina ultima modifica annullata (/undo)\n /export    Esporta conversazione in Markdown (.md)\n /search Q  Ricerca web dal vivo e verifica delle fonti\n /token-save Attiva/disattiva risparmio token (predefinito: attivo)",
     "cmd_cleared": "Memoria conversazione e schermo puliti.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -2130,7 +2242,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "Uso: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -2227,7 +2339,23 @@ def _dm_module_01():
     "diff_not_git": "Questa cartella non è un repository Git o git non è installato.",
     "cmd_did_you_mean": "Comando sconosciuto: {cmd}. Intendevi {suggest}? (Digita /help)",
     "search_usage": "Uso: /search <argomento o informazione da verificare>",
-    "vision_bridge_used": "👁️ Il modello attivo è solo testo; immagine analizzata in alta risoluzione tramite '{bridge_model}'."
+    "vision_bridge_used": "👁️ Il modello attivo è solo testo; immagine analizzata in alta risoluzione tramite '{bridge_model}'.",
+    "tok_on": "ATTIVO",
+    "tok_off": "DISATTIVATO",
+    "token_save_state": "Risparmio token: {state} (/token-save on|off)",
+    "token_save_on": "✔ Risparmio token ATTIVO: risposte e output degli strumenti vengono accorciati; intelligenza e precisione restano identiche.",
+    "token_save_off": "Risparmio token DISATTIVATO: contesto e output completi (può consumare più token).",
+    "token_save_blocked": "Il risparmio token non può essere attivato nella modalità '{level}'. Aggressive, High e Hard lo tengono sempre disattivato; scegli prima /effort medium o low.",
+    "token_save_usage": "Uso: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Nota: il risparmio taglia solo ripetizioni e dati grezzi; la capacità di ragionamento del modello non diminuisce.",
+    "aggressive_warn_title": "AVVISO MODALITÀ AGRESSIVE",
+    "aggressive_warn_body": "La modalità Aggressive:\n - disattiva il risparmio token per impostazione predefinita;\n - può consumare più token (costo API più alto);\n - attiva un ragionamento molto profondo e l’accesso completo agli strumenti.\nSe accetti, tutti gli altri sistemi continuano a funzionare normalmente.",
+    "aggressive_confirm_prompt": "Attivare la modalità aggressiva? (Y/N): ",
+    "aggressive_cancelled": "Modalità aggressiva annullata; livello precedente mantenuto: {level}.",
+    "aggressive_enabled": "🔴 MODALITÀ AGRESSIVE ATTIVA: risparmio token disattivato, ragionamento profondo attivo. L’IA lavora a piena potenza!",
+    "aggressive_left": "Uscita dalla modalità aggressiva: {level}. Il risparmio token può essere riattivato.",
+    "effort_aggressive_note": "Aggressive = ragionamento massimo; in questa modalità il risparmio token non è consentito.",
+    "token_save_trim_note": "\n... [risparmio token: {omitted} caratteri tagliati; rileggi il file se serve] ...\n"
   },
   "pt": {
     "lang_name": "Português",
@@ -2314,7 +2442,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "REFERÊNCIA DE COMANDOS DOCMIND",
-    "help_body": " /api       Provedor ou chave API\n /model     Alterar modelo\n /lang      Alterar idioma (14 idiomas)\n /cd CAM    Alterar pasta atual\n /undo      Desfazer última edição\n /clear     Nova conversa\n /auto      Modo automático\n /smart     Modo com confirmação\n /reset     Repor configuração (.json) e fechar terminal\n /tokens    Relatório de tokens e custos\n /history   Histórico de conversas\n /doctor    Diagnóstico do sistema\n /exit      Sair\n /image PATH Analisar imagem/captura e corrigir erros\n /paste     Enviar captura ou texto da área de transferência\n /copy      Copiar última resposta (/copy code: só código)\n /diff      Mostrar alterações Git em verde (+) / vermelho (-)\n /redo      Refazer última alteração desfeita (/undo)\n /export    Exportar conversa para Markdown (.md)\n /search Q  Pesquisa na internet ao vivo e verificação de fatos",
+    "help_body": " /api       Provedor ou chave API\n /model     Alterar modelo\n /lang      Alterar idioma (14 idiomas)\n /cd CAM    Alterar pasta atual\n /undo      Desfazer última edição\n /clear     Nova conversa\n /auto      Modo automático\n /smart     Modo com confirmação\n /reset     Repor configuração (.json) e fechar terminal\n /tokens    Relatório de tokens e custos\n /history   Histórico de conversas\n /doctor    Diagnóstico do sistema\n /exit      Sair\n /image PATH Analisar imagem/captura e corrigir erros\n /paste     Enviar captura ou texto da área de transferência\n /copy      Copiar última resposta (/copy code: só código)\n /diff      Mostrar alterações Git em verde (+) / vermelho (-)\n /redo      Refazer última alteração desfeita (/undo)\n /export    Exportar conversa para Markdown (.md)\n /search Q  Pesquisa na internet ao vivo e verificação de fatos\n /token-save Ativar/desativar economia de tokens (padrão: ativo)",
     "cmd_cleared": "Memória da conversa e ecrã limpos.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -2386,7 +2514,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "Uso: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -2483,7 +2611,23 @@ def _dm_module_01():
     "diff_not_git": "Esta pasta não é um repositório Git ou o git não está instalado.",
     "cmd_did_you_mean": "Comando desconhecido: {cmd}. Você quis dizer {suggest}? (Digite /help)",
     "search_usage": "Uso: /search <assunto ou informação para pesquisar e verificar>",
-    "vision_bridge_used": "👁️ Modelo ativo é apenas texto; imagem analisada em alta resolução via '{bridge_model}'."
+    "vision_bridge_used": "👁️ Modelo ativo é apenas texto; imagem analisada em alta resolução via '{bridge_model}'.",
+    "tok_on": "ATIVO",
+    "tok_off": "DESATIVADO",
+    "token_save_state": "Economia de tokens: {state} (/token-save on|off)",
+    "token_save_on": "✔ Economia de tokens ATIVA: respostas e saídas de ferramentas são encurtadas; inteligência e precisão permanecem iguais.",
+    "token_save_off": "Economia de tokens DESATIVADA: contexto e saídas completos (pode consumir mais tokens).",
+    "token_save_blocked": "A economia de tokens não pode ser ativada no modo '{level}'. Aggressive, High e Hard mantêm-na sempre desativada; escolha primeiro /effort medium ou low.",
+    "token_save_usage": "Uso: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Nota: a economia apenas corta repetições e dados brutos; o poder de raciocínio do modelo não diminui.",
+    "aggressive_warn_title": "AVISO DO MODO AGRESSIVE",
+    "aggressive_warn_body": "O modo Aggressive:\n - desativa a economia de tokens por padrão;\n - pode consumir mais tokens (custo de API mais alto);\n - ativa raciocínio muito profundo e acesso total às ferramentas.\nSe aceitar, os outros sistemas continuam a funcionar normalmente.",
+    "aggressive_confirm_prompt": "Ativar o modo agressivo? (Y/N): ",
+    "aggressive_cancelled": "Modo agressivo cancelado; nível anterior mantido: {level}.",
+    "aggressive_enabled": "🔴 MODO AGRESSIVE ATIVO: economia de tokens desativada, raciocínio profundo ativado. A IA está a plena potência!",
+    "aggressive_left": "Saiu do modo agressivo: {level}. A economia de tokens pode ser ativada novamente.",
+    "effort_aggressive_note": "Aggressive = raciocínio máximo; a economia de tokens não é permitida neste modo.",
+    "token_save_trim_note": "\n... [economia de tokens: {omitted} caracteres cortados; releia o arquivo se precisar] ...\n"
   },
   "nl": {
     "lang_name": "Nederlands",
@@ -2570,7 +2714,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND OPDRACHTENOVERZICHT",
-    "help_body": " /api       Provider of API-sleutel\n /model     Model wijzigen\n /lang      Taal wijzigen (14 talen)\n /cd PAD    Werkmap wijzigen\n /undo      Laatste wijziging ongedaan maken\n /clear     Nieuw gesprek\n /auto      Automatische modus\n /smart     Bevestigingsmodus\n /reset     Config (.json) wissen en terminal sluiten\n /tokens    Token- en kostenoverzicht\n /history   Gespreksgeschiedenis\n /doctor    Systeemdiagnose\n /exit      Afsluiten\n /image PAD Afbeelding/screenshot analyseren & fouten oplossen\n /paste     Screenshot of tekst vanaf klembord verzenden\n /copy      Laatste antwoord kopiëren (/copy code: alleen code)\n /diff      Git-wijzigingen met groen (+) / rood (-) tonen\n /redo      Laatst ongedaan gemaakte wijziging herhalen\n /export    Gesprek exporteren naar Markdown (.md)\n /search Q  Live internetzoeken & feitencheck",
+    "help_body": " /api       Provider of API-sleutel\n /model     Model wijzigen\n /lang      Taal wijzigen (14 talen)\n /cd PAD    Werkmap wijzigen\n /undo      Laatste wijziging ongedaan maken\n /clear     Nieuw gesprek\n /auto      Automatische modus\n /smart     Bevestigingsmodus\n /reset     Config (.json) wissen en terminal sluiten\n /tokens    Token- en kostenoverzicht\n /history   Gespreksgeschiedenis\n /doctor    Systeemdiagnose\n /exit      Afsluiten\n /image PAD Afbeelding/screenshot analyseren & fouten oplossen\n /paste     Screenshot of tekst vanaf klembord verzenden\n /copy      Laatste antwoord kopiëren (/copy code: alleen code)\n /diff      Git-wijzigingen met groen (+) / rood (-) tonen\n /redo      Laatst ongedaan gemaakte wijziging herhalen\n /export    Gesprek exporteren naar Markdown (.md)\n /search Q  Live internetzoeken & feitencheck\n /token-save Tokenbesparing aan/uit (standaard: aan)",
     "cmd_cleared": "Gespreksgeheugen en scherm gewist.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -2642,7 +2786,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "Gebruik: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -2739,7 +2883,23 @@ def _dm_module_01():
     "diff_not_git": "Deze map is geen Git-repository of git is niet geïnstalleerd.",
     "cmd_did_you_mean": "Onbekend commando: {cmd}. Bedoelde u {suggest}? (Typ /help)",
     "search_usage": "Gebruik: /search <onderwerp of feit om te controleren>",
-    "vision_bridge_used": "👁️ Actief model is alleen-tekst; afbeelding in hoge resolutie geanalyseerd via '{bridge_model}'."
+    "vision_bridge_used": "👁️ Actief model is alleen-tekst; afbeelding in hoge resolutie geanalyseerd via '{bridge_model}'.",
+    "tok_on": "AAN",
+    "tok_off": "UIT",
+    "token_save_state": "Tokenbesparing: {state} (/token-save on|off)",
+    "token_save_on": "✔ Tokenbesparing AAN: antwoorden en tool-uitvoer worden ingekort; intelligentie en nauwkeurigheid blijven gelijk.",
+    "token_save_off": "Tokenbesparing UIT: volledige context en volledige tool-uitvoer (kan meer tokens kosten).",
+    "token_save_blocked": "Tokenbesparing kan niet aan in modus '{level}'. Aggressive, High en Hard houden dit altijd uit; kies eerst /effort medium of low.",
+    "token_save_usage": "Gebruik: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "Let op: besparing kort alleen herhaling en ruwe data in; het redeneervermogen van het model blijft gelijk.",
+    "aggressive_warn_title": "WAARSCHUWING: AGRESSIVE-MODUS",
+    "aggressive_warn_body": "De Aggressive-modus:\n - schakelt tokenbesparing standaard UIT;\n - kan meer tokens verbruiken (hogere API-kosten);\n - schakelt zeer diep redeneren en volledige tooltoegang in.\nAls je accepteert, blijven alle andere systemen normaal werken.",
+    "aggressive_confirm_prompt": "Agressieve modus inschakelen? (Y/N): ",
+    "aggressive_cancelled": "Agressieve modus geannuleerd; vorige denkniveau behouden: {level}.",
+    "aggressive_enabled": "🔴 AGRESSIVE-MODUS ACTIEF: tokenbesparing uit, diepst mogelijke redeneren aan. De AI draait op volle kracht!",
+    "aggressive_left": "Agressieve modus verlaten: {level}. Tokenbesparing kan weer aan.",
+    "effort_aggressive_note": "Aggressive = maximaal redeneren; tokenbesparing is in deze modus niet toegestaan.",
+    "token_save_trim_note": "\n... [tokenbesparing: {omitted} tekens ingekort; lees het bestand opnieuw indien nodig] ...\n"
   },
   "ar": {
     "lang_name": "العربية",
@@ -2826,7 +2986,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "دليل أوامر DOCMIND",
-    "help_body": " /api       مزود الخدمة أو المفتاح\n /model     تغيير النموذج\n /lang      تغيير اللغة (14 لغة)\n /cd PATH   مجلد العمل\n /undo      التراجع عن آخر تعديل\n /clear     محادثة جديدة\n /auto      الوضع التلقائي\n /smart     وضع التأكيد الذكي\n /reset     حذف الإعدادات (.json) وإغلاق الطرفية\n /tokens    تقرير الرموز والتكلفة\n /history   سجل المحادثات\n /doctor    فحص النظام والاتصال\n /exit      خروج\n /image PATH تحليل صورة أو لقطة شاشة وإصلاح الأخطاء\n /paste     إرسال لقطة شاشة أو نص مباشرة من الحافظة\n /copy      نسخ آخر رد إلى الحافظة (/copy code: الكود فقط)\n /diff      عرض تغييرات Git بالأخضر (+) والأحمر (-)\n /redo      إعادة تطبيق آخر تعديل تم التراجع عنه\n /export    تصدير المحادثة إلى ملف Markdown (.md)\n /search Q  بحث مباشر في الإنترنت والتحقق من المعلومات",
+    "help_body": " /api       مزود الخدمة أو المفتاح\n /model     تغيير النموذج\n /lang      تغيير اللغة (14 لغة)\n /cd PATH   مجلد العمل\n /undo      التراجع عن آخر تعديل\n /clear     محادثة جديدة\n /auto      الوضع التلقائي\n /smart     وضع التأكيد الذكي\n /reset     حذف الإعدادات (.json) وإغلاق الطرفية\n /tokens    تقرير الرموز والتكلفة\n /history   سجل المحادثات\n /doctor    فحص النظام والاتصال\n /exit      خروج\n /image PATH تحليل صورة أو لقطة شاشة وإصلاح الأخطاء\n /paste     إرسال لقطة شاشة أو نص مباشرة من الحافظة\n /copy      نسخ آخر رد إلى الحافظة (/copy code: الكود فقط)\n /diff      عرض تغييرات Git بالأخضر (+) والأحمر (-)\n /redo      إعادة تطبيق آخر تعديل تم التراجع عنه\n /export    تصدير المحادثة إلى ملف Markdown (.md)\n /search Q  بحث مباشر في الإنترنت والتحقق من المعلومات\n /token-save تشغيل/إيقاف توفير الرموز (الافتراضي: مفعّل)",
     "cmd_cleared": "تم مسح ذاكرة المحادثة والشاشة.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -2898,7 +3058,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "الاستخدام: /effort aggressive|max|high|hard|medium|low|default.",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -2995,7 +3155,23 @@ def _dm_module_01():
     "diff_not_git": "هذا المجلد ليس مستودع Git أو أن git غير مثبت.",
     "cmd_did_you_mean": "أمر غير معروف: {cmd}. هل تقصد {suggest}؟ (اكتب /help)",
     "search_usage": "الاستخدام: /search <موضوع أو معلومة للبحث والتحقق>",
-    "vision_bridge_used": "👁️ النموذج الحالي نصي فقط؛ تم تحليل الصورة بدقة عالية عبر '{bridge_model}'."
+    "vision_bridge_used": "👁️ النموذج الحالي نصي فقط؛ تم تحليل الصورة بدقة عالية عبر '{bridge_model}'.",
+    "tok_on": "مفعّل",
+    "tok_off": "متوقف",
+    "token_save_state": "توفير الرموز: {state} (/token-save on|off)",
+    "token_save_on": "✔ توفير الرموز مفعّل: تُختصر الردود ومخرجات الأدوات، ويبقى الذكاء والدقة كما هو.",
+    "token_save_off": "توفير الرموز متوقف: يُستخدم السياق الكامل ومخرجات الأدوات الكاملة (قد يستهلك رموزًا أكثر).",
+    "token_save_blocked": "لا يمكن تفعيل توفير الرموز في الوضع '{level}'. الأوضاع Aggressive وHigh وHard تُبقيه متوقفًا دائمًا؛ اختر أولًا /effort medium أو low.",
+    "token_save_usage": "الاستخدام: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "ملاحظة: التوفير يقتصر على التكرار والبيانات الخام؛ لا تقل قدرة النموذج على التفكير.",
+    "aggressive_warn_title": "تحذير وضع AGGRESSIVE",
+    "aggressive_warn_body": "وضع Aggressive:\n - يوقف توفير الرموز افتراضيًا.\n - قد يستهلك رموزًا أكثر (تكلفة API أعلى).\n - يفعّل تفكيرًا عميقًا جدًا ووصولًا كاملًا للأدوات.\nإذا وافقت، تستمر بقية الأنظمة في العمل بشكل طبيعي.",
+    "aggressive_confirm_prompt": "هل تريد تفعيل الوضع العدواني؟ (Y/N): ",
+    "aggressive_cancelled": "تم إلغاء الوضع العدواني؛ بقي المستوى السابق: {level}.",
+    "aggressive_enabled": "🔴 وضع AGGRESSIVE مفعّل: تم إيقاف توفير الرموز وتشغيل أعمق تفكير. الذكاء الاصطناعي بكامل قوته!",
+    "aggressive_left": "تم الخروج من الوضع العدواني: {level}. يمكن تفعيل توفير الرموز مرة أخرى.",
+    "effort_aggressive_note": "Aggressive = أقصى تفكير؛ لا يُسمح بتوفير الرموز في هذا الوضع.",
+    "token_save_trim_note": "\n... [توفير الرموز: تم قص {omitted} حرفًا؛ أعد قراءة الملف إن لزم] ...\n"
   },
   "zh": {
     "lang_name": "中文",
@@ -3082,7 +3258,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND 命令参考",
-    "help_body": " /api       配置服务商或密钥\n /model     切换模型\n /lang      切换语言 (支持14种语言)\n /cd 路径   切换工作目录\n /undo      撤销上次文件修改\n /clear     清空对话\n /auto      自动模式\n /smart     智能确认模式\n /reset     重置配置 (.json) 并关闭终端\n /tokens    用量与费用统计\n /history   历史会话\n /doctor    系统与 API 诊断\n /exit      退出\n /image 路径 分析图片/报错截图并修复问题\n /paste     直接发送剪贴板中的截图或文本\n /copy      复制最后一条回复 (/copy code: 仅复制代码)\n /diff      以绿色 (+) / 红色 (-) 显示 Git 更改\n /redo      重做上次撤销 (/undo) 的文件修改\n /export    将对话导出为 Markdown (.md)\n /search 词 联网实时搜索与多源事实核查",
+    "help_body": " /api       配置服务商或密钥\n /model     切换模型\n /lang      切换语言 (支持14种语言)\n /cd 路径   切换工作目录\n /undo      撤销上次文件修改\n /clear     清空对话\n /auto      自动模式\n /smart     智能确认模式\n /reset     重置配置 (.json) 并关闭终端\n /tokens    用量与费用统计\n /history   历史会话\n /doctor    系统与 API 诊断\n /exit      退出\n /image 路径 分析图片/报错截图并修复问题\n /paste     直接发送剪贴板中的截图或文本\n /copy      复制最后一条回复 (/copy code: 仅复制代码)\n /diff      以绿色 (+) / 红色 (-) 显示 Git 更改\n /redo      重做上次撤销 (/undo) 的文件修改\n /export    将对话导出为 Markdown (.md)\n /search 词 联网实时搜索与多源事实核查\n /token-save 开关令牌节省（默认：开启）",
     "cmd_cleared": "对话记忆与屏幕已清空。",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -3154,7 +3330,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "用法：/effort aggressive|max|high|hard|medium|low|default。",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -3251,7 +3427,23 @@ def _dm_module_01():
     "diff_not_git": "当前目录不是 Git 仓库或未安装 git。",
     "cmd_did_you_mean": "未知命令: {cmd}。您是指 {suggest} 吗？（输入 /help 查看帮助）",
     "search_usage": "用法: /search <需要联网搜索和核实的主题或问题>",
-    "vision_bridge_used": "👁️ 当前模型仅支持文本；已通过 '{bridge_model}' 高清解析图片内容。"
+    "vision_bridge_used": "👁️ 当前模型仅支持文本；已通过 '{bridge_model}' 高清解析图片内容。",
+    "tok_on": "开启",
+    "tok_off": "关闭",
+    "token_save_state": "令牌节省：{state}（/token-save on|off）",
+    "token_save_on": "✔ 令牌节省已开启：回复与工具输出会被精简，智能与准确度保持不变。",
+    "token_save_off": "令牌节省已关闭：使用完整上下文与完整工具输出（可能消耗更多令牌）。",
+    "token_save_blocked": "在“{level}”模式下无法开启令牌节省。Aggressive、High 和 Hard 模式始终强制关闭；请先选择 /effort medium 或 low。",
+    "token_save_usage": "用法：/token-save on | /token-save off | /token-save status",
+    "token_save_note": "注意：节省只裁剪重复内容和原始数据，不会降低模型的推理能力。",
+    "aggressive_warn_title": "AGGRESSIVE 模式警告",
+    "aggressive_warn_body": "Aggressive 模式将：\n - 默认关闭令牌节省。\n - 可能消耗更多令牌（API 费用更高）。\n - 启用极深度思考与完整工具访问。\n确认后，其他系统照常运行。",
+    "aggressive_confirm_prompt": "是否启用 Aggressive 模式？(Y/N)：",
+    "aggressive_cancelled": "已取消 Aggressive 模式，保留原有思考等级：{level}。",
+    "aggressive_enabled": "🔴 AGGRESSIVE 模式已启用：令牌节省关闭，最深思考开启。AI 全功率运行！",
+    "aggressive_left": "已退出 Aggressive 模式：{level}。可以重新开启令牌节省。",
+    "effort_aggressive_note": "Aggressive = 最大推理强度；此模式下不允许开启令牌节省。",
+    "token_save_trim_note": "\n... [令牌节省：已裁剪 {omitted} 个字符；如需完整内容请重新读取文件] ...\n"
   },
   "ja": {
     "lang_name": "日本語",
@@ -3338,7 +3530,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND コマンド一覧",
-    "help_body": " /api       プロバイダー・APIキー設定\n /model     モデル変更\n /lang      言語変更 (14言語対応)\n /cd PATH   作業フォルダ変更\n /undo      直前の変更を元に戻す\n /clear     新しい会話\n /auto      自動モード\n /smart     確認モード\n /reset     設定(.json)を初期化してターミナルを閉じる\n /tokens    トークン・コスト統計\n /history   会話履歴\n /doctor    システム・API診断\n /exit      終了\n /image PATH 画像・スクショを解析してエラーを解決\n /paste     クリップボードのスクショやテキストを送信\n /copy      直前の応答をコピー (/copy code: コードのみ)\n /diff      Git の変更を緑 (+) / 赤 (-) で表示\n /redo      元に戻した (/undo) 変更をやり直す\n /export    会話を Markdown (.md) にエクスポート\n /search 語 ライブWeb検索と複数ソースでの事実確認",
+    "help_body": " /api       プロバイダー・APIキー設定\n /model     モデル変更\n /lang      言語変更 (14言語対応)\n /cd PATH   作業フォルダ変更\n /undo      直前の変更を元に戻す\n /clear     新しい会話\n /auto      自動モード\n /smart     確認モード\n /reset     設定(.json)を初期化してターミナルを閉じる\n /tokens    トークン・コスト統計\n /history   会話履歴\n /doctor    システム・API診断\n /exit      終了\n /image PATH 画像・スクショを解析してエラーを解決\n /paste     クリップボードのスクショやテキストを送信\n /copy      直前の応答をコピー (/copy code: コードのみ)\n /diff      Git の変更を緑 (+) / 赤 (-) で表示\n /redo      元に戻した (/undo) 変更をやり直す\n /export    会話を Markdown (.md) にエクスポート\n /search 語 ライブWeb検索と複数ソースでの事実確認\n /token-save トークン節約のオン/オフ（既定: オン）",
     "cmd_cleared": "会話メモリと画面をクリアしました。",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -3410,7 +3602,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "使用法: /effort aggressive|max|high|hard|medium|low|default",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -3507,7 +3699,23 @@ def _dm_module_01():
     "diff_not_git": "このフォルダは Git リポジトリではないか git が未導入です。",
     "cmd_did_you_mean": "不明なコマンド: {cmd}。もしかして {suggest} ですか？（/help を入力）",
     "search_usage": "使い方: /search <Web検索・事実確認したい内容>",
-    "vision_bridge_used": "👁️ 現在のモデルはテキスト専用のため、'{bridge_model}' で高精細に画像を解析しました。"
+    "vision_bridge_used": "👁️ 現在のモデルはテキスト専用のため、'{bridge_model}' で高精細に画像を解析しました。",
+    "tok_on": "オン",
+    "tok_off": "オフ",
+    "token_save_state": "トークン節約: {state}（/token-save on|off）",
+    "token_save_on": "✔ トークン節約がオン: 応答とツール出力を短縮しますが、知能と正確さは変わりません。",
+    "token_save_off": "トークン節約がオフ: 完全なコンテキストとツール出力を使用します（トークン消費が増える可能性）。",
+    "token_save_blocked": "「{level}」モードではトークン節約を有効にできません。Aggressive・High・Hard では常にオフです。先に /effort medium または low を選んでください。",
+    "token_save_usage": "使用法: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "注: 節約は繰り返しと生データだけを削り、モデルの推論力は下げません。",
+    "aggressive_warn_title": "AGGRESSIVE モードの警告",
+    "aggressive_warn_body": "Aggressive モードは:\n - 既定でトークン節約をオフにします。\n - より多くのトークンを消費する可能性があります（API 費用増）。\n - 非常に深い思考と完全なツールアクセスを有効にします。\n承認すると、他のシステムは通常どおり動作します。",
+    "aggressive_confirm_prompt": "アグレッシブモードを有効にしますか？(Y/N): ",
+    "aggressive_cancelled": "アグレッシブモードを中止しました。以前の思考レベルを保持します: {level}。",
+    "aggressive_enabled": "🔴 AGGRESSIVE モード有効: トークン節約オフ、最深の思考オン。AI は全力で稼働中！",
+    "aggressive_left": "アグレッシブモードを終了しました: {level}。トークン節約を再び有効にできます。",
+    "effort_aggressive_note": "Aggressive = 最大推論。このモードではトークン節約は許可されません。",
+    "token_save_trim_note": "\n... [トークン節約: {omitted} 文字を省略しました。必要ならファイルを再読み込みしてください] ...\n"
   },
   "ko": {
     "lang_name": "한국어",
@@ -3594,7 +3802,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND 명령어 안내",
-    "help_body": " /api       제공자 또는 API 키 설정\n /model     모델 변경\n /lang      언어 변경 (14개 언어 지원)\n /cd 경로   작업 디렉터리 변경\n /undo      최근 파일 수정 되돌리기\n /clear     새 대화 시작\n /auto      자동 모드\n /smart     스마트 승인 모드\n /reset     설정(.json) 초기화 후 터미널 닫기\n /tokens    토큰 및 비용 리포트\n /history   저장된 대화 기록\n /doctor    시스템 및 API 진단\n /exit      종료\n /image 경로 이미지/스크린샷 분석 및 오류 해결\n /paste     클립보드의 스크린샷 또는 텍스트 바로 전송\n /copy      마지막 응답 복사 (/copy code: 코드만 복사)\n /diff      Git 변경 사항을 초록 (+) / 빨강 (-)으로 표시\n /redo      되돌린 (/undo) 파일 변경 다시 실행\n /export    대화를 Markdown (.md) 파일로 내보내기\n /search 검색어 실시간 인터넷 검색 및 사실 검증",
+    "help_body": " /api       제공자 또는 API 키 설정\n /model     모델 변경\n /lang      언어 변경 (14개 언어 지원)\n /cd 경로   작업 디렉터리 변경\n /undo      최근 파일 수정 되돌리기\n /clear     새 대화 시작\n /auto      자동 모드\n /smart     스마트 승인 모드\n /reset     설정(.json) 초기화 후 터미널 닫기\n /tokens    토큰 및 비용 리포트\n /history   저장된 대화 기록\n /doctor    시스템 및 API 진단\n /exit      종료\n /image 경로 이미지/스크린샷 분석 및 오류 해결\n /paste     클립보드의 스크린샷 또는 텍스트 바로 전송\n /copy      마지막 응답 복사 (/copy code: 코드만 복사)\n /diff      Git 변경 사항을 초록 (+) / 빨강 (-)으로 표시\n /redo      되돌린 (/undo) 파일 변경 다시 실행\n /export    대화를 Markdown (.md) 파일로 내보내기\n /search 검색어 실시간 인터넷 검색 및 사실 검증\n /token-save 토큰 절약 켜기/끄기 (기본: 켜짐)",
     "cmd_cleared": "대화 기록과 화면이 지워졌습니다.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -3666,7 +3874,7 @@ def _dm_module_01():
     "tool_args_retry": "The model returned invalid tool arguments; nothing was executed. Requesting one correction (an extra API charge may apply).",
     "effort_active": "Reasoning setting: {level}. Used on supported models; high can increase latency and API cost. Change with /effort.",
     "effort_uncontrolled": "DocMind sends no explicit reasoning parameter for this provider/model; the provider default applies.",
-    "effort_usage": "Usage: /effort max|high|medium|low|default.",
+    "effort_usage": "사용법: /effort aggressive|max|high|hard|medium|low|default",
     "effort_saved": "Reasoning setting saved: {level}.",
     "effort_not_saved": "Reasoning setting is {level} for this session but could not be saved.",
     "effort_help": " /effort    Reasoning level and cost",
@@ -3763,7 +3971,23 @@ def _dm_module_01():
     "diff_not_git": "현재 폴더가 Git 저장소가 아니거나 git이 설치되어 있지 않습니다.",
     "cmd_did_you_mean": "알 수 없는 명령어: {cmd}. 혹시 {suggest} 인가요? (/help 입력)",
     "search_usage": "사용법: /search <실시간 웹 검색 및 팩트체크할 내용>",
-    "vision_bridge_used": "👁️ 현재 모델은 텍스트 전용이므로 '{bridge_model}'로 이미지를 고화질 분석했습니다."
+    "vision_bridge_used": "👁️ 현재 모델은 텍스트 전용이므로 '{bridge_model}'로 이미지를 고화질 분석했습니다.",
+    "tok_on": "켜짐",
+    "tok_off": "꺼짐",
+    "token_save_state": "토큰 절약: {state} (/token-save on|off)",
+    "token_save_on": "✔ 토큰 절약 켜짐: 응답과 도구 출력이 줄어들지만 지능과 정확도는 그대로입니다.",
+    "token_save_off": "토큰 절약 꺼짐: 전체 컨텍스트와 전체 도구 출력을 사용합니다(토큰 소모가 늘 수 있음).",
+    "token_save_blocked": "'{level}' 모드에서는 토큰 절약을 켤 수 없습니다. Aggressive, High, Hard 모드에서는 항상 꺼져 있습니다. 먼저 /effort medium 또는 low를 선택하세요.",
+    "token_save_usage": "사용법: /token-save on | /token-save off | /token-save status",
+    "token_save_note": "참고: 절약은 반복과 원시 데이터만 줄이며 모델의 추론 능력은 떨어지지 않습니다.",
+    "aggressive_warn_title": "AGGRESSIVE 모드 경고",
+    "aggressive_warn_body": "Aggressive 모드는:\n - 기본적으로 토큰 절약을 끕니다.\n - 더 많은 토큰을 사용할 수 있습니다(API 비용 증가).\n - 매우 깊은 사고와 전체 도구 접근을 활성화합니다.\n승인하면 다른 시스템은 정상적으로 계속 동작합니다.",
+    "aggressive_confirm_prompt": "어그레시브 모드를 활성화할까요? (Y/N): ",
+    "aggressive_cancelled": "어그레시브 모드가 취소되었습니다. 이전 사고 수준 유지: {level}.",
+    "aggressive_enabled": "🔴 AGGRESSIVE 모드 활성: 토큰 절약 꺼짐, 최심층 사고 켜짐. AI가 최대 성능으로 동작합니다!",
+    "aggressive_left": "어그레시브 모드 종료: {level}. 토큰 절약을 다시 켤 수 있습니다.",
+    "effort_aggressive_note": "Aggressive = 최대 추론. 이 모드에서는 토큰 절약을 사용할 수 없습니다.",
+    "token_save_trim_note": "\n... [토큰 절약: {omitted}자를 줄였습니다. 필요하면 파일을 다시 읽으세요] ...\n"
   }
 }''')
  return locals()
@@ -3825,7 +4049,7 @@ def _dm_module_03():
  import tempfile
  from dataclasses import dataclass, field, asdict
  from pathlib import Path
- from typing import Any, Dict, List, Optional
+ from typing import Any, Dict, List, Optional, Tuple
  from docmind.i18n import i18n
  @dataclass(frozen=True)
  class ProviderSpec:
@@ -3837,6 +4061,20 @@ def _dm_module_03():
    env_vars: List[str]
    key_optional: bool = False
    context_window: int = 128_000
+ # --- Reasoning levels & token-saving policy (v1.2) -------------------------
+ # 'hard' is a distinct user-facing level that is sent to the API as 'high'.
+ EFFORT_LEVELS: Tuple[str, ...] = ("aggressive", "max", "high", "hard", "medium", "low", "default")
+ # Modes where token saving is NOT allowed; the value itself is always persisted as False.
+ TOKEN_SAVE_BLOCKED_LEVELS: frozenset = frozenset({"aggressive", "high", "hard"})
+ def token_save_allowed(level: str) -> bool:
+   """True when the given reasoning level may use token saving."""
+   return str(level or "default").lower() not in TOKEN_SAVE_BLOCKED_LEVELS
+ def token_save_effective(cfg: "DocMindConfig") -> bool:
+   """Single source of truth used by the client, agent and command router."""
+   level = str(getattr(cfg, "reasoning_effort", "default") or "default").lower()
+   if not token_save_allowed(level):
+     return False
+   return bool(getattr(cfg, "token_save", True))
  PROVIDERS: List[ProviderSpec] = [
    ProviderSpec(
      id="anthropic",
@@ -3965,6 +4203,7 @@ def _dm_module_03():
    max_steps_per_turn: int = 65
    max_output_tokens: int = 12288
    reasoning_effort: str = "high"
+   token_save: bool = True
    temperature: float = 0.2
    token_warning_limit: int = 0
    price_overrides: Dict[str, List[float]] = field(default_factory=dict)
@@ -4027,6 +4266,7 @@ def _dm_module_03():
    def load(self) -> DocMindConfig:
      if not self.config_path.exists():
        cfg = DocMindConfig()
+       cfg.token_save = token_save_allowed(cfg.reasoning_effort)
        i18n.set_lang(cfg.language)
        return cfg
      try:
@@ -4039,8 +4279,12 @@ def _dm_module_03():
          cfg.provider = "anthropic"
        if cfg.permission_mode not in ("smart", "auto"):
          cfg.permission_mode = "smart"
-       if cfg.reasoning_effort not in ("max", "high", "medium", "low", "default"):
+       if cfg.reasoning_effort not in EFFORT_LEVELS:
          cfg.reasoning_effort = "high"
+       if not isinstance(getattr(cfg, "token_save", True), bool):
+         cfg.token_save = True
+       if not token_save_allowed(cfg.reasoning_effort):
+         cfg.token_save = False
        i18n.set_lang(cfg.language)
        return cfg
      except Exception:
@@ -6914,9 +7158,9 @@ def _dm_module_11():
  MAX_DOWNLOAD_BYTES = 1024 * 1024
  _BROWSER_UA = (
    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.1"
+   "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 DocMind/1.2"
  )
- _API_UA = "DocMindCLI/1.1 (https://github.com/beyip/docmind-cli)"
+ _API_UA = "DocMindCLI/1.2 (https://github.com/beyip/docmind-cli)"
 
  def _is_public_url(url: str) -> Tuple[bool, str]:
    allow_local = os.environ.get("DOCMIND_ALLOW_LOCAL_WEB_TEST") == "1"
@@ -7246,6 +7490,16 @@ def _dm_module_12():
  import os
  from pathlib import Path
  from typing import Any, Callable, Dict, List, Optional
+ # --- v1.2 token-saving engine ------------------------------------------------
+ TOKEN_SAVE_HEAD_KEEP = 1800
+ TOKEN_SAVE_TAIL_KEEP = 900
+ TOKEN_SAVE_MIN_TRIM = 2400
+ def _trim_keep_edges(text: str, head: int, tail: int, note: str) -> str:
+   if len(text) <= head + tail + TOKEN_SAVE_MIN_TRIM:
+     return text
+   omitted = len(text) - head - tail
+   marker = note.format(omitted=f"{omitted:,}")
+   return text[:head] + marker + text[-tail:]
  def _clip_summary(value: Any, limit: int) -> str:
    text = ' '.join(str(value or '').split())
    if len(text) <= limit:
@@ -7386,10 +7640,53 @@ def _dm_module_12():
      self.messages.clear()
      self.last_input_tokens = 0
      self.last_context_estimate = 0
-   def needs_compaction(self, context_window: int) -> bool:
-     threshold = int(context_window * 0.78)
+   def needs_compaction(self, context_window: int, token_save: bool = False) -> bool:
+     ratio = 0.60 if token_save else 0.78
+     threshold = int(context_window * ratio)
      est = self.current_context_estimate()
      return est >= threshold and len(self.messages) > 6
+   def save_tokens(self, note: str = '') -> int:
+     """Shrink *older* bulky tool output or code while keeping the newest turns intact.
+
+         Returns the number of characters that were removed (0 = nothing to do).
+         The current user request, tool names, paths, error lines and the head/tail
+         of every trimmed block are preserved, so the model keeps every fact it
+         needs for the running task; the marker tells it how to recover details.
+         """
+     if not self.messages:
+       return 0
+     note = note or '\n... [{omitted} characters omitted by DocMind token saving; re-read the file if you need the full text] ...\n'
+     last_user_idx = max((i for i, m in enumerate(self.messages) if m.get('role') == 'user'), default=len(self.messages))
+     saved = 0
+     for idx_m, m in enumerate(self.messages):
+       if idx_m > last_user_idx - 1:
+         break
+       content = str(m.get('content') or '')
+       if not content:
+         continue
+       role = m.get('role')
+       if role == 'tool':
+         trimmed = _trim_keep_edges(content, TOKEN_SAVE_HEAD_KEEP, TOKEN_SAVE_TAIL_KEEP, note)
+         if trimmed != content:
+           saved += len(content) - len(trimmed)
+           m['content'] = trimmed
+       elif role == 'user':
+         # Keep the user's own wording; only shrink very large pasted blobs
+         # (code dumps, logs) that are older than the active request.
+         if len(content) > 12000:
+           trimmed = _trim_keep_edges(content, 6000, 2000, note)
+           if trimmed != content:
+             saved += len(content) - len(trimmed)
+             m['content'] = trimmed
+       elif role == 'assistant' and len(content) > 16000:
+         trimmed = _trim_keep_edges(content, 8000, 2000, note)
+         if trimmed != content:
+           saved += len(content) - len(trimmed)
+           m['content'] = trimmed
+     if saved:
+       self.last_input_tokens = self.estimate_tokens()
+       self.last_context_estimate = self.last_input_tokens
+     return saved
    def compact(self, keep_recent_groups: int = 4) -> bool:
      """
          Safely compact older conversation turns while preserving valid
@@ -8662,7 +8959,7 @@ def _dm_module_16():
    if provider == 'openai' and (name == 'gpt-5.6' or matches(('gpt-5.4-mini', 'gpt-5.6-terra', 'gpt-5.6-sol'))):
      return 'openai'
    if provider == 'anthropic' and matches(('claude-sonnet-5-5', 'claude-opus-5-5', 'claude-haiku-5-5',
-                        'claude-sonnet-4-6', 'claude-opus-4-6')):
+                        'claude-sonnet-4-5', 'claude-sonnet-4-6', 'claude-opus-4-6')):
      return 'anthropic'
    if provider == 'gemini' and matches(('gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-3.8-flash')):
      return 'gemini'
@@ -8672,14 +8969,21 @@ def _dm_module_16():
      return 'deepseek'
    return ''
  def reasoning_effort_for(cfg: DocMindConfig) -> str:
-   """Map the user's level to a documented value for the selected model."""
-   value = getattr(cfg, 'reasoning_effort', 'high')
+   """Map the user's level to a documented value for the selected model.
+
+     'aggressive' means "think as deeply as this model can" and is therefore
+     mapped to the deepest documented value; it never lowers the request.
+     'hard' is kept as its own user-facing level but sent as 'high'.
+     """
+   value = str(getattr(cfg, 'reasoning_effort', 'high') or 'high').lower()
    kind = reasoning_control_for(cfg.provider, cfg.model)
    if not kind or value == 'default':
      return ''
-   if value in ('low', 'medium', 'high'):
+   if value in ('low', 'medium'):
      return 'high' if kind == 'deepseek' and value == 'medium' else value
-   if value == 'max':
+   if value in ('high', 'hard'):
+     return 'high'
+   if value in ('max', 'aggressive'):
      if kind in ('anthropic', 'deepseek'):
        return 'max'
      if kind == 'openai':
@@ -8987,6 +9291,12 @@ def _dm_module_16():
      if not any(field in compact for field in fields) or not any(term in text for term in rejection):
        return False
      self._unsupported_effort_keys.add(self._effort_key())
+     # Rejected 'aggressive' / 'max': keep the deepest level the provider accepts
+     # instead of dropping the reasoning parameter completely.
+     downgraded = {'aggressive': 'high', 'max': 'high'}.get(
+       str(getattr(self.cfg, 'reasoning_effort', '')).lower())
+     if downgraded:
+       self.cfg.reasoning_effort = downgraded
      if self.on_effort_fallback:
        self.on_effort_fallback()
      return True
@@ -11860,7 +12170,7 @@ def _dm_module_20():
  import sys
  from contextlib import contextmanager
  from pathlib import Path
- from typing import Any, Callable, Dict, Iterator, List, Optional
+ from typing import Any, Callable, Dict, Iterator, List, Optional, Tuple
  from docmind import __version__
  from docmind.config import DocMindConfig, get_provider_spec
  from docmind.core.errors import DocMindAlert, ErrorCategory, mask_secrets
@@ -11889,6 +12199,7 @@ def _dm_module_20():
    "/export",
    "/redo",
    "/effort",
+   "/token-save",
    "/os",
    "/setup",
    "/api",
@@ -12091,7 +12402,7 @@ def _dm_module_20():
      _dm_owner_gate()
      _dm_signature_gate()
      if not self.view.color or self.view._size()[1] < 30:
-       print(f"\nDocMind v1.1  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
+       print("\nDocMind v1.2  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -12112,7 +12423,7 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v1.1", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
+       label = ("  " + self._paint("DocMind v1.2", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
        print("  " + "".join(cells) + label)
      print()
    @contextmanager
@@ -13634,7 +13945,7 @@ def _dm_module_24():
  from datetime import datetime
  from pathlib import Path
  from typing import Any, Dict, List, Optional
- from docmind.config import ConfigManager, get_provider_spec
+ from docmind.config import ConfigManager, get_provider_spec, token_save_effective
  from docmind.i18n import t
  from docmind.tools.backup import UndoManager
  from docmind.tools.filesystem import extract_at_mentions, extract_prompt_images, get_special_folders, list_mounted_roots
@@ -13947,6 +14258,10 @@ def _dm_module_24():
        ),
      }
      os_q_guide = os_q_examples.get(lang_code, os_q_examples["en"])
+     token_save_hint = (
+       "- Token Saving: ON -> answer completely and correctly, but do not repeat listings, duplicate file dumps or already-known context; re-read a file only when the trimmed part is really needed.\n\n"
+       if token_save_effective(self.config_mgr.config) else ""
+     )
      non_tr_ban = (
        f"CRITICAL: Active interface language is **{lang_name} ({lang_code.upper()})**. Do NOT output any Turkish words, headers, or option labels! Every assistant message and every `ask_user` question/option MUST be 100% in **{lang_name}**."
        if lang_code != "tr"
@@ -13980,7 +14295,8 @@ def _dm_module_24():
        f"- Mounted Drives / Roots: {drives_str}\n"
        f"- User Special Folders: {folders_str}\n"
        f"- Available Shells for run_command: {shells_str}\n"
-       f"- Permission Mode: {mode_desc}\n\n"
+       f"- Permission Mode: {mode_desc}\n"
+       f"{token_save_hint}"
        "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
        "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
        f"   - Detected system: **{pretty_os} ({os_family})** with package managers [{pkg_str}]. "
@@ -14067,7 +14383,10 @@ def _dm_module_24():
      while True:
        spec = get_provider_spec(self.config_mgr.config.provider)
        context_limit, _ = context_limit_for(self.config_mgr.config)
-       if self.context.needs_compaction(context_limit):
+       token_save = token_save_effective(self.config_mgr.config)
+       if token_save:
+         self.context.save_tokens(t("token_save_trim_note"))
+       if self.context.needs_compaction(context_limit, token_save=token_save):
          self.ui.info(t("compacting_context"))
          if self.context.compact():
            self.ui.success(t("context_compacted"))
@@ -14519,8 +14838,8 @@ def _dm_module_25():
  from datetime import datetime
  from pathlib import Path
  from urllib.parse import urlsplit
- from typing import Tuple
- from docmind.config import ConfigManager, PROVIDERS, clean_api_key, get_provider_spec
+ from typing import Optional, Tuple
+ from docmind.config import ConfigManager, PROVIDERS, clean_api_key, get_provider_spec, token_save_allowed, token_save_effective
  from docmind.core.agent import DocMindAgent
  from docmind.core.errors import classify_exception
  from docmind.i18n import LANGUAGE_CHOICES, i18n, t
@@ -14709,6 +15028,9 @@ def _dm_module_25():
          return "continue"
        if cmd in ("/effort", "/zeka"):
          self._handle_effort(arg)
+         return "continue"
+       if cmd in ("/token-save", "/tokensave", "/token_save", "/tasarruf"):
+         self._handle_token_save(arg)
          return "continue"
        if cmd == "/tokens":
          self._handle_tokens(arg)
@@ -14957,7 +15279,7 @@ def _dm_module_25():
            out_name += ".md"
          out_path = resolve_user_path(out_name, self.agent.tools.cwd)
          md_lines = [
-           f"# DocMind Session Export",
+           "# DocMind Session Export",
            f"- **Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
            f"- **Provider / Model:** `{self.cfg_mgr.config.provider}` / `{self.cfg_mgr.config.model}`",
            f"- **Working Directory:** `{self.agent.tools.cwd}`",
@@ -15193,36 +15515,115 @@ def _dm_module_25():
      cfg.context_overrides[key]=int(cleaned)
      if self.cfg_mgr.save():self.ui.success(t("context_set", limit=f"{int(cleaned):,}"))
      else:self.ui.warn(t("settings_save_failed"))
+   _AGGRESSIVE_YES = {"y", "yes", "e", "evet", "onay", "b", "beli", "bəli", "j", "ja", "o", "oui",
+             "s", "si", "sí", "sì", "sim", "д", "да", "نعم", "是", "はい", "예", "네", "1"}
+   def _confirm_aggressive(self) -> bool:
+     """First-activation warning for the Aggressive reasoning mode."""
+     self.ui.print_panel("⚠ " + t("aggressive_warn_title"), t("aggressive_warn_body"), style="bright_red")
+     if getattr(self.agent, "non_interactive", False):
+       return False
+     try:
+       raw = self.ui.ask(t("aggressive_confirm_prompt")).strip().lower().replace("\u0307", "")
+     except (KeyboardInterrupt, EOFError):
+       print()
+       return False
+     return raw in self._AGGRESSIVE_YES
+   def _show_effort_state(self) -> None:
+     cfg = self.cfg_mgr.config
+     level = cfg.reasoning_effort
+     self.ui.info(t("effort_active", level=level))
+     supported = bool(reasoning_control_for(cfg.provider, cfg.model))
+     requested = getattr(self.agent.client, "requested_reasoning_effort", None)
+     in_fallback = supported and level != "default" and callable(requested) and not requested()
+     if in_fallback:
+       self.ui.warn(t("effort_fallback_active"))
+     elif level in ("max", "aggressive") and reasoning_effort_for(cfg):
+       self.ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
+     if level == "default" or not supported:
+       self.ui.info(t("effort_uncontrolled"))
+     if level == "aggressive":
+       self.ui.info(t("effort_aggressive_note"))
+     state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+     self.ui.info(t("token_save_state", state=state))
    def _handle_effort(self, arg: str) -> None:
      cfg = self.cfg_mgr.config
      aliases = {
+       "aggressive": "aggressive", "agresif": "aggressive", "saldırgan": "aggressive", "saldirgan": "aggressive",
        "max": "max", "maximum": "max", "maksimum": "max",
        "high": "high", "yüksek": "high", "yuksek": "high",
+       "hard": "hard", "zor": "hard", "sert": "hard",
        "medium": "medium", "orta": "medium",
        "low": "low", "düşük": "low", "dusuk": "low",
        "default": "default", "auto": "default", "varsayılan": "default", "varsayilan": "default",
      }
      if arg:
-       value = aliases.get(arg.strip().lower())
+       value = aliases.get(arg.strip().lower().replace("\u0307", ""))
        if not value:
          self.ui.warn(t("effort_usage"))
          return
+       previous = cfg.reasoning_effort
+       if value == "aggressive" and previous != "aggressive":
+         if not self._confirm_aggressive():
+           self.ui.warn(t("aggressive_cancelled", level=previous))
+           self.ui.refresh_footer() if hasattr(self.ui, "refresh_footer") else None
+           return
        cfg.reasoning_effort = value
-       self.agent.refresh_client()
-       if self.cfg_mgr.save():
-         self.ui.success(t("effort_saved", level=value))
+       if value == "aggressive":
+         # Aggressive always means maximum reasoning and no token saving.
+         cfg.token_save = False
+         saved = self.cfg_mgr.save()
+         self.agent.refresh_client()
+         self.ui.success(t("aggressive_enabled"))
+         if not saved:
+           self.ui.warn(t("settings_save_failed"))
        else:
-         self.ui.warn(t("effort_not_saved", level=value))
-     self.ui.info(t("effort_active", level=cfg.reasoning_effort))
-     supported = bool(reasoning_control_for(cfg.provider, cfg.model))
-     requested = getattr(self.agent.client, "requested_reasoning_effort", None)
-     in_fallback = supported and cfg.reasoning_effort != "default" and callable(requested) and not requested()
-     if in_fallback:
-       self.ui.warn(t("effort_fallback_active"))
-     elif cfg.reasoning_effort == "max" and reasoning_effort_for(cfg):
-       self.ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
-     if cfg.reasoning_effort == "default" or not supported:
-       self.ui.info(t("effort_uncontrolled"))
+         if not token_save_allowed(value):
+           cfg.token_save = False
+         saved = self.cfg_mgr.save()
+         self.agent.refresh_client()
+         if saved:
+           self.ui.success(t("effort_saved", level=value))
+         else:
+           self.ui.warn(t("effort_not_saved", level=value))
+         if previous == "aggressive":
+           self.ui.info(t("aggressive_left", level=value))
+           if not token_save_allowed(value):
+             self.ui.info(t("token_save_blocked", level=value))
+     self._show_effort_state()
+   def _handle_token_save(self, arg: str) -> None:
+     cfg = self.cfg_mgr.config
+     level = cfg.reasoning_effort
+     cmd = (arg or "").strip().lower().replace("\u0307", "")
+     if cmd in ("", "status", "durum", "state", "?"):
+       state = t("tok_on") if token_save_effective(cfg) else t("tok_off")
+       self.ui.info(t("token_save_state", state=state))
+       if not token_save_allowed(level):
+         self.ui.warn(t("token_save_blocked", level=level))
+       else:
+         self.ui.info(t("token_save_note"))
+       return
+     want_on = cmd in ("on", "aç", "ac", "acik", "açık", "aktif", "enable", "true", "1", "evet", "yes")
+     want_off = cmd in ("off", "kapat", "kapali", "kapalı", "pasif", "disable", "false", "0", "hayir", "hayır", "no")
+     if not (want_on or want_off):
+       self.ui.warn(t("token_save_usage"))
+       return
+     if want_on:
+       if not token_save_allowed(level):
+         self.ui.warn(t("token_save_blocked", level=level))
+         return
+       cfg.token_save = True
+       if self.cfg_mgr.save():
+         self.ui.success(t("token_save_on"))
+       else:
+         self.ui.warn(t("settings_save_failed"))
+       self.ui.info(t("token_save_note"))
+     else:
+       cfg.token_save = False
+       if self.cfg_mgr.save():
+         self.ui.success(t("token_save_off"))
+       else:
+         self.ui.warn(t("settings_save_failed"))
+     self.ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
    def _handle_tokens(self, arg: str) -> None:
      cfg = self.cfg_mgr.config
      ctx = self.agent.context
@@ -15433,7 +15834,7 @@ def _dm_module_26():
  from pathlib import Path
  from typing import List, Optional
  from docmind import __app_name__, __version__
- from docmind.config import PROVIDER_MAP, ConfigManager, get_provider_spec
+ from docmind.config import PROVIDER_MAP, ConfigManager, get_provider_spec, token_save_effective
  from docmind.core.agent import DocMindAgent
  from docmind.core.errors import classify_exception
  from docmind.core.providers import reasoning_control_for, reasoning_effort_for
@@ -15633,6 +16034,9 @@ def _dm_module_26():
      ui.info(t("effort_actual", actual=reasoning_effort_for(cfg)))
    if cfg.reasoning_effort == "default" or not reasoning_control_for(cfg.provider, cfg.model):
      ui.info(t("effort_uncontrolled"))
+   if cfg.reasoning_effort == "aggressive":
+     ui.info(t("effort_aggressive_note"))
+   ui.info(t("token_save_state", state=t("tok_on") if token_save_effective(cfg) else t("tok_off")))
    cli_images = []
    for raw_img_arg in (args.image or []):
      ok_ci, err_ci, meta_ci = load_image_attachment(raw_img_arg, agent.tools.cwd)

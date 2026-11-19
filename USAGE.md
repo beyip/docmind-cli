@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.1`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.2`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI `v1.1`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.2`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 
@@ -73,7 +73,7 @@ python DocMind.py
 
 ---
 
-## 4. Sending Images & Visual Debugging (`Vision` in `v1.1`)
+## 4. Sending Images & Visual Debugging (`Vision`)
 
 Supported formats: **`.png`, `.jpg`, `.jpeg`, `.webp`, `.gif`, `.bmp`** (BMP screenshots are automatically converted to lossless PNG in pure Python).
 
@@ -119,7 +119,71 @@ You can send screenshots or images in **5 easy ways**:
 
 ---
 
-## 6. Interactive Slash Commands
+## 6. Token Saving & Aggressive Reasoning Mode (`v1.2`)
+
+### 6.1 Token saving (default: **ON**)
+
+Turn it off or on at any time:
+
+```text
+DocMind ❯ /token-save off
+DocMind ❯ /token-save on
+DocMind ❯ /token-save status
+```
+
+The choice is saved in `~/.docmind-single/config.json` and restored on the next launch.
+
+**What it trims (and what it never touches)**
+
+| Trimmed when saving | Never trimmed | Why the AI stays equally smart |
+| :--- | :--- | :--- |
+| Older bulky `read_file` / `grep` / `web_fetch` / command output | The system prompt and all tool schemas | Instructions and capabilities are unchanged |
+| Large code/log blocks inside *earlier* turns (head + tail are kept) | Your current request and your own wording | Nothing you asked for is lost |
+| Duplicate pasted blobs above ~12k characters | File paths, error lines, tool names | The model can re-read a file whenever it needs the full text — the inserted marker says so explicitly |
+| Auto-compaction runs at 60% of the window instead of 78% | Tool-call / tool-result pairing | Compaction keeps every `(user → assistant → tool)` group atomic |
+
+The only side effect is *fewer* tokens for the same answer: no reasoning level is lowered, no tool is removed, and no instruction changes. If you ever need the raw, untouched context (for example when the model must diff a very large file verbatim), run `/token-save off`.
+
+### 6.2 Reasoning levels
+
+| Level | Sent to the API | Token saving |
+| :--- | :--- | :--- |
+| `low` | `low` | allowed (`on`/`off`) |
+| `medium` | `medium` (DeepSeek: `high`) | allowed (`on`/`off`) |
+| `default` | provider default (nothing sent) | allowed (`on`/`off`) |
+| `high` | `high` | **always off** |
+| `hard` | `high` (kept as its own level) | **always off** |
+| `max` | `max` / `xhigh` on OpenAI | **always off** |
+| `aggressive` | deepest level the model documents (`max` / `xhigh` / top `thinking`) | **always off** |
+
+### 6.3 `Aggressive` mode
+
+```text
+DocMind ❯ /effort aggressive
+```
+
+The **first time** you select it, DocMind shows this warning and waits for `Y` or `N`:
+
+- token saving is turned **off by default**,
+- it **may consume more tokens** (higher API cost),
+- very deep reasoning and full tool access are enabled.
+
+Press **`Y`** to activate it — every other system keeps working normally, and the model runs at full power. Press **`N`** (or just Enter) and nothing changes; your previous level is kept and reported back to you.
+
+If the provider rejects the deepest level, DocMind automatically retries one step lower (`high`) instead of dropping the reasoning parameter, and tells you about it.
+
+### 6.4 Mode compatibility guard
+
+```text
+DocMind ❯ /effort hard
+DocMind ❯ /token-save on
+[!] Token saving cannot be enabled in 'hard' mode. Aggressive, High and Hard modes
+    always keep it off; choose /effort medium or low first.
+```
+
+Switching to `aggressive`, `high`, `hard` or `max` forces token saving off (and persists that), while `low`, `medium` and `default` let you flip it freely.
+
+## 7. Interactive Slash Commands
 
 Type any of these commands at the `DocMind ❯` prompt (includes Tab completion and fuzzy typo suggestions):
 
@@ -138,7 +202,8 @@ Type any of these commands at the `DocMind ❯` prompt (includes Tab completion 
 | `/api` | Switch AI provider or update your API key |
 | `/model [name]` | Select or type a different model |
 | `/lang [code]` | Switch interface & AI language (`tr`, `en`, `az`, `de`, `es`, `fr`, `it`, `pt`, `nl`, `ru`, `ar`, `zh`, `ja`, `ko`) |
-| `/effort [level]` | Adjust reasoning effort (`low`, `medium`, `high`, `max`, `default`) |
+| `/effort [level]` | Adjust reasoning effort (`low`, `medium`, `high`, `hard`, `max`, `aggressive`, `default`). Turkish aliases: `/zeka dusuk/orta/yuksek/zor/maksimum/agresif` |
+| `/token-save [on\|off\|status]` | Toggle token saving (ON by default). Refused in `aggressive`/`high`/`hard` modes |
 | `/smart` | Enable **Smart Confirm** mode (green `+` / red `-` approval before file edits & commands) |
 | `/auto` | Enable **Full Auto** mode for file edits (terminal commands still require approval) |
 | `/os` | Display detected OS/Linux distribution, package managers, shells, and drives |
@@ -158,7 +223,7 @@ Type any of these commands at the `DocMind ❯` prompt (includes Tab completion 
 
 ---
 
-## 7. Command-Line Flags & Piped Input
+## 8. Command-Line Flags & Piped Input
 
 ```bash
 # Show version
@@ -182,13 +247,13 @@ python3 DocMind.py --lang en "Summarize @README.md in 5 bullet points"
 
 ---
 
-## 8. Resetting Configuration
+## 9. Resetting Configuration
 
 Inside DocMind CLI, run `/reset` and confirm to automatically delete your saved `.json` configuration file and close the terminal, or delete `~/.docmind-single/config.json` (`%USERPROFILE%\.docmind-single\config.json` on Windows) manually.
 
 ---
 
-## 9. Credits & License
+## 10. Credits & License
 
 - **Creator / Owner:** `DEVRAN E. / BEYİP_`
 - **License:** Released under the [MIT License](./LICENSE).

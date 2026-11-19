@@ -1,6 +1,6 @@
-# ⚡ DocMind CLI (`v1.1`)
+# ⚡ DocMind CLI (`v1.2`)
 
-![Version](https://img.shields.io/badge/version-1.1-06b6d4?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.2-06b6d4?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero%20(stdlib%20only)-22c55e?style=flat-square)
 ![Languages](https://img.shields.io/badge/languages-14-f97316?style=flat-square)
@@ -14,7 +14,22 @@
 
 ---
 
-## 🆕 What's New in `v1.1`
+## 🆕 What's New in `v1.2`
+
+- **🪙 Token Saving (ON by default, intelligence preserved):**
+  - New `/token-save off` / `/token-save on` (and `/token-save status`) commands, remembered across sessions.
+  - Only *older, bulky* tool output and pasted blobs are trimmed (head + tail kept, with an explicit "re-read the file if needed" marker); the system prompt, the current request, file paths and error lines are never touched, so answer quality and reasoning stay identical.
+  - Compaction now kicks in earlier while saving is active, which removes duplicate context that costs tokens without adding information.
+- **🧠 New `Aggressive` reasoning mode (`/effort aggressive`):**
+  - Switches token saving off and sends the deepest reasoning level the active model documents (`max` / `xhigh` / top `thinking` level).
+  - The first time you switch to it, DocMind shows a warning and asks **`Y` / `N`**: it disables token saving by default and may consume more tokens. Decline with `N` and the previous level is kept untouched.
+- **🔒 Mode compatibility guard:**
+  - `Aggressive`, `High` and `Hard` always keep token saving off — `/token-save on` is refused with a clear message.
+  - `Medium`, `Low` and `Default` allow token saving on or off, exactly as you prefer.
+- **🧩 `Hard` level:** `/effort hard` is now a first-class level alongside `low / medium / high / max` (sent to the API as `high`).
+- **🐞 Fixes:** German/Spanish/French/Russian `/help` no longer leak English option text, Anthropic dated model IDs (e.g. `claude-sonnet-4-5-20250929`) now receive reasoning control, a rejected `aggressive`/`max` request falls back one level instead of losing the reasoning parameter, `Tuple`/`Optional` typing imports that broke the rich UI and clipboard helpers were restored, and a `/help` footer line was added for `/token-save`.
+
+## 📦 What's New in `v1.1`
 
 - **🖼️ High-Precision Vision & Screenshot Debugging (`detail: "high"` + OCR + Smart Vision Bridge):**
   - Send screenshots, UI mockups, or error dialogs via **Drag & Drop**, **`/paste`** (directly from clipboard without saving a file!), **`/image <path>`**, **`@image.png`** mentions, **`--image`** CLI flags, or the autonomous **`inspect_image`** tool.
@@ -44,6 +59,7 @@
 - **Mandatory Terminal Consent & Transparent Reporting:** Every `run_command` and `python_eval` displays the exact shell, working directory, and command to ask for your explicit approval **before** execution, followed by a detailed execution summary.
 - **Self-Reflection, Error Triage & Rollback:** Automatically repairs fixable command/syntax errors while cleanly handing off interactive password/elevation (`sudo`/`root`/Administrator) commands without looping.
 - **Multi-Provider Support:** Works with **Google Gemini**, **Anthropic (Claude)**, **OpenAI**, **Groq**, **OpenRouter**, **DeepSeek**, and **Custom / Local OpenAI-Compatible** endpoints (Ollama, LM Studio, vLLM).
+- **Token Saving & Reasoning Control:** Tunable `/token-save` (on by default) plus `low / medium / high / hard / max / aggressive` reasoning levels with a first-run `Y/N` warning for `Aggressive`.
 - **Cryptographic Source Integrity:** Protected by **SHA-256 + 3072-bit RSA** signature verification (`OWNER: DEVRAN E. / BEYİP_`) to detect unauthorized tampering.
 
 ---
