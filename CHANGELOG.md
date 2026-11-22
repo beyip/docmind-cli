@@ -4,6 +4,37 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ---
 
+## `v1.4` — Parallel agents, device wording everywhere
+
+### Changed — agents now work in parallel
+- **Independent sub-agents run at the same time** (threads), so a team finishes as fast as its slowest
+  wave instead of adding up. Measured: three 0.3 s agents → **0.30 s** total, not 0.90 s.
+- **File ownership is respected.** Every agent declares the files it may write; agents that share a file
+  are placed in *different waves* so two threads can never overwrite each other. Independent agents share
+  a wave. (`test: 3 agents, two of them on app.py → waves [pixel, atlas], [nova]`)
+- **Each agent runs in its own shallow clone** of the agent object: own context slot, own stream buffers,
+  own tool whitelist. No shared mutable state, no crossed writes (`a.txt` and `b.txt` both land correctly).
+- **No terminal fighting:** sub-agents that run beside others skip the spinner, so the live feed stays
+  readable (`~ running 3 agents in parallel, 1 wave(s)` · `▶ wave 1/3: Nova, Pixel, Atlas`).
+- **Fault isolation:** an agent that raises is marked failed and the rest of the wave still finishes.
+- **New switch:** `/squad parallel on|off` (default **on**) and `squad_parallel` in the config file;
+  `parallel=False` in the engine still gives the old one-by-one behaviour.
+
+### Fixed — "computer" is now "device" in every language
+- The Turkish startup warning the user reported (**"AGENT BİLGİSAYARINIZA TAM YETKİLİDİR"**) is now
+  **"AGENT CİHAZINIZA TAM YETKİLİDİR"**, and the Turkish permission prompt says *cihazınızda*.
+- Also fixed: Spanish (`computadora` → `dispositivo`), French (`ordinateur` → `appareil`), Portuguese,
+  Russian, Azerbaijani, Chinese, Japanese, Korean — plus every English tool description and system-prompt
+  heading ("anywhere on the computer" → "anywhere on the device", "LIVE COMPUTER" → "LIVE DEVICE").
+- Verified with a source scan: **0** occurrences of bilgisayar / computadora / ordinateur / компьютер /
+  kompüter / computador / 计算机 / コンピューター / 컴퓨터 left in user-facing strings.
+
+### Fixed — planner robustness
+- A plan step with only a `role`/`notes` and no explicit goal no longer gets dropped (it used to make a
+  perfectly good 3-agent plan collapse to "0 usable steps").
+
+---
+
 ## `v1.3` — Squad Engine (task decomposition), mobile/Termux, sealed owner row
 
 ### Added — Squad Engine: DocMind splits the work into named agents

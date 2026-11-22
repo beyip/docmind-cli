@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '30489235babee8d9096351569894bfe9c6148bbcdc5489f4c5c2b273915b7aeb'
-_DM_SIGNATURE = '04e8386b1657fe4fda1328b0495081d2032b1d2d2482c7e1b59e95759f9f1f5bd0ffbfeca00c6451c6b54ab77b080d0564b61ac71773ac4f462299355229542c220139c630cec6da60eca33cefd5526af84db6f8fa6a86c0249506e4579b00e7970f5eca499cf9304bcc69020fde88c72b080cbd1b257941c47c32cd53e9542f938a448eeac94b98e3ed60c2b1b3e85e21f55b53b03cd9eca0ba1aec62ce457b4ae71641fa7f29a6e15e3a9bf614b41572b893979095df7ab9df12e3c575f23cb8691dd2b25a5f1c5ccf35f65ba76580d878e8752373196cc7b3ea0a6f4eef6dc8a4c3551c3ee87d0ed263aa8eca46c0d6fb5d049dbc1835b741cf81929de4d2cce775ca019648ae4bc384154e3864a174ed8d02ab7896b1d9741b971bd7b2e4f2c04697335bb75e7a292a6c98d86fcb1e53224d0d7749734750e532adbde1ac8da7e4026c2dbebd3b4e2e4ee0c74ced83870f454413e83e60e5555532689103aef3db5479ed4452f5432bd69ded430d21357b490c02ca5ad7f4915bc78644c6'
+_DM_SOURCE_HASH = 'e304de2bb0db851fba918aea6d7d2eb70ac223a5d3461b5b05ba60c13a2cf6a6'
+_DM_SIGNATURE = '34f8d400b9325dfe55526b0b41a2e8fbc5f12bbc3a22d00c01385016999e5996d4a778a83178b55223a668e88bf22d243df849f19c5d9c764086793d060feaecc2418a160e0d06ffd1777729b6b6ef7a8d727a64bc30cbad3fddc2d9635f32d9870d779fa8f453c2453db785a457dd4daa1ea41802f67c8ebd63ac6f392a252c71abdb264500c5472fdae72aa0f00ee20edc9e69c400d9e9b17db9de5c7a0a0922c314460dcc07562de8d90791898a219ecba9c7328fad8ad2c4ac8733435f814abd57ba571277997c44c065884959864b029650c575de63480ae0f049903a954fd674321ab123f7799ce0876e96bab30b18892ff585dfebbc14a15413cd7fd8868214288587b13c3a9101fae41499495a27000e3ea463acb2f47de029f48e26837203408907d67082d23ff262bc4d10b8b3b7c24e11ff114d1ed08edc75188eb37ab6e16d91fc8a9502eecd6140d923c1c0f36a68609efcea41619fb91eadc814f60e2ab473b09045ac6ce2f74e9b7b181158d1edd2f18112a539b8d0cd59d8'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -246,7 +246,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.3"
+ __version__ = "1.4"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -462,7 +462,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Bu yalnızca bağlantı testidir. Aktif modelin araç uyumluluğu için /doctor tools kullanın; ek ücret oluşabilir.",
     "thinking_rebase": "Claude bağlamı değiştiğinden eski imzalı düşünce blokları yeni isteğe eklenmedi; sohbet metni ve araç sonuçları korundu.",
     "usage_tokens_missing_detail": "Maliyet bildirilmiş olsa da {count} isteğin token verisi eksik. Dar ekranda * eksik veriyi gösterir.",
-    "startup_authority_warn": "⚠ UYARI: AGENT BİLGİSAYARINIZA TAM YETKİLİDİR — Tüm sürücüleri, klasörleri ve dosyaları görebilir, açabilir, düzenleyebilir ve (izninizle) terminal/sistem kodu çalıştırabilir. Dikkatli kullanın; doğabilecek işlemlerden sorumluluk kabul edilmez.",
+    "startup_authority_warn": "⚠ UYARI: AGENT CİHAZINIZA TAM YETKİLİDİR — Tüm sürücüleri, klasörleri ve dosyaları görebilir, açabilir, düzenleyebilir ve (izninizle) terminal/sistem kodu çalıştırabilir. Dikkatli kullanın; doğabilecek işlemlerden sorumluluk kabul edilmez.",
     "term_perm_title": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
     "term_perm_header": "TERMİNAL / KOD ÇALIŞTIRMA İZNİ GEREKLİ",
     "term_perm_denied": "Terminal / kod çalıştırma izni kullanıcı tarafından reddedildi.",
@@ -1347,7 +1347,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Solo prueba la conexión. /doctor tools prueba el modelo activo y puede tener coste.",
     "thinking_rebase": "Cambió el contexto de Claude: se omitieron bloques de razonamiento firmados; se conservaron texto y resultados de herramientas.",
     "usage_tokens_missing_detail": "Puede haberse informado el coste, pero faltan tokens de {count} solicitudes. * indica datos incompletos.",
-    "startup_authority_warn": "⚠ ADVERTENCIA: ESTE AGENTE TIENE ACCESO TOTAL A SU COMPUTADORA — Puede ver, abrir y editar cualquier disco, carpeta o archivo y ejecutar código en terminal (con su permiso). Úselo con precaución; no se acepta responsabilidad.",
+    "startup_authority_warn": "⚠ ADVERTENCIA: ESTE AGENTE TIENE ACCESO TOTAL A SU DISPOSITIVO — Puede ver, abrir y editar cualquier disco, carpeta o archivo y ejecutar código en terminal (con su permiso). Úselo con precaución; no se acepta responsabilidad.",
     "term_perm_title": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
     "term_perm_header": "PERMISO REQUERIDO PARA EJECUTAR EN TERMINAL",
     "term_perm_denied": "Ejecución en terminal rechazada por el usuario.",
@@ -1359,7 +1359,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Entorno",
     "term_perm_cwd": "Carpeta de trabajo",
     "term_perm_code": "CÓDIGO A EJECUTAR",
-    "term_perm_prompt": "¿Permite ejecutar este comando en su computadora? [S]í / [N]o: ",
+    "term_perm_prompt": "¿Permite ejecutar este comando en su dispositivo? [S]í / [N]o: ",
     "term_perm_reprompt": "Escriba 's' (sí) o 'n' (no): ",
     "term_used_header": "TERMINAL UTILIZADA",
     "term_used_code": "CÓDIGO UTILIZADO",
@@ -1632,7 +1632,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Test de connexion uniquement. /doctor tools teste le modèle actif ; frais possibles.",
     "thinking_rebase": "Le contexte Claude a changé : les anciens blocs de réflexion signés sont omis ; le texte et les résultats sont conservés.",
     "usage_tokens_missing_detail": "Le coût peut être fourni, mais les tokens de {count} requêtes manquent. * signale des données incomplètes.",
-    "startup_authority_warn": "⚠ AVERTISSEMENT : CET AGENT DISPOSE D'UN ACCÈS COMPLET À VOTRE ORDINATEUR — Il peut voir, ouvrir et modifier tous les fichiers/dossiers et exécuter du code terminal (avec votre autorisation). Utilisez avec prudence ; aucune responsabilité acceptée.",
+    "startup_authority_warn": "⚠ AVERTISSEMENT : CET AGENT DISPOSE D'UN ACCÈS COMPLET À VOTRE APPAREIL — Il peut voir, ouvrir et modifier tous les fichiers/dossiers et exécuter du code terminal (avec votre autorisation). Utilisez avec prudence ; aucune responsabilité acceptée.",
     "term_perm_title": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
     "term_perm_header": "AUTORISATION D'EXÉCUTION TERMINAL REQUISE",
     "term_perm_denied": "Exécution dans le terminal refusée par l'utilisateur.",
@@ -1644,7 +1644,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Environnement",
     "term_perm_cwd": "Dossier de travail",
     "term_perm_code": "CODE À EXÉCUTER",
-    "term_perm_prompt": "Autoriser l'exécution de cette commande sur votre ordinateur ? [O]ui / [N]on : ",
+    "term_perm_prompt": "Autoriser l'exécution de cette commande sur votre appareil ? [O]ui / [N]on : ",
     "term_perm_reprompt": "Veuillez saisir 'o' (oui) ou 'n' (non) : ",
     "term_used_header": "TERMINAL UTILISÉ",
     "term_used_code": "CODE UTILISÉ",
@@ -1929,7 +1929,7 @@ def _dm_module_01():
     "term_perm_shell": "Оболочка / Среда",
     "term_perm_cwd": "Рабочая папка",
     "term_perm_code": "КОД ДЛЯ ВЫПОЛНЕНИЯ",
-    "term_perm_prompt": "Разрешить выполнение этой команды на вашем компьютере? [Д]а / [Н]ет: ",
+    "term_perm_prompt": "Разрешить выполнение этой команды на вашем устройстве? [Д]а / [Н]ет: ",
     "term_perm_reprompt": "Введите 'y'/'д' (да) или 'n'/'н' (нет): ",
     "term_used_header": "ИСПОЛЬЗОВАН ТЕРМИНАЛ",
     "term_used_code": "ИСПОЛЬЗОВАННЫЙ КОД",
@@ -2214,7 +2214,7 @@ def _dm_module_01():
     "term_perm_shell": "Qabıq / Mühit",
     "term_perm_cwd": "İş Qovluğu",
     "term_perm_code": "İCRA EDİLƏCƏK KOD",
-    "term_perm_prompt": "Bu terminal/sistem əmrinin kompüterinizdə işləməsinə icazə verirsiniz? [B]əli / [X]eyr: ",
+    "term_perm_prompt": "Bu terminal/sistem əmrinin cihazınızda işləməsinə icazə verirsiniz? [B]əli / [X]eyr: ",
     "term_perm_reprompt": "Təsdiq üçün 'y'/'b', rədd etmək üçün 'n'/'x' yazın: ",
     "term_used_header": "TERMİNAL İSTİFADƏ EDİLDİ",
     "term_used_code": "İSTİFADƏ EDİLƏN KOD",
@@ -2784,7 +2784,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Ambiente",
     "term_perm_cwd": "Diretório de trabalho",
     "term_perm_code": "CÓDIGO A EXECUTAR",
-    "term_perm_prompt": "Permitir que este comando seja executado no seu computador? [S]im / [N]ão: ",
+    "term_perm_prompt": "Permitir que este comando seja executado no seu dispositivo? [S]im / [N]ão: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "TERMINAL UTILIZADO",
     "term_used_code": "CÓDIGO UTILIZADO",
@@ -3627,7 +3627,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
     "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
     "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
-    "startup_authority_warn": "⚠ 警告：此智能体拥有完整系统访问权限 — 可查看、打开和编辑计算机上的任何磁盘、文件夹或文件，并在您批准后执行终端命令。请谨慎使用，开发者不承担任何责任。",
+    "startup_authority_warn": "⚠ 警告：此智能体拥有完整系统访问权限 — 可查看、打开和编辑设备上的任何磁盘、文件夹或文件，并在您批准后执行终端命令。请谨慎使用，开发者不承担任何责任。",
     "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
     "term_perm_header": "需要终端 / 代码执行权限",
     "term_perm_denied": "用户已拒绝执行终端命令。",
@@ -3639,7 +3639,7 @@ def _dm_module_01():
     "term_perm_shell": "终端环境",
     "term_perm_cwd": "工作目录",
     "term_perm_code": "待执行代码",
-    "term_perm_prompt": "是否允许在您的计算机上执行此终端命令？[Y]是 / [N]否: ",
+    "term_perm_prompt": "是否允许在您的设备上执行此终端命令？[Y]是 / [N]否: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "已使用终端",
     "term_used_code": "已执行代码",
@@ -3924,7 +3924,7 @@ def _dm_module_01():
     "term_perm_shell": "シェル / 実行環境",
     "term_perm_cwd": "作業ディレクトリ",
     "term_perm_code": "実行されるコード",
-    "term_perm_prompt": "このコマンドをコンピュータで実行してもよろしいですか？ [Y]はい / [N]いいえ: ",
+    "term_perm_prompt": "このコマンドをデバイスで実行してもよろしいですか？ [Y]はい / [N]いいえ: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "ターミナル実行結果",
     "term_used_code": "実行されたコード",
@@ -4197,7 +4197,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
     "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
     "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
-    "startup_authority_warn": "⚠ 경고: 이 에이전트는 전체 시스템 접근 권한을 가집니다 — 컴퓨터의 모든 드라이브, 폴더, 파일을 열람·수정하고 (사용자 승인 하에) 터미널 명령을 실행할 수 있습니다. 주의해서 사용하세요.",
+    "startup_authority_warn": "⚠ 경고: 이 에이전트는 전체 시스템 접근 권한을 가집니다 — 기기의 모든 드라이브, 폴더, 파일을 열람·수정하고 (사용자 승인 하에) 터미널 명령을 실행할 수 있습니다. 주의해서 사용하세요.",
     "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
     "term_perm_header": "터미널 / 코드 실행 권한 필요",
     "term_perm_denied": "사용자가 터미널/코드 실행을 거부했습니다.",
@@ -4209,7 +4209,7 @@ def _dm_module_01():
     "term_perm_shell": "셸 / 실행 환경",
     "term_perm_cwd": "작업 디렉터리",
     "term_perm_code": "실행할 코드",
-    "term_perm_prompt": "이 명령을 컴퓨터에서 실행하도록 허용하시겠습니까? [Y]예 / [N]아니오: ",
+    "term_perm_prompt": "이 명령을 기기에서 실행하도록 허용하시겠습니까? [Y]예 / [N]아니오: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "터미널 실행 완료",
     "term_used_code": "실행된 코드",
@@ -4526,6 +4526,8 @@ def _dm_module_03():
    # v1.3 Squad Engine: ask | auto | off, plus the agent cap.
    squad_mode: str = "ask"
    squad_max_agents: int = 6
+   # v1.4: agents run at the same time (file owners are separated into waves).
+   squad_parallel: bool = True
    # v1.3 automatic web research: search without the user typing /search.
    auto_search: bool = True
    # v1.3 terminal fidelity on phones / Termux.
@@ -5187,7 +5189,7 @@ _dm_install('docmind.tools.backup', _dm_module_05, False)
 def _dm_module_06():
  """
  DocMind Universal Cross-Platform Filesystem & Document Tools (Windows / Linux / macOS)
- Full computer-wide file reading (text, UTF-16, CP1254, DOCX, XLSX, PPTX, ODT/ODS/ODP,
+ Full device-wide file reading (text, UTF-16, CP1254, DOCX, XLSX, PPTX, ODT/ODS/ODP,
  PDF, SQLite, ZIP/TAR, binary metadata), atomic writing, surgical editing with UndoManager,
  directory navigation, drive & special-folder discovery, and archive management.
  """
@@ -6520,7 +6522,7 @@ _dm_install('docmind.tools.filesystem', _dm_module_06, False)
 def _dm_module_07():
  """
  Heuristic credential-vault & SSRF guard.
- Full computer-wide filesystem access IS enabled across all drives and folders
+ Full device-wide filesystem access IS enabled across all drives and folders
  (Desktop, Downloads, Documents, C:\\, D:\\, /home, /etc, /opt, etc.); only private
  cryptographic keys / credential stores and localhost SSRF URLs trigger extra consent.
  """
@@ -6566,7 +6568,7 @@ def _dm_module_07():
      for pat in DANGEROUS_COMMAND_PATTERNS
    )
  def sensitive_path(raw: str, cwd: Path) -> bool:
-   """Return True ONLY for private key/credential vaults (never blocks normal computer folders)."""
+   """Return True ONLY for private key/credential vaults (never blocks normal user folders)."""
    if not raw:
      return False
    try:
@@ -13078,6 +13080,8 @@ def _dm_module_20():
  SLASH_COMMANDS = [
    "/help",
    "/search",
+   "/squad",
+   "/mobile",
    "/image",
    "/paste",
    "/copy",
@@ -13706,7 +13710,7 @@ _dm_install('docmind.ui.console', _dm_module_20, False)
 def _dm_module_21():
  """
  DocMind Smart Permission & Mandatory Terminal Consent Guard
- - Read-only & navigation tools execute seamlessly across the entire computer.
+ - Read-only & navigation tools execute seamlessly across the entire device.
  - Terminal & Python execution (run_command, python_eval) ALWAYS ask explicit user
    approval BEFORE running (even in 'auto' mode) and show the exact command/code.
  - Catastrophic OS destruction patterns require typing the full confirmation word.
@@ -13882,7 +13886,7 @@ _dm_install('docmind.core.permissions', _dm_module_21, False)
 def _dm_module_22():
  """
  DocMind Central Tool Registry & Universal Cross-Platform Dispatcher
- Provides 20 JSON Schemas for full computer access (Windows & Linux), enforces
+ Provides 20 JSON Schemas for full device access (Windows & Linux), enforces
  mandatory pre-execution user consent for terminal/code execution, displays
  'TERMİNAL KULLANILDI' & 'KULLANILAN KOD : ...', renders unified diffs, and
  safely handles all errors so the agent loop never crashes.
@@ -13937,7 +13941,7 @@ def _dm_module_22():
   {
     "name": "read_file",
     "description": (
-      "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the computer (supports absolute paths, ~, %USERPROFILE%, Desktop, "
+      "ONLY use when the user asks to read/inspect/edit a specific file or document. NEVER call proactively on CWD files during greetings or general questions. Read any file anywhere on the device (supports absolute paths, ~, %USERPROFILE%, Desktop, "
       "Downloads, Documents, localized OS folder names, C:\\..., /etc/..., etc.). Automatically decodes UTF-8/UTF-16/CP1254 "
       "text & code, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), OpenDocument (.odt/.ods/.odp), PDF (.pdf), "
       "SQLite (.sqlite/.db), archives (.zip/.tar.gz), and binary/image metadata."
@@ -13945,7 +13949,7 @@ def _dm_module_22():
     "parameters": {
       "type": "object",
       "properties": {
-        "path": {"type": "string", "description": "File path anywhere on the computer."},
+        "path": {"type": "string", "description": "File path anywhere on the device."},
         "offset": {"type": "integer", "description": "1-based starting line number (default 1)."},
         "limit": {"type": "integer", "description": "Maximum number of lines to return (default 400)."},
       },
@@ -13954,7 +13958,7 @@ def _dm_module_22():
   },
   {
     "name": "write_file",
-    "description": "Create a new file or overwrite an existing file anywhere on the computer. Automatically creates parent folders.",
+    "description": "Create a new file or overwrite an existing file anywhere on the device. Automatically creates parent folders.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -13966,7 +13970,7 @@ def _dm_module_22():
   },
   {
     "name": "edit_file",
-    "description": "Surgically edit an existing file anywhere on the computer by replacing old_text with new_text.",
+    "description": "Surgically edit an existing file anywhere on the device by replacing old_text with new_text.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14003,7 +14007,7 @@ def _dm_module_22():
   },
   {
     "name": "delete_path",
-    "description": "Delete a file or directory anywhere on the computer.",
+    "description": "Delete a file or directory anywhere on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14014,7 +14018,7 @@ def _dm_module_22():
   },
   {
     "name": "move_or_copy",
-    "description": "Move, rename, or copy a file or directory anywhere on the computer.",
+    "description": "Move, rename, or copy a file or directory anywhere on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14031,7 +14035,7 @@ def _dm_module_22():
   },
   {
     "name": "list_directory",
-    "description": "ONLY use when the user asks what is inside a folder/project or when locating a requested file. NEVER call for general chat/questions. List files and folders inside any directory on the computer.",
+    "description": "ONLY use when the user asks what is inside a folder/project or when locating a requested file. NEVER call for general chat/questions. List files and folders inside any directory on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14044,7 +14048,7 @@ def _dm_module_22():
   },
   {
     "name": "change_directory",
-    "description": "Change the active working directory (cd) to any folder on the computer.",
+    "description": "Change the active working directory (cd) to any folder on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14063,7 +14067,7 @@ def _dm_module_22():
   },
   {
     "name": "archive_tool",
-    "description": "List, extract, or create .zip and .tar.gz archives anywhere on the computer.",
+    "description": "List, extract, or create .zip and .tar.gz archives anywhere on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14081,7 +14085,7 @@ def _dm_module_22():
   },
   {
     "name": "search_files",
-    "description": "Find files by glob pattern (e.g. '*.pdf', '*rapor*', '*.py') inside any folder or drive on the computer.",
+    "description": "Find files by glob pattern (e.g. '*.pdf', '*rapor*', '*.py') inside any folder or drive on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14095,7 +14099,7 @@ def _dm_module_22():
   },
   {
     "name": "grep_search",
-    "description": "Search file contents using regex or literal text inside any file or folder on the computer.",
+    "description": "Search file contents using regex or literal text inside any file or folder on the device.",
     "parameters": {
       "type": "object",
       "properties": {
@@ -14154,7 +14158,7 @@ def _dm_module_22():
   {
     "name": "python_eval",
     "description": (
-      "Execute a Python 3 snippet/code on the user's computer and return real stdout/stderr. Use whenever the user asks/chooses to run Python code (including printing Hello World, calculations, scripts, or verifications). Do NOT call during casual greetings or when the user chose explanation-only mode. Always asks user approval before executing."
+      "Execute a Python 3 snippet/code on the user's device and return real stdout/stderr. Use whenever the user asks/chooses to run Python code (including printing Hello World, calculations, scripts, or verifications). Do NOT call during casual greetings or when the user chose explanation-only mode. Always asks user approval before executing."
     ),
     "parameters": {
       "type": "object",
@@ -14272,7 +14276,7 @@ def _dm_module_22():
     "name": "inspect_image",
     "description": (
       "Load and visually inspect an image or screenshot (.png, .jpg, .jpeg, .webp, .gif, .bmp) from anywhere on "
-      "the computer so you can read UI screens, terminal error screenshots, diagrams, or photos and solve issues."
+      "the device so you can read UI screens, terminal error screenshots, diagrams, or photos and solve issues."
     ),
     "parameters": {
       "type": "object",
@@ -14928,6 +14932,7 @@ def _dm_module_24():
  from itertools import islice
  import platform
  import sys
+ import threading
  import time
  from datetime import datetime
  from pathlib import Path
@@ -15251,7 +15256,11 @@ def _dm_module_24():
     allowed = {str(t).lower() for t in (step.get("tools") or [])}
     previous_ctx = self.context
     previous_steps = self.config_mgr.config.max_steps_per_turn
+    previous_chunks = self._streamed_chunks
+    previous_streamed = self._streamed_text
     cap = max(3, min(int(max_rounds), 20))
+    self._streamed_chunks = []
+    self._streamed_text = False
     self.context = ConversationContext()
     self.context.add_user(prompt)
     self._squad_tool_filter = allowed or None
@@ -15298,6 +15307,8 @@ def _dm_module_24():
       self.context = previous_ctx
       self.config_mgr.config.max_steps_per_turn = previous_steps
       self._squad_tool_filter = None
+      self._streamed_chunks = previous_chunks
+      self._streamed_text = previous_streamed
     return {"ok": ok, "rounds": rounds, "report": report.strip(), "error": error}
 
   def _run_squad_tool(self, handle: str, tc: Any) -> None:
@@ -15408,7 +15419,7 @@ def _dm_module_24():
     os_family = os_prof.get("os_family", platform.system())
     pkg_str = ", ".join(os_prof.get("pkg_managers") or []) or "none detected"
     dev_str = ", ".join(os_prof.get("dev_tools") or []) or "python"
-    device_kind = "phone or tablet (Termux/Android)" if _DM_MOBILE else "computer"
+    device_kind = "phone or tablet (Termux/Android)" if _DM_MOBILE else "computer / desktop"
     device_line = "- Device: " + device_kind
     if _DM_STORAGE_ROOT:
       device_line += " | shared storage root: " + _DM_STORAGE_ROOT
@@ -15473,7 +15484,7 @@ def _dm_module_24():
       "  • When `ACTIVE USER SELECTION` is set at the bottom of this prompt, obey it strictly (either explain-only with zero tools, or immediately execute via `run_command` / `python_eval`).\n"
       "  • If `ACTIVE USER SELECTION` is NOT set and the user asks something that could EITHER be explained OR executed in the terminal (e.g. running a command, printing output with Python/shell, checking a live system metric, running a task), "
       f"FIRST call `ask_user` in **{lang_name}** with 2 choices: [1] Explain how to do it vs [2] Run it directly in the terminal, then strictly follow their choice!\n\n"
-      "## LIVE COMPUTER & DISTRO ENVIRONMENT\n"
+      "## LIVE DEVICE & DISTRO ENVIRONMENT\n"
       f"- Date/Time: {now_str}\n"
       f"- Exact OS / Distro: {pretty_os} (Family: {os_family}, ID: {os_prof.get('distro_id', 'unknown')}, Arch: {platform.machine()})\n"
       f"- Desktop / Display Session: {os_prof.get('desktop', 'unknown')}\n"
@@ -15498,8 +15509,8 @@ def _dm_module_24():
       f"DO NOT retry privileged/password commands! Explain clearly in **{lang_name}** why elevation is required and provide the exact ready-to-copy command for the user to run in their own terminal.\n"
       "     • **Case B — Fixable by Agent (`AGENT_SELF_REPAIR_POSSIBLE`)**: Fix the command/code, request approval via `run_command` / `python_eval`, and verify the result.\n"
       "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
-      "3. **Full Computer Access When Requested & Security**:\n"
-      "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their computer (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
+      "3. **Full Device Access When Requested & Security**:\n"
+      "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their device (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
       "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys.\n"
       "4. **Search On Your Own When The Task Needs It (v1.3)**:\n"
       "   - The user does NOT have to type `/search`. Whenever a request needs live or external facts "
@@ -15578,6 +15589,11 @@ def _dm_module_24():
     compaction_attempted = False
     invalid_tool_retried = False
     while True:
+      _agent_ctx = getattr(threading.current_thread(), "ctx", None)
+      if _agent_ctx is None and getattr(threading.current_thread(), "docmind_agent", False):
+        _agent_ctx = getattr(self, "_thread_ctx", None) or self.context
+      if _agent_ctx is not None:
+        self.context = _agent_ctx
       spec = get_provider_spec(self.config_mgr.config.provider)
       context_limit, _ = context_limit_for(self.config_mgr.config)
       token_save = token_save_effective(self.config_mgr.config)
@@ -15612,12 +15628,21 @@ def _dm_module_24():
       try:
         self._streamed_text = False
         self._streamed_chunks = []
-        with self.ui.spinner(t("thinking")):
+        _parallel_child = bool(getattr(threading.current_thread(), "squad_agent", False))
+        if _parallel_child:
+          # a sub-agent running beside others: no spinner, no shared terminal cursor
           resp = self.client.generate(
             system_prompt=sys_prompt,
             messages=self.context.messages,
             tools=tool_schemas,
           )
+        else:
+          with self.ui.spinner(t("thinking")):
+            resp = self.client.generate(
+              system_prompt=sys_prompt,
+              messages=self.context.messages,
+              tools=tool_schemas,
+            )
         if auto_retries:
           self._finish_streamed_message(fast=bool(resp.tool_calls))
           self.ui.success(t("retry_ok"))
@@ -16314,6 +16339,23 @@ def _dm_module_27():
       self.events.append({"t": self._stamp(), "kind": "fail", "agent": handle, "text": task["error"]})
       self._emit("  %s %-8s failed: %s" % ("[X]", task.get("name", handle), task["error"][:120]))
 
+  def parallel_note(self, waves: int, agents: int) -> None:
+    """Announce how the team is being scheduled."""
+    with self._lock:
+      if waves:
+        text = "running %d agents in parallel, %d wave(s)" % (agents, waves)
+      else:
+        text = "running %d agents one by one" % agents
+      self.events.append({"t": self._stamp(), "kind": "schedule", "text": text})
+      self._emit("  %s %s" % (squad_glyph("~", "~"), text))
+
+  def wave(self, index: int, total: int, handles: Sequence[str]) -> None:
+    with self._lock:
+      names = ", ".join(sorted(self.tasks.get(h, {}).get("name", h) for h in handles))
+      text = "wave %d/%d: %s" % (index, total, names)
+      self.events.append({"t": self._stamp(), "kind": "wave", "text": text})
+      self._emit("  %s %s" % (squad_glyph("▶", ">"), text))
+
   def stop(self, handle: str, reason: str) -> None:
     with self._lock:
       task = self.tasks.setdefault(handle, {"name": handle})
@@ -16409,7 +16451,7 @@ def _dm_module_27():
               rounds_per_agent: int = SQUAD_MAX_ROUNDS_PER_AGENT,
               time_budget: float = SQUAD_TIME_BUDGET_S,
               feed: Optional[SquadFeed] = None,
-              parallel: bool = False,
+              parallel: bool = True,
               lead_note: str = "") -> Dict[str, Any]:
   """Plan with the lead model, then run every step as its own agent.
 
@@ -16451,27 +16493,87 @@ def _dm_module_27():
   deadline = time.monotonic() + max(60.0, float(time_budget))
   child_rounds = 0
   any_done = False
+  def _file_key(path: str) -> str:
+    try:
+      clean = str(path).replace("\\", "/").strip().lstrip("./")
+      return clean.lower() or str(path)
+    except Exception:
+      return str(path)
+
+  # Parallel by default: every agent owns its files, so they can work at the same time.
+  # Two agents that share a file are put in different waves so they never write together.
+  waves: List[List[Dict[str, Any]]] = []
   for step in steps:
+    owned = {_file_key(f) for f in (step.get("files") or []) if str(f).strip()}
+    placed = False
+    for wave in waves:
+      busy = {_file_key(f) for other in wave for f in (other.get("files") or []) if str(f).strip()}
+      if not (owned & busy):
+        wave.append(step)
+        placed = True
+        break
+    if not placed:
+      waves.append([step])
+
+  completed_rounds: List[int] = [0]
+  completed_rounds_lock = threading.Lock()
+
+  def _run_one(step: Dict[str, Any], budget_left: int) -> None:
     if time.monotonic() > deadline:
       feed.stop(step["handle"], "time budget spent")
-      continue
-    if child_rounds >= SQUAD_MAX_CHILD_ROUNDS_TOTAL:
-      feed.stop(step["handle"], "round budget spent")
-      continue
+      return
+    remaining_slots = max(1, budget_left - completed_rounds[0])
     try:
       outcome = runner(squad_agent_prompt(step, user_request, lead_note),
                        step=step, feed=feed,
-                       max_rounds=min(int(rounds_per_agent),
-                                      SQUAD_MAX_CHILD_ROUNDS_TOTAL - child_rounds))
-      child_rounds += int((outcome or {}).get("rounds", 0)) if isinstance(outcome, dict) else 0
-      if isinstance(outcome, dict) and outcome.get("ok"):
-        feed.done(step["handle"], outcome.get("report", ""))
-        any_done = True
-      else:
-        feed.failed(step["handle"], (outcome or {}).get("error", "no result"))
+                       max_rounds=min(int(rounds_per_agent), remaining_slots))
     except Exception as exc:
       feed.failed(step["handle"], "%s: %s" % (type(exc).__name__, exc))
-  result["ok"] = any_done
+      return
+    if isinstance(outcome, dict):
+      with completed_rounds_lock:
+        completed_rounds[0] += int(outcome.get("rounds", 0) or 0)
+      if outcome.get("ok"):
+        feed.done(step["handle"], outcome.get("report", ""))
+        result.setdefault("finished", []).append(step["handle"])
+      else:
+        feed.failed(step["handle"], outcome.get("error") or "no result")
+    else:
+      feed.failed(step["handle"], "no result")
+
+  budget_total = SQUAD_MAX_CHILD_ROUNDS_TOTAL
+  if parallel:
+    feed.parallel_note(len(waves), len(steps))
+    for wave_index, wave in enumerate(waves, 1):
+      if time.monotonic() > deadline:
+        for step in wave:
+          feed.stop(step["handle"], "time budget spent")
+        continue
+      feed.wave(wave_index, len(waves), [s["handle"] for s in wave])
+      if len(wave) == 1:
+        _run_one(wave[0], budget_total)
+      else:
+        threads = []
+        for step in wave:
+          thread = threading.Thread(target=_run_one, args=(step, budget_total),
+                                    name="docmind-agent-" + step["handle"], daemon=True)
+          thread.squad_agent = True
+          threads.append(thread)
+        for thread in threads:
+          thread.start()
+        for thread in threads:
+          thread.join(timeout=max(30.0, deadline - time.monotonic()))
+          if thread.is_alive():
+            feed.stop(thread.name.replace("docmind-agent-", ""), "thread outlived the budget")
+    result["waves"] = [[s["handle"] for s in wave] for wave in waves]
+    result["parallel"] = True
+  else:
+    feed.parallel_note(0, len(steps))
+    for step in steps:
+      _run_one(step, budget_total)
+    result["waves"] = [[s["handle"] for s in steps]]
+    result["parallel"] = False
+  result["ok"] = bool(result.get("finished")) or any_done
   return result
 
 
@@ -16488,6 +16590,8 @@ def _dm_module_27():
     return "off", ""
   if head in ("force", "always", "auto"):
     return "force", "auto"
+  if head in ("parallel", "paralel", "par"):
+    return "parallel", " ".join(bits[1:])
   if head in ("agents", "max", "limit"):
     return "agents", " ".join(bits[1:])
   return "status", ""
@@ -17399,6 +17503,12 @@ def _dm_module_25():
       except (TypeError, ValueError):
         self.ui.warn("usage: /squad agents <2-8>")
       return
+    if action == "parallel":
+      cfg.squad_parallel = str(value or "on").lower() not in ("off", "0", "false", "hayir", "hayır", "kapali", "kapalı")
+      self.cfg_mgr.save()
+      self.ui.success("squad parallelism: %s" % ("ON (agents run together)" if cfg.squad_parallel
+                                                 else "OFF (one agent at a time)"))
+      return
     live = getattr(self.agent, "squad_feed", None)
     if live:
       body = squad_dashboard(live, getattr(self.agent, "_squad_request", ""), cfg.squad_mode)
@@ -17412,6 +17522,11 @@ def _dm_module_25():
         "/squad auto    split complex requests without asking",
         "/squad off     single agent only",
         "/squad agents 4",
+        "/squad parallel on|off   (default: on)",
+        "",
+        "Parallel mode runs independent agents in threads at the same time;",
+        "agents that share a file are placed in separate waves, so nothing is",
+        "overwritten. A run finishes as fast as its slowest wave.",
       ])
     self.ui.print_panel("SQUAD / TEAM", body, style="bright_cyan")
     return

@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.2`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.4`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI `v1.2`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.4`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 
@@ -349,11 +349,11 @@ Inside DocMind CLI, run `/reset` and confirm to automatically delete your saved 
 
 
 ## v1.3 commands
-| `/squad` | Team mode: `status`, `on`, `off`, `auto`, `agents <2-8>` — split complex work into named sub-agents |
+| `/squad` | Team mode: `status`, `on`, `off`, `auto`, `agents <2-8>`, `parallel on\|off` — split complex work into named sub-agents |
 | `/mobile` | Mobile/Termux profile: `on`, `off`, `ascii`, `unicode`, `status` |
 
 
-## v1.3 — Squad Engine at a glance
+## v1.3+ — Squad Engine at a glance
 
 Ask for something complex and DocMind offers a choice:
 
@@ -383,3 +383,23 @@ perfection audit still has the last word.
 
 **Mobile (Termux):** `pkg install python`, then `python DocMind.py`. Run `termux-setup-storage` once so the
 agent can see `~/storage/shared`; `/mobile` confirms what it detected.
+
+
+### Parallel by default (v1.4)
+
+```
+~ running 3 agents in parallel, 1 wave(s)
+▶ wave 1/1: Atlas, Nova, Pixel
+   ... Pixel is thinking
+   • Nova writing src/api.py
+   • Atlas running pytest -q
+[OK] Nova     finished
+[OK] Pixel    finished
+[OK] Atlas    finished
+```
+
+Agents that write **different** files share a wave and run at the same time. Agents that write the **same**
+file are pushed into separate waves, so a file is never written by two threads at once. Every agent gets its
+own copy of the conversation state, its own tool whitelist and its own round cap.
+
+`/squad parallel off` returns to one-at-a-time execution.
