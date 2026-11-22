@@ -346,3 +346,40 @@ Inside DocMind CLI, run `/reset` and confirm to automatically delete your saved 
 
 - **Creator / Owner:** `DEVRAN E. / BEYİP_`
 - **License:** Released under the [MIT License](./LICENSE).
+
+
+## v1.3 commands
+| `/squad` | Team mode: `status`, `on`, `off`, `auto`, `agents <2-8>` — split complex work into named sub-agents |
+| `/mobile` | Mobile/Termux profile: `on`, `off`, `ascii`, `unicode`, `status` |
+
+
+## v1.3 — Squad Engine at a glance
+
+Ask for something complex and DocMind offers a choice:
+
+```
+[1] Görev parçalama: küçük ajanlar oluşturayım (plan + isimler + paralel iş)
+[2] Tek ajan: parçalamadan DocMind kendisi yapsın
+```
+
+Pick **[1]** and the terminal streams the team live:
+
+```
+  * DocMind planning the work
+  * DocMind plan ready: 3 agents (Nova/planner, Pixel/ui_builder, Atlas/tester)
+  > Nova     map the folder and write SQUAD_PLAN.md
+     ... Nova is thinking
+  [OK] Nova     finished
+  > Pixel    build src/ui.py
+     - Pixel writing src/ui.py
+  [OK] Pixel    finished
+  > Atlas    run the tests
+     - Atlas running pytest -q
+  [OK] Atlas    finished
+```
+
+Everything lands in `SQUAD_PLAN.md` plus `SQUAD_LOG_<timestamp>.json`; DocMind reviews the result and the
+perfection audit still has the last word.
+
+**Mobile (Termux):** `pkg install python`, then `python DocMind.py`. Run `termux-setup-storage` once so the
+agent can see `~/storage/shared`; `/mobile` confirms what it detected.

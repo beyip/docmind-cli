@@ -1,18 +1,26 @@
-# ⚡ DocMind CLI (`v1.2`)
+# ⚡ DocMind CLI (`v1.3`)
 
-![Version](https://img.shields.io/badge/version-1.2-06b6d4?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3-22c55e?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero%20(stdlib%20only)-22c55e?style=flat-square)
 ![Languages](https://img.shields.io/badge/languages-14-f97316?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-a855f7?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20Termux%2FAndroid-a855f7?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-eab308?style=flat-square)
 
-**DocMind CLI** is a self-contained, **zero-dependency** (Python standard library only), cross-platform autonomous **Command-Line Interface (CLI) AI Agent** built for software engineering, high-precision screenshot & visual debugging, live internet research & fact verification, full-system file & document management, and transparent OS-aware terminal automation across **Windows**, **Linux** (**Arch Linux**, **Ubuntu/Debian**, **Fedora**, etc.), and **macOS**.
+**DocMind CLI** is a self-contained, **zero-dependency** (Python standard library only), cross-platform autonomous **Command-Line Interface (CLI) AI Agent** built for software engineering, high-precision screenshot & visual debugging, live internet research & fact verification, full-system file & document management, and transparent OS-aware terminal automation across **Windows**, **Linux** (**Arch Linux**, **Ubuntu/Debian**, **Fedora**, etc.), **macOS**, and on phones via **Termux / Android**.
 
 > **Creator / Owner:** `DEVRAN E. / BEYİP_`  
 > **Full Installation & Usage Guide:** See [**USAGE.md**](./USAGE.md)
 
 ---
+
+## v1.3 — Squad Engine
+
+- **Task decomposition:** DocMind splits complex work into named sub-agents (Nova, Pixel, Atlas ...), stays the
+  lead, streams what each agent is doing and reviews the result.
+- **`/squad`** on/off/auto + agent cap, **`/mobile`** for Termux.
+- **Search without `/search`** (manual command still works).
+- **Owner row is sealed:** delete it and the program refuses to start.
 
 ## 🆕 What's New in `v1.2`
 

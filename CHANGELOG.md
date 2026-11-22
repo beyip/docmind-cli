@@ -4,6 +4,54 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ---
 
+## `v1.3` — Squad Engine (task decomposition), mobile/Termux, sealed owner row
+
+### Added — Squad Engine: DocMind splits the work into named agents
+- **Task decomposition with a human in the loop.** For a complex request (site, app, game, API, refactor…)
+  DocMind now asks one question first: **[1] split the work into small agents** or **[2] do it alone**.
+  `/squad auto` skips the question, `/squad off` disables teams entirely.
+- **DocMind is always the lead.** It writes the plan (`SQUAD_PLAN.md`), gives every agent a job, runs the
+  steps, performs the final review and only closes the turn after the perfection audit passes.
+- **Agents get names, not numbers.** `Nova`, `Pixel`, `Atlas`, `Vector`, `Lyra`, `Orion` … The planner
+  proposes them, `squad_assign_names()` guarantees unique, terminal-safe handles (duplicates and long
+  names are repaired automatically).
+- **Live stream in the terminal** while the team works:
+  `Nova is thinking` · `Pixel writing src/ui.py` · `Atlas running tests` · `✓ Nova finished (3 files)`.
+  Every event is also written to `SQUAD_LOG_<timestamp>.json`.
+- **Per-agent limits:** own context slot, own tool whitelist (an agent can only call the tools it was
+  given), 10 rounds per agent, 45 child rounds and a 15-minute wall-clock budget per team run.
+  An agent that repeats the same tool call is closed instantly instead of burning tokens.
+- **`/squad` command:** `status` (live dashboard), `on`, `off`, `auto`, `agents <2-8>`.
+
+### Added — Search works without `/search`
+- The model now searches on its own whenever a request needs live facts ("search the web and then build
+  X", versions, prices, docs): read sources first, then do the work.
+- `/search <topic>` still exists, unchanged, as the manual verified-research command.
+
+### Added — Mobile / Termux support
+- Automatic detection (`TERMUX_VERSION`, `ANDROID_ROOT`, tiny terminals < 46 columns) plus manual
+  overrides `DOCMIND_MOBILE=1|0` and `DOCMIND_DESKTOP=1`.
+- **Shared storage is exposed to the agent** on phones: `~/storage/shared`, `~/storage/downloads`,
+  `~/storage/dcim`, `/sdcard`, `/storage/emulated/0` — the same file access as on a desktop.
+- **Terminal text is no longer broken on phones:** mobile defaults to the plain ASCII glyph set,
+  stdout/stderr are reconfigured to `utf-8` with `errors="replace"` and line buffering, and the system
+  prompt tells the model to keep output inside ~44 columns and use short paths.
+- `/mobile` command shows the device profile and switches `on|off|ascii|unicode`.
+
+### Changed
+- Warning and permission text now says **"your device"** instead of "your computer" (English, German,
+  Italian, Dutch), so it reads correctly on a phone, tablet or desktop.
+- The system prompt reports the device type, the shared storage root and mobile layout rules.
+
+### Security — the owner row is now the program's signature
+- Deleting, blanking, duplicating or moving the `_DM_OWNER` row, removing the printed owner banner or
+  editing the MIT/owner header now makes DocMind refuse to start (**exit 90**) on any machine:
+  exactly one `_DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'` line at column 0, seal verified against
+  `_DM_OWNER_SEAL`, header verified as the first bytes of the file. `DOCMIND_NO_OWNER_CHECK` is treated
+  as tampering, not as an escape hatch.
+
+---
+
 ## `v1.2` — Token Saving, Aggressive Reasoning Mode & Stability
 
 ### Fixed — `NameError` inside the Aggressive Engine (v1.2 build of 2026-11-19)

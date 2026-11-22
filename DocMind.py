@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'd123248efc9116ccab74525810bfb2a9266d77fccc1dd4bc435a65d43c6dd678'
-_DM_SIGNATURE = '335dd2425c1b6f683c5aee5e165e75e0336937e3ba3fc914bbc662af7fddf739c538afbce3b305d4f43b2cc38e6fcb94ee2e71c39ab88f20c4e6351815e9eaaddc4f33d59e8ae2a6d229aecdd4618c7af33aacb88df19f7e247529911ce5c78f1ed6a22d682cd3c49d9cbd488899f1d74b0d2ed692871dbd0a0ccd6221d7ca1348dbdb227f77c77e4e23f8bab4462d07c8b72829419ed50c393d0cfd45e1241ced7fbdb70852afcba68ae0e4fb8fc07b7b9e082028f33d31981d06cfadb17801a189b733e802fa6bcb995b9910381eb3c8a2e9607fe6a2b9b26fcb42ee3bb7b98c2f51a62452c41bb9d3f8f0d20a48b428c2a64b85764825d84b746c773a8860f057fbd382a832d2a4ce7e240dc747684a6ddff4f0ce99aef36b48c85d9a7d9217ca1639ddd22da062e880a9ad86a234c5c6b7b13402b9917d2479e824170c2779bd20c756305da9031fc522a4a0b0dd8f1deb7d8acb28742471eca59172b6d5c67494e8d6a91828c5fef42ec453db10e60c03d9ffeb563eadffc63f164ec63f'
+_DM_SOURCE_HASH = '30489235babee8d9096351569894bfe9c6148bbcdc5489f4c5c2b273915b7aeb'
+_DM_SIGNATURE = '04e8386b1657fe4fda1328b0495081d2032b1d2d2482c7e1b59e95759f9f1f5bd0ffbfeca00c6451c6b54ab77b080d0564b61ac71773ac4f462299355229542c220139c630cec6da60eca33cefd5526af84db6f8fa6a86c0249506e4579b00e7970f5eca499cf9304bcc69020fde88c72b080cbd1b257941c47c32cd53e9542f938a448eeac94b98e3ed60c2b1b3e85e21f55b53b03cd9eca0ba1aec62ce457b4ae71641fa7f29a6e15e3a9bf614b41572b893979095df7ab9df12e3c575f23cb8691dd2b25a5f1c5ccf35f65ba76580d878e8752373196cc7b3ea0a6f4eef6dc8a4c3551c3ee87d0ed263aa8eca46c0d6fb5d049dbc1835b741cf81929de4d2cce775ca019648ae4bc384154e3864a174ed8d02ab7896b1d9741b971bd7b2e4f2c04697335bb75e7a292a6c98d86fcb1e53224d0d7749734750e532adbde1ac8da7e4026c2dbebd3b4e2e4ee0c74ced83870f454413e83e60e5555532689103aef3db5479ed4452f5432bd69ded430d21357b490c02ca5ad7f4915bc78644c6'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -64,18 +64,35 @@ def _dm_attestation_failure(reason=''):
         _dm_sys.stderr.flush()
     finally:
         raise SystemExit(90)
+# The owner row is the signature of this program: delete it, blank it, duplicate it or
+# move it and DocMind refuses to start anywhere (exit 90). Checked on every launch:
+#   1. the owner/MIT header must be the first bytes of the file,
+#   2. _DM_OWNER must exist exactly once, at column 0, and match its seal,
+#   3. the printed owner banner must still be present in the source.
+_DM_BANNER = "print(('\\x1b[1;31m' + _DM_OWNER + '\\x1b[0m') if _dm_red_ok else _DM_OWNER, flush=True)"
+
+
 def _dm_owner_gate():
     try:
         if not isinstance(_DM_OWNER, str) or 'DEVRAN E.' not in _DM_OWNER or 'BEYİP_' not in _DM_OWNER:
             raise ValueError('Owner identity missing')
+        if _DM_OWNER.strip() != _DM_OWNER or not _DM_OWNER.startswith('OWNER: '):
+            raise ValueError('Owner row damaged')
         calc_seal = _dm_hashlib.sha256(_DM_OWNER.encode('utf-8')).hexdigest()
         if not _dm_hmac.compare_digest(calc_seal, _DM_OWNER_SEAL):
             raise ValueError('Owner seal mismatch')
         raw = _DM_SOURCE_PATH.read_bytes()
         if not raw.startswith(_DM_REQUIRED_HEADER):
             raise ValueError('Required owner header altered')
-        if ("_DM_OWNER = '" + _DM_OWNER + "'").encode('utf-8') not in raw:
-            raise ValueError('Owner constant altered in source')
+        if bool(_dm_os.environ.get('DOCMIND_NO_OWNER_CHECK')):
+            raise ValueError('Owner check disabled by environment')
+        owner_row = ("_DM_OWNER = '" + _DM_OWNER + "'").encode('utf-8')
+        if raw.count(owner_row) != 1:
+            raise ValueError('Owner constant altered, duplicated or moved in source')
+        if not _dm_re.search(rb"(?m)^_DM_OWNER = 'OWNER: DEVRAN E\. / BEY", raw):
+            raise ValueError('Owner row must stay at column 0')
+        if _DM_BANNER.encode('utf-8') not in raw:
+            raise ValueError('Owner banner removed from source')
     except Exception:
         _dm_attestation_failure('owner')
 def _dm_attestation_data():
@@ -131,6 +148,66 @@ for _dm_stream in (_dm_sys.stdout, _dm_sys.stderr):
             _dm_stream.reconfigure(encoding='utf-8', errors='replace')
     except Exception:
         pass
+
+# ==================================================
+# MOBILE LAYER (Termux / Android / small terminals) -- v1.3
+# ==================================================
+def _dm_detect_mobile():
+    """True on Termux / Android / iOS shells and other tiny terminals."""
+    try:
+        if _dm_os.environ.get('TERMUX_VERSION') or _dm_os.environ.get('TERMUX_APP_PID'):
+            return True
+        if 'ANDROID_ROOT' in _dm_os.environ or 'ANDROID_DATA' in _dm_os.environ:
+            return True
+        if _dm_sys.prefix and any(_dm_sys.prefix.startswith(p) for p in
+                                  ('/data/data/com.termux', '/system/bin', '/data/local/tmp')):
+            return True
+        if _dm_sys.platform.startswith(('android', 'ios')):
+            return True
+        if _dm_os.environ.get('DOCMIND_MOBILE', '').lower() in ('1', 'true', 'yes', 'on'):
+            return True
+        try:
+            cols = _dm_os.get_terminal_size().columns
+        except Exception:
+            cols = int(_dm_os.environ.get('COLUMNS', '0') or 0)
+        return bool(0 < cols and cols < 46)
+    except Exception:
+        return False
+
+
+def _dm_storage_root():
+    """Shared storage root on a phone/tablet (Termux storage, /sdcard), else ''."""
+    try:
+        home = _dm_Path.home()
+        for path in (home / 'storage' / 'shared', home / 'storage' / 'downloads',
+                     home / 'storage' / 'dcim', _dm_Path('/sdcard'),
+                     _dm_Path('/storage/emulated/0')):
+            if path.exists():
+                return str(path)
+    except Exception:
+        pass
+    return ''
+
+
+_DM_MOBILE = _dm_detect_mobile()
+if _dm_os.environ.get('DOCMIND_MOBILE', '').lower() in ('0', 'false', 'no', 'off'):
+    _DM_MOBILE = False
+if _dm_os.environ.get('DOCMIND_DESKTOP', '').lower() in ('1', 'true', 'yes', 'on'):
+    _DM_MOBILE = False
+_DM_STORAGE_ROOT = _dm_storage_root()
+
+if _dm_os.name == 'posix' and hasattr(_dm_sys.stdout, 'reconfigure'):
+    try:
+        _dm_sys.stdout.reconfigure(errors='replace', line_buffering=True)
+        _dm_sys.stderr.reconfigure(errors='replace', line_buffering=True)
+    except Exception:
+        pass
+if _DM_MOBILE:
+    _dm_os.environ.setdefault('NO_COLOR', '0')
+    _dm_os.environ.setdefault('PYTHONUTF8', '1')
+    _dm_os.environ.setdefault('PYTHONIOENCODING', 'utf-8:replace')
+    _dm_os.environ.setdefault('TERM_WIDTH', '44')
+
 _dm_owner_gate()
 _dm_digest_gate()
 _dm_signature_gate()
@@ -169,7 +246,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.2"
+ __version__ = "1.3"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -266,7 +343,7 @@ def _dm_module_01():
     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
     "help_title": "DOCMIND KOMUT REHBERİ",
-    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
+    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobile    Mobil/Termux modu ve glif ayarı\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
     "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
     "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
     "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
@@ -561,7 +638,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND COMMAND REFERENCE",
-    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /token-save Toggle token saving (default: on)",
+    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /squad     Team mode: task decomposition (sub-agents) on/off\n /mobile    Mobile/Termux mode and glyph settings\n /token-save Toggle token saving (default: on)",
     "cmd_cleared": "Conversation memory and screen cleared.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -680,7 +757,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
     "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
     "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
-    "startup_authority_warn": "⚠ WARNING: THIS AGENT HAS FULL SYSTEM ACCESS — It can view, open, and edit any drive, folder, or file on your computer and execute terminal/system commands (with your permission). Use carefully; no liability is accepted.",
+    "startup_authority_warn": "⚠ WARNING: THIS AGENT HAS FULL SYSTEM ACCESS ON YOUR DEVICE — It can view, open and edit any drive, folder or file on your device (phone, tablet or computer) and run terminal/system commands with your permission. Use carefully; no liability is accepted.",
     "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
     "term_perm_header": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
     "term_perm_denied": "Terminal / code execution declined by user.",
@@ -692,7 +769,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Runtime",
     "term_perm_cwd": "Working Directory",
     "term_perm_code": "CODE TO EXECUTE",
-    "term_perm_prompt": "Allow this terminal/system command to execute on your computer? [Y]es / [N]o: ",
+    "term_perm_prompt": "Allow this terminal/system command to execute on your device? [Y]es / [N]o: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "TERMINAL USED",
     "term_used_code": "CODE USED",
@@ -975,7 +1052,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Nur Verbindungstest. /doctor tools prüft das aktive Modell; Kosten möglich.",
     "thinking_rebase": "Claude-Kontext geändert: ältere signierte Denkblöcke wurden ausgelassen; Gesprächstext und Werkzeugergebnisse bleiben erhalten.",
     "usage_tokens_missing_detail": "Die Kosten wurden ggf. gemeldet, aber für {count} Anfragen fehlen Tokendaten. * markiert unvollständige Daten.",
-    "startup_authority_warn": "⚠ WARNUNG: DIESER AGENT HAT VOLLZUGRIFF AUF IHREN COMPUTER — Alle Laufwerke, Ordner und Dateien sind sichtbar/bearbeitbar und Terminal-Code kann (mit Ihrer Erlaubnis) ausgeführt werden. Vorsichtig verwenden; keine Haftung.",
+    "startup_authority_warn": "⚠ WARNUNG: DIESER AGENT HAT VOLLZUGRIFF AUF IHR GERÄT — Alle Laufwerke, Ordner und Dateien sind sichtbar/bearbeitbar und Terminal-Code kann (mit Ihrer Erlaubnis) ausgeführt werden. Vorsichtig verwenden; keine Haftung.",
     "term_perm_title": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
     "term_perm_header": "TERMINAL-AUSFÜHRUNGSGENEHMIGUNG ERFORDERLICH",
     "term_perm_denied": "Terminal-Ausführung vom Benutzer abgelehnt.",
@@ -987,7 +1064,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Umgebung",
     "term_perm_cwd": "Arbeitsverzeichnis",
     "term_perm_code": "AUSZUFÜHRENDER CODE",
-    "term_perm_prompt": "Diesen Terminal-Befehl auf Ihrem Computer ausführen? [J]a / [N]ein: ",
+    "term_perm_prompt": "Diesen Terminal-Befehl auf Ihrem Gerät ausführen? [J]a / [N]ein: ",
     "term_perm_reprompt": "Bitte 'j' (ja) oder 'n' (nein) eingeben: ",
     "term_used_header": "TERMINAL VERWENDET",
     "term_used_code": "VERWENDETER CODE",
@@ -2410,7 +2487,7 @@ def _dm_module_01():
     "doctor_all_tool_note": "Connection test only. Use /doctor tools for the active model; additional charges may apply.",
     "thinking_rebase": "Claude context changed, so older signed thinking blocks were omitted; conversation text and tool results were retained.",
     "usage_tokens_missing_detail": "Cost may be reported, but token data is missing for {count} request(s). On narrow screens * marks incomplete data.",
-    "startup_authority_warn": "⚠ ATTENZIONE: QUESTO AGENTE HA PIENO ACCESSO AL SISTEMA — Può visualizzare, aprire e modificare file o unità sul computer ed eseguire comandi di sistema (con il tuo permesso). Usare con cautela; nessuna responsabilità è accettata.",
+    "startup_authority_warn": "⚠ ATTENZIONE: QUESTO AGENTE HA PIENO ACCESSO AL SISTEMA — Può visualizzare, aprire e modificare file o unità sul dispositivo ed eseguire comandi di sistema (con il tuo permesso). Usare con cautela; nessuna responsabilità è accettata.",
     "term_perm_title": "TERMINAL / CODE EXECUTION PERMISSION REQUIRED",
     "term_perm_header": "AUTORIZZAZIONE ESECUZIONE TERMINALE / CODICE",
     "term_perm_denied": "Esecuzione nel terminale rifiutata dall'utente.",
@@ -2422,7 +2499,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Ambiente",
     "term_perm_cwd": "Cartella di lavoro",
     "term_perm_code": "CODICE DA ESEGUIRE",
-    "term_perm_prompt": "Consentire l'esecuzione di questo comando sul computer? [S]ì / [N]o: ",
+    "term_perm_prompt": "Consentire l'esecuzione di questo comando sul dispositivo? [S]ì / [N]o: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "TERMINALE UTILIZZATO",
     "term_used_code": "CODICE ESEGUITO",
@@ -2992,7 +3069,7 @@ def _dm_module_01():
     "term_perm_shell": "Shell / Runtime",
     "term_perm_cwd": "Werkmap",
     "term_perm_code": "UIT TE VOEREN CODE",
-    "term_perm_prompt": "Deze opdracht op uw computer uitvoeren? [J]a / [N]ee: ",
+    "term_perm_prompt": "Deze opdracht op uw apparaat uitvoeren? [J]a / [N]ee: ",
     "term_perm_reprompt": "Please type 'y' (yes) to approve or 'n' (no) to decline: ",
     "term_used_header": "TERMINAL GEBRUIKT",
     "term_used_code": "GEBRUIKTE CODE",
@@ -4446,6 +4523,14 @@ def _dm_module_03():
    max_steps_per_turn: int = 65
    # Aggressive Engine: extra verification + project-memory layers (on by default).
    aggressive_mode: bool = True
+   # v1.3 Squad Engine: ask | auto | off, plus the agent cap.
+   squad_mode: str = "ask"
+   squad_max_agents: int = 6
+   # v1.3 automatic web research: search without the user typing /search.
+   auto_search: bool = True
+   # v1.3 terminal fidelity on phones / Termux.
+   mobile_mode: bool = False
+   glyph_mode: str = "auto"
    max_output_tokens: int = 12288
    reasoning_effort: str = "high"
    token_save: bool = True
@@ -6613,6 +6698,9 @@ def _dm_module_07b():
      return False
    except Exception:
      return False
+ if _DM_MOBILE and not str(os.environ.get("DOCMIND_ASCII", "") or os.environ.get("DOCMIND_GLYPHS", "")).strip():
+     # phones / Termux: prefer the plain ASCII glyph set unless the user overrides it
+     os.environ["DOCMIND_ASCII"] = "1"
  _FORCE_ASCII = str(os.environ.get("DOCMIND_ASCII", "") or os.environ.get("DOCMIND_GLYPHS", "")).strip().lower()
  ASCII_GLYPHS = bool(_FORCE_ASCII and _FORCE_ASCII not in ("0", "false", "no", "off", "unicode", "utf8", "utf-8")) \
    or not _encoding_supports_glyphs(TERMINAL_ENCODING)
@@ -13783,6 +13871,11 @@ def _dm_module_21():
        return True
      return False
  return locals()
+for _dm_tool_name in ('aggressive_audit', 'web_search', 'web_fetch', 'check_syntax'):
+    try:
+        _dm_sys.modules['docmind.core.permissions'].READ_ONLY_TOOLS.add(_dm_tool_name)
+    except Exception:
+        pass
 _dm_install('docmind.core.permissions', _dm_module_21, False)
 
 # ===== docmind/tools/registry.py (included source) =====
@@ -14976,6 +15069,11 @@ def _dm_module_24():
     self._streamed_text = False
     self._streamed_chunks: List[str] = []
     self._turn_system_prompt: Optional[str] = None
+    # v1.3 Squad Engine state
+    self.squad_feed: Optional[Any] = None
+    self._squad_request: str = ""
+    self._squad_depth: int = 0
+    self._squad_tool_filter: Optional[Set[str]] = None
     self._turn_exec_mode: str = "auto"
     self.refresh_client()
   def _history_error(self, exc: Exception) -> None:
@@ -15079,6 +15177,140 @@ def _dm_module_24():
     self.client.on_thinking_rebase = lambda: self.ui.info(t("thinking_rebase"))
     self.client.on_vision_fallback = lambda: self.ui.warn(t("img_vision_fallback", model=self.config_mgr.config.model))
     self.client.on_vision_bridge = lambda bm: self.ui.info(t("vision_bridge_used", bridge_model=bm))
+  # ---------------------------------------------------------------- v1.3 Squad
+  def plan_with_model(self, prompt: str) -> str:
+    """One-shot planner call used by the squad engine (no tools, no context)."""
+    resp = self.client.generate(
+      system_prompt="You are DocMind's planning module. Reply with JSON only.",
+      messages=[{"role": "user", "content": prompt}],
+      tools=[],
+      timeout=120.0,
+    )
+    return str(getattr(resp, "text", "") or "")
+
+  def _squad_should_offer(self, user_input: str) -> bool:
+    cfg = self.config_mgr.config
+    mode = str(getattr(cfg, "squad_mode", "ask") or "ask").lower()
+    if mode == "off" or self._squad_depth > 0 or self.non_interactive:
+      return False
+    if str(getattr(cfg, "reasoning_effort", "")).lower() == "aggressive":
+      return False
+    text = str(user_input or "").strip()
+    if len(text) < 24:
+      return False
+    markers = ("website", "site", "app", "uygulama", "proje", "project", "game", "oyun",
+               "api", "backend", "frontend", "dashboard", "bot", "sistem", "system",
+               "refactor", "migrate", "automation", "otomasyon", "cli", "tool")
+    lowered = text.lower()
+    return any(m in lowered for m in markers) or len(text) > 160
+
+  def _squad_offer_choice(self, user_input: str) -> str:
+    cfg = self.config_mgr.config
+    if str(getattr(cfg, "squad_mode", "ask")).lower() == "auto":
+      return "team"
+    question = "\n".join([
+      "Bu isi nasil yapayim? / How should I build this?",
+      "  [1] Gorev parcalama: kucuk ajanlar olusturayim (plan + isimler + paralel is)",
+      "  [2] Tek ajan: parcalamadan DocMind kendisi yapsin",
+    ])
+    try:
+      picked = self.ui.prompt_user_choice(question, ["team", "single"], 2)
+    except Exception:
+      return "single"
+    return "team" if str(picked).strip().lower() in ("1", "team", "ajanlar") else "single"
+
+  def run_squad(self, user_request: str) -> Dict[str, Any]:
+    """v1.3: plan -> named agents -> live feed -> lead review."""
+    cfg = self.config_mgr.config
+    self.squad_feed = SquadFeed(mode="full")
+    self._squad_request = user_request
+    self._squad_depth += 1
+    try:
+      outcome = squad_run(
+        self, user_request,
+        max_agents=max(2, min(8, int(getattr(cfg, "squad_max_agents", 6) or 6))),
+        feed=self.squad_feed,
+      )
+    finally:
+      self._squad_depth -= 1
+    if outcome.get("ok"):
+      self.ui.print_panel("SQUAD SUMMARY",
+                          squad_dashboard(self.squad_feed, user_request, "squad"),
+                          style="bright_cyan")
+      log = self.squad_feed.write_log(Path(self.tools.cwd))
+      if log:
+        self.ui.info("squad log: " + log)
+    return outcome
+
+  def run_child_turn(self, prompt: str, step: Optional[Dict[str, Any]] = None,
+                     feed: Optional[Any] = None, max_rounds: int = 10) -> Dict[str, Any]:
+    """Run ONE sub-agent step with its own context slot, rounds and tool filter."""
+    step = step or {}
+    feed = feed or self.squad_feed
+    handle = str(step.get("handle") or "agent")
+    allowed = {str(t).lower() for t in (step.get("tools") or [])}
+    previous_ctx = self.context
+    previous_steps = self.config_mgr.config.max_steps_per_turn
+    cap = max(3, min(int(max_rounds), 20))
+    self.context = ConversationContext()
+    self.context.add_user(prompt)
+    self._squad_tool_filter = allowed or None
+    self.config_mgr.config.max_steps_per_turn = cap
+    rounds = 0
+    ok = False
+    report = ""
+    error = ""
+    last_batch = None
+    repeated_batches = 0
+    try:
+      while rounds < cap:
+        rounds += 1
+        if feed:
+          feed.thinking(handle, "")
+        resp = self._generate_resilient()
+        if resp is None:
+          error = "model call failed"
+          break
+        if getattr(resp, "text", ""):
+          report = str(resp.text)[:400]
+        if not getattr(resp, "tool_calls", None):
+          ok = True
+          break
+        for tc in resp.tool_calls:
+          if feed:
+            feed.doing(handle, tc.name, str((tc.arguments or {}).get("path") or "")[:60])
+          self._run_squad_tool(handle, tc)
+        # An agent that only repeats the same tool call is stuck, not working.
+        fingerprints = [hashlib.sha1((str(t.name) + repr(sorted((t.arguments or {}).items()))).encode("utf-8", "replace")).hexdigest()
+                        for t in resp.tool_calls]
+        if last_batch and fingerprints == last_batch:
+          repeated_batches += 1
+        else:
+          repeated_batches = 0
+        last_batch = fingerprints
+        if repeated_batches >= 1:
+          ok = True
+          report = report or "same tool call repeated; step closed"
+          break
+    except Exception as exc:
+      error = "%s: %s" % (type(exc).__name__, exc)
+    finally:
+      self.context = previous_ctx
+      self.config_mgr.config.max_steps_per_turn = previous_steps
+      self._squad_tool_filter = None
+    return {"ok": ok, "rounds": rounds, "report": report.strip(), "error": error}
+
+  def _run_squad_tool(self, handle: str, tc: Any) -> None:
+    """Execute one tool call for a sub-agent, respecting its tool whitelist."""
+    name = str(getattr(tc, "name", ""))
+    if self._squad_tool_filter and name.lower() not in self._squad_tool_filter:
+      self.ui.warn("%s: tool '%s' is not in this agent's whitelist; skipped." % (handle, name))
+      return
+    try:
+      self.tools.execute(name, getattr(tc, "arguments", {}) or {})
+    except Exception as exc:
+      self.ui.warn("%s: %s failed: %s" % (handle, name, exc))
+
   def _aggressive_final_gate(self, touched: Optional[Set[str]] = None,
                              rounds: int = 0) -> str:
     """Aggressive mode: audit the folder before a turn is allowed to end.
@@ -15176,6 +15408,13 @@ def _dm_module_24():
     os_family = os_prof.get("os_family", platform.system())
     pkg_str = ", ".join(os_prof.get("pkg_managers") or []) or "none detected"
     dev_str = ", ".join(os_prof.get("dev_tools") or []) or "python"
+    device_kind = "phone or tablet (Termux/Android)" if _DM_MOBILE else "computer"
+    device_line = "- Device: " + device_kind
+    if _DM_STORAGE_ROOT:
+      device_line += " | shared storage root: " + _DM_STORAGE_ROOT
+    if _DM_MOBILE:
+      device_line += ("\n- Mobile rules: keep output under ~44 columns, prefer short paths, never "
+                      "assume a desktop GUI, and use the storage root above for photos/downloads.")
     mode_desc = (
       "Full Auto for file operations (terminal/Python commands STILL ask explicit user permission first)"
       if self.config_mgr.config.permission_mode == "auto"
@@ -15246,6 +15485,7 @@ def _dm_module_24():
       f"- User Special Folders: {folders_str}\n"
       f"- Available Shells for run_command: {shells_str}\n"
       f"- Permission Mode: {mode_desc}\n"
+      f"{device_line}\n"
       f"{token_save_hint}"
       "## MANDATORY OPERATING RULES WHEN TOOLS ARE NEEDED\n"
       "1. **OS & Distro Mastery + Target OS Confirmation Before Writing Files/Scripts**:\n"
@@ -15260,7 +15500,13 @@ def _dm_module_24():
       "   - **When opening/editing a file fails**: Use `[SELF-RECOVERY HINT]` or `search_files` to resolve wrong paths; if `Automatic syntax check` fails after an edit, immediately repair it with `edit_file` or revert cleanly via `undo_file_change`.\n\n"
       "3. **Full Computer Access When Requested & Security**:\n"
       "   - When the user asks about files, drives, images, screenshots, or documents anywhere on their computer (Desktop, Downloads, Documents, Pictures, other drives), use native tools directly (`inspect_image` visually reads `.png`/`.jpg`/`.webp`/`.gif`/`.bmp` error screenshots & UI images; `read_file` reads code, `.docx`, `.xlsx`, `.pptx`, `.odt`/`.ods`/`.odp`, `.pdf`, `.sqlite`, `.zip`/`.tar.gz`). When an image/screenshot shows an error or bug, carefully read every error line in the image, diagnose the root cause, and fix the relevant code/configuration!\n"
-      "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys."
+      "   - Never fabricate tool outputs when performing system tasks. Respect user permission denials immediately. Never exfiltrate credentials or private keys.\n"
+      "4. **Search On Your Own When The Task Needs It (v1.3)**:\n"
+      "   - The user does NOT have to type `/search`. Whenever a request needs live or external facts "
+      "(\"search the web and then build X\", \"find the current API for Y\", versions, prices, news, docs), "
+      "call `web_search` yourself FIRST, read the sources, then do the work.\n"
+      "   - `/search <topic>` still exists and still works as the manual, verified research command.\n"
+      "   - Never invent facts you can check with one search; cross-check two sources for version specifics."
       + aggressive_directive()
     )
   def _sleep_interruptible(self, seconds: float, attempt: int = 1) -> bool:
@@ -15360,6 +15606,9 @@ def _dm_module_24():
         has_tool_turn_already = bool(self.context.messages and self.context.messages[-1].get("role") == "tool")
         expose_tools = has_tool_turn_already or last_user_has_img or _should_expose_tools(last_user_msg, self.context.messages[:-1])
         tool_schemas = self.tools.get_schemas() if expose_tools else []
+        if self._squad_tool_filter:
+          tool_schemas = [s for s in tool_schemas
+                          if str(s.get("name", "")).lower() in self._squad_tool_filter]
       try:
         self._streamed_text = False
         self._streamed_chunks = []
@@ -15602,6 +15851,14 @@ def _dm_module_24():
       "4. Never guess unreadable blurry characters — state clearly if a specific region is cut off or illegible."
       if turn_images else ""
     )
+    if self._squad_should_offer(user_input):
+      if self._squad_offer_choice(user_input) == "team":
+        team_outcome = self.run_squad(user_input)
+        if team_outcome.get("ok"):
+          summary = self.squad_feed.summary() if self.squad_feed else ""
+          self.context.add_user("[SQUAD RESULT] Team run finished. Summary:" + "\n" + summary)
+        else:
+          self.ui.warn("Squad run failed (%s); continuing as a single agent." % team_outcome.get("error", "unknown"))
     self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
     begin_turn = getattr(self.ui, "begin_turn", None)
     if begin_turn:
@@ -15791,6 +16048,462 @@ def _dm_module_24():
             )
         break
  return locals()
+# ===== docmind/core/squad.py (included source) =====
+def _dm_module_27():
+ """DocMind v1.3 Squad Engine: task decomposition, live agent feed and team execution.
+
+ DocMind stays the lead. It decides the plan, names the agents, hands out the jobs,
+ watches them run, runs the perfection audit and reports. Work happens in a shared
+ workspace, so sub-agents are separate AGENT ROLES with their own goals, tool
+ subsets and context slices - not separate processes and not separate code copies.
+
+ Size, cost and safety are bounded on purpose: every team run has a wall-clock
+ budget, a per-agent round cap and a global child-round cap.
+ """
+ import json
+ import os
+ import re
+ import threading
+ import time
+ from pathlib import Path
+ from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple
+
+ SQUAD_PLAN_FILE = "SQUAD_PLAN.md"
+ SQUAD_MAX_AGENTS = 6
+ SQUAD_MIN_AGENTS = 2
+ SQUAD_MAX_ROUNDS_PER_AGENT = 10
+ SQUAD_MAX_CHILD_ROUNDS_TOTAL = 45
+ SQUAD_TIME_BUDGET_S = 900.0
+ SQUAD_NAME_POOL = (
+   "Nova", "Pixel", "Atlas", "Vector", "Quanta", "Lyra", "Orion", "Delta",
+   "Cipher", "Helix", "Zephyr", "Onyx", "Sable", "Kite", "Lumen", "Echo",
+ )
+
+ # ---------------------------------------------------------------- name helpers
+ def squad_slug(name: str) -> str:
+  """Terminal-safe handle: 'Pixel the Builder' -> 'pixel'."""
+  base = re.sub(r"[^A-Za-z0-9]+", "-", str(name or "").strip()).strip("-").lower()
+  return base.split("-")[0] if base else "agent"
+
+
+ def squad_assign_names(steps: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
+  """Give every planned step a stable, human, terminal-safe name."""
+  used: Dict[str, int] = {}
+  taken: set = set()
+  out: List[Dict[str, Any]] = []
+  for i, step in enumerate(steps):
+    slot = dict(step)
+    wanted = str(slot.get("name") or "").strip()
+    handle = squad_slug(wanted) if wanted else ""
+    if not handle or handle in taken:
+      pool = [n for n in SQUAD_NAME_POOL if n.lower() not in taken]
+      handle = (pool[0] if pool else "agent").lower()
+      wanted = handle.capitalize()
+    taken.add(handle)
+    used[handle] = used.get(handle, 0) + 1
+    slot["name"] = wanted[:28]
+    slot["handle"] = handle
+    slot["index"] = i + 1
+    out.append(slot)
+  return out
+
+
+ def squad_normalize_plan(raw: Any, max_agents: int = SQUAD_MAX_AGENTS) -> List[Dict[str, Any]]:
+  """Validate model output into a usable plan (never trust the shape)."""
+  steps: List[Dict[str, Any]] = []
+  if isinstance(raw, dict):
+    raw = raw.get("agents") or raw.get("steps") or raw.get("tasks") or []
+  if not isinstance(raw, (list, tuple)):
+    return []
+  for item in raw:
+    if not isinstance(item, dict):
+      continue
+    goal = str(item.get("goal") or item.get("task") or item.get("title") or "").strip()
+    if not goal:
+      continue
+    role = str(item.get("role") or item.get("title") or "builder").strip()
+    files = item.get("files") or item.get("paths") or []
+    if isinstance(files, str):
+      files = [p.strip() for p in re.split(r"[,\n]", files) if p.strip()]
+    tools = item.get("tools") or []
+    if isinstance(tools, str):
+      tools = [t.strip() for t in re.split(r"[,\s]+", tools) if t.strip()]
+    steps.append({
+      "name": str(item.get("name") or "").strip(),
+      "role": role[:48],
+      "goal": goal[:600],
+      "files": [str(f)[:200] for f in files][:20],
+      "tools": [str(t)[:40] for t in tools][:12],
+      "notes": str(item.get("notes") or "")[:300],
+    })
+  return steps[:max(1, int(max_agents))]
+
+
+ # ------------------------------------------------------- plan prompt + parsing
+ def squad_plan_prompt(user_request: str, cwd: str = "") -> str:
+  return (
+    "You are DocMind, the lead engineer. Decompose the user's request into a small team of "
+    "specialised sub-agents that can work in parallel on the SAME shared workspace.\n\n"
+    f"USER REQUEST:\n{user_request}\n\n"
+    f"WORKING FOLDER: {cwd or '.'}\n\n"
+    "Return ONLY compact JSON, no prose, no markdown fences:\n"
+    '{"agents":[{"name":"Pixel","role":"ui_builder","goal":"...","files":["src/ui.py"],'
+    '"tools":["write_file","edit_file"]}]}\n\n'
+    "Rules:\n"
+    f"- Use between {SQUAD_MIN_AGENTS} and {SQUAD_MAX_AGENTS} agents. Fewer is better.\n"
+    "- One agent owns one area; do not let two agents write the same file.\n"
+    "- 'name' must be one short human name (a person-like codename), unique across the team.\n"
+    "- 'role' is a lowercase slug (planner, researcher, ui_builder, api_builder, tester, docs, reviewer).\n"
+    "- 'goal' is one or two sentences, concrete and verifiable.\n"
+    "- 'files' lists the paths this agent is allowed to write (may be empty for research/review).\n"
+    "- 'tools' lists only the tools the agent needs.\n"
+    "- Put integration/verification work in its own final agent."
+  )
+
+
+ def squad_extract_json(text: str) -> Any:
+  """Pull the first JSON object/array out of a model reply (fenced or raw)."""
+  if not text:
+    return None
+  cleaned = re.sub(r"```(?:json)?", "", str(text))
+  for opener, closer in (("{", "}"), ("[", "]")):
+    start = cleaned.find(opener)
+    if start < 0:
+      continue
+    depth = 0
+    for pos in range(start, len(cleaned)):
+      ch = cleaned[pos]
+      if ch == opener:
+        depth += 1
+      elif ch == closer:
+        depth -= 1
+        if depth == 0:
+          chunk = cleaned[start:pos + 1]
+          try:
+            return json.loads(chunk)
+          except Exception:
+            break
+  return None
+
+
+ # -------------------------------------------------------------- plan artifact
+ def squad_plan_markdown(request: str, agents: Sequence[Dict[str, Any]],
+                        mode: str = "squad") -> str:
+  lines = ["# SQUAD PLAN", "", f"**Request:** {request.strip()}", f"**Mode:** {mode}", "",
+           "| # | Agent | Role | Goal | Files |", "|---|---|---|---|---|"]
+  for a in agents:
+    files = ", ".join("`%s`" % f for f in (a.get("files") or [])) or "-"
+    goal = str(a.get("goal") or "").replace("|", "\\|")
+    lines.append(f"| {a.get('index', 0)} | {a.get('name', '')} | {a.get('role', '')} | {goal} | {files} |")
+  lines += ["", "DocMind (lead) plans the work, executes the review step and closes the turn",
+            "only after the perfection audit passes.", ""]
+  return "\n".join(lines)
+
+
+ def squad_write_plan(cwd: Path, request: str, agents: Sequence[Dict[str, Any]],
+                     mode: str = "squad") -> Optional[str]:
+  try:
+    target = Path(cwd) / SQUAD_PLAN_FILE
+    target.write_text(squad_plan_markdown(request, agents, mode), encoding="utf-8")
+    return str(target)
+  except Exception:
+    return None
+
+
+ # --------------------------------------------------------------- live feed
+ _GLYPH_ASCII = {"◆": "*", "▸": ">", "✓": "[OK]", "•": "-", "┃": "|", "─": "-"}
+
+
+ def squad_glyph(symbol: str, fallback: str) -> str:
+  """ASCII fallback for terminals that cannot draw the fancy glyphs."""
+  try:
+    from docmind.core.sanitize import ASCII_GLYPHS  # type: ignore
+    return symbol if not ASCII_GLYPHS else fallback
+  except Exception:
+    return fallback
+
+
+ class SquadFeed:
+  """Thread-safe, time-ordered activity log for the sub-agent team.
+
+  Everything the agents do lands here first, so the terminal can show a live stream
+  ('Nova is thinking', 'Pixel is writing app.py') without interleaving partial lines.
+  Verbosity is configurable and the log is always written to disk afterwards.
+  """
+
+  MODES = ("full", "quiet", "off")
+
+  def __init__(self, mode: str = "full", out: Optional[Callable[[str], None]] = None,
+               verbose: bool = True) -> None:
+    self.mode = mode if mode in self.MODES else "full"
+    self.out = out or (lambda line: print(line, flush=True))
+    self.verbose = verbose
+    self.started = time.monotonic()
+    self.events: List[Dict[str, Any]] = []
+    self.tasks: Dict[str, Dict[str, Any]] = {}
+    self._lock = threading.RLock()
+
+  # -- internals
+  def _emit(self, line: str) -> None:
+    if self.mode != "full":
+      return
+    try:
+      self.out(line)
+    except Exception:
+      pass
+
+  def _stamp(self) -> str:
+    return "%6.1fs" % (time.monotonic() - self.started)
+
+  def add_task(self, agent: Dict[str, Any]) -> None:
+    with self._lock:
+      self.tasks[agent["handle"]] = {
+        "name": agent.get("name"), "role": agent.get("role"),
+        "status": "queued", "rounds": 0, "tool_calls": 0,
+        "files": list(agent.get("files") or []), "error": "",
+      }
+
+  # -- public events
+  def lead(self, text: str) -> None:
+    with self._lock:
+      self.events.append({"t": self._stamp(), "kind": "lead", "text": text})
+      self._emit("  %s DocMind %s" % (squad_glyph("◆", "*"), text))
+
+  def start(self, handle: str, text: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle, "status": "running"})
+      task["status"] = "running"
+      self.events.append({"t": self._stamp(), "kind": "start", "agent": handle, "text": text})
+      self._emit("  %s %-8s %s" % (squad_glyph("▸", ">"), task.get("name", handle), text))
+
+  def thinking(self, handle: str, what: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["rounds"] = int(task.get("rounds", 0)) + 1
+      self.events.append({"t": self._stamp(), "kind": "think", "agent": handle, "text": what})
+      self._emit("     %s %s %s" % ("...", task.get("name", handle),
+                                    ("is thinking" + (" about " + what if what else ""))))
+
+  def doing(self, handle: str, tool: str, target: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["tool_calls"] = int(task.get("tool_calls", 0)) + 1
+      detail = "%s %s" % (tool, target)
+      self.events.append({"t": self._stamp(), "kind": "tool", "agent": handle, "text": detail.strip()})
+      verb = {"write_file": "writing", "edit_file": "editing", "multi_edit": "editing",
+              "read_file": "reading", "list_directory": "listing", "search_files": "searching",
+              "run_command": "running", "python_eval": "evaluating",
+              "web_search": "researching", "web_fetch": "fetching",
+              "aggressive_audit": "auditing"}.get(tool, tool)
+      where = (" " + target) if target else ""
+      self._emit("     %s %s %s%s" % (squad_glyph("•", "-"), task.get("name", handle), verb, where))
+
+  def done(self, handle: str, text: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "done"
+      self.events.append({"t": self._stamp(), "kind": "done", "agent": handle, "text": text})
+      suffix = (" · " + text) if text else ""
+      self._emit("  %s %-8s finished%s" % (squad_glyph("✓", "[OK]"), task.get("name", handle), suffix))
+
+  def failed(self, handle: str, text: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "failed"
+      task["error"] = str(text)[:300]
+      self.events.append({"t": self._stamp(), "kind": "fail", "agent": handle, "text": task["error"]})
+      self._emit("  %s %-8s failed: %s" % ("[X]", task.get("name", handle), task["error"][:120]))
+
+  def stop(self, handle: str, reason: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "stopped"
+      self.events.append({"t": self._stamp(), "kind": "stop", "agent": handle, "text": reason})
+      self._emit("  %s %-8s stopped (%s)" % ("[!]", task.get("name", handle), reason))
+
+  # -- reporting
+  def summary(self) -> str:
+    with self._lock:
+      if not self.tasks:
+        return ""
+      rows = ["AGENT        ROLE              STATUS    ROUNDS  TOOLS"]
+      for task in self.tasks.values():
+        rows.append("%-12s %-17s %-9s %-7s %s" % (
+          str(task.get("name", ""))[:12], str(task.get("role", "-"))[:17],
+          task.get("status", "-"), task.get("rounds", 0), task.get("tool_calls", 0)))
+      return "\n".join(rows)
+
+  def counts(self) -> Dict[str, int]:
+    with self._lock:
+      out = {"total": len(self.tasks), "done": 0, "failed": 0, "stopped": 0, "queued": 0}
+      for task in self.tasks.values():
+        status = task.get("status")
+        if status in out:
+          out[status] += 1
+      return out
+
+  def to_dict(self) -> Dict[str, Any]:
+    with self._lock:
+      return {"mode": self.mode, "elapsed": round(time.monotonic() - self.started, 1),
+              "tasks": list(self.tasks.values()), "events": list(self.events)}
+
+  def write_log(self, cwd: Path) -> Optional[str]:
+    try:
+      target = Path(cwd) / ("SQUAD_LOG_%s.json" % time.strftime("%Y%m%d_%H%M%S"))
+      target.write_text(json.dumps(self.to_dict(), ensure_ascii=False, indent=1), encoding="utf-8")
+      return str(target)
+    except Exception:
+      return None
+
+
+ # ---------------------------------------------------------------- team status
+ def squad_dashboard(feed: SquadFeed, request: str = "", mode: str = "squad") -> str:
+  counts = feed.counts()
+  head = "◆ DOCMIND SQUAD · %s" % ("team of %d" % counts["total"] if counts["total"] else "single agent")
+  if request:
+    head += "\n  request: %s" % (request[:110])
+  body = feed.summary()
+  return head + "\n\n" + (body or "  no agents yet") + \
+         "\n\n  done %d · failed %d · stopped %d · %s mode" % (
+           counts["done"], counts["failed"], counts["stopped"], mode)
+
+
+ # ------------------------------------------------------------- agent briefing
+ def squad_agent_prompt(agent: Dict[str, Any], request: str, lead_note: str = "") -> str:
+  """The job ticket handed to one sub-agent (kept tight to save tokens)."""
+  files = "\n".join("  - `%s`" % f for f in (agent.get("files") or [])) or "  - (none: read-only job)"
+  tools = ", ".join(agent.get("tools") or []) or "read_file, list_directory, search_files"
+  return (
+    "You are %s, agent #%s of DocMind's squad (%s).\n"
+    "DocMind (the lead) owns the plan; you own ONLY the step below. Work in the shared "
+    "working folder.\n\n"
+    "TEAM GOAL (context only):\n%s\n\n"
+    "YOUR JOB:\n%s\n\n"
+    "FILES YOU MAY WRITE:\n%s\n\n"
+    "ALLOWED TOOLS: %s\n\n"
+    "RULES:\n"
+    "- Do the job with tool calls; do not paste whole files into your reply.\n"
+    "- Never modify a file owned by another agent.\n"
+    "- Keep edits minimal and coherent with the surrounding code.\n"
+    "- When your step is genuinely complete and verified, reply with a one-line report "
+    "starting with 'DONE:' and stop calling tools.\n"
+    "%s"
+  ) % (agent.get("name"), agent.get("index"), agent.get("role"), request.strip(),
+       agent.get("goal"), files, tools,
+       ("\nLEAD NOTE:\n" + lead_note.strip() + "\n") if lead_note else "")
+
+
+ def squad_review_prompt(request: str, feed: SquadFeed) -> str:
+  return (
+    "You are DocMind, the lead. Your squad just finished these steps:\n%s\n\n"
+    "Original request:\n%s\n\n"
+    "Now do the final pass yourself: read the changed files, wire anything that does not "
+    "fit together, run the checks, fix remaining problems, and close the turn with a short "
+    "report (what changed, what you verified, what is left)."
+  ) % (feed.summary() or "-", request.strip())
+
+
+ # --------------------------------------------------------------- orchestrator
+ def squad_run(agent_obj: Any, user_request: str, *,
+              max_agents: int = SQUAD_MAX_AGENTS,
+              rounds_per_agent: int = SQUAD_MAX_ROUNDS_PER_AGENT,
+              time_budget: float = SQUAD_TIME_BUDGET_S,
+              feed: Optional[SquadFeed] = None,
+              parallel: bool = False,
+              lead_note: str = "") -> Dict[str, Any]:
+  """Plan with the lead model, then run every step as its own agent.
+
+  Returns a dict with 'ok', 'agents', 'feed', 'plan_path', 'reviewed' and 'error'.
+  Never raises: a broken plan degrades to a single-agent run (reviewed by the lead).
+  """
+  result: Dict[str, Any] = {"ok": False, "agents": [], "plan_path": None,
+                            "reviewed": False, "error": ""}
+  feed = feed or SquadFeed()
+  lead = getattr(agent_obj, "plan_with_model", None)
+  runner = getattr(agent_obj, "run_child_turn", None)
+  if not callable(lead) or not callable(runner):
+    result["error"] = "squad engine not wired into this build"
+    return result
+  try:
+    cwd = Path(getattr(getattr(agent_obj, "tools", None), "cwd", ".") or ".")
+  except Exception:
+    cwd = Path(".")
+  if feed.mode != "off":
+    feed.lead("planning the work")
+  try:
+    raw = lead(squad_plan_prompt(user_request, str(cwd)))
+  except Exception as exc:
+    result["error"] = "plan failed: %s" % exc
+    return result
+  steps = squad_normalize_plan(squad_extract_json(raw), max_agents=max_agents)
+  if len(steps) < SQUAD_MIN_AGENTS:
+    result["error"] = "planner produced %d usable step(s)" % len(steps)
+    return result
+  steps = squad_assign_names(steps)
+  result["agents"] = steps
+  result["plan_path"] = squad_write_plan(cwd, user_request, steps)
+  if feed.mode != "off":
+    feed.lead("plan ready: %d agents (%s)" % (
+      len(steps), ", ".join("%s/%s" % (a["name"], a["role"]) for a in steps[:4])
+      + (" ..." if len(steps) > 4 else "")))
+  for step in steps:
+    feed.add_task(step)
+  deadline = time.monotonic() + max(60.0, float(time_budget))
+  child_rounds = 0
+  any_done = False
+  for step in steps:
+    if time.monotonic() > deadline:
+      feed.stop(step["handle"], "time budget spent")
+      continue
+    if child_rounds >= SQUAD_MAX_CHILD_ROUNDS_TOTAL:
+      feed.stop(step["handle"], "round budget spent")
+      continue
+    try:
+      outcome = runner(squad_agent_prompt(step, user_request, lead_note),
+                       step=step, feed=feed,
+                       max_rounds=min(int(rounds_per_agent),
+                                      SQUAD_MAX_CHILD_ROUNDS_TOTAL - child_rounds))
+      child_rounds += int((outcome or {}).get("rounds", 0)) if isinstance(outcome, dict) else 0
+      if isinstance(outcome, dict) and outcome.get("ok"):
+        feed.done(step["handle"], outcome.get("report", ""))
+        any_done = True
+      else:
+        feed.failed(step["handle"], (outcome or {}).get("error", "no result"))
+    except Exception as exc:
+      feed.failed(step["handle"], "%s: %s" % (type(exc).__name__, exc))
+  result["ok"] = any_done
+  return result
+
+
+ # --------------------------------------------------------------- slash + config
+ def squad_parse_command(arg: str) -> Tuple[str, str]:
+  """'/squad off', '/squad on 4', '/squad team status' -> (action, value)."""
+  bits = str(arg or "").strip().split()
+  if not bits:
+    return "status", ""
+  head = bits[0].lower()
+  if head in ("on", "aç", "ac", "acik", "açık"):
+    return "on", " ".join(bits[1:]) or "ask"
+  if head in ("off", "kapat", "kapali", "kapalı"):
+    return "off", ""
+  if head in ("force", "always", "auto"):
+    return "force", "auto"
+  if head in ("agents", "max", "limit"):
+    return "agents", " ".join(bits[1:])
+  return "status", ""
+
+
+ def squad_toggle_text(mode: str, max_agents: int) -> str:
+  return {
+    "ask": "squad: ASK (DocMind offers the 2-option choice)",
+    "auto": "squad: AUTO (complex requests are split without asking)",
+    "off": "squad: OFF (single agent only)",
+  }.get(str(mode).lower(), "squad: ASK") + " · max %d agents" % max_agents
+
+
+ return locals()
+_dm_install('docmind.core.squad', _dm_module_27, False)
+
 _dm_install('docmind.core.agent', _dm_module_24, False)
 
 # ===== Aggressive Engine wiring (top level, real globals) =====
@@ -15809,6 +16522,12 @@ def _dm_aggressive_helpers():
         for name in names:
             if hasattr(proj, name):
                 out[name] = getattr(proj, name)
+    # v1.3: the squad engine lives in its own module; binder gives it to agent code
+    squ = _dm_sys.modules.get("docmind.core.squad")
+    if squ is not None:
+        for name, value in vars(squ).items():
+            if name.startswith("squad_") or name.startswith("SQUAD_") or name == "SquadFeed":
+                out[name] = value
     return out
 
 
@@ -16071,6 +16790,12 @@ def _dm_module_25():
         return "continue"
       if cmd in ("/token-save", "/tokensave", "/token_save", "/tasarruf"):
         self._handle_token_save(arg)
+        return "continue"
+      if cmd in ("/squad", "/team", "/takim", "/takım"):
+        self._handle_squad(arg)
+        return "continue"
+      if cmd in ("/mobile", "/termux"):
+        self._handle_mobile(arg)
         return "continue"
       if cmd == "/tokens":
         self._handle_tokens(arg)
@@ -16656,6 +17381,69 @@ def _dm_module_25():
     self.ui.info(t("effort_menu_legend"))
     if current == "aggressive":
       self.ui.info(t("effort_aggressive_note"))
+  def _handle_squad(self, arg: str) -> None:
+    """v1.3: /squad status|on|off|auto|agents N -> team behaviour."""
+    cfg = self.cfg_mgr.config
+    action, value = squad_parse_command(arg)
+    max_agents = getattr(cfg, "squad_max_agents", 6)
+    if action in ("on", "off", "force"):
+      cfg.squad_mode = {"on": "ask", "off": "off", "force": "auto"}[action]
+      self.cfg_mgr.save()
+      self.ui.success(squad_toggle_text(cfg.squad_mode, max_agents))
+      return
+    if action == "agents":
+      try:
+        cfg.squad_max_agents = max(2, min(8, int(value)))
+        self.cfg_mgr.save()
+        self.ui.success(squad_toggle_text(cfg.squad_mode, cfg.squad_max_agents))
+      except (TypeError, ValueError):
+        self.ui.warn("usage: /squad agents <2-8>")
+      return
+    live = getattr(self.agent, "squad_feed", None)
+    if live:
+      body = squad_dashboard(live, getattr(self.agent, "_squad_request", ""), cfg.squad_mode)
+    else:
+      body = "\n".join([
+        squad_toggle_text(cfg.squad_mode, max_agents),
+        "",
+        "DocMind is always the lead: it plans, hands out the jobs, runs the",
+        "perfection audit and reports. Agents get names like Nova, Pixel, Atlas.",
+        "",
+        "/squad auto    split complex requests without asking",
+        "/squad off     single agent only",
+        "/squad agents 4",
+      ])
+    self.ui.print_panel("SQUAD / TEAM", body, style="bright_cyan")
+    return
+
+  def _handle_mobile(self, arg: str) -> None:
+    """v1.3: /mobile on|off|ascii|unicode|status -> terminal fidelity on phones."""
+    cfg = self.cfg_mgr.config
+    value = (arg or "").strip().lower()
+    if value in ("on", "1", "true", "aç", "ac"):
+      cfg.mobile_mode = True
+    elif value in ("off", "0", "false", "kapat"):
+      cfg.mobile_mode = False
+    elif value in ("ascii", "plain", "safe"):
+      cfg.glyph_mode = "ascii"
+    elif value in ("unicode", "emoji", "fancy"):
+      cfg.glyph_mode = "unicode"
+    elif value not in ("", "status", "durum"):
+      self.ui.warn("usage: /mobile on|off|ascii|unicode|status")
+      return
+    self.cfg_mgr.save()
+    body = "\n".join([
+      "device      : %s" % ("phone/tablet (Termux)" if _DM_MOBILE else "desktop"),
+      "mobile mode : %s" % ("ON" if getattr(cfg, "mobile_mode", False) else "OFF"),
+      "glyphs      : %s" % getattr(cfg, "glyph_mode", "auto"),
+      "storage     : %s" % (_DM_STORAGE_ROOT or "(desktop paths)"),
+      "width       : %s" % (_dm_os.environ.get("TERM_WIDTH") or "auto"),
+      "",
+      "Overrides: DOCMIND_MOBILE=1 | DOCMIND_MOBILE=0 | DOCMIND_ASCII=1",
+    ])
+    self.ui.print_panel("MOBILE / TERMUX", body, style="bright_green")
+    return
+
   def _handle_effort(self, arg: str) -> None:
     cfg = self.cfg_mgr.config
     aliases = {
