@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '171bf06badb4c0405b1ca550a9ab695636273062f288d8a1ae380080f403a1e0'
-_DM_SIGNATURE = '75a3c99dc8391ac2b4b8b308bd15728dcb1f76e426e535c2f5512a2eb7d76f27f1afe8266674a33b65dd75782a5c632a16dc419c9f849d53dbfd8b34235e7e54ec8f1c671adfe07cea07211d69eed9684cc28099f6ba649936620fc2f7e7c5c84ceab0557d9b7023ae9cbc19db1e2ceae43274c8f08399ceb599fccb988ec2fbf3ea1f5aa70260960f111fe562b5fc83af04a7b4ef32e9aa00bf51e62c4aa19825f6b849939c50ecd3d8e3b71ebc0918018489350ef270d2e01d1dd5c80d3dab7c8fdafb8f5a86b868cbb656550ea42cef805eee3fa469c24cf0b26bf14c9a76fe6fe00b5daaa6706dd50b4db98a724c587eeb3078b3249586d5aae0f09efa67bd2452c90493dcac40be104618cfbe44ee6098704af28df890c6572ebc8f2c5c13f44df8905bad3e78c3626fae758d3f87c8a54e983572971c698440ed6c07ce04b0e34191b7d1e85e8fa86519a40b3cd61116b50caaa3a2629a2bffc249ba749743a7ffa07398fcd5b289724c46200220482517dbe538a26e46e61e6cea068d'
+_DM_SOURCE_HASH = '120bc92f58c3fcc6f4d780c9d2467627e814dbe07e48c8d1762f642ac099d22b'
+_DM_SIGNATURE = '70652f838f8e469b279cd49b9f19e3f400ae15952acbe7c9c06a61de924501e7880d45e40a436d186ac395d52aa99601d0b8b8ffa0b6fef9412c5fe89279eb23c3af86adc6111b3bea94d6b0b557c6c1d4b75c981678f2c97a5fc01f76751ab6bcdb3e0c7425f69148d877bab80c16f394070506bd2ffc1225228a0e0d0ab0528e0fd21fdac1afc68612ff3e05ef86725882309b8dce63014c9a71797b0358a4314af98d999f02243548c5c1cd2764c3611eb596b07974a5d1ae3e5169feb9c10392b5c4e5196b02cbefcafb3e1c10e95c69736bf8e7c9cc9f395f612671987ee32566df254ab8558d4d15788b817e6a20daa9a853d7633f7e36caa13a3eb45684cc6e2eb5504f67be51cae8b3a05b7bb0d1e5bc0661d6a085176959238df84620a7e72b28eb7d25f22ecf0343f5fe88f6a94df5f69884fbcae08cda0c2680b3a0aa06f033f189fad2e873e0b4dbc8d8ad7aa31e72890fb03380fcaec8da57a3d84d4a43bb1986bfdf3ee0a1bce42056090ae69424cbdc4f5faa50720bd3faae'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -1604,7 +1604,17 @@ def _dm_module_01():
     "mobile_row_storage": "almacenamiento",
     "mobile_row_width": "ancho",
     "mobile_device_phone": "teléfono/tableta (Termux)",
-    "mobile_device_desktop": "escritorio"
+    "mobile_device_desktop": "escritorio",
+    "aggressive_audit_advisory": "Estos hallazgos ya existían en archivos que este turno no tocó; no bloquean el turno, pero conviene corregirlos después.",
+    "aggressive_audit_clean": "Auditoría de perfección limpia: sin errores de sintaxis, trabajo a medias ni patrones de error sospechosos ({files} archivos revisados).",
+    "aggressive_audit_gave_up": "La auditoría no pudo resolver {count} incidencia(s) en 3 rondas; el turno se cerró para evitar un bucle infinito.",
+    "aggressive_audit_issues": "La auditoría de perfección encontró {count} incidencia(s); los archivos afectados están listados y deben corregirse.",
+    "aggressive_audit_leftover": "Los hallazgos restantes están arriba; pídemelo otra vez si quieres que se corrijan.",
+    "aggressive_audit_running": "Ejecutando la auditoría de perfección: sintaxis, marcas TODO/FIXME y patrones de error en los archivos de código de la carpeta de trabajo...",
+    "aggressive_audit_stuck": "La auditoría encontró de nuevo las mismas {count} incidencia(s); el turno se cerró para evitar un bucle.",
+    "aggressive_audit_tool": "Auditoría de perfección de la carpeta de trabajo: errores de sintaxis, marcas TODO/FIXME/XXX, patrones de error reales y estado de la memoria del proyecto (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, copias automáticas).",
+    "aggressive_engine_off": "El motor agresivo está desactivado en esta sesión; solo se aplica el nivel de razonamiento más profundo.",
+    "aggressive_engine_on": "MOTOR AGRESIVO ARMADO: cada turno ejecuta plan + análisis de riesgos, cada archivo escrito recibe una comprobación de sintaxis automática, cada turno termina con auditoría de perfección y actualización de la memoria del proyecto."
   },
   "fr": {
     "lang_name": "Français",
@@ -1933,7 +1943,17 @@ def _dm_module_01():
     "mobile_row_storage": "stockage",
     "mobile_row_width": "largeur",
     "mobile_device_phone": "téléphone/tablette (Termux)",
-    "mobile_device_desktop": "ordinateur"
+    "mobile_device_desktop": "ordinateur",
+    "aggressive_audit_advisory": "Ces constats existaient déjà dans des fichiers non modifiés pendant ce tour ; ils ne bloquent pas le tour mais doivent être corrigés plus tard.",
+    "aggressive_audit_clean": "Audit de perfection propre : aucune erreur de syntaxe, travail inachevé ou motif d'erreur suspect ({files} fichiers analysés).",
+    "aggressive_audit_gave_up": "L'audit n'a pas pu éliminer {count} problème(s) en 3 tours ; le tour a été clos pour éviter une boucle infinie.",
+    "aggressive_audit_issues": "L'audit de perfection a trouvé {count} problème(s) ; les fichiers concernés sont listés et doivent être corrigés.",
+    "aggressive_audit_leftover": "Les constats restants sont listés ci-dessus ; redemandez pour qu'ils soient corrigés.",
+    "aggressive_audit_running": "Audit de perfection en cours : syntaxe, marqueurs TODO/FIXME et motifs d'erreur dans les fichiers de code du dossier de travail...",
+    "aggressive_audit_stuck": "L'audit a retrouvé les mêmes {count} problème(s) ; le tour a été clos pour éviter une boucle.",
+    "aggressive_audit_tool": "Audit de perfection du dossier de travail : erreurs de syntaxe, marqueurs TODO/FIXME/XXX, motifs d'erreur réels et état de la mémoire du projet (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, sauvegardes automatiques).",
+    "aggressive_engine_off": "Le moteur agressif est désactivé pour cette session ; seul le niveau de raisonnement le plus profond est appliqué.",
+    "aggressive_engine_on": "MOTEUR AGRESSIF ARMÉ : chaque tour exécute un plan + analyse des risques, chaque fichier écrit passe un contrôle de syntaxe automatique, chaque tour se termine par un audit de perfection et une mise à jour de la mémoire du projet."
   },
   "ru": {
     "lang_name": "Русский",
@@ -2262,7 +2282,17 @@ def _dm_module_01():
     "mobile_row_storage": "хранилище",
     "mobile_row_width": "ширина",
     "mobile_device_phone": "телефон/планшет (Termux)",
-    "mobile_device_desktop": "компьютер"
+    "mobile_device_desktop": "компьютер",
+    "aggressive_audit_advisory": "Эти замечания существовали в файлах, которые этот ход не затрагивал; они не блокируют ход, но их следует исправить позже.",
+    "aggressive_audit_clean": "Аудит совершенства пройден: ошибок синтаксиса, незавершённой работы и подозрительных шаблонов ошибок нет (проверено файлов: {files}).",
+    "aggressive_audit_gave_up": "Аудит не смог устранить {count} замечани(й) за 3 круга; ход закрыт, чтобы не уйти в бесконечный цикл.",
+    "aggressive_audit_issues": "Аудит совершенства нашёл {count} замечание(й); затронутые файлы перечислены и должны быть исправлены.",
+    "aggressive_audit_leftover": "Оставшиеся замечания перечислены выше; попросите снова, если их нужно исправить.",
+    "aggressive_audit_running": "Идёт аудит совершенства: синтаксис, маркеры TODO/FIXME и шаблоны ошибок в файлах кода рабочей папки...",
+    "aggressive_audit_stuck": "Аудит снова нашёл те же {count} замечание(й); ход закрыт, чтобы не уйти в цикл.",
+    "aggressive_audit_tool": "Аудит совершенства рабочей папки: ошибки синтаксиса, маркеры TODO/FIXME/XXX, реальные шаблоны ошибок и состояние памяти проекта (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, автоматические резервные копии).",
+    "aggressive_engine_off": "Агрессивный движок отключён в этой сессии; применяется только самый глубокий уровень рассуждений.",
+    "aggressive_engine_on": "АГРЕССИВНЫЙ ДВИЖОК ВКЛЮЧЁН: каждый ход выполняет план + анализ рисков, каждый записанный файл проходит автоматическую проверку синтаксиса, каждый ход завершается аудитом совершенства и обновлением памяти проекта."
   },
   "az": {
     "lang_name": "Azərbaycan dili",
@@ -2591,7 +2621,17 @@ def _dm_module_01():
     "mobile_row_storage": "yaddaş",
     "mobile_row_width": "en",
     "mobile_device_phone": "telefon/planşet (Termux)",
-    "mobile_device_desktop": "masaüstü"
+    "mobile_device_desktop": "masaüstü",
+    "aggressive_audit_advisory": "Bu tapıntılar bu turda toxunulmayan fayllarda əvvəldən var idi; turu bloklamır, amma sonra düzəldilməlidir.",
+    "aggressive_audit_clean": "Mükəmməllik auditi təmizdir: sintaksis xətası, yarımçıq iş və ya şübhəli xəta nümunəsi tapılmadı ({files} fayl yoxlanıldı).",
+    "aggressive_audit_gave_up": "Audit 3 raundda {count} problemi həll edə bilmədi; sonsuz dövrəyə düşməmək üçün tur bağlandı.",
+    "aggressive_audit_issues": "Mükəmməllik auditi {count} problem tapdı; aid fayllar siyahıdadır və düzəldilməlidir.",
+    "aggressive_audit_leftover": "Qalan tapıntılar yuxarıda göstərildi; düzəldilməsini istəsəniz yenidən yazın.",
+    "aggressive_audit_running": "Mükəmməllik auditi işləyir: iş qovluğundakı kod fayllarında sintaksis, TODO/FIXME işarələri və xəta nümunələri yoxlanılır...",
+    "aggressive_audit_stuck": "Audit yenə eyni {count} problemi tapdı; dövrəyə düşməmək üçün tur bağlandı.",
+    "aggressive_audit_tool": "İş qovluğunun mükəmməllik auditi: sintaksis xətaları, TODO/FIXME/XXX işarələri, real xəta nümunələri və layihə yaddaşının vəziyyəti (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, avtomatik ehtiyat nüsxələr).",
+    "aggressive_engine_off": "Aqressiv mühərrik bu sessiyada söndürülüb; yalnız ən dərin düşünmə səviyyəsi tətbiq olunur.",
+    "aggressive_engine_on": "AQressiv MÜHƏRRİK AKTİVDİR: hər turda plan + risk taraması, yazılan hər faylda avtomatik sintaksis yoxlaması, turun sonunda mükəmməllik auditi və layihə yaddaşının yenilənməsi məcburidir."
   },
   "it": {
     "lang_name": "Italiano",
@@ -2920,7 +2960,17 @@ def _dm_module_01():
     "mobile_row_storage": "archivio",
     "mobile_row_width": "larghezza",
     "mobile_device_phone": "telefono/tablet (Termux)",
-    "mobile_device_desktop": "desktop"
+    "mobile_device_desktop": "desktop",
+    "aggressive_audit_advisory": "Queste segnalazioni esistevano già in file non modificati in questo turno; non bloccano il turno ma vanno corrette in seguito.",
+    "aggressive_audit_clean": "Audit di perfezione pulito: nessun errore di sintassi, lavoro incompleto o pattern di errore sospetti ({files} file analizzati).",
+    "aggressive_audit_gave_up": "L'audit non è riuscito a chiudere {count} problema/i in 3 passaggi; il turno è stato chiuso per evitare un ciclo infinito.",
+    "aggressive_audit_issues": "L'audit di perfezione ha trovato {count} problema/i; i file coinvolti sono elencati e vanno corretti.",
+    "aggressive_audit_leftover": "Le segnalazioni rimaste sono sopra; richiedilo di nuovo se vuoi che vengano corrette.",
+    "aggressive_audit_running": "Esecuzione dell'audit di perfezione: sintassi, marcatori TODO/FIXME e pattern di errore nei file di codice della cartella di lavoro...",
+    "aggressive_audit_stuck": "L'audit ha trovato di nuovo gli stessi {count} problema/i; il turno è stato chiuso per evitare un ciclo.",
+    "aggressive_audit_tool": "Audit di perfezione della cartella di lavoro: errori di sintassi, marcatori TODO/FIXME/XXX, pattern di errore reali e stato della memoria di progetto (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, backup automatici).",
+    "aggressive_engine_off": "Il motore aggressivo è disattivato in questa sessione; viene applicato solo il livello di ragionamento più profondo.",
+    "aggressive_engine_on": "MOTORE AGGRESSIVO ATTIVO: ogni turno esegue piano + analisi dei rischi, ogni file scritto riceve un controllo di sintassi automatico, ogni turno termina con audit di perfezione e aggiornamento della memoria di progetto."
   },
   "pt": {
     "lang_name": "Português",
@@ -3249,7 +3299,17 @@ def _dm_module_01():
     "mobile_row_storage": "armazenamento",
     "mobile_row_width": "largura",
     "mobile_device_phone": "telemóvel/tablet (Termux)",
-    "mobile_device_desktop": "computador"
+    "mobile_device_desktop": "computador",
+    "aggressive_audit_advisory": "Estes achados já existiam em ficheiros que este turno não alterou; não bloqueiam o turno, mas devem ser corrigidos depois.",
+    "aggressive_audit_clean": "Auditoria de perfeição limpa: sem erros de sintaxe, trabalho inacabado ou padrões de erro suspeitos ({files} ficheiros analisados).",
+    "aggressive_audit_gave_up": "A auditoria não resolveu {count} problema(s) em 3 rondas; o turno foi encerrado para evitar um ciclo infinito.",
+    "aggressive_audit_issues": "A auditoria de perfeição encontrou {count} problema(s); os ficheiros afetados estão listados e têm de ser corrigidos.",
+    "aggressive_audit_leftover": "Os achados restantes estão acima; peça novamente se quiser que sejam corrigidos.",
+    "aggressive_audit_running": "A executar a auditoria de perfeição: sintaxe, marcas TODO/FIXME e padrões de erro nos ficheiros de código da pasta de trabalho...",
+    "aggressive_audit_stuck": "A auditoria encontrou os mesmos {count} problema(s) outra vez; o turno foi encerrado para evitar um ciclo.",
+    "aggressive_audit_tool": "Auditoria de perfeição da pasta de trabalho: erros de sintaxe, marcas TODO/FIXME/XXX, padrões de erro reais e estado da memória do projeto (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, cópias automáticas).",
+    "aggressive_engine_off": "O motor agressivo está desligado nesta sessão; aplica-se apenas o nível de raciocínio mais profundo.",
+    "aggressive_engine_on": "MOTOR AGRESSIVO ARMADO: cada turno executa plano + análise de riscos, cada ficheiro escrito recebe verificação de sintaxe automática, cada turno termina com auditoria de perfeição e atualização da memória do projeto."
   },
   "nl": {
     "lang_name": "Nederlands",
@@ -3578,7 +3638,17 @@ def _dm_module_01():
     "mobile_row_storage": "opslag",
     "mobile_row_width": "breedte",
     "mobile_device_phone": "telefoon/tablet (Termux)",
-    "mobile_device_desktop": "desktop"
+    "mobile_device_desktop": "desktop",
+    "aggressive_audit_advisory": "Deze bevindingen bestonden al in bestanden die deze beurt niet aanraakte; ze blokkeren de beurt niet, maar moeten later worden opgelost.",
+    "aggressive_audit_clean": "Perfectie-audit schoon: geen syntaxfouten, onaf werk of verdachte foutpatronen ({files} bestanden gescand).",
+    "aggressive_audit_gave_up": "De audit kon {count} punt(en) niet oplossen in 3 rondes; de beurt is gesloten om een eindeloze lus te voorkomen.",
+    "aggressive_audit_issues": "De perfectie-audit vond {count} punt(en); de betrokken bestanden staan vermeld en moeten worden hersteld.",
+    "aggressive_audit_leftover": "De resterende bevindingen staan hierboven; vraag het opnieuw als ze hersteld moeten worden.",
+    "aggressive_audit_running": "Perfectie-audit loopt: syntaxis, TODO/FIXME-markeringen en foutpatronen in de codebestanden van de werkmap...",
+    "aggressive_audit_stuck": "De audit vond dezelfde {count} punt(en) opnieuw; de beurt is gesloten om een lus te voorkomen.",
+    "aggressive_audit_tool": "Perfectie-audit van de werkmap: syntaxfouten, TODO/FIXME/XXX-markeringen, echte foutpatronen en de status van het projectgeheugen (AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, automatische back-ups).",
+    "aggressive_engine_off": "De agressieve engine staat uit voor deze sessie; alleen het diepste redeneerniveau wordt toegepast.",
+    "aggressive_engine_on": "AGRESSIEVE ENGINE ACTIEF: elke beurt voert een plan + risicoscan uit, elk geschreven bestand krijgt automatische syntaxcontrole, elke beurt eindigt met een perfectie-audit en een update van het projectgeheugen."
   },
   "ar": {
     "lang_name": "العربية",
@@ -3907,7 +3977,17 @@ def _dm_module_01():
     "mobile_row_storage": "التخزين",
     "mobile_row_width": "العرض",
     "mobile_device_phone": "هاتف/جهاز لوحي (Termux)",
-    "mobile_device_desktop": "سطح المكتب"
+    "mobile_device_desktop": "سطح المكتب",
+    "aggressive_audit_advisory": "هذه الملاحظات كانت موجودة مسبقاً في ملفات لم يلمسها هذا الدور؛ لا توقف الدور لكن يجب إصلاحها لاحقاً.",
+    "aggressive_audit_clean": "تدقيق الإتقان نظيف: لا أخطاء صياغة ولا عمل ناقص ولا أنماط خطأ مشبوهة ({files} ملفاً تم فحصه).",
+    "aggressive_audit_gave_up": "لم يتمكن التدقيق من حل {count} مشاهدة في 3 جولات؛ تم إغلاق الدور لتجنب حلقة لا نهائية.",
+    "aggressive_audit_issues": "وجد تدقيق الإتقان {count} ملاحظة؛ الملفات المتأثرة مدرجة ويجب إصلاحها.",
+    "aggressive_audit_leftover": "الملاحظات المتبقية مذكورة أعلاه؛ اطلب مرة أخرى إذا أردت إصلاحها.",
+    "aggressive_audit_running": "يجري تدقيق الإتقان: الصياغة وعلامات TODO/FIXME وأنماط الأخطاء في ملفات الكود بمجلد العمل...",
+    "aggressive_audit_stuck": "وجد التدقيق نفس {count} ملاحظة مرة أخرى؛ تم إغلاق الدور لتجنب الحلقة.",
+    "aggressive_audit_tool": "تدقيق الإتقان لمجلد العمل: أخطاء الصياغة وعلامات TODO/FIXME/XXX وأنماط الأخطاء الحقيقية وحالة ذاكرة المشروع (AGGRESSIVE_PLAN وAGGRESSIVE_JOURNAL والنسخ الاحتياطية التلقائية).",
+    "aggressive_engine_off": "المحرك العنيف معطل في هذه الجلسة؛ يُطبَّق فقط أعمق مستوى تفكير.",
+    "aggressive_engine_on": "المحرك العنيف مُفعّل: كل دور ينفّذ خطة وتحليل مخاطر، وكل ملف مكتوب يخضع لفحص صياغة تلقائي، وينتهي كل دور بتدقيق الإتقان وتحديث ذاكرة المشروع."
   },
   "zh": {
     "lang_name": "中文",
@@ -4236,7 +4316,17 @@ def _dm_module_01():
     "mobile_row_storage": "存储",
     "mobile_row_width": "宽度",
     "mobile_device_phone": "手机/平板（Termux）",
-    "mobile_device_desktop": "桌面"
+    "mobile_device_desktop": "桌面",
+    "aggressive_audit_advisory": "这些发现在本轮未改动的文件中早已存在；它们不会阻止本轮，但之后应修复。",
+    "aggressive_audit_clean": "完美性审核通过：未发现语法错误、未完成的工作或可疑的错误模式（已检查 {files} 个文件）。",
+    "aggressive_audit_gave_up": "完美性审核在 3 轮内无法清除 {count} 个问题；为避免无限循环，本轮已关闭。",
+    "aggressive_audit_issues": "完美性审核发现 {count} 个问题；相关文件已列出，必须修复。",
+    "aggressive_audit_leftover": "其余发现已列在上面；如需修复请再次告知。",
+    "aggressive_audit_running": "正在执行完美性审核：扫描工作目录代码文件的语法、TODO/FIXME 标记与错误模式……",
+    "aggressive_audit_stuck": "完美性审核再次发现相同的 {count} 个问题；为避免循环，本轮已关闭。",
+    "aggressive_audit_tool": "对工作目录执行完美性审核：语法错误、TODO/FIXME/XXX 标记、真实错误模式与项目记忆状态（AGGRESSIVE_PLAN、AGGRESSIVE_JOURNAL、自动备份）。",
+    "aggressive_engine_off": "本次会话已关闭激进引擎；仅应用最深的推理等级。",
+    "aggressive_engine_on": "激进引擎已启用：每一轮执行计划 + 风险扫描，每个写入的文件自动做语法检查，每轮结束时进行完美性审核并更新项目记忆。"
   },
   "ja": {
     "lang_name": "日本語",
@@ -4565,7 +4655,17 @@ def _dm_module_01():
     "mobile_row_storage": "保存先",
     "mobile_row_width": "幅",
     "mobile_device_phone": "スマートフォン/タブレット（Termux）",
-    "mobile_device_desktop": "デスクトップ"
+    "mobile_device_desktop": "デスクトップ",
+    "aggressive_audit_advisory": "これらの指摘は今回触れていないファイルに以前から存在するものです。ターンは止めませんが、後で修正してください。",
+    "aggressive_audit_clean": "完璧性監査はクリーンです：構文エラー、未完了の作業、疑わしいエラーパターンはありません（{files} ファイルを検査）。",
+    "aggressive_audit_gave_up": "完璧性監査は3ラウンドで {count} 件の問題を解消できませんでした。無限ループを避けるためターンを終了しました。",
+    "aggressive_audit_issues": "完璧性監査で {count} 件の指摘が見つかりました。対象ファイルは一覧化されており、修正が必要です。",
+    "aggressive_audit_leftover": "残りの指摘は上に一覧しています。修正が必要ならもう一度指示してください。",
+    "aggressive_audit_running": "完璧性監査を実行中：作業フォルダーのコードファイルの構文、TODO/FIXME、エラーパターンを検査しています…",
+    "aggressive_audit_stuck": "完璧性監査が同じ {count} 件の指摘を再検出しました。ループを避けるためターンを終了しました。",
+    "aggressive_audit_tool": "作業フォルダーの完璧性監査：構文エラー、TODO/FIXME/XXX マーカー、実際のエラーパターン、プロジェクトメモリの状態（AGGRESSIVE_PLAN、AGGRESSIVE_JOURNAL、自動バックアップ）。",
+    "aggressive_engine_off": "このセッションではアグレッシブエンジンはオフです。最も深い推論レベルのみが適用されます。",
+    "aggressive_engine_on": "アグレッシブエンジン作動中：ターンごとに計画＋リスクスキャン、書き込んだ各ファイルの自動構文チェック、ターン終了時に完璧性監査とプロジェクトメモリの更新を実行します。"
   },
   "ko": {
     "lang_name": "한국어",
@@ -4894,7 +4994,17 @@ def _dm_module_01():
     "mobile_row_storage": "저장소",
     "mobile_row_width": "너비",
     "mobile_device_phone": "휴대폰/태블릿(Termux)",
-    "mobile_device_desktop": "데스크톱"
+    "mobile_device_desktop": "데스크톱",
+    "aggressive_audit_advisory": "이 발견 사항은 이번 턴에서 수정하지 않은 파일에 이미 있던 것입니다. 턴을 막지는 않지만 나중에 고쳐야 합니다.",
+    "aggressive_audit_clean": "완벽성 감사 통과: 구문 오류, 미완성 작업, 의심스러운 오류 패턴이 없습니다({files}개 파일 확인).",
+    "aggressive_audit_gave_up": "완벽성 감사가 3라운드 안에 {count}개 문제를 해결하지 못했습니다. 무한 반복을 막기 위해 턴을 종료했습니다.",
+    "aggressive_audit_issues": "완벽성 감사에서 {count}개 문제를 찾았습니다. 해당 파일이 나열되었으며 수정이 필요합니다.",
+    "aggressive_audit_leftover": "남은 발견 사항은 위에 나열되어 있습니다. 수정하려면 다시 요청하세요.",
+    "aggressive_audit_running": "완벽성 감사 실행 중: 작업 폴더의 코드 파일에서 구문, TODO/FIXME, 오류 패턴을 확인합니다...",
+    "aggressive_audit_stuck": "완벽성 감사가 같은 {count}개 문제를 다시 찾았습니다. 반복을 막기 위해 턴을 종료했습니다.",
+    "aggressive_audit_tool": "작업 폴더의 완벽성 감사: 구문 오류, TODO/FIXME/XXX 표시, 실제 오류 패턴, 프로젝트 메모리 상태(AGGRESSIVE_PLAN, AGGRESSIVE_JOURNAL, 자동 백업).",
+    "aggressive_engine_off": "이 세션에서는 공격적 엔진이 꺼져 있으며, 가장 깊은 추론 단계만 적용됩니다.",
+    "aggressive_engine_on": "공격적 엔진 활성화: 매 턴 계획 + 위험 스캔, 작성한 모든 파일에 자동 구문 검사, 턴 종료 시 완벽성 감사와 프로젝트 메모리 갱신을 수행합니다."
   }
  }''')
  return locals()
@@ -6044,6 +6154,10 @@ def _dm_module_06():
  def resolve_user_path(raw_path: str, base_cwd: Path) -> Path:
    """Resolve any Windows or Linux path including ~, %ENV%, $ENV, /c/Users/..., and Desktop/Masaüstü aliases."""
    s = (raw_path or ".").strip()
+   if "\x00" in s:
+     # A pasted NUL byte cannot be a path: refuse it here instead of letting
+     # pathlib raise ValueError from inside the turn.
+     raise ValueError("path contains an invalid NUL character")
    if len(s) >= 2 and s[0] == s[-1] and s[0] in ("'", '"'):
      s = s[1:-1].strip()
    if not s or s == ".":
@@ -6070,8 +6184,11 @@ def _dm_module_06():
      p = base_cwd / p
    try:
      return p.resolve()
-   except OSError:
-     return Path(os.path.abspath(str(p)))
+   except (OSError, ValueError, RuntimeError):
+     try:
+       return Path(os.path.abspath(str(p)))
+     except (OSError, ValueError):
+       return base_cwd / "invalid_path"
  def read_text_resilient(path: Path) -> Tuple[str, str]:
    """Read text file supporting UTF-8, UTF-8-BOM, UTF-16 LE/BE, Turkish CP1254, and Latin-1."""
    if path.is_symlink() and not path.exists():
@@ -6276,7 +6393,7 @@ def _dm_module_06():
    target.parent.mkdir(parents=True, exist_ok=True)
    fd, name = tempfile.mkstemp(prefix=".docmind-write-", suffix=".tmp", dir=str(target.parent))
    try:
-     with os.fdopen(fd, "w", encoding=encoding, newline="") as stream:
+     with os.fdopen(fd, "w", encoding=encoding, errors="replace", newline="") as stream:
        stream.write(content)
        stream.flush()
        os.fsync(stream.fileno())
@@ -13287,6 +13404,174 @@ def _dm_module_18():
      out.append(ch)
      used += width
    return "".join(out)
+ def _char_width(ch: str) -> int:
+   if unicodedata.combining(ch):
+     return 0
+   return 2 if unicodedata.east_asian_width(ch) in "WF" else 1
+ def _display_width(text: str) -> int:
+   """Visible terminal columns (emoji and CJK count as two, ANSI codes as zero)."""
+   raw = str(text)
+   total = 0
+   i, n = 0, len(raw)
+   while i < n:
+     ch = raw[i]
+     if ch == chr(27):
+       j = i + 1
+       if j < n and raw[j] == "[":
+         j += 1
+         while j < n and not ("@" <= raw[j] <= "~"):
+           j += 1
+         j += 1
+       i = j
+       continue
+     total += _char_width(ch)
+     i += 1
+   return total
+ def _sanitize_stream_chunk(chunk: Any) -> str:
+   """Make model output safe to write straight to a terminal.
+
+   Keeps tabs, newlines and SGR colour codes; a bare carriage return becomes a
+   newline (that is what made a half printed line repaint itself on phones) and
+   every other control byte is dropped.
+   """
+   raw = str(chunk)
+   raw = raw.replace("\r\n", "\n").replace("\r", "\n")
+   out = []
+   i = 0
+   n = len(raw)
+   esc = chr(27)
+   while i < n:
+     ch = raw[i]
+     if ch == "\n" or ch == "\t":
+       out.append(ch)
+       i += 1
+       continue
+     if ch == esc:
+       # A complete ``ESC [ ... m`` sequence is a colour change DocMind can keep;
+       # a lone ESC or an unterminated half sequence is dropped.
+       j = i + 1
+       if j < n and raw[j] == "[":
+         j += 1
+         while j < n and (raw[j].isdigit() or raw[j] == ";"):
+           j += 1
+         if j < n and raw[j] == "m":
+           out.append(raw[i:j + 1])
+           i = j + 1
+           continue
+       i += 1
+       continue
+     code = ord(ch)
+     if code < 32 or 0x7F <= code <= 0x9F or code == 0x200B:
+       i += 1
+       continue
+     out.append(ch)
+     i += 1
+   return "".join(out)
+ # Local pattern cache: the wrapper is copied into several module namespaces,
+ # so it builds its own regex on first use instead of relying on a global.
+ def _wrap_ansi_re():
+   pat = _wrap_ansi_re.__dict__.get("pat")
+   if pat is None:
+     pat = re.compile(chr(27) + chr(92) + "[" + "[0-9;?]*[ -/]*[@-~]")
+     _wrap_ansi_re.__dict__["pat"] = pat
+   return pat
+ def _last_wrap_point(text: str, width: int) -> int:
+   """Index just past the last space that still fits in ``width`` cells (0 = none).
+
+   ANSI escapes take no columns, so a coloured line breaks where a plain one
+   would.  The live stream uses it to hand the terminal whole lines only.
+   """
+   if width <= 0:
+     return 0
+   cells = 0
+   last_space = -1
+   i = 0
+   n = len(text)
+   while i < n:
+     ch = text[i]
+     if ch == chr(27):
+       j = i + 1
+       if j < n and text[j] == "[":
+         j += 1
+         while j < n and (text[j].isdigit() or text[j] == ";"):
+           j += 1
+         if j < n and text[j] == "m":
+           i = j + 1
+           continue
+       i += 1
+       continue
+     w = _char_width(ch)
+     if cells + w > width:
+       return last_space + 1 if last_space >= 0 else 0
+     cells += w
+     if ch == " " and cells < width:
+       last_space = i
+     i += 1
+   return last_space + 1 if last_space >= 0 else 0
+ def _wrap_ansi_line(line: str, width: int) -> List[str]:
+   """Wrap one physical line at ``width`` columns, keeping ANSI colouring.
+
+   Self-contained on purpose: it is copied into several module namespaces, so it
+   parses escape sequences by hand instead of depending on a module-level regex.
+   Breaks on spaces when possible and counts emoji / CJK as two cells.
+   """
+   if width <= 0:
+     return [line]
+   if _display_width(line) <= width:
+     return [line]
+   rows: List[str] = []
+   cur: List[str] = []
+   cur_w = 0
+   last_space = -1
+   i, n = 0, len(line)
+   while i < n:
+     ch = line[i]
+     if ch == chr(27):
+       j = i + 1
+       if j < n and line[j] == "[":
+         j += 1
+         while j < n and not ("@" <= line[j] <= "~"):
+           j += 1
+         j += 1
+       cur.append(line[i:j])
+       i = j
+       continue
+     w = _char_width(ch)
+     if cur_w + w > width and cur:
+       # Slice the CHARACTER LIST, not the joined text: escape sequences are
+       # single elements here, so string offsets would cut them in half.
+       if last_space > 0 and last_space < len(cur):
+         head = "".join(cur[:last_space]).rstrip()
+         tail = "".join(cur[last_space + 1:])
+         if head:
+           rows.append(head)
+         cur = [tail] if tail else []
+         cur_w = _display_width(tail)
+         last_space = -1
+         if not tail:
+           cur_w = 0
+       else:
+         rows.append("".join(cur))
+         cur, cur_w, last_space = [], 0, -1
+       continue
+     cur.append(ch)
+     cur_w += w
+     if ch in (" ", "	"):
+       last_space = len(cur) - 1
+     i += 1
+   if cur:
+     rows.append("".join(cur))
+   if not rows:
+     rows.append("")
+   return rows
+ def _wrap_block(text: str, width: int) -> str:
+   """Wrap a multi-line block (answer, panel body, table) to the terminal width."""
+   if width <= 0:
+     return text
+   out: List[str] = []
+   for line in str(text).split("\n"):
+     out.extend(_wrap_ansi_line(line, width))
+   return "\n".join(out)
  class TerminalView:
    def __init__(self, is_tty: bool) -> None:
      self.is_tty = is_tty
@@ -13316,8 +13601,20 @@ def _dm_module_18():
      self._typing_emitted = 0
    def _write(self, text: str) -> None:
      with self.lock:
-       sys.stdout.write(text)
-       sys.stdout.flush()
+       try:
+         sys.stdout.write(text)
+         sys.stdout.flush()
+       except (BrokenPipeError, OSError, ValueError):
+         # stdout gone (closed pipe / killed terminal): never crash the agent.
+         pass
+   def _safe_print(self, text: str = "") -> None:
+     """One sanitised, wrapped, flushed write -- safe from any thread."""
+     try:
+       _, cols = self._size()
+     except Exception:
+       cols = 80
+     safe = _wrap_block(_sanitize_stream_chunk(text), max(20, cols - 1))
+     self._write(safe + "\n")
    def _size(self) -> Tuple[int, int]:
      size = shutil.get_terminal_size(fallback=(80, 24))
      return max(1, size.lines), max(1, size.columns)
@@ -13425,10 +13722,24 @@ def _dm_module_18():
        self._typing_fast = False
        self._typing_abort = False
        self._typing_emitted = 0
-     self._write("\n" + ("\x1b[1;36mDocMind\x1b[0m: " if self.color else "DocMind: "))
+       self._typing_tail = ""
+       self._typing_tail_newline = False
+     prompt = "\x1b[1;36mDocMind\x1b[0m: " if self.color else "DocMind: "
+     try:
+       _, cols = self._size()
+     except Exception:
+       cols = 80
+     if cols >= 30:
+       prompt = "\n".join(_wrap_ansi_line(prompt, max(20, cols - 1))) + " "
+     # The stream shares this physical line, so it must know how much of it is
+     # already used -- otherwise the first answer line overflows the terminal.
+     self._stream_prompt_cols = _display_width(prompt.split("\n")[-1])
+     self._write("\n" + prompt)
      def animate() -> None:
        while True:
-         with self._typing_cond:
+         # One owner for the deque: the API thread only appends under the cond,
+         # the animator pops under the cond AND the terminal lock.
+         with self._typing_cond, self.lock:
            while not self._typing_queue and not self._typing_done and not self._typing_abort:
              self._typing_cond.wait(0.20)
              if not self._typing_queue and not self._typing_done:
@@ -13460,27 +13771,42 @@ def _dm_module_18():
            emitted_now = sum(len(part) for part, _ in pieces)
            self._typing_emitted += emitted_now
            fast = self._typing_fast
-         if pieces:
-           with self.lock:
+           if pieces:
              for part, style in pieces:
-               if self.color and style:
-                 sys.stdout.write("\x1b[" + style + "m" + part + "\x1b[0m")
-               else:
-                 sys.stdout.write(part)
+               try:
+                 if self.color and style:
+                   sys.stdout.write("\x1b[" + style + "m" + part + "\x1b[0m")
+                 else:
+                   sys.stdout.write(part)
+               except (BrokenPipeError, OSError, ValueError):
+                 self._typing_abort = True
+                 return
+             self._typing_tail = "".join(part for part, _ in pieces)[-1:]
+             self._typing_tail_newline = self._typing_tail == "\n"
              self._draw_footer_locked()
-             sys.stdout.flush()
+             try:
+               sys.stdout.flush()
+             except (BrokenPipeError, OSError, ValueError):
+               self._typing_abort = True
+               return
          if not fast:
            time.sleep(0.018)
      self._typing_thread = threading.Thread(target=animate, name="DocMind typing", daemon=True)
      self._typing_thread.start()
    def append_typing(self, text: str, style: Optional[str] = None) -> None:
+     """Queue streamed text. Only the animator thread touches the deque."""
+     chunk = _sanitize_stream_chunk(text)
+     if not chunk:
+       return
      with self._typing_cond:
-       self._typing_queue.append((text, style))
-       self._typing_chars += len(text)
+       self._typing_queue.append((chunk, style))
+       self._typing_chars += len(chunk)
        self._typing_cond.notify()
    def finish_typing(self, fast: bool = False) -> None:
      thread = self._typing_thread
      if not thread:
+       # Nothing is streaming, but the caret may still sit mid-line after an
+       # aborted answer; a newline keeps the next message from being glued on.
        return
      with self._typing_cond:
        self._typing_fast = fast
@@ -13498,8 +13824,17 @@ def _dm_module_18():
        self._write("\n")
        raise
      self._typing_thread = None
-     self._write("\n\n")
+     # Guarantee the stream ended on its own line, whatever happened above.
+     if self._typing_emitted and not self._typing_ended_on_newline():
+       self._write("\n")
+     self._write("\n")
      self.update_footer(force=True)
+   def _typing_ended_on_newline(self) -> bool:
+     """True when the last characters written were a newline (best effort)."""
+     try:
+       return bool(getattr(self, "_typing_tail_newline", False))
+     except Exception:
+       return False
    @contextmanager
    def spinner(self, message: str):
      self.start_spinner(message)
@@ -13801,6 +14136,7 @@ def _dm_module_20():
      use_red = not os.environ.get("NO_COLOR") and (
        self.view.color or os.name != "nt" or bool(os.environ.get("WT_SESSION") or os.environ.get("TERM"))
      )
+     msg = "\n".join(_wrap_ansi_line(msg, max(20, self._cols() - 3)))
      if use_red:
        print(f"\x1b[1;31m  {msg}\x1b[0m", flush=True)
      else:
@@ -13936,8 +14272,13 @@ def _dm_module_20():
    def print_banner(self) -> None:
      _dm_owner_gate()
      _dm_signature_gate()
-     if not self.view.color or self.view._size()[1] < 30:
-       print("\nDocMind v" + __version__ + "  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
+     try:
+       cols = int(self.view._size()[1])
+     except Exception:
+       cols = 80
+     if not self.view.color or cols < 30:
+       line = "DocMind v" + __version__ + "  •  " + _DM_OWNER
+       print("\n" + "\n".join(_wrap_ansi_line(self._paint(line, "1;36"), max(20, cols - 1))) + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -13947,6 +14288,9 @@ def _dm_module_20():
      )
      palette = {"T": 37, "P": 99, "D": 17}
      print()
+     label = "  " + self._paint("DocMind v" + __version__, "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")
+     label_width = _display_width("DocMind v" + __version__ + "  •  " + _DM_OWNER) + 2
+     beside_logo = cols >= 16 + label_width
      for i in range(0, len(pixels), 2):
        cells = []
        for upper, lower in zip(pixels[i], pixels[i+1]):
@@ -13958,8 +14302,9 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v" + __version__, "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
-       print("  " + "".join(cells) + label)
+       print("  " + "".join(cells) + (label if i == 4 and beside_logo else ""))
+     if not beside_logo:
+       print("\n".join(_wrap_ansi_line(label, max(20, cols - 1))))
      print()
    @contextmanager
    def live_footer(self, get_status: Callable[[], str], compact_status=None):
@@ -13971,9 +14316,18 @@ def _dm_module_20():
        self.view.stop_footer()
    def refresh_footer(self) -> None:
      self.view.update_footer(force=True)
+   def newline(self) -> None:
+     """End the current terminal line (never leaves a caret mid-line)."""
+     try:
+       print(flush=True)
+     except (BrokenPipeError, OSError, ValueError):
+       pass
    def show_inline_status(self, status: str) -> None:
      if not self.view.footer_active:
-       print("  " + _visible_controls(status), flush=True)
+       text = _visible_controls(status)
+       # Plain print() does not wrap: on a phone the tail of this line was lost.
+       text = "\n".join(_wrap_ansi_line(text, max(20, self._cols() - 3)))
+       print("  " + text, flush=True)
    def print_status_bar(
      self,
      cfg: DocMindConfig,
@@ -14002,24 +14356,43 @@ def _dm_module_20():
        self.rich_console.print(Panel(line, border_style="dim cyan", box=box.SQUARE, padding=(0, 1)))
      else:
        print(f"[ {prov_part} | {mode_label} | {cfg.language.upper()} | {tok_part} | {active_cwd} ]")
+   def _cols(self) -> int:
+     """Usable terminal columns (mobile-safe: never assume 80)."""
+     try:
+       cols = int(self.view._size()[1])
+     except Exception:
+       try:
+         cols = int(os.environ.get("COLUMNS") or 0)
+       except (TypeError, ValueError):
+         cols = 0
+     return max(24, (cols or 80) - 1)
+   def _fit(self, text: str, indent: str = "") -> str:
+     """Wrap a block so it never gets cut off at the right edge of the terminal."""
+     body = _visible_controls(text)
+     if not body:
+       return body
+     width = self._cols() - _display_width(indent)
+     if width < 20:
+       return body
+     return _wrap_block(body, width)
    def info(self, msg: str) -> None:
-     msg = _visible_controls(msg)
+     msg = self._fit(msg, "ℹ ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("ℹ ", "[i] "), style="bright_cyan") + Text(msg))
      else:
-       print(self._paint(glyph("[i] ", "[i] ") + msg, "36"))
+       print(self._paint(glyph("[i] ", "[i] ") + msg, "36"), flush=True)
    def success(self, msg: str) -> None:
-     msg = _visible_controls(msg)
+     msg = self._fit(msg, "[OK] ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("✔ ", "[OK] "), style="bold bright_green") + Text(msg, style="green"))
      else:
-       print(self._paint(f"[OK] {msg}", "32"))
+       print(self._paint(f"[OK] {msg}", "32"), flush=True)
    def warn(self, msg: str) -> None:
-     msg = _visible_controls(msg)
+     msg = self._fit(msg, "[!] ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("⚠ ", "[!] "), style="bold bright_yellow") + Text(msg, style="bright_yellow"))
      else:
-       print(self._paint(f"[!] {msg}", "33"))
+       print(self._paint(f"[!] {msg}", "33"), flush=True)
    def print_alert(self, alert: DocMindAlert) -> None:
      """Render a prominent, color-coded alert box for token exhaustion, API, network, or tool errors."""
      critical_cats = {ErrorCategory.QUOTA_EXHAUSTED, ErrorCategory.AUTH_INVALID}
@@ -14050,8 +14423,12 @@ def _dm_module_20():
        print(self._paint(sep, color) + "\n")
    def print_panel(self, title: str, body: str, style: str = "cyan", center: bool = False) -> None:
      title, body = _visible_controls(title), _visible_controls(body)
-     if center:
+     if self.rich_console:
+       body = _wrap_block(body, max(24, self._cols() - 6))
+     elif center:
        body = self._center_block(body)
+     elif body:
+       body = _wrap_block(body, max(24, self._cols() - 2))
      if self.rich_console:
        self.rich_console.print(
          Panel(Text(body), title=Text(title, style=f"bold {style}"), border_style=style, box=box.ROUNDED, padding=(0, 2))
@@ -14077,25 +14454,88 @@ def _dm_module_20():
    def begin_turn(self) -> None:
      self._tool_counter = 0
      self._waiting_notice = False
+     self._stream_pend = ""
+   def _stream_out(self, text: str) -> None:
+     """Push text into the live stream (through the colouring lexer if enabled)."""
+     if not text:
+       return
+     if self._syntax_highlighter:
+       self._syntax_highlighter.feed(text)
+     else:
+       self.view.append_typing(text)
    def stream_assistant_text(self, text: str) -> None:
-     safe = _visible_controls(text)
+     """Stream text, wrapping each finished line to the real terminal width.
+
+     A long line that reaches the right edge used to be wrapped by the terminal
+     itself (and on phones that ate the rest of the message); wrapping it here
+     means the stream can never be cut in half.
+     """
+     safe = _visible_controls(_sanitize_stream_chunk(text))
      if not self._stream_active:
        self._stream_active = True
+       self._stream_pend = ""
        self.view.start_typing()
        self._syntax_highlighter = StreamSyntaxHighlighter(self.view.append_typing) if self.view.color else None
-     if self._syntax_highlighter:
-       self._syntax_highlighter.feed(safe)
-     else:
-       self.view.append_typing(safe)
+       try:
+         prompt_cols = int(getattr(self.view, "_stream_prompt_cols", 0) or 0)
+       except (TypeError, ValueError):
+         prompt_cols = 0
+       self._stream_first_line = True
+       self._stream_first_budget = max(12, max(20, self._cols() - 2) - prompt_cols)
+     width = max(20, self._cols() - 2)
+     if getattr(self, "_stream_first_line", False):
+       width = min(width, int(getattr(self, "_stream_first_budget", width)))
+     buf = getattr(self, "_stream_pend", "") + safe
+     # A provider chunk is often one long unfinished line.  Emitting it as-is
+     # leaves the wrapping to the terminal, and on a phone that is how a message
+     # ends up cut in half -- so wide text is wrapped here, at the last space
+     # that still fits, and every finished line is flushed immediately.
+     while _display_width(buf) > width or "\n" in buf:
+       cut = buf.find("\n")
+       if cut >= 0 and _display_width(buf[:cut]) <= width:
+         self._stream_out(buf[:cut] + "\n")
+         buf = buf[cut + 1:]
+         self._stream_first_line = False
+         width = max(20, self._cols() - 2)
+         continue
+       pos = _last_wrap_point(buf, width)
+       if pos <= 0:
+         rows = _wrap_ansi_line(buf, width)
+         if len(rows) <= 1:
+           break
+         for row in rows[:-1]:
+           self._stream_out(row + "\n")
+         buf = rows[-1]
+         self._stream_first_line = False
+         width = max(20, self._cols() - 2)
+         continue
+       piece, buf = buf[:pos].rstrip(), buf[pos:].lstrip()
+       if not piece:
+         break
+       self._stream_out(piece + "\n")
+       self._stream_first_line = False
+       width = max(20, self._cols() - 2)
+     self._stream_pend = buf
    def finish_streamed_message(self, fast: bool = False) -> None:
      if self._stream_active:
        try:
+         tail = getattr(self, "_stream_pend", "")
+         if tail:
+           width = max(20, self._cols() - 2)
+           if getattr(self, "_stream_first_line", False):
+             width = min(width, int(getattr(self, "_stream_first_budget", width)))
+           if _display_width(tail) > width:
+             tail = "\n".join(_wrap_ansi_line(tail, width))
+           if tail.strip():
+             self._stream_out(tail.rstrip() + "\n")
+         self._stream_pend = ""
          if self._syntax_highlighter:
            self._syntax_highlighter.finish()
          self.view.finish_typing(fast=fast)
        finally:
          self._syntax_highlighter = None
          self._stream_active = False
+         self._stream_pend = ""
    def print_assistant_message(self, content: str, thought: str = "") -> None:
      if not content or not content.strip():
        return
@@ -14103,7 +14543,8 @@ def _dm_module_20():
        self.stream_assistant_text(content)
        self.finish_streamed_message()
      else:
-       print(f"\nDocMind: {_visible_controls(content)}\n")
+       body = _wrap_block(_visible_controls(content), self._cols())
+       print(f"\nDocMind: {body}\n", flush=True)
    def print_history_message(self, label: str, content: str, cancelled: bool = False) -> None:
      suffix = " (" + t("history_cancelled") + ")" if cancelled else ""
      caption = self._paint(_visible_controls(label) + suffix, "1;36" if label == "DocMind" else "1;35")
@@ -14138,7 +14579,7 @@ def _dm_module_20():
        print(self._paint(line, "32" if ok else "33" if skipped else "31"), flush=True)
      if not ok and not skipped and summary:
        first = _visible_controls(str(summary).strip().splitlines()[0])[:240]
-       print("     " + first, flush=True)
+       print(self._fit("     " + first, "     "), flush=True)
    def _compute_plus_minus_entries(
      self,
      old_text: str,
@@ -14315,6 +14756,16 @@ def _dm_module_20():
      """Read input safely with multi-line backslash continuation and zero crash on EOF."""
      if self._input_fn is not None:
        return self._input_fn(prompt_text)
+     try:
+       return self._ask_inner(prompt_text, allow_multiline)
+     except (EOFError, KeyboardInterrupt):
+       # A closed stdin (Ctrl+D, killed pipe, Termux session end) is an exit
+       # request, not a traceback.  The newline ends the prompt line, so the
+       # caller's "Goodbye" never gets glued to "DocMind ❯".
+       print()
+       sys.stdout.flush()
+       raise EOFError(prompt_text)
+   def _ask_inner(self, prompt_text: str = "", allow_multiline: bool = False) -> str:
      lines: List[str] = []
      current_prompt = prompt_text
      while True:
@@ -16681,7 +17132,7 @@ def _dm_module_24():
           # The lead closes the job itself: join the pieces, verify, then report.
           self.run_squad_review(user_input)
           return True
-        self.ui.warn(t("squad_failed_single").format(err=team_outcome.get("error", "?")))
+        self.ui.warn(t("squad_failed_single", err=team_outcome.get("error", "?")))
     self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
     begin_turn = getattr(self.ui, "begin_turn", None)
     if begin_turn:
@@ -17642,6 +18093,16 @@ def _dm_aggressive_helpers():
         for name in names:
             if hasattr(proj, name):
                 out[name] = getattr(proj, name)
+    # v1.3: terminal-safety helpers live in the terminal view; every module needs
+    # them (console/commands/registry are separate factories with root globals).
+    tv = _dm_sys.modules.get("docmind.ui.terminal_view")
+    if tv is not None:
+        for name in ("_sanitize_stream_chunk", "_wrap_ansi_line", "_wrap_block",
+                     "_last_wrap_point",
+                     "_display_width", "_char_width", "_terminal_width",
+                     "_visible_controls", "_ANSI_SEQUENCE_RE", "_CONTROL_RE"):
+            if hasattr(tv, name):
+                out[name] = getattr(tv, name)
     # v1.3: the squad engine lives in its own module; binder gives it to agent code
     squ = _dm_sys.modules.get("docmind.core.squad")
     if squ is not None:
@@ -18189,7 +18650,7 @@ def _dm_module_25():
             md_lines.append(f"\n_Tools invoked: {tc_names}_")
           md_lines.append("")
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text("\n".join(md_lines).encode("utf-8", errors="replace").decode("utf-8"), encoding="utf-8")
+        out_path.write_text("\n".join(md_lines), encoding="utf-8", errors="replace")
         self.ui.success(t("export_ok", path=str(out_path)))
         return "continue"
       if cmd in ("/reset", "/sifirla", "/sıfırla"):
@@ -19153,7 +19614,7 @@ def _dm_module_26():
           ui.info(t("cmd_exit_bye")); return 0
         ui.warn(t("ctrl_c_exit_hint")); continue
       except EOFError:
-        print(); ui.info(t("cmd_exit_bye")); return 0
+        ui.newline(); ui.info(t("cmd_exit_bye")); return 0
       except Exception as exc:
         cfg_mgr.log_error("repl.input", repr(exc))
         ui.print_alert(classify_exception(exc)); continue
@@ -19177,7 +19638,15 @@ def _dm_module_26():
         continue
       if stripped.lower() in ("exit", "quit"):
         ui.info(t("cmd_exit_bye"));return 0
-      agent.run_turn(stripped)
+      try:
+        agent.run_turn(stripped)
+      except (KeyboardInterrupt, EOFError):
+        print()
+        ui.warn(t("ctrl_c_cancelled"))
+      except Exception as exc:
+        # An unexpected failure inside a turn is reported, the session stays alive.
+        cfg_mgr.log_error("repl.turn", repr(exc))
+        ui.print_alert(classify_exception(exc))
       ui.refresh_footer()
       ui.show_inline_status(agent.status_text())
   if _should_close_terminal[0]:

@@ -53,6 +53,43 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   *"On a phone or tablet, type /mobile (or /mobil)…"* — and `/mobil` works as an alias of `/mobile`
   (router, `/help`, tab-completion).
 
+### Fixed — messages can no longer stay half printed (patch #3)
+- **The half message is gone.** Streamed text used to be handed to the terminal as one long unfinished
+  line; the terminal then wrapped it itself, and on a narrow phone screen the rest of the answer was
+  lost. Every chunk is now wrapped to the real terminal width (`_wrap_ansi_line`, `_last_wrap_point`)
+  *before* it is written, so a line is never cut by the terminal and the message always ends where it
+  was meant to end.
+- **The first streamed line knows about the `DocMind:` prompt.** It used to start at column 0 and push
+  the prompt line past the right edge; the stream now starts with the remaining budget of that line
+  (measured: 24/40/80/100/120-column terminals, widest row always inside the terminal).
+- **Streamed bytes are sanitised.** A bare `\r` (the thing that made lines repaint themselves), NUL and
+  other control bytes are neutralised, zero-width spaces dropped — while the colour codes DocMind
+  itself emits are kept intact instead of leaking as literal `[31m` text.
+- **No more frozen or duplicated output.** A single owner writes the stream (locked), the queue is not
+  appended to from several threads, and the stream always finishes on its own line — even when the
+  answer ends mid-sentence, when the turn is interrupted with `Ctrl+C`, or when the model returns
+  nothing.
+- **Everything is measured in terminal cells, not characters.** Emoji and CJK characters count as two
+  columns (`_display_width`, `_char_width`), so boxes, bars, panels, tool results and the info/success/
+  warn lines stay inside narrow Termux columns (verified at 40 columns: widest row 38).
+- **Long single words and code are handled.** A token wider than the terminal is split hard rather than
+  overflowing, and fenced code is wrapped without breaking the colouring.
+
+### Fixed — general runtime errors found in the same sweep
+- **`ask()` at end of input.** EOF (`Ctrl+D`), `Ctrl+C` and a closed stdin no longer raise out of the
+  prompt: the turn ends cleanly instead of printing a traceback.
+- **`BrokenPipeError` / `OSError` on a closed terminal.** Writing to a closed pipe (`docmind | head`)
+  now stops the stream instead of crashing the agent.
+- **Path handling.** A pasted NUL byte gives a clear `ValueError` message instead of pathlib's cryptic
+  `lstat` error, and a path the OS cannot resolve falls back safely.
+- **File writes.** Atomic writes and `/export` used to raise `UnicodeEncodeError` on characters the
+  target encoding has no mapping for; they now replace instead of crashing.
+- **Localisation completeness.** The 10 `aggressive_*` strings that only existed in `tr`/`en`/`de` are
+  now present in **all 14 locales** — every locale has the same 337 keys, and every `{}` template was
+  format-checked.
+- **Squad failure messages** now interpolate the error correctly instead of printing the literal
+  `{err}` placeholder.
+
 ### Changed
 - Warning and permission text now says **"your device"** instead of "your computer" (English, German,
   Italian, Dutch), so it reads correctly on a phone, tablet or desktop.

@@ -422,3 +422,21 @@ Every start prints one line in your language:
 ```
 
 `/mobil` and `/mobile` are the same command (`/mobil on|off|ascii|unicode|status`).
+
+### Streaming that cannot end up half printed
+
+DocMind wraps every streamed line itself, to the terminal width it actually has, before the text reaches
+the terminal. That matters most on a phone: a terminal that wraps a long line by itself can drop the rest
+of it when the screen is narrow. What the patch guarantees:
+
+- long answers break at a space (or, for a word wider than the screen, mid-word) and never run past the
+  right edge;
+- the first streamed line starts where the `DocMind: ` prompt ends, so the prompt never pushes it out;
+- emoji and CJK characters are counted as **two** columns, so boxes, bars and labels stay aligned;
+- a bare carriage return, NUL or any other control byte from the model is neutralised (colours are kept);
+- the answer always finishes on its own line — after `Ctrl+C`, after an empty answer, after a closed
+  pipe (`docmind | head`);
+- at `Ctrl+D` or on a closed stdin the prompt ends the turn instead of printing a traceback.
+
+Tested on 24, 40, 80, 100 and 120-column terminals: the widest printed row always stays inside the
+terminal, and no word of the answer is lost.
