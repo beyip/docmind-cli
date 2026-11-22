@@ -90,6 +90,21 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 - **Squad failure messages** now interpolate the error correctly instead of printing the literal
   `{err}` placeholder.
 
+### Fixed — the context / cost row no longer piles up or overlaps on a phone
+- The status line that replaces the full-screen footer (`Tokens … | Context … | Cost …`) was re-printed
+  after **every** turn and its compact form was measured with `len()` instead of terminal cells. On a
+  phone the same numbers stacked under every message, and rows longer than the screen were wrapped by
+  the terminal **on top of the line above** — the "context and cost overlap" you saw.
+- Now the status is **one row per turn**: unchanged numbers print nothing, changed numbers rewrite the
+  same row in place (cursor up + clear line) instead of appending a new one.
+- The row is shaped for the real width and measured in cells (emoji/CJK = 2): one compact row
+  (`T:12.4k C:31% ~$0.045`), then two rows, and only on a very narrow screen three short rows — always
+  inside the terminal, never wrapped over itself.
+- Every caller passes its width now (the repl, `/tokens`, the live footer), so the long sentence only
+  appears on terminals wide enough to hold it.
+- Panels stopped assuming 80 columns: the `=== title` head wraps and the closing rule follows the screen
+  (the Turkish token report used to draw a 41-cell rule on a 40-cell phone).
+
 ### Changed — `/mobil` is now a real switch, and only on a phone
 - **On a phone / tablet** `/mobil` toggles mobile mode: first use turns it on (compact layout, plain
   glyphs, no full-screen footer, mobile rules in the system prompt), using it again turns it off. The

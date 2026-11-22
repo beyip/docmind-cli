@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'd84befaa927727654cf6cf97adb9bb4dbde0153a13e7c771f40623a1d3e548b0'
-_DM_SIGNATURE = '0193e454595f542b3df6d86e77935db2753b2395bb0ea1a823cb0959ee0ed92586d5c7dd748c61bb9a9ddae6b1f1f4d27afc2d58d237d4dc844488d0a4b7a1af0e26fa1ef53a4e4b253c9ca34f6405278fc9bda0c86c693780e27bae0a2b143e2308d792a86bc9c57ccbdc54e12a847db147b23320d14c414563f1b36e202df8a4b8744cc53afaa0d3ab5153d0aa73cd2db427e371accf706744d7c7f97040290a7494e8a634d10cc6b9d31d9102d21a20c9fe7884e8ea728f9ba32a07a7dcfb0db2d51523ec2c6f459382a1e5d4210245967ebf067484923ab930918245b8aaa8df41f0da9f05fac6898dd0fb9c24dbf12332bd2fd6c1650279d22c15d2af565dc39f8476fbd7c3ea0cd503b028ffcf9ae60ea9b67f9c8474ec7874bad6f998d75d0e0efa940b235d33d29850df08b08abdb7ae2126684442887b8443195ca73a8e5f74102d48d5b9ccc52acda9f2e7261d2bc49301f58ceaec23fe4638cd565ed039e33516c1b168e874a1eff4613ee271d44e5eb5737fdaad094b7c350719'
+_DM_SOURCE_HASH = '5e33bdafa57e466766eed2b66e62195932791e450d7ec29bf21957d35b60a7e8'
+_DM_SIGNATURE = '7a1cb4f8f77c0492646d8276c0c091541b5563cc8c75faf7e97ae8fd324fcfb47551cddea7eb6057447f6b3c0d5ffbcee53391eca95769341b046e45ed2b8eaf6acccce773c2019af14eaeb86be8c1ba9ad4d23c216ec1bb40b854ed194891c7d076b4292b74209b5075913e314c4808bcd2aa5b56f5f7d680558f1535b82a7e6a8f3df89acd32f2879f7b8e94e2161589640016349de4076a7e87dca06127c5f56a479890b454d1841207e5fc2c5bbf7163bddbf82bb01c01b49d6cfa2e76a1b671823fb1bc5ba3640e02124321f2638442659c255d336b4044cd72429a41ebbeed0cf40977a281df77bb342420f5c1b9c338cedc10883261f2158b8b9ec27453a9ad07e046623741d1e78452a73672e0fa4694a4de9cd787ee62d722d3e6ecc86b2b301341db215325f0190e4572136a95f2d7de74f9ee8b0062c86be8116fca6cbe1ceeb89e2d2a1b2c64a6eecdcc1c784d5e6bb3a1685e90a987de4def6521b0634d08c584aba6becb4b7f04f8b655e07076be2c8c02572db4cbd87645e4'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -14315,6 +14315,10 @@ def _dm_module_20():
      self._prompt_session: Any = None
      self._tool_counter = 0
      self._current_tool_args: Dict[str, Any] = {}
+     # Inline status (footer off / mobile): one row, rewritten, never stacked.
+     self._inline_status_key = ""
+     self._inline_status_rows = 0
+     self._inline_status_live = False
      self._stream_active = False
      self._syntax_highlighter = None
      self._waiting_notice = False
@@ -14552,11 +14556,47 @@ def _dm_module_20():
      except (BrokenPipeError, OSError, ValueError):
        pass
    def show_inline_status(self, status: str) -> None:
-     if not self.view.footer_active:
-       text = _visible_controls(status)
-       # Plain print() does not wrap: on a phone the tail of this line was lost.
-       text = "\n".join(_wrap_ansi_line(text, max(20, self._cols() - 3)))
-       print("  " + text, flush=True)
+     """The status line that replaces the footer when the footer is off.
+
+     It is shown **once**.  While the numbers do not change nothing is printed
+     again, and a changed line is rewritten in place, so the context/cost row can
+     never pile up under a message on a phone.
+     """
+     if self.view.footer_active:
+       return
+     text = _visible_controls(status)
+     if not text.strip():
+       return
+     budget = max(20, self._cols() - 3)
+     rows = []
+     for row in text.split("\n"):
+       if row:
+         rows.extend(_wrap_ansi_line(row, budget))
+       else:
+         rows.append("")
+     key = "\n".join(rows)
+     if key == getattr(self, "_inline_status_key", ""):
+       return
+     writable = bool(getattr(self.view, "ansi", False))
+     can_rewrite = (writable and self._inline_status_rows == len(rows)
+                    and getattr(self, "_inline_status_live", False))
+     if can_rewrite:
+       try:
+         sys.stdout.write("\x1b[%dA" % len(rows))
+         for line in rows:
+           sys.stdout.write("\x1b[2K" + "  " + line + "\n")
+         sys.stdout.flush()
+       except (BrokenPipeError, OSError, ValueError):
+         self._inline_status_live = False
+       else:
+         self._inline_status_key = key
+         self._inline_status_rows = len(rows)
+         return
+     for line in rows:
+       print("  " + line, flush=True)
+     self._inline_status_key = key
+     self._inline_status_rows = len(rows)
+     self._inline_status_live = True
    def print_status_bar(
      self,
      cfg: DocMindConfig,
@@ -14663,8 +14703,9 @@ def _dm_module_20():
          Panel(Text(body), title=Text(title, style=f"bold {style}"), border_style=style, box=box.ROUNDED, padding=(0, 2))
        )
      else:
-       head = self._paint(f"=== {title} ===", "1;36")
-       print(f"\n{head}\n{body}\n" + self._paint("=" * (len(title) + 8), "36"), flush=True)
+       rules = max(8, min(self._cols() - 1, _display_width(title) + 8))
+       head = chr(10).join(self._paint("=== " + row, "1;36") for row in _wrap_ansi_line(title, max(8, self._cols() - 5)))
+       print(f"\n{head}\n{body}\n" + self._paint("=" * rules, "36"), flush=True)
    def _center_block(self, body: str) -> str:
      """Keep a block of pre-aligned lines centred inside the panel (no ragged drift)."""
      rows = [row.rstrip() for row in body.split("\n")]
@@ -14684,6 +14725,8 @@ def _dm_module_20():
      self._tool_counter = 0
      self._waiting_notice = False
      self._stream_pend = ""
+     # A new message starts below the old status line: do not rewrite it.
+     self._inline_status_live = False
    def _stream_out(self, text: str) -> None:
      """Push text into the live stream (through the colouring lexer if enabled)."""
      if not text:
@@ -16437,6 +16480,13 @@ def _dm_module_24():
         except TypeError:
           callback()
   def status_text(self, width: Optional[int] = None) -> str:
+    """One-line status: tokens, context and cost -- never wider than the screen.
+
+    Shape is chosen from the real column count and measured with ``_display_width``
+    (emoji and CJK count as two cells).  A phone gets a single compact row; when
+    even that cannot fit, the three facts go on three short rows instead of one
+    overlong line that the terminal would wrap over itself.
+    """
     cfg = self.config_mgr.config
     stats = self.usage.summary(cfg)
     total = f"{self.context.total_tokens:,}"
@@ -16461,7 +16511,10 @@ def _dm_module_24():
         cost += " (" + t("footer_calculating") + ")"
     full = (f"{t('footer_token')}: {total}  |  {t('footer_context')}: ~{estimated:,}/{limit_label} ({pct:.1f}%)"
         f"  |  {t('footer_cost')}: {cost}")
-    if width is None or len(full) <= width:
+    if width is None:
+      return full
+    budget = max(12, int(width))
+    if _display_width(full) <= budget:
       return full
     number = self.context.total_tokens + stats['live_tokens']
     if number >= 1_000_000_000:
@@ -16486,12 +16539,29 @@ def _dm_module_24():
         short_cost += " (" + t("footer_calculating") + ")"
     percent = f"{pct:.1f}" if pct < 1000 else ">999"
     compact = f"T:{short_num} C:{percent}% {short_cost}"
-    if len(compact) > width:
-      percent = f"{pct:.0f}" if pct < 1000 else ">999"
-      short_cost = t("footer_unknown") if stats['missing_cost'] and not stats['known_cost_calls'] else (
-        "~$" + f"{stats['cost']:.2g}" + ("*" if stats['missing_cost'] or stats['live_tokens'] else ""))
-      compact = f"T:{short_num} C:{percent}% {short_cost}"
-    return compact
+    if _display_width(compact) <= budget:
+      return compact
+    percent = f"{pct:.0f}" if pct < 1000 else ">999"
+    short_cost = t("footer_unknown") if stats['missing_cost'] and not stats['known_cost_calls'] else (
+      "~$" + f"{stats['cost']:.2g}" + ("*" if stats['missing_cost'] or stats['live_tokens'] else ""))
+    compact = f"T:{short_num} C:{percent}% {short_cost}"
+    if _display_width(compact) <= budget:
+      return compact
+    if budget >= 20:
+      # Two rows instead of one overlong line: the terminal would otherwise wrap
+      # it on top of the row above.
+      first = f"T:{short_num} C:{percent}%"
+      second = t("footer_cost") + ": " + short_cost
+      if max(_display_width(first), _display_width(second)) <= budget:
+        return first + "\n" + second
+    # Still too wide: three short rows, one fact each, instead of an overlong
+    # line the terminal would wrap on top of the previous one.
+    context_short = f"C:~{estimated:,}/{limit_label} ({pct:.0f}%)"
+    rows = [f"{t('footer_token')}: {short_num}", context_short, f"{t('footer_cost')}: {short_cost}"]
+    wrapped = []
+    for row in rows:
+      wrapped.extend(_wrap_ansi_line(row, budget))
+    return "\n".join(wrapped)
   def refresh_client(self) -> None:
     supports_stream = bool(getattr(self.ui, "is_tty", False) and
                callable(getattr(self.ui, "stream_assistant_text", None)) and
@@ -18539,6 +18609,11 @@ def _dm_module_25():
     self.agent = agent
     self.ui = agent.ui
     self.cfg_mgr = agent.config_mgr
+    # Inline status bookkeeping: the same row is reused instead of a new line
+    # per turn (that stacking is what looked broken on a phone).
+    self._inline_status_key = ""
+    self._inline_status_rows = 0
+    self._inline_status_live = False
   def handle(self, raw_line: str) -> str:
     """
         Execute a slash command.
@@ -19293,6 +19368,9 @@ def _dm_module_25():
 
   def _apply_mobile_look(self) -> None:
     """Make the switch visible at once: footer, prompt and glyphs."""
+    self._inline_status_key = ""
+    self._inline_status_live = False
+    self._inline_status_rows = 0
     try:
       if _DM_MOBILE_MODE and getattr(self.ui.view, "footer_active", False):
         self.ui.view.stop_footer()
@@ -19467,13 +19545,13 @@ def _dm_module_25():
       f"  {t('stat_3')}: {ctx.total_output_tokens:,}\n"
       f"  {t('stat_4')}: {ctx.total_tokens:,}\n"
       f"  {t('stat_5')}: ~{est_ctx:,} / {context_limit:,}{'' if known_limit else '?'} ({pct:.1f}%)\n"
-      f"  {t('stat_6')}: {self.agent.status_text()}\n"
+      f"  {t('stat_6')}: {self.agent.status_text(max(16, self.ui._cols() - 8))}\n"
       f"  {t('stat_8')}: {limit_str}\n"
       f"  {t('stat_9')}: {len(ctx.messages)}\n\n"
       f"  {incomplete}\n"
       f"  {t('stat_7')}"
     )
-    self.ui.print_panel(f"🪙 {t('tokens_report_title')}", report, style="bright_cyan")
+    self.ui.print_panel(glyph("🪙 ", "") + t("tokens_report_title"), report, style="bright_cyan")
   def _handle_load(self, arg: str) -> None:
     sessions = sorted(self.cfg_mgr.sessions_dir.glob("*.json"))
     if not arg:
@@ -19885,8 +19963,11 @@ def _dm_module_26():
   ui.info(t("history_privacy"))
   print()
   _should_close_terminal = [False]
-  with ui.live_footer(agent.status_text, agent.status_text):
-    ui.show_inline_status(agent.status_text())
+  def _status_row() -> str:
+    """Status text shaped for the real terminal width (never one long line)."""
+    return agent.status_text(max(20, ui._cols() - 3))
+  with ui.live_footer(_status_row, _status_row):
+    ui.show_inline_status(_status_row())
     consecutive_ctrl_c = 0
     while True:
       try:
@@ -19925,7 +20006,7 @@ def _dm_module_26():
           break
         ui.refresh_footer()
         if not ui.view.footer_active:
-          ui.show_inline_status(agent.status_text())
+          ui.show_inline_status(_status_row())
         if outcome == "exit":
           return 0
         continue
@@ -19941,7 +20022,7 @@ def _dm_module_26():
         cfg_mgr.log_error("repl.turn", repr(exc))
         ui.print_alert(classify_exception(exc))
       ui.refresh_footer()
-      ui.show_inline_status(agent.status_text())
+      ui.show_inline_status(_status_row())
   if _should_close_terminal[0]:
     _close_terminal_window()
     return 0

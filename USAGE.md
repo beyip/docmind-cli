@@ -438,6 +438,21 @@ are plain ASCII unless you chose otherwise, the full-screen footer is off, the p
 model is told to keep answers narrow. A terminal narrower than 46 columns is treated the same way even
 without the switch, because a full-screen footer there hides half of every answer.
 
+### The status row on a narrow screen
+
+With the footer off (mobile mode, or any terminal narrower than 46 columns) DocMind shows the session
+status as **one row under the message** and keeps it there:
+
+```
+  T:12.4k C:31% ~$0.045
+```
+
+- unchanged numbers are not printed again, so the row never stacks;
+- a changed row is rewritten in place, not appended;
+- if the terminal is too narrow for one row, the three facts go on two or three short rows instead of
+  one line that would be wrapped over the one above it;
+- the full `Tokens … | Context … | Cost …` sentence is used only on a terminal wide enough to hold it.
+
 ### Streaming that cannot end up half printed
 
 DocMind wraps every streamed line itself, to the terminal width it actually has, before the text reaches

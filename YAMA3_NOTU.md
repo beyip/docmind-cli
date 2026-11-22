@@ -1,7 +1,7 @@
 # v1.3 yama #3 — "mesaj terminalde yarım kalıyor" + genel hata taraması
 
 Sürüm **v1.3** (v1.4 yok). `__version__ = "1.3"`.
-sha256 `7c99638227e1f903f3458891984cfeb4c6fa3eeb54c6a20971a9332caa2f4ded` · 1097121 bayt.
+sha256 `ddf85fe9060af515c78cc99a21ed7aacf5b9f3bdbb7e59f243c3fc9581817c65` · 1,100,585 bayt.
 
 ## 1) Sorunun gerçek sebebi
 Akış halinde (stream) gelen metin, satır tamamlanmadan **olduğu gibi** terminale yazılıyordu. Uzun satırı
@@ -57,10 +57,22 @@ oluyordu — çünkü ilk akış satırı `DocMind: ` etiketinin kapladığı 9 
 - Açıkken: kompakt düzen, sade glifler, tam ekran altlık yok, prompt `DM:` , modele dar yazma kuralı.
 - 46 sütundan dar terminallerde altlık zaten kapalı; boru hattı girişinde cevap prompt satırına yapışmıyor.
 
-**sha256 (bu build):** `7c99638227e1f903f3458891984cfeb4c6fa3eeb54c6a20971a9332caa2f4ded` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
+**sha256 (bu build):** `ddf85fe9060af515c78cc99a21ed7aacf5b9f3bdbb7e59f243c3fc9581817c65` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
 
 ## 7) Açılışta tek cümle (son ek)
 - Her açılışta **tek satır**, 14 dilin hepsinde, o anki arayüz dilinde:
   `[i] 📱 Cihazınız otomatik algılandı: telefon/tablet · mobil mod AÇIK. DocMind kendini cihazınıza göre ayarlar.`
 - Cihaz **otomatik** algılanır (Termux/Android/iOS), kullanıcı hiçbir şey seçmez; bilgisayarda aynı cümle
   `bilgisayar · mobil mod KAPALI` der. `/mobil` notu telefonda da bilgisayarda da aynı biçimde basılır.
+
+## 8) Mobilde bağlam/maliyet satırı üst üste binmiyor (son düzeltme)
+- Sebep: altlık kapalıyken durum satırı **her turdan sonra** yeniden basılıyordu ve kompakt biçim `len()` ile
+  ölçülüyordu; telefonda aynı sayılar üst üste yığılıyor, ekrandan uzun satırı terminal alttaki/üstteki
+  satırın üzerine sarıyordu.
+- Çözüm: durum **tur başına tek satır** — değişmediyse hiç basılmaz, değiştiyse aynı satır yerinde
+  güncellenir (`ESC[1A` + `ESC[2K`). Genişlik gerçek sütuna göre ve `_display_width` ile ölçülür; sığmazsa
+  2–3 kısa satıra bölünür. `/tokens`, canlı altlık ve REPL hepsi genişliğini geçiriyor.
+- Paneller artık 80 sütun varsaymıyor: `=== başlık` satırı sarılıyor, kapanış çizgisi ekranı geçmiyor.
+
+**Doğrulama:** 40 / 32 / 60 sütun gerçek CLI — taşan satır **0**, tekrar eden durum satırı **0**;
+`t10.py` (durum satırı testi) 3 genişlikte yeşil; `t1`–`t9` yeşil.
