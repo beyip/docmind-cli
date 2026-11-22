@@ -128,6 +128,22 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   mobile mode, 80×24 desktop, and with `/quit` and without — **0 characters overwritten**, every string on
   its own line, the prompt line holding only `DocMind ❯ /mobil status`.
 
+### Changed / Fixed — the desktop now behaves exactly like the phone (patch #11)
+- **Desktop tested with the same rig as the phone** (real pty + local OpenAI-compatible server, 80×24,
+  100×30 and 120×40): the reply appears, the prompt comes back after every turn, `/tokens` and `/mobil`
+  answer, and three messages in a row all work — no freeze.
+- **The full-screen footer is retired.** It painted itself with absolute row numbers (`ESC[<rows>;1H`,
+  `ESC[1;<rows-1>r`) and on a normal desktop terminal the echoed prompt and the footer kept landing on the
+  same row (`DocMind ❯ ~0/64,000? (0.0%) …`). Rather than maintaining two mechanisms, every terminal —
+  desktop, wide or narrow, phone, tablet — now uses the **inline status row** under the answer. It rewrites
+  itself in place, never uses an absolute row, and is measured in cells, so it cannot overlap anything.
+  A wide terminal simply gets the long sentence (`Token: 30  |  Bağlam: …  |  Maliyet: …`), a phone the
+  compact one.
+- **The thinking indicator never animates.** One plain wrapped line on every terminal; it cannot paint over
+  what you typed and it leaves a clean line for the answer.
+- Result in the emulator: **0 characters drawn over each other** at 100×30, 80×24, 60×20, phone 56×24 and
+  40×24; `t1`–`t10` green; signature gates exit 0.
+
 ### Fixed — THE FREEZE after an answer, and the answer now appears while it streams (patch #10)
 - **The session froze right after every reply.** Reproduced inside a real pty with `faulthandler`:
   `run_turn → refresh_footer → update_footer` was stuck waiting for the terminal lock. The animated

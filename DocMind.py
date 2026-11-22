@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '671c70cd7abf44fd4b48327306c718371811f896e4f2018f4dbe26c1e9b2fe18'
-_DM_SIGNATURE = '2ee5ed20888b704f430998de47c28c29803ae6e1e2175480364415ded96a69f675356f324a1c91d03c966f565949a95ffc9790c7eb5b3cfbf3e3eba11a651140f28a7d0b8203d6512fea0eae877d3a7666436d0b1a577d7c1709c15ff49dd2d79af8d75474045de7342e77ea8a97479202fe43f331422770b8bacf8a0141b020a24dab49530895031288bfc3f3794fefc9bd10884385c1ae6ac32245a89a66ab6dfec52a0ec019c779fa0a1e6e63108278a0397bc575986c7685e140cd179e6559185f1b08ff9a1f5f9cb59fde7643d0f5baedc83443857305074b5b4e2411482a707026764dd325d4f44230ad5a3e7a3f53bacf20d5f44fe7412f7916c2ab0215f8a39021e9134d401b4f22e5ed033b6130688bccd328c42dbf05820e7d7d2e078180ee2d116f0a29027f86cc9e5473777f29128db026c159b5be67abc18281ec967ac36e9c5e8869860f5a7607213ab4e4f52065adc58a37f8f3ee6063281171e50e3274d5135ac834c047e7c9b4c146ca3e112da760b7daf9183deb1fe371'
+_DM_SOURCE_HASH = '78c19d500f5e765ca18377da9c22126b67f11d04e859fc11548f934d3eb805d6'
+_DM_SIGNATURE = '225605c1136ebf95514c382b064960ad37e70838106a15dcf107f5a1b8eec08519ab803212a0f7855b1dd6f4bd9f1bd1cb81e31392196f676faa9271edcdb6528ec339536cdac699b9636fa387c8828f4c0c6beff098ed7d2e21ea513e3a2bdf2cffec5dc6e1375795acbd21140956078ed192dd16735b00722d0a0a0abaccd1b87e3dfb56e0a349ba410c417647f07259bd28a7e7c0db37d102858f43c66d3c54c0a6c8f814d3079f97889fde7e235e477331743878ec534db896bc79cdb4384516525876eef79fe75e2b4f6b24d07ff3579b3b4e833277dc30c0afff17e8defc242f33ff3491e2f6e1ef8f42808c15670b432ab4368fd822fe8a93b01b43aca2d9f7ca99c963c0b5e924e3db1b85664cc0d479bf4842f97cf5213f927986c1c690b2db185136119e83ae4e7656f5ef4e27db110b57f039ec68870a4b6dbe55153f4763f4942abe3b0b1bfd9fff235bf40e46641202a81173c0dd12ce8d0d009df2397fe58bd088d7462b1937aa4eef992e0db964b00a63e43acba6d8d5f6a1'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -13919,17 +13919,12 @@ def _dm_module_18():
      all excluded: on a phone the footer painted on the last row and the next
      message was written straight over it.
      """
-     # Hardware first: a phone/tablet never gets a footer, mobile mode or not.
-     # The footer is drawn with absolute row numbers, and on a phone the real
-     # height changes whenever the on-screen keyboard opens -- that made the
-     # footer paint itself over the messages.
-     if _DM_MOBILE_MODE or _DM_PHONE_DEVICE:
-       return False
-     try:
-       rows, cols = self._size()
-     except Exception:
-       return False
-     return bool(self.ansi and rows >= 12 and cols >= 46)
+     # Retired on purpose: the footer used absolute row numbers, and the prompt
+     # echo and the footer kept landing on the same row (a phone that resized
+     # with the keyboard, a desktop where the prompt was echoed after the last
+     # redraw).  Every terminal now uses the inline status row instead -- one
+     # mechanism, never an absolute row.
+     return False
    def start_footer(self, status: Callable[[], str], compact: Optional[Callable[[int], str]] = None) -> bool:
      self._footer = status
      self._compact_footer = compact
@@ -14000,7 +13995,7 @@ def _dm_module_18():
      self.stop_spinner()
      if not self.is_tty:
        return
-     if not self.ansi or _DM_PHONE_DEVICE or _DM_MOBILE_MODE or _dm_plain_terminal():
+     if True:
        # A phone cannot repaint a line: the animation frame landed on top of the
        # message the user had just typed, and the answer then started in that
        # same line.  One plain line, then the answer starts under it.
@@ -14039,7 +14034,9 @@ def _dm_module_18():
      if thread and thread is not threading.current_thread():
        thread.join(timeout=1)
      if thread and self.ansi:
-       self._write("\r\x1b[2K")
+       # Erase the frame AND close the line: the next text used to be written
+       # over the tail of `⠋ DocMind düşünüyor...` (desktop, wide terminal).
+       self._write("\r\x1b[2K\n")
    def start_typing(self) -> None:
      self.stop_spinner()
      # Every terminal writes chunks directly: no animation thread, no lock held
@@ -14709,6 +14706,16 @@ def _dm_module_20():
        self.view.stop_footer()
    def refresh_footer(self) -> None:
      self.view.update_footer(force=True)
+   def wants_inline_status(self) -> bool:
+     """True when this screen shows the status as a row under the answer.
+
+     A wide terminal already has the full-screen footer on the last row;
+     printing the row as well put it on top of that footer.
+     """
+     try:
+       return bool(self.is_tty)
+     except Exception:
+       return False
    def newline(self) -> None:
      """End the current terminal line (never leaves a caret mid-line)."""
      try:
@@ -20233,7 +20240,7 @@ def _dm_module_26():
     """Status text shaped for the real terminal width (never one long line)."""
     return agent.status_text(max(20, ui._cols() - 3))
   with ui.live_footer(_status_row, _status_row):
-    if ui.is_tty:
+    if ui.wants_inline_status():
       ui.show_inline_status(_status_row())
     consecutive_ctrl_c = 0
     while True:
@@ -20271,9 +20278,9 @@ def _dm_module_26():
         if outcome == "reset_exit":
           _should_close_terminal[0] = True
           break
-        ui.refresh_footer()
-        if ui.is_tty and not ui.view.footer_active:
+        if ui.wants_inline_status():
           ui.show_inline_status(_status_row())
+        ui.refresh_footer()
         if outcome == "exit":
           return 0
         continue
@@ -20288,9 +20295,9 @@ def _dm_module_26():
         # An unexpected failure inside a turn is reported, the session stays alive.
         cfg_mgr.log_error("repl.turn", repr(exc))
         ui.print_alert(classify_exception(exc))
-      ui.refresh_footer()
-      if ui.is_tty:
+      if ui.wants_inline_status():
         ui.show_inline_status(_status_row())
+      ui.refresh_footer()
   if _should_close_terminal[0]:
     _close_terminal_window()
     return 0
