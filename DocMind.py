@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '0f0da206cdb33da2b7102029bd11d1d8bd20df93a76e7d42624d046fb1fa4948'
-_DM_SIGNATURE = '9cab150987587e6c89fa903aa4e18b5f9f6a6d5054dc4e33d550c2259eeb5b1778dc7442f32a605e07903e05a9393b870231b706eef8f2aacc743d8474ac414077b9d11b8c9c5666fd82fd194b28d3ba311a7a63494167b49f6750bd2e6bf5c359d900e389e166dd59a20d7dada04afde3a8e7d34274eb863a613601ecb0b05e9edcb7e820498bb9e38dfcf811fa0c82d79dafae322f89231c9c573f4ca114995e091d0a34f50b5fd95bc60031a7e6201b77bd5ccb891d3b191b4160210d53fe571bd0c36c6208f05d3817c85656fd11c41560735727338eb6021a47fb3159d8f9165fb583c364913a7f3738b92a24849ca6361bc585bae1fa552511b5b424f7381347e70879dd643da084b55448cbc5c8f66f54ed1929cb717fd98518036e8223d9993896c2f59f33d10af22dd57fd2cca373d5f096dca94232f35a96d0167dac2d70230965e49c975d2ed7e7ced1d5f3f5299456cbcd7e340afae6c7004e4d902eebb107021208481ee5414c896e9c72a013e637245a6a733cb238b674b930'
+_DM_SOURCE_HASH = 'd84befaa927727654cf6cf97adb9bb4dbde0153a13e7c771f40623a1d3e548b0'
+_DM_SIGNATURE = '0193e454595f542b3df6d86e77935db2753b2395bb0ea1a823cb0959ee0ed92586d5c7dd748c61bb9a9ddae6b1f1f4d27afc2d58d237d4dc844488d0a4b7a1af0e26fa1ef53a4e4b253c9ca34f6405278fc9bda0c86c693780e27bae0a2b143e2308d792a86bc9c57ccbdc54e12a847db147b23320d14c414563f1b36e202df8a4b8744cc53afaa0d3ab5153d0aa73cd2db427e371accf706744d7c7f97040290a7494e8a634d10cc6b9d31d9102d21a20c9fe7884e8ea728f9ba32a07a7dcfb0db2d51523ec2c6f459382a1e5d4210245967ebf067484923ab930918245b8aaa8df41f0da9f05fac6898dd0fb9c24dbf12332bd2fd6c1650279d22c15d2af565dc39f8476fbd7c3ea0cd503b028ffcf9ae60ea9b67f9c8474ec7874bad6f998d75d0e0efa940b235d33d29850df08b08abdb7ae2126684442887b8443195ca73a8e5f74102d48d5b9ccc52acda9f2e7261d2bc49301f58ceaec23fe4638cd565ed039e33516c1b168e874a1eff4613ee271d44e5eb5737fdaad094b7c350719'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -685,7 +685,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glifler sade (ASCII) olarak ayarlandı.",
     "mobile_glyphs_unicode": "Glifler Unicode/emoji olarak ayarlandı.",
     "mobile_font_hint": "Glifler kutucuk görünürse: /mobil ascii",
-    "mobile_startup_active": "Mobil mod açık. Kapatmak için tekrar /mobil yazın."
+    "mobile_startup_active": "Cihazınız otomatik algılandı: {device} · mobil mod {mode}. DocMind kendini cihazınıza göre ayarlar."
   },
   "en": {
     "lang_name": "English",
@@ -1035,7 +1035,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glyphs set to plain ASCII.",
     "mobile_glyphs_unicode": "Glyphs set to Unicode/emoji.",
     "mobile_font_hint": "If glyphs show as boxes: /mobil ascii",
-    "mobile_startup_active": "Mobile mode is ON. Type /mobil again to switch it off."
+    "mobile_startup_active": "Device detected automatically: {device} · mobile mode {mode}. DocMind adjusts itself to your device."
   },
   "de": {
     "lang_name": "Deutsch",
@@ -1385,7 +1385,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Zeichen auf einfaches ASCII gesetzt.",
     "mobile_glyphs_unicode": "Zeichen auf Unicode/Emoji gesetzt.",
     "mobile_font_hint": "Wenn Zeichen als Kästchen erscheinen: /mobil ascii",
-    "mobile_startup_active": "Mobilmodus ist an. Zum Ausschalten erneut /mobil eingeben."
+    "mobile_startup_active": "Gerät automatisch erkannt: {device} · Mobilmodus {mode}. DocMind passt sich Ihrem Gerät an."
   },
   "es": {
     "lang_name": "Español",
@@ -1725,7 +1725,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glifos ajustados a ASCII simple.",
     "mobile_glyphs_unicode": "Glifos ajustados a Unicode/emoji.",
     "mobile_font_hint": "Si los glifos aparecen como cuadros: /mobil ascii",
-    "mobile_startup_active": "El modo móvil está activo. Escribe /mobil otra vez para desactivarlo.",
+    "mobile_startup_active": "Dispositivo detectado automáticamente: {device} · modo móvil {mode}. DocMind se ajusta a su dispositivo.",
     "aggressive_audit_advisory": "Estos hallazgos ya existían en archivos que este turno no tocó; no bloquean el turno, pero conviene corregirlos después.",
     "aggressive_audit_clean": "Auditoría de perfección limpia: sin errores de sintaxis, trabajo a medias ni patrones de error sospechosos ({files} archivos revisados).",
     "aggressive_audit_gave_up": "La auditoría no pudo resolver {count} incidencia(s) en 3 rondas; el turno se cerró para evitar un bucle infinito.",
@@ -2075,7 +2075,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glyphes réglés sur ASCII simple.",
     "mobile_glyphs_unicode": "Glyphes réglés sur Unicode/emoji.",
     "mobile_font_hint": "Si les glyphes s'affichent en carrés : /mobil ascii",
-    "mobile_startup_active": "Le mode mobile est actif. Tapez /mobil à nouveau pour le couper.",
+    "mobile_startup_active": "Appareil détecté automatiquement : {device} · mode mobile {mode}. DocMind s'adapte à votre appareil.",
     "aggressive_audit_advisory": "Ces constats existaient déjà dans des fichiers non modifiés pendant ce tour ; ils ne bloquent pas le tour mais doivent être corrigés plus tard.",
     "aggressive_audit_clean": "Audit de perfection propre : aucune erreur de syntaxe, travail inachevé ou motif d'erreur suspect ({files} fichiers analysés).",
     "aggressive_audit_gave_up": "L'audit n'a pas pu éliminer {count} problème(s) en 3 tours ; le tour a été clos pour éviter une boucle infinie.",
@@ -2425,7 +2425,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Символы переключены на простой ASCII.",
     "mobile_glyphs_unicode": "Символы переключены на Unicode/эмодзи.",
     "mobile_font_hint": "Если символы видны как квадраты: /mobil ascii",
-    "mobile_startup_active": "Мобильный режим включён. Чтобы выключить, введите /mobil ещё раз.",
+    "mobile_startup_active": "Устройство определено автоматически: {device} · мобильный режим {mode}. DocMind подстраивается под ваше устройство.",
     "aggressive_audit_advisory": "Эти замечания существовали в файлах, которые этот ход не затрагивал; они не блокируют ход, но их следует исправить позже.",
     "aggressive_audit_clean": "Аудит совершенства пройден: ошибок синтаксиса, незавершённой работы и подозрительных шаблонов ошибок нет (проверено файлов: {files}).",
     "aggressive_audit_gave_up": "Аудит не смог устранить {count} замечани(й) за 3 круга; ход закрыт, чтобы не уйти в бесконечный цикл.",
@@ -2775,7 +2775,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Qliklər sadə ASCII-yə keçirildi.",
     "mobile_glyphs_unicode": "Qliklər Unicode/emoji-yə keçirildi.",
     "mobile_font_hint": "Qliklər kvadrat görünürsə: /mobil ascii",
-    "mobile_startup_active": "Mobil rejim açıqdır. Söndürmək üçün yenidən /mobil yazın.",
+    "mobile_startup_active": "Cihaz avtomatik aşkarlandı: {device} · mobil rejim {mode}. DocMind özünü cihazınıza uyğunlaşdırır.",
     "aggressive_audit_advisory": "Bu tapıntılar bu turda toxunulmayan fayllarda əvvəldən var idi; turu bloklamır, amma sonra düzəldilməlidir.",
     "aggressive_audit_clean": "Mükəmməllik auditi təmizdir: sintaksis xətası, yarımçıq iş və ya şübhəli xəta nümunəsi tapılmadı ({files} fayl yoxlanıldı).",
     "aggressive_audit_gave_up": "Audit 3 raundda {count} problemi həll edə bilmədi; sonsuz dövrəyə düşməmək üçün tur bağlandı.",
@@ -3125,7 +3125,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glifi impostati su ASCII semplice.",
     "mobile_glyphs_unicode": "Glifi impostati su Unicode/emoji.",
     "mobile_font_hint": "Se i glifi appaiono come quadrati: /mobil ascii",
-    "mobile_startup_active": "La modalità mobile è attiva. Digita /mobil di nuovo per disattivarla.",
+    "mobile_startup_active": "Dispositivo rilevato automaticamente: {device} · modalità mobile {mode}. DocMind si adatta al tuo dispositivo.",
     "aggressive_audit_advisory": "Queste segnalazioni esistevano già in file non modificati in questo turno; non bloccano il turno ma vanno corrette in seguito.",
     "aggressive_audit_clean": "Audit di perfezione pulito: nessun errore di sintassi, lavoro incompleto o pattern di errore sospetti ({files} file analizzati).",
     "aggressive_audit_gave_up": "L'audit non è riuscito a chiudere {count} problema/i in 3 passaggi; il turno è stato chiuso per evitare un ciclo infinito.",
@@ -3475,7 +3475,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Glifos definidos para ASCII simples.",
     "mobile_glyphs_unicode": "Glifos definidos para Unicode/emoji.",
     "mobile_font_hint": "Se os glifos aparecerem como quadrados: /mobil ascii",
-    "mobile_startup_active": "O modo móvel está ativo. Escreva /mobil outra vez para desativar.",
+    "mobile_startup_active": "Dispositivo detetado automaticamente: {device} · modo móvel {mode}. O DocMind ajusta-se ao seu dispositivo.",
     "aggressive_audit_advisory": "Estes achados já existiam em ficheiros que este turno não alterou; não bloqueiam o turno, mas devem ser corrigidos depois.",
     "aggressive_audit_clean": "Auditoria de perfeição limpa: sem erros de sintaxe, trabalho inacabado ou padrões de erro suspeitos ({files} ficheiros analisados).",
     "aggressive_audit_gave_up": "A auditoria não resolveu {count} problema(s) em 3 rondas; o turno foi encerrado para evitar um ciclo infinito.",
@@ -3825,7 +3825,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "Tekens op eenvoudige ASCII gezet.",
     "mobile_glyphs_unicode": "Tekens op Unicode/emoji gezet.",
     "mobile_font_hint": "Verschijnen tekens als blokjes: /mobil ascii",
-    "mobile_startup_active": "Mobiele modus staat aan. Typ /mobil opnieuw om uit te zetten.",
+    "mobile_startup_active": "Apparaat automatisch gedetecteerd: {device} · mobiele modus {mode}. DocMind past zich aan uw apparaat aan.",
     "aggressive_audit_advisory": "Deze bevindingen bestonden al in bestanden die deze beurt niet aanraakte; ze blokkeren de beurt niet, maar moeten later worden opgelost.",
     "aggressive_audit_clean": "Perfectie-audit schoon: geen syntaxfouten, onaf werk of verdachte foutpatronen ({files} bestanden gescand).",
     "aggressive_audit_gave_up": "De audit kon {count} punt(en) niet oplossen in 3 rondes; de beurt is gesloten om een eindeloze lus te voorkomen.",
@@ -4175,7 +4175,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "تم ضبط الرموز على ASCII بسيط.",
     "mobile_glyphs_unicode": "تم ضبط الرموز على Unicode/إيموجي.",
     "mobile_font_hint": "إذا ظهرت الرموز مربعات: /mobil ascii",
-    "mobile_startup_active": "الوضع المحمول مُفعَّل. اكتب /mobil مرة أخرى للإيقاف.",
+    "mobile_startup_active": "تم اكتشاف الجهاز تلقائيًا: {device} · الوضع المحمول {mode}. يضبط DocMind نفسه وفق جهازك.",
     "aggressive_audit_advisory": "هذه الملاحظات كانت موجودة مسبقاً في ملفات لم يلمسها هذا الدور؛ لا توقف الدور لكن يجب إصلاحها لاحقاً.",
     "aggressive_audit_clean": "تدقيق الإتقان نظيف: لا أخطاء صياغة ولا عمل ناقص ولا أنماط خطأ مشبوهة ({files} ملفاً تم فحصه).",
     "aggressive_audit_gave_up": "لم يتمكن التدقيق من حل {count} مشاهدة في 3 جولات؛ تم إغلاق الدور لتجنب حلقة لا نهائية.",
@@ -4525,7 +4525,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "符号已切换为简单 ASCII。",
     "mobile_glyphs_unicode": "符号已切换为 Unicode/表情。",
     "mobile_font_hint": "如果符号显示为方块：/mobil ascii",
-    "mobile_startup_active": "移动模式已开启。再次输入 /mobil 即可关闭。",
+    "mobile_startup_active": "已自动识别设备：{device} · 移动模式 {mode}。DocMind 会自动适配您的设备。",
     "aggressive_audit_advisory": "这些发现在本轮未改动的文件中早已存在；它们不会阻止本轮，但之后应修复。",
     "aggressive_audit_clean": "完美性审核通过：未发现语法错误、未完成的工作或可疑的错误模式（已检查 {files} 个文件）。",
     "aggressive_audit_gave_up": "完美性审核在 3 轮内无法清除 {count} 个问题；为避免无限循环，本轮已关闭。",
@@ -4875,7 +4875,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "記号をシンプルな ASCII に設定しました。",
     "mobile_glyphs_unicode": "記号を Unicode/絵文字に設定しました。",
     "mobile_font_hint": "記号が四角に見える場合: /mobil ascii",
-    "mobile_startup_active": "モバイルモードはオンです。解除するには /mobil をもう一度入力してください。",
+    "mobile_startup_active": "デバイスを自動検出しました: {device} · モバイルモード {mode}。DocMind はお使いのデバイスに自動で合わせます。",
     "aggressive_audit_advisory": "これらの指摘は今回触れていないファイルに以前から存在するものです。ターンは止めませんが、後で修正してください。",
     "aggressive_audit_clean": "完璧性監査はクリーンです：構文エラー、未完了の作業、疑わしいエラーパターンはありません（{files} ファイルを検査）。",
     "aggressive_audit_gave_up": "完璧性監査は3ラウンドで {count} 件の問題を解消できませんでした。無限ループを避けるためターンを終了しました。",
@@ -5225,7 +5225,7 @@ def _dm_module_01():
     "mobile_glyphs_ascii": "기호를 간단한 ASCII 로 설정했습니다.",
     "mobile_glyphs_unicode": "기호를 Unicode/이모지로 설정했습니다.",
     "mobile_font_hint": "기호가 네모로 보이면: /mobil ascii",
-    "mobile_startup_active": "모바일 모드가 켜져 있습니다. 끄려면 /mobil 을 다시 입력하세요.",
+    "mobile_startup_active": "기기를 자동으로 감지했습니다: {device} · 모바일 모드 {mode}. DocMind가 기기에 맞춰 자동으로 조정합니다.",
     "aggressive_audit_advisory": "이 발견 사항은 이번 턴에서 수정하지 않은 파일에 이미 있던 것입니다. 턴을 막지는 않지만 나중에 고쳐야 합니다.",
     "aggressive_audit_clean": "완벽성 감사 통과: 구문 오류, 미완성 작업, 의심스러운 오류 패턴이 없습니다({files}개 파일 확인).",
     "aggressive_audit_gave_up": "완벽성 감사가 3라운드 안에 {count}개 문제를 해결하지 못했습니다. 무한 반복을 막기 위해 턴을 종료했습니다.",
@@ -14350,16 +14350,15 @@ def _dm_module_20():
    def _paint(self, text: str, style: str) -> str:
      return "\x1b[" + style + "m" + text + "\x1b[0m" if self.view.color else text
    def print_mobile_startup_hint(self) -> None:
-     """On a phone only: how to use /mobil (it is a switch, not a command)."""
-     try:
-       if not _DM_PHONE_DEVICE:
-         return
-       if _DM_MOBILE_MODE:
-         self.info(t("mobile_startup_active"))
-         return
-       self.info(glyph("📱 ", "") + t("mobile_startup_hint"))
-     except Exception:
-       pass
+     """One line, whatever the device: what was detected and what DocMind did.
+
+     Detection is automatic -- no flag, no command -- and this is the only mobile
+     text printed at startup, in the interface language only.
+     """
+     device = t("mobile_row_phone_yes") if _DM_PHONE_DEVICE else t("mobile_row_phone_no")
+     mode = t("mobile_state_on") if _DM_MOBILE_MODE else t("mobile_state_off")
+     msg = glyph("📱 ", "") + t("mobile_startup_active", device=device, mode=mode)
+     self.info(msg)
    def print_startup_authority_warning(self) -> None:
      """Display a compact red warning immediately on startup about full system access."""
      msg = _visible_controls(t("startup_authority_warn"))

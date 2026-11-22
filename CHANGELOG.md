@@ -96,8 +96,12 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   saved choice survives a restart, `DOCMIND_MOBILE_MODE` reports it, `/mobil on|off` still forces a state
   and `/mobil status` prints the panel.
 - **On a computer** `/mobil` no longer pretends to do something: it says mobile mode only applies to a
-  phone or tablet, changes nothing, and even a narrow desktop window is not treated as a phone. The
-  startup `/mobil` note is printed on phones only, because a computer has nothing to switch.
+  phone or tablet, changes nothing, and even a narrow desktop window is not treated as a phone.
+- **One startup line, in every language.** Instead of advice ("if you are on a phone, type /mobil"),
+  DocMind now prints a single sentence that states what it detected and what it did —
+  `[i] 📱 Cihazınız otomatik algılandı: telefon/tablet · mobil mod AÇIK. DocMind kendini cihazınıza göre
+  ayarlar.` — localised in all 14 languages, one language only, exactly once per start. The user does
+  not have to know or choose the device: detection is automatic and the layout follows it.
 - Narrow terminals (fewer than 46 columns) no longer get the full-screen footer: it used to eat half of
   every message on a phone.
 - Piped input (`printf "/mobil\n" | docmind`) now ends the prompt line before printing the reply instead

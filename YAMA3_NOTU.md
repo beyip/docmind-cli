@@ -1,7 +1,7 @@
 # v1.3 yama #3 — "mesaj terminalde yarım kalıyor" + genel hata taraması
 
 Sürüm **v1.3** (v1.4 yok). `__version__ = "1.3"`.
-sha256 `7e4bd8a60885f9e5a7b0cc4b8098ee02a9505f13a36348cc7b1bc4aaad568fa5` · 1.096.296 bayt.
+sha256 `7c99638227e1f903f3458891984cfeb4c6fa3eeb54c6a20971a9332caa2f4ded` · 1097121 bayt.
 
 ## 1) Sorunun gerçek sebebi
 Akış halinde (stream) gelen metin, satır tamamlanmadan **olduğu gibi** terminale yazılıyordu. Uzun satırı
@@ -57,4 +57,10 @@ oluyordu — çünkü ilk akış satırı `DocMind: ` etiketinin kapladığı 9 
 - Açıkken: kompakt düzen, sade glifler, tam ekran altlık yok, prompt `DM:` , modele dar yazma kuralı.
 - 46 sütundan dar terminallerde altlık zaten kapalı; boru hattı girişinde cevap prompt satırına yapışmıyor.
 
-**sha256 (bu build):** `7e4bd8a60885f9e5a7b0cc4b8098ee02a9505f13a36348cc7b1bc4aaad568fa5` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
+**sha256 (bu build):** `7c99638227e1f903f3458891984cfeb4c6fa3eeb54c6a20971a9332caa2f4ded` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
+
+## 7) Açılışta tek cümle (son ek)
+- Her açılışta **tek satır**, 14 dilin hepsinde, o anki arayüz dilinde:
+  `[i] 📱 Cihazınız otomatik algılandı: telefon/tablet · mobil mod AÇIK. DocMind kendini cihazınıza göre ayarlar.`
+- Cihaz **otomatik** algılanır (Termux/Android/iOS), kullanıcı hiçbir şey seçmez; bilgisayarda aynı cümle
+  `bilgisayar · mobil mod KAPALI` der. `/mobil` notu telefonda da bilgisayarda da aynı biçimde basılır.

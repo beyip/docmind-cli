@@ -415,10 +415,13 @@ que lo haga?` · `Как это сделать?` · `どのように進めます
 
 ### Phone or tablet? use `/mobil`
 
-On a phone or tablet every start prints one line in your language:
+Every start prints exactly one line about this, in your language, on any device — the device is
+detected automatically, you never choose it:
 
 ```
-[i] Telefondan veya tabletten kullanıyorsanız /mobil yazarak mobil modu açın (genişlik, klavye ve glif uyumu).
+[i] 📱 Cihazınız otomatik algılandı: telefon/tablet · mobil mod AÇIK. DocMind kendini cihazınıza göre ayarlar.
+[i] 📱 Device detected automatically: computer · mobile mode OFF. DocMind adjusts itself to your device.
+[i] 📱 Gerät automatisch erkannt: Handy/Tablet · Mobilmodus AN. DocMind passt sich Ihrem Gerät an.
 ```
 
 `/mobil` and `/mobile` are the same command, and on a phone it is a **switch**:
