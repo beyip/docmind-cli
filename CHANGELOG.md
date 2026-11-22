@@ -22,6 +22,17 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   given), 10 rounds per agent, 45 child rounds and a 15-minute wall-clock budget per team run.
   An agent that repeats the same tool call is closed instantly instead of burning tokens.
 - **`/squad` command:** `status` (live dashboard), `on`, `off`, `auto`, `agents <2-8>`.
+- **The team question is localised.** The "split the work or do it alone?" prompt used to print Turkish
+  and English together; it now speaks **one language only** — the interface language — in all 14 locales
+  (tr, en, az, de, es, fr, it, pt, nl, ru, ar, zh, ja, ko), with localised answer words.
+- **The lead always closes the job.** After the agents finish, DocMind runs its own review pass (join the
+  pieces, verify, report) instead of handing the integration work back to you.
+- **True parallelism.** Sub-agents run on their own worker copy of the agent (own context, own stream
+  buffers, own permission scope) and never stop to ask a question mid-flight; the API calls overlap for
+  real (3 agents = 3 concurrent calls, one wave). A file that two agents want is **claimed** by the first
+  one and the second gets a clear note instead of silently overwriting it.
+- **Cheaper children.** Sub-agents no longer repeat the whole system prompt per step and skip context
+  trimming while siblings are running.
 
 ### Added — Search works without `/search`
 - The model now searches on its own whenever a request needs live facts ("search the web and then build
@@ -37,6 +48,10 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   stdout/stderr are reconfigured to `utf-8` with `errors="replace"` and line buffering, and the system
   prompt tells the model to keep output inside ~44 columns and use short paths.
 - `/mobile` command shows the device profile and switches `on|off|ascii|unicode`.
+- **Startup note for phones and tablets:** every start prints one localised line —
+  *"Telefondan veya tabletten kullanıyorsanız /mobil yazarak mobil modu açın"* /
+  *"On a phone or tablet, type /mobile (or /mobil)…"* — and `/mobil` works as an alias of `/mobile`
+  (router, `/help`, tab-completion).
 
 ### Changed
 - Warning and permission text now says **"your device"** instead of "your computer" (English, German,

@@ -34,16 +34,18 @@ from __future__ import annotations
 
 import hashlib as _dm_hashlib
 import hmac as _dm_hmac
+import json as _dm_json
 import os as _dm_os
 import re as _dm_re
 import sys as _dm_sys
 import types as _dm_types
+from typing import Any as _dm_Any, Dict as _dm_Dict
 from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '619f2be57e7693ed46508d01baf4d81e240cce702280224c5e560b5afe8b617f'
-_DM_SIGNATURE = '84ba6c4bbe21ce48d0df991db36b5be8ed0c11f512d84a01e05c0a777dd1df08b1957bd9a7a3680f395ece561171f0910d5c5be8025a7179405057eddd856e63c643364d0f758ac7a3c1a29093f87d5a5cf4fcc855f67276c8fd881c8e5a5f8c4b1f20ac87f4dd8c0d4510ef21c5b63dbbe62c963160815746e4f3f0e849db8de1d5ae048c0e29a3a31a8a6d342586e884742c9c74ddde62aded7575e4ee889119f7f3f66374db4c7651053067fb741f54c910bff9f3971316883e002ceb60a86fde24086b300dbbae0a5fd0a30147dcdea4ac1d3d5771fa1d46b92c883953097224c506ddfb35d0b2e9b7de60c724aa19d387277cf8adc8192123c9e57097b7711ac29a730cc7f611bab8a4c11161e0a42a91c88960780ec2cf844e19fc4a21f8d32572609b34b1c9e141a96a1bc253d5b05fdfe7104dc02d9c3035efcb85df5a7531e96eb75be0049ab8e0f68b055697ef886ce37f0b349217027ebb48c889fa9030b5ab0caed313fa6a735f82a2ce5c077c02d0fbcc2695ad839719d8b09a'
+_DM_SOURCE_HASH = '171bf06badb4c0405b1ca550a9ab695636273062f288d8a1ae380080f403a1e0'
+_DM_SIGNATURE = '75a3c99dc8391ac2b4b8b308bd15728dcb1f76e426e535c2f5512a2eb7d76f27f1afe8266674a33b65dd75782a5c632a16dc419c9f849d53dbfd8b34235e7e54ec8f1c671adfe07cea07211d69eed9684cc28099f6ba649936620fc2f7e7c5c84ceab0557d9b7023ae9cbc19db1e2ceae43274c8f08399ceb599fccb988ec2fbf3ea1f5aa70260960f111fe562b5fc83af04a7b4ef32e9aa00bf51e62c4aa19825f6b849939c50ecd3d8e3b71ebc0918018489350ef270d2e01d1dd5c80d3dab7c8fdafb8f5a86b868cbb656550ea42cef805eee3fa469c24cf0b26bf14c9a76fe6fe00b5daaa6706dd50b4db98a724c587eeb3078b3249586d5aae0f09efa67bd2452c90493dcac40be104618cfbe44ee6098704af28df890c6572ebc8f2c5c13f44df8905bad3e78c3626fae758d3f87c8a54e983572971c698440ed6c07ce04b0e34191b7d1e85e8fa86519a40b3cd61116b50caaa3a2629a2bffc249ba749743a7ffa07398fcd5b289724c46200220482517dbe538a26e46e61e6cea068d'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -343,7 +345,7 @@ def _dm_module_01():
     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
     "help_title": "DOCMIND KOMUT REHBERİ",
-    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobile    Mobil/Termux modu ve glif ayarı\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
+    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobil     Mobil/Termux modu ve glif ayarı (/mobile de çalışır)\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
     "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
     "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
     "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
@@ -551,7 +553,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Düzey",
     "effort_menu_col_api": "API",
     "model_invalid": "Geçersiz model adı: yalnızca harf, rakam ve . _ : / @ + - karakterleri kullanılabilir.",
-    "auto_syntax_rolled_back": "{path}: sözdizimi hatası bulundu; dosya otomatik olarak önceki çalışan sürüme geri alındı."
+    "auto_syntax_rolled_back": "{path}: sözdizimi hatası bulundu; dosya otomatik olarak önceki çalışan sürüme geri alındı.",
+    "mobile_startup_hint": "Telefondan veya tabletten kullanıyorsanız /mobil yazarak mobil modu açın (genişlik, klavye ve glif uyumu).",
+    "squad_offer_hint": "Bu iş ekip çalışmasına uygun: görevi parçalayayım mı?",
+    "squad_choice_title": "Bu işi nasıl yapayım?",
+    "squad_choice_opt_team": "  [1] Ekip: görevi parçala, paralel ajanlar çalışsın (plan + isimler)",
+    "squad_choice_opt_single": "  [2] Tek ajan: parçalamadan DocMind kendisi yapsın",
+    "squad_choice_team": "Ekip (parçala)",
+    "squad_choice_single": "Tek ajan",
+    "squad_result_header": "[EKİP SONUCU] Ekip çalışması bitti. Özet:",
+    "squad_failed_single": "Ekip çalışması başarısız ({err}); tek ajan olarak devam ediyorum.",
+    "squad_review_start": "Ekip bitti; son kontrol bende: dosyaları birleştirip doğruluyorum.",
+    "squad_team_of": "{n} ajanlı ekip",
+    "squad_single_agent": "tek ajan",
+    "squad_request_label": "İstek",
+    "squad_mode_label": "Mod",
+    "squad_no_agents": "henüz ajan yok",
+    "squad_counts_line": "bitti {done} · hata {failed} · durdu {stopped} · {mode} modu",
+    "squad_col_agent": "Ajan",
+    "squad_col_role": "Rol",
+    "squad_col_goal": "Görev",
+    "squad_col_files": "Dosyalar",
+    "squad_state_ask": "SOR (2 seçenek sunar)",
+    "squad_state_auto": "OTOMATİK (sormadan böler)",
+    "squad_state_off": "KAPALI (yalnız tek ajan)",
+    "squad_max_agents": "en fazla {n} ajan",
+    "squad_parallel_on": "ekip paralel çalışması: AÇIK (ajanlar birlikte çalışır)",
+    "squad_parallel_off": "ekip paralel çalışması: KAPALI (sırayla tek ajan)",
+    "squad_panel_title": "SQUAD / EKİP",
+    "squad_help_intro": "DocMind her zaman liderdir: planı yapar, işleri dağıtır, denetler ve raporlar.",
+    "squad_help_auto": "karmaşık istekleri sormadan böler",
+    "squad_help_off": "yalnız tek ajan",
+    "squad_help_agents": "en fazla ajan sayısı",
+    "squad_help_default_on": "varsayılan: açık",
+    "squad_help_parallel_note1": "Paralel modda bağımsız ajanlar aynı anda çalışır;",
+    "squad_help_parallel_note2": "aynı dosyaya dokunan ajanlar sıraya konur, hiçbir emek ezilmez.",
+    "squad_plan_tail1": "DocMind (lider) planı yapar, son adımı kendisi denetler",
+    "squad_plan_tail2": "ve ancak mükemmellik denetimi geçince işi kapatır.",
+    "mobile_usage": "kullanım: /mobil on|off|ascii|unicode|status",
+    "mobile_row_device": "cihaz",
+    "mobile_row_mode": "mobil mod",
+    "mobile_row_glyphs": "glifler",
+    "mobile_row_storage": "depolama",
+    "mobile_row_width": "genişlik",
+    "mobile_device_phone": "telefon/tablet (Termux)",
+    "mobile_device_desktop": "masaüstü"
   },
   "en": {
     "lang_name": "English",
@@ -846,7 +892,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Level",
     "effort_menu_col_api": "API",
     "model_invalid": "Invalid model name: only letters, digits and . _ : / @ + - are allowed.",
-    "auto_syntax_rolled_back": "{path}: syntax error detected; the file was automatically reverted to its previous working version."
+    "auto_syntax_rolled_back": "{path}: syntax error detected; the file was automatically reverted to its previous working version.",
+    "mobile_startup_hint": "On a phone or tablet, type /mobile (or /mobil) to switch on mobile mode (width, keyboard and glyphs).",
+    "squad_offer_hint": "This task suits a team: shall I split it?",
+    "squad_choice_title": "How should I build this?",
+    "squad_choice_opt_team": "  [1] Team: split the job so parallel agents work (plan + names)",
+    "squad_choice_opt_single": "  [2] Single agent: DocMind does it without splitting",
+    "squad_choice_team": "Team (split)",
+    "squad_choice_single": "Single agent",
+    "squad_result_header": "[SQUAD RESULT] Team run finished. Summary:",
+    "squad_failed_single": "Team run failed ({err}); continuing as a single agent.",
+    "squad_review_start": "Team finished; final check is mine: I join the files and verify them.",
+    "squad_team_of": "team of {n}",
+    "squad_single_agent": "single agent",
+    "squad_request_label": "Request",
+    "squad_mode_label": "Mode",
+    "squad_no_agents": "no agents yet",
+    "squad_counts_line": "done {done} · failed {failed} · stopped {stopped} · {mode} mode",
+    "squad_col_agent": "Agent",
+    "squad_col_role": "Role",
+    "squad_col_goal": "Goal",
+    "squad_col_files": "Files",
+    "squad_state_ask": "ASK (offers the 2-option choice)",
+    "squad_state_auto": "AUTO (splits without asking)",
+    "squad_state_off": "OFF (single agent only)",
+    "squad_max_agents": "max {n} agents",
+    "squad_parallel_on": "squad parallelism: ON (agents run together)",
+    "squad_parallel_off": "squad parallelism: OFF (one agent at a time)",
+    "squad_panel_title": "SQUAD / TEAM",
+    "squad_help_intro": "DocMind is always the lead: it plans, hands out the jobs, audits and reports.",
+    "squad_help_auto": "split complex requests without asking",
+    "squad_help_off": "single agent only",
+    "squad_help_agents": "maximum number of agents",
+    "squad_help_default_on": "default: on",
+    "squad_help_parallel_note1": "In parallel mode independent agents work at the same time;",
+    "squad_help_parallel_note2": "agents that touch the same file are queued, so no work is overwritten.",
+    "squad_plan_tail1": "DocMind (lead) owns the plan and executes the review step",
+    "squad_plan_tail2": "and closes the job only after the perfection audit passes.",
+    "mobile_usage": "usage: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "device",
+    "mobile_row_mode": "mobile mode",
+    "mobile_row_glyphs": "glyphs",
+    "mobile_row_storage": "storage",
+    "mobile_row_width": "width",
+    "mobile_device_phone": "phone/tablet (Termux)",
+    "mobile_device_desktop": "desktop"
   },
   "de": {
     "lang_name": "Deutsch",
@@ -1141,7 +1231,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Stufe",
     "effort_menu_col_api": "API",
     "model_invalid": "Ungültiger Modellname: nur Buchstaben, Ziffern und . _ : / @ + - erlaubt.",
-    "auto_syntax_rolled_back": "{path}: Syntaxfehler gefunden; die Datei wurde automatisch auf die letzte funktionierende Version zurückgesetzt."
+    "auto_syntax_rolled_back": "{path}: Syntaxfehler gefunden; die Datei wurde automatisch auf die letzte funktionierende Version zurückgesetzt.",
+    "mobile_startup_hint": "Auf Handy oder Tablet /mobile (oder /mobil) eingeben, um den Mobilmodus einzuschalten (Breite, Tastatur, Zeichen).",
+    "squad_offer_hint": "Diese Aufgabe passt zu einem Team: soll ich sie aufteilen?",
+    "squad_choice_title": "Wie soll ich das umsetzen?",
+    "squad_choice_opt_team": "  [1] Team: Aufgabe aufteilen, parallele Agenten arbeiten (Plan + Namen)",
+    "squad_choice_opt_single": "  [2] Einzelner Agent: DocMind macht es ohne Aufteilung",
+    "squad_choice_team": "Team (aufteilen)",
+    "squad_choice_single": "Einzelner Agent",
+    "squad_result_header": "[TEAM-ERGEBNIS] Teamlauf beendet. Zusammenfassung:",
+    "squad_failed_single": "Teamlauf fehlgeschlagen ({err}); ich arbeite als einzelner Agent weiter.",
+    "squad_review_start": "Team fertig; die Endkontrolle ist meine: ich verbinde die Dateien und prüfe sie.",
+    "squad_team_of": "Team mit {n} Agenten",
+    "squad_single_agent": "einzelner Agent",
+    "squad_request_label": "Auftrag",
+    "squad_mode_label": "Modus",
+    "squad_no_agents": "noch keine Agenten",
+    "squad_counts_line": "fertig {done} · Fehler {failed} · gestoppt {stopped} · Modus {mode}",
+    "squad_col_agent": "Agent",
+    "squad_col_role": "Rolle",
+    "squad_col_goal": "Ziel",
+    "squad_col_files": "Dateien",
+    "squad_state_ask": "FRAGEN (bietet die 2 Optionen an)",
+    "squad_state_auto": "AUTOMATISCH (teilt ohne Nachfrage)",
+    "squad_state_off": "AUS (nur ein Agent)",
+    "squad_max_agents": "max. {n} Agenten",
+    "squad_parallel_on": "Team-Parallelität: EIN (Agenten arbeiten gleichzeitig)",
+    "squad_parallel_off": "Team-Parallelität: AUS (ein Agent nach dem anderen)",
+    "squad_panel_title": "SQUAD / TEAM",
+    "squad_help_intro": "DocMind ist immer der Leiter: es plant, verteilt die Arbeit, prüft und berichtet.",
+    "squad_help_auto": "komplexe Aufträge ohne Nachfrage aufteilen",
+    "squad_help_off": "nur ein Agent",
+    "squad_help_agents": "maximale Anzahl Agenten",
+    "squad_help_default_on": "Standard: ein",
+    "squad_help_parallel_note1": "Im Parallelmodus arbeiten unabhängige Agenten gleichzeitig;",
+    "squad_help_parallel_note2": "Agenten an derselben Datei werden eingereiht, damit nichts überschrieben wird.",
+    "squad_plan_tail1": "DocMind (Leiter) besitzt den Plan und führt den Prüfschritt aus",
+    "squad_plan_tail2": "und schließt den Auftrag erst nach bestandener Perfektionsprüfung.",
+    "mobile_usage": "Nutzung: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "Gerät",
+    "mobile_row_mode": "Mobilmodus",
+    "mobile_row_glyphs": "Zeichen",
+    "mobile_row_storage": "Speicher",
+    "mobile_row_width": "Breite",
+    "mobile_device_phone": "Handy/Tablet (Termux)",
+    "mobile_device_desktop": "Desktop"
   },
   "es": {
     "lang_name": "Español",
@@ -1426,7 +1560,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Nivel",
     "effort_menu_col_api": "API",
     "model_invalid": "Nombre de modelo no válido: solo se permiten letras, dígitos y . _ : / @ + -",
-    "auto_syntax_rolled_back": "{path}: se detectó un error de sintaxis; el archivo se revirtió automáticamente a su versión anterior."
+    "auto_syntax_rolled_back": "{path}: se detectó un error de sintaxis; el archivo se revirtió automáticamente a su versión anterior.",
+    "mobile_startup_hint": "Si usas un teléfono o una tableta, escribe /mobile (o /mobil) para activar el modo móvil (ancho, teclado y glifos).",
+    "squad_offer_hint": "Esta tarea va bien con un equipo: ¿la divido?",
+    "squad_choice_title": "¿Cómo quieres que lo haga?",
+    "squad_choice_opt_team": "  [1] Equipo: dividir la tarea y que trabajen agentes en paralelo (plan + nombres)",
+    "squad_choice_opt_single": "  [2] Un solo agente: DocMind lo hace sin dividir",
+    "squad_choice_team": "Equipo (dividir)",
+    "squad_choice_single": "Un solo agente",
+    "squad_result_header": "[RESULTADO DEL EQUIPO] El equipo terminó. Resumen:",
+    "squad_failed_single": "El equipo falló ({err}); sigo como un solo agente.",
+    "squad_review_start": "El equipo terminó; la revisión final es mía: uno los archivos y los verifico.",
+    "squad_team_of": "equipo de {n}",
+    "squad_single_agent": "un solo agente",
+    "squad_request_label": "Petición",
+    "squad_mode_label": "Modo",
+    "squad_no_agents": "aún no hay agentes",
+    "squad_counts_line": "hecho {done} · fallos {failed} · detenidos {stopped} · modo {mode}",
+    "squad_col_agent": "Agente",
+    "squad_col_role": "Rol",
+    "squad_col_goal": "Objetivo",
+    "squad_col_files": "Archivos",
+    "squad_state_ask": "PREGUNTAR (ofrece las 2 opciones)",
+    "squad_state_auto": "AUTOMÁTICO (divide sin preguntar)",
+    "squad_state_off": "APAGADO (solo un agente)",
+    "squad_max_agents": "máximo {n} agentes",
+    "squad_parallel_on": "paralelismo del equipo: ACTIVADO (los agentes trabajan juntos)",
+    "squad_parallel_off": "paralelismo del equipo: DESACTIVADO (un agente a la vez)",
+    "squad_panel_title": "SQUAD / EQUIPO",
+    "squad_help_intro": "DocMind siempre es el líder: planifica, reparte el trabajo, audita y reporta.",
+    "squad_help_auto": "dividir peticiones complejas sin preguntar",
+    "squad_help_off": "solo un agente",
+    "squad_help_agents": "número máximo de agentes",
+    "squad_help_default_on": "por defecto: activado",
+    "squad_help_parallel_note1": "En modo paralelo los agentes independientes trabajan a la vez;",
+    "squad_help_parallel_note2": "los agentes que tocan el mismo archivo se ponen en cola, sin sobrescribir nada.",
+    "squad_plan_tail1": "DocMind (líder) es dueño del plan y ejecuta el paso de revisión",
+    "squad_plan_tail2": "y cierra el trabajo solo cuando pasa la auditoría de perfección.",
+    "mobile_usage": "uso: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "dispositivo",
+    "mobile_row_mode": "modo móvil",
+    "mobile_row_glyphs": "glifos",
+    "mobile_row_storage": "almacenamiento",
+    "mobile_row_width": "ancho",
+    "mobile_device_phone": "teléfono/tableta (Termux)",
+    "mobile_device_desktop": "escritorio"
   },
   "fr": {
     "lang_name": "Français",
@@ -1711,7 +1889,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Niveau",
     "effort_menu_col_api": "API",
     "model_invalid": "Nom de modèle invalide : seuls les lettres, chiffres et . _ : / @ + - sont autorisés.",
-    "auto_syntax_rolled_back": "{path} : erreur de syntaxe détectée ; le fichier a été automatiquement rétabli à sa version précédente."
+    "auto_syntax_rolled_back": "{path} : erreur de syntaxe détectée ; le fichier a été automatiquement rétabli à sa version précédente.",
+    "mobile_startup_hint": "Sur téléphone ou tablette, tapez /mobile (ou /mobil) pour activer le mode mobile (largeur, clavier, glyphes).",
+    "squad_offer_hint": "Cette tâche convient à une équipe : je la découpe ?",
+    "squad_choice_title": "Comment veux-tu que je procède ?",
+    "squad_choice_opt_team": "  [1] Équipe : découper la tâche, des agents en parallèle (plan + noms)",
+    "squad_choice_opt_single": "  [2] Agent unique : DocMind le fait sans découper",
+    "squad_choice_team": "Équipe (découper)",
+    "squad_choice_single": "Agent unique",
+    "squad_result_header": "[RÉSULTAT D'ÉQUIPE] L'équipe a terminé. Résumé :",
+    "squad_failed_single": "L'équipe a échoué ({err}) ; je continue en agent unique.",
+    "squad_review_start": "L'équipe a terminé ; la vérification finale est à moi : j'assemble et je vérifie les fichiers.",
+    "squad_team_of": "équipe de {n}",
+    "squad_single_agent": "agent unique",
+    "squad_request_label": "Demande",
+    "squad_mode_label": "Mode",
+    "squad_no_agents": "aucun agent pour l'instant",
+    "squad_counts_line": "terminé {done} · échecs {failed} · arrêtés {stopped} · mode {mode}",
+    "squad_col_agent": "Agent",
+    "squad_col_role": "Rôle",
+    "squad_col_goal": "Objectif",
+    "squad_col_files": "Fichiers",
+    "squad_state_ask": "DEMANDER (propose les 2 options)",
+    "squad_state_auto": "AUTOMATIQUE (découpe sans demander)",
+    "squad_state_off": "DÉSACTIVÉ (agent unique)",
+    "squad_max_agents": "max {n} agents",
+    "squad_parallel_on": "parallélisme de l'équipe : ACTIVÉ (les agents travaillent ensemble)",
+    "squad_parallel_off": "parallélisme de l'équipe : DÉSACTIVÉ (un agent à la fois)",
+    "squad_panel_title": "SQUAD / ÉQUIPE",
+    "squad_help_intro": "DocMind est toujours le chef : il planifie, répartit, audite et rend compte.",
+    "squad_help_auto": "découper les demandes complexes sans demander",
+    "squad_help_off": "agent unique uniquement",
+    "squad_help_agents": "nombre maximal d'agents",
+    "squad_help_default_on": "par défaut : activé",
+    "squad_help_parallel_note1": "En mode parallèle, les agents indépendants travaillent en même temps ;",
+    "squad_help_parallel_note2": "les agents qui touchent le même fichier sont mis en file, rien n'est écrasé.",
+    "squad_plan_tail1": "DocMind (chef) possède le plan et exécute l'étape de vérification",
+    "squad_plan_tail2": "et ne clôt le travail qu'après l'audit de perfection.",
+    "mobile_usage": "usage : /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "appareil",
+    "mobile_row_mode": "mode mobile",
+    "mobile_row_glyphs": "glyphes",
+    "mobile_row_storage": "stockage",
+    "mobile_row_width": "largeur",
+    "mobile_device_phone": "téléphone/tablette (Termux)",
+    "mobile_device_desktop": "ordinateur"
   },
   "ru": {
     "lang_name": "Русский",
@@ -1996,7 +2218,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Уровень",
     "effort_menu_col_api": "API",
     "model_invalid": "Недопустимое имя модели: разрешены только буквы, цифры и . _ : / @ + -",
-    "auto_syntax_rolled_back": "{path}: обнаружена синтаксическая ошибка; файл автоматически возвращён к предыдущей рабочей версии."
+    "auto_syntax_rolled_back": "{path}: обнаружена синтаксическая ошибка; файл автоматически возвращён к предыдущей рабочей версии.",
+    "mobile_startup_hint": "Если вы на телефоне или планшете, введите /mobile (или /mobil), чтобы включить мобильный режим (ширина, клавиатура, символы).",
+    "squad_offer_hint": "Эта задача подходит для команды: разбить её?",
+    "squad_choice_title": "Как это сделать?",
+    "squad_choice_opt_team": "  [1] Команда: разбить задачу, агенты работают параллельно (план + имена)",
+    "squad_choice_opt_single": "  [2] Один агент: DocMind сделает сам, без разбиения",
+    "squad_choice_team": "Команда (разбить)",
+    "squad_choice_single": "Один агент",
+    "squad_result_header": "[РЕЗУЛЬТАТ КОМАНДЫ] Работа команды завершена. Итог:",
+    "squad_failed_single": "Команда не справилась ({err}); продолжаю как один агент.",
+    "squad_review_start": "Команда завершила; финальная проверка за мной: соединяю файлы и проверяю их.",
+    "squad_team_of": "команда из {n}",
+    "squad_single_agent": "один агент",
+    "squad_request_label": "Запрос",
+    "squad_mode_label": "Режим",
+    "squad_no_agents": "агентов пока нет",
+    "squad_counts_line": "готово {done} · ошибок {failed} · остановлено {stopped} · режим {mode}",
+    "squad_col_agent": "Агент",
+    "squad_col_role": "Роль",
+    "squad_col_goal": "Задача",
+    "squad_col_files": "Файлы",
+    "squad_state_ask": "СПРОСИТЬ (предлагает 2 варианта)",
+    "squad_state_auto": "АВТО (разбивает без вопроса)",
+    "squad_state_off": "ВЫКЛ (только один агент)",
+    "squad_max_agents": "максимум {n} агентов",
+    "squad_parallel_on": "параллельность команды: ВКЛ (агенты работают одновременно)",
+    "squad_parallel_off": "параллельность команды: ВЫКЛ (по одному)",
+    "squad_panel_title": "SQUAD / КОМАНДА",
+    "squad_help_intro": "DocMind всегда ведущий: планирует, раздаёт задачи, проверяет и отчитывается.",
+    "squad_help_auto": "разбивать сложные запросы без вопросов",
+    "squad_help_off": "только один агент",
+    "squad_help_agents": "максимальное число агентов",
+    "squad_help_default_on": "по умолчанию: вкл",
+    "squad_help_parallel_note1": "В параллельном режиме независимые агенты работают одновременно;",
+    "squad_help_parallel_note2": "агенты с общим файлом ставятся в очередь, ничего не перезаписывается.",
+    "squad_plan_tail1": "DocMind (ведущий) владеет планом и выполняет шаг проверки",
+    "squad_plan_tail2": "и закрывает работу только после аудита совершенства.",
+    "mobile_usage": "использование: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "устройство",
+    "mobile_row_mode": "мобильный режим",
+    "mobile_row_glyphs": "символы",
+    "mobile_row_storage": "хранилище",
+    "mobile_row_width": "ширина",
+    "mobile_device_phone": "телефон/планшет (Termux)",
+    "mobile_device_desktop": "компьютер"
   },
   "az": {
     "lang_name": "Azərbaycan dili",
@@ -2281,7 +2547,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Səviyyə",
     "effort_menu_col_api": "API",
     "model_invalid": "Yanlış model adı: yalnız hərf, rəqəm və . _ : / @ + - işarələri ola bilər.",
-    "auto_syntax_rolled_back": "{path}: sintaksis xətası tapıldı; fayl avtomatik olaraq əvvəlki işlək versiyaya qaytarıldı."
+    "auto_syntax_rolled_back": "{path}: sintaksis xətası tapıldı; fayl avtomatik olaraq əvvəlki işlək versiyaya qaytarıldı.",
+    "mobile_startup_hint": "Telefon və ya planşetdən istifadə edirsinizsə /mobil yazaraq mobil rejimi açın (en, klaviatura və qliflər).",
+    "squad_offer_hint": "Bu iş komanda işinə uyğundur: bölüm?",
+    "squad_choice_title": "Bunu necə edim?",
+    "squad_choice_opt_team": "  [1] Komanda: tapşırığı böl, ajanlar paralel işləsin (plan + adlar)",
+    "squad_choice_opt_single": "  [2] Tək ajan: DocMind bölmədən özü etsin",
+    "squad_choice_team": "Komanda (böl)",
+    "squad_choice_single": "Tək ajan",
+    "squad_result_header": "[KOMANDA NƏTİCƏSİ] Komanda işi bitdi. Xülasə:",
+    "squad_failed_single": "Komanda alınmadı ({err}); tək ajan kimi davam edirəm.",
+    "squad_review_start": "Komanda bitdi; son yoxlama məndədir: faylları birləşdirib yoxlayıram.",
+    "squad_team_of": "{n} ajanlı komanda",
+    "squad_single_agent": "tək ajan",
+    "squad_request_label": "Sorğu",
+    "squad_mode_label": "Rejim",
+    "squad_no_agents": "hələ ajan yoxdur",
+    "squad_counts_line": "bitdi {done} · xəta {failed} · dayandı {stopped} · {mode} rejimi",
+    "squad_col_agent": "Ajan",
+    "squad_col_role": "Rol",
+    "squad_col_goal": "Tapşırıq",
+    "squad_col_files": "Fayllar",
+    "squad_state_ask": "SORUŞ (2 seçim təklif edir)",
+    "squad_state_auto": "AVTOMATİK (sormadan bölür)",
+    "squad_state_off": "BAĞLI DEYİL (yalnız tək ajan)",
+    "squad_max_agents": "ən çoxu {n} ajan",
+    "squad_parallel_on": "komanda paralelliyi: AÇIQ (ajanlar birlikdə işləyir)",
+    "squad_parallel_off": "komanda paralelliyi: BAĞLI (bir-bir)",
+    "squad_panel_title": "SQUAD / KOMANDA",
+    "squad_help_intro": "DocMind həmişə liderdir: plan qurur, işləri paylayır, yoxlayır və hesabat verir.",
+    "squad_help_auto": "mürəkkəb sorğuları sormadan bölür",
+    "squad_help_off": "yalnız tək ajan",
+    "squad_help_agents": "maksimum ajan sayı",
+    "squad_help_default_on": "susmaya görə: açıq",
+    "squad_help_parallel_note1": "Paralel rejimdə müstəqil ajanlar eyni anda işləyir;",
+    "squad_help_parallel_note2": "eyni fayla toxunan ajanlar növbəyə qoyulur, heç nə üzərinə yazılmır.",
+    "squad_plan_tail1": "DocMind (lider) planın sahibidir və yoxlama addımını özü icra edir",
+    "squad_plan_tail2": "və işi yalnız mükəmməllik auditindən sonra bağlayır.",
+    "mobile_usage": "istifadə: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "cihaz",
+    "mobile_row_mode": "mobil rejim",
+    "mobile_row_glyphs": "qliflər",
+    "mobile_row_storage": "yaddaş",
+    "mobile_row_width": "en",
+    "mobile_device_phone": "telefon/planşet (Termux)",
+    "mobile_device_desktop": "masaüstü"
   },
   "it": {
     "lang_name": "Italiano",
@@ -2566,7 +2876,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Livello",
     "effort_menu_col_api": "API",
     "model_invalid": "Nome modello non valido: sono ammessi solo lettere, cifre e . _ : / @ + -",
-    "auto_syntax_rolled_back": "{path}: rilevato un errore di sintassi; il file è stato ripristinato automaticamente alla versione precedente."
+    "auto_syntax_rolled_back": "{path}: rilevato un errore di sintassi; il file è stato ripristinato automaticamente alla versione precedente.",
+    "mobile_startup_hint": "Se stai usando un telefono o un tablet, digita /mobile (o /mobil) per attivare la modalità mobile (larghezza, tastiera, glifi).",
+    "squad_offer_hint": "Questo lavoro va bene per una squadra: lo divido?",
+    "squad_choice_title": "Come vuoi che lo faccia?",
+    "squad_choice_opt_team": "  [1] Squadra: dividi il compito, agenti in parallelo (piano + nomi)",
+    "squad_choice_opt_single": "  [2] Agente singolo: DocMind lo fa senza dividere",
+    "squad_choice_team": "Squadra (dividi)",
+    "squad_choice_single": "Agente singolo",
+    "squad_result_header": "[RISULTATO SQUADRA] Il lavoro di squadra è finito. Riepilogo:",
+    "squad_failed_single": "La squadra ha fallito ({err}); continuo come agente singolo.",
+    "squad_review_start": "Squadra finita; il controllo finale tocca a me: unisco i file e li verifico.",
+    "squad_team_of": "squadra di {n}",
+    "squad_single_agent": "agente singolo",
+    "squad_request_label": "Richiesta",
+    "squad_mode_label": "Modalità",
+    "squad_no_agents": "nessun agente per ora",
+    "squad_counts_line": "fatto {done} · errori {failed} · fermati {stopped} · modalità {mode}",
+    "squad_col_agent": "Agente",
+    "squad_col_role": "Ruolo",
+    "squad_col_goal": "Obiettivo",
+    "squad_col_files": "File",
+    "squad_state_ask": "CHIEDI (offre le 2 opzioni)",
+    "squad_state_auto": "AUTOMATICO (divide senza chiedere)",
+    "squad_state_off": "SPENTO (solo agente singolo)",
+    "squad_max_agents": "massimo {n} agenti",
+    "squad_parallel_on": "parallelismo squadra: ATTIVO (gli agenti lavorano insieme)",
+    "squad_parallel_off": "parallelismo squadra: DISATTIVATO (un agente alla volta)",
+    "squad_panel_title": "SQUAD / SQUADRA",
+    "squad_help_intro": "DocMind è sempre il capo: pianifica, distribuisce il lavoro, verifica e riporta.",
+    "squad_help_auto": "dividere le richieste complesse senza chiedere",
+    "squad_help_off": "solo agente singolo",
+    "squad_help_agents": "numero massimo di agenti",
+    "squad_help_default_on": "predefinito: attivo",
+    "squad_help_parallel_note1": "In modalità parallela gli agenti indipendenti lavorano insieme;",
+    "squad_help_parallel_note2": "gli agenti sullo stesso file vanno in coda, così nulla viene sovrascritto.",
+    "squad_plan_tail1": "DocMind (capo) possiede il piano ed esegue la revisione finale",
+    "squad_plan_tail2": "e chiude il lavoro solo dopo l'audit di perfezione.",
+    "mobile_usage": "uso: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "dispositivo",
+    "mobile_row_mode": "modalità mobile",
+    "mobile_row_glyphs": "glifi",
+    "mobile_row_storage": "archivio",
+    "mobile_row_width": "larghezza",
+    "mobile_device_phone": "telefono/tablet (Termux)",
+    "mobile_device_desktop": "desktop"
   },
   "pt": {
     "lang_name": "Português",
@@ -2851,7 +3205,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Nível",
     "effort_menu_col_api": "API",
     "model_invalid": "Nome do modelo inválido: apenas letras, dígitos e . _ : / @ + - são permitidos.",
-    "auto_syntax_rolled_back": "{path}: erro de sintaxe detectado; o arquivo foi revertido automaticamente para a versão anterior."
+    "auto_syntax_rolled_back": "{path}: erro de sintaxe detectado; o arquivo foi revertido automaticamente para a versão anterior.",
+    "mobile_startup_hint": "Se estiver no telemóvel ou tablet, escreva /mobile (ou /mobil) para ativar o modo móvel (largura, teclado e glifos).",
+    "squad_offer_hint": "Esta tarefa dá-se bem com uma equipa: divido-a?",
+    "squad_choice_title": "Como quer que eu faça?",
+    "squad_choice_opt_team": "  [1] Equipa: dividir a tarefa e agentes em paralelo (plano + nomes)",
+    "squad_choice_opt_single": "  [2] Agente único: o DocMind faz sem dividir",
+    "squad_choice_team": "Equipa (dividir)",
+    "squad_choice_single": "Agente único",
+    "squad_result_header": "[RESULTADO DA EQUIPA] A equipa terminou. Resumo:",
+    "squad_failed_single": "A equipa falhou ({err}); continuo como agente único.",
+    "squad_review_start": "Equipa terminada; a verificação final é minha: junto os ficheiros e verifico-os.",
+    "squad_team_of": "equipa de {n}",
+    "squad_single_agent": "agente único",
+    "squad_request_label": "Pedido",
+    "squad_mode_label": "Modo",
+    "squad_no_agents": "ainda sem agentes",
+    "squad_counts_line": "feito {done} · falhas {failed} · parados {stopped} · modo {mode}",
+    "squad_col_agent": "Agente",
+    "squad_col_role": "Função",
+    "squad_col_goal": "Objetivo",
+    "squad_col_files": "Ficheiros",
+    "squad_state_ask": "PERGUNTAR (oferece as 2 opções)",
+    "squad_state_auto": "AUTOMÁTICO (divide sem perguntar)",
+    "squad_state_off": "DESLIGADO (apenas agente único)",
+    "squad_max_agents": "máximo {n} agentes",
+    "squad_parallel_on": "paralelismo da equipa: LIGADO (os agentes trabalham juntos)",
+    "squad_parallel_off": "paralelismo da equipa: DESLIGADO (um agente de cada vez)",
+    "squad_panel_title": "SQUAD / EQUIPA",
+    "squad_help_intro": "O DocMind é sempre o líder: planeia, distribui o trabalho, audita e relata.",
+    "squad_help_auto": "dividir pedidos complexos sem perguntar",
+    "squad_help_off": "apenas agente único",
+    "squad_help_agents": "número máximo de agentes",
+    "squad_help_default_on": "predefinição: ligado",
+    "squad_help_parallel_note1": "No modo paralelo os agentes independentes trabalham ao mesmo tempo;",
+    "squad_help_parallel_note2": "agentes no mesmo ficheiro entram em fila, nada é sobrescrito.",
+    "squad_plan_tail1": "O DocMind (líder) é dono do plano e executa a revisão final",
+    "squad_plan_tail2": "e só fecha o trabalho quando a auditoria de perfeição passa.",
+    "mobile_usage": "utilização: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "dispositivo",
+    "mobile_row_mode": "modo móvel",
+    "mobile_row_glyphs": "glifos",
+    "mobile_row_storage": "armazenamento",
+    "mobile_row_width": "largura",
+    "mobile_device_phone": "telemóvel/tablet (Termux)",
+    "mobile_device_desktop": "computador"
   },
   "nl": {
     "lang_name": "Nederlands",
@@ -3136,7 +3534,51 @@ def _dm_module_01():
     "effort_menu_col_name": "Niveau",
     "effort_menu_col_api": "API",
     "model_invalid": "Ongeldige modelnaam: alleen letters, cijfers en . _ : / @ + - zijn toegestaan.",
-    "auto_syntax_rolled_back": "{path}: syntaxisfout gevonden; het bestand is automatisch teruggezet naar de vorige werkende versie."
+    "auto_syntax_rolled_back": "{path}: syntaxisfout gevonden; het bestand is automatisch teruggezet naar de vorige werkende versie.",
+    "mobile_startup_hint": "Op een telefoon of tablet: typ /mobile (of /mobil) om de mobiele modus aan te zetten (breedte, toetsenbord, tekens).",
+    "squad_offer_hint": "Deze taak past bij een team: zal ik hem splitsen?",
+    "squad_choice_title": "Hoe wil je dat ik dit doe?",
+    "squad_choice_opt_team": "  [1] Team: taak splitsen, agenten parallel laten werken (plan + namen)",
+    "squad_choice_opt_single": "  [2] Eén agent: DocMind doet het zonder splitsen",
+    "squad_choice_team": "Team (splitsen)",
+    "squad_choice_single": "Eén agent",
+    "squad_result_header": "[TEAMRESULTAAT] Teamrun klaar. Samenvatting:",
+    "squad_failed_single": "Teamrun mislukt ({err}); ik ga verder als één agent.",
+    "squad_review_start": "Team klaar; de eindcontrole is van mij: ik voeg de bestanden samen en verifieer ze.",
+    "squad_team_of": "team van {n}",
+    "squad_single_agent": "één agent",
+    "squad_request_label": "Verzoek",
+    "squad_mode_label": "Modus",
+    "squad_no_agents": "nog geen agenten",
+    "squad_counts_line": "klaar {done} · fouten {failed} · gestopt {stopped} · modus {mode}",
+    "squad_col_agent": "Agent",
+    "squad_col_role": "Rol",
+    "squad_col_goal": "Doel",
+    "squad_col_files": "Bestanden",
+    "squad_state_ask": "VRAGEN (biedt de 2 opties)",
+    "squad_state_auto": "AUTOMATISCH (splitst zonder vragen)",
+    "squad_state_off": "UIT (alleen één agent)",
+    "squad_max_agents": "maximaal {n} agenten",
+    "squad_parallel_on": "team-parallellisme: AAN (agenten werken samen)",
+    "squad_parallel_off": "team-parallellisme: UIT (één agent tegelijk)",
+    "squad_panel_title": "SQUAD / TEAM",
+    "squad_help_intro": "DocMind is altijd de leider: het plant, verdeelt het werk, controleert en rapporteert.",
+    "squad_help_auto": "complexe verzoeken splitsen zonder te vragen",
+    "squad_help_off": "alleen één agent",
+    "squad_help_agents": "maximaal aantal agenten",
+    "squad_help_default_on": "standaard: aan",
+    "squad_help_parallel_note1": "In parallelle modus werken onafhankelijke agenten tegelijk;",
+    "squad_help_parallel_note2": "agenten op hetzelfde bestand komen in de wachtrij, niets wordt overschreven.",
+    "squad_plan_tail1": "DocMind (leider) bezit het plan en voert de controle uit",
+    "squad_plan_tail2": "en sluit het werk pas als de perfectie-audit slaagt.",
+    "mobile_usage": "gebruik: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "apparaat",
+    "mobile_row_mode": "mobiele modus",
+    "mobile_row_glyphs": "tekens",
+    "mobile_row_storage": "opslag",
+    "mobile_row_width": "breedte",
+    "mobile_device_phone": "telefoon/tablet (Termux)",
+    "mobile_device_desktop": "desktop"
   },
   "ar": {
     "lang_name": "العربية",
@@ -3421,7 +3863,51 @@ def _dm_module_01():
     "effort_menu_col_name": "المستوى",
     "effort_menu_col_api": "API",
     "model_invalid": "اسم نموذج غير صالح: يُسمح فقط بالحروف والأرقام والرموز . _ : / @ + -",
-    "auto_syntax_rolled_back": "{path}: تم اكتشاف خطأ في الصياغة؛ تمت إعادة الملف تلقائيًا إلى النسخة السابقة العاملة."
+    "auto_syntax_rolled_back": "{path}: تم اكتشاف خطأ في الصياغة؛ تمت إعادة الملف تلقائيًا إلى النسخة السابقة العاملة.",
+    "mobile_startup_hint": "إذا كنت تستخدم الهاتف أو الجهاز اللوحي فاكتب /mobile (أو /mobil) لتشغيل الوضع المتنقل (العرض ولوحة المفاتيح والرموز).",
+    "squad_offer_hint": "هذه المهمة تناسب فريقاً: هل أقسمها؟",
+    "squad_choice_title": "كيف تريد أن أنفذ هذا؟",
+    "squad_choice_opt_team": "  [1] فريق: قسّم المهمة ليعمل وكلاء متوازون (خطة + أسماء)",
+    "squad_choice_opt_single": "  [2] وكيل واحد: ينفذها DocMind دون تقسيم",
+    "squad_choice_team": "فريق (تقسيم)",
+    "squad_choice_single": "وكيل واحد",
+    "squad_result_header": "[نتيجة الفريق] انتهى عمل الفريق. الملخص:",
+    "squad_failed_single": "فشل عمل الفريق ({err})؛ أتابع كوكيل واحد.",
+    "squad_review_start": "انتهى الفريق؛ المراجعة الأخيرة لي: أدمج الملفات وأتحقق منها.",
+    "squad_team_of": "فريق من {n}",
+    "squad_single_agent": "وكيل واحد",
+    "squad_request_label": "الطلب",
+    "squad_mode_label": "الوضع",
+    "squad_no_agents": "لا يوجد وكلاء بعد",
+    "squad_counts_line": "تم {done} · فشل {failed} · توقف {stopped} · وضع {mode}",
+    "squad_col_agent": "الوكيل",
+    "squad_col_role": "الدور",
+    "squad_col_goal": "المهمة",
+    "squad_col_files": "الملفات",
+    "squad_state_ask": "اسأل (يعرض الخيارين)",
+    "squad_state_auto": "تلقائي (يقسّم دون سؤال)",
+    "squad_state_off": "متوقف (وكيل واحد فقط)",
+    "squad_max_agents": "الحد الأقصى {n} وكلاء",
+    "squad_parallel_on": "توازي الفريق: مفعّل (يعمل الوكلاء معاً)",
+    "squad_parallel_off": "توازي الفريق: معطّل (وكيل واحد في كل مرة)",
+    "squad_panel_title": "SQUAD / الفريق",
+    "squad_help_intro": "DocMind هو القائد دائماً: يخطط ويوزع العمل ويدقق ويقدم التقرير.",
+    "squad_help_auto": "تقسيم الطلبات المعقدة دون سؤال",
+    "squad_help_off": "وكيل واحد فقط",
+    "squad_help_agents": "أقصى عدد للوكلاء",
+    "squad_help_default_on": "الافتراضي: مفعّل",
+    "squad_help_parallel_note1": "في الوضع المتوازي يعمل الوكلاء المستقلون في الوقت نفسه؛",
+    "squad_help_parallel_note2": "الوكلاء الذين يلمسون الملف نفسه يدخلون في انتظار، فلا يُطمس أي عمل.",
+    "squad_plan_tail1": "DocMind (القائد) يملك الخطة وينفذ خطوة المراجعة",
+    "squad_plan_tail2": "ولا يغلق العمل إلا بعد نجاح تدقيق الإتقان.",
+    "mobile_usage": "الاستخدام: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "الجهاز",
+    "mobile_row_mode": "الوضع المتنقل",
+    "mobile_row_glyphs": "الرموز",
+    "mobile_row_storage": "التخزين",
+    "mobile_row_width": "العرض",
+    "mobile_device_phone": "هاتف/جهاز لوحي (Termux)",
+    "mobile_device_desktop": "سطح المكتب"
   },
   "zh": {
     "lang_name": "中文",
@@ -3706,7 +4192,51 @@ def _dm_module_01():
     "effort_menu_col_name": "等级",
     "effort_menu_col_api": "API",
     "model_invalid": "模型名称无效：只允许字母、数字以及 . _ : / @ + -",
-    "auto_syntax_rolled_back": "{path}：检测到语法错误，文件已自动还原到上一个可用版本。"
+    "auto_syntax_rolled_back": "{path}：检测到语法错误，文件已自动还原到上一个可用版本。",
+    "mobile_startup_hint": "如果在手机或平板上使用，请输入 /mobile（或 /mobil）开启移动模式（宽度、键盘与符号适配）。",
+    "squad_offer_hint": "这个任务适合团队来做：要我拆分吗？",
+    "squad_choice_title": "你希望我怎么做？",
+    "squad_choice_opt_team": "  [1] 团队：拆分任务，多个智能体并行工作（计划 + 名称）",
+    "squad_choice_opt_single": "  [2] 单智能体：不分拆，由 DocMind 自行完成",
+    "squad_choice_team": "团队（拆分）",
+    "squad_choice_single": "单智能体",
+    "squad_result_header": "[团队结果] 团队工作已结束。摘要：",
+    "squad_failed_single": "团队执行失败（{err}）；改为单智能体继续。",
+    "squad_review_start": "团队已完成；最后检查由我负责：合并文件并验证。",
+    "squad_team_of": "{n} 个智能体的团队",
+    "squad_single_agent": "单智能体",
+    "squad_request_label": "请求",
+    "squad_mode_label": "模式",
+    "squad_no_agents": "暂时没有智能体",
+    "squad_counts_line": "完成 {done} · 失败 {failed} · 停止 {stopped} · {mode} 模式",
+    "squad_col_agent": "智能体",
+    "squad_col_role": "角色",
+    "squad_col_goal": "目标",
+    "squad_col_files": "文件",
+    "squad_state_ask": "询问（提供 2 个选项）",
+    "squad_state_auto": "自动（无需询问直接拆分）",
+    "squad_state_off": "关闭（仅单智能体）",
+    "squad_max_agents": "最多 {n} 个智能体",
+    "squad_parallel_on": "团队并行：开启（智能体同时工作）",
+    "squad_parallel_off": "团队并行：关闭（逐个执行）",
+    "squad_panel_title": "SQUAD / 团队",
+    "squad_help_intro": "DocMind 始终是主控：负责计划、分发任务、审核并汇报。",
+    "squad_help_auto": "复杂请求无需询问即可拆分",
+    "squad_help_off": "仅使用单智能体",
+    "squad_help_agents": "智能体数量上限",
+    "squad_help_default_on": "默认：开启",
+    "squad_help_parallel_note1": "并行模式下独立的智能体同时工作；",
+    "squad_help_parallel_note2": "操作同一文件的智能体会排队，不会互相覆盖。",
+    "squad_plan_tail1": "DocMind（主控）负责计划并执行最后的审核步骤",
+    "squad_plan_tail2": "只有在完美性审核通过后才结束任务。",
+    "mobile_usage": "用法：/mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "设备",
+    "mobile_row_mode": "移动模式",
+    "mobile_row_glyphs": "符号",
+    "mobile_row_storage": "存储",
+    "mobile_row_width": "宽度",
+    "mobile_device_phone": "手机/平板（Termux）",
+    "mobile_device_desktop": "桌面"
   },
   "ja": {
     "lang_name": "日本語",
@@ -3991,7 +4521,51 @@ def _dm_module_01():
     "effort_menu_col_name": "レベル",
     "effort_menu_col_api": "API",
     "model_invalid": "モデル名が無効です。使用できるのは英数字と . _ : / @ + - のみです。",
-    "auto_syntax_rolled_back": "{path}: 構文エラーを検出したため、ファイルを自動的に以前の動作するバージョンに戻しました。"
+    "auto_syntax_rolled_back": "{path}: 構文エラーを検出したため、ファイルを自動的に以前の動作するバージョンに戻しました。",
+    "mobile_startup_hint": "スマートフォンやタブレットで使う場合は /mobile（または /mobil）と入力してモバイルモードをオンにしてください（幅・キーボード・記号の調整）。",
+    "squad_offer_hint": "この作業はチーム向きです。分割しますか？",
+    "squad_choice_title": "どのように進めますか？",
+    "squad_choice_opt_team": "  [1] チーム：タスクを分割し、複数エージェントが並行して作業（計画＋名前）",
+    "squad_choice_opt_single": "  [2] 単一エージェント：分割せず DocMind が実行",
+    "squad_choice_team": "チーム（分割）",
+    "squad_choice_single": "単一エージェント",
+    "squad_result_header": "[チーム結果] チーム作業が完了しました。要約：",
+    "squad_failed_single": "チーム実行に失敗しました（{err}）。単一エージェントで続行します。",
+    "squad_review_start": "チーム完了。最終確認は私が行います：ファイルを統合して検証します。",
+    "squad_team_of": "{n} エージェントのチーム",
+    "squad_single_agent": "単一エージェント",
+    "squad_request_label": "依頼",
+    "squad_mode_label": "モード",
+    "squad_no_agents": "まだエージェントはいません",
+    "squad_counts_line": "完了 {done} · 失敗 {failed} · 停止 {stopped} · {mode} モード",
+    "squad_col_agent": "エージェント",
+    "squad_col_role": "役割",
+    "squad_col_goal": "目的",
+    "squad_col_files": "ファイル",
+    "squad_state_ask": "確認する（2 つの選択肢を提示）",
+    "squad_state_auto": "自動（確認せず分割）",
+    "squad_state_off": "オフ（単一エージェントのみ）",
+    "squad_max_agents": "最大 {n} エージェント",
+    "squad_parallel_on": "チーム並列：オン（エージェントが同時に作業）",
+    "squad_parallel_off": "チーム並列：オフ（1 体ずつ）",
+    "squad_panel_title": "SQUAD / チーム",
+    "squad_help_intro": "DocMind は常にリードです：計画し、作業を割り当て、監査し、報告します。",
+    "squad_help_auto": "複雑な依頼を確認せず分割",
+    "squad_help_off": "単一エージェントのみ",
+    "squad_help_agents": "エージェントの最大数",
+    "squad_help_default_on": "既定：オン",
+    "squad_help_parallel_note1": "並列モードでは独立したエージェントが同時に作業します。",
+    "squad_help_parallel_note2": "同じファイルを扱うエージェントは待機するため、上書きは起きません。",
+    "squad_plan_tail1": "DocMind（リード）が計画を持ち、最終確認を実行します",
+    "squad_plan_tail2": "完璧性監査を通過したときだけ作業を終了します。",
+    "mobile_usage": "使い方：/mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "デバイス",
+    "mobile_row_mode": "モバイルモード",
+    "mobile_row_glyphs": "記号",
+    "mobile_row_storage": "保存先",
+    "mobile_row_width": "幅",
+    "mobile_device_phone": "スマートフォン/タブレット（Termux）",
+    "mobile_device_desktop": "デスクトップ"
   },
   "ko": {
     "lang_name": "한국어",
@@ -4276,7 +4850,51 @@ def _dm_module_01():
     "effort_menu_col_name": "레벨",
     "effort_menu_col_api": "API",
     "model_invalid": "모델 이름이 올바르지 않습니다. 문자, 숫자 및 . _ : / @ + - 만 사용할 수 있습니다.",
-    "auto_syntax_rolled_back": "{path}: 구문 오류가 감지되어 파일을 이전 정상 버전으로 자동 복원했습니다."
+    "auto_syntax_rolled_back": "{path}: 구문 오류가 감지되어 파일을 이전 정상 버전으로 자동 복원했습니다.",
+    "mobile_startup_hint": "휴대폰이나 태블릿에서 사용한다면 /mobile(또는 /mobil)을 입력해 모바일 모드를 켜세요(너비, 키보드, 기호).",
+    "squad_offer_hint": "이 작업은 팀에 적합합니다. 나눌까요?",
+    "squad_choice_title": "어떻게 진행할까요?",
+    "squad_choice_opt_team": "  [1] 팀: 작업을 나누고 여러 에이전트가 병렬로 작업(계획 + 이름)",
+    "squad_choice_opt_single": "  [2] 단일 에이전트: 나누지 않고 DocMind가 직접 수행",
+    "squad_choice_team": "팀(분할)",
+    "squad_choice_single": "단일 에이전트",
+    "squad_result_header": "[팀 결과] 팀 작업이 끝났습니다. 요약:",
+    "squad_failed_single": "팀 실행 실패({err}); 단일 에이전트로 계속합니다.",
+    "squad_review_start": "팀 완료. 최종 확인은 제가 합니다: 파일을 합치고 검증합니다.",
+    "squad_team_of": "{n}개 에이전트 팀",
+    "squad_single_agent": "단일 에이전트",
+    "squad_request_label": "요청",
+    "squad_mode_label": "모드",
+    "squad_no_agents": "아직 에이전트가 없습니다",
+    "squad_counts_line": "완료 {done} · 실패 {failed} · 중지 {stopped} · {mode} 모드",
+    "squad_col_agent": "에이전트",
+    "squad_col_role": "역할",
+    "squad_col_goal": "목표",
+    "squad_col_files": "파일",
+    "squad_state_ask": "질문(2가지 선택지 제공)",
+    "squad_state_auto": "자동(묻지 않고 분할)",
+    "squad_state_off": "꺼짐(단일 에이전트만)",
+    "squad_max_agents": "최대 {n} 에이전트",
+    "squad_parallel_on": "팀 병렬: 켜짐(에이전트가 함께 작업)",
+    "squad_parallel_off": "팀 병렬: 꺼짐(한 번에 하나)",
+    "squad_panel_title": "SQUAD / 팀",
+    "squad_help_intro": "DocMind는 항상 리드입니다: 계획하고 업무를 배분하고 감사하고 보고합니다.",
+    "squad_help_auto": "복잡한 요청을 묻지 않고 분할",
+    "squad_help_off": "단일 에이전트만",
+    "squad_help_agents": "최대 에이전트 수",
+    "squad_help_default_on": "기본값: 켜짐",
+    "squad_help_parallel_note1": "병렬 모드에서는 독립적인 에이전트가 동시에 작업합니다;",
+    "squad_help_parallel_note2": "같은 파일을 다루는 에이전트는 대기하므로 덮어쓰지 않습니다.",
+    "squad_plan_tail1": "DocMind(리드)가 계획을 소유하고 최종 검토를 수행합니다",
+    "squad_plan_tail2": "완벽성 감사를 통과한 뒤에만 작업을 마칩니다.",
+    "mobile_usage": "사용법: /mobile on|off|ascii|unicode|status",
+    "mobile_row_device": "기기",
+    "mobile_row_mode": "모바일 모드",
+    "mobile_row_glyphs": "기호",
+    "mobile_row_storage": "저장소",
+    "mobile_row_width": "너비",
+    "mobile_device_phone": "휴대폰/태블릿(Termux)",
+    "mobile_device_desktop": "데스크톱"
   }
  }''')
  return locals()
@@ -13082,6 +13700,7 @@ def _dm_module_20():
    "/search",
    "/squad",
    "/mobile",
+   "/mobil",
    "/image",
    "/paste",
    "/copy",
@@ -13161,6 +13780,21 @@ def _dm_module_20():
      print(self._paint(_DM_OWNER, "1;31"), flush=True)
    def _paint(self, text: str, style: str) -> str:
      return "\x1b[" + style + "m" + text + "\x1b[0m" if self.view.color else text
+   def print_mobile_startup_hint(self) -> None:
+     """One short, localised line: on a phone/tablet use /mobil (/mobile)."""
+     try:
+       msg = glyph("📱 ", "") + t("mobile_startup_hint")
+       on_phone = False
+       try:
+         on_phone = bool(_DM_MOBILE)
+       except Exception:
+         on_phone = False
+       if on_phone:
+         self.info(msg)
+       else:
+         self.show_inline_status(msg)
+     except Exception:
+       pass
    def print_startup_authority_warning(self) -> None:
      """Display a compact red warning immediately on startup about full system access."""
      msg = _visible_controls(t("startup_authority_warn"))
@@ -15078,7 +15712,12 @@ def _dm_module_24():
     self.squad_feed: Optional[Any] = None
     self._squad_request: str = ""
     self._squad_depth: int = 0
+    self._squad_request: str = ""
+    self._squad_depth: int = 0
     self._squad_tool_filter: Optional[Set[str]] = None
+    # v1.3: a team run owns the outer turn, so the lead review closes it itself.
+    self._squad_busy: bool = False
+    self._squad_lock: Optional[Dict[str, Any]] = None
     self._turn_exec_mode: str = "auto"
     self.refresh_client()
   def _history_error(self, exc: Exception) -> None:
@@ -15093,7 +15732,16 @@ def _dm_module_24():
              resp.input_tokens, resp.output_tokens, resp.reported_cost_usd, resp.usage_complete)
     refresh = getattr(self.ui, "refresh_footer", None)
     if refresh:refresh()
+  def _stream_is_mine(self) -> bool:
+    """True when the streaming callback belongs to the thread running now."""
+    owner = getattr(getattr(self, "_stream_owner", None), "agent", None)
+    return True if owner is None else owner is threading.current_thread()
   def _receive_stream_text(self, text: str) -> None:
+    if not self._stream_is_mine():
+      # A sub-agent's tokens must never land in the main console stream.
+      self._streamed_text = True
+      self.usage.live_chars += len(text)
+      return
     self._streamed_text = self._streamed_text or bool(text)
     self._streamed_chunks.append(text)
     self.usage.live_chars += len(text)
@@ -15103,7 +15751,7 @@ def _dm_module_24():
   def _finish_streamed_message(self, fast: bool = False) -> None:
     if self._streamed_text:
       callback = getattr(self.ui, "finish_streamed_message", None)
-      if callback:
+      if callback and self._stream_is_mine():
         try:
           callback(fast=fast)
         except TypeError:
@@ -15171,6 +15819,7 @@ def _dm_module_24():
     def retry_notice(key, **values):
       self.usage.mark_interrupted()
       self.ui.warn(t(key, **values))
+    self._stream_owner = threading.local()
     self.client = ProviderClient(self.config_mgr.config, self._receive_stream_text if supports_stream else None,
                   on_effort_fallback=lambda: retry_notice("effort_fallback"))
     self.client.on_compat_fallback = lambda: retry_notice("compat_fallback")
@@ -15198,6 +15847,8 @@ def _dm_module_24():
     mode = str(getattr(cfg, "squad_mode", "ask") or "ask").lower()
     if mode == "off" or self._squad_depth > 0 or self.non_interactive:
       return False
+    if getattr(self, "_squad_busy", False):
+      return False
     if str(getattr(cfg, "reasoning_effort", "")).lower() == "aggressive":
       return False
     text = str(user_input or "").strip()
@@ -15210,73 +15861,132 @@ def _dm_module_24():
     return any(m in lowered for m in markers) or len(text) > 160
 
   def _squad_offer_choice(self, user_input: str) -> str:
+    """Ask once, in the interface language only (never two languages at a time)."""
     cfg = self.config_mgr.config
     if str(getattr(cfg, "squad_mode", "ask")).lower() == "auto":
       return "team"
-    question = "\n".join([
-      "Bu isi nasil yapayim? / How should I build this?",
-      "  [1] Gorev parcalama: kucuk ajanlar olusturayim (plan + isimler + paralel is)",
-      "  [2] Tek ajan: parcalamadan DocMind kendisi yapsin",
-    ])
+    question = "\n".join([t("squad_choice_title"),
+                          t("squad_choice_opt_team"),
+                          t("squad_choice_opt_single")])
+    options = [t("squad_choice_team"), t("squad_choice_single")]
     try:
-      picked = self.ui.prompt_user_choice(question, ["team", "single"], 2)
+      picked = self.ui.prompt_user_choice(question, options, 2)
     except Exception:
       return "single"
-    return "team" if str(picked).strip().lower() in ("1", "team", "ajanlar") else "single"
+    picked_txt = str(picked).strip().lower()
+    if picked_txt in ("1", "team"):
+      return "team"
+    if picked_txt in ("2", "single"):
+      return "single"
+    if picked_txt == options[0].strip().lower():
+      return "team"
+    if picked_txt == options[1].strip().lower():
+      return "single"
+    team_words = {"team", "ekip", "takim", "takım", "ajanlar", "parcala", "parçala",
+                  "split", "equipo", "équipe", "mannschaft", "команда", "командою"}
+    return "team" if picked_txt in team_words else "single"
 
-  def run_squad(self, user_request: str) -> Dict[str, Any]:
-    """v1.3: plan -> named agents -> live feed -> lead review."""
+  def run_squad(self, user_request: str, lead_note: str = "") -> Dict[str, Any]:
+    """v1.3: plan -> named agents (parallel) -> live feed -> lead review."""
     cfg = self.config_mgr.config
     self.squad_feed = SquadFeed(mode="full")
     self._squad_request = user_request
     self._squad_depth += 1
+    prev_busy = getattr(self, "_squad_busy", False)
+    self._squad_busy = True
     try:
       outcome = squad_run(
         self, user_request,
         max_agents=max(2, min(8, int(getattr(cfg, "squad_max_agents", 6) or 6))),
         feed=self.squad_feed,
+        parallel=bool(getattr(cfg, "squad_parallel", True)),
+        lead_note=lead_note,
       )
     finally:
       self._squad_depth -= 1
+      self._squad_busy = prev_busy
     if outcome.get("ok"):
       self.ui.print_panel("SQUAD SUMMARY",
                           squad_dashboard(self.squad_feed, user_request, "squad"),
                           style="bright_cyan")
       log = self.squad_feed.write_log(Path(self.tools.cwd))
       if log:
-        self.ui.info("squad log: " + log)
+        self.ui.info("squad log: " + str(log))
     return outcome
+
+  def run_squad_review(self, user_request: str) -> bool:
+    """The lead's own final pass: join the pieces, verify them, then report."""
+    if not self.squad_feed:
+      return False
+    self.ui.print_panel("SQUAD REVIEW", t("squad_review_start"), style="bright_blue")
+    self._squad_depth += 1
+    prev_busy = getattr(self, "_squad_busy", False)
+    self._squad_busy = True
+    try:
+      return bool(self.run_turn(squad_review_prompt(user_request, self.squad_feed), review=True))
+    finally:
+      self._squad_depth -= 1
+      self._squad_busy = prev_busy
+
+  @staticmethod
+  def _squad_worker_copy(parent: Any) -> Any:
+    """Shallow copy of the agent for ONE sub-agent: own context and counters."""
+    import copy as _copy
+    worker = _copy.copy(parent)
+    worker.context = ConversationContext()
+    worker.non_interactive = True
+    worker._streamed_text = False
+    worker._streamed_chunks = []
+    worker._stream_owner = threading.local()
+    worker._turn_system_prompt = None
+    worker._turn_exec_mode = "auto"
+    worker._squad_depth = max(1, int(getattr(parent, "_squad_depth", 0) or 0))
+    worker._squad_busy = True
+    worker._squad_tool_filter = None
+    # Sub-agents never stop to ask a question (they run beside each other);
+    # the lead reviews and verifies every change afterwards.
+    worker.perm_mgr = PermissionManager(parent.config_mgr, parent.ui, non_interactive=True)
+    worker.tools = _copy.copy(parent.tools)
+    worker.tools.perm_mgr = worker.perm_mgr
+    return worker
+
+  def squad_bind_lock(self, deps: Optional[Dict[str, Any]]) -> None:
+    """Share the squad's claim/console state with the worker copies."""
+    self._squad_lock = deps
 
   def run_child_turn(self, prompt: str, step: Optional[Dict[str, Any]] = None,
                      feed: Optional[Any] = None, max_rounds: int = 10) -> Dict[str, Any]:
-    """Run ONE sub-agent step with its own context slot, rounds and tool filter."""
+    """Run ONE sub-agent step on its own worker copy (safe under threads)."""
     step = step or {}
     feed = feed or self.squad_feed
     handle = str(step.get("handle") or "agent")
     allowed = {str(t).lower() for t in (step.get("tools") or [])}
-    previous_ctx = self.context
-    previous_steps = self.config_mgr.config.max_steps_per_turn
-    previous_chunks = self._streamed_chunks
-    previous_streamed = self._streamed_text
     cap = max(3, min(int(max_rounds), 20))
-    self._streamed_chunks = []
-    self._streamed_text = False
-    self.context = ConversationContext()
-    self.context.add_user(prompt)
-    self._squad_tool_filter = allowed or None
-    self.config_mgr.config.max_steps_per_turn = cap
+    worker = self._squad_worker_copy(self)
+    worker._squad_tool_filter = allowed or None
+    worker.context.add_user(prompt)
+    deps = getattr(self, "_squad_lock", None)
+    if not isinstance(deps, dict):
+      deps = {}
+    console = deps.get("console") or threading.RLock()
+    active = deps.get("active") if isinstance(deps.get("active"), dict) else None
     rounds = 0
     ok = False
     report = ""
     error = ""
     last_batch = None
     repeated_batches = 0
+    if active is not None:
+      active[handle] = True
     try:
       while rounds < cap:
         rounds += 1
         if feed:
           feed.thinking(handle, "")
-        resp = self._generate_resilient()
+        # No console lock around the API call: the model calls must overlap,
+        # otherwise "parallel" would only mean "queued". Children print nothing
+        # here (streaming is filtered by _stream_owner, no spinner for threads).
+        resp = worker._generate_resilient()
         if resp is None:
           error = "model call failed"
           break
@@ -15288,10 +15998,10 @@ def _dm_module_24():
         for tc in resp.tool_calls:
           if feed:
             feed.doing(handle, tc.name, str((tc.arguments or {}).get("path") or "")[:60])
-          self._run_squad_tool(handle, tc)
+          worker._run_squad_tool(handle, tc)
         # An agent that only repeats the same tool call is stuck, not working.
-        fingerprints = [hashlib.sha1((str(t.name) + repr(sorted((t.arguments or {}).items()))).encode("utf-8", "replace")).hexdigest()
-                        for t in resp.tool_calls]
+        fingerprints = [hashlib.sha1((str(tc.name) + repr(sorted((tc.arguments or {}).items()))).encode("utf-8", "replace")).hexdigest()
+                        for tc in resp.tool_calls]
         if last_batch and fingerprints == last_batch:
           repeated_batches += 1
         else:
@@ -15304,23 +16014,101 @@ def _dm_module_24():
     except Exception as exc:
       error = "%s: %s" % (type(exc).__name__, exc)
     finally:
-      self.context = previous_ctx
-      self.config_mgr.config.max_steps_per_turn = previous_steps
-      self._squad_tool_filter = None
-      self._streamed_chunks = previous_chunks
-      self._streamed_text = previous_streamed
-    return {"ok": ok, "rounds": rounds, "report": report.strip(), "error": error}
+      if active is not None:
+        active.pop(handle, None)
+      if isinstance(step.get("files"), list):
+        for owned in step["files"]:
+          worker._squad_release(handle, {"path": owned})
+    return {"ok": ok, "rounds": rounds, "report": report.strip(), "error": error,
+            "steps": rounds}
+
+  @staticmethod
+  def _squad_file_key(path: Any) -> str:
+    """Normalise a path so two agents touching 'app.py' really collide."""
+    try:
+      clean = str(path).replace("\\", "/").strip()
+      while clean.startswith("./"):
+        clean = clean[2:]
+      return clean.lower() or str(path)
+    except Exception:
+      return str(path)
+
+  def _squad_claim(self, handle: str, tool_name: str, args: Any) -> str:
+    """Before a writing call: never touch a file another agent is editing.
+
+    Independent agents really run at the same time; only a genuinely shared file
+    waits, and it waits with a clear note instead of overwriting someone's work.
+    """
+    if not isinstance(args, dict) or not handle:
+      return ""
+    deps = getattr(self, "_squad_lock", None)
+    if not isinstance(deps, dict):
+      return ""
+    owners, lock = deps.get("owners"), deps.get("busy")
+    if not isinstance(owners, dict) or lock is None:
+      return ""
+    me = str(handle)
+    paths = [args.get(k) for k in ("path", "target", "source", "destination", "archive_path")
+             if args.get(k)]
+    for raw in paths:
+      key = self._squad_file_key(raw)
+      with lock:
+        holder = owners.get(key)
+        if holder and holder != me:
+          return ("%s: `%s` is being edited by %s right now; left it alone. Finish the "
+                  "rest of your step and report this file as deferred." % (me, raw, holder))
+        owners[key] = me
+    return ""
+
+  def _squad_release(self, handle: str, args: Any) -> None:
+    """After a writing call: hand the file back so the next agent may use it."""
+    if not isinstance(args, dict) or not handle:
+      return
+    deps = getattr(self, "_squad_lock", None)
+    if not isinstance(deps, dict):
+      return
+    owners, lock = deps.get("owners"), deps.get("busy")
+    if not isinstance(owners, dict) or lock is None:
+      return
+    me = str(handle)
+    with lock:
+      for k in ("path", "target", "source", "destination", "archive_path"):
+        if args.get(k):
+          fk = self._squad_file_key(args.get(k))
+          if owners.get(fk) == me:
+            owners.pop(fk, None)
 
   def _run_squad_tool(self, handle: str, tc: Any) -> None:
     """Execute one tool call for a sub-agent, respecting its tool whitelist."""
     name = str(getattr(tc, "name", ""))
-    if self._squad_tool_filter and name.lower() not in self._squad_tool_filter:
+    if (self._squad_tool_filter and name.lower() not in self._squad_tool_filter
+        and name.lower() not in ("aggressive_audit", "check_syntax")):
       self.ui.warn("%s: tool '%s' is not in this agent's whitelist; skipped." % (handle, name))
       return
+    args = getattr(tc, "arguments", {}) or {}
+    if not isinstance(args, dict):
+      args = {}
+    writing = name in ("write_file", "edit_file", "multi_edit", "delete_path",
+                       "move_or_copy", "archive_tool")
+    if writing:
+      conflict = self._squad_claim(handle, name, args)
+      if conflict:
+        self.ui.warn(conflict)
+        return
+    deps = getattr(self, "_squad_lock", None)
+    console = deps.get("console") if isinstance(deps, dict) else None
     try:
-      self.tools.execute(name, getattr(tc, "arguments", {}) or {})
+      if console is not None:
+        # One tool call at a time on the shared console: no mixed diff boxes.
+        with console:
+          self.tools.execute(name, args)
+      else:
+        self.tools.execute(name, args)
     except Exception as exc:
       self.ui.warn("%s: %s failed: %s" % (handle, name, exc))
+    finally:
+      if writing:
+        self._squad_release(handle, args)
 
   def _aggressive_final_gate(self, touched: Optional[Set[str]] = None,
                              rounds: int = 0) -> str:
@@ -15597,9 +16385,10 @@ def _dm_module_24():
       spec = get_provider_spec(self.config_mgr.config.provider)
       context_limit, _ = context_limit_for(self.config_mgr.config)
       token_save = token_save_effective(self.config_mgr.config)
-      if token_save:
+      _is_child = bool(getattr(threading.current_thread(), "squad_agent", False))
+      if token_save and not _is_child:
         self.context.save_tokens(t("token_save_trim_note"))
-      if self.context.needs_compaction(context_limit, token_save=token_save):
+      if not _is_child and self.context.needs_compaction(context_limit, token_save=token_save):
         self.ui.info(t("compacting_context"))
         if self.context.compact():
           self.ui.success(t("context_compacted"))
@@ -15623,19 +16412,25 @@ def _dm_module_24():
         expose_tools = has_tool_turn_already or last_user_has_img or _should_expose_tools(last_user_msg, self.context.messages[:-1])
         tool_schemas = self.tools.get_schemas() if expose_tools else []
         if self._squad_tool_filter:
+          _always = {"aggressive_audit", "check_syntax"}
           tool_schemas = [s for s in tool_schemas
-                          if str(s.get("name", "")).lower() in self._squad_tool_filter]
+                          if str(s.get("name", "")).lower() in self._squad_tool_filter
+                          or str(s.get("name", "")).lower() in _always]
       try:
         self._streamed_text = False
         self._streamed_chunks = []
         _parallel_child = bool(getattr(threading.current_thread(), "squad_agent", False))
         if _parallel_child:
           # a sub-agent running beside others: no spinner, no shared terminal cursor
-          resp = self.client.generate(
-            system_prompt=sys_prompt,
-            messages=self.context.messages,
-            tools=tool_schemas,
-          )
+          self._stream_owner.agent = threading.current_thread()
+          try:
+            resp = self.client.generate(
+              system_prompt=sys_prompt,
+              messages=self.context.messages,
+              tools=tool_schemas,
+            )
+          finally:
+            self._stream_owner.agent = None
         else:
           with self.ui.spinner(t("thinking")):
             resp = self.client.generate(
@@ -15813,7 +16608,8 @@ def _dm_module_24():
         return "execute"
       if not self.ui.is_tty:
         return "execute"
-  def run_turn(self, user_input: str, explicit_images: Optional[List[Dict[str, Any]]] = None) -> bool:
+  def run_turn(self, user_input: str, explicit_images: Optional[List[Dict[str, Any]]] = None,
+               review: bool = False) -> bool:
     """
         Process a user prompt through multi-step autonomous tool execution until completion.
         Returns True if completed normally, False if aborted/skipped cleanly.
@@ -15876,14 +16672,16 @@ def _dm_module_24():
       "4. Never guess unreadable blurry characters — state clearly if a specific region is cut off or illegible."
       if turn_images else ""
     )
-    if self._squad_should_offer(user_input):
+    if not review and self._squad_should_offer(user_input):
       if self._squad_offer_choice(user_input) == "team":
         team_outcome = self.run_squad(user_input)
         if team_outcome.get("ok"):
           summary = self.squad_feed.summary() if self.squad_feed else ""
-          self.context.add_user("[SQUAD RESULT] Team run finished. Summary:" + "\n" + summary)
-        else:
-          self.ui.warn("Squad run failed (%s); continuing as a single agent." % team_outcome.get("error", "unknown"))
+          self.context.add_user(t("squad_result_header") + "\n" + summary)
+          # The lead closes the job itself: join the pieces, verify, then report.
+          self.run_squad_review(user_input)
+          return True
+        self.ui.warn(t("squad_failed_single").format(err=team_outcome.get("error", "?")))
     self._turn_system_prompt = self.build_system_prompt() + mode_directive + vision_directive
     begin_turn = getattr(self.ui, "begin_turn", None)
     if begin_turn:
@@ -16172,9 +16970,11 @@ def _dm_module_27():
     f"USER REQUEST:\n{user_request}\n\n"
     f"WORKING FOLDER: {cwd or '.'}\n\n"
     "Return ONLY compact JSON, no prose, no markdown fences:\n"
-    '{"agents":[{"name":"Pixel","role":"ui_builder","goal":"...","files":["src/ui.py"],'
-    '"tools":["write_file","edit_file"]}]}\n\n'
+    '{"agents":[{"name":"Pixel","role":"ui_builder","goal":"build the settings page",'
+    '"files":["src/ui.py"],"tools":["write_file","edit_file"]}]}\n\n'
     "Rules:\n"
+    "- Every agent object MUST contain a non-empty 'goal' string; a step without "
+    "a goal is discarded.\n"
     f"- Use between {SQUAD_MIN_AGENTS} and {SQUAD_MAX_AGENTS} agents. Fewer is better.\n"
     "- One agent owns one area; do not let two agents write the same file.\n"
     "- 'name' must be one short human name (a person-like codename), unique across the team.\n"
@@ -16222,6 +17022,212 @@ def _dm_module_27():
     lines.append(f"| {a.get('index', 0)} | {a.get('name', '')} | {a.get('role', '')} | {goal} | {files} |")
   lines += ["", "DocMind (lead) plans the work, executes the review step and closes the turn",
             "only after the perfection audit passes.", ""]
+  return "\n".join(lines)
+
+
+ def squad_write_plan(cwd: Path, request: str, agents: Sequence[Dict[str, Any]],
+                     mode: str = "squad") -> Optional[str]:
+  try:
+    target = Path(cwd) / SQUAD_PLAN_FILE
+    target.write_text(squad_plan_markdown(request, agents, mode), encoding="utf-8")
+    return str(target)
+  except Exception:
+    return None
+
+
+ # --------------------------------------------------------------- live feed
+ _GLYPH_ASCII = {"◆": "*", "▸": ">", "✓": "[OK]", "•": "-", "┃": "|", "─": "-"}
+
+
+ def squad_glyph(symbol: str, fallback: str) -> str:
+  """ASCII fallback for terminals that cannot draw the fancy glyphs."""
+  try:
+    from docmind.core.sanitize import ASCII_GLYPHS  # type: ignore
+    return symbol if not ASCII_GLYPHS else fallback
+  except Exception:
+    return fallback
+
+
+ class SquadFeed:
+  """Thread-safe, time-ordered activity log for the sub-agent team.
+
+  Everything the agents do lands here first, so the terminal can show a live stream
+  ('Nova is thinking', 'Pixel is writing app.py') without interleaving partial lines.
+  Verbosity is configurable and the log is always written to disk afterwards.
+  """
+
+  MODES = ("full", "quiet", "off")
+
+  def __init__(self, mode: str = "full", out: Optional[Callable[[str], None]] = None,
+               verbose: bool = True) -> None:
+    self.mode = mode if mode in self.MODES else "full"
+    self.out = out or (lambda line: print(line, flush=True))
+    self.verbose = verbose
+    self.started = time.monotonic()
+    self.events: List[Dict[str, Any]] = []
+    self.tasks: Dict[str, Dict[str, Any]] = {}
+    self._lock = threading.RLock()
+
+  # -- internals
+  def _emit(self, line: str) -> None:
+    if self.mode != "full":
+      return
+    try:
+      self.out(line)
+    except Exception:
+      pass
+
+  def _stamp(self) -> str:
+    return "%6.1fs" % (time.monotonic() - self.started)
+
+  def add_task(self, agent: Dict[str, Any]) -> None:
+    with self._lock:
+      self.tasks[agent["handle"]] = {
+        "name": agent.get("name"), "role": agent.get("role"),
+        "status": "queued", "rounds": 0, "tool_calls": 0,
+        "files": list(agent.get("files") or []), "error": "",
+      }
+
+  # -- public events
+  def lead(self, text: str) -> None:
+    with self._lock:
+      self.events.append({"t": self._stamp(), "kind": "lead", "text": text})
+      self._emit("  %s DocMind %s" % (squad_glyph("◆", "*"), text))
+
+  def start(self, handle: str, text: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle, "status": "running"})
+      task["status"] = "running"
+      self.events.append({"t": self._stamp(), "kind": "start", "agent": handle, "text": text})
+      self._emit("  %s %-8s %s" % (squad_glyph("▸", ">"), task.get("name", handle), text))
+
+  def thinking(self, handle: str, what: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["rounds"] = int(task.get("rounds", 0)) + 1
+      self.events.append({"t": self._stamp(), "kind": "think", "agent": handle, "text": what})
+      self._emit("     %s %s %s" % ("...", task.get("name", handle),
+                                    ("is thinking" + (" about " + what if what else ""))))
+
+  def doing(self, handle: str, tool: str, target: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["tool_calls"] = int(task.get("tool_calls", 0)) + 1
+      detail = "%s %s" % (tool, target)
+      self.events.append({"t": self._stamp(), "kind": "tool", "agent": handle, "text": detail.strip()})
+      verb = {"write_file": "writing", "edit_file": "editing", "multi_edit": "editing",
+              "read_file": "reading", "list_directory": "listing", "search_files": "searching",
+              "run_command": "running", "python_eval": "evaluating",
+              "web_search": "researching", "web_fetch": "fetching",
+              "aggressive_audit": "auditing"}.get(tool, tool)
+      where = (" " + target) if target else ""
+      self._emit("     %s %s %s%s" % (squad_glyph("•", "-"), task.get("name", handle), verb, where))
+
+  def done(self, handle: str, text: str = "") -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "done"
+      self.events.append({"t": self._stamp(), "kind": "done", "agent": handle, "text": text})
+      suffix = (" · " + text) if text else ""
+      self._emit("  %s %-8s finished%s" % (squad_glyph("✓", "[OK]"), task.get("name", handle), suffix))
+
+  def failed(self, handle: str, text: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "failed"
+      task["error"] = str(text)[:300]
+      self.events.append({"t": self._stamp(), "kind": "fail", "agent": handle, "text": task["error"]})
+      self._emit("  %s %-8s failed: %s" % ("[X]", task.get("name", handle), task["error"][:120]))
+
+  def parallel_note(self, waves: int, agents: int) -> None:
+    """Announce how the team is being scheduled."""
+    with self._lock:
+      if waves:
+        text = "running %d agents in parallel, %d wave(s)" % (agents, waves)
+      else:
+        text = "running %d agents one by one" % agents
+      self.events.append({"t": self._stamp(), "kind": "schedule", "text": text})
+      self._emit("  %s %s" % (squad_glyph("~", "~"), text))
+
+  def wave(self, index: int, total: int, handles: Sequence[str]) -> None:
+    with self._lock:
+      names = ", ".join(sorted(self.tasks.get(h, {}).get("name", h) for h in handles))
+      text = "wave %d/%d: %s" % (index, total, names)
+      self.events.append({"t": self._stamp(), "kind": "wave", "text": text})
+      self._emit("  %s %s" % (squad_glyph("▶", ">"), text))
+
+  def stop(self, handle: str, reason: str) -> None:
+    with self._lock:
+      task = self.tasks.setdefault(handle, {"name": handle})
+      task["status"] = "stopped"
+      self.events.append({"t": self._stamp(), "kind": "stop", "agent": handle, "text": reason})
+      self._emit("  %s %-8s stopped (%s)" % ("[!]", task.get("name", handle), reason))
+
+  # -- reporting
+  def summary(self) -> str:
+    with self._lock:
+      if not self.tasks:
+        return ""
+      rows = ["AGENT        ROLE              STATUS    ROUNDS  TOOLS"]
+      for task in self.tasks.values():
+        rows.append("%-12s %-17s %-9s %-7s %s" % (
+          str(task.get("name", ""))[:12], str(task.get("role", "-"))[:17],
+          task.get("status", "-"), task.get("rounds", 0), task.get("tool_calls", 0)))
+      return "\n".join(rows)
+
+  def counts(self) -> Dict[str, int]:
+    with self._lock:
+      out = {"total": len(self.tasks), "done": 0, "failed": 0, "stopped": 0, "queued": 0}
+      for task in self.tasks.values():
+        status = task.get("status")
+        if status in out:
+          out[status] += 1
+      return out
+
+  def to_dict(self) -> Dict[str, Any]:
+    with self._lock:
+      return {"mode": self.mode, "elapsed": round(time.monotonic() - self.started, 1),
+              "tasks": list(self.tasks.values()), "events": list(self.events)}
+
+  def write_log(self, cwd: Path) -> Optional[str]:
+    try:
+      target = Path(cwd) / ("SQUAD_LOG_%s.json" % time.strftime("%Y%m%d_%H%M%S"))
+      target.write_text(json.dumps(self.to_dict(), ensure_ascii=False, indent=1), encoding="utf-8")
+      return str(target)
+    except Exception:
+      return None
+
+
+ # ---------------------------------------------------------------- team status
+ def squad_dashboard(feed: SquadFeed, request: str = "", mode: str = "squad",
+                     lang: str = "") -> str:
+  from docmind.i18n import t as _t
+  counts = feed.counts()
+  head = "◆ DOCMIND SQUAD · " + (_t("squad_team_of", n=counts["total"]) if counts["total"]
+                                else _t("squad_single_agent"))
+  if request:
+    head += "\n  " + _t("squad_request_label") + ": " + request[:110]
+  body = feed.summary()
+  return head + "\n\n" + (body or "  " + _t("squad_no_agents")) + "\n\n  " + _t(
+           "squad_counts_line", done=counts["done"], failed=counts["failed"],
+           stopped=counts["stopped"], mode=mode)
+
+
+ def squad_plan_markdown(request: str, agents: Sequence[Dict[str, Any]],
+                        mode: str = "squad") -> str:
+  from docmind.i18n import t as _t
+  lines = ["# SQUAD PLAN", "",
+           "**" + _t("squad_request_label") + ":** " + request.strip(),
+           "**" + _t("squad_mode_label") + ":** " + mode, "",
+           "| # | " + _t("squad_col_agent") + " | " + _t("squad_col_role") + " | "
+           + _t("squad_col_goal") + " | " + _t("squad_col_files") + " |",
+           "|---|---|---|---|---|"]
+  for a in agents:
+    files = ", ".join("`%s`" % f for f in (a.get("files") or [])) or "-"
+    goal = str(a.get("goal") or "").replace("|", "\\|")
+    lines.append("| %s | %s | %s | %s | %s |" % (a.get("index", 0), a.get("name", ""),
+                                                 a.get("role", ""), goal, files))
+  lines += ["", _t("squad_plan_tail1"), _t("squad_plan_tail2"), ""]
   return "\n".join(lines)
 
 
@@ -16517,6 +17523,12 @@ def _dm_module_27():
 
   completed_rounds: List[int] = [0]
   completed_rounds_lock = threading.Lock()
+  # Shared, thread-safe view of who is editing what (see agent._squad_claim).
+  squad_deps: Dict[str, Any] = {"busy": threading.Lock(), "owners": {},
+                                "active": {}, "console": threading.RLock()}
+  setter = getattr(agent_obj, "squad_bind_lock", None)
+  if callable(setter):
+    setter(squad_deps)
 
   def _run_one(step: Dict[str, Any], budget_left: int) -> None:
     if time.monotonic() > deadline:
@@ -16534,8 +17546,10 @@ def _dm_module_27():
       with completed_rounds_lock:
         completed_rounds[0] += int(outcome.get("rounds", 0) or 0)
       if outcome.get("ok"):
-        feed.done(step["handle"], outcome.get("report", ""))
-        result.setdefault("finished", []).append(step["handle"])
+        with squad_deps["console"]:
+          feed.done(step["handle"], outcome.get("report", ""))
+        with completed_rounds_lock:
+          result.setdefault("finished", []).append(step["handle"])
       else:
         feed.failed(step["handle"], outcome.get("error") or "no result")
     else:
@@ -16573,6 +17587,9 @@ def _dm_module_27():
       _run_one(step, budget_total)
     result["waves"] = [[s["handle"] for s in steps]]
     result["parallel"] = False
+  setter = getattr(agent_obj, "squad_bind_lock", None)
+  if callable(setter):
+    setter(None)
   result["ok"] = bool(result.get("finished")) or any_done
   return result
 
@@ -16598,11 +17615,10 @@ def _dm_module_27():
 
 
  def squad_toggle_text(mode: str, max_agents: int) -> str:
-  return {
-    "ask": "squad: ASK (DocMind offers the 2-option choice)",
-    "auto": "squad: AUTO (complex requests are split without asking)",
-    "off": "squad: OFF (single agent only)",
-  }.get(str(mode).lower(), "squad: ASK") + " · max %d agents" % max_agents
+  from docmind.i18n import t as _t
+  state = {"ask": _t("squad_state_ask"), "auto": _t("squad_state_auto"),
+           "off": _t("squad_state_off")}.get(str(mode).lower(), _t("squad_state_ask"))
+  return "squad: " + state + " · " + _t("squad_max_agents", n=max_agents)
 
 
  return locals()
@@ -16898,7 +17914,7 @@ def _dm_module_25():
       if cmd in ("/squad", "/team", "/takim", "/takım"):
         self._handle_squad(arg)
         return "continue"
-      if cmd in ("/mobile", "/termux"):
+      if cmd in ("/mobile", "/mobil", "/termux"):
         self._handle_mobile(arg)
         return "continue"
       if cmd == "/tokens":
@@ -17000,6 +18016,7 @@ def _dm_module_25():
         self.ui.clear()
         self.ui.print_banner()
         self.ui.print_startup_authority_warning()
+        self.ui.print_mobile_startup_hint()
         self.ui.success(t("cmd_cleared"))
         return "continue"
       if cmd in ("/search", "/web", "/arastir", "/araştır", "/verify", "/dogrula", "/doğrula"):
@@ -17486,7 +18503,7 @@ def _dm_module_25():
     if current == "aggressive":
       self.ui.info(t("effort_aggressive_note"))
   def _handle_squad(self, arg: str) -> None:
-    """v1.3: /squad status|on|off|auto|agents N -> team behaviour."""
+    """v1.3: /squad status|on|off|auto|agents N|parallel on|off -> team behaviour."""
     cfg = self.cfg_mgr.config
     action, value = squad_parse_command(arg)
     max_agents = getattr(cfg, "squad_max_agents", 6)
@@ -17506,8 +18523,7 @@ def _dm_module_25():
     if action == "parallel":
       cfg.squad_parallel = str(value or "on").lower() not in ("off", "0", "false", "hayir", "hayır", "kapali", "kapalı")
       self.cfg_mgr.save()
-      self.ui.success("squad parallelism: %s" % ("ON (agents run together)" if cfg.squad_parallel
-                                                 else "OFF (one agent at a time)"))
+      self.ui.success(t("squad_parallel_on") if cfg.squad_parallel else t("squad_parallel_off"))
       return
     live = getattr(self.agent, "squad_feed", None)
     if live:
@@ -17516,23 +18532,21 @@ def _dm_module_25():
       body = "\n".join([
         squad_toggle_text(cfg.squad_mode, max_agents),
         "",
-        "DocMind is always the lead: it plans, hands out the jobs, runs the",
-        "perfection audit and reports. Agents get names like Nova, Pixel, Atlas.",
+        t("squad_help_intro"),
         "",
-        "/squad auto    split complex requests without asking",
-        "/squad off     single agent only",
-        "/squad agents 4",
-        "/squad parallel on|off   (default: on)",
+        "/squad auto      " + t("squad_help_auto"),
+        "/squad off       " + t("squad_help_off"),
+        "/squad agents 4  " + t("squad_help_agents"),
+        "/squad parallel on|off   (" + t("squad_help_default_on") + ")",
         "",
-        "Parallel mode runs independent agents in threads at the same time;",
-        "agents that share a file are placed in separate waves, so nothing is",
-        "overwritten. A run finishes as fast as its slowest wave.",
+        t("squad_help_parallel_note1"),
+        t("squad_help_parallel_note2"),
       ])
-    self.ui.print_panel("SQUAD / TEAM", body, style="bright_cyan")
+    self.ui.print_panel(t("squad_panel_title"), body, style="bright_cyan")
     return
 
   def _handle_mobile(self, arg: str) -> None:
-    """v1.3: /mobile on|off|ascii|unicode|status -> terminal fidelity on phones."""
+    """v1.3: /mobil (or /mobile) on|off|ascii|unicode|status -> phone fidelity."""
     cfg = self.cfg_mgr.config
     value = (arg or "").strip().lower()
     if value in ("on", "1", "true", "aç", "ac"):
@@ -17544,15 +18558,15 @@ def _dm_module_25():
     elif value in ("unicode", "emoji", "fancy"):
       cfg.glyph_mode = "unicode"
     elif value not in ("", "status", "durum"):
-      self.ui.warn("usage: /mobile on|off|ascii|unicode|status")
+      self.ui.warn(t("mobile_usage"))
       return
     self.cfg_mgr.save()
     body = "\n".join([
-      "device      : %s" % ("phone/tablet (Termux)" if _DM_MOBILE else "desktop"),
-      "mobile mode : %s" % ("ON" if getattr(cfg, "mobile_mode", False) else "OFF"),
-      "glyphs      : %s" % getattr(cfg, "glyph_mode", "auto"),
-      "storage     : %s" % (_DM_STORAGE_ROOT or "(desktop paths)"),
-      "width       : %s" % (_dm_os.environ.get("TERM_WIDTH") or "auto"),
+      t("mobile_row_device") + ": " + (t("mobile_device_phone") if _DM_MOBILE else t("mobile_device_desktop")),
+      t("mobile_row_mode") + ": " + ("ON" if getattr(cfg, "mobile_mode", False) else "OFF"),
+      t("mobile_row_glyphs") + ": " + str(getattr(cfg, "glyph_mode", "auto")),
+      t("mobile_row_storage") + ": " + (_DM_STORAGE_ROOT or "-"),
+      t("mobile_row_width") + ": " + (_dm_os.environ.get("TERM_WIDTH") or "auto"),
       "",
       "Overrides: DOCMIND_MOBILE=1 | DOCMIND_MOBILE=0 | DOCMIND_ASCII=1",
     ])
@@ -18035,9 +19049,11 @@ def _dm_module_26():
   if args.doctor:
     ui.print_banner()
     ui.print_startup_authority_warning()
+    ui.print_mobile_startup_hint()
     return 0 if router._run_doctor() else 1
   ui.print_banner()
   ui.print_startup_authority_warning()
+  ui.print_mobile_startup_hint()
   legacy_models = {
     "groq": {"llama-3.3-70b-versatile", "llama-3.1-8b-instant", "qwen/qwen3-32b"},
     "gemini": {"gemini-2.0-flash", "gemini-2.0-flash-001"},

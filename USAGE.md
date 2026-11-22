@@ -403,3 +403,22 @@ file are pushed into separate waves, so a file is never written by two threads a
 own copy of the conversation state, its own tool whitelist and its own round cap.
 
 `/squad parallel off` returns to one-at-a-time execution.
+
+Two agents that want the same file are not serialised silently: the first one **claims** the file, the second
+gets `app.py is being edited by Nova right now; left it alone` and reports it as deferred. After the team
+finishes, DocMind runs the **review pass** itself (join the pieces, verify, report) — you never have to
+merge the agents' work by hand.
+
+The single-agent/team question is printed in **one language only** (the interface language) in all 14
+locales: `Bu işi nasıl yapayım?` · `How should I build this?` · `Wie soll ich das umsetzen?` · `¿Cómo quieres
+que lo haga?` · `Как это сделать?` · `どのように進めますか？` …
+
+### Phone or tablet? use `/mobil`
+
+Every start prints one line in your language:
+
+```
+[i] Telefondan veya tabletten kullanıyorsanız /mobil yazarak mobil modu açın (genişlik, klavye ve glif uyumu).
+```
+
+`/mobil` and `/mobile` are the same command (`/mobil on|off|ascii|unicode|status`).

@@ -20,7 +20,10 @@
   lead, streams what each agent is doing and reviews the result.
 - **Parallel execution:** independent agents run at the same time in threads; agents that share a file
   are separated into waves so nothing is overwritten. `/squad parallel on|off`.
-- **`/squad`** on/off/auto + agent cap, **`/mobile`** for Termux.
+- **`/squad`** on/off/auto + agent cap, **`/mobil`** (`/mobile`) for Termux.
+- **Every start says it once:** *"on a phone or tablet use `/mobil`"* — in your own language.
+- **One language per question:** the "team or single agent?" prompt speaks only the interface language
+  (all 14 locales), never two at once.
 - **Search without `/search`** (manual command still works).
 - **Owner row is sealed:** delete it and the program refuses to start.
 
