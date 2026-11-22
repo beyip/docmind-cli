@@ -160,3 +160,20 @@ temizlenmiyor, yeni metin onun üzerine geliyordu.
 Prompt satırı yalnız `DocMind ❯ /mobil status`; `[i]`/`[OK]`/panel/durum satırı hepsi kendi satırında.
 `py_compile -W error::SyntaxWarning` ✓ · `--help` kapıları **exit 0** · `t1`–`t10` yeşil.
 **sha256:** `b993155a7e4830eda84321ac6a4bcfb73036f78663c8d8de6925f2b8be489086` · 1.103.438 bayt.
+
+## 11) Telefonda altlık tamamen kapalı (yama #8) — fotoğraftaki hâl
+
+Fotoğrafta `/mobil` **yazılmamıştı**, yani mobil mod kapalıydı; o durumda tam ekran altlık hâlâ açıktı.
+Altlık mutlak satır numaralarıyla çiziliyor (`ESC[<satır>;1H`, `ESC[r`), telefonda ise klavye açılınca ekran
+yüksekliği değişiyor ve Termux bunu her zaman bildirmiyor → satır, prompt'un/mesajın olduğu yere yazılıyordu
+(`DocMind > | Context: -0/1,048,576 (0.0%)`).
+
+- `_footer_allowed()` artık donanıma bakıyor: telefon/tablet, mobil mod, ANSI yok, <12 satır, <46 sütun → kapalı.
+- `start_footer()` kararı boyut okumadan önce veriyor; izin yoksa kaydırma bölgesi hiç kurulmuyor.
+- REPL'deki altlık temizliği telefonda da çalışıyor.
+- Telefonda durum satırı, üzerine yazı olduysa yerinde yeniden yazılmıyor; temiz satırda basılıyor.
+
+**Kanıt (`screen_timeline.py`, adım adım ekran ızgarası):** telefon 56×12 + `/hlp` + `/quit` → **0**
+üzerine yazılan karakter (önce 92); klavye açılması (20→12 satır) **0**; klavye kapanması (12→20) **0**;
+telefon 40/32/56 sütun ve bilgisayar 80/100 sütun **0**. `t1`–`t10` yeşil.
+**sha256:** `fb9a2a188f29380da0c79a8e03f3eb566e5092e40448d3e03ebb29fdd9c42d32` · 1.104.523 bayt.

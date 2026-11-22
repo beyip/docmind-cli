@@ -453,7 +453,12 @@ status as **one row under the message** and keeps it there:
   one line that would be wrapped over the one above it;
 - the full `Tokens … | Context … | Cost …` sentence is used only on a terminal wide enough to hold it.
 
-Nothing is drawn on top of anything else. Two things used to break that on a phone and both are gone:
+Nothing is drawn on top of anything else. On a **phone or tablet the full-screen footer is never used**,
+whether or not you typed `/mobil`. The footer is painted with absolute row numbers, and a phone's real
+height changes every time the on-screen keyboard opens — that mismatch is what printed
+`DocMind ❯ |  Context: 0%` *inside* the prompt line. Mobile mode, a non-ANSI terminal, fewer than 12 rows
+and fewer than 46 columns are all excluded too, and the check runs before any scroll region is installed.
+Two more things used to break the "one line, one string" rule and both are gone:
 
 - **The footer came back.** With mobile mode on, the row was not built at start — but the redraw that runs
   after every command checked only "8 rows and 30 columns?" and switched the full-screen footer back on,

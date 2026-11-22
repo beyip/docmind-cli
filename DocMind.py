@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'e030fc5b00e6a80e06a0251c0f10d06dcd45fcc270e9b46174747331724819b3'
-_DM_SIGNATURE = '29d4729a0c60e2a00cf9e923f90407515670c97d89f7e594ef1f6763ea27936225a419dc1408da7178f3df1b02faca7f03eb713dad51def842791877697ce52e17429516b82d2ec234179644282ea1cecef0c86926a4f51cf153dcc87165a1a79381dd67d39a23b49569621cc96c1e52af597cab38c3efcef0f34152dfce8372922c0488c03ad6998896dec6a059376ae14acc41c1e854a726778cf827c809522c72469d5e0481d7494e9a643ec306995438c056e11dc4f8c7918f641043ddf55840f713a5a5dade3adba8321745f876f22e9084e607bed80d2838f002ff0345d102277bd3183f1ea574fda562dd8101b351653686bc82129fba53109016d4e6fb5c8453152089ddcfa84a5a6f046f582f8c71b8471f55520a0df7195f27ebb8a450690f7031102bf43b95143ce259bf472b871c2d35d8d05b5b264cb414ca70fde7f5b51fc306f0c0d89e37509cc327c38215727608b23d4b4ae052b71d01ed776debef293cf09bd5ecda41391be16c1d1e233bf6152f592c65c7d3fb059396'
+_DM_SOURCE_HASH = '5c111db49457829309dad4183319e8b108708a3a8dd3d6a0a7956f81bef622cb'
+_DM_SIGNATURE = '3aab61dd5d230b51cfb7afd2ccc9eb000216163909eb4477adeb80026e6e92dca69cb8a81f5b12e6460928c7e10c5cf672df30fd1e428ef3a3e6383483148e21c60833ad3ad2b8137f02009e497c53061adf340b9868ec7f97426373d6639c17dafabe48cb92cfff5d150962b8c8744cbfbb5cb3c09909064be840ffeb46a935b4e26c43117c15325909231c2313fdf8b2e505e50ef6d71be2c3e4f9cc088b23fee50d7aeda8f61bd82a987821e8677ee20600eeb26b867bb71726961de4a7c65981c40bca619826d7a17872fca11d12618cccd30618dabce330b2e9fe84182c6a17142a4d40717fc43ea3ce309ac4a3f565673e6a4ef00bd67eeba9ea5f19fe01723c54cbed78e3dd4d8e8197725e2855abfdc2b5d3d7191ab542d62f042290263a025dac95053208cb81719e25be2604c1c58d13f8ba5b33138a048f1699fee951a47ed9e9da68f8e83216431c583968f4d6789ea7603d812f2f8426883b4d0f113ab5c710f87835119a85eeb70a95edefa7cd9248db45222c6234ce6701e7'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -13857,19 +13857,25 @@ def _dm_module_18():
      all excluded: on a phone the footer painted on the last row and the next
      message was written straight over it.
      """
-     if _DM_MOBILE_MODE:
+     # Hardware first: a phone/tablet never gets a footer, mobile mode or not.
+     # The footer is drawn with absolute row numbers, and on a phone the real
+     # height changes whenever the on-screen keyboard opens -- that made the
+     # footer paint itself over the messages.
+     if _DM_MOBILE_MODE or _DM_PHONE_DEVICE:
        return False
      try:
        rows, cols = self._size()
      except Exception:
        return False
-     return bool(self.ansi and rows >= 8 and cols >= 46)
+     return bool(self.ansi and rows >= 12 and cols >= 46)
    def start_footer(self, status: Callable[[], str], compact: Optional[Callable[[int], str]] = None) -> bool:
      self._footer = status
      self._compact_footer = compact
-     rows, cols = self._size()
      if not self._footer_allowed():
+       self._footer = None
+       self._compact_footer = None
        return False
+     rows, cols = self._size()
      with self.lock:
        self._rows = rows
        self._footer_active = True
@@ -14627,7 +14633,21 @@ def _dm_module_20():
      key = "\n".join(rows)
      if key == getattr(self, "_inline_status_key", ""):
        return
+     if _DM_PHONE_DEVICE and getattr(self, "_inline_status_key", ""):
+       # A phone cannot be trusted with cursor-up rewriting: leave the old row
+       # alone and print the new one only on a clean line.
+       self._ensure_line_start()
      writable = bool(getattr(self.view, "ansi", False))
+     try:
+       now_size = self.view._size()
+     except Exception:
+       now_size = None
+     if now_size is not None and now_size != getattr(self, "_inline_status_size", now_size):
+       # The screen was resized (keyboard opened/closed): moving the cursor up
+       # would now land on a different row.  Start a fresh row instead.
+       self._inline_status_live = False
+       self._inline_status_rows_drawn = 0
+     self._inline_status_size = now_size
      can_rewrite = (writable and self._inline_status_rows == len(rows)
                     and getattr(self, "_inline_status_live", False))
      if can_rewrite:
@@ -19447,7 +19467,7 @@ def _dm_module_25():
     self._inline_status_live = False
     self._inline_status_rows = 0
     try:
-      if _DM_MOBILE_MODE and getattr(self.ui.view, "footer_active", False):
+      if (_DM_MOBILE_MODE or _DM_PHONE_DEVICE) and getattr(self.ui.view, "footer_active", False):
         self.ui.view.stop_footer()
       else:
         self.ui.refresh_footer()

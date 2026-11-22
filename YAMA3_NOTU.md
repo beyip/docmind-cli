@@ -120,3 +120,42 @@ satırı başka bir satıra taşmıyor. Ek olarak `py_compile -W error::SyntaxWa
 **exit 0**, `t1`–`t10` yeşil.
 
 **sha256 (bu build):** `b993155a7e4830eda84321ac6a4bcfb73036f78663c8d8de6925f2b8be489086` · 1.103.438 bayt.
+
+## 10) Telefonda altlık yok — `/mobil` yazılmadan önce de (yama #8)
+
+**Kullanıcının fotoğrafı:** telefon, `/mobil` **henüz yazılmamış** (panoda `mobile mode OFF`), alt satırda
+`DocMind > | Context: -0/1,048,576 (0.0%)` — yani durum satırı prompt satırının **içine** basılmış ve
+`Unknown command` satırı da yazıyla iç içe. Önceki iki yamadan sonra hâlâ görülen hâl buydu.
+
+### Gerçek sebep
+Altlık (footer) kendini **mutlak satır numaralarıyla** çiziyor: `ESC[<satır>;1H`, `ESC[1;<satır-1>r`,
+`ESC[2K`. Telefonda ekranın gerçek yüksekliği klavye açılıp kapanınca sürekli değişiyor ve Termux bunu her
+zaman bildirmiyor. `/mobil` yazılmadığı sürece mobil mod **kapalı** olduğu için altlık serbest kalıyordu ve
+satır, mesajın/prompt'un olduğu yere yazılıyordu. Mobil modu açtığımız senaryolarda (yama #7) bu yüzden
+görünmüyordu; telefonda varsayılan hâl ise **kapalı**.
+
+### Çözüm
+| # | Değişiklik |
+|---|---|
+| 1 | `_footer_allowed()` artık **donanıma** bakıyor: telefon/tablet (`_DM_PHONE_DEVICE`), mobil mod, ANSI olmayan terminal, <12 satır veya <46 sütun → **False**. Telefon `/mobil` yazılmadan da altlık almıyor. |
+| 2 | `start_footer()` kararı **boyut okumadan önce** veriyor; izin yoksa geri çağrıları bırakıp dönüyor → telefonda kaydırma bölgesi hiç kurulmuyor. |
+| 3 | REPL'deki "kalmış altlığı kaldır" temizliği artık telefonda da çalışıyor (yalnız mobil modda değil). |
+| 4 | Satır içi durum satırı telefonda, çizildikten sonra ekrana bir şey yazıldıysa **yerinde yeniden yazmıyor**; temiz satırı bekliyor. |
+
+### Doğrulama (pty, adım adım ekran ızgarası — `screen_timeline.py`)
+Fotoğraftaki durum birebir kuruldu: telefon (`TERMUX_VERSION`), 56×12, `/hlp` (fotoğraftaki `/hl31` gibi hatalı
+komut), `/quit`.
+
+| Senaryo | Üzerine yazılan karakter |
+|---|---|
+| Telefon 56×12, `/mobil` **yazılmadan**, `/hlp` → `/quit` | **0** (önce: 92) |
+| Telefon 56×20 iken klavye açılıyor → 56×12 | **0** |
+| Telefon 56×12 iken klavye kapanıyor → 56×20 | **0** |
+| Telefon 40×24 · 32×24 · 56×24 (mobil mod açık) | **0** |
+| Bilgisayar 80×24 · 100×24 (altlık açık) | **0** |
+
+Ekranda prompt satırı yalnız `DocMind ❯ /hlp`; `[!]` ve `[i]` satırları kendi satırında; durum satırı
+`T:0 C:0.0% ~$0` prompt'un içine girmiyor. `py_compile -W error::SyntaxWarning` ✓, `--help` kapıları **exit 0**,
+`t1`–`t10` yeşil.
+
+**sha256 (bu build):** `fb9a2a188f29380da0c79a8e03f3eb566e5092e40448d3e03ebb29fdd9c42d32` · 1.104.523 bayt.

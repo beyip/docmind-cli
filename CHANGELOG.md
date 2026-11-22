@@ -128,6 +128,22 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   mobile mode, 80×24 desktop, and with `/quit` and without — **0 characters overwritten**, every string on
   its own line, the prompt line holding only `DocMind ❯ /mobil status`.
 
+### Fixed — the footer is gone on a phone even before `/mobil` (patch #8)
+- **The screenshot case.** On a phone where `/mobil` had **not** been typed yet, mobile mode is *off* — and
+  in that state the full-screen footer was still allowed. The footer paints itself with **absolute row
+  numbers** (`ESC[<rows>;1H`, `ESC[1;<rows-1>r`). On a phone the real height changes every time the
+  on-screen keyboard opens or closes, and Termux does not always report the new size, so the footer was
+  written onto a row that already held a message: `DocMind > |  Context: -0/1,048,576 (0.0%)` printed
+  *inside* the prompt line.
+- The decision now looks at the **hardware**, not the switch: `_footer_allowed()` is `False` on any
+  phone/tablet (`_DM_PHONE_DEVICE`), in mobile mode, on a non-ANSI terminal, under 12 rows or under 46
+  columns. A phone therefore never gets a footer, whether or not `/mobil` was typed.
+- `start_footer()` asks the predicate **before** reading the terminal size and drops the callbacks when it is
+  refused, so no scroll region can be installed on a phone.
+- The repl cleanup that removes a leftover footer now runs on a phone as well, not only in mobile mode.
+- The inline status row refuses to rewrite itself in place on a phone when something has been printed since
+  it was drawn — it waits for a clean line instead of guessing how many rows to move up.
+
 ### Changed — `/mobil` is now a real switch, and only on a phone
 - **On a phone / tablet** `/mobil` toggles mobile mode: first use turns it on (compact layout, plain
   glyphs, no full-screen footer, mobile rules in the system prompt), using it again turns it off. The
