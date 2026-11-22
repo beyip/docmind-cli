@@ -128,6 +128,27 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   mobile mode, 80×24 desktop, and with `/quit` and without — **0 characters overwritten**, every string on
   its own line, the prompt line holding only `DocMind ❯ /mobil status`.
 
+### Fixed — THE FREEZE after an answer, and the answer now appears while it streams (patch #10)
+- **The session froze right after every reply.** Reproduced inside a real pty with `faulthandler`:
+  `run_turn → refresh_footer → update_footer` was stuck waiting for the terminal lock. The animated
+  "typing" writer held that lock for its whole life (`with self._typing_cond, self.lock:` — `cond.wait()`
+  releases the condition lock, not `self.lock`), so the next footer refresh waited forever: no prompt, no
+  input, `DocMind:` sitting empty. That is "it does not answer".
+- **No animation thread any more.** Every terminal now writes streamed text **directly** as the chunks
+  arrive, wrapped here to the real width; `finish_typing()` marks the writer done and joins it, and no
+  lock is ever held across a wait.
+- **The answer is visible immediately instead of at the end.** The partial line used to be held back until
+  the reply was complete (`_stream_pend`); in direct mode it is flushed at once, so the first words appear
+  in under a second and the text keeps growing.
+- **A reasoning-only reply is no longer dropped.** If a model sends no visible text but does send
+  `reasoning_content`, that reasoning is shown as the answer instead of an empty screen.
+- **After an answer you get a clean prompt.** The line is closed before the status row and the next prompt,
+  so `DocMind ❯` never lands inside the reply.
+
+Verified in a pty with a local OpenAI-compatible server: phone 56×24 — `DocMind: Merhaba! …` then
+`DocMind ❯` ready for the next message, twice in a row; desktop 100×30 — the same, answer complete and the
+prompt back; `t1`–`t10` green; `py_compile -W error::SyntaxWarning` clean and the signature gates exit 0.
+
 ### Fixed — a phone now answers: no blocking menu, no spinner over your message (patch #9)
 - **"It does not answer."** When a request failed (invalid key, quota, network) DocMind opened the
   `RECOVERY OPTIONS` menu and waited on `input()`. On a phone the keyboard covers that menu and the repl

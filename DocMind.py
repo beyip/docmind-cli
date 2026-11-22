@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '2aedebe9d909095172fc065bd90842b4bd78528b3c2631c25dea27181ded046d'
-_DM_SIGNATURE = '0d49256732c73072bff467a531cdb4dbe2e9c671a691c4858c97e11b72626b17743c73990980482b0c4c3b12f2bd4b2f6e83753080e68d9f21ec50bc25f541586fb165ca2f73e6323f3c42f7f4d23f624f54ba3e1ef8eae96b6499c321497cad6f830791c7c2041a5ca9b6d5246840744e43cdb31963fbbda515bb62a59b50c166a9cdce6ff58a0aeb52be5abd0976d19a92909fb690deb3a60f418b6eeae9aa6a984ce1ad7e3b2952f430294b5bbbc0cfee71dbcf680f1d92f12f51b9332fe4b12f20fb8b21df8ed80f91ee14a4cbe55fa9135c0c1e24543b18dddd1e9ab4bf9d9cb2e33ebdb5ba69e9a353f196dabd754070cd877a84779cb787df34eb9e58ca304714f06f4b359b4d45fded4f6c879a0eda67c872312be1853e2be3444a6b2102e6d22938ec8e1e11915e7b25f8f3b244095663540771ece9eeeaf3bc11421e886c0ec2e903be90d50737cf34a806e49297bfdc859ce0784df4f5139ff97e2e8f4a7267c0da81754c1c98fe470df27063fafecf70e3688d35974f68a100ed'
+_DM_SOURCE_HASH = '671c70cd7abf44fd4b48327306c718371811f896e4f2018f4dbe26c1e9b2fe18'
+_DM_SIGNATURE = '2ee5ed20888b704f430998de47c28c29803ae6e1e2175480364415ded96a69f675356f324a1c91d03c966f565949a95ffc9790c7eb5b3cfbf3e3eba11a651140f28a7d0b8203d6512fea0eae877d3a7666436d0b1a577d7c1709c15ff49dd2d79af8d75474045de7342e77ea8a97479202fe43f331422770b8bacf8a0141b020a24dab49530895031288bfc3f3794fefc9bd10884385c1ae6ac32245a89a66ab6dfec52a0ec019c779fa0a1e6e63108278a0397bc575986c7685e140cd179e6559185f1b08ff9a1f5f9cb59fde7643d0f5baedc83443857305074b5b4e2411482a707026764dd325d4f44230ad5a3e7a3f53bacf20d5f44fe7412f7916c2ab0215f8a39021e9134d401b4f22e5ed033b6130688bccd328c42dbf05820e7d7d2e078180ee2d116f0a29027f86cc9e5473777f29128db026c159b5be67abc18281ec967ac36e9c5e8869860f5a7607213ab4e4f52065adc58a37f8f3ee6063281171e50e3274d5135ac834c047e7c9b4c146ca3e112da760b7daf9183deb1fe371'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -14042,6 +14042,11 @@ def _dm_module_18():
        self._write("\r\x1b[2K")
    def start_typing(self) -> None:
      self.stop_spinner()
+     # Every terminal writes chunks directly: no animation thread, no lock held
+     # across waits -- that combination could freeze the session after an answer.
+     self._typing_direct = True
+     self._stream_line_used = 0
+     self._typing_tail_newline = False
      if self._typing_thread:
        self.finish_typing(True)
      with self._typing_cond:
@@ -14064,6 +14069,10 @@ def _dm_module_18():
      # already used -- otherwise the first answer line overflows the terminal.
      self._stream_prompt_cols = _display_width(prompt.split("\n")[-1])
      self._write("\n" + prompt)
+     if getattr(self, "_typing_direct", False):
+       # Direct mode writes chunks itself; a writer thread here would hold
+       # self.lock forever and freeze the session after the answer.
+       return
      def animate() -> None:
        while True:
          # One owner for the deque: the API thread only appends under the cond,
@@ -14122,7 +14131,43 @@ def _dm_module_18():
            time.sleep(0.018)
      self._typing_thread = threading.Thread(target=animate, name="DocMind typing", daemon=True)
      self._typing_thread.start()
+   def _write_typing_direct(self, text: str) -> None:
+     """Write streamed text now, wrapped to the real width (phone path)."""
+     try:
+       safe = _visible_controls(_sanitize_stream_chunk(text))
+     except Exception:
+       safe = str(text)
+     if not safe:
+       return
+     try:
+       _, cols = self._size()
+     except Exception:
+       cols = 80
+     cols = max(20, cols - 1)
+     used = int(getattr(self, "_stream_line_used", 0) or 0)
+     out = []
+     for ch in safe:
+       if ch == chr(10):
+         out.append(chr(10))
+         used = 0
+         continue
+       width = 2 if ord(ch) > 0x2E7F else 1
+       if used + width > cols:
+         out.append(chr(10))
+         used = 0
+       out.append(ch)
+       used += width
+     self._stream_line_used = used
+     self._typing_tail_newline = safe.endswith(chr(10))
+     try:
+       sys.stdout.write("".join(out))
+       sys.stdout.flush()
+     except (BrokenPipeError, OSError, ValueError):
+       pass
    def append_typing(self, text: str, style: Optional[str] = None) -> None:
+     if getattr(self, "_typing_direct", False):
+       self._write_typing_direct(text)
+       return
      """Queue streamed text. Only the animator thread touches the deque."""
      chunk = _sanitize_stream_chunk(text)
      if not chunk:
@@ -14132,6 +14177,24 @@ def _dm_module_18():
        self._typing_chars += len(chunk)
        self._typing_cond.notify()
    def finish_typing(self, fast: bool = False) -> None:
+     if getattr(self, "_typing_direct", False):
+       # Close the answer line the stream left open, then go back to normal.
+       self._typing_direct = False
+       with self._typing_cond:
+         self._typing_done = True
+         self._typing_cond.notify_all()
+       thread = self._typing_thread
+       if thread and thread is not threading.current_thread():
+         thread.join(timeout=1)
+       self._typing_thread = None
+       if not getattr(self, "_typing_tail_newline", True):
+         try:
+           sys.stdout.write(chr(10))
+           sys.stdout.flush()
+         except (BrokenPipeError, OSError, ValueError):
+           pass
+       self._stream_line_used = 0
+       return
      thread = self._typing_thread
      if not thread:
        # Nothing is streaming, but the caret may still sit mid-line after an
@@ -14910,6 +14973,9 @@ def _dm_module_20():
          prompt_cols = int(getattr(self.view, "_stream_prompt_cols", 0) or 0)
        except (TypeError, ValueError):
          prompt_cols = 0
+       if getattr(self.view, "_typing_direct", False):
+         # The cursor sits right after "DocMind: " -- count from there.
+         self.view._stream_line_used = prompt_cols
        self._stream_first_line = True
        self._stream_first_budget = max(12, max(20, self._cols() - 2) - prompt_cols)
      width = max(20, self._cols() - 2)
@@ -14945,6 +15011,14 @@ def _dm_module_20():
        self._stream_out(piece + "\n")
        self._stream_first_line = False
        width = max(20, self._cols() - 2)
+     if getattr(self.view, "_typing_direct", False) and buf:
+       # Phone: show the text that has arrived instead of waiting for the end
+       # of the line -- otherwise the screen looks frozen until the answer is
+       # complete.
+       self._stream_out(buf)
+       self._stream_pend = ""
+       self._stream_first_line = False
+       return
      self._stream_pend = buf
    def finish_streamed_message(self, fast: bool = False) -> None:
      if self._stream_active:
@@ -14959,7 +15033,17 @@ def _dm_module_20():
            if tail.strip():
              self._stream_out(tail.rstrip() + "\n")
          self._stream_pend = ""
-         self._at_line_start = True
+         if getattr(self.view, "_typing_direct", False):
+           # Direct (phone) path: the answer may stop mid-line, so close the
+           # line before the status row and the next prompt are printed.
+           try:
+             sys.stdout.write(chr(10))
+             sys.stdout.flush()
+             self._at_line_start = True
+           except (BrokenPipeError, OSError, ValueError):
+             self._at_line_start = False
+         else:
+           self._at_line_start = True
          if self._syntax_highlighter:
            self._syntax_highlighter.finish()
          self.view.finish_typing(fast=fast)
