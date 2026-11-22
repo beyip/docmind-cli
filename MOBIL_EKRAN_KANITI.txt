@@ -1,0 +1,91 @@
+DocMind v1.3 — mobil ekran kanıtı (pty ekran emülatörü)
+sha256: b993155a7e4830eda84321ac6a4bcfb73036f78663c8d8de6925f2b8be489086  ·  1103438 bayt
+
+Komutlar: /mobil, /mobil status, /quit  ·  her kutu bir terminal hücresi (sağdaki '|' ekranın sol kenarı)
+
+======== TELEFON mobil mod · 40x24 ========
+========================================
+|mobil mod: AÇIK
+|glifler: auto
+|depolama: -
+|genişlik: 44
+|
+|Glifler kutucuk görünürse: /mobil
+|ascii
+|=======================
+|DocMind ❯ /mobil status
+|
+|=== MOBILE / TERMUX
+|cihaz: telefon/tablet
+|mobil mod: AÇIK
+|glifler: auto
+|depolama: -
+|genişlik: 44
+|
+|Glifler kutucuk görünürse: /mobil
+|ascii
+|=======================
+|DocMind ❯ /quit
+|[i] DocMind kapatılıyor. Görüşmek üzere!
+|  T:0 C:0.0% ~$0
+|
+========================================
+characters overwritten (true overlap): 0
+
+======== TELEFON mobil mod · 32x24 ========
+================================
+|glifler: auto
+|depolama: -
+|genişlik: 44
+|
+|Glifler kutucuk görünürse:
+|/mobil ascii
+|=======================
+|DocMind ❯ /mobil status
+|
+|=== MOBILE / TERMUX
+|cihaz: telefon/tablet
+|mobil mod: AÇIK
+|glifler: auto
+|depolama: -
+|genişlik: 44
+|
+|Glifler kutucuk görünürse:
+|/mobil ascii
+|=======================
+|DocMind ❯ /quit
+|[i] DocMind kapatılıyor.
+|Görüşmek üzere!
+|  T:0 C:0.0% ~$0
+|
+================================
+characters overwritten (true overlap): 0
+
+======== BİLGİSAYAR · 80x24 ========
+================================================================================
+|=== MOBILE / TERMUX
+|cihaz: bilgisayar
+|mobil mod: KAPALI
+|glifler: auto
+|depolama: -
+|genişlik: auto
+|
+|Glifler kutucuk görünürse: /mobil ascii
+|=======================
+|DocMind ❯ /mobil status
+|
+|=== MOBILE / TERMUX
+|cihaz: bilgisayar
+|mobil mod: KAPALI
+|glifler: auto
+|depolama: -
+|genişlik: auto
+|
+|Glifler kutucuk görünürse: /mobil ascii
+|=======================
+|DocMind ❯ /quit
+|[i] DocMind kapatılıyor. Görüşmek üzere!
+|
+|
+================================================================================
+characters overwritten (true overlap): 0
