@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '120bc92f58c3fcc6f4d780c9d2467627e814dbe07e48c8d1762f642ac099d22b'
-_DM_SIGNATURE = '70652f838f8e469b279cd49b9f19e3f400ae15952acbe7c9c06a61de924501e7880d45e40a436d186ac395d52aa99601d0b8b8ffa0b6fef9412c5fe89279eb23c3af86adc6111b3bea94d6b0b557c6c1d4b75c981678f2c97a5fc01f76751ab6bcdb3e0c7425f69148d877bab80c16f394070506bd2ffc1225228a0e0d0ab0528e0fd21fdac1afc68612ff3e05ef86725882309b8dce63014c9a71797b0358a4314af98d999f02243548c5c1cd2764c3611eb596b07974a5d1ae3e5169feb9c10392b5c4e5196b02cbefcafb3e1c10e95c69736bf8e7c9cc9f395f612671987ee32566df254ab8558d4d15788b817e6a20daa9a853d7633f7e36caa13a3eb45684cc6e2eb5504f67be51cae8b3a05b7bb0d1e5bc0661d6a085176959238df84620a7e72b28eb7d25f22ecf0343f5fe88f6a94df5f69884fbcae08cda0c2680b3a0aa06f033f189fad2e873e0b4dbc8d8ad7aa31e72890fb03380fcaec8da57a3d84d4a43bb1986bfdf3ee0a1bce42056090ae69424cbdc4f5faa50720bd3faae'
+_DM_SOURCE_HASH = '0f0da206cdb33da2b7102029bd11d1d8bd20df93a76e7d42624d046fb1fa4948'
+_DM_SIGNATURE = '9cab150987587e6c89fa903aa4e18b5f9f6a6d5054dc4e33d550c2259eeb5b1778dc7442f32a605e07903e05a9393b870231b706eef8f2aacc743d8474ac414077b9d11b8c9c5666fd82fd194b28d3ba311a7a63494167b49f6750bd2e6bf5c359d900e389e166dd59a20d7dada04afde3a8e7d34274eb863a613601ecb0b05e9edcb7e820498bb9e38dfcf811fa0c82d79dafae322f89231c9c573f4ca114995e091d0a34f50b5fd95bc60031a7e6201b77bd5ccb891d3b191b4160210d53fe571bd0c36c6208f05d3817c85656fd11c41560735727338eb6021a47fb3159d8f9165fb583c364913a7f3738b92a24849ca6361bc585bae1fa552511b5b424f7381347e70879dd643da084b55448cbc5c8f66f54ed1929cb717fd98518036e8223d9993896c2f59f33d10af22dd57fd2cca373d5f096dca94232f35a96d0167dac2d70230965e49c975d2ed7e7ced1d5f3f5299456cbcd7e340afae6c7004e4d902eebb107021208481ee5414c896e9c72a013e637245a6a733cb238b674b930'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -196,6 +196,81 @@ if _dm_os.environ.get('DOCMIND_MOBILE', '').lower() in ('0', 'false', 'no', 'off
     _DM_MOBILE = False
 if _dm_os.environ.get('DOCMIND_DESKTOP', '').lower() in ('1', 'true', 'yes', 'on'):
     _DM_MOBILE = False
+
+
+def _dm_phone_device():
+    """Strict hardware answer for /mobil: a phone/tablet, never a narrow desktop.
+
+    ``_dm_detect_mobile`` also treats a tiny terminal as "mobile" (useful for the
+    width defaults).  The /mobil switch must not: a desktop user who happens to
+    have a narrow window still gets "this is a computer".
+    """
+    try:
+        flag = _dm_os.environ.get('DOCMIND_MOBILE', '').lower()
+        if flag in ('1', 'true', 'yes', 'on'):
+            return True
+        if _dm_os.environ.get('DOCMIND_DESKTOP', '').lower() in ('1', 'true', 'yes', 'on'):
+            return False
+        if _dm_os.environ.get('TERMUX_VERSION') or _dm_os.environ.get('TERMUX_APP_PID'):
+            return True
+        if 'ANDROID_ROOT' in _dm_os.environ or 'ANDROID_DATA' in _dm_os.environ:
+            return True
+        if _dm_sys.prefix and any(_dm_sys.prefix.startswith(p) for p in
+                                  ('/data/data/com.termux', '/data/local/tmp')):
+            return True
+        if _dm_sys.platform.startswith(('android', 'ios')):
+            return True
+    except Exception:
+        return False
+    return False
+
+
+_DM_PHONE_DEVICE = _dm_phone_device()
+_DM_MOBILE_MODE = False
+_DM_ASCII_AUTOSET = False
+
+
+_DM_WIDTH_AUTOSET = False
+
+
+def _dm_refresh_glyphs() -> None:
+    """Recompute the ASCII/Unicode glyph choice after a mode switch."""
+    san_mod = _dm_sys.modules.get('docmind.core.sanitize')
+    if san_mod is None:
+        return
+    try:
+        force = str(_dm_os.environ.get('DOCMIND_ASCII', '') or
+                    _dm_os.environ.get('DOCMIND_GLYPHS', '')).strip().lower()
+        plain = bool(force and force not in ('0', 'false', 'no', 'off', 'unicode', 'utf8', 'utf-8'))
+        if plain and _DM_ASCII_AUTOSET and not _DM_MOBILE_MODE:
+            plain = False
+        san_mod.ASCII_GLYPHS = bool(plain or _DM_MOBILE_MODE)
+    except Exception:
+        pass
+
+
+def _dm_set_mobile_mode(enabled) -> None:
+    """Switch the mobile layout on/off right now (footer, prompt, glyphs, rules)."""
+    global _DM_MOBILE, _DM_MOBILE_MODE, _DM_ASCII_AUTOSET, _DM_WIDTH_AUTOSET
+    _DM_MOBILE_MODE = bool(enabled) and bool(_DM_PHONE_DEVICE)
+    _DM_MOBILE = _DM_MOBILE_MODE
+    _dm_os.environ['DOCMIND_MOBILE_MODE'] = '1' if _DM_MOBILE_MODE else '0'
+    if _DM_MOBILE_MODE:
+        if not str(_dm_os.environ.get('DOCMIND_ASCII', '') or '').strip():
+            _dm_os.environ['DOCMIND_ASCII'] = '1'
+            _DM_ASCII_AUTOSET = True
+        if not _dm_os.environ.get('TERM_WIDTH'):
+            _dm_os.environ['TERM_WIDTH'] = '44'
+            _DM_WIDTH_AUTOSET = True
+    elif _DM_ASCII_AUTOSET:
+        # We forced ASCII when the mode came on: put the terminal back to normal.
+        if _DM_WIDTH_AUTOSET:
+            _dm_os.environ.pop("TERM_WIDTH", None)
+        _dm_os.environ.pop('DOCMIND_ASCII', None)
+        _DM_ASCII_AUTOSET = False
+    _dm_refresh_glyphs()
+
+
 _DM_STORAGE_ROOT = _dm_storage_root()
 
 if _dm_os.name == 'posix' and hasattr(_dm_sys.stdout, 'reconfigure'):
@@ -208,7 +283,9 @@ if _DM_MOBILE:
     _dm_os.environ.setdefault('NO_COLOR', '0')
     _dm_os.environ.setdefault('PYTHONUTF8', '1')
     _dm_os.environ.setdefault('PYTHONIOENCODING', 'utf-8:replace')
-    _dm_os.environ.setdefault('TERM_WIDTH', '44')
+    if not _dm_os.environ.get('TERM_WIDTH'):
+        _dm_os.environ['TERM_WIDTH'] = '44'
+        _DM_WIDTH_AUTOSET = True
 
 _dm_owner_gate()
 _dm_digest_gate()
@@ -345,7 +422,7 @@ def _dm_module_01():
     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
     "help_title": "DOCMIND KOMUT REHBERİ",
-    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobil     Mobil/Termux modu ve glif ayarı (/mobile de çalışır)\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
+    "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobil     Mobil mod aç/kapat (telefonda; /mobile de çalışır)\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
     "cmd_cleared": "Sohbet geçmişi ve ekran temizlendi.",
     "cmd_saved": "Oturum başarıyla kaydedildi: {path}",
     "cmd_loaded": "Oturum başarıyla yüklendi ({count} mesaj): {path}",
@@ -590,14 +667,25 @@ def _dm_module_01():
     "squad_help_parallel_note2": "aynı dosyaya dokunan ajanlar sıraya konur, hiçbir emek ezilmez.",
     "squad_plan_tail1": "DocMind (lider) planı yapar, son adımı kendisi denetler",
     "squad_plan_tail2": "ve ancak mükemmellik denetimi geçince işi kapatır.",
-    "mobile_usage": "kullanım: /mobil on|off|ascii|unicode|status",
+    "mobile_usage": "kullanım: /mobil (aç/kapat) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "cihaz",
     "mobile_row_mode": "mobil mod",
     "mobile_row_glyphs": "glifler",
     "mobile_row_storage": "depolama",
     "mobile_row_width": "genişlik",
     "mobile_device_phone": "telefon/tablet (Termux)",
-    "mobile_device_desktop": "masaüstü"
+    "mobile_device_desktop": "masaüstü",
+    "mobile_mode_on": "Mobil mod açıldı (kompakt düzen, sade glifler). Kapatmak için tekrar /mobil yazın.",
+    "mobile_mode_off": "Mobil mod kapandı (normal genişlik ve glifler).",
+    "mobile_not_needed": "Mobil mod yalnızca telefonda/tablette çalışır; bu cihaz bilgisayar, hiçbir şey değişmedi.",
+    "mobile_state_on": "AÇIK",
+    "mobile_state_off": "KAPALI",
+    "mobile_row_phone_yes": "telefon/tablet",
+    "mobile_row_phone_no": "bilgisayar",
+    "mobile_glyphs_ascii": "Glifler sade (ASCII) olarak ayarlandı.",
+    "mobile_glyphs_unicode": "Glifler Unicode/emoji olarak ayarlandı.",
+    "mobile_font_hint": "Glifler kutucuk görünürse: /mobil ascii",
+    "mobile_startup_active": "Mobil mod açık. Kapatmak için tekrar /mobil yazın."
   },
   "en": {
     "lang_name": "English",
@@ -684,7 +772,7 @@ def _dm_module_01():
     "rec_opt_skip": "Skip Error & Return to Prompt",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND COMMAND REFERENCE",
-    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /squad     Team mode: task decomposition (sub-agents) on/off\n /mobile    Mobile/Termux mode and glyph settings\n /token-save Toggle token saving (default: on)",
+    "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /squad     Team mode: task decomposition (sub-agents) on/off\n /mobile    Mobile mode on/off (on a phone; /mobil works too)\n /token-save Toggle token saving (default: on)",
     "cmd_cleared": "Conversation memory and screen cleared.",
     "cmd_saved": "Session saved successfully: {path}",
     "cmd_loaded": "Session loaded successfully ({count} messages): {path}",
@@ -929,14 +1017,25 @@ def _dm_module_01():
     "squad_help_parallel_note2": "agents that touch the same file are queued, so no work is overwritten.",
     "squad_plan_tail1": "DocMind (lead) owns the plan and executes the review step",
     "squad_plan_tail2": "and closes the job only after the perfection audit passes.",
-    "mobile_usage": "usage: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "usage: /mobil (toggle) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "device",
     "mobile_row_mode": "mobile mode",
     "mobile_row_glyphs": "glyphs",
     "mobile_row_storage": "storage",
     "mobile_row_width": "width",
     "mobile_device_phone": "phone/tablet (Termux)",
-    "mobile_device_desktop": "desktop"
+    "mobile_device_desktop": "desktop",
+    "mobile_mode_on": "Mobile mode is ON (compact layout, plain glyphs). Type /mobil again to switch it off.",
+    "mobile_mode_off": "Mobile mode is off (normal width and glyphs).",
+    "mobile_not_needed": "Mobile mode only applies to a phone or tablet; this device is a computer, nothing changed.",
+    "mobile_state_on": "ON",
+    "mobile_state_off": "OFF",
+    "mobile_row_phone_yes": "phone/tablet",
+    "mobile_row_phone_no": "computer",
+    "mobile_glyphs_ascii": "Glyphs set to plain ASCII.",
+    "mobile_glyphs_unicode": "Glyphs set to Unicode/emoji.",
+    "mobile_font_hint": "If glyphs show as boxes: /mobil ascii",
+    "mobile_startup_active": "Mobile mode is ON. Type /mobil again to switch it off."
   },
   "de": {
     "lang_name": "Deutsch",
@@ -1268,14 +1367,25 @@ def _dm_module_01():
     "squad_help_parallel_note2": "Agenten an derselben Datei werden eingereiht, damit nichts überschrieben wird.",
     "squad_plan_tail1": "DocMind (Leiter) besitzt den Plan und führt den Prüfschritt aus",
     "squad_plan_tail2": "und schließt den Auftrag erst nach bestandener Perfektionsprüfung.",
-    "mobile_usage": "Nutzung: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "Nutzung: /mobil (umschalten) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "Gerät",
     "mobile_row_mode": "Mobilmodus",
     "mobile_row_glyphs": "Zeichen",
     "mobile_row_storage": "Speicher",
     "mobile_row_width": "Breite",
     "mobile_device_phone": "Handy/Tablet (Termux)",
-    "mobile_device_desktop": "Desktop"
+    "mobile_device_desktop": "Desktop",
+    "mobile_mode_on": "Mobilmodus ist AN (kompaktes Layout, einfache Zeichen). Zum Ausschalten erneut /mobil.",
+    "mobile_mode_off": "Mobilmodus ist aus (normale Breite und Zeichen).",
+    "mobile_not_needed": "Der Mobilmodus gilt nur für Handy oder Tablet; dieses Gerät ist ein Computer, nichts geändert.",
+    "mobile_state_on": "AN",
+    "mobile_state_off": "AUS",
+    "mobile_row_phone_yes": "Handy/Tablet",
+    "mobile_row_phone_no": "Computer",
+    "mobile_glyphs_ascii": "Zeichen auf einfaches ASCII gesetzt.",
+    "mobile_glyphs_unicode": "Zeichen auf Unicode/Emoji gesetzt.",
+    "mobile_font_hint": "Wenn Zeichen als Kästchen erscheinen: /mobil ascii",
+    "mobile_startup_active": "Mobilmodus ist an. Zum Ausschalten erneut /mobil eingeben."
   },
   "es": {
     "lang_name": "Español",
@@ -1597,7 +1707,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "los agentes que tocan el mismo archivo se ponen en cola, sin sobrescribir nada.",
     "squad_plan_tail1": "DocMind (líder) es dueño del plan y ejecuta el paso de revisión",
     "squad_plan_tail2": "y cierra el trabajo solo cuando pasa la auditoría de perfección.",
-    "mobile_usage": "uso: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "uso: /mobil (alternar) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "dispositivo",
     "mobile_row_mode": "modo móvil",
     "mobile_row_glyphs": "glifos",
@@ -1605,6 +1715,17 @@ def _dm_module_01():
     "mobile_row_width": "ancho",
     "mobile_device_phone": "teléfono/tableta (Termux)",
     "mobile_device_desktop": "escritorio",
+    "mobile_mode_on": "Modo móvil ACTIVADO (diseño compacto, glifos simples). Escribe /mobil otra vez para desactivarlo.",
+    "mobile_mode_off": "Modo móvil desactivado (ancho y glifos normales).",
+    "mobile_not_needed": "El modo móvil solo se aplica a teléfono o tableta; este dispositivo es un ordenador, no se cambió nada.",
+    "mobile_state_on": "ACTIVO",
+    "mobile_state_off": "INACTIVO",
+    "mobile_row_phone_yes": "teléfono/tableta",
+    "mobile_row_phone_no": "ordenador",
+    "mobile_glyphs_ascii": "Glifos ajustados a ASCII simple.",
+    "mobile_glyphs_unicode": "Glifos ajustados a Unicode/emoji.",
+    "mobile_font_hint": "Si los glifos aparecen como cuadros: /mobil ascii",
+    "mobile_startup_active": "El modo móvil está activo. Escribe /mobil otra vez para desactivarlo.",
     "aggressive_audit_advisory": "Estos hallazgos ya existían en archivos que este turno no tocó; no bloquean el turno, pero conviene corregirlos después.",
     "aggressive_audit_clean": "Auditoría de perfección limpia: sin errores de sintaxis, trabajo a medias ni patrones de error sospechosos ({files} archivos revisados).",
     "aggressive_audit_gave_up": "La auditoría no pudo resolver {count} incidencia(s) en 3 rondas; el turno se cerró para evitar un bucle infinito.",
@@ -1936,7 +2057,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "les agents qui touchent le même fichier sont mis en file, rien n'est écrasé.",
     "squad_plan_tail1": "DocMind (chef) possède le plan et exécute l'étape de vérification",
     "squad_plan_tail2": "et ne clôt le travail qu'après l'audit de perfection.",
-    "mobile_usage": "usage : /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "usage : /mobil (basculer) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "appareil",
     "mobile_row_mode": "mode mobile",
     "mobile_row_glyphs": "glyphes",
@@ -1944,6 +2065,17 @@ def _dm_module_01():
     "mobile_row_width": "largeur",
     "mobile_device_phone": "téléphone/tablette (Termux)",
     "mobile_device_desktop": "ordinateur",
+    "mobile_mode_on": "Mode mobile ACTIVÉ (affichage compact, glyphes simples). Tapez /mobil à nouveau pour le couper.",
+    "mobile_mode_off": "Mode mobile désactivé (largeur et glyphes normaux).",
+    "mobile_not_needed": "Le mode mobile ne concerne que téléphone ou tablette ; cet appareil est un ordinateur, rien n'a changé.",
+    "mobile_state_on": "ACTIF",
+    "mobile_state_off": "INACTIF",
+    "mobile_row_phone_yes": "téléphone/tablette",
+    "mobile_row_phone_no": "ordinateur",
+    "mobile_glyphs_ascii": "Glyphes réglés sur ASCII simple.",
+    "mobile_glyphs_unicode": "Glyphes réglés sur Unicode/emoji.",
+    "mobile_font_hint": "Si les glyphes s'affichent en carrés : /mobil ascii",
+    "mobile_startup_active": "Le mode mobile est actif. Tapez /mobil à nouveau pour le couper.",
     "aggressive_audit_advisory": "Ces constats existaient déjà dans des fichiers non modifiés pendant ce tour ; ils ne bloquent pas le tour mais doivent être corrigés plus tard.",
     "aggressive_audit_clean": "Audit de perfection propre : aucune erreur de syntaxe, travail inachevé ou motif d'erreur suspect ({files} fichiers analysés).",
     "aggressive_audit_gave_up": "L'audit n'a pas pu éliminer {count} problème(s) en 3 tours ; le tour a été clos pour éviter une boucle infinie.",
@@ -2275,7 +2407,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "агенты с общим файлом ставятся в очередь, ничего не перезаписывается.",
     "squad_plan_tail1": "DocMind (ведущий) владеет планом и выполняет шаг проверки",
     "squad_plan_tail2": "и закрывает работу только после аудита совершенства.",
-    "mobile_usage": "использование: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "использование: /mobil (переключить) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "устройство",
     "mobile_row_mode": "мобильный режим",
     "mobile_row_glyphs": "символы",
@@ -2283,6 +2415,17 @@ def _dm_module_01():
     "mobile_row_width": "ширина",
     "mobile_device_phone": "телефон/планшет (Termux)",
     "mobile_device_desktop": "компьютер",
+    "mobile_mode_on": "Мобильный режим ВКЛЮЧЁН (компактная разметка, простые символы). Ещё раз /mobil — выключить.",
+    "mobile_mode_off": "Мобильный режим выключен (обычная ширина и символы).",
+    "mobile_not_needed": "Мобильный режим действует только на телефоне или планшете; это устройство — компьютер, ничего не изменилось.",
+    "mobile_state_on": "ВКЛ",
+    "mobile_state_off": "ВЫКЛ",
+    "mobile_row_phone_yes": "телефон/планшет",
+    "mobile_row_phone_no": "компьютер",
+    "mobile_glyphs_ascii": "Символы переключены на простой ASCII.",
+    "mobile_glyphs_unicode": "Символы переключены на Unicode/эмодзи.",
+    "mobile_font_hint": "Если символы видны как квадраты: /mobil ascii",
+    "mobile_startup_active": "Мобильный режим включён. Чтобы выключить, введите /mobil ещё раз.",
     "aggressive_audit_advisory": "Эти замечания существовали в файлах, которые этот ход не затрагивал; они не блокируют ход, но их следует исправить позже.",
     "aggressive_audit_clean": "Аудит совершенства пройден: ошибок синтаксиса, незавершённой работы и подозрительных шаблонов ошибок нет (проверено файлов: {files}).",
     "aggressive_audit_gave_up": "Аудит не смог устранить {count} замечани(й) за 3 круга; ход закрыт, чтобы не уйти в бесконечный цикл.",
@@ -2614,7 +2757,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "eyni fayla toxunan ajanlar növbəyə qoyulur, heç nə üzərinə yazılmır.",
     "squad_plan_tail1": "DocMind (lider) planın sahibidir və yoxlama addımını özü icra edir",
     "squad_plan_tail2": "və işi yalnız mükəmməllik auditindən sonra bağlayır.",
-    "mobile_usage": "istifadə: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "istifadə: /mobil (aç/bağla) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "cihaz",
     "mobile_row_mode": "mobil rejim",
     "mobile_row_glyphs": "qliflər",
@@ -2622,6 +2765,17 @@ def _dm_module_01():
     "mobile_row_width": "en",
     "mobile_device_phone": "telefon/planşet (Termux)",
     "mobile_device_desktop": "masaüstü",
+    "mobile_mode_on": "Mobil rejim AÇIQDIR (yığcam düzən, sadə qliklər). Söndürmək üçün yenidən /mobil yazın.",
+    "mobile_mode_off": "Mobil rejim söndürüldü (normal en və qliklər).",
+    "mobile_not_needed": "Mobil rejim yalnız telefon/planşet üçündür; bu cihaz kompüterdir, heç nə dəyişmədi.",
+    "mobile_state_on": "AÇIQ",
+    "mobile_state_off": "SÖNÜK",
+    "mobile_row_phone_yes": "telefon/planşet",
+    "mobile_row_phone_no": "kompüter",
+    "mobile_glyphs_ascii": "Qliklər sadə ASCII-yə keçirildi.",
+    "mobile_glyphs_unicode": "Qliklər Unicode/emoji-yə keçirildi.",
+    "mobile_font_hint": "Qliklər kvadrat görünürsə: /mobil ascii",
+    "mobile_startup_active": "Mobil rejim açıqdır. Söndürmək üçün yenidən /mobil yazın.",
     "aggressive_audit_advisory": "Bu tapıntılar bu turda toxunulmayan fayllarda əvvəldən var idi; turu bloklamır, amma sonra düzəldilməlidir.",
     "aggressive_audit_clean": "Mükəmməllik auditi təmizdir: sintaksis xətası, yarımçıq iş və ya şübhəli xəta nümunəsi tapılmadı ({files} fayl yoxlanıldı).",
     "aggressive_audit_gave_up": "Audit 3 raundda {count} problemi həll edə bilmədi; sonsuz dövrəyə düşməmək üçün tur bağlandı.",
@@ -2953,7 +3107,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "gli agenti sullo stesso file vanno in coda, così nulla viene sovrascritto.",
     "squad_plan_tail1": "DocMind (capo) possiede il piano ed esegue la revisione finale",
     "squad_plan_tail2": "e chiude il lavoro solo dopo l'audit di perfezione.",
-    "mobile_usage": "uso: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "uso: /mobil (attiva/disattiva) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "dispositivo",
     "mobile_row_mode": "modalità mobile",
     "mobile_row_glyphs": "glifi",
@@ -2961,6 +3115,17 @@ def _dm_module_01():
     "mobile_row_width": "larghezza",
     "mobile_device_phone": "telefono/tablet (Termux)",
     "mobile_device_desktop": "desktop",
+    "mobile_mode_on": "Modalità mobile ATTIVA (layout compatto, glifi semplici). Digita /mobil di nuovo per disattivarla.",
+    "mobile_mode_off": "Modalità mobile disattivata (larghezza e glifi normali).",
+    "mobile_not_needed": "La modalità mobile vale solo per telefono o tablet; questo dispositivo è un computer, nulla è cambiato.",
+    "mobile_state_on": "ATTIVA",
+    "mobile_state_off": "DISATTIVA",
+    "mobile_row_phone_yes": "telefono/tablet",
+    "mobile_row_phone_no": "computer",
+    "mobile_glyphs_ascii": "Glifi impostati su ASCII semplice.",
+    "mobile_glyphs_unicode": "Glifi impostati su Unicode/emoji.",
+    "mobile_font_hint": "Se i glifi appaiono come quadrati: /mobil ascii",
+    "mobile_startup_active": "La modalità mobile è attiva. Digita /mobil di nuovo per disattivarla.",
     "aggressive_audit_advisory": "Queste segnalazioni esistevano già in file non modificati in questo turno; non bloccano il turno ma vanno corrette in seguito.",
     "aggressive_audit_clean": "Audit di perfezione pulito: nessun errore di sintassi, lavoro incompleto o pattern di errore sospetti ({files} file analizzati).",
     "aggressive_audit_gave_up": "L'audit non è riuscito a chiudere {count} problema/i in 3 passaggi; il turno è stato chiuso per evitare un ciclo infinito.",
@@ -3292,7 +3457,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "agentes no mesmo ficheiro entram em fila, nada é sobrescrito.",
     "squad_plan_tail1": "O DocMind (líder) é dono do plano e executa a revisão final",
     "squad_plan_tail2": "e só fecha o trabalho quando a auditoria de perfeição passa.",
-    "mobile_usage": "utilização: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "uso: /mobil (alternar) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "dispositivo",
     "mobile_row_mode": "modo móvel",
     "mobile_row_glyphs": "glifos",
@@ -3300,6 +3465,17 @@ def _dm_module_01():
     "mobile_row_width": "largura",
     "mobile_device_phone": "telemóvel/tablet (Termux)",
     "mobile_device_desktop": "computador",
+    "mobile_mode_on": "Modo móvel ATIVADO (layout compacto, glifos simples). Escreva /mobil outra vez para desativar.",
+    "mobile_mode_off": "Modo móvel desativado (largura e glifos normais).",
+    "mobile_not_needed": "O modo móvel só se aplica a telefone ou tablet; este dispositivo é um computador, nada foi alterado.",
+    "mobile_state_on": "ATIVO",
+    "mobile_state_off": "INATIVO",
+    "mobile_row_phone_yes": "telefone/tablet",
+    "mobile_row_phone_no": "computador",
+    "mobile_glyphs_ascii": "Glifos definidos para ASCII simples.",
+    "mobile_glyphs_unicode": "Glifos definidos para Unicode/emoji.",
+    "mobile_font_hint": "Se os glifos aparecerem como quadrados: /mobil ascii",
+    "mobile_startup_active": "O modo móvel está ativo. Escreva /mobil outra vez para desativar.",
     "aggressive_audit_advisory": "Estes achados já existiam em ficheiros que este turno não alterou; não bloqueiam o turno, mas devem ser corrigidos depois.",
     "aggressive_audit_clean": "Auditoria de perfeição limpa: sem erros de sintaxe, trabalho inacabado ou padrões de erro suspeitos ({files} ficheiros analisados).",
     "aggressive_audit_gave_up": "A auditoria não resolveu {count} problema(s) em 3 rondas; o turno foi encerrado para evitar um ciclo infinito.",
@@ -3631,7 +3807,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "agenten op hetzelfde bestand komen in de wachtrij, niets wordt overschreven.",
     "squad_plan_tail1": "DocMind (leider) bezit het plan en voert de controle uit",
     "squad_plan_tail2": "en sluit het werk pas als de perfectie-audit slaagt.",
-    "mobile_usage": "gebruik: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "gebruik: /mobil (wisselen) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "apparaat",
     "mobile_row_mode": "mobiele modus",
     "mobile_row_glyphs": "tekens",
@@ -3639,6 +3815,17 @@ def _dm_module_01():
     "mobile_row_width": "breedte",
     "mobile_device_phone": "telefoon/tablet (Termux)",
     "mobile_device_desktop": "desktop",
+    "mobile_mode_on": "Mobiele modus AAN (compacte layout, eenvoudige tekens). Typ /mobil opnieuw om uit te zetten.",
+    "mobile_mode_off": "Mobiele modus uit (normale breedte en tekens).",
+    "mobile_not_needed": "Mobiele modus geldt alleen voor telefoon of tablet; dit apparaat is een computer, er is niets gewijzigd.",
+    "mobile_state_on": "AAN",
+    "mobile_state_off": "UIT",
+    "mobile_row_phone_yes": "telefoon/tablet",
+    "mobile_row_phone_no": "computer",
+    "mobile_glyphs_ascii": "Tekens op eenvoudige ASCII gezet.",
+    "mobile_glyphs_unicode": "Tekens op Unicode/emoji gezet.",
+    "mobile_font_hint": "Verschijnen tekens als blokjes: /mobil ascii",
+    "mobile_startup_active": "Mobiele modus staat aan. Typ /mobil opnieuw om uit te zetten.",
     "aggressive_audit_advisory": "Deze bevindingen bestonden al in bestanden die deze beurt niet aanraakte; ze blokkeren de beurt niet, maar moeten later worden opgelost.",
     "aggressive_audit_clean": "Perfectie-audit schoon: geen syntaxfouten, onaf werk of verdachte foutpatronen ({files} bestanden gescand).",
     "aggressive_audit_gave_up": "De audit kon {count} punt(en) niet oplossen in 3 rondes; de beurt is gesloten om een eindeloze lus te voorkomen.",
@@ -3970,7 +4157,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "الوكلاء الذين يلمسون الملف نفسه يدخلون في انتظار، فلا يُطمس أي عمل.",
     "squad_plan_tail1": "DocMind (القائد) يملك الخطة وينفذ خطوة المراجعة",
     "squad_plan_tail2": "ولا يغلق العمل إلا بعد نجاح تدقيق الإتقان.",
-    "mobile_usage": "الاستخدام: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "الاستخدام: /mobil (تبديل) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "الجهاز",
     "mobile_row_mode": "الوضع المتنقل",
     "mobile_row_glyphs": "الرموز",
@@ -3978,6 +4165,17 @@ def _dm_module_01():
     "mobile_row_width": "العرض",
     "mobile_device_phone": "هاتف/جهاز لوحي (Termux)",
     "mobile_device_desktop": "سطح المكتب",
+    "mobile_mode_on": "الوضع المحمول مُفعَّل (تخطيط مُدمج ورموز بسيطة). اكتب /mobil مرة أخرى للإيقاف.",
+    "mobile_mode_off": "تم إيقاف الوضع المحمول (العرض والرموز عادية).",
+    "mobile_not_needed": "الوضع المحمول يخص الهاتف أو الجهاز اللوحي فقط؛ هذا الجهاز حاسوب، لم يتغير شيء.",
+    "mobile_state_on": "مُفعَّل",
+    "mobile_state_off": "مُعطَّل",
+    "mobile_row_phone_yes": "هاتف/جهاز لوحي",
+    "mobile_row_phone_no": "حاسوب",
+    "mobile_glyphs_ascii": "تم ضبط الرموز على ASCII بسيط.",
+    "mobile_glyphs_unicode": "تم ضبط الرموز على Unicode/إيموجي.",
+    "mobile_font_hint": "إذا ظهرت الرموز مربعات: /mobil ascii",
+    "mobile_startup_active": "الوضع المحمول مُفعَّل. اكتب /mobil مرة أخرى للإيقاف.",
     "aggressive_audit_advisory": "هذه الملاحظات كانت موجودة مسبقاً في ملفات لم يلمسها هذا الدور؛ لا توقف الدور لكن يجب إصلاحها لاحقاً.",
     "aggressive_audit_clean": "تدقيق الإتقان نظيف: لا أخطاء صياغة ولا عمل ناقص ولا أنماط خطأ مشبوهة ({files} ملفاً تم فحصه).",
     "aggressive_audit_gave_up": "لم يتمكن التدقيق من حل {count} مشاهدة في 3 جولات؛ تم إغلاق الدور لتجنب حلقة لا نهائية.",
@@ -4309,7 +4507,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "操作同一文件的智能体会排队，不会互相覆盖。",
     "squad_plan_tail1": "DocMind（主控）负责计划并执行最后的审核步骤",
     "squad_plan_tail2": "只有在完美性审核通过后才结束任务。",
-    "mobile_usage": "用法：/mobile on|off|ascii|unicode|status",
+    "mobile_usage": "用法：/mobil（切换） | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "设备",
     "mobile_row_mode": "移动模式",
     "mobile_row_glyphs": "符号",
@@ -4317,6 +4515,17 @@ def _dm_module_01():
     "mobile_row_width": "宽度",
     "mobile_device_phone": "手机/平板（Termux）",
     "mobile_device_desktop": "桌面",
+    "mobile_mode_on": "移动模式已开启（紧凑布局、简单符号）。再次输入 /mobil 即可关闭。",
+    "mobile_mode_off": "移动模式已关闭（正常宽度和符号）。",
+    "mobile_not_needed": "移动模式只适用于手机或平板；此设备是电脑，未做任何更改。",
+    "mobile_state_on": "开启",
+    "mobile_state_off": "关闭",
+    "mobile_row_phone_yes": "手机/平板",
+    "mobile_row_phone_no": "电脑",
+    "mobile_glyphs_ascii": "符号已切换为简单 ASCII。",
+    "mobile_glyphs_unicode": "符号已切换为 Unicode/表情。",
+    "mobile_font_hint": "如果符号显示为方块：/mobil ascii",
+    "mobile_startup_active": "移动模式已开启。再次输入 /mobil 即可关闭。",
     "aggressive_audit_advisory": "这些发现在本轮未改动的文件中早已存在；它们不会阻止本轮，但之后应修复。",
     "aggressive_audit_clean": "完美性审核通过：未发现语法错误、未完成的工作或可疑的错误模式（已检查 {files} 个文件）。",
     "aggressive_audit_gave_up": "完美性审核在 3 轮内无法清除 {count} 个问题；为避免无限循环，本轮已关闭。",
@@ -4648,7 +4857,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "同じファイルを扱うエージェントは待機するため、上書きは起きません。",
     "squad_plan_tail1": "DocMind（リード）が計画を持ち、最終確認を実行します",
     "squad_plan_tail2": "完璧性監査を通過したときだけ作業を終了します。",
-    "mobile_usage": "使い方：/mobile on|off|ascii|unicode|status",
+    "mobile_usage": "使い方: /mobil（切り替え） | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "デバイス",
     "mobile_row_mode": "モバイルモード",
     "mobile_row_glyphs": "記号",
@@ -4656,6 +4865,17 @@ def _dm_module_01():
     "mobile_row_width": "幅",
     "mobile_device_phone": "スマートフォン/タブレット（Termux）",
     "mobile_device_desktop": "デスクトップ",
+    "mobile_mode_on": "モバイルモードはオンです（コンパクト表示、簡易記号）。もう一度 /mobil で解除します。",
+    "mobile_mode_off": "モバイルモードはオフです（通常の幅と記号）。",
+    "mobile_not_needed": "モバイルモードはスマートフォン／タブレット専用です。この端末はコンピューターなので何も変わりません。",
+    "mobile_state_on": "オン",
+    "mobile_state_off": "オフ",
+    "mobile_row_phone_yes": "スマートフォン/タブレット",
+    "mobile_row_phone_no": "コンピューター",
+    "mobile_glyphs_ascii": "記号をシンプルな ASCII に設定しました。",
+    "mobile_glyphs_unicode": "記号を Unicode/絵文字に設定しました。",
+    "mobile_font_hint": "記号が四角に見える場合: /mobil ascii",
+    "mobile_startup_active": "モバイルモードはオンです。解除するには /mobil をもう一度入力してください。",
     "aggressive_audit_advisory": "これらの指摘は今回触れていないファイルに以前から存在するものです。ターンは止めませんが、後で修正してください。",
     "aggressive_audit_clean": "完璧性監査はクリーンです：構文エラー、未完了の作業、疑わしいエラーパターンはありません（{files} ファイルを検査）。",
     "aggressive_audit_gave_up": "完璧性監査は3ラウンドで {count} 件の問題を解消できませんでした。無限ループを避けるためターンを終了しました。",
@@ -4987,7 +5207,7 @@ def _dm_module_01():
     "squad_help_parallel_note2": "같은 파일을 다루는 에이전트는 대기하므로 덮어쓰지 않습니다.",
     "squad_plan_tail1": "DocMind(리드)가 계획을 소유하고 최종 검토를 수행합니다",
     "squad_plan_tail2": "완벽성 감사를 통과한 뒤에만 작업을 마칩니다.",
-    "mobile_usage": "사용법: /mobile on|off|ascii|unicode|status",
+    "mobile_usage": "사용법: /mobil(전환) | /mobil on|off|ascii|unicode|status",
     "mobile_row_device": "기기",
     "mobile_row_mode": "모바일 모드",
     "mobile_row_glyphs": "기호",
@@ -4995,6 +5215,17 @@ def _dm_module_01():
     "mobile_row_width": "너비",
     "mobile_device_phone": "휴대폰/태블릿(Termux)",
     "mobile_device_desktop": "데스크톱",
+    "mobile_mode_on": "모바일 모드가 켜졌습니다(간결한 레이아웃, 간단한 기호). 다시 /mobil 을 입력하면 꺼집니다.",
+    "mobile_mode_off": "모바일 모드가 꺼졌습니다(일반 너비와 기호).",
+    "mobile_not_needed": "모바일 모드는 휴대폰이나 태블릿에만 적용됩니다. 이 기기는 컴퓨터이므로 아무것도 바뀌지 않았습니다.",
+    "mobile_state_on": "켜짐",
+    "mobile_state_off": "꺼짐",
+    "mobile_row_phone_yes": "휴대폰/태블릿",
+    "mobile_row_phone_no": "컴퓨터",
+    "mobile_glyphs_ascii": "기호를 간단한 ASCII 로 설정했습니다.",
+    "mobile_glyphs_unicode": "기호를 Unicode/이모지로 설정했습니다.",
+    "mobile_font_hint": "기호가 네모로 보이면: /mobil ascii",
+    "mobile_startup_active": "모바일 모드가 켜져 있습니다. 끄려면 /mobil 을 다시 입력하세요.",
     "aggressive_audit_advisory": "이 발견 사항은 이번 턴에서 수정하지 않은 파일에 이미 있던 것입니다. 턴을 막지는 않지만 나중에 고쳐야 합니다.",
     "aggressive_audit_clean": "완벽성 감사 통과: 구문 오류, 미완성 작업, 의심스러운 오류 패턴이 없습니다({files}개 파일 확인).",
     "aggressive_audit_gave_up": "완벽성 감사가 3라운드 안에 {count}개 문제를 해결하지 못했습니다. 무한 반복을 막기 위해 턴을 종료했습니다.",
@@ -7435,9 +7666,8 @@ def _dm_module_07b():
      return False
    except Exception:
      return False
- if _DM_MOBILE and not str(os.environ.get("DOCMIND_ASCII", "") or os.environ.get("DOCMIND_GLYPHS", "")).strip():
-     # phones / Termux: prefer the plain ASCII glyph set unless the user overrides it
-     os.environ["DOCMIND_ASCII"] = "1"
+ # Mobile mode (switched with /mobil) decides the glyph set at runtime; forcing
+ # ASCII here would make the switch one-way and never restore Unicode.
  _FORCE_ASCII = str(os.environ.get("DOCMIND_ASCII", "") or os.environ.get("DOCMIND_GLYPHS", "")).strip().lower()
  ASCII_GLYPHS = bool(_FORCE_ASCII and _FORCE_ASCII not in ("0", "false", "no", "off", "unicode", "utf8", "utf-8")) \
    or not _encoding_supports_glyphs(TERMINAL_ENCODING)
@@ -7533,6 +7763,8 @@ def _dm_module_07b():
    return bool(_INSTALLED)
  def glyph(symbol: str, fallback: str) -> str:
    """Pick the fancy symbol when the terminal can render it, else the fallback."""
+   if _DM_MOBILE_MODE:
+     return fallback
    return symbol if not ASCII_GLYPHS else fallback
  return locals()
 _dm_install('docmind.core.sanitize', _dm_module_07b, False)
@@ -13622,7 +13854,9 @@ def _dm_module_18():
      self._footer = status
      self._compact_footer = compact
      rows, cols = self._size()
-     if not self.ansi or rows < 8 or cols < 30:
+     # A full-screen footer on a phone eats half the message: mobile mode, or any
+     # terminal narrower than a phone in landscape, keeps it off.
+     if _DM_MOBILE_MODE or not self.ansi or rows < 8 or cols < 46:
        return False
      with self.lock:
        self._rows = rows
@@ -14116,18 +14350,14 @@ def _dm_module_20():
    def _paint(self, text: str, style: str) -> str:
      return "\x1b[" + style + "m" + text + "\x1b[0m" if self.view.color else text
    def print_mobile_startup_hint(self) -> None:
-     """One short, localised line: on a phone/tablet use /mobil (/mobile)."""
+     """On a phone only: how to use /mobil (it is a switch, not a command)."""
      try:
-       msg = glyph("📱 ", "") + t("mobile_startup_hint")
-       on_phone = False
-       try:
-         on_phone = bool(_DM_MOBILE)
-       except Exception:
-         on_phone = False
-       if on_phone:
-         self.info(msg)
-       else:
-         self.show_inline_status(msg)
+       if not _DM_PHONE_DEVICE:
+         return
+       if _DM_MOBILE_MODE:
+         self.info(t("mobile_startup_active"))
+         return
+       self.info(glyph("📱 ", "") + t("mobile_startup_hint"))
      except Exception:
        pass
    def print_startup_authority_warning(self) -> None:
@@ -16658,13 +16888,16 @@ def _dm_module_24():
     os_family = os_prof.get("os_family", platform.system())
     pkg_str = ", ".join(os_prof.get("pkg_managers") or []) or "none detected"
     dev_str = ", ".join(os_prof.get("dev_tools") or []) or "python"
-    device_kind = "phone or tablet (Termux/Android)" if _DM_MOBILE else "computer / desktop"
+    device_kind = "phone or tablet (Termux/Android)" if _DM_PHONE_DEVICE else "computer / desktop"
     device_line = "- Device: " + device_kind
     if _DM_STORAGE_ROOT:
       device_line += " | shared storage root: " + _DM_STORAGE_ROOT
-    if _DM_MOBILE:
-      device_line += ("\n- Mobile rules: keep output under ~44 columns, prefer short paths, never "
-                      "assume a desktop GUI, and use the storage root above for photos/downloads.")
+    if _DM_MOBILE_MODE:
+      device_line += ("\n- Mobile mode is ON: keep output under ~44 columns, prefer short "
+                      "paths, never assume a desktop GUI, and use the storage root above for "
+                      "photos/downloads.")
+    elif _DM_PHONE_DEVICE:
+      device_line += " | mobile mode is off (the user switched it off with /mobil)"
     mode_desc = (
       "Full Auto for file operations (terminal/Python commands STILL ask explicit user permission first)"
       if self.config_mgr.config.permission_mode == "auto"
@@ -19007,29 +19240,80 @@ def _dm_module_25():
     return
 
   def _handle_mobile(self, arg: str) -> None:
-    """v1.3: /mobil (or /mobile) on|off|ascii|unicode|status -> phone fidelity."""
+    """v1.3: on a phone /mobil is a switch; on a computer it changes nothing.
+
+    The old version wrote a setting nothing read: it could be "enabled" on a
+    desktop and had no effect on a phone either.  Now the bare command toggles
+    the mode (on -> off -> on ...) and applies it immediately.
+    """
     cfg = self.cfg_mgr.config
-    value = (arg or "").strip().lower()
-    if value in ("on", "1", "true", "aç", "ac"):
-      cfg.mobile_mode = True
-    elif value in ("off", "0", "false", "kapat"):
-      cfg.mobile_mode = False
-    elif value in ("ascii", "plain", "safe"):
+    value = (arg or "").strip().lower().replace("\u0307", "")
+    if value == "toggle":
+      value = ""
+    if value in ("ascii", "plain", "safe"):
       cfg.glyph_mode = "ascii"
-    elif value in ("unicode", "emoji", "fancy"):
+      self.cfg_mgr.save()
+      self._apply_mobile_look()
+      self.ui.success(t("mobile_glyphs_ascii"))
+      return
+    if value in ("unicode", "emoji", "fancy"):
       cfg.glyph_mode = "unicode"
-    elif value not in ("", "status", "durum"):
+      self.cfg_mgr.save()
+      self._apply_mobile_look()
+      self.ui.success(t("mobile_glyphs_unicode"))
+      return
+    if value in ("status", "durum"):
+      self._render_mobile_panel()
+      return
+    if value in ("off", "0", "false", "kapat"):
+      wanted = False
+    elif value in ("on", "1", "true", "aç", "ac"):
+      wanted = True
+    elif value == "":
+      wanted = not bool(getattr(cfg, "mobile_mode", False))
+    else:
       self.ui.warn(t("mobile_usage"))
       return
+    if not _DM_PHONE_DEVICE:
+      # A computer already has the full layout; there is nothing to switch on.
+      cfg.mobile_mode = False
+      _dm_set_mobile_mode(False)
+      self.cfg_mgr.save()
+      self.ui.warn(t("mobile_not_needed"))
+      self._render_mobile_panel()
+      return
+    cfg.mobile_mode = bool(wanted)
+    _dm_set_mobile_mode(cfg.mobile_mode)
     self.cfg_mgr.save()
+    self._apply_mobile_look()
+    if cfg.mobile_mode:
+      self.ui.success(t("mobile_mode_on"))
+    else:
+      self.ui.info(t("mobile_mode_off"))
+    self._render_mobile_panel()
+
+  def _apply_mobile_look(self) -> None:
+    """Make the switch visible at once: footer, prompt and glyphs."""
+    try:
+      if _DM_MOBILE_MODE and getattr(self.ui.view, "footer_active", False):
+        self.ui.view.stop_footer()
+      else:
+        self.ui.refresh_footer()
+    except Exception:
+      pass
+
+  def _render_mobile_panel(self) -> None:
+    cfg = self.cfg_mgr.config
+    device = t("mobile_row_phone_yes") if _DM_PHONE_DEVICE else t("mobile_row_phone_no")
+    mode = t("mobile_state_on") if getattr(cfg, "mobile_mode", False) else t("mobile_state_off")
     body = "\n".join([
-      t("mobile_row_device") + ": " + (t("mobile_device_phone") if _DM_MOBILE else t("mobile_device_desktop")),
-      t("mobile_row_mode") + ": " + ("ON" if getattr(cfg, "mobile_mode", False) else "OFF"),
+      t("mobile_row_device") + ": " + device,
+      t("mobile_row_mode") + ": " + mode,
       t("mobile_row_glyphs") + ": " + str(getattr(cfg, "glyph_mode", "auto")),
       t("mobile_row_storage") + ": " + (_DM_STORAGE_ROOT or "-"),
       t("mobile_row_width") + ": " + (_dm_os.environ.get("TERM_WIDTH") or "auto"),
       "",
-      "Overrides: DOCMIND_MOBILE=1 | DOCMIND_MOBILE=0 | DOCMIND_ASCII=1",
+      t("mobile_font_hint"),
     ])
     self.ui.print_panel("MOBILE / TERMUX", body, style="bright_green")
     return
@@ -19445,6 +19729,8 @@ def _dm_module_26():
     return 0
   cfg_mgr = ConfigManager()
   cfg = cfg_mgr.config
+  # /mobil is remembered across starts; a desktop always comes back with it off.
+  _dm_set_mobile_mode(bool(getattr(cfg, "mobile_mode", False)))
   history_path = cfg_mgr.home_dir / "history.txt"
   ui = ConsoleUI(history_file=history_path)
   one_shot_prompt = " ".join(args.prompt).strip() if args.prompt else ""
@@ -19606,6 +19892,14 @@ def _dm_module_26():
     while True:
       try:
         user_text = ui.ask("DocMind ❯ ", allow_multiline=True)
+        try:
+          interactive = bool(sys.stdin and sys.stdin.isatty())
+        except (ValueError, OSError):
+          interactive = False
+        if not interactive:
+          # Piped input is not echoed by the terminal, so end the prompt line
+          # ourselves; otherwise the answer starts on "DocMind ❯".
+          ui.newline()
         consecutive_ctrl_c = 0
       except KeyboardInterrupt:
         print()

@@ -90,6 +90,19 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 - **Squad failure messages** now interpolate the error correctly instead of printing the literal
   `{err}` placeholder.
 
+### Changed — `/mobil` is now a real switch, and only on a phone
+- **On a phone / tablet** `/mobil` toggles mobile mode: first use turns it on (compact layout, plain
+  glyphs, no full-screen footer, mobile rules in the system prompt), using it again turns it off. The
+  saved choice survives a restart, `DOCMIND_MOBILE_MODE` reports it, `/mobil on|off` still forces a state
+  and `/mobil status` prints the panel.
+- **On a computer** `/mobil` no longer pretends to do something: it says mobile mode only applies to a
+  phone or tablet, changes nothing, and even a narrow desktop window is not treated as a phone. The
+  startup `/mobil` note is printed on phones only, because a computer has nothing to switch.
+- Narrow terminals (fewer than 46 columns) no longer get the full-screen footer: it used to eat half of
+  every message on a phone.
+- Piped input (`printf "/mobil\n" | docmind`) now ends the prompt line before printing the reply instead
+  of gluing the answer onto `DocMind ❯`.
+
 ### Changed
 - Warning and permission text now says **"your device"** instead of "your computer" (English, German,
   Italian, Dutch), so it reads correctly on a phone, tablet or desktop.

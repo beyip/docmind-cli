@@ -415,13 +415,25 @@ que lo haga?` · `Как это сделать?` · `どのように進めます
 
 ### Phone or tablet? use `/mobil`
 
-Every start prints one line in your language:
+On a phone or tablet every start prints one line in your language:
 
 ```
 [i] Telefondan veya tabletten kullanıyorsanız /mobil yazarak mobil modu açın (genişlik, klavye ve glif uyumu).
 ```
 
-`/mobil` and `/mobile` are the same command (`/mobil on|off|ascii|unicode|status`).
+`/mobil` and `/mobile` are the same command, and on a phone it is a **switch**:
+
+| Command | Phone / tablet | Computer |
+|---|---|---|
+| `/mobil` | turns mobile mode **on**; again turns it **off** | says mobile mode only applies to a phone/tablet, changes nothing |
+| `/mobil on` · `/mobil off` | forces the state | still nothing |
+| `/mobil status` | panel: device, mode, glyphs, storage, width | same panel, mode always OFF |
+| `/mobil ascii` · `/mobil unicode` | plain glyphs · fancy glyphs | glyph preference only |
+
+Mobile mode is remembered between starts. While it is on: the layout stays inside phone width, glyphs
+are plain ASCII unless you chose otherwise, the full-screen footer is off, the prompt is short and the
+model is told to keep answers narrow. A terminal narrower than 46 columns is treated the same way even
+without the switch, because a full-screen footer there hides half of every answer.
 
 ### Streaming that cannot end up half printed
 

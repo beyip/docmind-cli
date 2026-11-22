@@ -1,7 +1,7 @@
 # v1.3 yama #3 — "mesaj terminalde yarım kalıyor" + genel hata taraması
 
 Sürüm **v1.3** (v1.4 yok). `__version__ = "1.3"`.
-sha256 `46f3ec72fa70b8e24ee150c4d9468c864ccb0c18ba1de8c3405fed58bcb8205f` · 1.078.915 bayt.
+sha256 `7e4bd8a60885f9e5a7b0cc4b8098ee02a9505f13a36348cc7b1bc4aaad568fa5` · 1.096.296 bayt.
 
 ## 1) Sorunun gerçek sebebi
 Akış halinde (stream) gelen metin, satır tamamlanmadan **olduğu gibi** terminale yazılıyordu. Uzun satırı
@@ -50,3 +50,11 @@ oluyordu — çünkü ilk akış satırı `DocMind: ` etiketinin kapladığı 9 
 
 ## 5) Nerede
 `beyip/docmind-cli` · `main` · commit `64195bb` · release v1.3 asset `DocMind.py` (1.078.915 bayt)
+
+## 6) Ek: `/mobil` gerçek anahtar (aynı sürüm, v1.3)
+- Telefonda `/mobil` → aç, tekrar `/mobil` → kapat (on/off döngüsü), seçim kalıcı.
+- Bilgisayarda `/mobil` → hiçbir şey değişmez, "bu cihaz bilgisayar" der; dar pencere de telefon sayılmaz.
+- Açıkken: kompakt düzen, sade glifler, tam ekran altlık yok, prompt `DM:` , modele dar yazma kuralı.
+- 46 sütundan dar terminallerde altlık zaten kapalı; boru hattı girişinde cevap prompt satırına yapışmıyor.
+
+**sha256 (bu build):** `7e4bd8a60885f9e5a7b0cc4b8098ee02a9505f13a36348cc7b1bc4aaad568fa5` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
