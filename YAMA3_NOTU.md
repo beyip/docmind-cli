@@ -103,7 +103,7 @@ ve prompt'un üzerine basılıyor.
 | 7 | Satır içi durum yalnız gerçek TTY'de çiziliyor (boruya yazarken kirlilik yok). |
 
 ### Doğrulama — gerçek terminal ızgarası (pty ekran emülatörü)
-`screen_check.py` gerçek bir pty açar, `/mobil`, `/mobil status` ve `/quit` komutlarını yazar, ANSI kodlarını
+pty ekran emülatörü gerçek bir pty açar, `/mobil`, `/mobil status` ve `/quit` komutlarını yazar, ANSI kodlarını
 (imleç hareketi, `ESC[J`/`ESC[K`, kaydırma bölgesi `ESC[r`, kaydet/geri yükle) uygulayıp **ekranı** çizer ve
 üzerine yazılan hücreleri sayar. (Basit `len()` kontrolü bu hatayı görmüyordu.)
 
@@ -142,7 +142,7 @@ görünmüyordu; telefonda varsayılan hâl ise **kapalı**.
 | 3 | REPL'deki "kalmış altlığı kaldır" temizliği artık telefonda da çalışıyor (yalnız mobil modda değil). |
 | 4 | Satır içi durum satırı telefonda, çizildikten sonra ekrana bir şey yazıldıysa **yerinde yeniden yazmıyor**; temiz satırı bekliyor. |
 
-### Doğrulama (pty, adım adım ekran ızgarası — `screen_timeline.py`)
+### Doğrulama (pty ekran emülatörü, adım adım ızgara)
 Fotoğraftaki durum birebir kuruldu: telefon (`TERMUX_VERSION`), 56×12, `/hlp` (fotoğraftaki `/hl31` gibi hatalı
 komut), `/quit`.
 
