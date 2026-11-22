@@ -105,6 +105,29 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 - Panels stopped assuming 80 columns: the `=== title` head wraps and the closing rule follows the screen
   (the Turkish token report used to draw a 41-cell rule on a 40-cell phone).
 
+### Fixed — nothing is drawn on top of anything else in mobile mode (patch #7)
+- **The cause was the footer, not the text.** In mobile mode the layout line (`  T:0 C:0.0% ~$0`) is the
+  "footer". `start_footer()` refused to build it on a phone, but the redraw routine behind it
+  (`_draw_footer_locked()`) only checked "is the terminal at least 8 rows and 30 columns?" — so the next
+  `refresh_footer()` — it runs after **every** command and every turn — switched the footer back on
+  (`self._footer_active = True` plus a scroll region) and painted it on the last screen row. The next
+  message was then printed into that row: `DocMind ❯ /quit` came out as `DocMind ❯ /quit0`, and
+  `T:0 C:0.0% ~$0` ended up inside the message above.
+- One predicate now decides: `_footer_allowed()` is `False` in mobile mode, on a non-ANSI terminal, under
+  8 rows or under 46 columns. Both `start_footer()` and every redraw go through it, and a redraw that is
+  not allowed **tears the footer down** instead of resurrecting it.
+- The inline status row (`T:… C:… ~$…`) remembers how many rows it has drawn (`_inline_status_rows_drawn`)
+  and `clear_inline_status()` erases exactly those rows (cursor up + `ESC[J`) before `info` / `success` /
+  `warn` / `panel` / `alert` / `ask` / streaming / history printing. It only ever erases rows it drew
+  itself, so it can never eat the user's prompt line.
+- The prompt line is now closed properly: `DocMindUI` tracks `_at_line_start` (set to `False` while the
+  prompt or a stream owns the line, back to `True` when input returns or a message finishes) and
+  `_ensure_line_start()` writes the missing newline. A reply can no longer start inside `DocMind ❯`.
+- Inline status is only drawn on a real TTY, so redirected output stays clean.
+- Verified with a pty screen emulator (a real terminal grid, not `len()` arithmetic): 40×24 and 32×24 in
+  mobile mode, 80×24 desktop, and with `/quit` and without — **0 characters overwritten**, every string on
+  its own line, the prompt line holding only `DocMind ❯ /mobil status`.
+
 ### Changed — `/mobil` is now a real switch, and only on a phone
 - **On a phone / tablet** `/mobil` toggles mobile mode: first use turns it on (compact layout, plain
   glyphs, no full-screen footer, mobile rules in the system prompt), using it again turns it off. The

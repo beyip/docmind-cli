@@ -57,7 +57,7 @@ oluyordu — çünkü ilk akış satırı `DocMind: ` etiketinin kapladığı 9 
 - Açıkken: kompakt düzen, sade glifler, tam ekran altlık yok, prompt `DM:` , modele dar yazma kuralı.
 - 46 sütundan dar terminallerde altlık zaten kapalı; boru hattı girişinde cevap prompt satırına yapışmıyor.
 
-**sha256 (bu build):** `ddf85fe9060af515c78cc99a21ed7aacf5b9f3bdbb7e59f243c3fc9581817c65` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil.
+**sha256 (yama #6 build):** `ddf85fe9060af515c78cc99a21ed7aacf5b9f3bdbb7e59f243c3fc9581817c65` · test: `t9.py` (telefon + bilgisayar senaryoları) yeşil. (Güncel build için §9.)
 
 ## 7) Açılışta tek cümle (son ek)
 - Her açılışta **tek satır**, 14 dilin hepsinde, o anki arayüz dilinde:
@@ -76,3 +76,47 @@ oluyordu — çünkü ilk akış satırı `DocMind: ` etiketinin kapladığı 9 
 
 **Doğrulama:** 40 / 32 / 60 sütun gerçek CLI — taşan satır **0**, tekrar eden durum satırı **0**;
 `t10.py` (durum satırı testi) 3 genişlikte yeşil; `t1`–`t9` yeşil.
+
+## 9) Mobilde hiçbir şey birbirinin üzerine yazmıyor (yama #7)
+
+**Şikâyet:** "`/mobile` yazdıktan sonra mobilde iç içe giriyor." Yani mesajlar birbirinin, durum satırının
+ve prompt'un üzerine basılıyor.
+
+### Gerçek sebep (iki tane)
+1. **Altlık geri geliyordu.** Mobil modda `start_footer()` altlığı kurmuyor, ama her komut/turdan sonra
+   çalışan yeniden çizim (`_draw_footer_locked()`) yalnızca "8 satır ve 30 sütun var mı?" diye bakıyordu.
+   Sonuç: `self._footer_active = True` + kaydırma bölgesi yeniden kuruluyor ve satır **ekranın son
+   satırına** boyanıyordu. Bir sonraki mesaj o satıra yazıldığı için ekranda `DocMind ❯ /quit0` ve
+   `T:0 C:0.0% ~$0` metninin bir üst satırın içinde görünmesi ortaya çıkıyordu.
+2. **Durum satırı yerinde kalıyordu.** Satır çizildikten sonra mesaj/panel/soru yazılırken silinmiyordu,
+   bu yüzden yeni metin onun üzerine geliyordu.
+
+### Çözüm
+| # | Değişiklik |
+|---|---|
+| 1 | Tek karar noktası: `_footer_allowed()` — mobil modda, ANSI olmayan terminalde, 8 satırdan az veya 46 sütundan dar ekranda **False**. |
+| 2 | `start_footer()` ve **her** yeniden çizim bu kararı kullanıyor; izin yoksa altlık **sökülüyor** (`ESC7 ESC[r ESC8`), yeniden kurulmuyor. |
+| 3 | `_inline_status_rows_drawn` + `_inline_status_live`: durum satırı kaç satır çizdiğini hatırlıyor. |
+| 4 | `clear_inline_status()` yalnız kendi çizdiği satırları siliyor (`ESC[<n>A ESC[J`); prompt satırına dokunmuyor. |
+| 5 | `info` / `success` / `warn` / `print_panel` / `print_alert` / `ask` / `stream_assistant_text` / geçmiş yazımı hepsi önce durum satırını siliyor. |
+| 6 | `_at_line_start` + `_ensure_line_start()`: prompt veya akış satırın sahibiyken bayrak `False`, giriş dönünce/mesaj bitince `True`; eksik satır sonu yazılıyor. Cevap artık `DocMind ❯` içinde başlamıyor. |
+| 7 | Satır içi durum yalnız gerçek TTY'de çiziliyor (boruya yazarken kirlilik yok). |
+
+### Doğrulama — gerçek terminal ızgarası (pty ekran emülatörü)
+`screen_check.py` gerçek bir pty açar, `/mobil`, `/mobil status` ve `/quit` komutlarını yazar, ANSI kodlarını
+(imleç hareketi, `ESC[J`/`ESC[K`, kaydırma bölgesi `ESC[r`, kaydet/geri yükle) uygulayıp **ekranı** çizer ve
+üzerine yazılan hücreleri sayar. (Basit `len()` kontrolü bu hatayı görmüyordu.)
+
+| Senaryo | Üzerine yazılan karakter |
+|---|---|
+| Telefon 40×24 (`PHONE=1`) | **0** |
+| Telefon 32×24 | **0** |
+| Telefon 40×24, `/quit` olmadan | **0** |
+| Bilgisayar 80×24 (tam ekran altlık açık) | **0** |
+| Bilgisayar 40×24 / 100×24 | **0** |
+
+Ekranda her metin kendi satırında; prompt satırı yalnız `DocMind ❯ /mobil status`; durum satırı ve `[OK]`
+satırı başka bir satıra taşmıyor. Ek olarak `py_compile -W error::SyntaxWarning` ✓, `--help` kapıları
+**exit 0**, `t1`–`t10` yeşil.
+
+**sha256 (bu build):** `b993155a7e4830eda84321ac6a4bcfb73036f78663c8d8de6925f2b8be489086` · 1.103.438 bayt.

@@ -453,6 +453,22 @@ status as **one row under the message** and keeps it there:
   one line that would be wrapped over the one above it;
 - the full `Tokens … | Context … | Cost …` sentence is used only on a terminal wide enough to hold it.
 
+Nothing is drawn on top of anything else. Two things used to break that on a phone and both are gone:
+
+- **The footer came back.** With mobile mode on, the row was not built at start — but the redraw that runs
+  after every command checked only "8 rows and 30 columns?" and switched the full-screen footer back on,
+  on the very last screen row. The next message was printed into it (`DocMind ❯ /quit0`,
+  `… ~$0` inside the line above). Now a single check (`_footer_allowed()`) governs both the start and every
+  redraw, it is `False` in mobile mode / on a non-colour terminal / under 8 rows / under 46 columns, and a
+  redraw that is not allowed removes the footer instead of restoring it.
+- **The status row was left behind.** It now remembers how many rows it drew and is erased just before a
+  message, a panel, a question or the prompt is printed — and only the rows it drew itself, so your prompt
+  line is never touched.
+
+The prompt line is closed before anything else is written: while the prompt or a stream owns the line
+DocMind knows it is mid-line and inserts the missing newline. The result, measured on a real terminal grid
+(40×24 and 32×24 phone, 80×24 desktop): **zero characters overwritten**, one string per line.
+
 ### Streaming that cannot end up half printed
 
 DocMind wraps every streamed line itself, to the terminal width it actually has, before the text reaches

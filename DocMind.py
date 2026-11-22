@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '5e33bdafa57e466766eed2b66e62195932791e450d7ec29bf21957d35b60a7e8'
-_DM_SIGNATURE = '7a1cb4f8f77c0492646d8276c0c091541b5563cc8c75faf7e97ae8fd324fcfb47551cddea7eb6057447f6b3c0d5ffbcee53391eca95769341b046e45ed2b8eaf6acccce773c2019af14eaeb86be8c1ba9ad4d23c216ec1bb40b854ed194891c7d076b4292b74209b5075913e314c4808bcd2aa5b56f5f7d680558f1535b82a7e6a8f3df89acd32f2879f7b8e94e2161589640016349de4076a7e87dca06127c5f56a479890b454d1841207e5fc2c5bbf7163bddbf82bb01c01b49d6cfa2e76a1b671823fb1bc5ba3640e02124321f2638442659c255d336b4044cd72429a41ebbeed0cf40977a281df77bb342420f5c1b9c338cedc10883261f2158b8b9ec27453a9ad07e046623741d1e78452a73672e0fa4694a4de9cd787ee62d722d3e6ecc86b2b301341db215325f0190e4572136a95f2d7de74f9ee8b0062c86be8116fca6cbe1ceeb89e2d2a1b2c64a6eecdcc1c784d5e6bb3a1685e90a987de4def6521b0634d08c584aba6becb4b7f04f8b655e07076be2c8c02572db4cbd87645e4'
+_DM_SOURCE_HASH = 'e030fc5b00e6a80e06a0251c0f10d06dcd45fcc270e9b46174747331724819b3'
+_DM_SIGNATURE = '29d4729a0c60e2a00cf9e923f90407515670c97d89f7e594ef1f6763ea27936225a419dc1408da7178f3df1b02faca7f03eb713dad51def842791877697ce52e17429516b82d2ec234179644282ea1cecef0c86926a4f51cf153dcc87165a1a79381dd67d39a23b49569621cc96c1e52af597cab38c3efcef0f34152dfce8372922c0488c03ad6998896dec6a059376ae14acc41c1e854a726778cf827c809522c72469d5e0481d7494e9a643ec306995438c056e11dc4f8c7918f641043ddf55840f713a5a5dade3adba8321745f876f22e9084e607bed80d2838f002ff0345d102277bd3183f1ea574fda562dd8101b351653686bc82129fba53109016d4e6fb5c8453152089ddcfa84a5a6f046f582f8c71b8471f55520a0df7195f27ebb8a450690f7031102bf43b95143ce259bf472b871c2d35d8d05b5b264cb414ca70fde7f5b51fc306f0c0d89e37509cc327c38215727608b23d4b4ae052b71d01ed776debef293cf09bd5ecda41391be16c1d1e233bf6152f592c65c7d3fb059396'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -13850,13 +13850,25 @@ def _dm_module_18():
    def _size(self) -> Tuple[int, int]:
      size = shutil.get_terminal_size(fallback=(80, 24))
      return max(1, size.lines), max(1, size.columns)
+   def _footer_allowed(self) -> bool:
+     """True only when a full-screen footer makes sense on this terminal.
+
+     Mobile mode, a non-ANSI terminal and anything narrower than 46 columns are
+     all excluded: on a phone the footer painted on the last row and the next
+     message was written straight over it.
+     """
+     if _DM_MOBILE_MODE:
+       return False
+     try:
+       rows, cols = self._size()
+     except Exception:
+       return False
+     return bool(self.ansi and rows >= 8 and cols >= 46)
    def start_footer(self, status: Callable[[], str], compact: Optional[Callable[[int], str]] = None) -> bool:
      self._footer = status
      self._compact_footer = compact
      rows, cols = self._size()
-     # A full-screen footer on a phone eats half the message: mobile mode, or any
-     # terminal narrower than a phone in landscape, keeps it off.
-     if _DM_MOBILE_MODE or not self.ansi or rows < 8 or cols < 46:
+     if not self._footer_allowed():
        return False
      with self.lock:
        self._rows = rows
@@ -13868,12 +13880,18 @@ def _dm_module_18():
    def _draw_footer_locked(self, force: bool = False) -> None:
      if self._footer is None or not self.ansi:
        return
-     rows, cols = self._size()
-     if rows < 8 or cols < 30:
+     if not self._footer_allowed():
+       # Tear it down instead of re-drawing it: this used to resurrect the
+       # footer after every turn, right where the next message is printed.
        if self._footer_active:
-         sys.stdout.write("\x1b7\x1b[r\x1b8")
+         try:
+           sys.stdout.write("\x1b7\x1b[r\x1b8")
+           sys.stdout.flush()
+         except (BrokenPipeError, OSError, ValueError):
+           pass
          self._footer_active = False
        return
+     rows, cols = self._size()
      if not self._footer_active:
        self._rows = rows
        self._footer_active = True
@@ -14322,6 +14340,8 @@ def _dm_module_20():
      self._stream_active = False
      self._syntax_highlighter = None
      self._waiting_notice = False
+     # True while the cursor sits at column 0 of a fresh line.
+     self._at_line_start = True
      self.view = TerminalView(self.is_tty)
      if self.is_tty and self._input_fn is None and os.name != "nt":
        try:
@@ -14555,7 +14575,37 @@ def _dm_module_20():
        print(flush=True)
      except (BrokenPipeError, OSError, ValueError):
        pass
+   def clear_inline_status(self) -> None:
+     """Erase the inline status row so the next output starts on a clean line.
+
+     Only safe while that row really is the last thing on screen; otherwise the
+     cursor may sit on the user's own prompt line and erasing would eat it.
+     """
+     rows = int(getattr(self, "_inline_status_rows_drawn", 0) or 0)
+     live = bool(getattr(self, "_inline_status_live", False))
+     self._inline_status_live = False
+     self._inline_status_key = ""
+     self._inline_status_rows = 0
+     self._inline_status_rows_drawn = 0
+     if not (live and rows) or not self.view.ansi:
+       return
+     try:
+       sys.stdout.write("\x1b[%dA\x1b[J" % rows)
+       sys.stdout.flush()
+     except (BrokenPipeError, OSError, ValueError):
+       pass
+   def _ensure_line_start(self) -> None:
+     """Start a fresh line if the cursor is still on the prompt line."""
+     if getattr(self, "_at_line_start", True):
+       return
+     try:
+       sys.stdout.write(chr(10))
+       sys.stdout.flush()
+     except (BrokenPipeError, OSError, ValueError):
+       pass
+     self._at_line_start = True
    def show_inline_status(self, status: str) -> None:
+     self._ensure_line_start()
      """The status line that replaces the footer when the footer is off.
 
      It is shown **once**.  While the numbers do not change nothing is printed
@@ -14596,6 +14646,7 @@ def _dm_module_20():
        print("  " + line, flush=True)
      self._inline_status_key = key
      self._inline_status_rows = len(rows)
+     self._inline_status_rows_drawn = len(rows)
      self._inline_status_live = True
    def print_status_bar(
      self,
@@ -14645,24 +14696,35 @@ def _dm_module_20():
        return body
      return _wrap_block(body, width)
    def info(self, msg: str) -> None:
+     self._ensure_line_start()
+     self.clear_inline_status()
      msg = self._fit(msg, "ℹ ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("ℹ ", "[i] "), style="bright_cyan") + Text(msg))
      else:
        print(self._paint(glyph("[i] ", "[i] ") + msg, "36"), flush=True)
+     self._at_line_start = True
    def success(self, msg: str) -> None:
+     self._ensure_line_start()
+     self.clear_inline_status()
      msg = self._fit(msg, "[OK] ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("✔ ", "[OK] "), style="bold bright_green") + Text(msg, style="green"))
      else:
        print(self._paint(f"[OK] {msg}", "32"), flush=True)
+     self._at_line_start = True
    def warn(self, msg: str) -> None:
+     self._ensure_line_start()
+     self.clear_inline_status()
      msg = self._fit(msg, "[!] ")
      if self.rich_console:
        self.rich_console.print(Text(glyph("⚠ ", "[!] "), style="bold bright_yellow") + Text(msg, style="bright_yellow"))
      else:
        print(self._paint(f"[!] {msg}", "33"), flush=True)
+     self._at_line_start = True
    def print_alert(self, alert: DocMindAlert) -> None:
+     self.clear_inline_status()
+     self._ensure_line_start()
      """Render a prominent, color-coded alert box for token exhaustion, API, network, or tool errors."""
      critical_cats = {ErrorCategory.QUOTA_EXHAUSTED, ErrorCategory.AUTH_INVALID}
      is_critical = alert.category in critical_cats
@@ -14691,6 +14753,8 @@ def _dm_module_20():
          print(f"[HTTP Status: {alert.status_code}]")
        print(self._paint(sep, color) + "\n")
    def print_panel(self, title: str, body: str, style: str = "cyan", center: bool = False) -> None:
+     self.clear_inline_status()
+     self._ensure_line_start()
      title, body = _visible_controls(title), _visible_controls(body)
      if self.rich_console:
        body = _wrap_block(body, max(24, self._cols() - 6))
@@ -14736,6 +14800,9 @@ def _dm_module_20():
      else:
        self.view.append_typing(text)
    def stream_assistant_text(self, text: str) -> None:
+     self.clear_inline_status()
+     # The prompt and the stream share one line until the answer ends.
+     self._at_line_start = False
      """Stream text, wrapping each finished line to the real terminal width.
 
      A long line that reaches the right edge used to be wrapped by the terminal
@@ -14801,6 +14868,7 @@ def _dm_module_20():
            if tail.strip():
              self._stream_out(tail.rstrip() + "\n")
          self._stream_pend = ""
+         self._at_line_start = True
          if self._syntax_highlighter:
            self._syntax_highlighter.finish()
          self.view.finish_typing(fast=fast)
@@ -14818,6 +14886,7 @@ def _dm_module_20():
        body = _wrap_block(_visible_controls(content), self._cols())
        print(f"\nDocMind: {body}\n", flush=True)
    def print_history_message(self, label: str, content: str, cancelled: bool = False) -> None:
+     self.clear_inline_status()
      suffix = " (" + t("history_cancelled") + ")" if cancelled else ""
      caption = self._paint(_visible_controls(label) + suffix, "1;36" if label == "DocMind" else "1;35")
      safe = _visible_controls(content)
@@ -15025,11 +15094,17 @@ def _dm_module_20():
          except (OSError, ValueError):
            pass
    def ask(self, prompt_text: str = "", allow_multiline: bool = False) -> str:
+     # The prompt will occupy the line under the status row: remove that row first.
+     self.clear_inline_status()
      """Read input safely with multi-line backslash continuation and zero crash on EOF."""
      if self._input_fn is not None:
+       self._at_line_start = True
        return self._input_fn(prompt_text)
      try:
-       return self._ask_inner(prompt_text, allow_multiline)
+       answer = self._ask_inner(prompt_text, allow_multiline)
+       # Enter (or the newline the repl adds for piped input) closed the line.
+       self._at_line_start = True
+       return answer
      except (EOFError, KeyboardInterrupt):
        # A closed stdin (Ctrl+D, killed pipe, Termux session end) is an exit
        # request, not a traceback.  The newline ends the prompt line, so the
@@ -19967,7 +20042,8 @@ def _dm_module_26():
     """Status text shaped for the real terminal width (never one long line)."""
     return agent.status_text(max(20, ui._cols() - 3))
   with ui.live_footer(_status_row, _status_row):
-    ui.show_inline_status(_status_row())
+    if ui.is_tty:
+      ui.show_inline_status(_status_row())
     consecutive_ctrl_c = 0
     while True:
       try:
@@ -20005,7 +20081,7 @@ def _dm_module_26():
           _should_close_terminal[0] = True
           break
         ui.refresh_footer()
-        if not ui.view.footer_active:
+        if ui.is_tty and not ui.view.footer_active:
           ui.show_inline_status(_status_row())
         if outcome == "exit":
           return 0
@@ -20022,7 +20098,8 @@ def _dm_module_26():
         cfg_mgr.log_error("repl.turn", repr(exc))
         ui.print_alert(classify_exception(exc))
       ui.refresh_footer()
-      ui.show_inline_status(_status_row())
+      if ui.is_tty:
+        ui.show_inline_status(_status_row())
   if _should_close_terminal[0]:
     _close_terminal_window()
     return 0
