@@ -128,6 +128,23 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   mobile mode, 80×24 desktop, and with `/quit` and without — **0 characters overwritten**, every string on
   its own line, the prompt line holding only `DocMind ❯ /mobil status`.
 
+### Fixed — a phone now answers: no blocking menu, no spinner over your message (patch #9)
+- **"It does not answer."** When a request failed (invalid key, quota, network) DocMind opened the
+  `RECOVERY OPTIONS` menu and waited on `input()`. On a phone the keyboard covers that menu and the repl
+  cannot read the next message while it waits — the session simply looked dead. The menu is now offered
+  only on a desktop with a real keyboard; on a phone/tablet, in mobile mode, in a pipe or with no tty it
+  prints **one short localised line** with the exact fix — `İstek başarısız: … · Anahtarı değiştir: /api ·
+  Model değiştir: /model · Tekrar dene: aynı mesajı yeniden yaz.` — and returns to the prompt immediately.
+- **The thinking spinner was painting over your own message.** It repainted with a bare carriage return on
+  whatever line the cursor was on; in Termux that line holds the echo of the message you just typed, so the
+  frame text landed on top of it and the answer was written into the same line. A phone/tablet, mobile mode
+  and a plain (non-colour / `TERM=dumb`) terminal now never animate: one wrapped `… DocMind düşünüyor`
+  line, then the answer starts on its own line.
+- **The API key could not be entered on a phone.** `ask_secret()` refused with "API key input requires a
+  terminal" when stdin was not a tty. It now reads a plain line on a phone/pipe (still visible, as the
+  wizard warns) and returns to the prompt on Enter/EOF instead of raising.
+- New i18n key `rec_hint_after_error`, translated in **all 14 locales**.
+
 ### Fixed — the footer is gone on a phone even before `/mobil` (patch #8)
 - **The screenshot case.** On a phone where `/mobil` had **not** been typed yet, mobile mode is *off* — and
   in that state the full-screen footer was still allowed. The footer paints itself with **absolute row

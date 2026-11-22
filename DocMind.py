@@ -44,8 +44,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = '5c111db49457829309dad4183319e8b108708a3a8dd3d6a0a7956f81bef622cb'
-_DM_SIGNATURE = '3aab61dd5d230b51cfb7afd2ccc9eb000216163909eb4477adeb80026e6e92dca69cb8a81f5b12e6460928c7e10c5cf672df30fd1e428ef3a3e6383483148e21c60833ad3ad2b8137f02009e497c53061adf340b9868ec7f97426373d6639c17dafabe48cb92cfff5d150962b8c8744cbfbb5cb3c09909064be840ffeb46a935b4e26c43117c15325909231c2313fdf8b2e505e50ef6d71be2c3e4f9cc088b23fee50d7aeda8f61bd82a987821e8677ee20600eeb26b867bb71726961de4a7c65981c40bca619826d7a17872fca11d12618cccd30618dabce330b2e9fe84182c6a17142a4d40717fc43ea3ce309ac4a3f565673e6a4ef00bd67eeba9ea5f19fe01723c54cbed78e3dd4d8e8197725e2855abfdc2b5d3d7191ab542d62f042290263a025dac95053208cb81719e25be2604c1c58d13f8ba5b33138a048f1699fee951a47ed9e9da68f8e83216431c583968f4d6789ea7603d812f2f8426883b4d0f113ab5c710f87835119a85eeb70a95edefa7cd9248db45222c6234ce6701e7'
+_DM_SOURCE_HASH = '2aedebe9d909095172fc065bd90842b4bd78528b3c2631c25dea27181ded046d'
+_DM_SIGNATURE = '0d49256732c73072bff467a531cdb4dbe2e9c671a691c4858c97e11b72626b17743c73990980482b0c4c3b12f2bd4b2f6e83753080e68d9f21ec50bc25f541586fb165ca2f73e6323f3c42f7f4d23f624f54ba3e1ef8eae96b6499c321497cad6f830791c7c2041a5ca9b6d5246840744e43cdb31963fbbda515bb62a59b50c166a9cdce6ff58a0aeb52be5abd0976d19a92909fb690deb3a60f418b6eeae9aa6a984ce1ad7e3b2952f430294b5bbbc0cfee71dbcf680f1d92f12f51b9332fe4b12f20fb8b21df8ed80f91ee14a4cbe55fa9135c0c1e24543b18dddd1e9ab4bf9d9cb2e33ebdb5ba69e9a353f196dabd754070cd877a84779cb787df34eb9e58ca304714f06f4b359b4d45fded4f6c879a0eda67c872312be1853e2be3444a6b2102e6d22938ec8e1e11915e7b25f8f3b244095663540771ece9eeeaf3bc11421e886c0ec2e903be90d50737cf34a806e49297bfdc859ce0784df4f5139ff97e2e8f4a7267c0da81754c1c98fe470df27063fafecf70e3688d35974f68a100ed'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -232,6 +232,54 @@ _DM_ASCII_AUTOSET = False
 
 _DM_WIDTH_AUTOSET = False
 
+
+
+def _dm_plain_terminal() -> bool:
+  """True when the terminal cannot be trusted with in-place animation."""
+  try:
+    if _dm_os.environ.get('DOCMIND_NO_ANIMATION', '').strip() in ('1', 'true', 'yes', 'on'):
+      return True
+    term = _dm_os.environ.get('TERM', '').lower()
+    if term in ('dumb', 'unknown', ''):
+      return True
+    return bool(_dm_os.environ.get('NO_COLOR'))
+  except Exception:
+    return False
+
+
+def _dm_wrap_plain(text: str, cols: int) -> str:
+  """Wrap a plain (no-ANSI) line so it never runs past the screen."""
+  try:
+    width = max(16, int(cols) - 1)
+  except Exception:
+    width = 79
+  words, lines, cur = str(text).split(), [], ""
+  for w in words:
+    if not cur:
+      cur = w
+    elif len(cur) + 1 + len(w) <= width:
+      cur += " " + w
+    else:
+      lines.append(cur)
+      cur = w
+  if cur:
+    lines.append(cur)
+  return "\n".join(lines)
+
+
+def _dm_can_ask_interactively(ui) -> bool:
+  """True only when a human at a real keyboard can answer a blocking menu."""
+  try:
+    if _DM_PHONE_DEVICE or _DM_MOBILE_MODE or _dm_plain_terminal():
+      return False
+    if not bool(getattr(ui, "is_tty", False)):
+      return False
+    try:
+      return bool(_dm_sys.stdin and _dm_sys.stdin.isatty())
+    except (ValueError, OSError):
+      return False
+  except Exception:
+    return False
 
 def _dm_refresh_glyphs() -> None:
     """Recompute the ASCII/Unicode glyph choice after a mode switch."""
@@ -420,6 +468,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Başka Bir Model Seç ve Devam Et",
     "rec_opt_retry": "Şimdi Tekrar Dene",
     "rec_opt_skip": "Hatayı Geç ve Sohbet Ekranına Dön",
+    "rec_hint_after_error": "İstek başarısız: {err} · Anahtarı değiştir: /api · Model değiştir: /model · Tekrar dene: aynı mesajı yeniden yaz.",
     "rec_choose": "Seçiminiz [Varsayılan: {default}]: ",
     "help_title": "DOCMIND KOMUT REHBERİ",
     "help_body": " /api       Sağlayıcı veya anahtar\n /model     Model değiştir\n /cd YOL    Çalışma klasörü\n /undo      Son dosya değişikliğini geri al\n /clear     Yeni sohbet\n /auto      Otomatik mod (riskli)\n /smart     Onaylı mod\n /reset     Ayarları sıfırla (.json sil) ve kapat\n /exit      Çıkış\n /tokens    Token, bağlam ve tahmini maliyet\n /fiyat     Modelin USD fiyatını ayarla\n /context   Bağlam limitini ayarla\n /history   Kayıtlı sohbetleri aç\n /delete    Kayıtlı sohbeti sil\n /effort    Düşünme düzeyi ve maliyet\n /doctor tools  API ile araç şemalarını sınar; ek ücret oluşabilir\n /doctor all  Kayıtlı sağlayıcılarla ücretli olabilecek bağlantı testi\n /image YOL Görsel / ekran görüntüsü analiz et ve hatayı çöz\n /paste     Panodaki ekran görüntüsünü veya metni gönder\n /copy      Son yanıtı panoya kopyala (/copy code: yalnız kod)\n /diff      Git değişikliklerini yeşil (+) / kırmızı (-) göster\n /redo      Geri alınan (/undo) dosya değişikliğini yinele\n /export    Sohbeti Markdown (.md) olarak dışa aktar\n /search KONU İnternette canlı araştır ve doğrula\n /squad     Ekip: görev parçalama (ajanlar) aç/kapat\n /mobil     Mobil mod aç/kapat (telefonda; /mobile de çalışır)\n /token-save Token tasarrufunu aç/kapat (varsayılan: açık)",
@@ -770,6 +819,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "Request failed: {err} · Change the key: /api · Change the model: /model · Retry: send the message again.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND COMMAND REFERENCE",
     "help_body": " /api       Provider or key\n /model     Change model\n /cd PATH   Working folder\n /undo      Undo last file change\n /clear     New chat\n /auto      Automatic mode (risky)\n /smart     Approval mode\n /reset     Reset config (.json) & close terminal\n /exit      Exit\n /tokens    Token / context / cost\n /price     USD per million tokens\n /context   Context limit\n /history   Open saved conversations\n /delete    Delete a saved conversation\n /effort    Reasoning level and cost\n /doctor tools  Test tool schemas with the API; charges may apply\n /doctor all  Test configured providers; charges may apply\n /image PATH Inspect an image/screenshot & diagnose errors\n /paste     Send screenshot or text directly from clipboard\n /copy      Copy last reply to clipboard (/copy code: code only)\n /diff      Show Git changes with green (+) / red (-) lines\n /redo      Re-apply last undone (/undo) file change\n /export    Export conversation to Markdown (.md)\n /search Q  Live internet search & multi-source fact verification\n /squad     Team mode: task decomposition (sub-agents) on/off\n /mobile    Mobile mode on/off (on a phone; /mobil works too)\n /token-save Toggle token saving (default: on)",
@@ -1120,6 +1170,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Anderes Modell wählen",
     "rec_opt_retry": "Jetzt erneut versuchen",
     "rec_opt_skip": "Fehler überspringen & zurück zum Chat",
+    "rec_hint_after_error": "Anfrage fehlgeschlagen: {err} · Schlüssel ändern: /api · Modell ändern: /model · Erneut: Nachricht nochmal senden.",
     "rec_choose": "Ihre Wahl [Standard: {default}]: ",
     "help_title": "DOCMIND BEFEHLSÜBERSICHT",
     "help_body": " /api       Anbieter oder Schlüssel\n /model     Modell ändern\n /cd PFAD   Arbeitsordner\n /undo      Letzte Dateiänderung rückgängig\n /clear     Neuer Chat\n /auto      Automatik (riskant)\n /smart     Bestätigung\n /reset     Konfiguration löschen & schließen\n /exit      Beenden\n /tokens    Token / Kontext / Kosten\n /price     USD pro Million Token\n /context   Kontextlimit\n /history   Gespeicherte Gespräche öffnen\n /delete    Gespeichertes Gespräch löschen\n /effort    Denkstufe und Kosten\n /doctor tools  Werkzeugschemas über die API testen; Kosten möglich\n /doctor all  Konfigurierte Anbieter prüfen; Kosten möglich\n /image PFAD Bild/Screenshot analysieren & Fehler beheben\n /paste     Screenshot oder Text aus Zwischenablage senden\n /copy      Letzte Antwort kopieren (/copy code: nur Code)\n /diff      Git-Änderungen mit Grün (+) / Rot (-) anzeigen\n /redo      Rückgängig gemachte Dateiänderung wiederholen\n /export    Gespräch als Markdown (.md) exportieren\n /search Q  Live-Internetsuche & Faktenprüfung\n /token-save Token-Sparmodus umschalten (Standard: an)",
@@ -1470,6 +1521,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Seleccionar otro modelo",
     "rec_opt_retry": "Reintentar ahora",
     "rec_opt_skip": "Omitir error y volver al chat",
+    "rec_hint_after_error": "La solicitud falló: {err} · Cambiar la clave: /api · Cambiar el modelo: /model · Reintentar: envía el mensaje otra vez.",
     "rec_choose": "Su opción [Por defecto: {default}]: ",
     "help_title": "GUÍA DE COMANDOS DE DOCMIND",
     "help_body": " /api       Proveedor o clave\n /model     Cambiar modelo\n /cd RUTA   Carpeta de trabajo\n /undo      Deshacer último cambio\n /clear     Nuevo chat\n /auto      Modo automático (riesgo)\n /smart     Confirmación\n /reset     Restablecer config (.json) y cerrar\n /exit      Salir\n /tokens    Tokens / contexto / coste\n /price     USD por millón de tokens\n /context   Límite de contexto\n /history   Abrir conversaciones guardadas\n /delete    Eliminar conversación guardada\n /effort    Razonamiento y coste\n /doctor tools  Prueba los esquemas con la API; puede tener coste\n /doctor all  Prueba proveedores configurados; puede tener coste\n /image RUTA Analizar imagen/captura y solucionar errores\n /paste     Enviar captura o texto desde el portapapeles\n /copy      Copiar última respuesta (/copy code: solo código)\n /diff      Mostrar cambios Git en verde (+) / rojo (-)\n /redo      Rehacer último cambio deshecho (/undo)\n /export    Exportar conversación a Markdown (.md)\n /search Q  Búsqueda web en vivo y verificación de datos\n /token-save Activar/desactivar ahorro de tokens (por defecto: activo)",
@@ -1820,6 +1872,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Choisir un autre modèle",
     "rec_opt_retry": "Réessayer maintenant",
     "rec_opt_skip": "Ignorer l'erreur et revenir au chat",
+    "rec_hint_after_error": "Échec de la requête : {err} · Changer la clé : /api · Changer le modèle : /model · Réessayer : renvoyez le message.",
     "rec_choose": "Votre choix [Défaut : {default}] : ",
     "help_title": "GUIDE DES COMMANDES DOCMIND",
     "help_body": " /api       Fournisseur ou clé\n /model     Changer de modèle\n /cd CHEMIN Dossier de travail\n /undo      Annuler dernière modification\n /clear     Nouvelle discussion\n /auto      Mode automatique (risqué)\n /smart     Confirmation\n /reset     Réinitialiser config (.json) et fermer\n /exit      Quitter\n /tokens    Tokens / contexte / coût\n /price     USD par million de tokens\n /context   Limite de contexte\n /history   Ouvrir les conversations enregistrées\n /delete    Supprimer une conversation enregistrée\n /effort    Raisonnement et coût\n /doctor tools  Tester les schémas via l’API ; frais possibles\n /doctor all  Tester les fournisseurs configurés ; frais possibles\n /image CHEMIN Analyser une image/capture et résoudre les erreurs\n /paste     Envoyer capture ou texte depuis le presse-papiers\n /copy      Copier la dernière réponse (/copy code : code seul)\n /diff      Afficher les changements Git en vert (+) / rouge (-)\n /redo      Rétablir la dernière modification annulée (/undo)\n /export    Exporter la conversation en Markdown (.md)\n /search Q  Recherche web en direct et vérification des faits\n /token-save Activer/désactiver l’économie de tokens (par défaut : activée)",
@@ -2170,6 +2223,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Выбрать другую модель",
     "rec_opt_retry": "Повторить попытку сейчас",
     "rec_opt_skip": "Пропустить ошибку и вернуться в чат",
+    "rec_hint_after_error": "Запрос не выполнен: {err} · Сменить ключ: /api · Сменить модель: /model · Повтор: отправьте сообщение ещё раз.",
     "rec_choose": "Ваш выбор [По умолчанию: {default}]: ",
     "help_title": "СПРАВОЧНИК КОМАНД DOCMIND",
     "help_body": " /api       Провайдер или ключ\n /model     Изменить модель\n /cd ПУТЬ   Рабочая папка\n /undo      Отменить изменение файла\n /clear     Новый чат\n /auto      Автоматический режим (риск)\n /smart     Подтверждение\n /reset     Сбросить настройки (.json) и закрыть\n /exit      Выход\n /tokens    Токены / контекст / стоимость\n /price     USD за миллион токенов\n /context   Лимит контекста\n /history   Открыть сохранённые разговоры\n /delete    Удалить сохранённый разговор\n /effort    Уровень рассуждений и стоимость\n /doctor tools  Проверить схемы через API; возможна плата\n /doctor all  Проверить настроенных провайдеров; возможна плата\n /image ПУТЬ Анализ изображения/скриншота и исправление ошибок\n /paste     Отправить скриншот или текст из буфера обмена\n /copy      Копировать последний ответ (/copy code: только код)\n /diff      Показать изменения Git зелёным (+) / красным (-)\n /redo      Повторить отменённое (/undo) изменение файла\n /export    Экспортировать диалог в Markdown (.md)\n /search Q  Живой поиск в интернете и проверка фактов\n /token-save Включить/выключить экономию токенов (по умолчанию: вкл.)",
@@ -2520,6 +2574,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "Sorğu alınmadı: {err} · Açarı dəyiş: /api · Modeli dəyiş: /model · Yenidən: mesajı təkrar yaz.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND ƏMR BƏLƏDÇİSİ",
     "help_body": " /api       Təminatçı və ya API açarı\n /model     Modeli dəyişdir\n /lang      Dili dəyişdir (14 dil)\n /cd YOL    İş qovluğunu dəyişdir\n /undo      Son fayl dəyişikliyini geri al\n /clear     Yeni söhbət\n /auto      Avtomatik rejim\n /smart     Təsdiqli rejim\n /reset     Ayarları (.json) sıfırla və terminalı bağla\n /tokens    Token və xərc hesabatı\n /history   Yadda saxlanılmış söhbətlər\n /doctor    Sistem və API diaqnostikası\n /exit      Çıxış\n /image YOL Şəkil / ekran görüntüsü təhlil et və xətanı həll et\n /paste     Buferdəki ekran görüntüsünü və ya mətni göndər\n /copy      Son cavabı buferə kopyala (/copy code: yalnız kod)\n /diff      Git dəyişikliklərini yaşıl (+) / qırmızı (-) göstər\n /redo      Geri qaytarılan (/undo) dəyişikliyi yenidən tətbiq et\n /export    Söhbəti Markdown (.md) olaraq ixrac et\n /search MÖVZU İnternetdə canlı araşdır və doğrula\n /token-save Token qənaətini aç/bağla (susmaya görə: açıq)",
@@ -2870,6 +2925,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "Richiesta non riuscita: {err} · Cambia la chiave: /api · Cambia il modello: /model · Riprova: invia di nuovo il messaggio.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "GUIDA COMANDI DOCMIND",
     "help_body": " /api       Provider o chiave API\n /model     Cambia modello\n /lang      Cambia lingua (14 lingue)\n /cd PERC   Cambia cartella\n /undo      Annulla ultima modifica\n /clear     Nuova chat\n /auto      Modalità automatica\n /smart     Modalità con conferma\n /reset     Ripristina config (.json) e chiudi terminale\n /tokens    Report token e costi\n /history   Cronologia conversazioni\n /doctor    Diagnostica di sistema\n /exit      Esci\n /image PATH Analizza immagine/screenshot e risolvi errori\n /paste     Invia screenshot o testo dagli appunti\n /copy      Copia ultima risposta (/copy code: solo codice)\n /diff      Mostra modifiche Git in verde (+) / rosso (-)\n /redo      Ripristina ultima modifica annullata (/undo)\n /export    Esporta conversazione in Markdown (.md)\n /search Q  Ricerca web dal vivo e verifica delle fonti\n /token-save Attiva/disattiva risparmio token (predefinito: attivo)",
@@ -3220,6 +3276,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "O pedido falhou: {err} · Mudar a chave: /api · Mudar o modelo: /model · Repetir: envie a mensagem outra vez.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "REFERÊNCIA DE COMANDOS DOCMIND",
     "help_body": " /api       Provedor ou chave API\n /model     Alterar modelo\n /lang      Alterar idioma (14 idiomas)\n /cd CAM    Alterar pasta atual\n /undo      Desfazer última edição\n /clear     Nova conversa\n /auto      Modo automático\n /smart     Modo com confirmação\n /reset     Repor configuração (.json) e fechar terminal\n /tokens    Relatório de tokens e custos\n /history   Histórico de conversas\n /doctor    Diagnóstico do sistema\n /exit      Sair\n /image PATH Analisar imagem/captura e corrigir erros\n /paste     Enviar captura ou texto da área de transferência\n /copy      Copiar última resposta (/copy code: só código)\n /diff      Mostrar alterações Git em verde (+) / vermelho (-)\n /redo      Refazer última alteração desfeita (/undo)\n /export    Exportar conversa para Markdown (.md)\n /search Q  Pesquisa na internet ao vivo e verificação de fatos\n /token-save Ativar/desativar economia de tokens (padrão: ativo)",
@@ -3570,6 +3627,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "Verzoek mislukt: {err} · Sleutel wijzigen: /api · Model wijzigen: /model · Opnieuw: stuur het bericht nog eens.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND OPDRACHTENOVERZICHT",
     "help_body": " /api       Provider of API-sleutel\n /model     Model wijzigen\n /lang      Taal wijzigen (14 talen)\n /cd PAD    Werkmap wijzigen\n /undo      Laatste wijziging ongedaan maken\n /clear     Nieuw gesprek\n /auto      Automatische modus\n /smart     Bevestigingsmodus\n /reset     Config (.json) wissen en terminal sluiten\n /tokens    Token- en kostenoverzicht\n /history   Gespreksgeschiedenis\n /doctor    Systeemdiagnose\n /exit      Afsluiten\n /image PAD Afbeelding/screenshot analyseren & fouten oplossen\n /paste     Screenshot of tekst vanaf klembord verzenden\n /copy      Laatste antwoord kopiëren (/copy code: alleen code)\n /diff      Git-wijzigingen met groen (+) / rood (-) tonen\n /redo      Laatst ongedaan gemaakte wijziging herhalen\n /export    Gesprek exporteren naar Markdown (.md)\n /search Q  Live internetzoeken & feitencheck\n /token-save Tokenbesparing aan/uit (standaard: aan)",
@@ -3920,6 +3978,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "فشل الطلب: {err} · تغيير المفتاح: /api · تغيير النموذج: /model · إعادة المحاولة: أرسل الرسالة مرة أخرى.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "دليل أوامر DOCMIND",
     "help_body": " /api       مزود الخدمة أو المفتاح\n /model     تغيير النموذج\n /lang      تغيير اللغة (14 لغة)\n /cd PATH   مجلد العمل\n /undo      التراجع عن آخر تعديل\n /clear     محادثة جديدة\n /auto      الوضع التلقائي\n /smart     وضع التأكيد الذكي\n /reset     حذف الإعدادات (.json) وإغلاق الطرفية\n /tokens    تقرير الرموز والتكلفة\n /history   سجل المحادثات\n /doctor    فحص النظام والاتصال\n /exit      خروج\n /image PATH تحليل صورة أو لقطة شاشة وإصلاح الأخطاء\n /paste     إرسال لقطة شاشة أو نص مباشرة من الحافظة\n /copy      نسخ آخر رد إلى الحافظة (/copy code: الكود فقط)\n /diff      عرض تغييرات Git بالأخضر (+) والأحمر (-)\n /redo      إعادة تطبيق آخر تعديل تم التراجع عنه\n /export    تصدير المحادثة إلى ملف Markdown (.md)\n /search Q  بحث مباشر في الإنترنت والتحقق من المعلومات\n /token-save تشغيل/إيقاف توفير الرموز (الافتراضي: مفعّل)",
@@ -4270,6 +4329,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "请求失败：{err} · 更换密钥：/api · 更换模型：/model · 重试：重新发送消息。",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND 命令参考",
     "help_body": " /api       配置服务商或密钥\n /model     切换模型\n /lang      切换语言 (支持14种语言)\n /cd 路径   切换工作目录\n /undo      撤销上次文件修改\n /clear     清空对话\n /auto      自动模式\n /smart     智能确认模式\n /reset     重置配置 (.json) 并关闭终端\n /tokens    用量与费用统计\n /history   历史会话\n /doctor    系统与 API 诊断\n /exit      退出\n /image 路径 分析图片/报错截图并修复问题\n /paste     直接发送剪贴板中的截图或文本\n /copy      复制最后一条回复 (/copy code: 仅复制代码)\n /diff      以绿色 (+) / 红色 (-) 显示 Git 更改\n /redo      重做上次撤销 (/undo) 的文件修改\n /export    将对话导出为 Markdown (.md)\n /search 词 联网实时搜索与多源事实核查\n /token-save 开关令牌节省（默认：开启）",
@@ -4620,6 +4680,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "リクエスト失敗: {err} · キー変更: /api · モデル変更: /model · 再試行: もう一度送信してください。",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND コマンド一覧",
     "help_body": " /api       プロバイダー・APIキー設定\n /model     モデル変更\n /lang      言語変更 (14言語対応)\n /cd PATH   作業フォルダ変更\n /undo      直前の変更を元に戻す\n /clear     新しい会話\n /auto      自動モード\n /smart     確認モード\n /reset     設定(.json)を初期化してターミナルを閉じる\n /tokens    トークン・コスト統計\n /history   会話履歴\n /doctor    システム・API診断\n /exit      終了\n /image PATH 画像・スクショを解析してエラーを解決\n /paste     クリップボードのスクショやテキストを送信\n /copy      直前の応答をコピー (/copy code: コードのみ)\n /diff      Git の変更を緑 (+) / 赤 (-) で表示\n /redo      元に戻した (/undo) 変更をやり直す\n /export    会話を Markdown (.md) にエクスポート\n /search 語 ライブWeb検索と複数ソースでの事実確認\n /token-save トークン節約のオン/オフ（既定: オン）",
@@ -4970,6 +5031,7 @@ def _dm_module_01():
     "rec_opt_switch_model": "Select Another Model & Continue",
     "rec_opt_retry": "Retry Request Now",
     "rec_opt_skip": "Skip Error & Return to Prompt",
+    "rec_hint_after_error": "요청 실패: {err} · 키 변경: /api · 모델 변경: /model · 다시 시도: 메시지를 다시 보내세요.",
     "rec_choose": "Your choice [Default: {default}]: ",
     "help_title": "DOCMIND 명령어 안내",
     "help_body": " /api       제공자 또는 API 키 설정\n /model     모델 변경\n /lang      언어 변경 (14개 언어 지원)\n /cd 경로   작업 디렉터리 변경\n /undo      최근 파일 수정 되돌리기\n /clear     새 대화 시작\n /auto      자동 모드\n /smart     스마트 승인 모드\n /reset     설정(.json) 초기화 후 터미널 닫기\n /tokens    토큰 및 비용 리포트\n /history   저장된 대화 기록\n /doctor    시스템 및 API 진단\n /exit      종료\n /image 경로 이미지/스크린샷 분석 및 오류 해결\n /paste     클립보드의 스크린샷 또는 텍스트 바로 전송\n /copy      마지막 응답 복사 (/copy code: 코드만 복사)\n /diff      Git 변경 사항을 초록 (+) / 빨강 (-)으로 표시\n /redo      되돌린 (/undo) 파일 변경 다시 실행\n /export    대화를 Markdown (.md) 파일로 내보내기\n /search 검색어 실시간 인터넷 검색 및 사실 검증\n /token-save 토큰 절약 켜기/끄기 (기본: 켜짐)",
@@ -13938,9 +14000,14 @@ def _dm_module_18():
      self.stop_spinner()
      if not self.is_tty:
        return
-     if not self.ansi:
-       self._write("… " + message + "\n")
+     if not self.ansi or _DM_PHONE_DEVICE or _DM_MOBILE_MODE or _dm_plain_terminal():
+       # A phone cannot repaint a line: the animation frame landed on top of the
+       # message the user had just typed, and the answer then started in that
+       # same line.  One plain line, then the answer starts under it.
+       self._write(_dm_wrap_plain("… " + message, self._size()[1]) + "\n")
+       self._spinner_plain = True
        return
+     self._spinner_plain = False
      event = threading.Event()
      self._spin_event = event
      def animate() -> None:
@@ -13960,6 +14027,10 @@ def _dm_module_18():
      self._spin_thread = threading.Thread(target=animate, name="DocMind spinner", daemon=True)
      self._spin_thread.start()
    def stop_spinner(self) -> None:
+     if getattr(self, "_spinner_plain", False):
+       # Nothing to erase: the plain line is already finished and stays.
+       self._spinner_plain = False
+       return
      event, thread = self._spin_event, self._spin_thread
      self._spin_event = None
      self._spin_thread = None
@@ -15088,7 +15159,17 @@ def _dm_module_20():
      if self._input_fn is not None:
        return self._input_fn(prompt_text)
      if not sys.stdin or not sys.stdin.isatty():
-       raise RuntimeError("API key input requires a terminal; use a provider API-key environment variable instead.")
+       # A phone/pipe has no line editor, but it can still type a key: read a
+       # plain line instead of refusing with a traceback.
+       try:
+         sys.stdout.write(prompt_text)
+         sys.stdout.flush()
+       except (BrokenPipeError, OSError, ValueError):
+         raise RuntimeError("API key input requires a terminal; use a provider API-key environment variable instead.")
+       line = sys.stdin.readline()
+       if line == "":
+         raise EOFError
+       return line.rstrip("\r\n")
      old_settings = None
      try:
        if os.name == "posix":
@@ -17175,8 +17256,14 @@ def _dm_module_24():
         Show recovery options when API quota/tokens run out, key is invalid, model is missing,
         or network fails. Returns action: 'retry' | 'skip'.
         """
-    if self.non_interactive:
-      self.ui.info(t("err_skipped_notice"))
+    if self.non_interactive or not _dm_can_ask_interactively(self.ui):
+      # On a phone (or in a pipe) the menu would block on the keyboard: print
+      # one short line with the exact fix and go straight back to the prompt.
+      try:
+        _hint = t("rec_hint_after_error", err=(getattr(alert, "title", "") or "")[:80])
+      except Exception:
+        _hint = t("rec_hint_after_error")
+      self.ui.warn(_hint)
       return "skip"
     default_opt = "5" if alert.retry_exhausted else ("1" if alert.suggest_key_change else ("3" if alert.suggest_model_change else "4"))
     menu_lines = [

@@ -474,6 +474,23 @@ The prompt line is closed before anything else is written: while the prompt or a
 DocMind knows it is mid-line and inserts the missing newline. The result, measured on a real terminal grid
 (40×24 and 32×24 phone, 80×24 desktop): **zero characters overwritten**, one string per line.
 
+### When something fails on a phone
+
+A failed request does not open a menu on a phone — a blocking menu under the keyboard is what made DocMind
+look frozen. Instead you get one line with the fix and you are back at the prompt:
+
+```
+[!] İstek başarısız: WARNING: INVALID OR EXPIRED API KEY! · Anahtarı değiştir: /api ·
+Model değiştir: /model · Tekrar dene: aynı mesajı yeniden yaz.
+```
+
+The same line appears in a pipe (`docmind < file`) or any non-tty run. On a real desktop terminal the full
+`RECOVERY OPTIONS` menu still appears, because there the keyboard does not cover it.
+
+The "thinking" indicator on a phone is a single plain line (`… DocMind düşünüyor ve analiz ediyor...`) that
+is never repainted; the answer always starts on the line under it, so nothing lands on top of your message.
+The API key prompt works there too: type it, press Enter — it stays visible, as the warning says.
+
 ### Streaming that cannot end up half printed
 
 DocMind wraps every streamed line itself, to the terminal width it actually has, before the text reaches
