@@ -1,6 +1,6 @@
-# ⚡ DocMind CLI (`v1.4`)
+# ⚡ DocMind CLI (`v1.3`)
 
-![Version](https://img.shields.io/badge/version-1.4-22c55e?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3-22c55e?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776ab?style=flat-square&logo=python&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero%20(stdlib%20only)-22c55e?style=flat-square)
 ![Languages](https://img.shields.io/badge/languages-14-f97316?style=flat-square)
@@ -14,17 +14,17 @@
 
 ---
 
-## v1.3 / v1.4 — Squad Engine
+## v1.3 — Squad Engine
 
 - **Task decomposition:** DocMind splits complex work into named sub-agents (Nova, Pixel, Atlas ...), stays the
   lead, streams what each agent is doing and reviews the result.
-- **Parallel execution (v1.4):** independent agents run at the same time in threads; agents that share a file
+- **Parallel execution:** independent agents run at the same time in threads; agents that share a file
   are separated into waves so nothing is overwritten. `/squad parallel on|off`.
 - **`/squad`** on/off/auto + agent cap, **`/mobile`** for Termux.
 - **Search without `/search`** (manual command still works).
 - **Owner row is sealed:** delete it and the program refuses to start.
 
-## What shipped in `v1.2`
+## Previously in `v1.2` — Token saving & Aggressive mode
 
 - **🎚️ `/effort` now shows a real option menu:** typing `/effort` alone lists every reasoning level with a
   number, its alias, the value sent to the API, whether token saving is allowed and a plain-language
@@ -38,9 +38,9 @@
   snapshots and project memory in `AGGRESSIVE_PLAN.md` / `AGGRESSIVE_JOURNAL.md`. The model also gets a read-only
   `aggressive_audit` tool. Switch the engine off with `/effort engine off` (it then behaves like the old deep-reasoning
   mode) — the level itself stays `aggressive`.
-- **📦 Included from the earlier v1.2 work below:** token saving, aggressive/hard levels and the mode guard.
+- **Included from the earlier v1.2 work below:** token saving, aggressive/hard levels and the mode guard.
 
-## 🛡️ Hardening, rendering & fixes in `v1.2`
+## Hardening, rendering & fixes in `v1.2`
 
 - **No square boxes:** the terminal encoding is probed at start-up and every symbol DocMind cannot draw is folded to
   readable ASCII (`⚠` → `(!)`, `✓` → `[OK]`, `◀` → `<-`, `→` → `->`), Turkish/accented letters are transliterated and
@@ -57,7 +57,7 @@
 - **Robustness:** malformed tool arguments are normalised instead of crashing the turn, `write_file` refuses directories
   and special files, oversized files are never loaded into memory, and `OSError` is reported cleanly.
 
-## 📦 Also in `v1.2`
+## Also in `v1.2`
 
 - **🪙 Token Saving (ON by default, intelligence preserved):**
   - New `/token-save off` / `/token-save on` (and `/token-save status`) commands, remembered across sessions.
@@ -72,7 +72,7 @@
 - **🧩 `Hard` level:** `/effort hard` is now a first-class level alongside `low / medium / high / max` (sent to the API as `high`).
 - **🐞 Fixes:** German/Spanish/French/Russian `/help` no longer leak English option text, Anthropic dated model IDs (e.g. `claude-sonnet-4-5-20250929`) now receive reasoning control, a rejected `aggressive`/`max` request falls back one level instead of losing the reasoning parameter, `Tuple`/`Optional` typing imports that broke the rich UI and clipboard helpers were restored, and a `/help` footer line was added for `/token-save`.
 
-## What shipped in `v1.1`
+## Previously in `v1.1`
 
 - **🖼️ High-Precision Vision & Screenshot Debugging (`detail: "high"` + OCR + Smart Vision Bridge):**
   - Send screenshots, UI mockups, or error dialogs via **Drag & Drop**, **`/paste`** (directly from clipboard without saving a file!), **`/image <path>`**, **`@image.png`** mentions, **`--image`** CLI flags, or the autonomous **`inspect_image`** tool.

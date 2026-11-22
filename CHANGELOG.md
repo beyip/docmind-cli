@@ -4,38 +4,7 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
 
 ---
 
-## `v1.4` — Parallel agents, device wording everywhere
-
-### Changed — agents now work in parallel
-- **Independent sub-agents run at the same time** (threads), so a team finishes as fast as its slowest
-  wave instead of adding up. Measured: three 0.3 s agents → **0.30 s** total, not 0.90 s.
-- **File ownership is respected.** Every agent declares the files it may write; agents that share a file
-  are placed in *different waves* so two threads can never overwrite each other. Independent agents share
-  a wave. (`test: 3 agents, two of them on app.py → waves [pixel, atlas], [nova]`)
-- **Each agent runs in its own shallow clone** of the agent object: own context slot, own stream buffers,
-  own tool whitelist. No shared mutable state, no crossed writes (`a.txt` and `b.txt` both land correctly).
-- **No terminal fighting:** sub-agents that run beside others skip the spinner, so the live feed stays
-  readable (`~ running 3 agents in parallel, 1 wave(s)` · `▶ wave 1/3: Nova, Pixel, Atlas`).
-- **Fault isolation:** an agent that raises is marked failed and the rest of the wave still finishes.
-- **New switch:** `/squad parallel on|off` (default **on**) and `squad_parallel` in the config file;
-  `parallel=False` in the engine still gives the old one-by-one behaviour.
-
-### Fixed — "computer" is now "device" in every language
-- The Turkish startup warning the user reported (**"AGENT BİLGİSAYARINIZA TAM YETKİLİDİR"**) is now
-  **"AGENT CİHAZINIZA TAM YETKİLİDİR"**, and the Turkish permission prompt says *cihazınızda*.
-- Also fixed: Spanish (`computadora` → `dispositivo`), French (`ordinateur` → `appareil`), Portuguese,
-  Russian, Azerbaijani, Chinese, Japanese, Korean — plus every English tool description and system-prompt
-  heading ("anywhere on the computer" → "anywhere on the device", "LIVE COMPUTER" → "LIVE DEVICE").
-- Verified with a source scan: **0** occurrences of bilgisayar / computadora / ordinateur / компьютер /
-  kompüter / computador / 计算机 / コンピューター / 컴퓨터 left in user-facing strings.
-
-### Fixed — planner robustness
-- A plan step with only a `role`/`notes` and no explicit goal no longer gets dropped (it used to make a
-  perfectly good 3-agent plan collapse to "0 usable steps").
-
----
-
-## `v1.3` — Squad Engine (task decomposition), mobile/Termux, sealed owner row
+## `v1.3` — Squad Engine (task decomposition, parallel agents), mobile/Termux, sealed owner row
 
 ### Added — Squad Engine: DocMind splits the work into named agents
 - **Task decomposition with a human in the loop.** For a complex request (site, app, game, API, refactor…)
@@ -81,11 +50,27 @@ All notable changes to **DocMind CLI**. Version format: `MAJOR.MINOR`.
   `_DM_OWNER_SEAL`, header verified as the first bytes of the file. `DOCMIND_NO_OWNER_CHECK` is treated
   as tampering, not as an escape hatch.
 
+### Added — parallel agent execution
+- **Parallel execution (default ON).** Independent sub-agents run **at the same time** (threads), so a team
+  finishes as fast as its slowest wave instead of adding up — measured: three 0.3 s agents in **0.30 s**
+  instead of 0.90 s. Agents that declare the same file are pushed into *separate waves*, so no file is ever
+  written by two threads at once; independent agents share one wave.
+- **Per-agent isolation:** each sub-agent runs in its own shallow clone of the agent object (own context slot,
+  own stream buffers, own tool whitelist) and skips the spinner, so parallel threads never fight over the
+  terminal. Parent context is untouched. A crashing agent is marked failed and the rest of the wave finishes.
+- **`/squad parallel on|off`** (default on) and the `squad_parallel` config field.
+- **"computer" is now "device" in every language** — the Turkish startup warning reads
+  **AGENT CİHAZINIZA TAM YETKİLİDİR** and the permission prompt says *cihazınızda*; Spanish, French,
+  Portuguese, Russian, Azerbaijani, Chinese, Japanese and Korean prompts were fixed too, along with every
+  English tool description and system-prompt heading. Source scan confirms **0** occurrences left.
+- The planner no longer drops a step that only carries a `role`/`notes` (a 3-agent plan could collapse to
+  "0 usable steps"). `/squad` and `/mobile` were added to the slash-command autocomplete.
+
 ---
 
 ## `v1.2` — Token Saving, Aggressive Reasoning Mode & Stability
 
-### Fixed — `NameError` inside the Aggressive Engine (v1.2 build of 2026-11-19)
+### Fixed — `NameError` inside the Aggressive Engine
 - **Root cause:** the modules are assembled from factories, so functions defined *inside* a factory resolve names
   against the root (`__main__`) globals, not the module they end up in. The engine helpers
   (`aggressive_directive`, `aggressive_audit_folder`, `tool_aggressive_audit`, `aggressive_snapshot`,

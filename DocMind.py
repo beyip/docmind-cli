@@ -42,8 +42,8 @@ from pathlib import Path as _dm_Path
 
 _DM_OWNER = 'OWNER: DEVRAN E. / BEYİP_'
 _DM_OWNER_SEAL = '331d0a8f198cf003c1c0fb9fc09d279aa3d4d2256e016a31bc86d00a89c8b921'
-_DM_SOURCE_HASH = 'e304de2bb0db851fba918aea6d7d2eb70ac223a5d3461b5b05ba60c13a2cf6a6'
-_DM_SIGNATURE = '34f8d400b9325dfe55526b0b41a2e8fbc5f12bbc3a22d00c01385016999e5996d4a778a83178b55223a668e88bf22d243df849f19c5d9c764086793d060feaecc2418a160e0d06ffd1777729b6b6ef7a8d727a64bc30cbad3fddc2d9635f32d9870d779fa8f453c2453db785a457dd4daa1ea41802f67c8ebd63ac6f392a252c71abdb264500c5472fdae72aa0f00ee20edc9e69c400d9e9b17db9de5c7a0a0922c314460dcc07562de8d90791898a219ecba9c7328fad8ad2c4ac8733435f814abd57ba571277997c44c065884959864b029650c575de63480ae0f049903a954fd674321ab123f7799ce0876e96bab30b18892ff585dfebbc14a15413cd7fd8868214288587b13c3a9101fae41499495a27000e3ea463acb2f47de029f48e26837203408907d67082d23ff262bc4d10b8b3b7c24e11ff114d1ed08edc75188eb37ab6e16d91fc8a9502eecd6140d923c1c0f36a68609efcea41619fb91eadc814f60e2ab473b09045ac6ce2f74e9b7b181158d1edd2f18112a539b8d0cd59d8'
+_DM_SOURCE_HASH = '619f2be57e7693ed46508d01baf4d81e240cce702280224c5e560b5afe8b617f'
+_DM_SIGNATURE = '84ba6c4bbe21ce48d0df991db36b5be8ed0c11f512d84a01e05c0a777dd1df08b1957bd9a7a3680f395ece561171f0910d5c5be8025a7179405057eddd856e63c643364d0f758ac7a3c1a29093f87d5a5cf4fcc855f67276c8fd881c8e5a5f8c4b1f20ac87f4dd8c0d4510ef21c5b63dbbe62c963160815746e4f3f0e849db8de1d5ae048c0e29a3a31a8a6d342586e884742c9c74ddde62aded7575e4ee889119f7f3f66374db4c7651053067fb741f54c910bff9f3971316883e002ceb60a86fde24086b300dbbae0a5fd0a30147dcdea4ac1d3d5771fa1d46b92c883953097224c506ddfb35d0b2e9b7de60c724aa19d387277cf8adc8192123c9e57097b7711ac29a730cc7f611bab8a4c11161e0a42a91c88960780ec2cf844e19fc4a21f8d32572609b34b1c9e141a96a1bc253d5b05fdfe7104dc02d9c3035efcb85df5a7531e96eb75be0049ab8e0f68b055697ef886ce37f0b349217027ebb48c889fa9030b5ab0caed313fa6a735f82a2ce5c077c02d0fbcc2695ad839719d8b09a'
 _DM_PUBLIC_N = int('9ed88726d036a70d32af4c1557b9933255a4993b09e83d3ca82239ac975d9fba774465a9bd77b8c4210959a103594db2ca7647cdada49f1e7b714e01ad6b845d15bfb34f22d1778b1eb390cbe9b8077620bb9a7a7f80f156fbbf110275a564a99697c2178610c7777d522fc914bd023cacf63e49f27df334b2493f99267dd23effe29d23099531e628404d788a7e96f261f52c316d36aa6cd391a6d94c36b6df11c569f4702304882b2db0fc4bf67f8cc1c3998b6bd58ea99e190e89af778cdb9c4cbda2efbb228e64e7f3921895d2d41e01137d4e2ab5e43f999af97752c5c164dc20ecfd77d25cc3c70c97ca54253393b24bb8d83de544a96295c1a477b271d40d4bfa82d93eb0fa1ab87976d6ef3a522d43377d7c908c8a352de9534f65240b3778042ab2af801ab974ebfc8ad0d2e6d3fdae43f6ed7668eeeac2f77076c98539da3257512a3deacdf8af915b6f7974740e0fad1eaa994222765a69dd36f7beb4bfe904ff5ea2a29e9f1aff4c7ddbd79becca65be18e650a9575727c2577b', 16)
 _DM_SOURCE_PATH = _dm_Path(__file__).resolve()
 _DM_REQUIRED_HEADER = (
@@ -246,7 +246,7 @@ def _dm_module_00():
  Creator / Owner: DEVRAN E. / BEYİP_
  """
  __app_name__ = "DocMind"
- __version__ = "1.4"
+ __version__ = "1.3"
  __author__ = "DEVRAN E. / BEYİP_"
  __handle__ = "BEYİP_"
  return locals()
@@ -4351,7 +4351,7 @@ def _dm_module_03():
    env_vars: List[str]
    key_optional: bool = False
    context_window: int = 128_000
- # --- Reasoning levels & token-saving policy (v1.2) -------------------------
+ # --- Reasoning levels & token-saving policy ---------------------------------
  # 'hard' is a distinct user-facing level that is sent to the API as 'high'.
  EFFORT_LEVELS: Tuple[str, ...] = ("aggressive", "max", "high", "hard", "medium", "low", "default")
  # Modes where token saving is NOT allowed; the value itself is always persisted as False.
@@ -4526,7 +4526,7 @@ def _dm_module_03():
    # v1.3 Squad Engine: ask | auto | off, plus the agent cap.
    squad_mode: str = "ask"
    squad_max_agents: int = 6
-   # v1.4: agents run at the same time (file owners are separated into waves).
+   # agents run at the same time; file owners are separated into waves.
    squad_parallel: bool = True
    # v1.3 automatic web research: search without the user typing /search.
    auto_search: bool = True
@@ -6637,7 +6637,7 @@ _dm_install('docmind.core.safety', _dm_module_07, False)
 # ===== docmind/core/sanitize.py (included source) =====
 def _dm_module_07b():
  """
- DocMind Terminal-Safe Text Layer (v1.2.1)
+ DocMind Terminal-Safe Text Layer (v1.3)
 
  Terminals without a Unicode font (Windows cp437/cp1254 consoles, POSIX C/POSIX
  locale, TERM=dumb, or a font missing the symbol) render every glyph they cannot
@@ -7065,7 +7065,7 @@ def _dm_module_09():
      marker = ">>" if (idx + 1) == lineno else "  "
      out.append(f"  {marker} {idx + 1:5d} | {lines[idx]}")
    return "\n".join(out)
-# --- Aggressive Engine (v1.2): project memory, perfection audit, write snapshots -----------
+# --- Aggressive Engine: project memory, perfection audit, write snapshots ------------------
  AGGRESSIVE_PLAN_FILE = "AGGRESSIVE_PLAN.md"
  AGGRESSIVE_JOURNAL_FILE = "AGGRESSIVE_JOURNAL.md"
  AGGRESSIVE_BACKUP_DIR = ".docmind_backups"
@@ -8365,7 +8365,7 @@ def _dm_module_12():
  import os
  from pathlib import Path
  from typing import Any, Callable, Dict, List, Optional
- # --- v1.2 token-saving engine ------------------------------------------------
+ # --- token-saving engine -------------------------------------------------------
  TOKEN_SAVE_HEAD_KEEP = 1800
  TOKEN_SAVE_TAIL_KEEP = 900
  TOKEN_SAVE_MIN_TRIM = 2400
@@ -13303,7 +13303,7 @@ def _dm_module_20():
      _dm_owner_gate()
      _dm_signature_gate()
      if not self.view.color or self.view._size()[1] < 30:
-       print("\nDocMind v1.2  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
+       print("\nDocMind v" + __version__ + "  •  " + self._paint(_DM_OWNER, "1;31") + "\n")
        return
      pixels = (
        "......PP......", ".....P..P.....", ".....PPPP.....",
@@ -13324,7 +13324,7 @@ def _dm_module_20():
            cells.append(f"\x1b[38;5;{palette[upper]}m▀\x1b[0m")
          else:
            cells.append(f"\x1b[38;5;{palette[upper]};48;5;{palette[lower]}m▀\x1b[0m")
-       label = ("  " + self._paint("DocMind v1.2", "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
+       label = ("  " + self._paint("DocMind v" + __version__, "1;36") + self._paint(f"  •  {_DM_OWNER}", "1;31")) if i == 4 else ""
        print("  " + "".join(cells) + label)
      print()
    @contextmanager

@@ -1,6 +1,6 @@
-# 📖 DocMind CLI (`v1.4`) — Installation & Usage Guide
+# 📖 DocMind CLI (`v1.3`) — Installation & Usage Guide
 
-This guide explains how to install, configure, and use **DocMind CLI `v1.4`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
+This guide explains how to install, configure, and use **DocMind CLI `v1.3`** across **Linux** (Arch Linux, Ubuntu/Debian, Fedora, etc.), **Windows 10/11**, and **macOS**.
 
 ---
 
@@ -119,7 +119,7 @@ You can send screenshots or images in **5 easy ways**:
 
 ---
 
-## 6. Token Saving & Aggressive Reasoning Mode (`v1.2`)
+## 6. Token Saving & Aggressive Reasoning Mode
 
 ### 6.1 Token saving (default: **ON**)
 
@@ -348,12 +348,12 @@ Inside DocMind CLI, run `/reset` and confirm to automatically delete your saved 
 - **License:** Released under the [MIT License](./LICENSE).
 
 
-## v1.3 commands
+## New in v1.3 — commands
 | `/squad` | Team mode: `status`, `on`, `off`, `auto`, `agents <2-8>`, `parallel on\|off` — split complex work into named sub-agents |
 | `/mobile` | Mobile/Termux profile: `on`, `off`, `ascii`, `unicode`, `status` |
 
 
-## v1.3+ — Squad Engine at a glance
+## Squad Engine at a glance
 
 Ask for something complex and DocMind offers a choice:
 
@@ -385,7 +385,7 @@ perfection audit still has the last word.
 agent can see `~/storage/shared`; `/mobile` confirms what it detected.
 
 
-### Parallel by default (v1.4)
+### Parallel by default
 
 ```
 ~ running 3 agents in parallel, 1 wave(s)
